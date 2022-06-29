@@ -147,9 +147,9 @@
             this.label4.Location = new System.Drawing.Point(614, 251);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(91, 22);
+            this.label4.Size = new System.Drawing.Size(97, 22);
             this.label4.TabIndex = 40;
-            this.label4.Text = "Full Name";
+            this.label4.Text = "First Name";
             this.label4.Click += new System.EventHandler(this.label4_Click_1);
             // 
             // label1
