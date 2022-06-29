@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="ATTENDANCE.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="btn_dashboard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="CircleButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Class1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Class2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DASHBOARD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="EMPLOYEESadd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="EMPLOYEES.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="EMPLOYEESdelete.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="EMPLOYEESupdate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="SALARY.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Trash.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControl2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
