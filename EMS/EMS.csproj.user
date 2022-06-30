@@ -4,6 +4,9 @@
     <Compile Update="ATTENDANCE.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="ATTENDANCEreport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="btn_dashboard.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -52,7 +55,7 @@
     <Compile Update="UserControl2.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="ATTENDANCEdepartment.cs">
+    <Compile Update="ATTENDANCEdutyduration.cs">
       <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>

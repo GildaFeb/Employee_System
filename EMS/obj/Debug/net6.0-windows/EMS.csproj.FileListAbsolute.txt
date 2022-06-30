@@ -173,7 +173,6 @@ C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\bin\Debug\net6.0-windows\Sy
 C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
 C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.csproj.AssemblyReference.cache
 C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.ATTENDANCE.resources
-C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.ATTENDANCEdepartment.resources
 C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.btn_one.resources
 C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.dashboard.resources
 C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.EMPLOYEES.resources
@@ -242,3 +241,7 @@ C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\De
 C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\ref\EMS.dll
 C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.errorEMPadd.resources
 C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.successEMPadd.resources
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.errorEMPadd.resources
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.successEMPadd.resources
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.ATTENDANCEdutyduration.resources
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.ATTENDANCEreport.resources

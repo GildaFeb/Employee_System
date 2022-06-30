@@ -271,14 +271,9 @@ namespace EMS
 
             hideSubMenu();
         }
-
-        private void button11_Click(object sender, EventArgs e)
-        {
-            Attendancedprtmnt1.BringToFront();
-        }
-
         private void button17_Click(object sender, EventArgs e)
         {
+            //ATTENDANCEdutyduration1.Show();   wag delete 
             //hideSubMenu();
         }
 
@@ -381,6 +376,11 @@ namespace EMS
         }
 
         private void dashboard1_Load_2(object sender, EventArgs e)
+        {
+
+        }
+
+        private void employees1_Load_1(object sender, EventArgs e)
         {
 
         }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace EMS
 {
-    public partial class ATTENDANCEdepartment : UserControl
+    public partial class ATTENDANCEdutyduration : UserControl
     {
-        public ATTENDANCEdepartment()
+        public ATTENDANCEdutyduration()
         {
             InitializeComponent();
         }
