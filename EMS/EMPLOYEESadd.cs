@@ -57,7 +57,8 @@ namespace EMS
 
         private void btn_one3_Click_1(object sender, EventArgs e)
         {
-            register_employee();
+            successEMPadd successEMPadd = new successEMPadd();
+            successEMPadd.Show();
         }
         public async void register_employee()
         {

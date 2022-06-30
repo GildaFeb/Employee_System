@@ -31,11 +31,17 @@
     <Compile Update="EMPLOYEESupdate.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="errorEMPadd.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="SALARY.cs">
       <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="successEMPadd.cs">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Update="Trash.cs">
       <SubType>UserControl</SubType>
