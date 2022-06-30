@@ -10,7 +10,6 @@ namespace EMS
             pnl_IndicatorDashboard.Show();
             pnl_IndicatorAttendance.Hide();
             pnl_IndicatorEmployees.Hide();
-            pnl_IndicatorSalary.Hide();
 
             dashboard1.BringToFront();
 
@@ -20,7 +19,6 @@ namespace EMS
         {
             employeesPnl.Visible = false;
             attendancePnl.Visible = false;
-            salaryPnl.Visible = false;
         }
 
         private void showSubMenu(Panel subMenu)
@@ -43,7 +41,6 @@ namespace EMS
             pnl_IndicatorEmployees.Show();
             pnl_IndicatorAttendance.Hide();
             pnl_IndicatorDashboard.Hide();
-            pnl_IndicatorSalary.Hide();
 
             employees1.BringToFront();
 
@@ -250,16 +247,13 @@ namespace EMS
             pnl_IndicatorAttendance.Show();
             pnl_IndicatorDashboard.Hide();
             pnl_IndicatorEmployees.Hide();
-            pnl_IndicatorSalary.Hide();
 
             attendance1.BringToFront();
         }
 
         private void btnSalary_Click(object sender, EventArgs e)
         {
-            showSubMenu(salaryPnl);
 
-            pnl_IndicatorSalary.Show();
             pnl_IndicatorAttendance.Hide();
             pnl_IndicatorDashboard.Hide();
             pnl_IndicatorEmployees.Hide();
@@ -272,7 +266,6 @@ namespace EMS
             pnl_IndicatorDashboard.Show();
             pnl_IndicatorAttendance.Hide();
             pnl_IndicatorEmployees.Hide();
-            pnl_IndicatorSalary.Hide();
 
             dashboard1.BringToFront();
 

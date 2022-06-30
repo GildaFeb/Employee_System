@@ -55,12 +55,12 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("SF Pro Display", 25.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(51)))));
-            this.label1.Location = new System.Drawing.Point(108, 84);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(123, 112);
+            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(204, 39);
+            this.label1.Size = new System.Drawing.Size(250, 50);
             this.label1.TabIndex = 74;
             this.label1.Text = "Department";
             // 
@@ -68,12 +68,12 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Font = new System.Drawing.Font("SF Pro Rounded", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(113, 123);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(129, 164);
+            this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(526, 18);
+            this.label2.Size = new System.Drawing.Size(525, 21);
             this.label2.TabIndex = 75;
             this.label2.Text = "Kindly see below the departments and its corresponding ID and floor.";
             // 
@@ -81,10 +81,9 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.White;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(896, 74);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(1024, 99);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(31, 21);
+            this.pictureBox2.Size = new System.Drawing.Size(35, 28);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 80;
             this.pictureBox2.TabStop = false;
@@ -94,10 +93,9 @@
             this.Searchbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Searchbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Searchbox.ForeColor = System.Drawing.Color.DarkGray;
-            this.Searchbox.Location = new System.Drawing.Point(933, 74);
-            this.Searchbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Searchbox.Location = new System.Drawing.Point(1066, 99);
             this.Searchbox.Name = "Searchbox";
-            this.Searchbox.Size = new System.Drawing.Size(298, 19);
+            this.Searchbox.Size = new System.Drawing.Size(341, 23);
             this.Searchbox.TabIndex = 78;
             this.Searchbox.Text = "Search";
             this.Searchbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -105,10 +103,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(882, 63);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(1008, 84);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(369, 39);
+            this.pictureBox1.Size = new System.Drawing.Size(422, 52);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 79;
             this.pictureBox1.TabStop = false;
@@ -121,10 +118,9 @@
             this.db_ViewCalendarBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.db_ViewCalendarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.db_ViewCalendarBtn.ForeColor = System.Drawing.Color.White;
-            this.db_ViewCalendarBtn.Location = new System.Drawing.Point(109, 173);
-            this.db_ViewCalendarBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.db_ViewCalendarBtn.Location = new System.Drawing.Point(125, 231);
             this.db_ViewCalendarBtn.Name = "db_ViewCalendarBtn";
-            this.db_ViewCalendarBtn.Size = new System.Drawing.Size(1142, 454);
+            this.db_ViewCalendarBtn.Size = new System.Drawing.Size(1305, 605);
             this.db_ViewCalendarBtn.TabIndex = 81;
             this.db_ViewCalendarBtn.UseVisualStyleBackColor = false;
             // 
@@ -160,12 +156,11 @@
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.tableDelete_DGV.DefaultCellStyle = dataGridViewCellStyle4;
             this.tableDelete_DGV.GridColor = System.Drawing.Color.DarkGray;
-            this.tableDelete_DGV.Location = new System.Drawing.Point(109, 192);
-            this.tableDelete_DGV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tableDelete_DGV.Location = new System.Drawing.Point(125, 256);
             this.tableDelete_DGV.Name = "tableDelete_DGV";
             this.tableDelete_DGV.RowHeadersWidth = 51;
             this.tableDelete_DGV.RowTemplate.Height = 29;
-            this.tableDelete_DGV.Size = new System.Drawing.Size(1142, 418);
+            this.tableDelete_DGV.Size = new System.Drawing.Size(1305, 557);
             this.tableDelete_DGV.TabIndex = 82;
             // 
             // delete_ChckBx
@@ -179,7 +174,7 @@
             this.delete_ChckBx.MinimumWidth = 6;
             this.delete_ChckBx.Name = "delete_ChckBx";
             this.delete_ChckBx.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.delete_ChckBx.Width = 26;
+            this.delete_ChckBx.Width = 29;
             // 
             // DeptId
             // 
@@ -211,10 +206,9 @@
             this.Clearbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Clearbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Clearbtn.ForeColor = System.Drawing.Color.Black;
-            this.Clearbtn.Location = new System.Drawing.Point(109, 654);
-            this.Clearbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Clearbtn.Location = new System.Drawing.Point(125, 872);
             this.Clearbtn.Name = "Clearbtn";
-            this.Clearbtn.Size = new System.Drawing.Size(154, 38);
+            this.Clearbtn.Size = new System.Drawing.Size(176, 51);
             this.Clearbtn.TabIndex = 125;
             this.Clearbtn.Text = "Clear checked";
             this.Clearbtn.UseVisualStyleBackColor = false;
@@ -226,18 +220,18 @@
             this.btn_one2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_one2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_one2.ForeColor = System.Drawing.Color.White;
-            this.btn_one2.Location = new System.Drawing.Point(1097, 654);
-            this.btn_one2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_one2.Location = new System.Drawing.Point(1254, 872);
             this.btn_one2.Name = "btn_one2";
-            this.btn_one2.Size = new System.Drawing.Size(154, 38);
+            this.btn_one2.Size = new System.Drawing.Size(176, 51);
             this.btn_one2.TabIndex = 126;
             this.btn_one2.Text = "Delete";
             this.btn_one2.UseVisualStyleBackColor = false;
             // 
             // ATTENDANCEdepartment
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
             this.Controls.Add(this.btn_one2);
             this.Controls.Add(this.Clearbtn);
             this.Controls.Add(this.tableDelete_DGV);
@@ -247,8 +241,9 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "ATTENDANCEdepartment";
-            this.Size = new System.Drawing.Size(1361, 775);
+            this.Size = new System.Drawing.Size(1555, 1033);
             this.Load += new System.EventHandler(this.ATTENDANCEdepartment_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
