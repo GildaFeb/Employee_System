@@ -248,7 +248,7 @@ namespace EMS
             pnl_IndicatorDashboard.Hide();
             pnl_IndicatorEmployees.Hide();
 
-            attendance1.BringToFront();
+           // attendance1.BringToFront();
         }
 
         private void btnSalary_Click(object sender, EventArgs e)
@@ -288,6 +288,7 @@ namespace EMS
 
         private void button19_Click(object sender, EventArgs e)
         {
+
         }
 
         private void button2_Click_1(object sender, EventArgs e)

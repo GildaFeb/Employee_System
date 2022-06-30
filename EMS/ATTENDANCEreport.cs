@@ -16,5 +16,15 @@ namespace EMS
         {
             InitializeComponent();
         }
+
+        private void attndncrprt_DGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void ATTENDANCEreport_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
