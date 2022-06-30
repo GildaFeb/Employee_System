@@ -31,5 +31,11 @@ namespace EMS
         {
 
         }
+
+        private void btn_one3_Click(object sender, EventArgs e)
+        {
+            verificationEmpUpdate verificationEmpUpdate = new verificationEmpUpdate();
+            verificationEmpUpdate.Show();
+        }
     }
 }

@@ -432,11 +432,11 @@
             this.label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.label13.Font = new System.Drawing.Font("SF Pro Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(822, 213);
+            this.label13.Location = new System.Drawing.Point(858, 209);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(132, 24);
+            this.label13.Size = new System.Drawing.Size(96, 24);
             this.label13.TabIndex = 110;
-            this.label13.Text = "Departments";
+            this.label13.Text = "Positions";
             // 
             // label5
             // 

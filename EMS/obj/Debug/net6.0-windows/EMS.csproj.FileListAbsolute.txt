@@ -215,7 +215,6 @@ C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\bin\De
 C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
 C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.csproj.AssemblyReference.cache
 C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.ATTENDANCE.resources
-C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.ATTENDANCEdepartment.resources
 C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.btn_one.resources
 C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.dashboard.resources
 C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.EMPLOYEES.resources
@@ -245,3 +244,8 @@ C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EM
 C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.successEMPadd.resources
 C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.ATTENDANCEdutyduration.resources
 C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.ATTENDANCEreport.resources
+C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.ATTENDANCEdutyduration.resources
+C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.ATTENDANCEreport.resources
+C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.verificationEmpDelete.resources
+C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.verificationEmpUpdate.resources
+C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.EMPLOYEESadd_revised.resources

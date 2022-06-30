@@ -28,6 +28,9 @@
     <Compile Update="EMPLOYEES.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="EMPLOYEESadd_revised.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="EMPLOYEESdelete.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -57,6 +60,12 @@
     </Compile>
     <Compile Update="ATTENDANCEdutyduration.cs">
       <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="verificationEmpDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="verificationEmpUpdate.cs">
+      <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
 </Project>

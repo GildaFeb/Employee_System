@@ -555,7 +555,7 @@
             this.btn_one1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
             this.btn_one1.FlatAppearance.BorderSize = 0;
             this.btn_one1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_one1.Font = new System.Drawing.Font("SF Pro Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_one1.Font = new System.Drawing.Font("SF Pro Text", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_one1.ForeColor = System.Drawing.Color.White;
             this.btn_one1.Location = new System.Drawing.Point(1055, 872);
             this.btn_one1.Name = "btn_one1";
@@ -566,24 +566,25 @@
             // 
             // btn_one3
             // 
-            this.btn_one3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(202)))), ((int)(((byte)(63)))));
+            this.btn_one3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(233)))), ((int)(((byte)(32)))));
             this.btn_one3.FlatAppearance.BorderSize = 0;
             this.btn_one3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_one3.Font = new System.Drawing.Font("SF Pro Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_one3.Font = new System.Drawing.Font("SF Pro Text", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_one3.ForeColor = System.Drawing.Color.White;
             this.btn_one3.Location = new System.Drawing.Point(1283, 872);
             this.btn_one3.Name = "btn_one3";
             this.btn_one3.Size = new System.Drawing.Size(176, 50);
             this.btn_one3.TabIndex = 122;
-            this.btn_one3.Text = "Save";
+            this.btn_one3.Text = "Update";
             this.btn_one3.UseVisualStyleBackColor = false;
+            this.btn_one3.Click += new System.EventHandler(this.btn_one3_Click);
             // 
             // btn_one10
             // 
             this.btn_one10.BackColor = System.Drawing.Color.DarkGray;
             this.btn_one10.FlatAppearance.BorderSize = 0;
             this.btn_one10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_one10.Font = new System.Drawing.Font("SF Pro Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_one10.Font = new System.Drawing.Font("SF Pro Text", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_one10.ForeColor = System.Drawing.Color.Black;
             this.btn_one10.Location = new System.Drawing.Point(116, 872);
             this.btn_one10.Name = "btn_one10";
@@ -687,6 +688,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
             this.Controls.Add(this.btn_one10);
             this.Controls.Add(this.btn_one1);
             this.Controls.Add(this.btn_one3);

@@ -53,6 +53,9 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.dashboard1 = new EMS.dashboard();
             this.employees1 = new EMS.EMPLOYEES();
+            this.employeeAdd2 = new EMS.employeeAdd();
+            this.employeeSdelete2 = new EMS.EMPLOYEESdelete();
+            this.employeeSupdate2 = new EMS.EMPLOYEESupdate();
             this.panel1.SuspendLayout();
             this.pnl_IndicatorAttendance.SuspendLayout();
             this.pnl_IndicatorEmployees.SuspendLayout();
@@ -78,7 +81,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(347, 1033);
+            this.panel1.Size = new System.Drawing.Size(347, 1291);
             this.panel1.TabIndex = 14;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint_1);
             // 
@@ -245,7 +248,7 @@
             this.btnAttendance.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
             this.btnAttendance.Size = new System.Drawing.Size(347, 75);
             this.btnAttendance.TabIndex = 19;
-            this.btnAttendance.Text = "                  Attendance";
+            this.btnAttendance.Text = "             Attendance";
             this.btnAttendance.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAttendance.UseVisualStyleBackColor = false;
             this.btnAttendance.Click += new System.EventHandler(this.btnAttendance_Click);
@@ -330,7 +333,7 @@
             this.btnEmployees.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
             this.btnEmployees.Size = new System.Drawing.Size(347, 75);
             this.btnEmployees.TabIndex = 17;
-            this.btnEmployees.Text = "                  Employees";
+            this.btnEmployees.Text = "             Employees";
             this.btnEmployees.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEmployees.UseVisualStyleBackColor = false;
             this.btnEmployees.Click += new System.EventHandler(this.btnEmployees_Click);
@@ -349,7 +352,7 @@
             this.btnDashboard.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
             this.btnDashboard.Size = new System.Drawing.Size(347, 75);
             this.btnDashboard.TabIndex = 16;
-            this.btnDashboard.Text = "                  Dashboard";
+            this.btnDashboard.Text = "             Dashboard";
             this.btnDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDashboard.UseVisualStyleBackColor = false;
             this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
@@ -373,7 +376,7 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(3, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(124, 52);
+            this.label2.Size = new System.Drawing.Size(155, 64);
             this.label2.TabIndex = 22;
             this.label2.Text = "Logo\r\nApp Name";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -402,15 +405,41 @@
             this.employees1.TabIndex = 16;
             this.employees1.Load += new System.EventHandler(this.employees1_Load_1);
             // 
+            // employeeAdd2
+            // 
+            this.employeeAdd2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.employeeAdd2.Location = new System.Drawing.Point(347, 0);
+            this.employeeAdd2.Name = "employeeAdd2";
+            this.employeeAdd2.Size = new System.Drawing.Size(1944, 1291);
+            this.employeeAdd2.TabIndex = 17;
+            // 
+            // employeeSdelete2
+            // 
+            this.employeeSdelete2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.employeeSdelete2.Location = new System.Drawing.Point(347, 0);
+            this.employeeSdelete2.Name = "employeeSdelete2";
+            this.employeeSdelete2.Size = new System.Drawing.Size(1944, 1291);
+            this.employeeSdelete2.TabIndex = 18;
+            // 
+            // employeeSupdate2
+            // 
+            this.employeeSupdate2.Location = new System.Drawing.Point(347, 0);
+            this.employeeSupdate2.Name = "employeeSupdate2";
+            this.employeeSupdate2.Size = new System.Drawing.Size(1944, 1291);
+            this.employeeSupdate2.TabIndex = 19;
+            // 
             // forms1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(1354, 733);
+            this.Controls.Add(this.employeeSupdate2);
+            this.Controls.Add(this.employeeSdelete2);
+            this.Controls.Add(this.employeeAdd2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.employees1);
             this.Controls.Add(this.dashboard1);
+            this.Controls.Add(this.employees1);
             this.ForeColor = System.Drawing.Color.White;
             this.Name = "forms1";
             this.Tag = "";
@@ -460,5 +489,8 @@
         private SALARY salary1;
         private EMPLOYEESdelete employeeSdelete1;
         private ATTENDANCEdutyduration Attendancedprtmnt1;
+        private employeeAdd employeeAdd2;
+        private EMPLOYEESdelete employeeSdelete2;
+        private EMPLOYEESupdate employeeSupdate2;
     }
 }

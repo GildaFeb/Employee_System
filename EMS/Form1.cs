@@ -48,17 +48,17 @@ namespace EMS
 
         private void subBtn_AddEmp_Click(object sender, EventArgs e)
         {
-            employeeAdd1.BringToFront();
+            employeeAdd2.BringToFront();
         }
 
         private void subBtn_UpdateEmp_Click(object sender, EventArgs e)
         {
-            employeeSupdate1.BringToFront();
+            employeeSupdate2.BringToFront();
         }
 
         private void subBtn_SearchEmp_Click(object sender, EventArgs e)
         {
-            employeeSdelete1.BringToFront();
+            employeeSdelete2.BringToFront();
         }
 
         private void app_bg_load(object sender, EventArgs e)
