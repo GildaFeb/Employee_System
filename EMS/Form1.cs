@@ -275,11 +275,13 @@ namespace EMS
             pnl_IndicatorSalary.Hide();
 
             dashboard1.BringToFront();
+
+            hideSubMenu();
         }
 
         private void button11_Click(object sender, EventArgs e)
         {
-            //hideSubMenu();
+            Attendancedprtmnt1.BringToFront();
         }
 
         private void button17_Click(object sender, EventArgs e)

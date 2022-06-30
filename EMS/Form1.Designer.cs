@@ -66,6 +66,7 @@
             this.attendance1 = new EMS.ATTENDANCE();
             this.salary1 = new EMS.SALARY();
             this.employeeSdelete1 = new EMS.EMPLOYEESdelete();
+            this.Attendancedprtmnt1 = new EMS.ATTENDANCEdepartment();
             this.panel1.SuspendLayout();
             this.pnl_IndicatorAttendance.SuspendLayout();
             this.pnl_IndicatorSalary.SuspendLayout();
@@ -96,7 +97,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(347, 1033);
+            this.panel1.Size = new System.Drawing.Size(347, 1291);
             this.panel1.TabIndex = 14;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint_1);
             // 
@@ -105,7 +106,7 @@
             this.btn_one4.BackColor = System.Drawing.Color.White;
             this.btn_one4.FlatAppearance.BorderSize = 0;
             this.btn_one4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_one4.Font = new System.Drawing.Font("SF Pro Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_one4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_one4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(51)))));
             this.btn_one4.Location = new System.Drawing.Point(89, 848);
             this.btn_one4.Name = "btn_one4";
@@ -228,7 +229,7 @@
             this.button4.Dock = System.Windows.Forms.DockStyle.Top;
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("SF Pro Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button4.Location = new System.Drawing.Point(0, 90);
             this.button4.Name = "button4";
             this.button4.Padding = new System.Windows.Forms.Padding(127, 0, 0, 0);
@@ -244,7 +245,7 @@
             this.button2.Dock = System.Windows.Forms.DockStyle.Top;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("SF Pro Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button2.Location = new System.Drawing.Point(0, 45);
             this.button2.Name = "button2";
             this.button2.Padding = new System.Windows.Forms.Padding(127, 0, 0, 0);
@@ -261,7 +262,7 @@
             this.button1.Dock = System.Windows.Forms.DockStyle.Top;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("SF Pro Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button1.Location = new System.Drawing.Point(0, 0);
             this.button1.Name = "button1";
             this.button1.Padding = new System.Windows.Forms.Padding(127, 0, 0, 0);
@@ -278,7 +279,7 @@
             this.btnSalary.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnSalary.FlatAppearance.BorderSize = 0;
             this.btnSalary.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalary.Font = new System.Drawing.Font("SF Pro Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnSalary.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnSalary.ForeColor = System.Drawing.Color.White;
             this.btnSalary.Image = ((System.Drawing.Image)(resources.GetObject("btnSalary.Image")));
             this.btnSalary.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -374,7 +375,7 @@
             this.btnAttendance.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnAttendance.FlatAppearance.BorderSize = 0;
             this.btnAttendance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAttendance.Font = new System.Drawing.Font("SF Pro Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnAttendance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnAttendance.ForeColor = System.Drawing.Color.White;
             this.btnAttendance.Image = ((System.Drawing.Image)(resources.GetObject("btnAttendance.Image")));
             this.btnAttendance.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -456,7 +457,7 @@
             this.btnEmployees.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnEmployees.FlatAppearance.BorderSize = 0;
             this.btnEmployees.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEmployees.Font = new System.Drawing.Font("SF Pro Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnEmployees.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnEmployees.ForeColor = System.Drawing.Color.White;
             this.btnEmployees.Image = ((System.Drawing.Image)(resources.GetObject("btnEmployees.Image")));
             this.btnEmployees.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -476,7 +477,7 @@
             this.btnDashboard.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnDashboard.FlatAppearance.BorderSize = 0;
             this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDashboard.Font = new System.Drawing.Font("SF Pro Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnDashboard.Image = ((System.Drawing.Image)(resources.GetObject("btnDashboard.Image")));
             this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDashboard.Location = new System.Drawing.Point(0, 272);
@@ -504,11 +505,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("SF Pro Display", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(3, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(149, 66);
+            this.label2.Size = new System.Drawing.Size(124, 52);
             this.label2.TabIndex = 22;
             this.label2.Text = "Logo\r\nApp Name";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -520,6 +521,7 @@
             // dashboard1
             // 
             this.dashboard1.Location = new System.Drawing.Point(347, 0);
+            this.dashboard1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dashboard1.Name = "dashboard1";
             this.dashboard1.Size = new System.Drawing.Size(1555, 1033);
             this.dashboard1.TabIndex = 15;
@@ -528,6 +530,7 @@
             // employees1
             // 
             this.employees1.Location = new System.Drawing.Point(347, 0);
+            this.employees1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.employees1.Name = "employees1";
             this.employees1.Size = new System.Drawing.Size(1555, 1033);
             this.employees1.TabIndex = 16;
@@ -535,6 +538,7 @@
             // employeeAdd1
             // 
             this.employeeAdd1.Location = new System.Drawing.Point(347, 0);
+            this.employeeAdd1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.employeeAdd1.Name = "employeeAdd1";
             this.employeeAdd1.Size = new System.Drawing.Size(1944, 1291);
             this.employeeAdd1.TabIndex = 17;
@@ -542,6 +546,7 @@
             // employeeSupdate1
             // 
             this.employeeSupdate1.Location = new System.Drawing.Point(347, 0);
+            this.employeeSupdate1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.employeeSupdate1.Name = "employeeSupdate1";
             this.employeeSupdate1.Size = new System.Drawing.Size(1944, 1291);
             this.employeeSupdate1.TabIndex = 18;
@@ -549,6 +554,7 @@
             // attendance1
             // 
             this.attendance1.Location = new System.Drawing.Point(347, 0);
+            this.attendance1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.attendance1.Name = "attendance1";
             this.attendance1.Size = new System.Drawing.Size(1944, 1291);
             this.attendance1.TabIndex = 19;
@@ -556,6 +562,7 @@
             // salary1
             // 
             this.salary1.Location = new System.Drawing.Point(347, 0);
+            this.salary1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.salary1.Name = "salary1";
             this.salary1.Size = new System.Drawing.Size(1944, 1291);
             this.salary1.TabIndex = 20;
@@ -563,15 +570,26 @@
             // employeeSdelete1
             // 
             this.employeeSdelete1.Location = new System.Drawing.Point(347, 0);
+            this.employeeSdelete1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.employeeSdelete1.Name = "employeeSdelete1";
             this.employeeSdelete1.Size = new System.Drawing.Size(1944, 1291);
             this.employeeSdelete1.TabIndex = 21;
             // 
+            // Attendancedprtmnt1
+            // 
+            this.Attendancedprtmnt1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Attendancedprtmnt1.Location = new System.Drawing.Point(347, 0);
+            this.Attendancedprtmnt1.Name = "Attendancedprtmnt1";
+            this.Attendancedprtmnt1.Size = new System.Drawing.Size(1944, 1291);
+            this.Attendancedprtmnt1.TabIndex = 22;
+            // 
             // forms1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.Gainsboro;
-            this.ClientSize = new System.Drawing.Size(1902, 1033);
+            this.ClientSize = new System.Drawing.Size(1354, 733);
+            this.Controls.Add(this.Attendancedprtmnt1);
             this.Controls.Add(this.employeeSdelete1);
             this.Controls.Add(this.salary1);
             this.Controls.Add(this.attendance1);
@@ -638,5 +656,6 @@
         private ATTENDANCE attendance1;
         private SALARY salary1;
         private EMPLOYEESdelete employeeSdelete1;
+        private ATTENDANCEdepartment Attendancedprtmnt1;
     }
 }

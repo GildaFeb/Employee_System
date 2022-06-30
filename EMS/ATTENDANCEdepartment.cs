@@ -10,44 +10,21 @@ using System.Windows.Forms;
 
 namespace EMS
 {
-    public partial class EMPLOYEESdelete : UserControl
+    public partial class ATTENDANCEdepartment : UserControl
     {
-        public EMPLOYEESdelete()
+        public ATTENDANCEdepartment()
         {
             InitializeComponent();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void ATTENDANCEdepartment_Load(object sender, EventArgs e)
         {
-            
-        }
-
-        private void EMPLOYEESdelete_Load(object sender, EventArgs e)
-        {
-            deleteDataGridView();
             visualsDatagridview();
         }
-
-        //
-        void deleteDataGridView()
-        {
-            /*  UNNECESSARY, 'WAG IDELETE
-             *  
-             *  tableDelete_DGV.Rows.Add("tacv", 'b', 4, "male");
-                tableDelete_DGV.Rows.Add("amazing", 'b', 4, "male");
-                tableDelete_DGV.Rows.Add("code", 'b', 4, "male");
-                tableDelete_DGV.Rows.Add("verse", 'b', 4, "male");
-                tableDelete_DGV.Rows.Add("whatever", 'b', 4, "female"); 
-    
-                tableDelete_DGV.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.DisableResizing; //optional
-                tableDelete_DGV.RowHeadersDefaultCellStyle.SelectionBackColor = Color.FromArgb(62, 113, 201);
-                tableDelete_DGV.RowHeadersDefaultCellStyle.SelectionForeColor = Color.White;    */
-        }
-
         void visualsDatagridview()
         {
             // UNNECESSARY, 'WAG IDELETE
-          
+
             //tableDelete_DGV.AlternatingRowsDefaultCellStyle.BackColor = Color.Blue; //Color.FromArgb(238, 239, 249);
             //tableDelete_DGV.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
             tableDelete_DGV.DefaultCellStyle.SelectionBackColor = Color.FromArgb(202, 63, 63);
@@ -62,11 +39,6 @@ namespace EMS
             //tableDelete_DGV.ColumnHeadersDefaultCellStyle.Font = new Font("MS Reference Sans Serif", 10);      
             tableDelete_DGV.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(63, 113, 202);
             tableDelete_DGV.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
-        }
-
-        private void db_ViewCalendarBtn_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
