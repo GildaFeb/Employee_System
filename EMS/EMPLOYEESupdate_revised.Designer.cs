@@ -597,9 +597,9 @@
             this.comboBox2.ForeColor = System.Drawing.Color.Black;
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
-            "Position A",
-            "Position B",
-            "Position C"});
+            "A",
+            "B",
+            "C"});
             this.comboBox2.Location = new System.Drawing.Point(597, 420);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(349, 32);
@@ -611,9 +611,9 @@
             this.comboBox3.ForeColor = System.Drawing.Color.Black;
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Items.AddRange(new object[] {
-            "Position A",
-            "Position B",
-            "Position C"});
+            "A",
+            "B",
+            "C"});
             this.comboBox3.Location = new System.Drawing.Point(597, 513);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(349, 32);
@@ -625,9 +625,9 @@
             this.comboBox4.ForeColor = System.Drawing.Color.Black;
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Items.AddRange(new object[] {
-            "Position A",
-            "Position B",
-            "Position C"});
+            "A",
+            "B",
+            "C"});
             this.comboBox4.Location = new System.Drawing.Point(597, 616);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(349, 32);

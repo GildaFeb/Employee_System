@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ATTENDANCE));
             this.employeesTitlePage = new System.Windows.Forms.Label();
             this.timeTmr_Attendance = new System.Windows.Forms.Timer(this.components);
             this.clockLbl_Attendance = new System.Windows.Forms.Label();
@@ -37,7 +36,6 @@
             this.emp_Addbtn = new EMS.btn_one();
             this.btn_one1 = new EMS.btn_one();
             this.btn_one2 = new EMS.btn_one();
-            this.btn_one3 = new EMS.btn_one();
             this.SuspendLayout();
             // 
             // employeesTitlePage
@@ -89,8 +87,7 @@
             this.emp_Addbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.emp_Addbtn.Font = new System.Drawing.Font("SF Pro Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.emp_Addbtn.ForeColor = System.Drawing.Color.White;
-            this.emp_Addbtn.Image = ((System.Drawing.Image)(resources.GetObject("emp_Addbtn.Image")));
-            this.emp_Addbtn.Location = new System.Drawing.Point(446, 349);
+            this.emp_Addbtn.Location = new System.Drawing.Point(611, 349);
             this.emp_Addbtn.Name = "emp_Addbtn";
             this.emp_Addbtn.Padding = new System.Windows.Forms.Padding(0, 0, 0, 45);
             this.emp_Addbtn.Size = new System.Drawing.Size(310, 312);
@@ -106,13 +103,12 @@
             this.btn_one1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_one1.Font = new System.Drawing.Font("SF Pro Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_one1.ForeColor = System.Drawing.Color.White;
-            this.btn_one1.Image = ((System.Drawing.Image)(resources.GetObject("btn_one1.Image")));
-            this.btn_one1.Location = new System.Drawing.Point(99, 349);
+            this.btn_one1.Location = new System.Drawing.Point(212, 349);
             this.btn_one1.Name = "btn_one1";
             this.btn_one1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 45);
             this.btn_one1.Size = new System.Drawing.Size(310, 312);
             this.btn_one1.TabIndex = 94;
-            this.btn_one1.Text = "Departments";
+            this.btn_one1.Text = "Duty duration";
             this.btn_one1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_one1.UseVisualStyleBackColor = false;
             // 
@@ -123,8 +119,7 @@
             this.btn_one2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_one2.Font = new System.Drawing.Font("SF Pro Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_one2.ForeColor = System.Drawing.Color.White;
-            this.btn_one2.Image = ((System.Drawing.Image)(resources.GetObject("btn_one2.Image")));
-            this.btn_one2.Location = new System.Drawing.Point(1140, 349);
+            this.btn_one2.Location = new System.Drawing.Point(1012, 349);
             this.btn_one2.Name = "btn_one2";
             this.btn_one2.Padding = new System.Windows.Forms.Padding(0, 0, 0, 45);
             this.btn_one2.Size = new System.Drawing.Size(310, 312);
@@ -132,23 +127,6 @@
             this.btn_one2.Text = "Leave management";
             this.btn_one2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_one2.UseVisualStyleBackColor = false;
-            // 
-            // btn_one3
-            // 
-            this.btn_one3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(208)))), ((int)(((byte)(43)))));
-            this.btn_one3.FlatAppearance.BorderSize = 0;
-            this.btn_one3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_one3.Font = new System.Drawing.Font("SF Pro Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn_one3.ForeColor = System.Drawing.Color.White;
-            this.btn_one3.Image = ((System.Drawing.Image)(resources.GetObject("btn_one3.Image")));
-            this.btn_one3.Location = new System.Drawing.Point(793, 349);
-            this.btn_one3.Name = "btn_one3";
-            this.btn_one3.Padding = new System.Windows.Forms.Padding(0, 0, 0, 45);
-            this.btn_one3.Size = new System.Drawing.Size(310, 312);
-            this.btn_one3.TabIndex = 96;
-            this.btn_one3.Text = "Duty duration";
-            this.btn_one3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_one3.UseVisualStyleBackColor = false;
             // 
             // ATTENDANCE
             // 
@@ -158,12 +136,11 @@
             this.Controls.Add(this.emp_Addbtn);
             this.Controls.Add(this.btn_one1);
             this.Controls.Add(this.btn_one2);
-            this.Controls.Add(this.btn_one3);
             this.Controls.Add(this.dayTodayLbl_Attendance);
             this.Controls.Add(this.clockLbl_Attendance);
             this.Controls.Add(this.employeesTitlePage);
             this.Name = "ATTENDANCE";
-            this.Size = new System.Drawing.Size(1555, 1033);
+            this.Size = new System.Drawing.Size(1537, 1033);
             this.Load += new System.EventHandler(this.ATTENDANCE_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -178,6 +155,5 @@
         private btn_one emp_Addbtn;
         private btn_one btn_one1;
         private btn_one btn_one2;
-        private btn_one btn_one3;
     }
 }

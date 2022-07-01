@@ -325,7 +325,7 @@
             this.btn_one10.Name = "btn_one10";
             this.btn_one10.Size = new System.Drawing.Size(176, 51);
             this.btn_one10.TabIndex = 124;
-            this.btn_one10.Text = "Clear checked";
+            this.btn_one10.Text = "Clear";
             this.btn_one10.UseVisualStyleBackColor = false;
             // 
             // EMPLOYEESdelete

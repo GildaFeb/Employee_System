@@ -12,7 +12,7 @@ namespace EMS
             pnl_IndicatorAttendance.Hide();
             pnl_IndicatorEmployees.Hide();
             
-            //dashboard1.BringToFront();
+            dashboard1.BringToFront();
 
         }
         
@@ -64,23 +64,27 @@ namespace EMS
             pnl_IndicatorAttendance.Hide();
             pnl_IndicatorDashboard.Hide();
 
-            //employees1.BringToFront();
+            // EMPLOYEES page
+            employees1.BringToFront();
 
         }
 
         private void subBtn_AddEmp_Click(object sender, EventArgs e)
         {
-            //employeeSadd_revised1.BringToFront();
+            // EMPLOYEE ADD Page (Revised)
+            employeeSadd_revised1.BringToFront();
         }
 
         private void subBtn_UpdateEmp_Click(object sender, EventArgs e)
         {
-            //employeeSupdate_revised1.BringToFront();
+            // EMPLOYEE UPDATE Page (Revised)
+            employeeSupdate_revised1.BringToFront();
         }
 
         private void subBtn_SearchEmp_Click(object sender, EventArgs e)
         {
-            //employeeSdelete2.BringToFront();
+            // EMPLOYEE DELETE Page
+            employeeSdelete2.BringToFront();
         }
 
         private void app_bg_load(object sender, EventArgs e)
@@ -289,7 +293,8 @@ namespace EMS
             pnl_IndicatorAttendance.Hide();
             pnl_IndicatorEmployees.Hide();
 
-            //dashboard1.BringToFront();
+            // DASHBOARD Page
+            dashboard1.BringToFront();
 
             hideSubMenu();
         }
@@ -441,12 +446,14 @@ namespace EMS
 
         private void button3_Click_1(object sender, EventArgs e)
         {
-            
             showSubMenu(attendancePnl);
 
             pnl_IndicatorEmployees.Hide();
             pnl_IndicatorAttendance.Show();
             pnl_IndicatorDashboard.Hide();
+
+            // ATTENDANCE Page
+            attendance1.BringToFront();
         }
 
         private void button12_Click_1(object sender, EventArgs e)

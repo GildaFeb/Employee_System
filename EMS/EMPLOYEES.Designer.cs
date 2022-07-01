@@ -34,7 +34,6 @@
             this.emp_Addbtn = new EMS.btn_one();
             this.emp_Updatebtn = new EMS.btn_one();
             this.emp_Deletebtn = new EMS.btn_one();
-            this.emp_ViewAllbtn = new EMS.btn_one();
             this.dayTodayLbl_Employees = new System.Windows.Forms.Label();
             this.clockLbl_Employees = new System.Windows.Forms.Label();
             this.timeTmr_Employees = new System.Windows.Forms.Timer(this.components);
@@ -60,7 +59,7 @@
             this.emp_Addbtn.Font = new System.Drawing.Font("SF Pro Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.emp_Addbtn.ForeColor = System.Drawing.Color.White;
             this.emp_Addbtn.Image = ((System.Drawing.Image)(resources.GetObject("emp_Addbtn.Image")));
-            this.emp_Addbtn.Location = new System.Drawing.Point(448, 349);
+            this.emp_Addbtn.Location = new System.Drawing.Point(212, 349);
             this.emp_Addbtn.Name = "emp_Addbtn";
             this.emp_Addbtn.Padding = new System.Windows.Forms.Padding(0, 0, 0, 45);
             this.emp_Addbtn.Size = new System.Drawing.Size(310, 312);
@@ -78,7 +77,7 @@
             this.emp_Updatebtn.Font = new System.Drawing.Font("SF Pro Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.emp_Updatebtn.ForeColor = System.Drawing.Color.White;
             this.emp_Updatebtn.Image = ((System.Drawing.Image)(resources.GetObject("emp_Updatebtn.Image")));
-            this.emp_Updatebtn.Location = new System.Drawing.Point(795, 349);
+            this.emp_Updatebtn.Location = new System.Drawing.Point(611, 349);
             this.emp_Updatebtn.Name = "emp_Updatebtn";
             this.emp_Updatebtn.Padding = new System.Windows.Forms.Padding(0, 0, 0, 45);
             this.emp_Updatebtn.Size = new System.Drawing.Size(310, 312);
@@ -96,33 +95,15 @@
             this.emp_Deletebtn.Font = new System.Drawing.Font("SF Pro Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.emp_Deletebtn.ForeColor = System.Drawing.Color.White;
             this.emp_Deletebtn.Image = ((System.Drawing.Image)(resources.GetObject("emp_Deletebtn.Image")));
-            this.emp_Deletebtn.Location = new System.Drawing.Point(1142, 349);
+            this.emp_Deletebtn.Location = new System.Drawing.Point(1012, 349);
             this.emp_Deletebtn.Name = "emp_Deletebtn";
             this.emp_Deletebtn.Padding = new System.Windows.Forms.Padding(0, 0, 0, 45);
             this.emp_Deletebtn.Size = new System.Drawing.Size(310, 312);
             this.emp_Deletebtn.TabIndex = 20;
-            this.emp_Deletebtn.Text = "Delete";
+            this.emp_Deletebtn.Text = "View and Delete";
             this.emp_Deletebtn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.emp_Deletebtn.UseVisualStyleBackColor = false;
             this.emp_Deletebtn.Click += new System.EventHandler(this.btn_one5_Click);
-            // 
-            // emp_ViewAllbtn
-            // 
-            this.emp_ViewAllbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            this.emp_ViewAllbtn.FlatAppearance.BorderSize = 0;
-            this.emp_ViewAllbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.emp_ViewAllbtn.Font = new System.Drawing.Font("SF Pro Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.emp_ViewAllbtn.ForeColor = System.Drawing.Color.White;
-            this.emp_ViewAllbtn.Image = ((System.Drawing.Image)(resources.GetObject("emp_ViewAllbtn.Image")));
-            this.emp_ViewAllbtn.Location = new System.Drawing.Point(99, 349);
-            this.emp_ViewAllbtn.Name = "emp_ViewAllbtn";
-            this.emp_ViewAllbtn.Padding = new System.Windows.Forms.Padding(0, 0, 0, 45);
-            this.emp_ViewAllbtn.Size = new System.Drawing.Size(310, 312);
-            this.emp_ViewAllbtn.TabIndex = 20;
-            this.emp_ViewAllbtn.Text = "Employee details";
-            this.emp_ViewAllbtn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.emp_ViewAllbtn.UseVisualStyleBackColor = false;
-            this.emp_ViewAllbtn.Click += new System.EventHandler(this.btn_one5_Click);
             // 
             // dayTodayLbl_Employees
             // 
@@ -162,7 +143,6 @@
             this.Controls.Add(this.dayTodayLbl_Employees);
             this.Controls.Add(this.clockLbl_Employees);
             this.Controls.Add(this.emp_Addbtn);
-            this.Controls.Add(this.emp_ViewAllbtn);
             this.Controls.Add(this.emp_Deletebtn);
             this.Controls.Add(this.emp_Updatebtn);
             this.Controls.Add(this.employeesTitlePage);
@@ -180,7 +160,6 @@
         private btn_one emp_Addbtn;
         private btn_one emp_Updatebtn;
         private btn_one emp_Deletebtn;
-        private btn_one emp_ViewAllbtn;
         private Label dayTodayLbl_Employees;
         private Label clockLbl_Employees;
         private System.Windows.Forms.Timer timeTmr_Employees;

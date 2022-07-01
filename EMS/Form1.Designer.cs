@@ -35,6 +35,7 @@
             this.attendancePnl = new System.Windows.Forms.Panel();
             this.button8 = new System.Windows.Forms.Button();
             this.attendanceReport_SubSubPnl = new System.Windows.Forms.Panel();
+            this.btn_one10 = new EMS.btn_one();
             this.button10 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
@@ -54,6 +55,12 @@
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.employees1 = new EMS.EMPLOYEES();
+            this.attendance1 = new EMS.ATTENDANCE();
+            this.employeeSadd_revised1 = new EMS.EMPLOYEESadd_revised();
+            this.employeeSupdate_revised1 = new EMS.EMPLOYEESupdate_revised();
+            this.employeeSdelete2 = new EMS.EMPLOYEESdelete();
+            this.dashboard1 = new EMS.dashboard();
             this.panel1.SuspendLayout();
             this.pnl_IndicatorAttendance.SuspendLayout();
             this.attendancePnl.SuspendLayout();
@@ -67,6 +74,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(37)))), ((int)(((byte)(83)))));
+            this.panel1.Controls.Add(this.btn_one10);
             this.panel1.Controls.Add(this.pnl_IndicatorAttendance);
             this.panel1.Controls.Add(this.attendancePnl);
             this.panel1.Controls.Add(this.button3);
@@ -79,7 +87,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(347, 1033);
+            this.panel1.Size = new System.Drawing.Size(365, 1033);
             this.panel1.TabIndex = 14;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint_1);
             // 
@@ -87,7 +95,7 @@
             // 
             this.pnl_IndicatorAttendance.BackColor = System.Drawing.Color.Transparent;
             this.pnl_IndicatorAttendance.Controls.Add(this.btn_one4);
-            this.pnl_IndicatorAttendance.Location = new System.Drawing.Point(0, 332);
+            this.pnl_IndicatorAttendance.Location = new System.Drawing.Point(0, 450);
             this.pnl_IndicatorAttendance.Name = "pnl_IndicatorAttendance";
             this.pnl_IndicatorAttendance.Size = new System.Drawing.Size(16, 75);
             this.pnl_IndicatorAttendance.TabIndex = 24;
@@ -112,9 +120,9 @@
             this.attendancePnl.Controls.Add(this.button12);
             this.attendancePnl.Controls.Add(this.button7);
             this.attendancePnl.Dock = System.Windows.Forms.DockStyle.Top;
-            this.attendancePnl.Location = new System.Drawing.Point(0, 547);
+            this.attendancePnl.Location = new System.Drawing.Point(0, 665);
             this.attendancePnl.Name = "attendancePnl";
-            this.attendancePnl.Size = new System.Drawing.Size(347, 305);
+            this.attendancePnl.Size = new System.Drawing.Size(365, 305);
             this.attendancePnl.TabIndex = 106;
             // 
             // button8
@@ -127,7 +135,7 @@
             this.button8.Location = new System.Drawing.Point(0, 246);
             this.button8.Name = "button8";
             this.button8.Padding = new System.Windows.Forms.Padding(130, 0, 0, 0);
-            this.button8.Size = new System.Drawing.Size(347, 50);
+            this.button8.Size = new System.Drawing.Size(365, 50);
             this.button8.TabIndex = 3;
             this.button8.Text = "Leave management";
             this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -142,8 +150,23 @@
             this.attendanceReport_SubSubPnl.Dock = System.Windows.Forms.DockStyle.Top;
             this.attendanceReport_SubSubPnl.Location = new System.Drawing.Point(0, 100);
             this.attendanceReport_SubSubPnl.Name = "attendanceReport_SubSubPnl";
-            this.attendanceReport_SubSubPnl.Size = new System.Drawing.Size(347, 146);
+            this.attendanceReport_SubSubPnl.Size = new System.Drawing.Size(365, 146);
             this.attendanceReport_SubSubPnl.TabIndex = 89;
+            // 
+            // btn_one10
+            // 
+            this.btn_one10.BackColor = System.Drawing.Color.White;
+            this.btn_one10.Enabled = false;
+            this.btn_one10.FlatAppearance.BorderSize = 0;
+            this.btn_one10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_one10.Font = new System.Drawing.Font("SF Pro Display", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_one10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(33)))), ((int)(((byte)(64)))));
+            this.btn_one10.Location = new System.Drawing.Point(114, 967);
+            this.btn_one10.Name = "btn_one10";
+            this.btn_one10.Size = new System.Drawing.Size(135, 50);
+            this.btn_one10.TabIndex = 158;
+            this.btn_one10.Text = "Log out";
+            this.btn_one10.UseVisualStyleBackColor = false;
             // 
             // button10
             // 
@@ -155,7 +178,7 @@
             this.button10.Location = new System.Drawing.Point(0, 100);
             this.button10.Name = "button10";
             this.button10.Padding = new System.Windows.Forms.Padding(155, 0, 0, 0);
-            this.button10.Size = new System.Drawing.Size(347, 50);
+            this.button10.Size = new System.Drawing.Size(365, 50);
             this.button10.TabIndex = 3;
             this.button10.Text = "Add";
             this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -172,7 +195,7 @@
             this.button9.Location = new System.Drawing.Point(0, 50);
             this.button9.Name = "button9";
             this.button9.Padding = new System.Windows.Forms.Padding(155, 0, 0, 0);
-            this.button9.Size = new System.Drawing.Size(347, 50);
+            this.button9.Size = new System.Drawing.Size(365, 50);
             this.button9.TabIndex = 2;
             this.button9.Text = "Delete";
             this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -189,7 +212,7 @@
             this.button11.Location = new System.Drawing.Point(0, 0);
             this.button11.Name = "button11";
             this.button11.Padding = new System.Windows.Forms.Padding(155, 0, 0, 0);
-            this.button11.Size = new System.Drawing.Size(347, 50);
+            this.button11.Size = new System.Drawing.Size(365, 50);
             this.button11.TabIndex = 3;
             this.button11.Text = "Update";
             this.button11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -206,7 +229,7 @@
             this.button12.Location = new System.Drawing.Point(0, 50);
             this.button12.Name = "button12";
             this.button12.Padding = new System.Windows.Forms.Padding(130, 0, 0, 0);
-            this.button12.Size = new System.Drawing.Size(347, 50);
+            this.button12.Size = new System.Drawing.Size(365, 50);
             this.button12.TabIndex = 1;
             this.button12.Text = "Attendance report";
             this.button12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -223,7 +246,7 @@
             this.button7.Location = new System.Drawing.Point(0, 0);
             this.button7.Name = "button7";
             this.button7.Padding = new System.Windows.Forms.Padding(130, 0, 0, 0);
-            this.button7.Size = new System.Drawing.Size(347, 50);
+            this.button7.Size = new System.Drawing.Size(365, 50);
             this.button7.TabIndex = 3;
             this.button7.Text = "Duty duration";
             this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -240,10 +263,10 @@
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(0, 472);
+            this.button3.Location = new System.Drawing.Point(0, 590);
             this.button3.Name = "button3";
             this.button3.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.button3.Size = new System.Drawing.Size(347, 75);
+            this.button3.Size = new System.Drawing.Size(365, 75);
             this.button3.TabIndex = 105;
             this.button3.Text = "             Attendance";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -254,7 +277,7 @@
             // 
             this.pnl_IndicatorEmployees.BackColor = System.Drawing.Color.Transparent;
             this.pnl_IndicatorEmployees.Controls.Add(this.btn_one1);
-            this.pnl_IndicatorEmployees.Location = new System.Drawing.Point(0, 257);
+            this.pnl_IndicatorEmployees.Location = new System.Drawing.Point(0, 375);
             this.pnl_IndicatorEmployees.Name = "pnl_IndicatorEmployees";
             this.pnl_IndicatorEmployees.Size = new System.Drawing.Size(16, 75);
             this.pnl_IndicatorEmployees.TabIndex = 24;
@@ -276,7 +299,7 @@
             // 
             this.pnl_IndicatorDashboard.BackColor = System.Drawing.Color.Transparent;
             this.pnl_IndicatorDashboard.Controls.Add(this.indicatorDashboard);
-            this.pnl_IndicatorDashboard.Location = new System.Drawing.Point(0, 182);
+            this.pnl_IndicatorDashboard.Location = new System.Drawing.Point(0, 300);
             this.pnl_IndicatorDashboard.Name = "pnl_IndicatorDashboard";
             this.pnl_IndicatorDashboard.Size = new System.Drawing.Size(16, 75);
             this.pnl_IndicatorDashboard.TabIndex = 24;
@@ -300,9 +323,9 @@
             this.employeesPnl.Controls.Add(this.subBtn_UpdateEmp);
             this.employeesPnl.Controls.Add(this.subBtn_AddEmp);
             this.employeesPnl.Dock = System.Windows.Forms.DockStyle.Top;
-            this.employeesPnl.Location = new System.Drawing.Point(0, 332);
+            this.employeesPnl.Location = new System.Drawing.Point(0, 450);
             this.employeesPnl.Name = "employeesPnl";
-            this.employeesPnl.Size = new System.Drawing.Size(347, 140);
+            this.employeesPnl.Size = new System.Drawing.Size(365, 140);
             this.employeesPnl.TabIndex = 18;
             this.employeesPnl.Paint += new System.Windows.Forms.PaintEventHandler(this.employeesPnl_Paint);
             // 
@@ -316,7 +339,7 @@
             this.subBtn_SearchEmp.Location = new System.Drawing.Point(0, 95);
             this.subBtn_SearchEmp.Name = "subBtn_SearchEmp";
             this.subBtn_SearchEmp.Padding = new System.Windows.Forms.Padding(130, 0, 0, 0);
-            this.subBtn_SearchEmp.Size = new System.Drawing.Size(347, 45);
+            this.subBtn_SearchEmp.Size = new System.Drawing.Size(365, 45);
             this.subBtn_SearchEmp.TabIndex = 2;
             this.subBtn_SearchEmp.Text = "Delete";
             this.subBtn_SearchEmp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -333,7 +356,7 @@
             this.subBtn_UpdateEmp.Location = new System.Drawing.Point(0, 50);
             this.subBtn_UpdateEmp.Name = "subBtn_UpdateEmp";
             this.subBtn_UpdateEmp.Padding = new System.Windows.Forms.Padding(130, 0, 0, 0);
-            this.subBtn_UpdateEmp.Size = new System.Drawing.Size(347, 45);
+            this.subBtn_UpdateEmp.Size = new System.Drawing.Size(365, 45);
             this.subBtn_UpdateEmp.TabIndex = 1;
             this.subBtn_UpdateEmp.Text = "Update";
             this.subBtn_UpdateEmp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -352,7 +375,7 @@
             this.subBtn_AddEmp.Location = new System.Drawing.Point(0, 0);
             this.subBtn_AddEmp.Name = "subBtn_AddEmp";
             this.subBtn_AddEmp.Padding = new System.Windows.Forms.Padding(130, 0, 0, 0);
-            this.subBtn_AddEmp.Size = new System.Drawing.Size(347, 50);
+            this.subBtn_AddEmp.Size = new System.Drawing.Size(365, 50);
             this.subBtn_AddEmp.TabIndex = 0;
             this.subBtn_AddEmp.Text = "Add";
             this.subBtn_AddEmp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -369,10 +392,10 @@
             this.btnEmployees.ForeColor = System.Drawing.Color.White;
             this.btnEmployees.Image = ((System.Drawing.Image)(resources.GetObject("btnEmployees.Image")));
             this.btnEmployees.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEmployees.Location = new System.Drawing.Point(0, 257);
+            this.btnEmployees.Location = new System.Drawing.Point(0, 375);
             this.btnEmployees.Name = "btnEmployees";
             this.btnEmployees.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.btnEmployees.Size = new System.Drawing.Size(347, 75);
+            this.btnEmployees.Size = new System.Drawing.Size(365, 75);
             this.btnEmployees.TabIndex = 17;
             this.btnEmployees.Text = "             Employees";
             this.btnEmployees.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -388,10 +411,10 @@
             this.btnDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnDashboard.Image = ((System.Drawing.Image)(resources.GetObject("btnDashboard.Image")));
             this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDashboard.Location = new System.Drawing.Point(0, 182);
+            this.btnDashboard.Location = new System.Drawing.Point(0, 300);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.btnDashboard.Size = new System.Drawing.Size(347, 75);
+            this.btnDashboard.Size = new System.Drawing.Size(365, 75);
             this.btnDashboard.TabIndex = 16;
             this.btnDashboard.Text = "             Dashboard";
             this.btnDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -405,7 +428,7 @@
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(347, 182);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(365, 300);
             this.flowLayoutPanel1.TabIndex = 15;
             this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint_1);
             // 
@@ -426,12 +449,72 @@
             // 
             this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
             // 
+            // employees1
+            // 
+            this.employees1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.employees1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.employees1.Location = new System.Drawing.Point(365, 0);
+            this.employees1.Name = "employees1";
+            this.employees1.Size = new System.Drawing.Size(1537, 1033);
+            this.employees1.TabIndex = 15;
+            // 
+            // attendance1
+            // 
+            this.attendance1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.attendance1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.attendance1.Location = new System.Drawing.Point(365, 0);
+            this.attendance1.Name = "attendance1";
+            this.attendance1.Size = new System.Drawing.Size(1537, 1033);
+            this.attendance1.TabIndex = 16;
+            // 
+            // employeeSadd_revised1
+            // 
+            this.employeeSadd_revised1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.employeeSadd_revised1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.employeeSadd_revised1.Location = new System.Drawing.Point(365, 0);
+            this.employeeSadd_revised1.Name = "employeeSadd_revised1";
+            this.employeeSadd_revised1.Size = new System.Drawing.Size(1537, 1033);
+            this.employeeSadd_revised1.TabIndex = 17;
+            // 
+            // employeeSupdate_revised1
+            // 
+            this.employeeSupdate_revised1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.employeeSupdate_revised1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.employeeSupdate_revised1.Location = new System.Drawing.Point(365, 0);
+            this.employeeSupdate_revised1.Name = "employeeSupdate_revised1";
+            this.employeeSupdate_revised1.Size = new System.Drawing.Size(1537, 1033);
+            this.employeeSupdate_revised1.TabIndex = 18;
+            // 
+            // employeeSdelete2
+            // 
+            this.employeeSdelete2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.employeeSdelete2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.employeeSdelete2.Location = new System.Drawing.Point(365, 0);
+            this.employeeSdelete2.Name = "employeeSdelete2";
+            this.employeeSdelete2.Size = new System.Drawing.Size(1537, 1033);
+            this.employeeSdelete2.TabIndex = 19;
+            // 
+            // dashboard1
+            // 
+            this.dashboard1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.dashboard1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dashboard1.Location = new System.Drawing.Point(365, 0);
+            this.dashboard1.Name = "dashboard1";
+            this.dashboard1.Size = new System.Drawing.Size(1537, 1033);
+            this.dashboard1.TabIndex = 20;
+            // 
             // forms1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoScroll = true;
-            this.BackColor = System.Drawing.Color.Gainsboro;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1902, 1033);
+            this.Controls.Add(this.dashboard1);
+            this.Controls.Add(this.employeeSdelete2);
+            this.Controls.Add(this.employeeSupdate_revised1);
+            this.Controls.Add(this.employeeSadd_revised1);
+            this.Controls.Add(this.attendance1);
+            this.Controls.Add(this.employees1);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.Color.White;
             this.Name = "forms1";
@@ -484,5 +567,11 @@
         private Panel pnl_IndicatorAttendance;
         private Panel pnl_IndicatorEmployees;
         private Panel pnl_IndicatorDashboard;
+        private EMPLOYEES employees1;
+        private EMPLOYEESadd_revised employeeSadd_revised1;
+        private EMPLOYEESupdate_revised employeeSupdate_revised1;
+        private EMPLOYEESdelete employeeSdelete2;
+        private dashboard dashboard1;
+        private btn_one btn_one10;
     }
 }
