@@ -5,12 +5,13 @@ namespace EMS
         public forms1(dashboard dashboard)
         {
             InitializeComponent();
-            //hideSubMenu();
+            hideSubMenu();
+            hideshowAttendanceRepSubMenu();
 
             pnl_IndicatorDashboard.Show();
             pnl_IndicatorAttendance.Hide();
             pnl_IndicatorEmployees.Hide();
-
+            
             //dashboard1.BringToFront();
 
         }
@@ -19,10 +20,16 @@ namespace EMS
         {
             employeesPnl.Visible = false;
             attendancePnl.Visible = false;
+            //attendanceReport_SubSubPnl.Visible = false;
         }
-        
 
-        
+        private void hideshowAttendanceRepSubMenu()
+        {
+            //employeesPnl.Visible = false;
+            //attendancePnl.Visible = false;
+            attendanceReport_SubSubPnl.Visible = false;
+        }
+
         private void showSubMenu(Panel subMenu)
         {
             if (subMenu.Visible == false)
@@ -33,6 +40,19 @@ namespace EMS
             else
             {
                 subMenu.Visible = false;
+            }
+        }
+
+        private void showAttendanceRepSubMenu(Panel attendanceReport_SubSubPnl)
+        {
+            if (attendanceReport_SubSubPnl.Visible == false)
+            {
+                hideshowAttendanceRepSubMenu();
+                attendanceReport_SubSubPnl.Visible = true;
+            }
+            else
+            {
+                attendanceReport_SubSubPnl.Visible = false;
             }
         }
 
@@ -271,12 +291,12 @@ namespace EMS
 
             //dashboard1.BringToFront();
 
-            //hideSubMenu();
+            hideSubMenu();
         }
         private void button17_Click(object sender, EventArgs e)
         {
             //ATTENDANCEdutyduration1.Show();   wag delete 
-            //hideSubMenu();
+            hideSubMenu();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -395,7 +415,6 @@ namespace EMS
         private void btn_one3_Click(object sender, EventArgs e)
         {
             //employeeSadd_revised1.BringToFront();
-
         }
 
         private void btn_one3_Click_1(object sender, EventArgs e)
@@ -422,12 +441,50 @@ namespace EMS
 
         private void button3_Click_1(object sender, EventArgs e)
         {
+            
             showSubMenu(attendancePnl);
+
+            pnl_IndicatorEmployees.Hide();
+            pnl_IndicatorAttendance.Show();
+            pnl_IndicatorDashboard.Hide();
         }
 
         private void button12_Click_1(object sender, EventArgs e)
         {
-            showSubMenu(attendanceReport_SubSubPnl);
+            //showSubMenu(attendanceReport_SubSubPnl);
+            showAttendanceRepSubMenu(attendanceReport_SubSubPnl);
+            //attendanceReport_SubSubPnl.Visible = true;
+
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button8_Click_1(object sender, EventArgs e)
+        {
+            attendanceReport_SubSubPnl.Visible = false;
+        }
+
+        private void button7_Click_1(object sender, EventArgs e)
+        {
+            attendanceReport_SubSubPnl.Visible = false;
+        }
+
+        private void button9_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void attendanceReport_SubSubPnl_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

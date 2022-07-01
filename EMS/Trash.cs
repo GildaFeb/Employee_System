@@ -16,5 +16,10 @@ namespace EMS
         {
             InitializeComponent();
         }
+
+        private void btnEmployees_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
