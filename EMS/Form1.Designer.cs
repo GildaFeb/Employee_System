@@ -56,6 +56,7 @@
             this.employeeAdd2 = new EMS.employeeAdd();
             this.employeeSdelete2 = new EMS.EMPLOYEESdelete();
             this.employeeSupdate2 = new EMS.EMPLOYEESupdate();
+            this.employeeSadd_revised1 = new EMS.EMPLOYEESadd_revised();
             this.panel1.SuspendLayout();
             this.pnl_IndicatorAttendance.SuspendLayout();
             this.pnl_IndicatorEmployees.SuspendLayout();
@@ -423,10 +424,19 @@
             // 
             // employeeSupdate2
             // 
+            this.employeeSupdate2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
             this.employeeSupdate2.Location = new System.Drawing.Point(347, 0);
             this.employeeSupdate2.Name = "employeeSupdate2";
             this.employeeSupdate2.Size = new System.Drawing.Size(1944, 1291);
             this.employeeSupdate2.TabIndex = 19;
+            // 
+            // employeeSadd_revised1
+            // 
+            this.employeeSadd_revised1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.employeeSadd_revised1.Location = new System.Drawing.Point(347, 0);
+            this.employeeSadd_revised1.Name = "employeeSadd_revised1";
+            this.employeeSadd_revised1.Size = new System.Drawing.Size(1944, 1291);
+            this.employeeSadd_revised1.TabIndex = 20;
             // 
             // forms1
             // 
@@ -434,6 +444,7 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(1354, 733);
+            this.Controls.Add(this.employeeSadd_revised1);
             this.Controls.Add(this.employeeSupdate2);
             this.Controls.Add(this.employeeSdelete2);
             this.Controls.Add(this.employeeAdd2);
@@ -492,5 +503,6 @@
         private employeeAdd employeeAdd2;
         private EMPLOYEESdelete employeeSdelete2;
         private EMPLOYEESupdate employeeSupdate2;
+        private EMPLOYEESadd_revised employeeSadd_revised1;
     }
 }

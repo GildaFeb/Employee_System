@@ -385,5 +385,11 @@ namespace EMS
         {
 
         }
+
+        private void btn_one3_Click(object sender, EventArgs e)
+        {
+            employeeSadd_revised1.BringToFront();
+
+        }
     }
 }
