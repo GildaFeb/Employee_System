@@ -10,21 +10,17 @@ using System.Windows.Forms;
 
 namespace EMS
 {
-    public partial class verificationEmpUpdate : Form
+    public partial class EMPLOYEESupdate_revised : UserControl
     {
-        public verificationEmpUpdate()
+        public EMPLOYEESupdate_revised()
         {
             InitializeComponent();
         }
 
-        private void btn_one1_Click(object sender, EventArgs e)
+        private void btn_one3_Click(object sender, EventArgs e)
         {
-            this.Close();   
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
+            verificationEmpUpdate verificationEmpUpdate = new verificationEmpUpdate();
+            verificationEmpUpdate.Show();
         }
     }
 }

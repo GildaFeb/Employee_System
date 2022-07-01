@@ -37,6 +37,9 @@
     <Compile Update="EMPLOYEESupdate.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="EMPLOYEESupdate_revised.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="errorEMPadd.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -5,22 +5,24 @@ namespace EMS
         public forms1(dashboard dashboard)
         {
             InitializeComponent();
-            hideSubMenu();
+            //hideSubMenu();
 
             pnl_IndicatorDashboard.Show();
             pnl_IndicatorAttendance.Hide();
             pnl_IndicatorEmployees.Hide();
 
-            dashboard1.BringToFront();
+            //dashboard1.BringToFront();
 
         }
-
+        
         private void hideSubMenu()
         {
             employeesPnl.Visible = false;
             attendancePnl.Visible = false;
         }
+        
 
+        
         private void showSubMenu(Panel subMenu)
         {
             if (subMenu.Visible == false)
@@ -42,23 +44,23 @@ namespace EMS
             pnl_IndicatorAttendance.Hide();
             pnl_IndicatorDashboard.Hide();
 
-            employees1.BringToFront();
+            //employees1.BringToFront();
 
         }
 
         private void subBtn_AddEmp_Click(object sender, EventArgs e)
         {
-            employeeAdd2.BringToFront();
+            //employeeSadd_revised1.BringToFront();
         }
 
         private void subBtn_UpdateEmp_Click(object sender, EventArgs e)
         {
-            employeeSupdate2.BringToFront();
+            //employeeSupdate_revised1.BringToFront();
         }
 
         private void subBtn_SearchEmp_Click(object sender, EventArgs e)
         {
-            employeeSdelete2.BringToFront();
+            //employeeSdelete2.BringToFront();
         }
 
         private void app_bg_load(object sender, EventArgs e)
@@ -243,7 +245,7 @@ namespace EMS
         private void btnAttendance_Click(object sender, EventArgs e)
         {
             showSubMenu(attendancePnl);
-
+            
             pnl_IndicatorAttendance.Show();
             pnl_IndicatorDashboard.Hide();
             pnl_IndicatorEmployees.Hide();
@@ -267,9 +269,9 @@ namespace EMS
             pnl_IndicatorAttendance.Hide();
             pnl_IndicatorEmployees.Hide();
 
-            dashboard1.BringToFront();
+            //dashboard1.BringToFront();
 
-            hideSubMenu();
+            //hideSubMenu();
         }
         private void button17_Click(object sender, EventArgs e)
         {
@@ -288,7 +290,11 @@ namespace EMS
 
         private void button19_Click(object sender, EventArgs e)
         {
+            showSubMenu(attendancePnl);
+            showSubMenu(sub_DutyDurationPnl);
 
+            pnl_IndicatorDashboard.Hide();
+            pnl_IndicatorEmployees.Hide();
         }
 
         private void button2_Click_1(object sender, EventArgs e)
@@ -306,6 +312,8 @@ namespace EMS
 
         }
 
+        /*
+        // Function to CLOSE ALL SUBMENUS IF ANOTHER SUBMENU IS OPENED
         private Form activeForm = null;
         private void openBackPanel(Form backPanel)
         {
@@ -320,6 +328,7 @@ namespace EMS
             backPanel.BringToFront();
             backPanel.Show();
         }
+        */
 
         private void employeeAdd1_Load(object sender, EventArgs e)
         {
@@ -388,7 +397,22 @@ namespace EMS
 
         private void btn_one3_Click(object sender, EventArgs e)
         {
-            employeeSadd_revised1.BringToFront();
+            //employeeSadd_revised1.BringToFront();
+
+        }
+
+        private void btn_one3_Click_1(object sender, EventArgs e)
+        {
+            //employeeSadd_revised1.BringToFront();
+        }
+
+        private void btn_one5_Click(object sender, EventArgs e)
+        {
+            //employeeSupdate_revised1.BringToFront();
+        }
+
+        private void panel2_Paint_4(object sender, PaintEventArgs e)
+        {
 
         }
     }

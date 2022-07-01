@@ -196,5 +196,11 @@ namespace EMS
         {
 
         }
+
+        private void btn_one3_Click_1(object sender, EventArgs e)
+        {
+            successEMPadd successEMPadd = new successEMPadd();
+            successEMPadd.Show();
+        }
     }
 }
