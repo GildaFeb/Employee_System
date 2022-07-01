@@ -286,15 +286,12 @@ namespace EMS
 
         private void button14_Click_1(object sender, EventArgs e)
         {
+            
         }
 
         private void button19_Click(object sender, EventArgs e)
         {
-            showSubMenu(attendancePnl);
-            showSubMenu(sub_DutyDurationPnl);
-
-            pnl_IndicatorDashboard.Hide();
-            pnl_IndicatorEmployees.Hide();
+            
         }
 
         private void button2_Click_1(object sender, EventArgs e)
@@ -312,7 +309,7 @@ namespace EMS
 
         }
 
-        /*
+        
         // Function to CLOSE ALL SUBMENUS IF ANOTHER SUBMENU IS OPENED
         private Form activeForm = null;
         private void openBackPanel(Form backPanel)
@@ -328,7 +325,7 @@ namespace EMS
             backPanel.BringToFront();
             backPanel.Show();
         }
-        */
+        
 
         private void employeeAdd1_Load(object sender, EventArgs e)
         {
@@ -414,6 +411,23 @@ namespace EMS
         private void panel2_Paint_4(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            pnl_IndicatorDashboard.Hide();
+            pnl_IndicatorEmployees.Hide();
+
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            showSubMenu(attendancePnl);
+        }
+
+        private void button12_Click_1(object sender, EventArgs e)
+        {
+            showSubMenu(attendanceReport_SubSubPnl);
         }
     }
 }
