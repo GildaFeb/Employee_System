@@ -53,6 +53,7 @@
             this.CmbxYear = new EMS.CComboBox();
             this.CmbxMonth = new EMS.CComboBox();
             this.btn_one1 = new EMS.btn_one();
+            this.btn_one3 = new EMS.btn_one();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableDelete_DGV)).BeginInit();
@@ -327,14 +328,30 @@
             this.btn_one1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_one1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_one1.ForeColor = System.Drawing.Color.White;
-            this.btn_one1.Location = new System.Drawing.Point(830, 676);
+            this.btn_one1.Location = new System.Drawing.Point(624, 676);
             this.btn_one1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_one1.Name = "btn_one1";
-            this.btn_one1.Size = new System.Drawing.Size(154, 38);
+            this.btn_one1.Size = new System.Drawing.Size(176, 38);
             this.btn_one1.TabIndex = 126;
             this.btn_one1.Text = "Add Duty Duration";
             this.btn_one1.UseVisualStyleBackColor = false;
             this.btn_one1.Click += new System.EventHandler(this.btn_one1_Click);
+            // 
+            // btn_one3
+            // 
+            this.btn_one3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(233)))), ((int)(((byte)(32)))));
+            this.btn_one3.FlatAppearance.BorderSize = 0;
+            this.btn_one3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_one3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_one3.ForeColor = System.Drawing.Color.Black;
+            this.btn_one3.Location = new System.Drawing.Point(818, 676);
+            this.btn_one3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_one3.Name = "btn_one3";
+            this.btn_one3.Size = new System.Drawing.Size(175, 38);
+            this.btn_one3.TabIndex = 129;
+            this.btn_one3.Text = "Update Duty Duration";
+            this.btn_one3.UseVisualStyleBackColor = false;
+            this.btn_one3.Click += new System.EventHandler(this.btn_one3_Click);
             // 
             // ATTENDANCEdutyduration
             // 
@@ -342,6 +359,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.Controls.Add(this.btn_one3);
             this.Controls.Add(this.CmbxMonth);
             this.Controls.Add(this.CmbxYear);
             this.Controls.Add(this.btn_one1);
@@ -355,7 +373,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "ATTENDANCEdutyduration";
-            this.Size = new System.Drawing.Size(955, 682);
+            this.Size = new System.Drawing.Size(921, 648);
             this.Load += new System.EventHandler(this.ATTENDANCEdepartment_Load);
             this.Enter += new System.EventHandler(this.ATTENDANCEdutyduration_Enter);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -388,5 +406,6 @@
         private CComboBox CmbxYear;
         private CComboBox CmbxMonth;
         private btn_one btn_one1;
+        private btn_one btn_one3;
     }
 }

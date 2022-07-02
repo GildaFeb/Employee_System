@@ -61,5 +61,11 @@ namespace EMS
             ATTENDANCEdutydurationAdd add = new ATTENDANCEdutydurationAdd();
             add.ShowDialog();
         }
+
+        private void btn_one3_Click(object sender, EventArgs e)
+        {
+            ATTENDANCEdutydurationUpd upd = new ATTENDANCEdutydurationUpd();
+            upd.ShowDialog();
+        }
     }
 }

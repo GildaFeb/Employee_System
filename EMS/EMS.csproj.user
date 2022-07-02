@@ -10,7 +10,7 @@
     <Compile Update="Pages\ATTENDANCEdutydurationAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="ATTENDANCEreport.cs">
+    <Compile Update="Pages\ATTENDANCEreport.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="btn_dashboard.cs">
@@ -63,6 +63,9 @@
     </Compile>
     <Compile Update="LoginForm\ToggleButton.cs">
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Pages\ATTENDANCEdutydurationUpd.cs">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Update="SALARY.cs">
       <SubType>UserControl</SubType>
