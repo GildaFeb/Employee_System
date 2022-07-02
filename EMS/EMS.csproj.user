@@ -4,6 +4,9 @@
     <Compile Update="ATTENDANCE.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="LoginForm\FormMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Pages\ATTENDANCEdutydurationAdd.cs">
       <SubType>Form</SubType>
     </Compile>

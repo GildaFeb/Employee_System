@@ -16,5 +16,15 @@ namespace EMS
         {
             InitializeComponent();
         }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DutyCancel_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }
