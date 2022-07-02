@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EMPLOYEESdelete));
             this.tableDelete_DGV = new System.Windows.Forms.DataGridView();
             this.delete_ChckBx = new System.Windows.Forms.DataGridViewCheckBoxColumn();
@@ -54,9 +54,9 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.Search = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btn_one2 = new EMS.btn_one();
             this.db_ViewCalendarBtn = new EMS.btn_one();
-            this.btn_one10 = new EMS.btn_one();
+            this.btn_one1 = new EMS.btn_one();
+            this.btn_one3 = new EMS.btn_one();
             ((System.ComponentModel.ISupportInitialize)(this.tableDelete_DGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -69,14 +69,14 @@
             this.tableDelete_DGV.BackgroundColor = System.Drawing.Color.White;
             this.tableDelete_DGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tableDelete_DGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Violet;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tableDelete_DGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.Violet;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tableDelete_DGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
             this.tableDelete_DGV.ColumnHeadersHeight = 29;
             this.tableDelete_DGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.tableDelete_DGV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -95,14 +95,14 @@
             this.contactNumber,
             this.emailAddress,
             this.contactNoInCaseOfEmergency});
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(51)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.tableDelete_DGV.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle20.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
+            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.tableDelete_DGV.DefaultCellStyle = dataGridViewCellStyle20;
             this.tableDelete_DGV.GridColor = System.Drawing.Color.DarkGray;
             this.tableDelete_DGV.Location = new System.Drawing.Point(125, 256);
             this.tableDelete_DGV.Name = "tableDelete_DGV";
@@ -115,10 +115,10 @@
             // delete_ChckBx
             // 
             this.delete_ChckBx.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.NullValue = false;
-            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.delete_ChckBx.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.NullValue = false;
+            dataGridViewCellStyle18.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.delete_ChckBx.DefaultCellStyle = dataGridViewCellStyle18;
             this.delete_ChckBx.HeaderText = "";
             this.delete_ChckBx.MinimumWidth = 6;
             this.delete_ChckBx.Name = "delete_ChckBx";
@@ -127,8 +127,8 @@
             // 
             // idNumber
             // 
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.idNumber.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.idNumber.DefaultCellStyle = dataGridViewCellStyle19;
             this.idNumber.HeaderText = "ID Number";
             this.idNumber.MinimumWidth = 6;
             this.idNumber.Name = "idNumber";
@@ -229,25 +229,26 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(125, 133);
+            this.label6.Font = new System.Drawing.Font("SF Pro Text", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label6.ForeColor = System.Drawing.Color.Gray;
+            this.label6.Location = new System.Drawing.Point(119, 161);
             this.label6.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(416, 22);
+            this.label6.Size = new System.Drawing.Size(776, 21);
             this.label6.TabIndex = 74;
-            this.label6.Text = "Search the ID number or check the check box";
+            this.label6.Text = "Search for the ID number or check the check box of the employee you want to delet" +
+    "e\r\n";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("SF Pro Display", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(51)))));
-            this.label1.Location = new System.Drawing.Point(117, 72);
+            this.label1.Location = new System.Drawing.Point(114, 104);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(348, 48);
+            this.label1.Size = new System.Drawing.Size(325, 48);
             this.label1.TabIndex = 73;
             this.label1.Text = "Delete employee";
             // 
@@ -284,21 +285,6 @@
             this.pictureBox1.TabIndex = 76;
             this.pictureBox1.TabStop = false;
             // 
-            // btn_one2
-            // 
-            this.btn_one2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
-            this.btn_one2.FlatAppearance.BorderSize = 0;
-            this.btn_one2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_one2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_one2.ForeColor = System.Drawing.Color.White;
-            this.btn_one2.Location = new System.Drawing.Point(1254, 872);
-            this.btn_one2.Name = "btn_one2";
-            this.btn_one2.Size = new System.Drawing.Size(176, 51);
-            this.btn_one2.TabIndex = 78;
-            this.btn_one2.Text = "Delete";
-            this.btn_one2.UseVisualStyleBackColor = false;
-            this.btn_one2.Click += new System.EventHandler(this.btn_one2_Click);
-            // 
             // db_ViewCalendarBtn
             // 
             this.db_ViewCalendarBtn.BackColor = System.Drawing.Color.White;
@@ -314,27 +300,43 @@
             this.db_ViewCalendarBtn.UseVisualStyleBackColor = false;
             this.db_ViewCalendarBtn.Click += new System.EventHandler(this.db_ViewCalendarBtn_Click);
             // 
-            // btn_one10
+            // btn_one1
             // 
-            this.btn_one10.BackColor = System.Drawing.Color.DarkGray;
-            this.btn_one10.FlatAppearance.BorderSize = 0;
-            this.btn_one10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_one10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_one10.ForeColor = System.Drawing.Color.Black;
-            this.btn_one10.Location = new System.Drawing.Point(125, 872);
-            this.btn_one10.Name = "btn_one10";
-            this.btn_one10.Size = new System.Drawing.Size(176, 51);
-            this.btn_one10.TabIndex = 124;
-            this.btn_one10.Text = "Clear";
-            this.btn_one10.UseVisualStyleBackColor = false;
+            this.btn_one1.BackColor = System.Drawing.Color.DarkGray;
+            this.btn_one1.Enabled = false;
+            this.btn_one1.FlatAppearance.BorderSize = 0;
+            this.btn_one1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_one1.Font = new System.Drawing.Font("SF Pro Display", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_one1.ForeColor = System.Drawing.Color.Black;
+            this.btn_one1.Location = new System.Drawing.Point(125, 873);
+            this.btn_one1.Name = "btn_one1";
+            this.btn_one1.Size = new System.Drawing.Size(135, 50);
+            this.btn_one1.TabIndex = 125;
+            this.btn_one1.Text = "Clear";
+            this.btn_one1.UseVisualStyleBackColor = false;
+            // 
+            // btn_one3
+            // 
+            this.btn_one3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
+            this.btn_one3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_one3.FlatAppearance.BorderSize = 0;
+            this.btn_one3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_one3.Font = new System.Drawing.Font("SF Pro Display", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_one3.ForeColor = System.Drawing.Color.White;
+            this.btn_one3.Location = new System.Drawing.Point(1295, 873);
+            this.btn_one3.Name = "btn_one3";
+            this.btn_one3.Size = new System.Drawing.Size(135, 50);
+            this.btn_one3.TabIndex = 126;
+            this.btn_one3.Text = "Cancel";
+            this.btn_one3.UseVisualStyleBackColor = false;
             // 
             // EMPLOYEESdelete
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
-            this.Controls.Add(this.btn_one10);
-            this.Controls.Add(this.btn_one2);
+            this.Controls.Add(this.btn_one1);
+            this.Controls.Add(this.btn_one3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.Search);
             this.Controls.Add(this.pictureBox1);
@@ -362,7 +364,6 @@
         private PictureBox pictureBox2;
         private TextBox Search;
         private PictureBox pictureBox1;
-        private btn_one btn_one2;
         private btn_one db_ViewCalendarBtn;
         private DataGridViewCheckBoxColumn delete_ChckBx;
         private DataGridViewTextBoxColumn idNumber;
@@ -379,6 +380,7 @@
         private DataGridViewTextBoxColumn contactNumber;
         private DataGridViewTextBoxColumn emailAddress;
         private DataGridViewTextBoxColumn contactNoInCaseOfEmergency;
-        private btn_one btn_one10;
+        private btn_one btn_one1;
+        private btn_one btn_one3;
     }
 }
