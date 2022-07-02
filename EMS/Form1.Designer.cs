@@ -76,6 +76,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(37)))), ((int)(((byte)(83)))));
+            this.panel1.Controls.Add(this.btn_one10);
             this.panel1.Controls.Add(this.pnl_IndicatorAttendance);
             this.panel1.Controls.Add(this.attendancePnl);
             this.panel1.Controls.Add(this.button3);
@@ -98,15 +99,9 @@
             this.btn_one10.Enabled = false;
             this.btn_one10.FlatAppearance.BorderSize = 0;
             this.btn_one10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-<<<<<<< HEAD
-            this.btn_one10.Font = new System.Drawing.Font("SF Pro Display", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_one10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(33)))), ((int)(((byte)(64)))));
-            this.btn_one10.Location = new System.Drawing.Point(511, 815);
-=======
             this.btn_one10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_one10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(33)))), ((int)(((byte)(64)))));
             this.btn_one10.Location = new System.Drawing.Point(114, 967);
->>>>>>> 8d52e9e125aa8ed5cc3f41f2da30149a827981b5
             this.btn_one10.Name = "btn_one10";
             this.btn_one10.Size = new System.Drawing.Size(135, 50);
             this.btn_one10.TabIndex = 158;
@@ -541,13 +536,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
-<<<<<<< HEAD
-            this.ClientSize = new System.Drawing.Size(1902, 1033);
-            this.Controls.Add(this.btn_one10);
-=======
             this.ClientSize = new System.Drawing.Size(1354, 733);
             this.Controls.Add(this.panel1);
->>>>>>> 8d52e9e125aa8ed5cc3f41f2da30149a827981b5
             this.Controls.Add(this.dashboard1);
             this.Controls.Add(this.employeeSdelete2);
             this.Controls.Add(this.employeeSupdate_revised1);
