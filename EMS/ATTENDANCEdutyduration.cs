@@ -20,6 +20,11 @@ namespace EMS
         private void ATTENDANCEdepartment_Load(object sender, EventArgs e)
         {
             visualsDatagridview();
+            
+            for(int i=1995; i<= 2022; i++)
+            {
+                CmbxYear.Items.Add(i);
+            }
         }
         void visualsDatagridview()
         {
@@ -39,6 +44,11 @@ namespace EMS
             //tableDelete_DGV.ColumnHeadersDefaultCellStyle.Font = new Font("MS Reference Sans Serif", 10);      
             tableDelete_DGV.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(63, 113, 202);
             tableDelete_DGV.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+        }
+
+        private void ATTENDANCEdutyduration_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

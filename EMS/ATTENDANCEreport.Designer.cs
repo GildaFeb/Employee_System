@@ -28,16 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ATTENDANCEreport));
             this.attndncrprt_DGV = new System.Windows.Forms.DataGridView();
             this.delete_ChckBx = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.Cmbx = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.EmpId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EmpName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dsgntn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -54,6 +53,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ClrReport = new EMS.btn_one();
             this.DelReport = new EMS.btn_one();
+            this.ComboYear = new EMS.CComboBox();
+            this.ComboMonth = new EMS.CComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.attndncrprt_DGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -63,25 +64,24 @@
             // 
             this.attndncrprt_DGV.AllowUserToResizeColumns = false;
             this.attndncrprt_DGV.AllowUserToResizeRows = false;
-            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.Black;
-            this.attndncrprt_DGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.attndncrprt_DGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.attndncrprt_DGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.attndncrprt_DGV.BackgroundColor = System.Drawing.Color.White;
             this.attndncrprt_DGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.attndncrprt_DGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.Violet;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.attndncrprt_DGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Violet;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.attndncrprt_DGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.attndncrprt_DGV.ColumnHeadersHeight = 29;
             this.attndncrprt_DGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.attndncrprt_DGV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.delete_ChckBx,
-            this.Cmbx,
             this.EmpId,
             this.EmpName,
             this.dsgntn,
@@ -90,56 +90,46 @@
             this.Leavecol,
             this.Ttlbr,
             this.Slry});
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(51)))));
-            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.attndncrprt_DGV.DefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.attndncrprt_DGV.DefaultCellStyle = dataGridViewCellStyle4;
             this.attndncrprt_DGV.GridColor = System.Drawing.Color.DarkGray;
-            this.attndncrprt_DGV.Location = new System.Drawing.Point(109, 192);
+            this.attndncrprt_DGV.Location = new System.Drawing.Point(109, 219);
             this.attndncrprt_DGV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.attndncrprt_DGV.Name = "attndncrprt_DGV";
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle17.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.attndncrprt_DGV.RowHeadersDefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.attndncrprt_DGV.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.attndncrprt_DGV.RowHeadersWidth = 51;
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.Black;
-            this.attndncrprt_DGV.RowsDefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            this.attndncrprt_DGV.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.attndncrprt_DGV.RowTemplate.Height = 29;
-            this.attndncrprt_DGV.Size = new System.Drawing.Size(1157, 418);
+            this.attndncrprt_DGV.Size = new System.Drawing.Size(1157, 431);
             this.attndncrprt_DGV.TabIndex = 1;
             this.attndncrprt_DGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.attndncrprt_DGV_CellContentClick);
             // 
             // delete_ChckBx
             // 
             this.delete_ChckBx.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.NullValue = false;
-            dataGridViewCellStyle15.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.delete_ChckBx.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.NullValue = false;
+            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.delete_ChckBx.DefaultCellStyle = dataGridViewCellStyle3;
             this.delete_ChckBx.HeaderText = "";
             this.delete_ChckBx.MinimumWidth = 6;
             this.delete_ChckBx.Name = "delete_ChckBx";
             this.delete_ChckBx.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.delete_ChckBx.Width = 26;
-            // 
-            // Cmbx
-            // 
-            this.Cmbx.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Cmbx.HeaderText = "Show by:";
-            this.Cmbx.Items.AddRange(new object[] {
-            "Month",
-            "Year"});
-            this.Cmbx.Name = "Cmbx";
-            this.Cmbx.Width = 130;
             // 
             // EmpId
             // 
@@ -203,7 +193,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(51)))));
-            this.label1.Location = new System.Drawing.Point(102, 54);
+            this.label1.Location = new System.Drawing.Point(108, 50);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(317, 39);
@@ -214,15 +204,14 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label6.Font = new System.Drawing.Font("SF Pro Text", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(107, 95);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(728, 18);
+            this.label6.Size = new System.Drawing.Size(666, 18);
             this.label6.TabIndex = 75;
-            this.label6.Text = "Kindly see below the monthly/yearly attendance of the employee with their corresp" +
-    "onding salary.";
+            this.label6.Text = "Kindly see below the attendance of the employee with their corresponding salary.";
             // 
             // db_ViewCalendarBtn
             // 
@@ -232,7 +221,7 @@
             this.db_ViewCalendarBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.db_ViewCalendarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.db_ViewCalendarBtn.ForeColor = System.Drawing.Color.White;
-            this.db_ViewCalendarBtn.Location = new System.Drawing.Point(109, 173);
+            this.db_ViewCalendarBtn.Location = new System.Drawing.Point(109, 196);
             this.db_ViewCalendarBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.db_ViewCalendarBtn.Name = "db_ViewCalendarBtn";
             this.db_ViewCalendarBtn.Size = new System.Drawing.Size(1157, 454);
@@ -282,7 +271,7 @@
             this.ClrReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ClrReport.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ClrReport.ForeColor = System.Drawing.Color.Black;
-            this.ClrReport.Location = new System.Drawing.Point(109, 654);
+            this.ClrReport.Location = new System.Drawing.Point(109, 674);
             this.ClrReport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ClrReport.Name = "ClrReport";
             this.ClrReport.Size = new System.Drawing.Size(154, 38);
@@ -297,7 +286,7 @@
             this.DelReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DelReport.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.DelReport.ForeColor = System.Drawing.Color.White;
-            this.DelReport.Location = new System.Drawing.Point(1097, 654);
+            this.DelReport.Location = new System.Drawing.Point(1097, 674);
             this.DelReport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.DelReport.Name = "DelReport";
             this.DelReport.Size = new System.Drawing.Size(154, 38);
@@ -305,11 +294,68 @@
             this.DelReport.Text = "Delete";
             this.DelReport.UseVisualStyleBackColor = false;
             // 
+            // ComboYear
+            // 
+            this.ComboYear.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.ComboYear.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.ComboYear.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ComboYear.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(51)))));
+            this.ComboYear.BorderSize = 2;
+            this.ComboYear.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.ComboYear.Font = new System.Drawing.Font("SF Pro Text", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.ComboYear.ForeColor = System.Drawing.Color.Black;
+            this.ComboYear.IconColor = System.Drawing.Color.Blue;
+            this.ComboYear.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
+            this.ComboYear.ListTextColor = System.Drawing.Color.DimGray;
+            this.ComboYear.Location = new System.Drawing.Point(118, 161);
+            this.ComboYear.MinimumSize = new System.Drawing.Size(200, 30);
+            this.ComboYear.Name = "ComboYear";
+            this.ComboYear.Padding = new System.Windows.Forms.Padding(2);
+            this.ComboYear.Size = new System.Drawing.Size(200, 30);
+            this.ComboYear.TabIndex = 127;
+            this.ComboYear.Texts = "Show by year of:";
+            // 
+            // ComboMonth
+            // 
+            this.ComboMonth.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.ComboMonth.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.ComboMonth.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ComboMonth.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(51)))));
+            this.ComboMonth.BorderSize = 2;
+            this.ComboMonth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.ComboMonth.Font = new System.Drawing.Font("SF Pro Text", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.ComboMonth.ForeColor = System.Drawing.Color.Black;
+            this.ComboMonth.IconColor = System.Drawing.Color.Blue;
+            this.ComboMonth.Items.AddRange(new object[] {
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"});
+            this.ComboMonth.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
+            this.ComboMonth.ListTextColor = System.Drawing.Color.DimGray;
+            this.ComboMonth.Location = new System.Drawing.Point(118, 125);
+            this.ComboMonth.MinimumSize = new System.Drawing.Size(200, 30);
+            this.ComboMonth.Name = "ComboMonth";
+            this.ComboMonth.Padding = new System.Windows.Forms.Padding(2);
+            this.ComboMonth.Size = new System.Drawing.Size(200, 30);
+            this.ComboMonth.TabIndex = 127;
+            this.ComboMonth.Texts = "Show by month of:";
+            // 
             // ATTENDANCEreport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.Controls.Add(this.ComboMonth);
+            this.Controls.Add(this.ComboYear);
             this.Controls.Add(this.ClrReport);
             this.Controls.Add(this.DelReport);
             this.Controls.Add(this.pictureBox2);
@@ -334,16 +380,6 @@
         #endregion
 
         private DataGridView attndncrprt_DGV;
-        private DataGridViewCheckBoxColumn delete_ChckBx;
-        private DataGridViewComboBoxColumn Cmbx;
-        private DataGridViewTextBoxColumn EmpId;
-        private DataGridViewTextBoxColumn EmpName;
-        private DataGridViewTextBoxColumn dsgntn;
-        private DataGridViewTextBoxColumn Absnt;
-        private DataGridViewTextBoxColumn Prsnt;
-        private DataGridViewTextBoxColumn Leavecol;
-        private DataGridViewTextBoxColumn Ttlbr;
-        private DataGridViewTextBoxColumn Slry;
         private Label label1;
         private Label label6;
         private btn_one db_ViewCalendarBtn;
@@ -352,5 +388,16 @@
         private PictureBox pictureBox1;
         private btn_one ClrReport;
         private btn_one DelReport;
+        private CComboBox ComboYear;
+        private CComboBox ComboMonth;
+        private DataGridViewCheckBoxColumn delete_ChckBx;
+        private DataGridViewTextBoxColumn EmpId;
+        private DataGridViewTextBoxColumn EmpName;
+        private DataGridViewTextBoxColumn dsgntn;
+        private DataGridViewTextBoxColumn Absnt;
+        private DataGridViewTextBoxColumn Prsnt;
+        private DataGridViewTextBoxColumn Leavecol;
+        private DataGridViewTextBoxColumn Ttlbr;
+        private DataGridViewTextBoxColumn Slry;
     }
 }

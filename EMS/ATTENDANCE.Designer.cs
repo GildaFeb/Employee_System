@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ATTENDANCE));
             this.employeesTitlePage = new System.Windows.Forms.Label();
             this.timeTmr_Attendance = new System.Windows.Forms.Timer(this.components);
             this.clockLbl_Attendance = new System.Windows.Forms.Label();
@@ -103,6 +104,7 @@
             this.btn_one1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_one1.Font = new System.Drawing.Font("SF Pro Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_one1.ForeColor = System.Drawing.Color.White;
+            this.btn_one1.Image = ((System.Drawing.Image)(resources.GetObject("btn_one1.Image")));
             this.btn_one1.Location = new System.Drawing.Point(212, 349);
             this.btn_one1.Name = "btn_one1";
             this.btn_one1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 45);
