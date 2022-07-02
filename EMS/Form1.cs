@@ -487,7 +487,6 @@ namespace EMS
 
         private void button10_Click(object sender, EventArgs e)
         {
-
         }
 
         private void attendanceReport_SubSubPnl_Paint(object sender, PaintEventArgs e)

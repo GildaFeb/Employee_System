@@ -4,6 +4,9 @@
     <Compile Update="ATTENDANCE.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="Pages\ATTENDANCEdutydurationAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="ATTENDANCEreport.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -46,8 +49,17 @@
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="LoginForms\CComboBox.cs">
+    <Compile Update="LoginForm\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="LoginForm\CComboBox.cs">
       <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="LoginForm\TextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="LoginForm\ToggleButton.cs">
+      <SubType>Component</SubType>
     </Compile>
     <Compile Update="SALARY.cs">
       <SubType>UserControl</SubType>
@@ -64,7 +76,7 @@
     <Compile Update="UserControl2.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="ATTENDANCEdutyduration.cs">
+    <Compile Update="Pages\ATTENDANCEdutyduration.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="verificationEmpDelete.cs">

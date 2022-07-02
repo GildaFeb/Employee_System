@@ -52,6 +52,7 @@
             this.btn_one2 = new EMS.btn_one();
             this.CmbxYear = new EMS.CComboBox();
             this.CmbxMonth = new EMS.CComboBox();
+            this.btn_one1 = new EMS.btn_one();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableDelete_DGV)).BeginInit();
@@ -63,7 +64,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(51)))));
-            this.label1.Location = new System.Drawing.Point(108, 50);
+            this.label1.Location = new System.Drawing.Point(63, 50);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(238, 39);
@@ -76,7 +77,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("SF Pro Text", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(113, 89);
+            this.label2.Location = new System.Drawing.Point(68, 89);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(567, 18);
@@ -87,20 +88,21 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.White;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(896, 74);
+            this.pictureBox2.Location = new System.Drawing.Point(830, 76);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(31, 21);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 80;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // Searchbox
             // 
             this.Searchbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Searchbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Searchbox.ForeColor = System.Drawing.Color.DarkGray;
-            this.Searchbox.Location = new System.Drawing.Point(933, 74);
+            this.Searchbox.Location = new System.Drawing.Point(867, 76);
             this.Searchbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Searchbox.Name = "Searchbox";
             this.Searchbox.Size = new System.Drawing.Size(298, 19);
@@ -111,7 +113,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(882, 63);
+            this.pictureBox1.Location = new System.Drawing.Point(796, 68);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(369, 39);
@@ -127,7 +129,7 @@
             this.db_ViewCalendarBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.db_ViewCalendarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.db_ViewCalendarBtn.ForeColor = System.Drawing.Color.White;
-            this.db_ViewCalendarBtn.Location = new System.Drawing.Point(109, 196);
+            this.db_ViewCalendarBtn.Location = new System.Drawing.Point(23, 204);
             this.db_ViewCalendarBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.db_ViewCalendarBtn.Name = "db_ViewCalendarBtn";
             this.db_ViewCalendarBtn.Size = new System.Drawing.Size(1142, 454);
@@ -170,7 +172,7 @@
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.tableDelete_DGV.DefaultCellStyle = dataGridViewCellStyle4;
             this.tableDelete_DGV.GridColor = System.Drawing.Color.DarkGray;
-            this.tableDelete_DGV.Location = new System.Drawing.Point(109, 215);
+            this.tableDelete_DGV.Location = new System.Drawing.Point(23, 228);
             this.tableDelete_DGV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableDelete_DGV.Name = "tableDelete_DGV";
             this.tableDelete_DGV.RowHeadersWidth = 51;
@@ -237,7 +239,7 @@
             this.Clearbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Clearbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Clearbtn.ForeColor = System.Drawing.Color.Black;
-            this.Clearbtn.Location = new System.Drawing.Point(109, 677);
+            this.Clearbtn.Location = new System.Drawing.Point(33, 678);
             this.Clearbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Clearbtn.Name = "Clearbtn";
             this.Clearbtn.Size = new System.Drawing.Size(154, 38);
@@ -252,7 +254,7 @@
             this.btn_one2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_one2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_one2.ForeColor = System.Drawing.Color.White;
-            this.btn_one2.Location = new System.Drawing.Point(1097, 677);
+            this.btn_one2.Location = new System.Drawing.Point(1008, 676);
             this.btn_one2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_one2.Name = "btn_one2";
             this.btn_one2.Size = new System.Drawing.Size(154, 38);
@@ -273,7 +275,7 @@
             this.CmbxYear.IconColor = System.Drawing.Color.Blue;
             this.CmbxYear.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
             this.CmbxYear.ListTextColor = System.Drawing.Color.DimGray;
-            this.CmbxYear.Location = new System.Drawing.Point(113, 160);
+            this.CmbxYear.Location = new System.Drawing.Point(68, 160);
             this.CmbxYear.MinimumSize = new System.Drawing.Size(150, 30);
             this.CmbxYear.Name = "CmbxYear";
             this.CmbxYear.Padding = new System.Windows.Forms.Padding(2);
@@ -310,7 +312,7 @@
             "December"});
             this.CmbxMonth.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
             this.CmbxMonth.ListTextColor = System.Drawing.Color.DimGray;
-            this.CmbxMonth.Location = new System.Drawing.Point(113, 124);
+            this.CmbxMonth.Location = new System.Drawing.Point(68, 124);
             this.CmbxMonth.MinimumSize = new System.Drawing.Size(200, 30);
             this.CmbxMonth.Name = "CmbxMonth";
             this.CmbxMonth.Padding = new System.Windows.Forms.Padding(2);
@@ -318,13 +320,31 @@
             this.CmbxMonth.TabIndex = 128;
             this.CmbxMonth.Texts = "Show by month of:";
             // 
+            // btn_one1
+            // 
+            this.btn_one1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
+            this.btn_one1.FlatAppearance.BorderSize = 0;
+            this.btn_one1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_one1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_one1.ForeColor = System.Drawing.Color.White;
+            this.btn_one1.Location = new System.Drawing.Point(830, 676);
+            this.btn_one1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_one1.Name = "btn_one1";
+            this.btn_one1.Size = new System.Drawing.Size(154, 38);
+            this.btn_one1.TabIndex = 126;
+            this.btn_one1.Text = "Add Duty Duration";
+            this.btn_one1.UseVisualStyleBackColor = false;
+            this.btn_one1.Click += new System.EventHandler(this.btn_one1_Click);
+            // 
             // ATTENDANCEdutyduration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
             this.Controls.Add(this.CmbxMonth);
             this.Controls.Add(this.CmbxYear);
+            this.Controls.Add(this.btn_one1);
             this.Controls.Add(this.btn_one2);
             this.Controls.Add(this.Clearbtn);
             this.Controls.Add(this.tableDelete_DGV);
@@ -335,7 +355,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "ATTENDANCEdutyduration";
-            this.Size = new System.Drawing.Size(1361, 775);
+            this.Size = new System.Drawing.Size(955, 682);
             this.Load += new System.EventHandler(this.ATTENDANCEdepartment_Load);
             this.Enter += new System.EventHandler(this.ATTENDANCEdutyduration_Enter);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -367,5 +387,6 @@
         private DataGridViewTextBoxColumn DDduration;
         private CComboBox CmbxYear;
         private CComboBox CmbxMonth;
+        private btn_one btn_one1;
     }
 }
