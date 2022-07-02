@@ -41,6 +41,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -187,11 +188,21 @@
             this.label1.TabIndex = 25;
             this.label1.Text = "Duty duration";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(591, 760);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(156, 20);
+            this.label2.TabIndex = 112;
+            this.label2.Text = "CURRENTLY EDITING...";
+            // 
             // ATTENDANCE
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.btn_one4);
@@ -224,5 +235,6 @@
         private PictureBox pictureBox3;
         private PictureBox pictureBox1;
         private Label label1;
+        private Label label2;
     }
 }
