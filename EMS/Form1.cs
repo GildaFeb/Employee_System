@@ -458,7 +458,7 @@ namespace EMS
 
         private void button12_Click_1(object sender, EventArgs e)
         {
-            //showSubMenu(attendanceReport_SubSubPnl);
+            attendancEreport1.BringToFront();
             showAttendanceRepSubMenu(attendanceReport_SubSubPnl);
             //attendanceReport_SubSubPnl.Visible = true;
 
@@ -476,6 +476,7 @@ namespace EMS
 
         private void button7_Click_1(object sender, EventArgs e)
         {
+            attendancEdutyduration1.BringToFront();
             attendanceReport_SubSubPnl.Visible = false;
         }
 

@@ -24,7 +24,10 @@ namespace EMS
 
         private void ATTENDANCEreport_Load(object sender, EventArgs e)
         {
-
+            for (int i = 1995; i <= 2022; i++)
+            {
+                ComboYear.Items.Add(i);
+            }
         }
     }
 }

@@ -154,48 +154,6 @@ C:\Users\gilda\OneDrive\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-wi
 C:\Users\gilda\OneDrive\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.pdb
 C:\Users\gilda\OneDrive\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.genruntimeconfig.cache
 C:\Users\gilda\OneDrive\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\ref\EMS.dll
-C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\bin\Debug\net6.0-windows\EMS.exe
-C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\bin\Debug\net6.0-windows\EMS.deps.json
-C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\bin\Debug\net6.0-windows\EMS.runtimeconfig.json
-C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\bin\Debug\net6.0-windows\EMS.dll
-C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\bin\Debug\net6.0-windows\EMS.pdb
-C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\bin\Debug\net6.0-windows\FireSharp.dll
-C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\bin\Debug\net6.0-windows\Google.Apis.dll
-C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\bin\Debug\net6.0-windows\Google.Apis.Auth.PlatformServices.dll
-C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\bin\Debug\net6.0-windows\Google.Apis.Auth.dll
-C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\bin\Debug\net6.0-windows\Google.Apis.Calendar.v3.dll
-C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\bin\Debug\net6.0-windows\Google.Apis.Core.dll
-C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\bin\Debug\net6.0-windows\Microsoft.Threading.Tasks.Extensions.Desktop.dll
-C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\bin\Debug\net6.0-windows\Microsoft.Threading.Tasks.Extensions.dll
-C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\bin\Debug\net6.0-windows\Microsoft.Threading.Tasks.dll
-C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\bin\Debug\net6.0-windows\System.Net.Http.Extensions.dll
-C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\bin\Debug\net6.0-windows\System.Net.Http.Primitives.dll
-C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
-C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.csproj.AssemblyReference.cache
-C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.ATTENDANCE.resources
-C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.btn_one.resources
-C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.dashboard.resources
-C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.EMPLOYEES.resources
-C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.employeeAdd.resources
-C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.EMPLOYEESdelete.resources
-C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.EMPLOYEESupdate.resources
-C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.forms1.resources
-C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.Properties.Resources.resources
-C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.SALARY.resources
-C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.Trash.resources
-C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.UserControl1.resources
-C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.UserControl2.resources
-C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.csproj.GenerateResource.cache
-C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.AssemblyInfoInputs.cache
-C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.AssemblyInfo.cs
-C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.csproj.CoreCompileInputs.cache
-C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.csproj.CopyComplete
-C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.dll
-C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\refint\EMS.dll
-C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.pdb
-C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.genruntimeconfig.cache
-C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\ref\EMS.dll
 C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\bin\Debug\net6.0-windows\EMS.exe
 C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\bin\Debug\net6.0-windows\EMS.deps.json
 C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\bin\Debug\net6.0-windows\EMS.runtimeconfig.json
@@ -240,13 +198,60 @@ C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\De
 C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\ref\EMS.dll
 C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.errorEMPadd.resources
 C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.successEMPadd.resources
-C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.errorEMPadd.resources
-C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.successEMPadd.resources
-C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.ATTENDANCEdutyduration.resources
-C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.ATTENDANCEreport.resources
 C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.ATTENDANCEdutyduration.resources
 C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.ATTENDANCEreport.resources
 C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.verificationEmpDelete.resources
 C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.verificationEmpUpdate.resources
 C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.EMPLOYEESadd_revised.resources
 C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.EMPLOYEESupdate_revised.resources
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\bin\Debug\net6.0-windows\EMS.exe
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\bin\Debug\net6.0-windows\EMS.deps.json
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\bin\Debug\net6.0-windows\EMS.runtimeconfig.json
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\bin\Debug\net6.0-windows\EMS.dll
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\bin\Debug\net6.0-windows\EMS.pdb
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\bin\Debug\net6.0-windows\FireSharp.dll
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\bin\Debug\net6.0-windows\Google.Apis.dll
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\bin\Debug\net6.0-windows\Google.Apis.Auth.PlatformServices.dll
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\bin\Debug\net6.0-windows\Google.Apis.Auth.dll
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\bin\Debug\net6.0-windows\Google.Apis.Calendar.v3.dll
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\bin\Debug\net6.0-windows\Google.Apis.Core.dll
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\bin\Debug\net6.0-windows\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\bin\Debug\net6.0-windows\Microsoft.Threading.Tasks.Extensions.dll
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\bin\Debug\net6.0-windows\Microsoft.Threading.Tasks.dll
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\bin\Debug\net6.0-windows\System.Net.Http.Extensions.dll
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\bin\Debug\net6.0-windows\System.Net.Http.Primitives.dll
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.csproj.AssemblyReference.cache
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.ATTENDANCE.resources
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.ATTENDANCEdutyduration.resources
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.ATTENDANCEreport.resources
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.btn_one.resources
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.dashboard.resources
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.EMPLOYEES.resources
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.employeeAdd.resources
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.EMPLOYEESadd_revised.resources
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.EMPLOYEESdelete.resources
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.EMPLOYEESupdate.resources
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.EMPLOYEESupdate_revised.resources
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.errorEMPadd.resources
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.forms1.resources
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.CComboBox.resources
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.Properties.Resources.resources
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.SALARY.resources
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.successEMPadd.resources
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.Trash.resources
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.UserControl1.resources
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.UserControl2.resources
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.verificationEmpDelete.resources
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.verificationEmpUpdate.resources
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.csproj.GenerateResource.cache
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.AssemblyInfoInputs.cache
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.AssemblyInfo.cs
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.csproj.CoreCompileInputs.cache
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.csproj.CopyComplete
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.dll
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\refint\EMS.dll
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.pdb
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.genruntimeconfig.cache
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\ref\EMS.dll
