@@ -22,7 +22,7 @@
     <Compile Update="ATTENDANCE\ATTENDANCEreport.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="btn_dashboard.cs">
+    <Compile Update="Dashboard\btn_dashboard.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Update="CircleButton.cs">
@@ -34,28 +34,28 @@
     <Compile Update="Class2.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Update="DASHBOARD.cs">
+    <Compile Update="Dashboard\DASHBOARD.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="EMPLOYEESadd.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="EMPLOYEES.cs">
+    <Compile Update="Employees\EMPLOYEES.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="EMPLOYEESadd_revised.cs">
+    <Compile Update="Employees\EMPLOYEESadd_revised.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="EMPLOYEESdelete.cs">
+    <Compile Update="Employees\EMPLOYEESdelete.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="EMPLOYEESupdate.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="EMPLOYEESupdate_revised.cs">
+    <Compile Update="Employees\EMPLOYEESupdate_revised.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="errorEMPadd.cs">
+    <Compile Update="Employees\errorEMPadd.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="MainForm.cs">
@@ -76,7 +76,7 @@
     <Compile Update="SALARY.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="successEMPadd.cs">
+    <Compile Update="Employees\successEMPadd.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Trash.cs">
@@ -91,10 +91,10 @@
     <Compile Update="ATTENDANCE\ATTENDANCEdutyduration.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="verificationEmpDelete.cs">
+    <Compile Update="Employees\verificationEmpDelete.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="verificationEmpUpdate.cs">
+    <Compile Update="Employees\verificationEmpUpdate.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
