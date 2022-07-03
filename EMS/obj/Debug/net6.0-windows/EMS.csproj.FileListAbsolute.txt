@@ -320,3 +320,7 @@ C:\Users\WELCOME\Desktop\COMP PROG FINAL PROJECT\Employee_System\Employee_System
 C:\Users\WELCOME\Desktop\COMP PROG FINAL PROJECT\Employee_System\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.pdb
 C:\Users\WELCOME\Desktop\COMP PROG FINAL PROJECT\Employee_System\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.genruntimeconfig.cache
 C:\Users\WELCOME\Desktop\COMP PROG FINAL PROJECT\Employee_System\Employee_System\EMS\obj\Debug\net6.0-windows\ref\EMS.dll
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.ATTENDANCEdutydurationAddREVISED.resources
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.ATTENDANCEdutydurationUpdREVISED.resources
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.successEMPdelete.resources
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.successEMPupdate.resources

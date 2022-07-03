@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.UpdEmpStatus = new EMS.CComboBox();
             this.UpdTimePickerOut = new System.Windows.Forms.DateTimePicker();
             this.UpdTimePickerIn = new System.Windows.Forms.DateTimePicker();
             this.UpdClear = new EMS.btn_one();
@@ -49,33 +48,8 @@
             this.LblStatus = new EMS.btn_one();
             this.LblTitle = new System.Windows.Forms.Label();
             this.btn_one14 = new EMS.btn_one();
+            this.UpdEmpStatus = new EMS.CComboBox();
             this.SuspendLayout();
-            // 
-            // UpdEmpStatus
-            // 
-            this.UpdEmpStatus.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.UpdEmpStatus.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.UpdEmpStatus.BackColor = System.Drawing.Color.White;
-            this.UpdEmpStatus.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            this.UpdEmpStatus.BorderSize = 2;
-            this.UpdEmpStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.UpdEmpStatus.Font = new System.Drawing.Font("SF Pro Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.UpdEmpStatus.ForeColor = System.Drawing.Color.Black;
-            this.UpdEmpStatus.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            this.UpdEmpStatus.Items.AddRange(new object[] {
-            "On Leave",
-            "Absent",
-            "Present"});
-            this.UpdEmpStatus.ListBackColor = System.Drawing.Color.DeepSkyBlue;
-            this.UpdEmpStatus.ListTextColor = System.Drawing.Color.Black;
-            this.UpdEmpStatus.Location = new System.Drawing.Point(866, 377);
-            this.UpdEmpStatus.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.UpdEmpStatus.MinimumSize = new System.Drawing.Size(229, 40);
-            this.UpdEmpStatus.Name = "UpdEmpStatus";
-            this.UpdEmpStatus.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.UpdEmpStatus.Size = new System.Drawing.Size(349, 40);
-            this.UpdEmpStatus.TabIndex = 201;
-            this.UpdEmpStatus.Texts = "The Employee is:";
             // 
             // UpdTimePickerOut
             // 
@@ -83,11 +57,12 @@
             this.UpdTimePickerOut.CustomFormat = "";
             this.UpdTimePickerOut.Font = new System.Drawing.Font("SF Pro Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.UpdTimePickerOut.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.UpdTimePickerOut.Location = new System.Drawing.Point(470, 601);
+            this.UpdTimePickerOut.Location = new System.Drawing.Point(411, 451);
+            this.UpdTimePickerOut.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.UpdTimePickerOut.MinDate = new System.DateTime(1995, 1, 1, 23, 59, 0, 0);
             this.UpdTimePickerOut.Name = "UpdTimePickerOut";
             this.UpdTimePickerOut.ShowUpDown = true;
-            this.UpdTimePickerOut.Size = new System.Drawing.Size(349, 29);
+            this.UpdTimePickerOut.Size = new System.Drawing.Size(306, 25);
             this.UpdTimePickerOut.TabIndex = 200;
             this.UpdTimePickerOut.Value = new System.DateTime(2022, 7, 25, 23, 59, 59, 0);
             // 
@@ -97,11 +72,12 @@
             this.UpdTimePickerIn.CustomFormat = "";
             this.UpdTimePickerIn.Font = new System.Drawing.Font("SF Pro Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.UpdTimePickerIn.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.UpdTimePickerIn.Location = new System.Drawing.Point(469, 493);
+            this.UpdTimePickerIn.Location = new System.Drawing.Point(410, 370);
+            this.UpdTimePickerIn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.UpdTimePickerIn.MinDate = new System.DateTime(1995, 1, 1, 23, 59, 0, 0);
             this.UpdTimePickerIn.Name = "UpdTimePickerIn";
             this.UpdTimePickerIn.ShowUpDown = true;
-            this.UpdTimePickerIn.Size = new System.Drawing.Size(349, 29);
+            this.UpdTimePickerIn.Size = new System.Drawing.Size(306, 25);
             this.UpdTimePickerIn.TabIndex = 199;
             this.UpdTimePickerIn.Value = new System.DateTime(2022, 7, 25, 23, 59, 59, 0);
             // 
@@ -113,9 +89,10 @@
             this.UpdClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.UpdClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.UpdClear.ForeColor = System.Drawing.Color.Black;
-            this.UpdClear.Location = new System.Drawing.Point(438, 913);
+            this.UpdClear.Location = new System.Drawing.Point(383, 685);
+            this.UpdClear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.UpdClear.Name = "UpdClear";
-            this.UpdClear.Size = new System.Drawing.Size(135, 51);
+            this.UpdClear.Size = new System.Drawing.Size(118, 38);
             this.UpdClear.TabIndex = 198;
             this.UpdClear.Text = "Clear";
             this.UpdClear.UseVisualStyleBackColor = false;
@@ -128,9 +105,10 @@
             this.UpdSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.UpdSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.UpdSave.ForeColor = System.Drawing.Color.White;
-            this.UpdSave.Location = new System.Drawing.Point(1086, 913);
+            this.UpdSave.Location = new System.Drawing.Point(950, 685);
+            this.UpdSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.UpdSave.Name = "UpdSave";
-            this.UpdSave.Size = new System.Drawing.Size(135, 51);
+            this.UpdSave.Size = new System.Drawing.Size(118, 38);
             this.UpdSave.TabIndex = 197;
             this.UpdSave.Text = "Save";
             this.UpdSave.UseVisualStyleBackColor = false;
@@ -141,10 +119,10 @@
             this.LblName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(216)))), ((int)(((byte)(0)))));
             this.LblName.Font = new System.Drawing.Font("SF Pro Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.LblName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.LblName.Location = new System.Drawing.Point(470, 181);
-            this.LblName.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.LblName.Location = new System.Drawing.Point(411, 136);
+            this.LblName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblName.Name = "LblName";
-            this.LblName.Size = new System.Drawing.Size(123, 18);
+            this.LblName.Size = new System.Drawing.Size(98, 14);
             this.LblName.TabIndex = 195;
             this.LblName.Text = "Employee Name";
             // 
@@ -154,10 +132,10 @@
             this.UpdLblOvertime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.UpdLblOvertime.Font = new System.Drawing.Font("SF Pro Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.UpdLblOvertime.ForeColor = System.Drawing.Color.White;
-            this.UpdLblOvertime.Location = new System.Drawing.Point(866, 452);
-            this.UpdLblOvertime.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.UpdLblOvertime.Location = new System.Drawing.Point(758, 339);
+            this.UpdLblOvertime.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.UpdLblOvertime.Name = "UpdLblOvertime";
-            this.UpdLblOvertime.Size = new System.Drawing.Size(74, 18);
+            this.UpdLblOvertime.Size = new System.Drawing.Size(59, 14);
             this.UpdLblOvertime.TabIndex = 193;
             this.UpdLblOvertime.Text = "Overtime";
             this.UpdLblOvertime.Click += new System.EventHandler(this.UpdLblOvertime_Click);
@@ -168,10 +146,10 @@
             this.UpdLblTimeOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.UpdLblTimeOut.Font = new System.Drawing.Font("SF Pro Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.UpdLblTimeOut.ForeColor = System.Drawing.Color.White;
-            this.UpdLblTimeOut.Location = new System.Drawing.Point(470, 564);
-            this.UpdLblTimeOut.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.UpdLblTimeOut.Location = new System.Drawing.Point(411, 423);
+            this.UpdLblTimeOut.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.UpdLblTimeOut.Name = "UpdLblTimeOut";
-            this.UpdLblTimeOut.Size = new System.Drawing.Size(71, 18);
+            this.UpdLblTimeOut.Size = new System.Drawing.Size(56, 14);
             this.UpdLblTimeOut.TabIndex = 192;
             this.UpdLblTimeOut.Text = "Time out";
             // 
@@ -181,10 +159,10 @@
             this.UpdLblDuration.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.UpdLblDuration.Font = new System.Drawing.Font("SF Pro Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.UpdLblDuration.ForeColor = System.Drawing.Color.White;
-            this.UpdLblDuration.Location = new System.Drawing.Point(866, 564);
-            this.UpdLblDuration.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.UpdLblDuration.Location = new System.Drawing.Point(758, 423);
+            this.UpdLblDuration.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.UpdLblDuration.Name = "UpdLblDuration";
-            this.UpdLblDuration.Size = new System.Drawing.Size(69, 18);
+            this.UpdLblDuration.Size = new System.Drawing.Size(56, 14);
             this.UpdLblDuration.TabIndex = 191;
             this.UpdLblDuration.Text = "Duration";
             // 
@@ -194,10 +172,10 @@
             this.UpdLlblTimeIn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.UpdLlblTimeIn.Font = new System.Drawing.Font("SF Pro Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.UpdLlblTimeIn.ForeColor = System.Drawing.Color.White;
-            this.UpdLlblTimeIn.Location = new System.Drawing.Point(470, 452);
-            this.UpdLlblTimeIn.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.UpdLlblTimeIn.Location = new System.Drawing.Point(411, 339);
+            this.UpdLlblTimeIn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.UpdLlblTimeIn.Name = "UpdLlblTimeIn";
-            this.UpdLlblTimeIn.Size = new System.Drawing.Size(61, 18);
+            this.UpdLlblTimeIn.Size = new System.Drawing.Size(48, 14);
             this.UpdLlblTimeIn.TabIndex = 190;
             this.UpdLlblTimeIn.Text = "Time in";
             // 
@@ -206,10 +184,11 @@
             this.UpdDutydate.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.UpdDutydate.CustomFormat = "";
             this.UpdDutydate.Font = new System.Drawing.Font("SF Pro Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.UpdDutydate.Location = new System.Drawing.Point(469, 384);
+            this.UpdDutydate.Location = new System.Drawing.Point(410, 288);
+            this.UpdDutydate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.UpdDutydate.MinDate = new System.DateTime(1995, 12, 25, 23, 59, 59, 0);
             this.UpdDutydate.Name = "UpdDutydate";
-            this.UpdDutydate.Size = new System.Drawing.Size(349, 29);
+            this.UpdDutydate.Size = new System.Drawing.Size(306, 25);
             this.UpdDutydate.TabIndex = 189;
             this.UpdDutydate.Value = new System.DateTime(2022, 7, 25, 23, 59, 59, 0);
             // 
@@ -219,10 +198,10 @@
             this.UpdLblStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.UpdLblStatus.Font = new System.Drawing.Font("SF Pro Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.UpdLblStatus.ForeColor = System.Drawing.Color.White;
-            this.UpdLblStatus.Location = new System.Drawing.Point(866, 342);
-            this.UpdLblStatus.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.UpdLblStatus.Location = new System.Drawing.Point(758, 256);
+            this.UpdLblStatus.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.UpdLblStatus.Name = "UpdLblStatus";
-            this.UpdLblStatus.Size = new System.Drawing.Size(53, 18);
+            this.UpdLblStatus.Size = new System.Drawing.Size(43, 14);
             this.UpdLblStatus.TabIndex = 188;
             this.UpdLblStatus.Text = "Status";
             // 
@@ -232,10 +211,10 @@
             this.UpdLblDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.UpdLblDate.Font = new System.Drawing.Font("SF Pro Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.UpdLblDate.ForeColor = System.Drawing.Color.White;
-            this.UpdLblDate.Location = new System.Drawing.Point(470, 342);
-            this.UpdLblDate.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.UpdLblDate.Location = new System.Drawing.Point(411, 256);
+            this.UpdLblDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.UpdLblDate.Name = "UpdLblDate";
-            this.UpdLblDate.Size = new System.Drawing.Size(94, 18);
+            this.UpdLblDate.Size = new System.Drawing.Size(76, 14);
             this.UpdLblDate.TabIndex = 187;
             this.UpdLblDate.Text = "Date of duty";
             // 
@@ -245,11 +224,11 @@
             this.UpdEmpName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.UpdEmpName.Font = new System.Drawing.Font("SF Pro Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.UpdEmpName.ForeColor = System.Drawing.Color.Black;
-            this.UpdEmpName.Location = new System.Drawing.Point(470, 220);
-            this.UpdEmpName.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.UpdEmpName.Location = new System.Drawing.Point(411, 165);
+            this.UpdEmpName.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.UpdEmpName.Multiline = true;
             this.UpdEmpName.Name = "UpdEmpName";
-            this.UpdEmpName.Size = new System.Drawing.Size(349, 32);
+            this.UpdEmpName.Size = new System.Drawing.Size(306, 24);
             this.UpdEmpName.TabIndex = 185;
             this.UpdEmpName.Text = " ";
             // 
@@ -258,11 +237,11 @@
             this.UpdLblId.AutoSize = true;
             this.UpdLblId.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(216)))), ((int)(((byte)(0)))));
             this.UpdLblId.Font = new System.Drawing.Font("SF Pro Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.UpdLblId.ForeColor = System.Drawing.Color.Gray;
-            this.UpdLblId.Location = new System.Drawing.Point(866, 181);
-            this.UpdLblId.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.UpdLblId.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.UpdLblId.Location = new System.Drawing.Point(758, 136);
+            this.UpdLblId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.UpdLblId.Name = "UpdLblId";
-            this.UpdLblId.Size = new System.Drawing.Size(95, 18);
+            this.UpdLblId.Size = new System.Drawing.Size(75, 14);
             this.UpdLblId.TabIndex = 186;
             this.UpdLblId.Text = "Employee Id";
             // 
@@ -272,11 +251,11 @@
             this.UpdEmpDuration.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.UpdEmpDuration.Font = new System.Drawing.Font("SF Pro Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.UpdEmpDuration.ForeColor = System.Drawing.Color.Black;
-            this.UpdEmpDuration.Location = new System.Drawing.Point(866, 600);
-            this.UpdEmpDuration.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.UpdEmpDuration.Location = new System.Drawing.Point(758, 452);
+            this.UpdEmpDuration.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.UpdEmpDuration.Multiline = true;
             this.UpdEmpDuration.Name = "UpdEmpDuration";
-            this.UpdEmpDuration.Size = new System.Drawing.Size(349, 32);
+            this.UpdEmpDuration.Size = new System.Drawing.Size(306, 24);
             this.UpdEmpDuration.TabIndex = 184;
             this.UpdEmpDuration.Text = " ";
             // 
@@ -286,11 +265,11 @@
             this.UpdEmpOvertime.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.UpdEmpOvertime.Font = new System.Drawing.Font("SF Pro Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.UpdEmpOvertime.ForeColor = System.Drawing.Color.Black;
-            this.UpdEmpOvertime.Location = new System.Drawing.Point(866, 490);
-            this.UpdEmpOvertime.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.UpdEmpOvertime.Location = new System.Drawing.Point(758, 370);
+            this.UpdEmpOvertime.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.UpdEmpOvertime.Multiline = true;
             this.UpdEmpOvertime.Name = "UpdEmpOvertime";
-            this.UpdEmpOvertime.Size = new System.Drawing.Size(349, 32);
+            this.UpdEmpOvertime.Size = new System.Drawing.Size(306, 24);
             this.UpdEmpOvertime.TabIndex = 183;
             this.UpdEmpOvertime.Text = " ";
             this.UpdEmpOvertime.TextChanged += new System.EventHandler(this.UpdEmpOvertime_TextChanged);
@@ -301,11 +280,11 @@
             this.UpdEmployeeId.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.UpdEmployeeId.Font = new System.Drawing.Font("SF Pro Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.UpdEmployeeId.ForeColor = System.Drawing.Color.Black;
-            this.UpdEmployeeId.Location = new System.Drawing.Point(866, 220);
-            this.UpdEmployeeId.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.UpdEmployeeId.Location = new System.Drawing.Point(758, 165);
+            this.UpdEmployeeId.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.UpdEmployeeId.Multiline = true;
             this.UpdEmployeeId.Name = "UpdEmployeeId";
-            this.UpdEmployeeId.Size = new System.Drawing.Size(349, 32);
+            this.UpdEmployeeId.Size = new System.Drawing.Size(306, 24);
             this.UpdEmployeeId.TabIndex = 182;
             this.UpdEmployeeId.Text = " ";
             // 
@@ -318,9 +297,10 @@
             this.LblStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LblStatus.Font = new System.Drawing.Font("SF Pro Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.LblStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(37)))), ((int)(((byte)(83)))));
-            this.LblStatus.Location = new System.Drawing.Point(409, 278);
+            this.LblStatus.Location = new System.Drawing.Point(358, 208);
+            this.LblStatus.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.LblStatus.Name = "LblStatus";
-            this.LblStatus.Size = new System.Drawing.Size(856, 629);
+            this.LblStatus.Size = new System.Drawing.Size(749, 472);
             this.LblStatus.TabIndex = 180;
             this.LblStatus.UseVisualStyleBackColor = false;
             // 
@@ -330,10 +310,10 @@
             this.LblTitle.BackColor = System.Drawing.Color.Transparent;
             this.LblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.LblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(37)))), ((int)(((byte)(83)))));
-            this.LblTitle.Location = new System.Drawing.Point(95, 101);
-            this.LblTitle.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.LblTitle.Location = new System.Drawing.Point(83, 76);
+            this.LblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblTitle.Name = "LblTitle";
-            this.LblTitle.Size = new System.Drawing.Size(736, 48);
+            this.LblTitle.Size = new System.Drawing.Size(608, 39);
             this.LblTitle.TabIndex = 179;
             this.LblTitle.Text = "Update duty duration of an employee";
             // 
@@ -346,16 +326,43 @@
             this.btn_one14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_one14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_one14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(37)))), ((int)(((byte)(83)))));
-            this.btn_one14.Location = new System.Drawing.Point(409, 157);
+            this.btn_one14.Location = new System.Drawing.Point(358, 118);
+            this.btn_one14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_one14.Name = "btn_one14";
-            this.btn_one14.Size = new System.Drawing.Size(856, 153);
+            this.btn_one14.Size = new System.Drawing.Size(749, 115);
             this.btn_one14.TabIndex = 194;
             this.btn_one14.UseVisualStyleBackColor = false;
             // 
+            // UpdEmpStatus
+            // 
+            this.UpdEmpStatus.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.UpdEmpStatus.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.UpdEmpStatus.BackColor = System.Drawing.Color.White;
+            this.UpdEmpStatus.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
+            this.UpdEmpStatus.BorderSize = 2;
+            this.UpdEmpStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.UpdEmpStatus.Font = new System.Drawing.Font("SF Pro Text", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.UpdEmpStatus.ForeColor = System.Drawing.Color.Black;
+            this.UpdEmpStatus.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
+            this.UpdEmpStatus.Items.AddRange(new object[] {
+            "On Leave",
+            "Absent",
+            "Present"});
+            this.UpdEmpStatus.ListBackColor = System.Drawing.Color.Silver;
+            this.UpdEmpStatus.ListTextColor = System.Drawing.Color.Black;
+            this.UpdEmpStatus.Location = new System.Drawing.Point(759, 286);
+            this.UpdEmpStatus.MinimumSize = new System.Drawing.Size(200, 30);
+            this.UpdEmpStatus.Name = "UpdEmpStatus";
+            this.UpdEmpStatus.Padding = new System.Windows.Forms.Padding(2);
+            this.UpdEmpStatus.Size = new System.Drawing.Size(305, 30);
+            this.UpdEmpStatus.TabIndex = 201;
+            this.UpdEmpStatus.Texts = "The Employee is:";
+            // 
             // ATTENDANCEdutydurationUpdREVISED
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
             this.Controls.Add(this.UpdEmpStatus);
             this.Controls.Add(this.UpdTimePickerOut);
             this.Controls.Add(this.UpdTimePickerIn);
@@ -377,16 +384,15 @@
             this.Controls.Add(this.LblStatus);
             this.Controls.Add(this.LblTitle);
             this.Controls.Add(this.btn_one14);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ATTENDANCEdutydurationUpdREVISED";
-            this.Size = new System.Drawing.Size(1555, 1033);
+            this.Size = new System.Drawing.Size(1361, 775);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private CComboBox UpdEmpStatus;
         private DateTimePicker UpdTimePickerOut;
         private DateTimePicker UpdTimePickerIn;
         private btn_one UpdClear;
@@ -407,5 +413,6 @@
         private btn_one LblStatus;
         private Label LblTitle;
         private btn_one btn_one14;
+        private CComboBox UpdEmpStatus;
     }
 }

@@ -41,10 +41,8 @@
             this.Usrnme = new System.Windows.Forms.Label();
             this.LogLblTitle = new System.Windows.Forms.Label();
             this.LblShwPass = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // LogClrBtn
@@ -233,19 +231,7 @@
             this.LblShwPass.TabIndex = 27;
             this.LblShwPass.Text = "Show Password";
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox3.Image = global::EMS.Properties.Resources.Employee;
-            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(439, 450);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 28;
-            this.pictureBox3.TabStop = false;
-            // 
-            // FormLogin
+            // LogForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -253,7 +239,6 @@
             this.ClientSize = new System.Drawing.Size(709, 450);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.LblShwPass);
             this.Controls.Add(this.LogClrBtn);
             this.Controls.Add(this.LogBtn);
@@ -270,14 +255,13 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.MaximizeBox = false;
-            this.Name = "FormLogin";
+            this.Name = "LogForm";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormLogin_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -298,6 +282,5 @@
         private Label Usrnme;
         private Label LogLblTitle;
         private Label LblShwPass;
-        private PictureBox pictureBox3;
     }
 }

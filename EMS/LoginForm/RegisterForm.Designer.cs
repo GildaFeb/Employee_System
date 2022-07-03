@@ -43,12 +43,9 @@
             this.RegClrBtn = new LoginForm.Button();
             this.RegAccLbl = new System.Windows.Forms.Label();
             this.LblBack = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.Headerbar = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,7 +54,7 @@
             this.LblTitle.AutoSize = true;
             this.LblTitle.Font = new System.Drawing.Font("MS Reference Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.LblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.LblTitle.Location = new System.Drawing.Point(475, 93);
+            this.LblTitle.Location = new System.Drawing.Point(462, 62);
             this.LblTitle.Name = "LblTitle";
             this.LblTitle.Size = new System.Drawing.Size(167, 34);
             this.LblTitle.TabIndex = 0;
@@ -68,7 +65,7 @@
             this.RegLblUser.AutoSize = true;
             this.RegLblUser.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.RegLblUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.RegLblUser.Location = new System.Drawing.Point(493, 142);
+            this.RegLblUser.Location = new System.Drawing.Point(480, 111);
             this.RegLblUser.Name = "RegLblUser";
             this.RegLblUser.Size = new System.Drawing.Size(79, 16);
             this.RegLblUser.TabIndex = 1;
@@ -84,7 +81,7 @@
             this.RegTxtUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.RegTxtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.RegTxtUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.RegTxtUsername.Location = new System.Drawing.Point(491, 161);
+            this.RegTxtUsername.Location = new System.Drawing.Point(478, 130);
             this.RegTxtUsername.Margin = new System.Windows.Forms.Padding(4);
             this.RegTxtUsername.Multiline = true;
             this.RegTxtUsername.Name = "RegTxtUsername";
@@ -102,7 +99,7 @@
             this.RegLblPass.AutoSize = true;
             this.RegLblPass.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.RegLblPass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.RegLblPass.Location = new System.Drawing.Point(491, 214);
+            this.RegLblPass.Location = new System.Drawing.Point(478, 183);
             this.RegLblPass.Name = "RegLblPass";
             this.RegLblPass.Size = new System.Drawing.Size(77, 16);
             this.RegLblPass.TabIndex = 1;
@@ -118,7 +115,7 @@
             this.RegTxtPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.RegTxtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.RegTxtPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.RegTxtPassword.Location = new System.Drawing.Point(491, 233);
+            this.RegTxtPassword.Location = new System.Drawing.Point(478, 202);
             this.RegTxtPassword.Margin = new System.Windows.Forms.Padding(4);
             this.RegTxtPassword.Multiline = false;
             this.RegTxtPassword.Name = "RegTxtPassword";
@@ -136,7 +133,7 @@
             this.RegLblCpass.AutoSize = true;
             this.RegLblCpass.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.RegLblCpass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.RegLblCpass.Location = new System.Drawing.Point(491, 288);
+            this.RegLblCpass.Location = new System.Drawing.Point(478, 257);
             this.RegLblCpass.Name = "RegLblCpass";
             this.RegLblCpass.Size = new System.Drawing.Size(139, 16);
             this.RegLblCpass.TabIndex = 4;
@@ -152,7 +149,7 @@
             this.RegTxtCpass.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.RegTxtCpass.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.RegTxtCpass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.RegTxtCpass.Location = new System.Drawing.Point(491, 307);
+            this.RegTxtCpass.Location = new System.Drawing.Point(478, 276);
             this.RegTxtCpass.Margin = new System.Windows.Forms.Padding(4);
             this.RegTxtCpass.Multiline = false;
             this.RegTxtCpass.Name = "RegTxtCpass";
@@ -169,7 +166,7 @@
             // 
             this.LblShowPass.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.LblShowPass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.LblShowPass.Location = new System.Drawing.Point(587, 346);
+            this.LblShowPass.Location = new System.Drawing.Point(574, 315);
             this.LblShowPass.Name = "LblShowPass";
             this.LblShowPass.Size = new System.Drawing.Size(134, 19);
             this.LblShowPass.TabIndex = 7;
@@ -179,7 +176,7 @@
             // 
             this.RegTogglePass.AutoSize = true;
             this.RegTogglePass.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.RegTogglePass.Location = new System.Drawing.Point(546, 343);
+            this.RegTogglePass.Location = new System.Drawing.Point(533, 312);
             this.RegTogglePass.MinimumSize = new System.Drawing.Size(45, 22);
             this.RegTogglePass.Name = "RegTogglePass";
             this.RegTogglePass.OffBackColor = System.Drawing.Color.Gray;
@@ -195,7 +192,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
             this.pictureBox1.Image = global::EMS.Properties.Resources.account_icon_8;
-            this.pictureBox1.Location = new System.Drawing.Point(679, 168);
+            this.pictureBox1.Location = new System.Drawing.Point(666, 137);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(20, 20);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -206,7 +203,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
             this.pictureBox2.Image = global::EMS.Properties.Resources.download_icon_lock_password_protect_safety_security_icon_1320086045132546966_512;
-            this.pictureBox2.Location = new System.Drawing.Point(679, 240);
+            this.pictureBox2.Location = new System.Drawing.Point(666, 209);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(20, 20);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -225,7 +222,7 @@
             this.RegBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RegBtn.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.RegBtn.ForeColor = System.Drawing.Color.White;
-            this.RegBtn.Location = new System.Drawing.Point(491, 390);
+            this.RegBtn.Location = new System.Drawing.Point(478, 359);
             this.RegBtn.Name = "RegBtn";
             this.RegBtn.Size = new System.Drawing.Size(216, 35);
             this.RegBtn.TabIndex = 11;
@@ -245,7 +242,7 @@
             this.RegClrBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RegClrBtn.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.RegClrBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.RegClrBtn.Location = new System.Drawing.Point(491, 431);
+            this.RegClrBtn.Location = new System.Drawing.Point(478, 400);
             this.RegClrBtn.Name = "RegClrBtn";
             this.RegClrBtn.Size = new System.Drawing.Size(216, 35);
             this.RegClrBtn.TabIndex = 11;
@@ -259,7 +256,7 @@
             this.RegAccLbl.AutoSize = true;
             this.RegAccLbl.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.RegAccLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.RegAccLbl.Location = new System.Drawing.Point(501, 483);
+            this.RegAccLbl.Location = new System.Drawing.Point(488, 452);
             this.RegAccLbl.Name = "RegAccLbl";
             this.RegAccLbl.Size = new System.Drawing.Size(198, 16);
             this.RegAccLbl.TabIndex = 4;
@@ -271,36 +268,18 @@
             this.LblBack.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LblBack.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.LblBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.LblBack.Location = new System.Drawing.Point(545, 508);
+            this.LblBack.Location = new System.Drawing.Point(532, 477);
             this.LblBack.Name = "LblBack";
             this.LblBack.Size = new System.Drawing.Size(115, 16);
             this.LblBack.TabIndex = 4;
             this.LblBack.Text = "Back to LOGIN";
             this.LblBack.Click += new System.EventHandler(this.label5_Click);
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::EMS.Properties.Resources.ezgif_com_gif_maker;
-            this.pictureBox3.Location = new System.Drawing.Point(0, 39);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(469, 506);
-            this.pictureBox3.TabIndex = 12;
-            this.pictureBox3.TabStop = false;
-            // 
-            // Headerbar
-            // 
-            this.Headerbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(187)))), ((int)(((byte)(198)))));
-            this.Headerbar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Headerbar.Location = new System.Drawing.Point(0, 0);
-            this.Headerbar.Name = "Headerbar";
-            this.Headerbar.Size = new System.Drawing.Size(719, 78);
-            this.Headerbar.TabIndex = 13;
-            // 
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
             this.pictureBox4.Image = global::EMS.Properties.Resources.download_icon_lock_password_protect_safety_security_icon_1320086045132546966_512;
-            this.pictureBox4.Location = new System.Drawing.Point(679, 314);
+            this.pictureBox4.Location = new System.Drawing.Point(666, 283);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(20, 20);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -312,10 +291,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(225)))), ((int)(((byte)(237)))));
-            this.ClientSize = new System.Drawing.Size(719, 540);
+            this.ClientSize = new System.Drawing.Size(715, 536);
             this.ControlBox = false;
-            this.Controls.Add(this.Headerbar);
-            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.RegClrBtn);
             this.Controls.Add(this.RegBtn);
             this.Controls.Add(this.pictureBox4);
@@ -342,7 +319,6 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmRegister_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -366,8 +342,6 @@
         private Button RegClrBtn;
         private Label RegAccLbl;
         private Label LblBack;
-        private PictureBox pictureBox3;
-        private Panel Headerbar;
         private PictureBox pictureBox4;
     }
 }

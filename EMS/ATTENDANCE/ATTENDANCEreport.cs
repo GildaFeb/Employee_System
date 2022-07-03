@@ -21,7 +21,7 @@ namespace EMS
         {
             for (int i = 1995; i <= 2022; i++)
             {
-                ComboYear.Items.Add(i);
+                CmbxYear.Items.Add(i);
             }
         }
 

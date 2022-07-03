@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\WELCOME\\Desktop\\COMP PROG FINAL PROJECT\\Employee_System\\Employee_System\\EMS\\EMS.csproj": {}
+    "C:\\Users\\Glynys\\Documents\\GitHub\\Employee_System\\EMS\\EMS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\WELCOME\\Desktop\\COMP PROG FINAL PROJECT\\Employee_System\\Employee_System\\EMS\\EMS.csproj": {
+    "C:\\Users\\Glynys\\Documents\\GitHub\\Employee_System\\EMS\\EMS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\WELCOME\\Desktop\\COMP PROG FINAL PROJECT\\Employee_System\\Employee_System\\EMS\\EMS.csproj",
+        "projectUniqueName": "C:\\Users\\Glynys\\Documents\\GitHub\\Employee_System\\EMS\\EMS.csproj",
         "projectName": "EMS",
-        "projectPath": "C:\\Users\\WELCOME\\Desktop\\COMP PROG FINAL PROJECT\\Employee_System\\Employee_System\\EMS\\EMS.csproj",
-        "packagesPath": "C:\\Users\\WELCOME\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\WELCOME\\Desktop\\COMP PROG FINAL PROJECT\\Employee_System\\Employee_System\\EMS\\obj\\",
+        "projectPath": "C:\\Users\\Glynys\\Documents\\GitHub\\Employee_System\\EMS\\EMS.csproj",
+        "packagesPath": "C:\\Users\\Glynys\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Glynys\\Documents\\GitHub\\Employee_System\\EMS\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\WELCOME\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Glynys\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://www.nuget.org/api/v2/": {}
         },
         "frameworks": {
           "net6.0-windows7.0": {
@@ -71,7 +71,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }
