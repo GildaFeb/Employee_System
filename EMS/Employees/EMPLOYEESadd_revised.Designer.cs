@@ -563,7 +563,7 @@
             // 
             // btn_one10
             // 
-            this.btn_one10.BackColor = System.Drawing.Color.DarkGray;
+            this.btn_one10.BackColor = System.Drawing.Color.White;
             this.btn_one10.Enabled = false;
             this.btn_one10.FlatAppearance.BorderSize = 0;
             this.btn_one10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -573,7 +573,7 @@
             this.btn_one10.Name = "btn_one10";
             this.btn_one10.Size = new System.Drawing.Size(135, 50);
             this.btn_one10.TabIndex = 115;
-            this.btn_one10.Text = "Clear";
+            this.btn_one10.Text = "Search";
             this.btn_one10.UseVisualStyleBackColor = false;
             // 
             // btn_one2
@@ -588,7 +588,7 @@
             this.btn_one2.Name = "btn_one2";
             this.btn_one2.Size = new System.Drawing.Size(135, 50);
             this.btn_one2.TabIndex = 116;
-            this.btn_one2.Text = "Cancel";
+            this.btn_one2.Text = "Clear";
             this.btn_one2.UseVisualStyleBackColor = false;
             // 
             // btn_one3

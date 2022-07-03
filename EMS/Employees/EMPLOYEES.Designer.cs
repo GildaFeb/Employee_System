@@ -71,7 +71,7 @@
             // 
             // emp_Updatebtn
             // 
-            this.emp_Updatebtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(208)))), ((int)(((byte)(43)))));
+            this.emp_Updatebtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(216)))), ((int)(((byte)(0)))));
             this.emp_Updatebtn.FlatAppearance.BorderSize = 0;
             this.emp_Updatebtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.emp_Updatebtn.Font = new System.Drawing.Font("SF Pro Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);

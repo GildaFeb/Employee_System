@@ -77,5 +77,15 @@ namespace EMS
                 CMessageBox.Show("Selected Duty duration data deleted.");
             }
         }
+
+        private void tableDelete_DGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void CmbxMonth_OnSelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

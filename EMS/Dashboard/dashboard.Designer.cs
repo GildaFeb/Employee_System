@@ -60,21 +60,18 @@
             this.label24 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.btn_one3 = new EMS.btn_one();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -157,7 +154,7 @@
             // 
             // db_ViewWelcomeBtn
             // 
-            this.db_ViewWelcomeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(233)))), ((int)(((byte)(32)))));
+            this.db_ViewWelcomeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(216)))), ((int)(((byte)(0)))));
             this.db_ViewWelcomeBtn.FlatAppearance.BorderSize = 0;
             this.db_ViewWelcomeBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(233)))), ((int)(((byte)(32)))));
             this.db_ViewWelcomeBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(233)))), ((int)(((byte)(32)))));
@@ -219,10 +216,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(233)))), ((int)(((byte)(32)))));
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(216)))), ((int)(((byte)(0)))));
             this.label2.Font = new System.Drawing.Font("SF Pro Display", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(51)))));
-            this.label2.Location = new System.Drawing.Point(135, 593);
+            this.label2.Location = new System.Drawing.Point(131, 593);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(337, 72);
             this.label2.TabIndex = 18;
@@ -231,15 +228,15 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(233)))), ((int)(((byte)(32)))));
-            this.label4.Font = new System.Drawing.Font("SF Pro Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(216)))), ((int)(((byte)(0)))));
+            this.label4.Font = new System.Drawing.Font("SF Pro Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(51)))));
-            this.label4.Location = new System.Drawing.Point(144, 674);
+            this.label4.Location = new System.Drawing.Point(141, 683);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(177, 27);
+            this.label4.Size = new System.Drawing.Size(311, 48);
             this.label4.TabIndex = 72;
-            this.label4.Text = "Welcome back!";
+            this.label4.Text = "Welcome back,\r\nmake this day a productive one!";
             // 
             // dayTodayLbl
             // 
@@ -444,23 +441,11 @@
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.label5.Font = new System.Drawing.Font("SF Pro Display", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(1360, 223);
+            this.label5.Location = new System.Drawing.Point(1360, 274);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(77, 51);
             this.label5.TabIndex = 111;
             this.label5.Text = "45";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            this.label6.Font = new System.Drawing.Font("SF Pro Display", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(1391, 350);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(49, 51);
-            this.label6.TabIndex = 111;
-            this.label6.Text = "5";
             // 
             // label14
             // 
@@ -468,33 +453,11 @@
             this.label14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.label14.Font = new System.Drawing.Font("SF Pro Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(1282, 274);
+            this.label14.Location = new System.Drawing.Point(1279, 339);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(153, 33);
             this.label14.TabIndex = 110;
             this.label14.Text = "Timed Out";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            this.label15.Font = new System.Drawing.Font("SF Pro Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(1301, 408);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(136, 33);
-            this.label15.TabIndex = 110;
-            this.label15.Text = "On Leave";
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(1258, 314);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(180, 33);
-            this.pictureBox5.TabIndex = 112;
-            this.pictureBox5.TabStop = false;
             // 
             // pictureBox6
             // 
@@ -554,15 +517,30 @@
             this.pictureBox8.TabIndex = 113;
             this.pictureBox8.TabStop = false;
             // 
+            // btn_one3
+            // 
+            this.btn_one3.BackColor = System.Drawing.Color.White;
+            this.btn_one3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_one3.FlatAppearance.BorderSize = 0;
+            this.btn_one3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_one3.Font = new System.Drawing.Font("SF Pro Display", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_one3.ForeColor = System.Drawing.Color.Gray;
+            this.btn_one3.Location = new System.Drawing.Point(141, 801);
+            this.btn_one3.Name = "btn_one3";
+            this.btn_one3.Size = new System.Drawing.Size(135, 50);
+            this.btn_one3.TabIndex = 127;
+            this.btn_one3.Text = "About";
+            this.btn_one3.UseVisualStyleBackColor = false;
+            // 
             // dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.Controls.Add(this.btn_one3);
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox8);
-            this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.label17);
@@ -573,11 +551,9 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label24);
             this.Controls.Add(this.label23);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label22);
@@ -605,7 +581,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
@@ -646,14 +621,12 @@
         private Label label24;
         private Label label13;
         private Label label5;
-        private Label label6;
         private Label label14;
-        private Label label15;
-        private PictureBox pictureBox5;
         private PictureBox pictureBox6;
         private PictureBox pictureBox9;
         private Label label16;
         private Label label17;
         private PictureBox pictureBox8;
+        private btn_one btn_one3;
     }
 }
