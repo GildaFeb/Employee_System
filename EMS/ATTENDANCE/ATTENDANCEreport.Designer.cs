@@ -116,7 +116,6 @@
             this.attndncrprt_DGV.RowTemplate.Height = 29;
             this.attndncrprt_DGV.Size = new System.Drawing.Size(1157, 431);
             this.attndncrprt_DGV.TabIndex = 1;
-            this.attndncrprt_DGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.attndncrprt_DGV_CellContentClick);
             // 
             // delete_ChckBx
             // 
@@ -293,6 +292,7 @@
             this.DelReport.TabIndex = 125;
             this.DelReport.Text = "Delete";
             this.DelReport.UseVisualStyleBackColor = false;
+            this.DelReport.Click += new System.EventHandler(this.DelReport_Click);
             // 
             // ComboYear
             // 

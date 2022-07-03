@@ -269,7 +269,6 @@
             this.LblName.Size = new System.Drawing.Size(98, 14);
             this.LblName.TabIndex = 147;
             this.LblName.Text = "Employee Name";
-            this.LblName.Click += new System.EventHandler(this.label10_Click);
             // 
             // AddName
             // 
@@ -317,6 +316,7 @@
             this.AddSave.TabIndex = 149;
             this.AddSave.Text = "Save";
             this.AddSave.UseVisualStyleBackColor = false;
+            this.AddSave.Click += new System.EventHandler(this.AddSave_Click);
             // 
             // AddClear
             // 
@@ -333,6 +333,7 @@
             this.AddClear.TabIndex = 174;
             this.AddClear.Text = "Clear";
             this.AddClear.UseVisualStyleBackColor = false;
+            this.AddClear.Click += new System.EventHandler(this.AddClear_Click);
             // 
             // AddTimePickerIn
             // 
@@ -368,7 +369,7 @@
             // 
             this.AddEmpStatus.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.AddEmpStatus.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.AddEmpStatus.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.AddEmpStatus.BackColor = System.Drawing.Color.White;
             this.AddEmpStatus.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.AddEmpStatus.BorderSize = 2;
             this.AddEmpStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
@@ -379,8 +380,8 @@
             "On Leave",
             "Absent",
             "Present"});
-            this.AddEmpStatus.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
-            this.AddEmpStatus.ListTextColor = System.Drawing.Color.DimGray;
+            this.AddEmpStatus.ListBackColor = System.Drawing.Color.DeepSkyBlue;
+            this.AddEmpStatus.ListTextColor = System.Drawing.Color.Black;
             this.AddEmpStatus.Location = new System.Drawing.Point(511, 286);
             this.AddEmpStatus.MinimumSize = new System.Drawing.Size(200, 30);
             this.AddEmpStatus.Name = "AddEmpStatus";
@@ -394,7 +395,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(944, 725);
+            this.ClientSize = new System.Drawing.Size(932, 713);
             this.ControlBox = false;
             this.Controls.Add(this.AddEmpStatus);
             this.Controls.Add(this.AddTimePickerOut);

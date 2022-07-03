@@ -17,16 +17,21 @@ namespace EMS
             InitializeComponent();
         }
 
-        private void attndncrprt_DGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void ATTENDANCEreport_Load(object sender, EventArgs e)
         {
             for (int i = 1995; i <= 2022; i++)
             {
                 ComboYear.Items.Add(i);
+            }
+        }
+
+        private void DelReport_Click(object sender, EventArgs e)
+        {
+            if (CMessageBox.Show("Are you sure to delete the selected attendance report data?", "Delete Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                //Code to delete
+
+                CMessageBox.Show("Selected attendance report data deleted.");
             }
         }
     }

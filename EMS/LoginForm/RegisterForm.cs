@@ -17,7 +17,7 @@ namespace LoginForm
         {
             if (RegTxtUsername.Texts == "" || RegTxtPassword.Texts == "" || RegTxtCpass.Texts == "")
             {
-                CMessageBox.Show("Username or Password fields are empty", "Resgistration Failed.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                CMessageBox.Show("Username or Password fields are empty.", "Resgistration Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             else if (RegTxtPassword.Texts == RegTxtCpass.Texts) 
@@ -33,11 +33,11 @@ namespace LoginForm
                 RegTxtCpass.Texts = "";
 
 
-                CMessageBox.Show("Your Account has been Successfully Created", "Registration Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                CMessageBox.Show("Your Account has been Successfully Created.", "Registration Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
-                CMessageBox.Show("Password does not match", "Registration Failed.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                CMessageBox.Show("Password does not match.", "Registration Failed.", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 RegTxtPassword.Texts = "";
                 RegTxtCpass.Texts = "";
                 RegTxtPassword.Focus();

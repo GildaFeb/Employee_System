@@ -67,5 +67,15 @@ namespace EMS
             ATTENDANCEdutydurationUpd upd = new ATTENDANCEdutydurationUpd();
             upd.ShowDialog();
         }
+
+        private void DelDuration_Click(object sender, EventArgs e)
+        {
+            if (CMessageBox.Show("Are you sure to delete the selected data in duty duration?", "Delete Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                //Code to delete
+
+                CMessageBox.Show("Selected Duty duration data deleted.");
+            }
+        }
     }
 }

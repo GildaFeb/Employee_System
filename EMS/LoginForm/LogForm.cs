@@ -27,11 +27,6 @@ namespace LoginForm
         OleDbCommand cmd = new OleDbCommand();
         OleDbDataAdapter DA = new OleDbDataAdapter();*/
 
-        private void FormLogin_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             /*con.Open();
@@ -44,7 +39,7 @@ namespace LoginForm
             {
                 CMessageBox.Show("Username or Password field is empty.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 LogTxtUser.Texts = "";
-                LogTxtPass.Texts = "";                  //Condition if user and pass is whitespace.
+                LogTxtPass.Texts = "";                  //Condition if user and pass is whitespace or blank.
                 LogTxtUser.Focus();
             }*/
 

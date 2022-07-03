@@ -22,9 +22,27 @@ namespace EMS
             this.Hide();
         }
 
-        private void Form2_Load(object sender, EventArgs e)
+
+        private void UpdClear_Click(object sender, EventArgs e)
         {
-         
+            UpdEmpDuration.Text = "";
+            UpdEmployeeId.Text = "";
+            UpdEmpOvertime.Text = "";
+            UpdEmpStatus.Texts = "The Employee is:";
+        }
+
+        private void UpdSave_Click(object sender, EventArgs e)
+        {
+            if (CMessageBox.Show("Are you sure to save the updated informations?", "Save Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                CMessageBox.Show("Informations are updated to the duty duration.");
+                UpdEmpDuration.Text = "";
+                UpdEmployeeId.Text = "";
+                UpdEmpOvertime.Text = "";
+                UpdEmpStatus.Texts = "The Employee is:";
+
+                //Code to save in database
+            }
         }
     }
 }

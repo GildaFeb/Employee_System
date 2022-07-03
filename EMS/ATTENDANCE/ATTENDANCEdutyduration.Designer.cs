@@ -34,7 +34,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.DDsubheading = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.Searchbox = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -49,7 +49,7 @@
             this.DDovertime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DDduration = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Clearbtn = new EMS.btn_one();
-            this.btn_one2 = new EMS.btn_one();
+            this.DelDuration = new EMS.btn_one();
             this.CmbxYear = new EMS.CComboBox();
             this.CmbxMonth = new EMS.CComboBox();
             this.btn_one1 = new EMS.btn_one();
@@ -72,18 +72,18 @@
             this.label1.TabIndex = 74;
             this.label1.Text = "Duty Duration";
             // 
-            // label2
+            // DDsubheading
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("SF Pro Text", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(68, 89);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(567, 18);
-            this.label2.TabIndex = 75;
-            this.label2.Text = "Kindly see below the  hours worked of the employee and their status.";
+            this.DDsubheading.AutoSize = true;
+            this.DDsubheading.BackColor = System.Drawing.Color.Transparent;
+            this.DDsubheading.Font = new System.Drawing.Font("SF Pro Text", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.DDsubheading.ForeColor = System.Drawing.Color.Black;
+            this.DDsubheading.Location = new System.Drawing.Point(68, 89);
+            this.DDsubheading.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.DDsubheading.Name = "DDsubheading";
+            this.DDsubheading.Size = new System.Drawing.Size(567, 18);
+            this.DDsubheading.TabIndex = 75;
+            this.DDsubheading.Text = "Kindly see below the  hours worked of the employee and their status.";
             // 
             // pictureBox2
             // 
@@ -133,7 +133,7 @@
             this.db_ViewCalendarBtn.Location = new System.Drawing.Point(23, 204);
             this.db_ViewCalendarBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.db_ViewCalendarBtn.Name = "db_ViewCalendarBtn";
-            this.db_ViewCalendarBtn.Size = new System.Drawing.Size(1142, 454);
+            this.db_ViewCalendarBtn.Size = new System.Drawing.Size(1110, 454);
             this.db_ViewCalendarBtn.TabIndex = 81;
             this.db_ViewCalendarBtn.UseVisualStyleBackColor = false;
             // 
@@ -178,7 +178,7 @@
             this.tableDelete_DGV.Name = "tableDelete_DGV";
             this.tableDelete_DGV.RowHeadersWidth = 51;
             this.tableDelete_DGV.RowTemplate.Height = 29;
-            this.tableDelete_DGV.Size = new System.Drawing.Size(1142, 418);
+            this.tableDelete_DGV.Size = new System.Drawing.Size(1110, 418);
             this.tableDelete_DGV.TabIndex = 82;
             // 
             // delete_ChckBx
@@ -248,20 +248,21 @@
             this.Clearbtn.Text = "Clear checked";
             this.Clearbtn.UseVisualStyleBackColor = false;
             // 
-            // btn_one2
+            // DelDuration
             // 
-            this.btn_one2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
-            this.btn_one2.FlatAppearance.BorderSize = 0;
-            this.btn_one2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_one2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_one2.ForeColor = System.Drawing.Color.White;
-            this.btn_one2.Location = new System.Drawing.Point(1008, 676);
-            this.btn_one2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_one2.Name = "btn_one2";
-            this.btn_one2.Size = new System.Drawing.Size(154, 38);
-            this.btn_one2.TabIndex = 126;
-            this.btn_one2.Text = "Delete";
-            this.btn_one2.UseVisualStyleBackColor = false;
+            this.DelDuration.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
+            this.DelDuration.FlatAppearance.BorderSize = 0;
+            this.DelDuration.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DelDuration.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.DelDuration.ForeColor = System.Drawing.Color.White;
+            this.DelDuration.Location = new System.Drawing.Point(1008, 676);
+            this.DelDuration.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.DelDuration.Name = "DelDuration";
+            this.DelDuration.Size = new System.Drawing.Size(154, 38);
+            this.DelDuration.TabIndex = 126;
+            this.DelDuration.Text = "Delete";
+            this.DelDuration.UseVisualStyleBackColor = false;
+            this.DelDuration.Click += new System.EventHandler(this.DelDuration_Click);
             // 
             // CmbxYear
             // 
@@ -363,17 +364,17 @@
             this.Controls.Add(this.CmbxMonth);
             this.Controls.Add(this.CmbxYear);
             this.Controls.Add(this.btn_one1);
-            this.Controls.Add(this.btn_one2);
+            this.Controls.Add(this.DelDuration);
             this.Controls.Add(this.Clearbtn);
             this.Controls.Add(this.tableDelete_DGV);
             this.Controls.Add(this.db_ViewCalendarBtn);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.Searchbox);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.DDsubheading);
             this.Controls.Add(this.label1);
             this.Name = "ATTENDANCEdutyduration";
-            this.Size = new System.Drawing.Size(921, 648);
+            this.Size = new System.Drawing.Size(866, 563);
             this.Load += new System.EventHandler(this.ATTENDANCEdepartment_Load);
             this.Enter += new System.EventHandler(this.ATTENDANCEdutyduration_Enter);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -387,14 +388,14 @@
         #endregion
 
         private Label label1;
-        private Label label2;
+        private Label DDsubheading;
         private PictureBox pictureBox2;
         private TextBox Searchbox;
         private PictureBox pictureBox1;
         private btn_one db_ViewCalendarBtn;
         private DataGridView tableDelete_DGV;
         private btn_one Clearbtn;
-        private btn_one btn_one2;
+        private btn_one DelDuration;
         private DataGridViewCheckBoxColumn delete_ChckBx;
         private DataGridViewTextBoxColumn DDdate;
         private DataGridViewTextBoxColumn EmpId;

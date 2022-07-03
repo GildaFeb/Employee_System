@@ -508,9 +508,13 @@ namespace EMS
 
         private void LogoutBtn_Click(object sender, EventArgs e)
         {
-            LoginForm.LogForm Login = new LoginForm.LogForm();
-            Login.Show();
-            this.Hide();
+            if (CMessageBox.Show("Do you want to Log out?", "Logging Out Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+
+                LoginForm.LogForm Login = new LoginForm.LogForm();
+                Login.Show();
+                this.Hide();
+            }
         }
     }
 }
