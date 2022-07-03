@@ -36,11 +36,11 @@
             this.RegLblCpass = new System.Windows.Forms.Label();
             this.RegTxtCpass = new LoginForm.TextBox();
             this.LblShowPass = new System.Windows.Forms.Label();
-            this.RegToggleShwpswrd = new LoginForm.ToggleButton();
+            this.RegTogglePass = new LoginForm.ToggleBtn();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.button1 = new LoginForm.Button();
-            this.button2 = new LoginForm.Button();
+            this.RegBtn = new LoginForm.Button();
+            this.RegClrBtn = new LoginForm.Button();
             this.RegAccLbl = new System.Windows.Forms.Label();
             this.LblBack = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -174,23 +174,22 @@
             this.LblShowPass.Size = new System.Drawing.Size(134, 19);
             this.LblShowPass.TabIndex = 7;
             this.LblShowPass.Text = "Show Password";
-            this.LblShowPass.Click += new System.EventHandler(this.label3_Click);
             // 
-            // RegToggleShwpswrd
+            // RegTogglePass
             // 
-            this.RegToggleShwpswrd.AutoSize = true;
-            this.RegToggleShwpswrd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.RegToggleShwpswrd.Location = new System.Drawing.Point(546, 343);
-            this.RegToggleShwpswrd.MinimumSize = new System.Drawing.Size(45, 22);
-            this.RegToggleShwpswrd.Name = "RegToggleShwpswrd";
-            this.RegToggleShwpswrd.OffBackColor = System.Drawing.Color.Gray;
-            this.RegToggleShwpswrd.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.RegToggleShwpswrd.OnBackColor = System.Drawing.Color.MediumSlateBlue;
-            this.RegToggleShwpswrd.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.RegToggleShwpswrd.Size = new System.Drawing.Size(45, 22);
-            this.RegToggleShwpswrd.TabIndex = 8;
-            this.RegToggleShwpswrd.UseVisualStyleBackColor = true;
-            this.RegToggleShwpswrd.CheckedChanged += new System.EventHandler(this.btnShwpswrd_CheckedChanged);
+            this.RegTogglePass.AutoSize = true;
+            this.RegTogglePass.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.RegTogglePass.Location = new System.Drawing.Point(546, 343);
+            this.RegTogglePass.MinimumSize = new System.Drawing.Size(45, 22);
+            this.RegTogglePass.Name = "RegTogglePass";
+            this.RegTogglePass.OffBackColor = System.Drawing.Color.Gray;
+            this.RegTogglePass.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.RegTogglePass.OnBackColor = System.Drawing.Color.MediumSlateBlue;
+            this.RegTogglePass.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.RegTogglePass.Size = new System.Drawing.Size(45, 22);
+            this.RegTogglePass.TabIndex = 8;
+            this.RegTogglePass.UseVisualStyleBackColor = true;
+            this.RegTogglePass.CheckedChanged += new System.EventHandler(this.btnShwpswrd_CheckedChanged);
             // 
             // pictureBox1
             // 
@@ -214,44 +213,46 @@
             this.pictureBox2.TabIndex = 10;
             this.pictureBox2.TabStop = false;
             // 
-            // button1
+            // RegBtn
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.button1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.button1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.button1.BorderRadius = 0;
-            this.button1.BorderSize = 0;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(491, 390);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(216, 35);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "REGISTER";
-            this.button1.TextColor = System.Drawing.Color.White;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.RegBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.RegBtn.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.RegBtn.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.RegBtn.BorderRadius = 0;
+            this.RegBtn.BorderSize = 0;
+            this.RegBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.RegBtn.FlatAppearance.BorderSize = 0;
+            this.RegBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RegBtn.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.RegBtn.ForeColor = System.Drawing.Color.White;
+            this.RegBtn.Location = new System.Drawing.Point(491, 390);
+            this.RegBtn.Name = "RegBtn";
+            this.RegBtn.Size = new System.Drawing.Size(216, 35);
+            this.RegBtn.TabIndex = 11;
+            this.RegBtn.Text = "REGISTER";
+            this.RegBtn.TextColor = System.Drawing.Color.White;
+            this.RegBtn.UseVisualStyleBackColor = false;
+            this.RegBtn.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // RegClrBtn
             // 
-            this.button2.BackColor = System.Drawing.Color.White;
-            this.button2.BackgroundColor = System.Drawing.Color.White;
-            this.button2.BorderColor = System.Drawing.Color.Transparent;
-            this.button2.BorderRadius = 0;
-            this.button2.BorderSize = 1;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.button2.Location = new System.Drawing.Point(491, 431);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(216, 35);
-            this.button2.TabIndex = 11;
-            this.button2.Text = "CLEAR";
-            this.button2.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.RegClrBtn.BackColor = System.Drawing.Color.White;
+            this.RegClrBtn.BackgroundColor = System.Drawing.Color.White;
+            this.RegClrBtn.BorderColor = System.Drawing.Color.Transparent;
+            this.RegClrBtn.BorderRadius = 0;
+            this.RegClrBtn.BorderSize = 1;
+            this.RegClrBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.RegClrBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RegClrBtn.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.RegClrBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.RegClrBtn.Location = new System.Drawing.Point(491, 431);
+            this.RegClrBtn.Name = "RegClrBtn";
+            this.RegClrBtn.Size = new System.Drawing.Size(216, 35);
+            this.RegClrBtn.TabIndex = 11;
+            this.RegClrBtn.Text = "CLEAR";
+            this.RegClrBtn.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.RegClrBtn.UseVisualStyleBackColor = false;
+            this.RegClrBtn.Click += new System.EventHandler(this.button2_Click);
             // 
             // RegAccLbl
             // 
@@ -268,10 +269,11 @@
             // 
             this.LblBack.AutoSize = true;
             this.LblBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.LblBack.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.LblBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.LblBack.Location = new System.Drawing.Point(550, 508);
+            this.LblBack.Location = new System.Drawing.Point(545, 508);
             this.LblBack.Name = "LblBack";
-            this.LblBack.Size = new System.Drawing.Size(97, 17);
+            this.LblBack.Size = new System.Drawing.Size(115, 16);
             this.LblBack.TabIndex = 4;
             this.LblBack.Text = "Back to LOGIN";
             this.LblBack.Click += new System.EventHandler(this.label5_Click);
@@ -314,12 +316,12 @@
             this.ControlBox = false;
             this.Controls.Add(this.Headerbar);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.RegClrBtn);
+            this.Controls.Add(this.RegBtn);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.RegToggleShwpswrd);
+            this.Controls.Add(this.RegTogglePass);
             this.Controls.Add(this.LblShowPass);
             this.Controls.Add(this.RegTxtCpass);
             this.Controls.Add(this.LblBack);
@@ -338,7 +340,6 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmRegister_FormClosing);
-            this.Load += new System.EventHandler(this.FrmReg_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -358,11 +359,11 @@
         private Label RegLblCpass;
         private TextBox RegTxtCpass;
         private Label LblShowPass;
-        private LoginForm.ToggleButton RegToggleShwpswrd;
+        private LoginForm.ToggleBtn RegTogglePass;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
-        private Button button1;
-        private Button button2;
+        private Button RegBtn;
+        private Button RegClrBtn;
         private Label RegAccLbl;
         private Label LblBack;
         private PictureBox pictureBox3;

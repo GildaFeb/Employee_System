@@ -17,7 +17,7 @@ namespace LoginForm
         {
             if (RegTxtUsername.Texts == "" || RegTxtPassword.Texts == "" || RegTxtCpass.Texts == "")
             {
-                CMessageBox.Show("Username and Password fields are empty", "Resgistration Failed.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                CMessageBox.Show("Username or Password fields are empty", "Resgistration Failed.", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             else if (RegTxtPassword.Texts == RegTxtCpass.Texts) 
@@ -44,25 +44,9 @@ namespace LoginForm
             }
 
         }
-
-        private void FrmReg_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtCpass__TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnShwpswrd_CheckedChanged(object sender, EventArgs e)
         {
-            if(RegToggleShwpswrd.Checked)
+            if(RegTogglePass.Checked)
             {
                 RegTxtPassword.PasswordChar = false;
                 RegTxtCpass.PasswordChar = false;
@@ -84,7 +68,7 @@ namespace LoginForm
 
         private void label5_Click(object sender, EventArgs e)
         {
-            new FormLogin().Show();
+            new LogForm().Show();
             this.Hide();
         }
 

@@ -11,7 +11,7 @@ using System.ComponentModel;
 
 namespace LoginForm
 {
-    public class ToggleButton : CheckBox
+    public class ToggleBtn : CheckBox
     {
         //Fields
         private Color onBackColor = Color.MediumSlateBlue;
@@ -112,7 +112,7 @@ namespace LoginForm
         }
 
         //Constructor
-        public ToggleButton()
+        public ToggleBtn()
         {
             this.MinimumSize = new Size(45, 22);
         }

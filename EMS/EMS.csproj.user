@@ -7,11 +7,14 @@
     <Compile Update="LoginForm\RegisterForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="LoginForm\FormLogin.cs">
+    <Compile Update="LoginForm\LogForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="LoginForm\FormMessageBox.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LoginForm\ToggleBtn.cs">
+      <SubType>Component</SubType>
     </Compile>
     <Compile Update="Pages\ATTENDANCEdutydurationAdd.cs">
       <SubType>Form</SubType>
@@ -66,9 +69,6 @@
     </Compile>
     <Compile Update="LoginForm\TextBox.cs">
       <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Update="LoginForm\ToggleButton.cs">
-      <SubType>Component</SubType>
     </Compile>
     <Compile Update="Pages\ATTENDANCEdutydurationUpd.cs">
       <SubType>Form</SubType>

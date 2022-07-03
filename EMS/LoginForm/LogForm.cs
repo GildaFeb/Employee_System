@@ -7,13 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using EMS;
 //using System.Data.OleDb;
 
 namespace LoginForm
 {
-    public partial class FormLogin : Form
+    public partial class LogForm : Form
     {
-        public FormLogin()
+        public LogForm()
         {
             InitializeComponent();
             
@@ -28,11 +29,6 @@ namespace LoginForm
 
         }
 
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             /*con.Open();
@@ -40,36 +36,48 @@ namespace LoginForm
             cmd = new OleDbCommand(login, con);
             OleDbDataReader dr = cmd.ExecuteReader();
 
-            if(dr.Read() == true)
+                    //Space for database code*/
+
+            if(LogTxtPass.Texts == "" || LogTxtUser.Texts == "")        
             {
-                new dashboard().Show();
-                this.Hide();
+                CMessageBox.Show("Username or Password field is empty", "Login Failed.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                LogTxtUser.Texts = "";
+                LogTxtPass.Texts = "";
+                LogTxtUser.Focus();
             }
+
+            /*else if(dr.Read() == true)
+            {
+                MainForm main = new MainForm();     //Space for Condition if User and Pass is == to database.
+                main.Show();
+                this.Hide();                   
+            }*/
             else
             {
-                MessageBox.Show("Invalid Username or Password, Please Try Again", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txtUsername.Texts = "";
-                txtpassword.Texts = "";
-                txtUsername.Focus();
-            }*/
+                CMessageBox.Show("Invalid Username or Password, Please Try Again", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                LogTxtUser.Texts = "";
+                LogTxtPass.Texts = "";
+                LogTxtUser.Focus();
+            }
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            txtUsername.Texts = "";
-            txtpassword.Texts = "";
-            txtUsername.Focus();
+            LogTxtUser.Texts = "";
+            LogTxtPass.Texts = "";
+            LogTxtUser.Focus();
         }
 
         private void shwpswrd_Click(object sender, EventArgs e)
         {
-            if (shwpswrd.Checked)
+            if (LogTogglePass.Checked)
             {
-                txtpassword.PasswordChar = false;
+                LogTxtPass.PasswordChar = false;
             }
             else
             {
-                txtpassword.PasswordChar = false;
+                LogTxtPass.PasswordChar = false;
             }
         }
 
@@ -86,13 +94,13 @@ namespace LoginForm
 
         private void shwpswrd_CheckedChanged(object sender, EventArgs e)
         {
-            if (shwpswrd.Checked)
+            if (LogTogglePass.Checked)
             {
-                txtpassword.PasswordChar = false;
+                LogTxtPass.PasswordChar = false;
             }
             else
             {
-                txtpassword.PasswordChar = false;
+                LogTxtPass.PasswordChar = false;
             }
         }
     }

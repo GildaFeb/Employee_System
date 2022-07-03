@@ -2,9 +2,9 @@ using LoginForm;
 
 namespace EMS
 {
-    public partial class forms1 : Form
+    public partial class MainForm : Form
     {
-        public forms1(dashboard dashboard)
+        public MainForm(dashboard dashboard)
         {
             InitializeComponent();
             hideSubMenu();
@@ -508,7 +508,7 @@ namespace EMS
 
         private void LogoutBtn_Click(object sender, EventArgs e)
         {
-            FormLogin Login = new FormLogin();
+            LoginForm.LogForm Login = new LoginForm.LogForm();
             Login.Show();
             this.Hide();
         }

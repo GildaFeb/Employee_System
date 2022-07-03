@@ -14,8 +14,7 @@ namespace EMS
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             dashboard = new dashboard();
-            Application.Run(new forms1(            //employeeAdd.BringToFront();
-            dashboard));
+            Application.Run(new MainForm(dashboard));
         }
     }
 }

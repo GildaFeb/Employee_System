@@ -1,6 +1,6 @@
 ﻿namespace EMS
 {
-    partial class forms1
+    partial class MainForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(forms1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.panel1 = new System.Windows.Forms.Panel();
             this.LogoutBtn = new EMS.btn_one();
             this.pnl_IndicatorAttendance = new System.Windows.Forms.Panel();
@@ -540,7 +540,7 @@
             this.attendancEdutyduration1.Size = new System.Drawing.Size(989, 733);
             this.attendancEdutyduration1.TabIndex = 23;
             // 
-            // forms1
+            // MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoScroll = true;
@@ -556,9 +556,9 @@
             this.Controls.Add(this.employees1);
             this.Controls.Add(this.attendancEreport1);
             this.ForeColor = System.Drawing.Color.White;
-            this.Name = "forms1";
+            this.Name = "MainForm";
+            this.ShowIcon = false;
             this.Tag = "";
-            this.Text = "App Name";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.app_bg_Load_1);
             this.panel1.ResumeLayout(false);
