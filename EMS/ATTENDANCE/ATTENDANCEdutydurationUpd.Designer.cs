@@ -31,10 +31,8 @@
             this.LblName = new System.Windows.Forms.Label();
             this.LblOvertime = new System.Windows.Forms.Label();
             this.LblTimeOut = new System.Windows.Forms.Label();
-            this.EmpTimeOut = new System.Windows.Forms.TextBox();
             this.LblDuration = new System.Windows.Forms.Label();
             this.LlblTimeIn = new System.Windows.Forms.Label();
-            this.EmpTimeIn = new System.Windows.Forms.TextBox();
             this.Dutydate = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
             this.LblDate = new System.Windows.Forms.Label();
@@ -44,13 +42,15 @@
             this.EmpDuration = new System.Windows.Forms.TextBox();
             this.EmpOvertime = new System.Windows.Forms.TextBox();
             this.EmployeeId = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.UpdEmpInfo = new System.Windows.Forms.Label();
             this.LblStatus = new EMS.btn_one();
             this.LblTitle = new System.Windows.Forms.Label();
             this.btn_one14 = new EMS.btn_one();
             this.UpdCancel = new EMS.btn_one();
             this.UpdSave = new EMS.btn_one();
             this.UpdClear = new EMS.btn_one();
+            this.UpdTimePickerIn = new System.Windows.Forms.DateTimePicker();
+            this.UpdTimePickerOut = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // LblName
@@ -92,20 +92,6 @@
             this.LblTimeOut.TabIndex = 165;
             this.LblTimeOut.Text = "Time out";
             // 
-            // EmpTimeOut
-            // 
-            this.EmpTimeOut.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.EmpTimeOut.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.EmpTimeOut.Font = new System.Drawing.Font("SF Pro Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.EmpTimeOut.ForeColor = System.Drawing.Color.Black;
-            this.EmpTimeOut.Location = new System.Drawing.Point(156, 484);
-            this.EmpTimeOut.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.EmpTimeOut.Multiline = true;
-            this.EmpTimeOut.Name = "EmpTimeOut";
-            this.EmpTimeOut.Size = new System.Drawing.Size(310, 24);
-            this.EmpTimeOut.TabIndex = 164;
-            this.EmpTimeOut.Text = " ";
-            // 
             // LblDuration
             // 
             this.LblDuration.AutoSize = true;
@@ -131,20 +117,6 @@
             this.LlblTimeIn.Size = new System.Drawing.Size(48, 14);
             this.LlblTimeIn.TabIndex = 162;
             this.LlblTimeIn.Text = "Time in";
-            // 
-            // EmpTimeIn
-            // 
-            this.EmpTimeIn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.EmpTimeIn.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.EmpTimeIn.Font = new System.Drawing.Font("SF Pro Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.EmpTimeIn.ForeColor = System.Drawing.Color.Black;
-            this.EmpTimeIn.Location = new System.Drawing.Point(156, 406);
-            this.EmpTimeIn.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.EmpTimeIn.Multiline = true;
-            this.EmpTimeIn.Name = "EmpTimeIn";
-            this.EmpTimeIn.Size = new System.Drawing.Size(310, 24);
-            this.EmpTimeIn.TabIndex = 161;
-            this.EmpTimeIn.Text = " ";
             // 
             // Dutydate
             // 
@@ -268,18 +240,18 @@
             this.EmployeeId.TabIndex = 151;
             this.EmployeeId.Text = " ";
             // 
-            // label3
+            // UpdEmpInfo
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(400, 206);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(213, 24);
-            this.label3.TabIndex = 150;
-            this.label3.Text = "Employee Information";
+            this.UpdEmpInfo.AutoSize = true;
+            this.UpdEmpInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
+            this.UpdEmpInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.UpdEmpInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(233)))), ((int)(((byte)(32)))));
+            this.UpdEmpInfo.Location = new System.Drawing.Point(400, 206);
+            this.UpdEmpInfo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.UpdEmpInfo.Name = "UpdEmpInfo";
+            this.UpdEmpInfo.Size = new System.Drawing.Size(213, 24);
+            this.UpdEmpInfo.TabIndex = 150;
+            this.UpdEmpInfo.Text = "Employee Information";
             // 
             // LblStatus
             // 
@@ -303,7 +275,7 @@
             this.LblTitle.BackColor = System.Drawing.Color.Transparent;
             this.LblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.LblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(37)))), ((int)(((byte)(83)))));
-            this.LblTitle.Location = new System.Drawing.Point(172, 27);
+            this.LblTitle.Location = new System.Drawing.Point(204, 27);
             this.LblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblTitle.Name = "LblTitle";
             this.LblTitle.Size = new System.Drawing.Size(608, 39);
@@ -328,18 +300,18 @@
             // 
             // UpdCancel
             // 
-            this.UpdCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
+            this.UpdCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.UpdCancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.UpdCancel.FlatAppearance.BorderSize = 0;
             this.UpdCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.UpdCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.UpdCancel.ForeColor = System.Drawing.Color.White;
-            this.UpdCancel.Location = new System.Drawing.Point(549, 661);
+            this.UpdCancel.Location = new System.Drawing.Point(12, 27);
             this.UpdCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.UpdCancel.Name = "UpdCancel";
             this.UpdCancel.Size = new System.Drawing.Size(118, 38);
             this.UpdCancel.TabIndex = 169;
-            this.UpdCancel.Text = "Cancel";
+            this.UpdCancel.Text = "Go Back";
             this.UpdCancel.UseVisualStyleBackColor = false;
             this.UpdCancel.Click += new System.EventHandler(this.DutyCancel_Click);
             // 
@@ -375,23 +347,53 @@
             this.UpdClear.Text = "Clear";
             this.UpdClear.UseVisualStyleBackColor = false;
             // 
+            // UpdTimePickerIn
+            // 
+            this.UpdTimePickerIn.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.UpdTimePickerIn.CustomFormat = "";
+            this.UpdTimePickerIn.Font = new System.Drawing.Font("SF Pro Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.UpdTimePickerIn.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.UpdTimePickerIn.Location = new System.Drawing.Point(156, 403);
+            this.UpdTimePickerIn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.UpdTimePickerIn.MinDate = new System.DateTime(1995, 1, 1, 23, 59, 0, 0);
+            this.UpdTimePickerIn.Name = "UpdTimePickerIn";
+            this.UpdTimePickerIn.ShowUpDown = true;
+            this.UpdTimePickerIn.Size = new System.Drawing.Size(310, 27);
+            this.UpdTimePickerIn.TabIndex = 176;
+            this.UpdTimePickerIn.Value = new System.DateTime(2022, 7, 25, 23, 59, 59, 0);
+            // 
+            // UpdTimePickerOut
+            // 
+            this.UpdTimePickerOut.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.UpdTimePickerOut.CustomFormat = "";
+            this.UpdTimePickerOut.Font = new System.Drawing.Font("SF Pro Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.UpdTimePickerOut.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.UpdTimePickerOut.Location = new System.Drawing.Point(156, 483);
+            this.UpdTimePickerOut.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.UpdTimePickerOut.MinDate = new System.DateTime(1995, 1, 1, 23, 59, 0, 0);
+            this.UpdTimePickerOut.Name = "UpdTimePickerOut";
+            this.UpdTimePickerOut.ShowUpDown = true;
+            this.UpdTimePickerOut.Size = new System.Drawing.Size(310, 27);
+            this.UpdTimePickerOut.TabIndex = 177;
+            this.UpdTimePickerOut.Value = new System.DateTime(2022, 7, 25, 23, 59, 59, 0);
+            // 
             // ATTENDANCEdutydurationUpd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(952, 733);
+            this.ClientSize = new System.Drawing.Size(948, 729);
             this.ControlBox = false;
+            this.Controls.Add(this.UpdTimePickerOut);
+            this.Controls.Add(this.UpdTimePickerIn);
             this.Controls.Add(this.UpdClear);
             this.Controls.Add(this.UpdSave);
             this.Controls.Add(this.UpdCancel);
             this.Controls.Add(this.LblName);
             this.Controls.Add(this.LblOvertime);
             this.Controls.Add(this.LblTimeOut);
-            this.Controls.Add(this.EmpTimeOut);
             this.Controls.Add(this.LblDuration);
             this.Controls.Add(this.LlblTimeIn);
-            this.Controls.Add(this.EmpTimeIn);
             this.Controls.Add(this.Dutydate);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.LblDate);
@@ -401,7 +403,7 @@
             this.Controls.Add(this.EmpDuration);
             this.Controls.Add(this.EmpOvertime);
             this.Controls.Add(this.EmployeeId);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.UpdEmpInfo);
             this.Controls.Add(this.LblStatus);
             this.Controls.Add(this.LblTitle);
             this.Controls.Add(this.btn_one14);
@@ -420,10 +422,8 @@
         private Label LblName;
         private Label LblOvertime;
         private Label LblTimeOut;
-        private TextBox EmpTimeOut;
         private Label LblDuration;
         private Label LlblTimeIn;
-        private TextBox EmpTimeIn;
         private DateTimePicker Dutydate;
         private Label label7;
         private Label LblDate;
@@ -433,12 +433,14 @@
         private TextBox EmpDuration;
         private TextBox EmpOvertime;
         private TextBox EmployeeId;
-        private Label label3;
+        private Label UpdEmpInfo;
         private EMS.btn_one LblStatus;
         private Label LblTitle;
         private EMS.btn_one btn_one14;
         private EMS.btn_one UpdCancel;
         private btn_one UpdSave;
         private btn_one UpdClear;
+        private DateTimePicker UpdTimePickerIn;
+        private DateTimePicker UpdTimePickerOut;
     }
 }

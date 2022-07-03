@@ -12,8 +12,11 @@ using EMS;
 
 namespace LoginForm
 {
+
     public partial class LogForm : Form
     {
+        private static dashboard dashboard;
+
         public LogForm()
         {
             InitializeComponent();
@@ -34,32 +37,34 @@ namespace LoginForm
             /*con.Open();
             string login = "SELECT * FROM tbl_users WHERE username= '" + txtUsername.Texts + "'and passowrd= '" + txtpassword.Texts + "'";
             cmd = new OleDbCommand(login, con);
-            OleDbDataReader dr = cmd.ExecuteReader();
+            OleDbDataReader dr = cmd.ExecuteReader();   //Space for database code*/
 
-                    //Space for database code*/
 
-            if(LogTxtPass.Texts == "" || LogTxtUser.Texts == "")        
+            /*if(LogTxtPass.Texts == "" || LogTxtUser.Texts == "")        
             {
-                CMessageBox.Show("Username or Password field is empty", "Login Failed.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                CMessageBox.Show("Username or Password field is empty.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 LogTxtUser.Texts = "";
-                LogTxtPass.Texts = "";
+                LogTxtPass.Texts = "";                  //Condition if user and pass is whitespace.
                 LogTxtUser.Focus();
-            }
+            }*/
 
             /*else if(dr.Read() == true)
             {
                 MainForm main = new MainForm();     //Space for Condition if User and Pass is == to database.
                 main.Show();
                 this.Hide();                   
-            }*/
+            }
             else
             {
-                CMessageBox.Show("Invalid Username or Password, Please Try Again", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                CMessageBox.Show("Invalid Username or Password, Please Try Again.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 LogTxtUser.Texts = "";
-                LogTxtPass.Texts = "";
+                LogTxtPass.Texts = "";                  //Condition if account and password doesn't exist in database.
                 LogTxtUser.Focus();
-            }
-
+            }*/
+            dashboard = new dashboard();
+            MainForm main = new MainForm((dashboard));     //Try lang if nag oopen once clinick ang login.
+            this.Hide();
+            main.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -89,7 +94,7 @@ namespace LoginForm
 
         private void FormLogin_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
+            Environment.Exit(Environment.ExitCode);
         }
 
         private void shwpswrd_CheckedChanged(object sender, EventArgs e)
@@ -100,7 +105,7 @@ namespace LoginForm
             }
             else
             {
-                LogTxtPass.PasswordChar = false;
+                LogTxtPass.PasswordChar = true;
             }
         }
     }

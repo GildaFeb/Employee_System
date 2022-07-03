@@ -1,8 +1,10 @@
+using LoginForm;
+
 namespace EMS
 {
     internal static class Program
     {
-        private static dashboard dashboard;
+       // private static dashboard dashboard;
 
         /// <summary>
         ///  The main entry point for the application.
@@ -13,8 +15,8 @@ namespace EMS
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            dashboard = new dashboard();
-            Application.Run(new MainForm(dashboard));
+            //dashboard = new dashboard();
+            Application.Run(new LogForm());
         }
     }
 }

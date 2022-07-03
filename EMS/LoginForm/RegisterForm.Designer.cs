@@ -57,7 +57,7 @@
             this.LblTitle.AutoSize = true;
             this.LblTitle.Font = new System.Drawing.Font("MS Reference Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.LblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.LblTitle.Location = new System.Drawing.Point(483, 81);
+            this.LblTitle.Location = new System.Drawing.Point(475, 93);
             this.LblTitle.Name = "LblTitle";
             this.LblTitle.Size = new System.Drawing.Size(167, 34);
             this.LblTitle.TabIndex = 0;
@@ -293,7 +293,7 @@
             this.Headerbar.Dock = System.Windows.Forms.DockStyle.Top;
             this.Headerbar.Location = new System.Drawing.Point(0, 0);
             this.Headerbar.Name = "Headerbar";
-            this.Headerbar.Size = new System.Drawing.Size(723, 78);
+            this.Headerbar.Size = new System.Drawing.Size(719, 78);
             this.Headerbar.TabIndex = 13;
             // 
             // pictureBox4
@@ -312,7 +312,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(225)))), ((int)(((byte)(237)))));
-            this.ClientSize = new System.Drawing.Size(723, 544);
+            this.ClientSize = new System.Drawing.Size(719, 540);
             this.ControlBox = false;
             this.Controls.Add(this.Headerbar);
             this.Controls.Add(this.pictureBox3);

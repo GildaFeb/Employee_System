@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Compile Update="ATTENDANCE.cs">
+    <Compile Update="ATTENDANCE\ATTENDANCE.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="LoginForm\RegisterForm.cs">
@@ -16,10 +16,10 @@
     <Compile Update="LoginForm\ToggleBtn.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Update="Pages\ATTENDANCEdutydurationAdd.cs">
+    <Compile Update="ATTENDANCE\ATTENDANCEdutydurationAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Pages\ATTENDANCEreport.cs">
+    <Compile Update="ATTENDANCE\ATTENDANCEreport.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="btn_dashboard.cs">
@@ -70,7 +70,7 @@
     <Compile Update="LoginForm\TextBox.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="Pages\ATTENDANCEdutydurationUpd.cs">
+    <Compile Update="ATTENDANCE\ATTENDANCEdutydurationUpd.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="SALARY.cs">
@@ -88,7 +88,7 @@
     <Compile Update="UserControl2.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="Pages\ATTENDANCEdutyduration.cs">
+    <Compile Update="ATTENDANCE\ATTENDANCEdutyduration.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="verificationEmpDelete.cs">

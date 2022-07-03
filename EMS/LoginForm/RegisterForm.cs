@@ -26,7 +26,7 @@ namespace LoginForm
                 string register = "INSERT INTO tbl_users VALUES('" + txtUsername.Texts + "','" + txtPassword.Texts + "')";
                 cmd = new OleDbCommand(register, con);
                 cmd.ExecuteNonQuery();      
-                con.Close();*/                  //Space for condition to save in database 
+                con.Close();*/                  //Space for code to save in database 
 
                 RegTxtUsername.Texts = "";
                 RegTxtPassword.Texts = "";
