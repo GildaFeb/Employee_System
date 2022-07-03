@@ -97,6 +97,7 @@
             // btn_one10
             // 
             this.btn_one10.BackColor = System.Drawing.Color.White;
+            this.btn_one10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_one10.Enabled = false;
             this.btn_one10.FlatAppearance.BorderSize = 0;
             this.btn_one10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -108,6 +109,7 @@
             this.btn_one10.TabIndex = 158;
             this.btn_one10.Text = "Log out";
             this.btn_one10.UseVisualStyleBackColor = false;
+            this.btn_one10.Click += new System.EventHandler(this.btn_one10_Click);
             // 
             // pnl_IndicatorAttendance
             // 

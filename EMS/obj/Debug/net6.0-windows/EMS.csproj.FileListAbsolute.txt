@@ -262,3 +262,4 @@ C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\De
 C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.ATTENDANCEdutydurationAdd.resources
 C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.ATTENDANCEdutydurationUpd.resources
 C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.ATTENDANCEdutydurationUpd.resources
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\LoginForm.frmRegister.resources

@@ -1,3 +1,5 @@
+using LoginForm;
+
 namespace EMS
 {
     public partial class forms1 : Form
@@ -490,6 +492,11 @@ namespace EMS
         }
 
         private void attendanceReport_SubSubPnl_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btn_one10_Click(object sender, EventArgs e)
         {
 
         }

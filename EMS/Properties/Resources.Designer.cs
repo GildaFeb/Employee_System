@@ -63,6 +63,16 @@ namespace EMS.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap account_icon_8 {
+            get {
+                object obj = ResourceManager.GetObject("account-icon-8", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap add_icon {
             get {
                 object obj = ResourceManager.GetObject("add_icon", resourceCulture);
@@ -76,6 +86,26 @@ namespace EMS.Properties {
         internal static System.Drawing.Bitmap chat {
             get {
                 object obj = ResourceManager.GetObject("chat", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CompUser {
+            get {
+                object obj = ResourceManager.GetObject("CompUser", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap download_icon_lock_password_protect_safety_security_icon_1320086045132546966_512 {
+            get {
+                object obj = ResourceManager.GetObject("download-icon-lock+password+protect+safety+security+icon-1320086045132546966_512", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
