@@ -103,9 +103,29 @@ namespace EMS.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap CompUserMale {
+            get {
+                object obj = ResourceManager.GetObject("CompUserMale", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap download_icon_lock_password_protect_safety_security_icon_1320086045132546966_512 {
             get {
                 object obj = ResourceManager.GetObject("download-icon-lock+password+protect+safety+security+icon-1320086045132546966_512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Employee {
+            get {
+                object obj = ResourceManager.GetObject("Employee", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -126,6 +146,16 @@ namespace EMS.Properties {
         internal static System.Drawing.Bitmap exclamation {
             get {
                 object obj = ResourceManager.GetObject("exclamation", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ezgif_com_gif_maker {
+            get {
+                object obj = ResourceManager.GetObject("ezgif.com-gif-maker", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

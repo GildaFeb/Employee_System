@@ -4,7 +4,7 @@
     <Compile Update="ATTENDANCE.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="LoginForm\Form1.cs">
+    <Compile Update="LoginForm\RegisterForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="LoginForm\FormLogin.cs">
@@ -55,7 +55,7 @@
     <Compile Update="errorEMPadd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Form1.cs">
+    <Compile Update="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="LoginForm\Button.cs">

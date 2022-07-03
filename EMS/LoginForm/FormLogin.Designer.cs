@@ -57,7 +57,7 @@
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.button2.Location = new System.Drawing.Point(452, 324);
+            this.button2.Location = new System.Drawing.Point(470, 324);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(216, 35);
             this.button2.TabIndex = 25;
@@ -77,7 +77,7 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(452, 283);
+            this.button1.Location = new System.Drawing.Point(470, 283);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(216, 35);
             this.button1.TabIndex = 26;
@@ -90,7 +90,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
             this.pictureBox2.Image = global::EMS.Properties.Resources.download_icon_lock_password_protect_safety_security_icon_1320086045132546966_512;
-            this.pictureBox2.Location = new System.Drawing.Point(640, 208);
+            this.pictureBox2.Location = new System.Drawing.Point(658, 208);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(20, 20);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -101,7 +101,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
             this.pictureBox1.Image = global::EMS.Properties.Resources.account_icon_8;
-            this.pictureBox1.Location = new System.Drawing.Point(640, 135);
+            this.pictureBox1.Location = new System.Drawing.Point(658, 135);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(20, 20);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -129,7 +129,7 @@
             this.label5.AutoSize = true;
             this.label5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.label5.Location = new System.Drawing.Point(488, 390);
+            this.label5.Location = new System.Drawing.Point(506, 390);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(125, 16);
             this.label5.TabIndex = 17;
@@ -139,7 +139,8 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(464, 373);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label4.Location = new System.Drawing.Point(482, 373);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(181, 16);
             this.label4.TabIndex = 18;
@@ -156,7 +157,7 @@
             this.txtpassword.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtpassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtpassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtpassword.Location = new System.Drawing.Point(452, 201);
+            this.txtpassword.Location = new System.Drawing.Point(470, 201);
             this.txtpassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtpassword.Multiline = false;
             this.txtpassword.Name = "txtpassword";
@@ -172,7 +173,8 @@
             // Pswrd
             // 
             this.Pswrd.AutoSize = true;
-            this.Pswrd.Location = new System.Drawing.Point(452, 182);
+            this.Pswrd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Pswrd.Location = new System.Drawing.Point(470, 182);
             this.Pswrd.Name = "Pswrd";
             this.Pswrd.Size = new System.Drawing.Size(77, 16);
             this.Pswrd.TabIndex = 13;
@@ -188,7 +190,7 @@
             this.txtUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtUsername.Location = new System.Drawing.Point(452, 129);
+            this.txtUsername.Location = new System.Drawing.Point(470, 129);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(4);
             this.txtUsername.Multiline = true;
             this.txtUsername.Name = "txtUsername";
@@ -204,7 +206,8 @@
             // Usrnme
             // 
             this.Usrnme.AutoSize = true;
-            this.Usrnme.Location = new System.Drawing.Point(454, 110);
+            this.Usrnme.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Usrnme.Location = new System.Drawing.Point(472, 110);
             this.Usrnme.Name = "Usrnme";
             this.Usrnme.Size = new System.Drawing.Size(79, 16);
             this.Usrnme.TabIndex = 14;
@@ -215,7 +218,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.label1.Location = new System.Drawing.Point(444, 49);
+            this.label1.Location = new System.Drawing.Point(462, 49);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(167, 34);
             this.label1.TabIndex = 12;
@@ -224,6 +227,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label2.Location = new System.Drawing.Point(572, 238);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(123, 16);
@@ -233,11 +237,12 @@
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pictureBox3.Image = global::EMS.Properties.Resources.CompUser;
-            this.pictureBox3.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox3.Image = global::EMS.Properties.Resources.Employee;
+            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(426, 426);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.Size = new System.Drawing.Size(439, 450);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 28;
             this.pictureBox3.TabStop = false;
             // 
@@ -245,14 +250,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(219)))), ((int)(((byte)(230)))));
             this.ClientSize = new System.Drawing.Size(709, 450);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.shwpswrd);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);

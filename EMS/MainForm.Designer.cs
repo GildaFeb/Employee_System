@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(forms1));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btn_one10 = new EMS.btn_one();
+            this.LogoutBtn = new EMS.btn_one();
             this.pnl_IndicatorAttendance = new System.Windows.Forms.Panel();
             this.btn_one4 = new EMS.btn_one();
             this.attendancePnl = new System.Windows.Forms.Panel();
@@ -77,7 +77,7 @@
             // 
             this.panel1.AutoScroll = true;
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(37)))), ((int)(((byte)(83)))));
-            this.panel1.Controls.Add(this.btn_one10);
+            this.panel1.Controls.Add(this.LogoutBtn);
             this.panel1.Controls.Add(this.pnl_IndicatorAttendance);
             this.panel1.Controls.Add(this.attendancePnl);
             this.panel1.Controls.Add(this.button3);
@@ -94,22 +94,21 @@
             this.panel1.TabIndex = 14;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint_1);
             // 
-            // btn_one10
+            // LogoutBtn
             // 
-            this.btn_one10.BackColor = System.Drawing.Color.White;
-            this.btn_one10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_one10.Enabled = false;
-            this.btn_one10.FlatAppearance.BorderSize = 0;
-            this.btn_one10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_one10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_one10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(33)))), ((int)(((byte)(64)))));
-            this.btn_one10.Location = new System.Drawing.Point(114, 967);
-            this.btn_one10.Name = "btn_one10";
-            this.btn_one10.Size = new System.Drawing.Size(135, 50);
-            this.btn_one10.TabIndex = 158;
-            this.btn_one10.Text = "Log out";
-            this.btn_one10.UseVisualStyleBackColor = false;
-            this.btn_one10.Click += new System.EventHandler(this.btn_one10_Click);
+            this.LogoutBtn.BackColor = System.Drawing.Color.White;
+            this.LogoutBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.LogoutBtn.FlatAppearance.BorderSize = 0;
+            this.LogoutBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LogoutBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.LogoutBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(33)))), ((int)(((byte)(64)))));
+            this.LogoutBtn.Location = new System.Drawing.Point(119, 970);
+            this.LogoutBtn.Name = "LogoutBtn";
+            this.LogoutBtn.Size = new System.Drawing.Size(135, 50);
+            this.LogoutBtn.TabIndex = 160;
+            this.LogoutBtn.Text = "Log Out";
+            this.LogoutBtn.UseVisualStyleBackColor = false;
+            this.LogoutBtn.Click += new System.EventHandler(this.LogoutBtn_Click);
             // 
             // pnl_IndicatorAttendance
             // 
@@ -612,8 +611,8 @@
         private EMPLOYEESupdate_revised employeeSupdate_revised1;
         private EMPLOYEESdelete employeeSdelete2;
         private dashboard dashboard1;
-        private btn_one btn_one10;
         private ATTENDANCEreport attendancEreport1;
         private ATTENDANCEdutyduration attendancEdutyduration1;
+        private btn_one LogoutBtn;
     }
 }

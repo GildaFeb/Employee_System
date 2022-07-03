@@ -500,5 +500,17 @@ namespace EMS
         {
 
         }
+
+        private void btn_one2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LogoutBtn_Click(object sender, EventArgs e)
+        {
+            FormLogin Login = new FormLogin();
+            Login.Show();
+            this.Hide();
+        }
     }
 }
