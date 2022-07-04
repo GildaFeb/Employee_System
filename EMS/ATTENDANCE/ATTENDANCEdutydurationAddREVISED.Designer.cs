@@ -89,7 +89,7 @@
             this.AddClear.FlatAppearance.BorderSize = 0;
             this.AddClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AddClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.AddClear.ForeColor = System.Drawing.Color.Transparent;
+            this.AddClear.ForeColor = System.Drawing.Color.White;
             this.AddClear.Location = new System.Drawing.Point(128, 692);
             this.AddClear.Name = "AddClear";
             this.AddClear.Size = new System.Drawing.Size(273, 51);
@@ -365,7 +365,7 @@
             this.btn_one1.FlatAppearance.BorderSize = 0;
             this.btn_one1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_one1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_one1.ForeColor = System.Drawing.Color.Transparent;
+            this.btn_one1.ForeColor = System.Drawing.Color.White;
             this.btn_one1.Location = new System.Drawing.Point(1067, 314);
             this.btn_one1.Name = "btn_one1";
             this.btn_one1.Size = new System.Drawing.Size(225, 51);

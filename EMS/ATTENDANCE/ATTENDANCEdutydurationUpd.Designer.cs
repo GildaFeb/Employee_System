@@ -321,7 +321,7 @@
             this.UpdClear.FlatAppearance.BorderSize = 0;
             this.UpdClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.UpdClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.UpdClear.ForeColor = System.Drawing.Color.Transparent;
+            this.UpdClear.ForeColor = System.Drawing.Color.White;
             this.UpdClear.Location = new System.Drawing.Point(558, 881);
             this.UpdClear.Name = "UpdClear";
             this.UpdClear.Size = new System.Drawing.Size(211, 51);
@@ -391,7 +391,7 @@
             this.btn_one1.FlatAppearance.BorderSize = 0;
             this.btn_one1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_one1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_one1.ForeColor = System.Drawing.Color.Transparent;
+            this.btn_one1.ForeColor = System.Drawing.Color.White;
             this.btn_one1.Location = new System.Drawing.Point(588, 158);
             this.btn_one1.Name = "btn_one1";
             this.btn_one1.Size = new System.Drawing.Size(225, 51);
@@ -404,7 +404,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1070, 956);
+            this.ClientSize = new System.Drawing.Size(1066, 952);
             this.ControlBox = false;
             this.Controls.Add(this.btn_one1);
             this.Controls.Add(this.UpdEmpStatus);
