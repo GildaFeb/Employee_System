@@ -47,5 +47,15 @@ namespace EMS
             AddEmpOvertime.Text = "";
             AddEmpStatus.Texts = "The Employee is:";
         }
+
+        private void AddTimePickerIn_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_one1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

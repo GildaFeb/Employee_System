@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ATTENDANCEdutyduration));
             this.label1 = new System.Windows.Forms.Label();
             this.DDsubheading = new System.Windows.Forms.Label();
@@ -52,6 +52,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.Search = new System.Windows.Forms.TextBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.btn_one2 = new EMS.btn_one();
             ((System.ComponentModel.ISupportInitialize)(this.tableDelete_DGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -61,12 +62,12 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("SF Pro Display", 25.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(51)))));
             this.label1.Location = new System.Drawing.Point(114, 68);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(284, 50);
+            this.label1.Size = new System.Drawing.Size(288, 48);
             this.label1.TabIndex = 74;
             this.label1.Text = "Duty Duration";
             // 
@@ -74,12 +75,12 @@
             // 
             this.DDsubheading.AutoSize = true;
             this.DDsubheading.BackColor = System.Drawing.Color.Transparent;
-            this.DDsubheading.Font = new System.Drawing.Font("SF Pro Text", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.DDsubheading.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.DDsubheading.ForeColor = System.Drawing.Color.Gray;
             this.DDsubheading.Location = new System.Drawing.Point(119, 125);
             this.DDsubheading.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.DDsubheading.Name = "DDsubheading";
-            this.DDsubheading.Size = new System.Drawing.Size(634, 21);
+            this.DDsubheading.Size = new System.Drawing.Size(626, 22);
             this.DDsubheading.TabIndex = 75;
             this.DDsubheading.Text = "Kindly see below the  hours worked of the employee and their status.";
             // 
@@ -105,14 +106,14 @@
             this.tableDelete_DGV.BackgroundColor = System.Drawing.Color.White;
             this.tableDelete_DGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tableDelete_DGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Violet;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tableDelete_DGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Violet;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tableDelete_DGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.tableDelete_DGV.ColumnHeadersHeight = 29;
             this.tableDelete_DGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.tableDelete_DGV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -124,14 +125,14 @@
             this.DDstatus,
             this.DDovertime,
             this.DDduration});
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(51)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.tableDelete_DGV.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.tableDelete_DGV.DefaultCellStyle = dataGridViewCellStyle8;
             this.tableDelete_DGV.GridColor = System.Drawing.Color.DarkGray;
             this.tableDelete_DGV.Location = new System.Drawing.Point(124, 295);
             this.tableDelete_DGV.Name = "tableDelete_DGV";
@@ -144,10 +145,10 @@
             // delete_ChckBx
             // 
             this.delete_ChckBx.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.NullValue = false;
-            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.delete_ChckBx.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.NullValue = false;
+            dataGridViewCellStyle6.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.delete_ChckBx.DefaultCellStyle = dataGridViewCellStyle6;
             this.delete_ChckBx.HeaderText = "";
             this.delete_ChckBx.MinimumWidth = 6;
             this.delete_ChckBx.Name = "delete_ChckBx";
@@ -157,8 +158,8 @@
             // DDdate
             // 
             this.DDdate.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.DDdate.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.DDdate.DefaultCellStyle = dataGridViewCellStyle7;
             this.DDdate.HeaderText = "Date";
             this.DDdate.MinimumWidth = 6;
             this.DDdate.Name = "DDdate";
@@ -204,11 +205,11 @@
             // 
             this.CmbxYear.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.CmbxYear.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.CmbxYear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
+            this.CmbxYear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(37)))), ((int)(((byte)(83)))));
             this.CmbxYear.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(51)))));
             this.CmbxYear.BorderSize = 0;
             this.CmbxYear.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.CmbxYear.Font = new System.Drawing.Font("SF Pro Text", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.CmbxYear.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.CmbxYear.ForeColor = System.Drawing.Color.White;
             this.CmbxYear.IconColor = System.Drawing.Color.White;
             this.CmbxYear.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
@@ -228,11 +229,11 @@
             this.CmbxMonth.AccessibleName = "";
             this.CmbxMonth.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.CmbxMonth.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.CmbxMonth.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
+            this.CmbxMonth.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(37)))), ((int)(((byte)(83)))));
             this.CmbxMonth.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(51)))));
             this.CmbxMonth.BorderSize = 0;
             this.CmbxMonth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.CmbxMonth.Font = new System.Drawing.Font("SF Pro Text", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.CmbxMonth.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.CmbxMonth.ForeColor = System.Drawing.Color.White;
             this.CmbxMonth.IconColor = System.Drawing.Color.White;
             this.CmbxMonth.Items.AddRange(new object[] {
@@ -265,11 +266,11 @@
             this.btn_one1.Enabled = false;
             this.btn_one1.FlatAppearance.BorderSize = 0;
             this.btn_one1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_one1.Font = new System.Drawing.Font("SF Pro Display", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_one1.ForeColor = System.Drawing.Color.Black;
+            this.btn_one1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_one1.ForeColor = System.Drawing.Color.Transparent;
             this.btn_one1.Location = new System.Drawing.Point(123, 904);
             this.btn_one1.Name = "btn_one1";
-            this.btn_one1.Size = new System.Drawing.Size(164, 50);
+            this.btn_one1.Size = new System.Drawing.Size(248, 50);
             this.btn_one1.TabIndex = 129;
             this.btn_one1.Text = "Clear checked";
             this.btn_one1.UseVisualStyleBackColor = false;
@@ -280,11 +281,11 @@
             this.btn_one3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_one3.FlatAppearance.BorderSize = 0;
             this.btn_one3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_one3.Font = new System.Drawing.Font("SF Pro Display", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_one3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_one3.ForeColor = System.Drawing.Color.White;
-            this.btn_one3.Location = new System.Drawing.Point(1295, 904);
+            this.btn_one3.Location = new System.Drawing.Point(1158, 904);
             this.btn_one3.Name = "btn_one3";
-            this.btn_one3.Size = new System.Drawing.Size(135, 50);
+            this.btn_one3.Size = new System.Drawing.Size(272, 50);
             this.btn_one3.TabIndex = 130;
             this.btn_one3.Text = "Delete";
             this.btn_one3.UseVisualStyleBackColor = false;
@@ -323,12 +324,28 @@
             this.pictureBox4.TabIndex = 132;
             this.pictureBox4.TabStop = false;
             // 
+            // btn_one2
+            // 
+            this.btn_one2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(37)))), ((int)(((byte)(83)))));
+            this.btn_one2.Enabled = false;
+            this.btn_one2.FlatAppearance.BorderSize = 0;
+            this.btn_one2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_one2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_one2.ForeColor = System.Drawing.Color.Transparent;
+            this.btn_one2.Location = new System.Drawing.Point(870, 904);
+            this.btn_one2.Name = "btn_one2";
+            this.btn_one2.Size = new System.Drawing.Size(282, 50);
+            this.btn_one2.TabIndex = 134;
+            this.btn_one2.Text = "Reload Table";
+            this.btn_one2.UseVisualStyleBackColor = false;
+            // 
             // ATTENDANCEdutyduration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.Controls.Add(this.btn_one2);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.Search);
             this.Controls.Add(this.pictureBox4);
@@ -374,5 +391,6 @@
         private PictureBox pictureBox3;
         private TextBox Search;
         private PictureBox pictureBox4;
+        private btn_one btn_one2;
     }
 }
