@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EMPLOYEESupdate_revised));
-            this.btn_one10 = new EMS.btn_one();
             this.btn_one2 = new EMS.btn_one();
             this.btn_one3 = new EMS.btn_one();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -71,23 +70,11 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btn_one4 = new EMS.btn_one();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btn_one10
-            // 
-            this.btn_one10.BackColor = System.Drawing.Color.White;
-            this.btn_one10.Enabled = false;
-            this.btn_one10.FlatAppearance.BorderSize = 0;
-            this.btn_one10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_one10.Font = new System.Drawing.Font("SF Pro Display", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_one10.ForeColor = System.Drawing.Color.Black;
-            this.btn_one10.Location = new System.Drawing.Point(121, 876);
-            this.btn_one10.Name = "btn_one10";
-            this.btn_one10.Size = new System.Drawing.Size(135, 50);
-            this.btn_one10.TabIndex = 157;
-            this.btn_one10.Text = "Search";
-            this.btn_one10.UseVisualStyleBackColor = false;
             // 
             // btn_one2
             // 
@@ -633,13 +620,40 @@
             this.comboBox4.Size = new System.Drawing.Size(349, 32);
             this.comboBox4.TabIndex = 153;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.White;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(141, 890);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(28, 25);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 162;
+            this.pictureBox2.TabStop = false;
+            // 
+            // btn_one4
+            // 
+            this.btn_one4.BackColor = System.Drawing.Color.White;
+            this.btn_one4.Enabled = false;
+            this.btn_one4.FlatAppearance.BorderSize = 0;
+            this.btn_one4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_one4.Font = new System.Drawing.Font("SF Pro Display", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_one4.ForeColor = System.Drawing.Color.Black;
+            this.btn_one4.Location = new System.Drawing.Point(122, 876);
+            this.btn_one4.Name = "btn_one4";
+            this.btn_one4.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btn_one4.Size = new System.Drawing.Size(148, 50);
+            this.btn_one4.TabIndex = 161;
+            this.btn_one4.Text = "Search";
+            this.btn_one4.UseVisualStyleBackColor = false;
+            // 
             // EMPLOYEESupdate_revised
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.btn_one10);
             this.Controls.Add(this.btn_one2);
             this.Controls.Add(this.btn_one3);
             this.Controls.Add(this.pictureBox3);
@@ -680,17 +694,17 @@
             this.Controls.Add(this.label20);
             this.Controls.Add(this.btn_one1);
             this.Controls.Add(this.btn_one14);
+            this.Controls.Add(this.btn_one4);
             this.Name = "EMPLOYEESupdate_revised";
             this.Size = new System.Drawing.Size(1555, 1033);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private btn_one btn_one10;
         private btn_one btn_one2;
         private btn_one btn_one3;
         private PictureBox pictureBox3;
@@ -732,5 +746,7 @@
         private ComboBox comboBox2;
         private ComboBox comboBox3;
         private ComboBox comboBox4;
+        private PictureBox pictureBox2;
+        private btn_one btn_one4;
     }
 }

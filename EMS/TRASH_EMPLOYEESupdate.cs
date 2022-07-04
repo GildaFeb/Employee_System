@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace EMS
 {
-    public partial class EMPLOYEESupdate : UserControl
+    public partial class TRASH_EMPLOYEESupdate : UserControl
     {
-        public EMPLOYEESupdate()
+        public TRASH_EMPLOYEESupdate()
         {
             InitializeComponent();
         }

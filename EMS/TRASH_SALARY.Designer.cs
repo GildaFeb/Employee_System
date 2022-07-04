@@ -1,6 +1,6 @@
 ﻿namespace EMS
 {
-    partial class SALARY
+    partial class TRASH_SALARY
     {
         /// <summary> 
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SALARY));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TRASH_SALARY));
             this.employeesTitlePage = new System.Windows.Forms.Label();
             this.emp_ViewAllbtn = new EMS.btn_one();
             this.emp_Deletebtn = new EMS.btn_one();

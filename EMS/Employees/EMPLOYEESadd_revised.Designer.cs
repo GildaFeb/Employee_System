@@ -70,7 +70,9 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label16
@@ -571,7 +573,8 @@
             this.btn_one10.ForeColor = System.Drawing.Color.Black;
             this.btn_one10.Location = new System.Drawing.Point(121, 876);
             this.btn_one10.Name = "btn_one10";
-            this.btn_one10.Size = new System.Drawing.Size(135, 50);
+            this.btn_one10.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btn_one10.Size = new System.Drawing.Size(148, 50);
             this.btn_one10.TabIndex = 115;
             this.btn_one10.Text = "Search";
             this.btn_one10.UseVisualStyleBackColor = false;
@@ -652,11 +655,23 @@
             this.comboBox4.TabIndex = 111;
             this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.position_SelectedIndexChanged);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.White;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(140, 890);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(28, 25);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 118;
+            this.pictureBox2.TabStop = false;
+            // 
             // EMPLOYEESadd_revised
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.btn_one10);
             this.Controls.Add(this.btn_one2);
             this.Controls.Add(this.btn_one3);
@@ -702,6 +717,7 @@
             this.Size = new System.Drawing.Size(1555, 1033);
             this.Load += new System.EventHandler(this.EMPLOYEESadd_revised_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -750,5 +766,6 @@
         private ComboBox comboBox2;
         private ComboBox comboBox3;
         private ComboBox comboBox4;
+        private PictureBox pictureBox2;
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace EMS
 {
-    partial class EMPLOYEESupdate
+    partial class TRASH_EMPLOYEESupdate
     {
         /// <summary> 
         /// Required designer variable.

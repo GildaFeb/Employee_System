@@ -601,9 +601,9 @@
         private btn_one btn_one1;
         private btn_one btn_one4;
         private employeeAdd employeeAdd1;
-        private EMPLOYEESupdate employeeSupdate1;
+        private TRASH_EMPLOYEESupdate employeeSupdate1;
         private ATTENDANCE attendance1;
-        private SALARY salary1;
+        private TRASH_SALARY salary1;
         private EMPLOYEESdelete employeeSdelete1;
         private ATTENDANCEdutyduration Attendancedprtmnt1;
         private Button button8;

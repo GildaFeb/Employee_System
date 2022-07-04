@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace EMS
 {
-    public partial class UserControl1 : UserControl
+    public partial class successAttendanceUpdate : Form
     {
-        public UserControl1()
+        public successAttendanceUpdate()
         {
             InitializeComponent();
         }

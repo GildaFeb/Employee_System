@@ -34,6 +34,10 @@ namespace EMS
 
                                             //Code to save in database
             }
+
+            // Message Box
+            successATTENDANCEadd successATTENDANCEadd = new successATTENDANCEadd();
+            successATTENDANCEadd.Show();
         }
 
         private void AddClear_Click(object sender, EventArgs e)

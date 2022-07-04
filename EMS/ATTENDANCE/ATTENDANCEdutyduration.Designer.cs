@@ -288,6 +288,7 @@
             this.btn_one3.TabIndex = 130;
             this.btn_one3.Text = "Delete";
             this.btn_one3.UseVisualStyleBackColor = false;
+            this.btn_one3.Click += new System.EventHandler(this.btn_one3_Click_1);
             // 
             // pictureBox3
             // 

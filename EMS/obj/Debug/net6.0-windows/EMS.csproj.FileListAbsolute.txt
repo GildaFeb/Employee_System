@@ -324,3 +324,14 @@ C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EM
 C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.ATTENDANCEdutydurationUpdREVISED.resources
 C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.successEMPdelete.resources
 C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.successEMPupdate.resources
+C:\Users\WELCOME\Desktop\COMP PROG FINAL PROJECT\Employee_System\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.ATTENDANCEdutydurationAddREVISED.resources
+C:\Users\WELCOME\Desktop\COMP PROG FINAL PROJECT\Employee_System\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.ATTENDANCEdutydurationUpdREVISED.resources
+C:\Users\WELCOME\Desktop\COMP PROG FINAL PROJECT\Employee_System\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.successATTENDANCEadd.resources
+C:\Users\WELCOME\Desktop\COMP PROG FINAL PROJECT\Employee_System\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.successEMPdelete.resources
+C:\Users\WELCOME\Desktop\COMP PROG FINAL PROJECT\Employee_System\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.successEMPupdate.resources
+C:\Users\WELCOME\Desktop\COMP PROG FINAL PROJECT\Employee_System\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.verificationAttenDelete.resources
+C:\Users\WELCOME\Desktop\COMP PROG FINAL PROJECT\Employee_System\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.successATTENDANCEdelete.resources
+C:\Users\WELCOME\Desktop\COMP PROG FINAL PROJECT\Employee_System\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.successAttendanceUpdate.resources
+C:\Users\WELCOME\Desktop\COMP PROG FINAL PROJECT\Employee_System\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.verificationAttenUpdate.resources
+C:\Users\WELCOME\Desktop\COMP PROG FINAL PROJECT\Employee_System\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.TRASH_EMPLOYEESupdate.resources
+C:\Users\WELCOME\Desktop\COMP PROG FINAL PROJECT\Employee_System\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.TRASH_SALARY.resources

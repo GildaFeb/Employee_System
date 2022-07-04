@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace EMS
 {
-    public partial class SALARY : UserControl
+    public partial class TRASH_SALARY : UserControl
     {
-        public SALARY()
+        public TRASH_SALARY()
         {
             InitializeComponent();
         }

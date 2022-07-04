@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Compile Update="ATTENDANCEdutydurationAddREVISED.cs">
+    <Compile Update="ATTENDANCE\ATTENDANCEdutydurationAddREVISED.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="ATTENDANCEdutydurationUpdREVISED.cs">
+    <Compile Update="ATTENDANCE\ATTENDANCEdutydurationUpdREVISED.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="ATTENDANCE\ATTENDANCE.cs">
@@ -43,7 +43,7 @@
     <Compile Update="Dashboard\DASHBOARD.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="EMPLOYEESadd.cs">
+    <Compile Update="TRASH_EMPLOYEESadd.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="Employees\EMPLOYEES.cs">
@@ -55,7 +55,7 @@
     <Compile Update="Employees\EMPLOYEESdelete.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="EMPLOYEESupdate.cs">
+    <Compile Update="TRASH_EMPLOYEESupdate.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="Employees\EMPLOYEESupdate_revised.cs">
@@ -79,25 +79,28 @@
     <Compile Update="ATTENDANCE\ATTENDANCEdutydurationUpd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="SALARY.cs">
+    <Compile Update="TRASH_SALARY.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="Employees\successEMPadd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="successEMPdelete.cs">
+    <Compile Update="ATTENDANCE\successATTENDANCEadd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="successEMPupdate.cs">
+    <Compile Update="ATTENDANCE\successATTENDANCEdelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ATTENDANCE\successAttendanceUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Employees\successEMPdelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Employees\successEMPupdate.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Trash.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Update="UserControl1.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Update="UserControl2.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="ATTENDANCE\ATTENDANCEdutyduration.cs">
@@ -107,6 +110,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Employees\verificationEmpUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ATTENDANCE\verificationAttenDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ATTENDANCE\verificationAttenUpdate.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
