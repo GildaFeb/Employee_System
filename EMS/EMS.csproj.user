@@ -22,9 +22,6 @@
     <Compile Update="LoginForm\ToggleBtn.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Update="ATTENDANCE\ATTENDANCEdutydurationAdd.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="ATTENDANCE\ATTENDANCEreport.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -103,7 +100,7 @@
     <Compile Update="Trash.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="ATTENDANCE\ATTENDANCEdutyduration.cs">
+    <Compile Update="ATTENDANCE\ATTENDANCEdutydurationDel.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="Employees\verificationEmpDelete.cs">

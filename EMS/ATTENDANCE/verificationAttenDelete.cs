@@ -19,8 +19,14 @@ namespace EMS
 
         private void btn_one2_Click(object sender, EventArgs e)
         {
+            this.Close();
             successATTENDANCEdelete successATTENDANCEdelete = new successATTENDANCEdelete();
-            successATTENDANCEdelete.Show();
+            successATTENDANCEdelete.ShowDialog();
+        }
+
+        private void btn_one1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

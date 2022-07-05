@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace EMS
 {
-    public partial class ATTENDANCEdutyduration : UserControl
+    public partial class ATTENDANCEdutydurationDel : UserControl
     {
-        public ATTENDANCEdutyduration()
+        public ATTENDANCEdutydurationDel()
         {
             InitializeComponent();
         }
@@ -54,18 +54,6 @@ namespace EMS
         private void pictureBox2_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void btn_one1_Click(object sender, EventArgs e)
-        {
-            ATTENDANCEdutydurationAdd add = new ATTENDANCEdutydurationAdd();
-            add.ShowDialog();
-        }
-
-        private void btn_one3_Click(object sender, EventArgs e)
-        {
-            ATTENDANCEdutydurationUpd upd = new ATTENDANCEdutydurationUpd();
-            upd.ShowDialog();
         }
 
         private void DelDuration_Click(object sender, EventArgs e)

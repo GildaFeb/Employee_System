@@ -33,8 +33,6 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.LogTogglePass = new LoginForm.ToggleBtn();
-            this.LblLogCreate = new System.Windows.Forms.Label();
-            this.LblLogAcc = new System.Windows.Forms.Label();
             this.LogTxtPass = new LoginForm.TextBox();
             this.Pswrd = new System.Windows.Forms.Label();
             this.LogTxtUser = new LoginForm.TextBox();
@@ -55,7 +53,7 @@
             this.LogClrBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LogClrBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LogClrBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.LogClrBtn.Location = new System.Drawing.Point(470, 324);
+            this.LogClrBtn.Location = new System.Drawing.Point(470, 338);
             this.LogClrBtn.Name = "LogClrBtn";
             this.LogClrBtn.Size = new System.Drawing.Size(216, 35);
             this.LogClrBtn.TabIndex = 25;
@@ -75,7 +73,7 @@
             this.LogBtn.FlatAppearance.BorderSize = 0;
             this.LogBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LogBtn.ForeColor = System.Drawing.Color.White;
-            this.LogBtn.Location = new System.Drawing.Point(470, 283);
+            this.LogBtn.Location = new System.Drawing.Point(470, 297);
             this.LogBtn.Name = "LogBtn";
             this.LogBtn.Size = new System.Drawing.Size(216, 35);
             this.LogBtn.TabIndex = 26;
@@ -88,7 +86,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
             this.pictureBox2.Image = global::EMS.Properties.Resources.download_icon_lock_password_protect_safety_security_icon_1320086045132546966_512;
-            this.pictureBox2.Location = new System.Drawing.Point(658, 208);
+            this.pictureBox2.Location = new System.Drawing.Point(658, 222);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(20, 20);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -99,7 +97,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
             this.pictureBox1.Image = global::EMS.Properties.Resources.account_icon_8;
-            this.pictureBox1.Location = new System.Drawing.Point(658, 135);
+            this.pictureBox1.Location = new System.Drawing.Point(658, 149);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(20, 20);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -110,7 +108,7 @@
             // 
             this.LogTogglePass.AutoSize = true;
             this.LogTogglePass.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.LogTogglePass.Location = new System.Drawing.Point(530, 235);
+            this.LogTogglePass.Location = new System.Drawing.Point(530, 249);
             this.LogTogglePass.MinimumSize = new System.Drawing.Size(45, 22);
             this.LogTogglePass.Name = "LogTogglePass";
             this.LogTogglePass.OffBackColor = System.Drawing.Color.Gray;
@@ -122,28 +120,6 @@
             this.LogTogglePass.UseVisualStyleBackColor = true;
             this.LogTogglePass.CheckedChanged += new System.EventHandler(this.shwpswrd_CheckedChanged);
             // 
-            // LblLogCreate
-            // 
-            this.LblLogCreate.AutoSize = true;
-            this.LblLogCreate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.LblLogCreate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.LblLogCreate.Location = new System.Drawing.Point(518, 402);
-            this.LblLogCreate.Name = "LblLogCreate";
-            this.LblLogCreate.Size = new System.Drawing.Size(125, 16);
-            this.LblLogCreate.TabIndex = 17;
-            this.LblLogCreate.Text = "Create Account";
-            this.LblLogCreate.Click += new System.EventHandler(this.label5_Click);
-            // 
-            // LblLogAcc
-            // 
-            this.LblLogAcc.AutoSize = true;
-            this.LblLogAcc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.LblLogAcc.Location = new System.Drawing.Point(490, 386);
-            this.LblLogAcc.Name = "LblLogAcc";
-            this.LblLogAcc.Size = new System.Drawing.Size(181, 16);
-            this.LblLogAcc.TabIndex = 18;
-            this.LblLogAcc.Text = "Don\'t Have an Account";
-            // 
             // LogTxtPass
             // 
             this.LogTxtPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
@@ -154,7 +130,7 @@
             this.LogTxtPass.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.LogTxtPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.LogTxtPass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.LogTxtPass.Location = new System.Drawing.Point(470, 201);
+            this.LogTxtPass.Location = new System.Drawing.Point(470, 215);
             this.LogTxtPass.Margin = new System.Windows.Forms.Padding(4);
             this.LogTxtPass.Multiline = false;
             this.LogTxtPass.Name = "LogTxtPass";
@@ -171,7 +147,7 @@
             // 
             this.Pswrd.AutoSize = true;
             this.Pswrd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Pswrd.Location = new System.Drawing.Point(470, 182);
+            this.Pswrd.Location = new System.Drawing.Point(470, 196);
             this.Pswrd.Name = "Pswrd";
             this.Pswrd.Size = new System.Drawing.Size(77, 16);
             this.Pswrd.TabIndex = 13;
@@ -187,7 +163,7 @@
             this.LogTxtUser.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.LogTxtUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.LogTxtUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.LogTxtUser.Location = new System.Drawing.Point(470, 129);
+            this.LogTxtUser.Location = new System.Drawing.Point(470, 143);
             this.LogTxtUser.Margin = new System.Windows.Forms.Padding(4);
             this.LogTxtUser.Multiline = true;
             this.LogTxtUser.Name = "LogTxtUser";
@@ -204,7 +180,7 @@
             // 
             this.Usrnme.AutoSize = true;
             this.Usrnme.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Usrnme.Location = new System.Drawing.Point(472, 110);
+            this.Usrnme.Location = new System.Drawing.Point(472, 124);
             this.Usrnme.Name = "Usrnme";
             this.Usrnme.Size = new System.Drawing.Size(79, 16);
             this.Usrnme.TabIndex = 14;
@@ -215,7 +191,7 @@
             this.LogLblTitle.AutoSize = true;
             this.LogLblTitle.Font = new System.Drawing.Font("MS Reference Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.LogLblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.LogLblTitle.Location = new System.Drawing.Point(462, 49);
+            this.LogLblTitle.Location = new System.Drawing.Point(462, 63);
             this.LogLblTitle.Name = "LogLblTitle";
             this.LogLblTitle.Size = new System.Drawing.Size(167, 34);
             this.LogLblTitle.TabIndex = 12;
@@ -225,7 +201,7 @@
             // 
             this.LblShwPass.AutoSize = true;
             this.LblShwPass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.LblShwPass.Location = new System.Drawing.Point(572, 238);
+            this.LblShwPass.Location = new System.Drawing.Point(572, 252);
             this.LblShwPass.Name = "LblShwPass";
             this.LblShwPass.Size = new System.Drawing.Size(123, 16);
             this.LblShwPass.TabIndex = 27;
@@ -243,8 +219,6 @@
             this.Controls.Add(this.LogClrBtn);
             this.Controls.Add(this.LogBtn);
             this.Controls.Add(this.LogTogglePass);
-            this.Controls.Add(this.LblLogCreate);
-            this.Controls.Add(this.LblLogAcc);
             this.Controls.Add(this.LogTxtPass);
             this.Controls.Add(this.Pswrd);
             this.Controls.Add(this.LogTxtUser);
@@ -274,8 +248,6 @@
         private PictureBox pictureBox2;
         private PictureBox pictureBox1;
         private ToggleBtn LogTogglePass;
-        private Label LblLogCreate;
-        private Label LblLogAcc;
         private TextBox LogTxtPass;
         private Label Pswrd;
         private TextBox LogTxtUser;

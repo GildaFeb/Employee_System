@@ -61,7 +61,7 @@
             this.employeeSdelete2 = new EMS.EMPLOYEESdelete();
             this.dashboard1 = new EMS.dashboard();
             this.attendancEreport1 = new EMS.ATTENDANCEreport();
-            this.attendancEdutyduration1 = new EMS.ATTENDANCEdutyduration();
+            this.attendancEdutyduration1 = new EMS.ATTENDANCEdutydurationDel();
             this.panel1.SuspendLayout();
             this.pnl_IndicatorAttendance.SuspendLayout();
             this.attendancePnl.SuspendLayout();
@@ -593,7 +593,7 @@
         private ATTENDANCE attendance1;
         private TRASH_SALARY salary1;
         private EMPLOYEESdelete employeeSdelete1;
-        private ATTENDANCEdutyduration Attendancedprtmnt1;
+        private ATTENDANCEdutydurationDel Attendancedprtmnt1;
         private Button button3;
         private Panel attendancePnl;
         private Panel attendanceReport_SubSubPnl;
@@ -611,7 +611,7 @@
         private EMPLOYEESdelete employeeSdelete2;
         private dashboard dashboard1;
         private ATTENDANCEreport attendancEreport1;
-        private ATTENDANCEdutyduration attendancEdutyduration1;
+        private ATTENDANCEdutydurationDel attendancEdutyduration1;
         private btn_one LogoutBtn;
     }
 }
