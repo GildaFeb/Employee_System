@@ -78,8 +78,8 @@ namespace EMS
 
         private void btn_one3_Click_1(object sender, EventArgs e)
         {
-            verificationAttenDelete verificationAttenDelete = new verificationAttenDelete();
-            verificationAttenDelete.Show();
+            verificationDutyDelete verificationAttenDelete = new verificationDutyDelete();
+            verificationAttenDelete.ShowDialog();
         }
     }
 }

@@ -297,7 +297,7 @@
             "November",
             "December"});
             this.CmbxMonth.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
-            this.CmbxMonth.ListTextColor = System.Drawing.Color.White;
+            this.CmbxMonth.ListTextColor = System.Drawing.Color.Black;
             this.CmbxMonth.Location = new System.Drawing.Point(108, 152);
             this.CmbxMonth.MinimumSize = new System.Drawing.Size(200, 30);
             this.CmbxMonth.Name = "CmbxMonth";
@@ -317,7 +317,7 @@
             this.CmbxYear.ForeColor = System.Drawing.Color.White;
             this.CmbxYear.IconColor = System.Drawing.Color.White;
             this.CmbxYear.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
-            this.CmbxYear.ListTextColor = System.Drawing.Color.White;
+            this.CmbxYear.ListTextColor = System.Drawing.Color.Black;
             this.CmbxYear.Location = new System.Drawing.Point(330, 152);
             this.CmbxYear.MinimumSize = new System.Drawing.Size(150, 30);
             this.CmbxYear.Name = "CmbxYear";
@@ -340,6 +340,7 @@
             this.btn_one3.TabIndex = 132;
             this.btn_one3.Text = "Delete";
             this.btn_one3.UseVisualStyleBackColor = false;
+            this.btn_one3.Click += new System.EventHandler(this.btn_one3_Click);
             // 
             // btn_one2
             // 

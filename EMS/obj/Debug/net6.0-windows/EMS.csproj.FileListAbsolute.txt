@@ -392,11 +392,11 @@ C:\Users\gilda\OneDrive\Desktop\test\EMS\obj\Debug\net6.0-windows\refint\EMS.dll
 C:\Users\gilda\OneDrive\Desktop\test\EMS\obj\Debug\net6.0-windows\EMS.pdb
 C:\Users\gilda\OneDrive\Desktop\test\EMS\obj\Debug\net6.0-windows\EMS.genruntimeconfig.cache
 C:\Users\gilda\OneDrive\Desktop\test\EMS\obj\Debug\net6.0-windows\ref\EMS.dll
-C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.successATTENDANCEadd.resources
-C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.successATTENDANCEdelete.resources
-C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.successAttendanceUpdate.resources
-C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.verificationAttenDelete.resources
-C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.verificationAttenUpdate.resources
 C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.TRASH_EMPLOYEESupdate.resources
 C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.TRASH_SALARY.resources
 C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.ATTENDANCEdutydurationDel.resources
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.successDutydelete.resources
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.verificationDutyDelete.resources
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.VerificationDutyUpdate.resources
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.SuccessDutyAdd.resources
+C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.SuccessDutyUpdate.resources

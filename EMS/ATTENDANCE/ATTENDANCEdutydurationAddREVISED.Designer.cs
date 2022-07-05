@@ -115,6 +115,7 @@
             this.AddSave.TabIndex = 196;
             this.AddSave.Text = "Save";
             this.AddSave.UseVisualStyleBackColor = false;
+            this.AddSave.Click += new System.EventHandler(this.AddSave_Click);
             // 
             // LblName
             // 

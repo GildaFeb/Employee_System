@@ -16,5 +16,11 @@ namespace EMS
         {
             InitializeComponent();
         }
+
+        private void AddSave_Click(object sender, EventArgs e)
+        {
+            SuccessDutyAdd add = new SuccessDutyAdd();
+            add.ShowDialog();
+        }
     }
 }

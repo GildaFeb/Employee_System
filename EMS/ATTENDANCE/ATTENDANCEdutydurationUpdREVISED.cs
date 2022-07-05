@@ -29,8 +29,8 @@ namespace EMS
 
         private void UpdSave_Click(object sender, EventArgs e)
         {
-            verificationAttenUpdate verificationAttenUpdate = new verificationAttenUpdate();
-            verificationAttenUpdate.Show();
+            VerificationDutyUpdate verificationAttenUpdate = new VerificationDutyUpdate();
+            verificationAttenUpdate.ShowDialog();
         }
 
         private void UpdTimePickerIn_ValueChanged(object sender, EventArgs e)

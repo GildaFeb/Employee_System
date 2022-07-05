@@ -34,5 +34,10 @@ namespace EMS
                 CMessageBox.Show("Selected attendance report data deleted.");
             }
         }
+
+        private void btn_one3_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

@@ -10,18 +10,19 @@ using System.Windows.Forms;
 
 namespace EMS
 {
-    public partial class verificationAttenDelete : Form
+    public partial class VerificationDutyUpdate : Form
     {
-        public verificationAttenDelete()
+        public VerificationDutyUpdate()
         {
             InitializeComponent();
         }
 
         private void btn_one2_Click(object sender, EventArgs e)
         {
+            // Success Message Box
             this.Close();
-            successATTENDANCEdelete successATTENDANCEdelete = new successATTENDANCEdelete();
-            successATTENDANCEdelete.ShowDialog();
+            SuccessDutyUpdate successAttendanceUpdate = new SuccessDutyUpdate();
+            successAttendanceUpdate.ShowDialog();
         }
 
         private void btn_one1_Click(object sender, EventArgs e)

@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace EMS
 {
-    public partial class successATTENDANCEadd : Form
+    public partial class SuccessDutyUpdate : Form
     {
-        public successATTENDANCEadd()
+        public SuccessDutyUpdate()
         {
             InitializeComponent();
+        }
+
+        private void btn_one2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

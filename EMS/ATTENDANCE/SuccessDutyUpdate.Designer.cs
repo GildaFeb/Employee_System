@@ -1,6 +1,6 @@
 ﻿namespace EMS
 {
-    partial class successATTENDANCEdelete
+    partial class SuccessDutyUpdate
     {
         /// <summary>
         /// Required designer variable.
@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(successATTENDANCEdelete));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SuccessDutyUpdate));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_one2 = new EMS.btn_one();
             this.btn_one1 = new EMS.btn_one();
-            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,51 +45,8 @@
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(109, 87);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 91;
+            this.pictureBox1.TabIndex = 96;
             this.pictureBox1.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(37)))), ((int)(((byte)(83)))));
-            this.label1.Location = new System.Drawing.Point(169, 184);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(269, 31);
-            this.label1.TabIndex = 89;
-            this.label1.Text = "Deleted succesfully";
-            // 
-            // btn_one2
-            // 
-            this.btn_one2.BackColor = System.Drawing.Color.White;
-            this.btn_one2.FlatAppearance.BorderSize = 0;
-            this.btn_one2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_one2.Font = new System.Drawing.Font("SF Pro Text", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_one2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            this.btn_one2.Location = new System.Drawing.Point(327, 322);
-            this.btn_one2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_one2.Name = "btn_one2";
-            this.btn_one2.Size = new System.Drawing.Size(141, 38);
-            this.btn_one2.TabIndex = 87;
-            this.btn_one2.Text = "Done";
-            this.btn_one2.UseVisualStyleBackColor = false;
-            this.btn_one2.Click += new System.EventHandler(this.btn_one2_Click);
-            // 
-            // btn_one1
-            // 
-            this.btn_one1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(202)))), ((int)(((byte)(63)))));
-            this.btn_one1.FlatAppearance.BorderSize = 0;
-            this.btn_one1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_one1.Font = new System.Drawing.Font("SF Pro Text", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_one1.ForeColor = System.Drawing.Color.White;
-            this.btn_one1.Location = new System.Drawing.Point(127, 322);
-            this.btn_one1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_one1.Name = "btn_one1";
-            this.btn_one1.Size = new System.Drawing.Size(141, 38);
-            this.btn_one1.TabIndex = 88;
-            this.btn_one1.Text = "View table";
-            this.btn_one1.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
@@ -100,11 +57,56 @@
             this.label3.Location = new System.Drawing.Point(116, 231);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(348, 18);
-            this.label3.TabIndex = 90;
-            this.label3.Text = "Duty duration of an employee has been deleted.";
+            this.label3.Size = new System.Drawing.Size(352, 18);
+            this.label3.TabIndex = 95;
+            this.label3.Text = "Duty duration of an employee has been updated.";
             // 
-            // successATTENDANCEdelete
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(37)))), ((int)(((byte)(83)))));
+            this.label1.Location = new System.Drawing.Point(164, 184);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(278, 31);
+            this.label1.TabIndex = 94;
+            this.label1.Text = "Updated succesfully";
+            // 
+            // btn_one2
+            // 
+            this.btn_one2.BackColor = System.Drawing.Color.White;
+            this.btn_one2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_one2.FlatAppearance.BorderSize = 0;
+            this.btn_one2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_one2.Font = new System.Drawing.Font("SF Pro Text", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_one2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
+            this.btn_one2.Location = new System.Drawing.Point(327, 322);
+            this.btn_one2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_one2.Name = "btn_one2";
+            this.btn_one2.Size = new System.Drawing.Size(141, 38);
+            this.btn_one2.TabIndex = 92;
+            this.btn_one2.Text = "Done";
+            this.btn_one2.UseVisualStyleBackColor = false;
+            this.btn_one2.Click += new System.EventHandler(this.btn_one2_Click);
+            // 
+            // btn_one1
+            // 
+            this.btn_one1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(202)))), ((int)(((byte)(63)))));
+            this.btn_one1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_one1.FlatAppearance.BorderSize = 0;
+            this.btn_one1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_one1.Font = new System.Drawing.Font("SF Pro Text", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_one1.ForeColor = System.Drawing.Color.White;
+            this.btn_one1.Location = new System.Drawing.Point(127, 322);
+            this.btn_one1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_one1.Name = "btn_one1";
+            this.btn_one1.Size = new System.Drawing.Size(141, 38);
+            this.btn_one1.TabIndex = 93;
+            this.btn_one1.Text = "View table";
+            this.btn_one1.UseVisualStyleBackColor = false;
+            // 
+            // SuccessDutyUpdate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -117,7 +119,7 @@
             this.Controls.Add(this.btn_one1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
-            this.Name = "successATTENDANCEdelete";
+            this.Name = "SuccessDutyUpdate";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -129,9 +131,9 @@
         #endregion
 
         private PictureBox pictureBox1;
+        private Label label3;
         private Label label1;
         private btn_one btn_one2;
         private btn_one btn_one1;
-        private Label label3;
     }
 }

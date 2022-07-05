@@ -10,14 +10,21 @@ using System.Windows.Forms;
 
 namespace EMS
 {
-    public partial class successATTENDANCEdelete : Form
+    public partial class verificationDutyDelete : Form
     {
-        public successATTENDANCEdelete()
+        public verificationDutyDelete()
         {
             InitializeComponent();
         }
 
         private void btn_one2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            successDutydelete successATTENDANCEdelete = new successDutydelete();
+            successATTENDANCEdelete.ShowDialog();
+        }
+
+        private void btn_one1_Click(object sender, EventArgs e)
         {
             this.Close();
         }

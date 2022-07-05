@@ -220,7 +220,7 @@ namespace EMS
 
         private void button12_Click_1(object sender, EventArgs e)
         {
-            attendancEreport1.BringToFront();
+            attendancEdutyduration1.BringToFront();
             showAttendanceRepSubMenu(attendanceReport_SubSubPnl);
             //attendanceReport_SubSubPnl.Visible = true;
 
@@ -228,7 +228,7 @@ namespace EMS
 
         private void button11_Click(object sender, EventArgs e)
         {
-
+            attendancEdutydurationUpdrevised1.BringToFront();
         }
 
         private void button8_Click_1(object sender, EventArgs e)
@@ -238,18 +238,18 @@ namespace EMS
 
         private void button7_Click_1(object sender, EventArgs e)
         {
-            attendancEdutyduration1.BringToFront();
+            attendancEreport1.BringToFront();
             attendanceReport_SubSubPnl.Visible = false;
         }
 
         private void button9_Click_1(object sender, EventArgs e)
         {
-
+            attendancEdutyduration1.BringToFront();
         }
 
         private void button10_Click(object sender, EventArgs e)
         {
-
+            attendancEdutydurationAddrevised1.BringToFront();
         }
 
         private void LogoutBtn_Click(object sender, EventArgs e)
