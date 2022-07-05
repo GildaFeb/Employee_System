@@ -37,7 +37,8 @@ namespace EMS
 
         private void btn_one3_Click(object sender, EventArgs e)
         {
-            
+            VerificationRepDelete delete = new VerificationRepDelete();
+            delete.ShowDialog();
         }
     }
 }
