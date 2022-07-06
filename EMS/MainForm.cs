@@ -13,7 +13,7 @@ namespace EMS
 
             pnl_IndicatorDashboard.Show();
             pnl_IndicatorAttendance.Hide();
-            pnl_IndicatorEmployees.Hide();
+            //pnl_IndicatorEmployees.Hide();
             
             dashboard1.BringToFront();
 
@@ -75,7 +75,7 @@ namespace EMS
         {
             showSubMenu(employeesPnl);
 
-            pnl_IndicatorEmployees.Show();
+            pnl_IndicatorEmployeesNew.Show();
             pnl_IndicatorAttendance.Hide();
             pnl_IndicatorDashboard.Hide();
 
@@ -131,7 +131,7 @@ namespace EMS
             
             pnl_IndicatorAttendance.Show();
             pnl_IndicatorDashboard.Hide();
-            pnl_IndicatorEmployees.Hide();
+            pnl_IndicatorEmployeesNew.Hide();
 
            // attendance1.BringToFront();
         }
@@ -140,7 +140,7 @@ namespace EMS
         {
             pnl_IndicatorDashboard.Show();
             pnl_IndicatorAttendance.Hide();
-            pnl_IndicatorEmployees.Hide();
+            pnl_IndicatorEmployeesNew.Hide();
 
             // DASHBOARD Page
             dashboard1.BringToFront();
@@ -210,7 +210,7 @@ namespace EMS
         {
             showSubMenu(attendancePnl);
 
-            pnl_IndicatorEmployees.Hide();
+            pnl_IndicatorEmployeesNew.Hide();
             pnl_IndicatorAttendance.Show();
             pnl_IndicatorDashboard.Hide();
 
@@ -266,6 +266,11 @@ namespace EMS
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void pnl_IndicatorDashboard_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
