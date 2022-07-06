@@ -10,13 +10,13 @@
     <Compile Update="ATTENDANCE\ATTENDANCE.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="LoginForm\RegisterForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="LoginForm\LogForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="LoginForm\FormMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LoginForm\RegisterForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="LoginForm\ToggleBtn.cs">
@@ -43,6 +43,9 @@
     <Compile Update="ATTENDANCE\SuccessRepDelete.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="TRASH_EMPLOYEESadd.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -62,9 +65,6 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="Employees\errorEMPadd.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="LoginForm\Button.cs">

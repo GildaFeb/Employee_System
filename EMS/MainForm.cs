@@ -88,6 +88,10 @@ namespace EMS
         {
             // EMPLOYEE ADD Page (Revised)
             employeeSadd_revised1.BringToFront();
+
+            addEmp_Pnl.Show();
+            updateEmp_Pnl.Hide();
+            deleteEmp_Pnl.Hide();
         }
 
         private void subBtn_UpdateEmp_Click(object sender, EventArgs e)
