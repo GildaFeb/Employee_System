@@ -42,5 +42,10 @@ namespace EMS
         {
 
         }
+
+        private void UpdLblId_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
