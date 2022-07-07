@@ -52,6 +52,10 @@
               "target": "Package",
               "version": "[1.57.0.2696, )"
             },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.0.0-preview3.22168.1, )"
+            },
             "System.Globalization.Calendars": {
               "target": "Package",
               "version": "[4.3.0, )"
