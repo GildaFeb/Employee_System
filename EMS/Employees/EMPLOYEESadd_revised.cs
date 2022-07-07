@@ -27,6 +27,9 @@ namespace EMS
 
             hired_date.MaxDate = DateTime.Today;
             birth.MaxDate = DateTime.Today;
+
+            regular_pay.MaxLength = 6;
+            regular_worktime.MaxLength = 4;
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -196,7 +199,7 @@ namespace EMS
 
         private void position_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btn_one1_Click(object sender, EventArgs e)
@@ -257,6 +260,14 @@ namespace EMS
             }
         }
 
-        
+        private void regular_pay_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            double Pay = Convert.ToDouble(Console.ReadLine());
+        }
+
+        private void total_rpay_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            total_rpay.Value = regular_pay * regular_worktime;
+        }
     }
 }

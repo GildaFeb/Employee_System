@@ -626,7 +626,7 @@
             this.regular_pay.Name = "regular_pay";
             this.regular_pay.Size = new System.Drawing.Size(306, 28);
             this.regular_pay.TabIndex = 111;
-            this.regular_pay.SelectedIndexChanged += new System.EventHandler(this.position_SelectedIndexChanged);
+            this.regular_pay.SelectedIndexChanged += new System.EventHandler(this.regular_pay_SelectedIndexChanged);
             // 
             // regular_worktime
             // 
@@ -658,7 +658,7 @@
             this.total_rpay.Name = "total_rpay";
             this.total_rpay.Size = new System.Drawing.Size(306, 28);
             this.total_rpay.TabIndex = 111;
-            this.total_rpay.SelectedIndexChanged += new System.EventHandler(this.position_SelectedIndexChanged);
+            this.total_rpay.SelectedIndexChanged += new System.EventHandler(this.total_rpay_SelectedIndexChanged);
             // 
             // pictureBox2
             // 
