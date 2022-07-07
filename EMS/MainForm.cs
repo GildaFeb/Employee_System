@@ -15,9 +15,9 @@ namespace EMS
             pnl_IndicatorAttendance.Hide();
             //pnl_IndicatorEmployees.Hide();
             
-            dashboard1.BringToFront();
+            dashboard2.BringToFront();
 
-            this.ControlBox = false;
+            //this.ControlBox = false;
             this.Text = String.Empty;
             this.DoubleBuffered = true;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
@@ -80,14 +80,14 @@ namespace EMS
             pnl_IndicatorDashboard.Hide();
 
             // EMPLOYEES page
-            employees1.BringToFront();
+            employees2.BringToFront();
 
         }
 
         private void subBtn_AddEmp_Click(object sender, EventArgs e)
         {
             // EMPLOYEE ADD Page (Revised)
-            employeeSadd_revised1.BringToFront();
+            employeeSadd_revised2.BringToFront();
 
             addEmp_Pnl.Show();
             updateEmp_Pnl.Hide();
@@ -97,13 +97,13 @@ namespace EMS
         private void subBtn_UpdateEmp_Click(object sender, EventArgs e)
         {
             // EMPLOYEE UPDATE Page (Revised)
-            employeeSupdate_revised1.BringToFront();
+            employeeSupdate_revised2.BringToFront();
         }
 
         private void subBtn_SearchEmp_Click(object sender, EventArgs e)
         {
             // EMPLOYEE DELETE Page
-            employeeSdelete2.BringToFront();
+            employeeSdelete3.BringToFront();
         }
 
         private void app_bg_load(object sender, EventArgs e)
@@ -147,7 +147,7 @@ namespace EMS
             pnl_IndicatorEmployeesNew.Hide();
 
             // DASHBOARD Page
-            dashboard1.BringToFront();
+            dashboard2.BringToFront();
 
             hideSubMenu();
         }
@@ -219,12 +219,12 @@ namespace EMS
             pnl_IndicatorDashboard.Hide();
 
             // ATTENDANCE Page
-            attendance1.BringToFront();
+            attendance2.BringToFront();
         }
 
         private void button12_Click_1(object sender, EventArgs e)
         {
-            attendancEdutyduration1.BringToFront();
+            attendancEdutydurationDel1.BringToFront();
             showAttendanceRepSubMenu(attendanceReport_SubSubPnl);
             //attendanceReport_SubSubPnl.Visible = true;
 
@@ -232,7 +232,7 @@ namespace EMS
 
         private void button11_Click(object sender, EventArgs e)
         {
-            attendancEdutydurationUpdrevised1.BringToFront();
+            attendancEdutydurationUpdrevised2.BringToFront();
         }
 
         private void button8_Click_1(object sender, EventArgs e)
@@ -242,18 +242,18 @@ namespace EMS
 
         private void button7_Click_1(object sender, EventArgs e)
         {
-            attendancEreport1.BringToFront();
+            attendancEreport2.BringToFront();
             attendanceReport_SubSubPnl.Visible = false;
         }
 
         private void button9_Click_1(object sender, EventArgs e)
         {
-            attendancEdutyduration1.BringToFront();
+            attendancEdutydurationDel1.BringToFront();
         }
 
         private void button10_Click(object sender, EventArgs e)
         {
-            attendancEdutydurationAddrevised1.BringToFront();
+            attendancEdutydurationAddrevised2.BringToFront();
         }
 
         private void LogoutBtn_Click(object sender, EventArgs e)
@@ -275,6 +275,11 @@ namespace EMS
         private void pnl_IndicatorDashboard_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Environment.Exit(Environment.ExitCode); //will delete pag may logout button na 
         }
     }
 }
