@@ -64,7 +64,7 @@ namespace EMS
         {
             Employee_Details.Employee employee = new Employee_Details.Employee()
             {
-                employee_id = employee_id.Text,
+                employeeID = employee_id.Text,
                 last_name = last_name.Text,
                 first_name = first_name.Text,
                 middle_name = middle_name.Text,
@@ -75,7 +75,7 @@ namespace EMS
                 email = email.Text,
                 emergency_contact_number = emergency_contact.Text,
                 position = position.Text,
-                salary = salary.Text
+                total_salary = salary.Text
 
 
             };

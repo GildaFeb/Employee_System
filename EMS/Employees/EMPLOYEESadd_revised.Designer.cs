@@ -63,18 +63,18 @@
             this.label21 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.sex = new System.Windows.Forms.ComboBox();
-            this.btn_search = new EMS.btn_one();
             this.btn_clear = new EMS.btn_one();
             this.btn_save = new EMS.btn_one();
             this.regular_pay = new System.Windows.Forms.ComboBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.birth = new System.Windows.Forms.DateTimePicker();
             this.total_rpay = new System.Windows.Forms.TextBox();
             this.regular_worktime = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
+            this.suffix = new System.Windows.Forms.ComboBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label16
@@ -93,6 +93,7 @@
             // employee_id
             // 
             this.employee_id.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.employee_id.Enabled = false;
             this.employee_id.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.employee_id.ForeColor = System.Drawing.Color.Black;
             this.employee_id.Location = new System.Drawing.Point(603, 132);
@@ -136,7 +137,7 @@
             this.label18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(117, 288);
+            this.label18.Location = new System.Drawing.Point(113, 473);
             this.label18.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(77, 18);
@@ -149,7 +150,7 @@
             this.last_name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.last_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.last_name.ForeColor = System.Drawing.Color.Black;
-            this.last_name.Location = new System.Drawing.Point(121, 327);
+            this.last_name.Location = new System.Drawing.Point(117, 518);
             this.last_name.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.last_name.Multiline = true;
             this.last_name.Name = "last_name";
@@ -396,7 +397,7 @@
             this.first_name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.first_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.first_name.ForeColor = System.Drawing.Color.Black;
-            this.first_name.Location = new System.Drawing.Point(121, 419);
+            this.first_name.Location = new System.Drawing.Point(117, 327);
             this.first_name.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.first_name.Multiline = true;
             this.first_name.Name = "first_name";
@@ -411,7 +412,7 @@
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(117, 381);
+            this.label4.Location = new System.Drawing.Point(117, 288);
             this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(78, 18);
@@ -424,7 +425,7 @@
             this.middle_name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.middle_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.middle_name.ForeColor = System.Drawing.Color.Black;
-            this.middle_name.Location = new System.Drawing.Point(121, 513);
+            this.middle_name.Location = new System.Drawing.Point(117, 420);
             this.middle_name.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.middle_name.Multiline = true;
             this.middle_name.Name = "middle_name";
@@ -439,7 +440,7 @@
             this.label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(117, 475);
+            this.label13.Location = new System.Drawing.Point(117, 381);
             this.label13.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(92, 18);
@@ -558,22 +559,6 @@
             this.sex.TabIndex = 111;
             this.sex.SelectedIndexChanged += new System.EventHandler(this.sex_SelectedIndexChanged);
             // 
-            // btn_search
-            // 
-            this.btn_search.BackColor = System.Drawing.Color.White;
-            this.btn_search.Enabled = false;
-            this.btn_search.FlatAppearance.BorderSize = 0;
-            this.btn_search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_search.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_search.ForeColor = System.Drawing.Color.Black;
-            this.btn_search.Location = new System.Drawing.Point(121, 876);
-            this.btn_search.Name = "btn_search";
-            this.btn_search.Padding = new System.Windows.Forms.Padding(31, 0, 0, 0);
-            this.btn_search.Size = new System.Drawing.Size(149, 49);
-            this.btn_search.TabIndex = 115;
-            this.btn_search.Text = "Search";
-            this.btn_search.UseVisualStyleBackColor = false;
-            // 
             // btn_clear
             // 
             this.btn_clear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
@@ -624,17 +609,6 @@
             this.regular_pay.TabIndex = 111;
             this.regular_pay.SelectedIndexChanged += new System.EventHandler(this.regular_pay_SelectedIndexChanged);
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.White;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(139, 889);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(27, 25);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 118;
-            this.pictureBox2.TabStop = false;
-            // 
             // birth
             // 
             this.birth.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -674,7 +648,7 @@
             "120hrs (6hrs x 5days) x 4weeks",
             "96hrs (8hrs x 3days) x 4weeks",
             "48hrs (4hrs x 5days) x 4weeks"});
-            this.regular_worktime.Location = new System.Drawing.Point(597, 513);
+            this.regular_worktime.Location = new System.Drawing.Point(597, 518);
             this.regular_worktime.Name = "regular_worktime";
             this.regular_worktime.Size = new System.Drawing.Size(351, 28);
             this.regular_worktime.TabIndex = 121;
@@ -687,12 +661,12 @@
             this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(822, 494);
+            this.label11.Location = new System.Drawing.Point(843, 494);
             this.label11.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(130, 16);
+            this.label11.Size = new System.Drawing.Size(103, 16);
             this.label11.TabIndex = 122;
-            this.label11.Text = "(Hours per month)";
+            this.label11.Text = "Hrs per month";
             // 
             // label22
             // 
@@ -701,25 +675,69 @@
             this.label22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label22.ForeColor = System.Drawing.Color.White;
-            this.label22.Location = new System.Drawing.Point(873, 400);
+            this.label22.Location = new System.Drawing.Point(822, 400);
             this.label22.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(75, 16);
+            this.label22.Size = new System.Drawing.Size(130, 16);
             this.label22.TabIndex = 123;
-            this.label22.Text = "(Per hour)";
+            this.label22.Text = "Per hour (in peso)";
+            // 
+            // suffix
+            // 
+            this.suffix.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.suffix.FormattingEnabled = true;
+            this.suffix.Items.AddRange(new object[] {
+            "Sr.",
+            "Jr.",
+            "III",
+            "IV",
+            "V",
+            "none"});
+            this.suffix.Location = new System.Drawing.Point(121, 616);
+            this.suffix.Name = "suffix";
+            this.suffix.Size = new System.Drawing.Size(350, 28);
+            this.suffix.TabIndex = 124;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label23.ForeColor = System.Drawing.Color.White;
+            this.label23.Location = new System.Drawing.Point(121, 577);
+            this.label23.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(44, 18);
+            this.label23.TabIndex = 125;
+            this.label23.Text = "Suffix";
+            // 
+            // label24
+            // 
+            this.label24.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.label24.AutoSize = true;
+            this.label24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label24.ForeColor = System.Drawing.Color.White;
+            this.label24.Location = new System.Drawing.Point(811, 597);
+            this.label24.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(141, 16);
+            this.label24.TabIndex = 126;
+            this.label24.Text = "Per month (in peso)";
             // 
             // EMPLOYEESadd_revised
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.Controls.Add(this.label24);
+            this.Controls.Add(this.label23);
+            this.Controls.Add(this.suffix);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.regular_worktime);
             this.Controls.Add(this.total_rpay);
             this.Controls.Add(this.birth);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.btn_search);
             this.Controls.Add(this.btn_clear);
             this.Controls.Add(this.btn_save);
             this.Controls.Add(this.pictureBox3);
@@ -761,7 +779,6 @@
             this.Size = new System.Drawing.Size(1555, 1033);
             this.Load += new System.EventHandler(this.EMPLOYEESadd_revised_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -803,15 +820,16 @@
         private Label label21;
         private PictureBox pictureBox3;
         private ComboBox sex;
-        private btn_one btn_search;
         private btn_one btn_clear;
         private btn_one btn_save;
         private ComboBox regular_pay;
-        private PictureBox pictureBox2;
         private DateTimePicker birth;
         private TextBox total_rpay;
         private ComboBox regular_worktime;
         private Label label11;
         private Label label22;
+        private ComboBox suffix;
+        private Label label23;
+        private Label label24;
     }
 }

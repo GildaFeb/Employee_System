@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Data.SqlClient;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,32 +9,52 @@ namespace EMS.Employee_Details
 {
     internal class Employee_Database
     {
-      //  SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\gilda\OneDrive\Documents\EmployeeDB.mdf;Integrated Security=True;Connect Timeout=30");
-
-
-        public static bool AddEmployee()
+      
+        public static bool AddEmployee(Employee employee)
         {
-/*
-            MessageBox.Show("Add Employee");
-            SqlCommand cmd = new SqlCommand();
-            cmd.CommandText = "INSERT INTO Employee(EmployeeID, Fname,Lname,Mname, Date_joined, Birth, Sex, Address, Cnumber, email) VALUES(@empID, @fname,@lname,@mname,@date_joined,@birth,@sex, @address, @cnumber, @email)";
-            cmd.Connection = Con;
+            try
+            {
+                SqlConnection Con = new SqlConnection(@"Data Source=|DataDiretory|\EmployeeTbl.mdf");
 
-            cmd.Parameters.AddWithValue("@empID", employee_id.Text);
-            cmd.Parameters.AddWithValue("@fname", first_name.Text);
-            cmd.Parameters.AddWithValue("@lname", last_name.Text);
-            cmd.Parameters.AddWithValue("@mname", middle_name.Text);
-            cmd.Parameters.AddWithValue("@date_joined", hired_date.Value.Date);
-            cmd.Parameters.AddWithValue("@birth", birth.Value.Date);
-            cmd.Parameters.AddWithValue("@sex", sex.SelectedItem.ToString());
-            cmd.Parameters.AddWithValue("@address", address.Text);
-            cmd.Parameters.AddWithValue("@cnumber", contact_number.Text);
-            cmd.Parameters.AddWithValue("@email", email.Text);
 
-            cmd.ExecuteNonQuery();
-            Con.Close();
-*/
-            return true;
+                MessageBox.Show("Add Employee");
+                SqlCommand cmd = new SqlCommand();
+                cmd.CommandText = "INSERT INTO Employee(EmployeeID, Fname,Lname,Mname, Suffix, Date_joined," +
+                    " Birth, Sex, Address, Cnumber, Cemergency, email, Position, Regular_pay, Regular_worktime, " +
+                    "Total_rpay) VALUES(@empID, @fname,@lname,@mname, @suffix, @date_joined," +
+                    "@birth,@sex, @address, @cnumber,@cemergency, @email, @position, @reg_salary, @worktime,@total_salary )";
+                cmd.Connection = Con;
+
+                cmd.Parameters.AddWithValue("@empID", employee.employeeID);
+                cmd.Parameters.AddWithValue("@fname", employee.first_name);
+                cmd.Parameters.AddWithValue("@lname", employee.last_name);
+                cmd.Parameters.AddWithValue("@mname", employee.middle_name);
+                cmd.Parameters.AddWithValue("@suffix", employee.suffix);
+                cmd.Parameters.AddWithValue("@date_joined", employee.hired_date);
+                cmd.Parameters.AddWithValue("@birth", employee.birth_date);
+                cmd.Parameters.AddWithValue("@sex", employee.sex);
+                cmd.Parameters.AddWithValue("@address", employee.address);
+                cmd.Parameters.AddWithValue("@cnumber", employee.contact_number);
+                cmd.Parameters.AddWithValue("@cemergency", employee.emergency_contact_number);
+                cmd.Parameters.AddWithValue("@email", employee.email);
+                cmd.Parameters.AddWithValue("@position", employee.position);
+                cmd.Parameters.AddWithValue("@reg_salary", employee.regular_pay);
+                cmd.Parameters.AddWithValue("@worktime", employee.regular_worktime);
+                cmd.Parameters.AddWithValue("@total_salary", employee.total_salary);
+
+
+                cmd.ExecuteNonQuery();
+                Con.Close();
+                return true;
+
+            }
+            catch
+            {
+                return false;
+            }
+            
+
+           
         }
         public static bool UpdateEmployee()
         {

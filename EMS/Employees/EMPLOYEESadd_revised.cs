@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Data.SqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace EMS
 {
@@ -15,7 +17,7 @@ namespace EMS
         public EMPLOYEESadd_revised()
         {
             InitializeComponent();
-
+            // Generate_EmployeeID();
             last_name.MaxLength = 50;
             first_name.MaxLength = 50;
             middle_name.MaxLength = 50;
@@ -30,6 +32,46 @@ namespace EMS
 
             regular_pay.MaxLength = 6;
             regular_worktime.MaxLength = 4;
+        }
+
+
+        // =========== [!] GENERATE ID FOR NEW EMPLOYEE ===============
+        // Still not yet done. no server. completed after front and backend
+
+        public void Generate_EmployeeID()
+        {
+            
+            /* SqlConnection Con = new SqlConnection(@"Data Source=|DataDiretory|\EmployeeTbl.mdf");
+
+            while (true)
+            {
+
+                int exist = 0;
+                Random rand1 = new Random();
+                int empID = rand1.Next(1111111, 99999999);
+
+                SqlCommand cmd = new SqlCommand("Select * from Employee where EmployeeID = @empID", Con);
+                cmd.Parameters.AddWithValue("@empID", empID);
+                //Con.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    if (dr.HasRows == true)
+                    {
+                        exist++;
+                        break;
+                    }
+                }
+                //Con.Close();
+
+                if (exist == 0)
+                {
+                    employee_id.Text = empID.ToString();
+                    break;
+                }
+            }
+
+            */
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -212,6 +254,8 @@ namespace EMS
 
         }
 
+        // =========== [!] ADD EMPLOYEE: SAVE BUTTON ===============
+
         private void btn_one3_Click_1(object sender, EventArgs e)
         {
             const string message = "Are all inputs correct?";
@@ -231,7 +275,29 @@ namespace EMS
             }
             else
             {
-                if (Employee_Details.Employee_Database.AddEmployee() == true) // (Not yet finished)
+                // ----------- Add Employee: Passing data to database -----------
+                Employee_Details.Employee employeeInfo = new Employee_Details.Employee()
+                {
+                    employeeID = employee_id.Text.ToString(),
+                    first_name = first_name.Text.ToString(),
+                    email = email.Text.ToString(),
+                    address = address.Text.ToString(),
+                    last_name = last_name.Text.ToString(),
+                    middle_name = middle_name.Text.ToString(),
+                    suffix = suffix.Text.ToString(),
+                    birth_date = birth.Value.ToString(),
+                    hired_date = hired_date.Value.ToString(),
+                    position = position.Text.ToString(),
+                    contact_number = contact_number.Text.ToString(),
+                    emergency_contact_number = cnumber_emergency.Text.ToString(),
+                    regular_pay = regular_pay.Text.ToString(),
+                    regular_worktime = regular_worktime.Text.ToString(),
+                    total_salary = total_rpay.Text.ToString(),
+                };
+
+                // (Not yet finished) = adding to database
+                bool check = Employee_Details.Employee_Database.AddEmployee(employeeInfo);
+                if (check == true) 
                 {
                     successEMPadd successEMPadd = new successEMPadd();
                     successEMPadd.Show();
@@ -241,6 +307,8 @@ namespace EMS
                     errorEMPadd errorEMPadd = new errorEMPadd();
                     errorEMPadd.Show();
                 }
+
+                // after mo macode yung clear button, copy paste mo dito, para maclear din mga textbox after mag save
             }
             
         }
@@ -286,6 +354,8 @@ namespace EMS
                 return TimeSpan.Compare(validAge, actualAge);
             }
         }
+
+        // =========== [!] REGULAR PAY PICKER ===============
 
         private void regular_pay_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -339,7 +409,8 @@ namespace EMS
         {
 
         }
-        
+
+        // =========== [!] REGULAR WORKTIME ===============
         private void regular_worktime_SelectedIndexChanged(object sender, EventArgs e)
         {
 
