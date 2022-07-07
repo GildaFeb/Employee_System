@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Glynys\\Documents\\GitHub\\Employee_System\\EMS\\EMS.csproj": {}
+    "C:\\Users\\Asus\\Source\\Repos\\GildaFeb\\Employee_System\\EMS\\EMS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Glynys\\Documents\\GitHub\\Employee_System\\EMS\\EMS.csproj": {
+    "C:\\Users\\Asus\\Source\\Repos\\GildaFeb\\Employee_System\\EMS\\EMS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Glynys\\Documents\\GitHub\\Employee_System\\EMS\\EMS.csproj",
+        "projectUniqueName": "C:\\Users\\Asus\\Source\\Repos\\GildaFeb\\Employee_System\\EMS\\EMS.csproj",
         "projectName": "EMS",
-        "projectPath": "C:\\Users\\Glynys\\Documents\\GitHub\\Employee_System\\EMS\\EMS.csproj",
-        "packagesPath": "C:\\Users\\Glynys\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Glynys\\Documents\\GitHub\\Employee_System\\EMS\\obj\\",
+        "projectPath": "C:\\Users\\Asus\\Source\\Repos\\GildaFeb\\Employee_System\\EMS\\EMS.csproj",
+        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Asus\\Source\\Repos\\GildaFeb\\Employee_System\\EMS\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Glynys\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://www.nuget.org/api/v2/": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0-windows7.0": {

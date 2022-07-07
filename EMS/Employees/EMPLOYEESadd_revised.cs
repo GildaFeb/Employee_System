@@ -15,6 +15,15 @@ namespace EMS
         public EMPLOYEESadd_revised()
         {
             InitializeComponent();
+
+            last_name.MaxLength = 50;
+            first_name.MaxLength = 50;
+            middle_name.MaxLength = 50;
+            position.MaxLength = 50;
+            email.MaxLength = 50;
+            address.MaxLength = 50;
+            contact_number.MaxLength = 15;
+            cnumber_emergency.MaxLength = 15;
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -201,6 +210,26 @@ namespace EMS
         {
             successEMPadd successEMPadd = new successEMPadd();
             successEMPadd.Show();
+        }
+
+        private void contact_number_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+
+            if (!Char.IsDigit(ch) && ch != 8 && ch != 46)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void cnumber_emergency_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+
+            if (!Char.IsDigit(ch) && ch != 8 && ch!= 46)
+            {
+                e.Handled = true;
+            }
         }
     }
 }
