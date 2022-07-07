@@ -199,7 +199,7 @@ namespace EMS
 
         private void position_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btn_one1_Click(object sender, EventArgs e)
@@ -214,8 +214,22 @@ namespace EMS
 
         private void btn_one3_Click_1(object sender, EventArgs e)
         {
+            const string message = "Are all inputs correct?";
+            const string caption = "Cancel Confirmation";
+            var result = MessageBox.Show(message, caption,
+                                        MessageBoxButtons.YesNo,
+                                        MessageBoxButtons.Question);
+            e.Cancel = (result == DialogResult.No); 
+            
             successEMPadd successEMPadd = new successEMPadd();
             successEMPadd.Show();
+
+            if (string.IsNullOrWhiteSpace(last_name.Text) || (string.IsNullOrWhiteSpace(first_name))
+            {
+                MessageBox.Show("Field empty");
+
+                return;
+            }
         }
 
         private void contact_number_KeyPress(object sender, KeyPressEventArgs e)
@@ -232,7 +246,7 @@ namespace EMS
         {
             char ch = e.KeyChar;
 
-            if (!Char.IsDigit(ch) && ch != 8 && ch!= 46)
+            if (!Char.IsDigit(ch) && ch != 8 && ch != 46)
             {
                 e.Handled = true;
             }
@@ -240,12 +254,12 @@ namespace EMS
 
         private void hired_date_ValueChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void sex_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void birth_ValueChanged(object sender, EventArgs e)
