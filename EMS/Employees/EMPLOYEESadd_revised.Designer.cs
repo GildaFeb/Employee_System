@@ -58,7 +58,6 @@
             this.btn_one14 = new EMS.btn_one();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.birth_date = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
@@ -71,6 +70,7 @@
             this.regular_worktime = new System.Windows.Forms.ComboBox();
             this.total_rpay = new System.Windows.Forms.ComboBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.birth = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -104,13 +104,17 @@
             // hired_date
             // 
             this.hired_date.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.hired_date.CustomFormat = "";
+            this.hired_date.CustomFormat = "dd-MM-yyyy";
             this.hired_date.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.hired_date.Location = new System.Drawing.Point(944, 101);
             this.hired_date.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.hired_date.MaxDate = new System.DateTime(9998, 12, 30, 0, 0, 0, 0);
+            this.hired_date.MinDate = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
             this.hired_date.Name = "hired_date";
             this.hired_date.Size = new System.Drawing.Size(306, 26);
             this.hired_date.TabIndex = 86;
+            this.hired_date.Value = new System.DateTime(2022, 7, 7, 0, 0, 0, 0);
+            this.hired_date.ValueChanged += new System.EventHandler(this.hired_date_ValueChanged);
             // 
             // label20
             // 
@@ -489,20 +493,6 @@
             this.label15.Text = "Contact and address";
             this.label15.Click += new System.EventHandler(this.label1_Click);
             // 
-            // birth_date
-            // 
-            this.birth_date.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.birth_date.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.birth_date.ForeColor = System.Drawing.Color.Black;
-            this.birth_date.Location = new System.Drawing.Point(939, 576);
-            this.birth_date.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.birth_date.Multiline = true;
-            this.birth_date.Name = "birth_date";
-            this.birth_date.Size = new System.Drawing.Size(306, 25);
-            this.birth_date.TabIndex = 93;
-            this.birth_date.Text = " ";
-            this.birth_date.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
-            // 
             // label17
             // 
             this.label17.AutoSize = true;
@@ -558,6 +548,7 @@
             // 
             // sex
             // 
+            this.sex.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.sex.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.sex.ForeColor = System.Drawing.Color.Black;
             this.sex.FormattingEnabled = true;
@@ -569,7 +560,7 @@
             this.sex.Name = "sex";
             this.sex.Size = new System.Drawing.Size(306, 28);
             this.sex.TabIndex = 111;
-            this.sex.SelectedIndexChanged += new System.EventHandler(this.position_SelectedIndexChanged);
+            this.sex.SelectedIndexChanged += new System.EventHandler(this.sex_SelectedIndexChanged);
             // 
             // btn_search
             // 
@@ -681,11 +672,28 @@
             this.pictureBox2.TabIndex = 118;
             this.pictureBox2.TabStop = false;
             // 
+            // birth
+            // 
+            this.birth.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.birth.CustomFormat = "dd-MM-yyyy";
+            this.birth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.birth.Location = new System.Drawing.Point(939, 576);
+            this.birth.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.birth.MaxDate = new System.DateTime(9998, 12, 30, 0, 0, 0, 0);
+            this.birth.MinDate = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
+            this.birth.Name = "birth";
+            this.birth.Size = new System.Drawing.Size(306, 26);
+            this.birth.TabIndex = 119;
+            this.birth.Value = new System.DateTime(2022, 7, 7, 0, 0, 0, 0);
+            this.birth.ValueChanged += new System.EventHandler(this.birth_ValueChanged);
+            this.birth.DropDown += new System.EventHandler(this.birth_ValueChanged);
+            // 
             // EMPLOYEESadd_revised
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.Controls.Add(this.birth);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.btn_search);
             this.Controls.Add(this.btn_clear);
@@ -714,7 +722,6 @@
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label18);
-            this.Controls.Add(this.birth_date);
             this.Controls.Add(this.cnumber_emergency);
             this.Controls.Add(this.email);
             this.Controls.Add(this.contact_number);
@@ -770,7 +777,6 @@
         private btn_one btn_one14;
         private Label label14;
         private Label label15;
-        private TextBox birth_date;
         private Label label17;
         private Label label19;
         private Label label21;
@@ -783,5 +789,6 @@
         private ComboBox regular_worktime;
         private ComboBox total_rpay;
         private PictureBox pictureBox2;
+        private DateTimePicker birth;
     }
 }

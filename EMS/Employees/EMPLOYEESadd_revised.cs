@@ -24,6 +24,9 @@ namespace EMS
             address.MaxLength = 50;
             contact_number.MaxLength = 15;
             cnumber_emergency.MaxLength = 15;
+
+            hired_date.MaxDate = DateTime.Today;
+            birth.MaxDate = DateTime.Today;
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -231,5 +234,29 @@ namespace EMS
                 e.Handled = true;
             }
         }
+
+        private void hired_date_ValueChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void sex_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void birth_ValueChanged(object sender, EventArgs e)
+        {
+            int birthValidation(DateTime birth)
+            {
+                DateTime today = DateTime.Now;
+                DateTime validDate = new DateTime(today.Year - 18, today.Month, today.Day);
+                TimeSpan validAge = today.Subtract(validDate);
+                TimeSpan actualAge = today.Subtract(birth);
+                return TimeSpan.Compare(validAge, actualAge);
+            }
+        }
+
+        
     }
 }
