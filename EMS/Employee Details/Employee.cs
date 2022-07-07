@@ -23,4 +23,5 @@ namespace EMS.Employee_Details
         public string salary { get; set; }
         public string email { get; set; }
     }
+
 }

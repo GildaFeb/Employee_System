@@ -199,7 +199,7 @@ namespace EMS
 
         private void position_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            //
         }
 
         private void btn_one1_Click(object sender, EventArgs e)
@@ -216,20 +216,33 @@ namespace EMS
         {
             const string message = "Are all inputs correct?";
             const string caption = "Cancel Confirmation";
-            var result = MessageBox.Show(message, caption,
-                                        MessageBoxButtons.YesNo,
-                                        MessageBoxButtons.Question);
-            e.Cancel = (result == DialogResult.No); 
+            //var result = MessageBox.Show(message, caption,
+             //                           MessageBoxButtons.YesNo,
+             //                           MessageBoxButtons.Question);
+            //e.Cancel = (result == DialogResult.No); 
+            //nilagyan ko lang comments para mag run
             
-            successEMPadd successEMPadd = new successEMPadd();
-            successEMPadd.Show();
 
-            if (string.IsNullOrWhiteSpace(last_name.Text) || (string.IsNullOrWhiteSpace(first_name))
+            if (string.IsNullOrWhiteSpace(last_name.Text) || string.IsNullOrWhiteSpace(first_name.Text))
             {
                 MessageBox.Show("Field empty");
 
                 return;
             }
+            else
+            {
+                if (Employee_Details.Employee_Database.AddEmployee() == true) // (Not yet finished)
+                {
+                    successEMPadd successEMPadd = new successEMPadd();
+                    successEMPadd.Show();
+                }
+                else
+                {
+                    errorEMPadd errorEMPadd = new errorEMPadd();
+                    errorEMPadd.Show();
+                }
+            }
+            
         }
 
         private void contact_number_KeyPress(object sender, KeyPressEventArgs e)
@@ -276,12 +289,91 @@ namespace EMS
 
         private void regular_pay_SelectedIndexChanged(object sender, EventArgs e)
         {
-            double Pay = Convert.ToDouble(Console.ReadLine());
+
+
+            // 160hrs(8hrs x 5days) x 4weeks - regular_worktime.Items[0]
+            // 128hrs(8hrs x 4days) x 4weeks - regular_worktime.Items[1]
+            // 120hrs(6hrs x 5days) x 4weeks - regular_worktime.Items[2]
+            // 96hrs(8hrs x 3days) x 4weeks - regular_worktime.Items[3]
+            // 48hrs(4hrs x 5days) x 4weeks - regular_worktime.Items[4]
+            // [!] take note with the item number in every if else, thats the indicator of selected item
+
+            if (regular_worktime != null && regular_pay != null)
+            {
+
+                //double reg_pay = Convert.ToDouble(regular_worktime.Text);
+
+                double Pay = Convert.ToDouble(regular_pay.Text); // regular_pay convert to double
+
+                if (regular_worktime.SelectedItem == regular_worktime.Items[0])
+                {
+                    total_rpay.Text = (Pay * 160).ToString();
+                }
+                else if (regular_worktime.SelectedItem == regular_worktime.Items[1]) 
+                {
+                    
+                    total_rpay.Text = (Pay * 128).ToString();
+                }
+                // tuloy mo nalang hanggang 48hrs
+
+            }
+            else
+            {
+                MessageBox.Show(" Select Regular Pay and Worktime to view TOTAL REGULAR PAY");
+            }
+
+
+
         }
 
         private void total_rpay_SelectedIndexChanged(object sender, EventArgs e)
         {
-            total_rpay.Value = regular_pay * regular_worktime;
+
+            //string total_pay = regular_pay.SelectedItem.ToString;
+            //int regpay = int.Parse(reg_pay.);
+
+            //total_rpay.Value = regular_pay * regular_worktime;
+        }
+
+        private void btn_clear_Click(object sender, EventArgs e)
+        {
+
+        }
+        
+        private void regular_worktime_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+            // 160hrs(8hrs x 5days) x 4weeks - regular_worktime.Items[0]
+            // 128hrs(8hrs x 4days) x 4weeks - regular_worktime.Items[1]
+            // 120hrs(6hrs x 5days) x 4weeks - regular_worktime.Items[2]
+            // 96hrs(8hrs x 3days) x 4weeks - regular_worktime.Items[3]
+            // 48hrs(4hrs x 5days) x 4weeks - regular_worktime.Items[4]
+            // [!] take note with the item number in every if else, thats the indicator of selected item
+
+            if (regular_worktime != null && regular_pay != null)
+            {
+
+                //double reg_pay = Convert.ToDouble(regular_worktime.Text);
+
+                double Pay = Convert.ToDouble(regular_pay.Text); // regular_pay convert to double
+
+                if (regular_worktime.SelectedItem == regular_worktime.Items[0])
+                {
+                    total_rpay.Text = (Pay * 160).ToString();
+                }
+                else if (regular_worktime.SelectedItem == regular_worktime.Items[1])
+                {
+
+                    total_rpay.Text = (Pay * 128).ToString();
+                }
+                // tuloy mo nalang hanggang 48hrs
+
+            }
+            else
+            {
+                MessageBox.Show(" Select Regular Pay and Worktime to view TOTAL REGULAR PAY");
+            }
+
         }
     }
 }
