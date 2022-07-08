@@ -81,5 +81,10 @@ namespace EMS
             verificationDutyDelete verificationAttenDelete = new verificationDutyDelete();
             verificationAttenDelete.ShowDialog();
         }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            // [!] Alvin = function for search bar pero kung gagamit ng function sa database just let me know
+        }
     }
 }

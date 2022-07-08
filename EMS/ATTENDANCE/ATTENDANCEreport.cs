@@ -40,5 +40,10 @@ namespace EMS
             VerificationRepDelete delete = new VerificationRepDelete();
             delete.ShowDialog();
         }
+
+        private void btn_one2_Click(object sender, EventArgs e)
+        {
+            // [!] Alvin = function for clear checked
+        }
     }
 }

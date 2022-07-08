@@ -59,14 +59,15 @@
             this.time_out.Enabled = false;
             this.time_out.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.time_out.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.time_out.Location = new System.Drawing.Point(1266, 612);
-            this.time_out.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.time_out.Location = new System.Drawing.Point(600, 592);
+            this.time_out.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.time_out.MinDate = new System.DateTime(1995, 1, 1, 23, 59, 0, 0);
             this.time_out.Name = "time_out";
             this.time_out.ShowUpDown = true;
-            this.time_out.Size = new System.Drawing.Size(435, 32);
+            this.time_out.Size = new System.Drawing.Size(349, 28);
             this.time_out.TabIndex = 199;
             this.time_out.Value = new System.DateTime(2022, 7, 25, 23, 59, 59, 0);
+            this.time_out.ValueChanged += new System.EventHandler(this.time_out_ValueChanged);
             // 
             // time_in
             // 
@@ -75,14 +76,15 @@
             this.time_in.Enabled = false;
             this.time_in.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.time_in.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.time_in.Location = new System.Drawing.Point(750, 738);
-            this.time_in.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.time_in.Location = new System.Drawing.Point(600, 504);
+            this.time_in.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.time_in.MinDate = new System.DateTime(1995, 1, 1, 23, 59, 0, 0);
             this.time_in.Name = "time_in";
             this.time_in.ShowUpDown = true;
-            this.time_in.Size = new System.Drawing.Size(435, 32);
+            this.time_in.Size = new System.Drawing.Size(349, 28);
             this.time_in.TabIndex = 198;
             this.time_in.Value = new System.DateTime(2022, 7, 25, 23, 59, 59, 0);
+            this.time_in.ValueChanged += new System.EventHandler(this.time_in_ValueChanged);
             // 
             // btn_clear
             // 
@@ -92,13 +94,14 @@
             this.btn_clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_clear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_clear.ForeColor = System.Drawing.Color.White;
-            this.btn_clear.Location = new System.Drawing.Point(160, 865);
-            this.btn_clear.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btn_clear.Location = new System.Drawing.Point(128, 692);
+            this.btn_clear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_clear.Name = "btn_clear";
-            this.btn_clear.Size = new System.Drawing.Size(341, 63);
+            this.btn_clear.Size = new System.Drawing.Size(273, 50);
             this.btn_clear.TabIndex = 197;
             this.btn_clear.Text = "Clear";
             this.btn_clear.UseVisualStyleBackColor = false;
+            this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
             // 
             // btn_save
             // 
@@ -108,10 +111,10 @@
             this.btn_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_save.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_save.ForeColor = System.Drawing.Color.White;
-            this.btn_save.Location = new System.Drawing.Point(1489, 865);
-            this.btn_save.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btn_save.Location = new System.Drawing.Point(1191, 692);
+            this.btn_save.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_save.Name = "btn_save";
-            this.btn_save.Size = new System.Drawing.Size(286, 63);
+            this.btn_save.Size = new System.Drawing.Size(229, 50);
             this.btn_save.TabIndex = 196;
             this.btn_save.Text = "Save";
             this.btn_save.UseVisualStyleBackColor = false;
@@ -123,10 +126,10 @@
             this.LblName.BackColor = System.Drawing.Color.White;
             this.LblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.LblName.ForeColor = System.Drawing.Color.Gray;
-            this.LblName.Location = new System.Drawing.Point(234, 393);
-            this.LblName.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.LblName.Location = new System.Drawing.Point(187, 314);
+            this.LblName.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.LblName.Name = "LblName";
-            this.LblName.Size = new System.Drawing.Size(111, 22);
+            this.LblName.Size = new System.Drawing.Size(92, 18);
             this.LblName.TabIndex = 194;
             this.LblName.Text = "Employee ID";
             // 
@@ -136,10 +139,10 @@
             this.AddLblOvertime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.AddLblOvertime.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.AddLblOvertime.ForeColor = System.Drawing.Color.White;
-            this.AddLblOvertime.Location = new System.Drawing.Point(1261, 690);
-            this.AddLblOvertime.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.AddLblOvertime.Location = new System.Drawing.Point(1009, 552);
+            this.AddLblOvertime.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.AddLblOvertime.Name = "AddLblOvertime";
-            this.AddLblOvertime.Size = new System.Drawing.Size(82, 22);
+            this.AddLblOvertime.Size = new System.Drawing.Size(68, 18);
             this.AddLblOvertime.TabIndex = 192;
             this.AddLblOvertime.Text = "Overtime";
             // 
@@ -149,10 +152,10 @@
             this.AddLblTimeOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.AddLblTimeOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.AddLblTimeOut.ForeColor = System.Drawing.Color.White;
-            this.AddLblTimeOut.Location = new System.Drawing.Point(1266, 563);
-            this.AddLblTimeOut.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.AddLblTimeOut.Location = new System.Drawing.Point(600, 556);
+            this.AddLblTimeOut.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.AddLblTimeOut.Name = "AddLblTimeOut";
-            this.AddLblTimeOut.Size = new System.Drawing.Size(80, 22);
+            this.AddLblTimeOut.Size = new System.Drawing.Size(66, 18);
             this.AddLblTimeOut.TabIndex = 191;
             this.AddLblTimeOut.Text = "Time out";
             // 
@@ -162,10 +165,10 @@
             this.AddLblDuration.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.AddLblDuration.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.AddLblDuration.ForeColor = System.Drawing.Color.White;
-            this.AddLblDuration.Location = new System.Drawing.Point(750, 563);
-            this.AddLblDuration.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.AddLblDuration.Location = new System.Drawing.Point(1009, 460);
+            this.AddLblDuration.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.AddLblDuration.Name = "AddLblDuration";
-            this.AddLblDuration.Size = new System.Drawing.Size(78, 22);
+            this.AddLblDuration.Size = new System.Drawing.Size(64, 18);
             this.AddLblDuration.TabIndex = 190;
             this.AddLblDuration.Text = "Duration";
             // 
@@ -175,12 +178,13 @@
             this.AddLlblTimeIn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.AddLlblTimeIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.AddLlblTimeIn.ForeColor = System.Drawing.Color.White;
-            this.AddLlblTimeIn.Location = new System.Drawing.Point(750, 690);
-            this.AddLlblTimeIn.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.AddLlblTimeIn.Location = new System.Drawing.Point(600, 450);
+            this.AddLlblTimeIn.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.AddLlblTimeIn.Name = "AddLlblTimeIn";
-            this.AddLlblTimeIn.Size = new System.Drawing.Size(69, 22);
+            this.AddLlblTimeIn.Size = new System.Drawing.Size(56, 18);
             this.AddLlblTimeIn.TabIndex = 189;
             this.AddLlblTimeIn.Text = "Time in";
+            this.AddLlblTimeIn.Click += new System.EventHandler(this.AddLlblTimeIn_Click);
             // 
             // date_duty
             // 
@@ -188,11 +192,11 @@
             this.date_duty.CustomFormat = "";
             this.date_duty.Enabled = false;
             this.date_duty.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.date_duty.Location = new System.Drawing.Point(234, 737);
-            this.date_duty.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.date_duty.Location = new System.Drawing.Point(187, 590);
+            this.date_duty.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.date_duty.MinDate = new System.DateTime(1995, 1, 1, 23, 59, 0, 0);
             this.date_duty.Name = "date_duty";
-            this.date_duty.Size = new System.Drawing.Size(435, 32);
+            this.date_duty.Size = new System.Drawing.Size(349, 28);
             this.date_duty.TabIndex = 188;
             this.date_duty.Value = new System.DateTime(2022, 7, 25, 23, 59, 59, 0);
             // 
@@ -202,10 +206,10 @@
             this.AddLblStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.AddLblStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.AddLblStatus.ForeColor = System.Drawing.Color.White;
-            this.AddLblStatus.Location = new System.Drawing.Point(234, 563);
-            this.AddLblStatus.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.AddLblStatus.Location = new System.Drawing.Point(187, 450);
+            this.AddLblStatus.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.AddLblStatus.Name = "AddLblStatus";
-            this.AddLblStatus.Size = new System.Drawing.Size(61, 22);
+            this.AddLblStatus.Size = new System.Drawing.Size(50, 18);
             this.AddLblStatus.TabIndex = 187;
             this.AddLblStatus.Text = "Status";
             // 
@@ -215,10 +219,10 @@
             this.AddLblDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.AddLblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.AddLblDate.ForeColor = System.Drawing.Color.White;
-            this.AddLblDate.Location = new System.Drawing.Point(234, 690);
-            this.AddLblDate.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.AddLblDate.Location = new System.Drawing.Point(187, 552);
+            this.AddLblDate.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.AddLblDate.Name = "AddLblDate";
-            this.AddLblDate.Size = new System.Drawing.Size(107, 22);
+            this.AddLblDate.Size = new System.Drawing.Size(87, 18);
             this.AddLblDate.TabIndex = 186;
             this.AddLblDate.Text = "Date of duty";
             // 
@@ -228,11 +232,11 @@
             this.employee_id.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.employee_id.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.employee_id.ForeColor = System.Drawing.Color.Black;
-            this.employee_id.Location = new System.Drawing.Point(234, 433);
-            this.employee_id.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
+            this.employee_id.Location = new System.Drawing.Point(187, 346);
+            this.employee_id.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
             this.employee_id.Multiline = true;
             this.employee_id.Name = "employee_id";
-            this.employee_id.Size = new System.Drawing.Size(436, 39);
+            this.employee_id.Size = new System.Drawing.Size(349, 32);
             this.employee_id.TabIndex = 184;
             this.employee_id.Text = " ";
             // 
@@ -242,10 +246,10 @@
             this.AddLblId.BackColor = System.Drawing.Color.White;
             this.AddLblId.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.AddLblId.ForeColor = System.Drawing.Color.Gray;
-            this.AddLblId.Location = new System.Drawing.Point(750, 393);
-            this.AddLblId.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.AddLblId.Location = new System.Drawing.Point(600, 314);
+            this.AddLblId.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.AddLblId.Name = "AddLblId";
-            this.AddLblId.Size = new System.Drawing.Size(141, 22);
+            this.AddLblId.Size = new System.Drawing.Size(118, 18);
             this.AddLblId.TabIndex = 185;
             this.AddLblId.Text = "Employee Name";
             // 
@@ -256,11 +260,11 @@
             this.duration.Enabled = false;
             this.duration.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.duration.ForeColor = System.Drawing.Color.Black;
-            this.duration.Location = new System.Drawing.Point(750, 613);
-            this.duration.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
+            this.duration.Location = new System.Drawing.Point(1009, 500);
+            this.duration.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
             this.duration.Multiline = true;
             this.duration.Name = "duration";
-            this.duration.Size = new System.Drawing.Size(436, 39);
+            this.duration.Size = new System.Drawing.Size(349, 32);
             this.duration.TabIndex = 183;
             this.duration.Text = " ";
             // 
@@ -271,11 +275,11 @@
             this.overtime.Enabled = false;
             this.overtime.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.overtime.ForeColor = System.Drawing.Color.Black;
-            this.overtime.Location = new System.Drawing.Point(1261, 740);
-            this.overtime.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
+            this.overtime.Location = new System.Drawing.Point(1009, 592);
+            this.overtime.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
             this.overtime.Multiline = true;
             this.overtime.Name = "overtime";
-            this.overtime.Size = new System.Drawing.Size(436, 39);
+            this.overtime.Size = new System.Drawing.Size(349, 32);
             this.overtime.TabIndex = 182;
             this.overtime.Text = " ";
             // 
@@ -286,11 +290,11 @@
             this.employee_name.Enabled = false;
             this.employee_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.employee_name.ForeColor = System.Drawing.Color.Black;
-            this.employee_name.Location = new System.Drawing.Point(750, 433);
-            this.employee_name.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
+            this.employee_name.Location = new System.Drawing.Point(600, 346);
+            this.employee_name.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
             this.employee_name.Multiline = true;
             this.employee_name.Name = "employee_name";
-            this.employee_name.Size = new System.Drawing.Size(436, 39);
+            this.employee_name.Size = new System.Drawing.Size(349, 32);
             this.employee_name.TabIndex = 181;
             this.employee_name.Text = " ";
             // 
@@ -303,10 +307,10 @@
             this.LblStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LblStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.LblStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(37)))), ((int)(((byte)(83)))));
-            this.LblStatus.Location = new System.Drawing.Point(160, 498);
-            this.LblStatus.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.LblStatus.Location = new System.Drawing.Point(128, 398);
+            this.LblStatus.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.LblStatus.Name = "LblStatus";
-            this.LblStatus.Size = new System.Drawing.Size(1614, 345);
+            this.LblStatus.Size = new System.Drawing.Size(1291, 276);
             this.LblStatus.TabIndex = 179;
             this.LblStatus.UseVisualStyleBackColor = false;
             // 
@@ -316,10 +320,10 @@
             this.AddTitle.BackColor = System.Drawing.Color.Transparent;
             this.AddTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.AddTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(37)))), ((int)(((byte)(83)))));
-            this.AddTitle.Location = new System.Drawing.Point(119, 113);
-            this.AddTitle.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.AddTitle.Location = new System.Drawing.Point(95, 90);
+            this.AddTitle.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.AddTitle.Name = "AddTitle";
-            this.AddTitle.Size = new System.Drawing.Size(812, 59);
+            this.AddTitle.Size = new System.Drawing.Size(673, 48);
             this.AddTitle.TabIndex = 178;
             this.AddTitle.Text = "Add duty duration of an employee";
             // 
@@ -332,10 +336,10 @@
             this.Addbkgrnd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Addbkgrnd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Addbkgrnd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(37)))), ((int)(((byte)(83)))));
-            this.Addbkgrnd.Location = new System.Drawing.Point(160, 353);
-            this.Addbkgrnd.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.Addbkgrnd.Location = new System.Drawing.Point(128, 282);
+            this.Addbkgrnd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Addbkgrnd.Name = "Addbkgrnd";
-            this.Addbkgrnd.Size = new System.Drawing.Size(1100, 192);
+            this.Addbkgrnd.Size = new System.Drawing.Size(880, 154);
             this.Addbkgrnd.TabIndex = 193;
             this.Addbkgrnd.UseVisualStyleBackColor = false;
             // 
@@ -346,7 +350,7 @@
             this.status.BackColor = System.Drawing.Color.White;
             this.status.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.status.BorderSize = 0;
-            this.status.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.status.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.status.Enabled = false;
             this.status.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.status.ForeColor = System.Drawing.Color.Black;
@@ -357,13 +361,14 @@
             "Present"});
             this.status.ListBackColor = System.Drawing.Color.Silver;
             this.status.ListTextColor = System.Drawing.Color.Black;
-            this.status.Location = new System.Drawing.Point(234, 608);
-            this.status.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.status.MinimumSize = new System.Drawing.Size(286, 50);
+            this.status.Location = new System.Drawing.Point(187, 486);
+            this.status.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.status.MinimumSize = new System.Drawing.Size(229, 40);
             this.status.Name = "status";
-            this.status.Size = new System.Drawing.Size(436, 57);
+            this.status.Size = new System.Drawing.Size(349, 46);
             this.status.TabIndex = 200;
             this.status.Texts = "The Employee is:";
+            this.status.OnSelectedIndexChanged += new System.EventHandler(this.status_OnSelectedIndexChanged);
             // 
             // btn_findemployee
             // 
@@ -373,17 +378,17 @@
             this.btn_findemployee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_findemployee.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_findemployee.ForeColor = System.Drawing.Color.White;
-            this.btn_findemployee.Location = new System.Drawing.Point(1334, 393);
-            this.btn_findemployee.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btn_findemployee.Location = new System.Drawing.Point(1067, 314);
+            this.btn_findemployee.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_findemployee.Name = "btn_findemployee";
-            this.btn_findemployee.Size = new System.Drawing.Size(281, 63);
+            this.btn_findemployee.Size = new System.Drawing.Size(225, 50);
             this.btn_findemployee.TabIndex = 201;
             this.btn_findemployee.Text = "Find Employee";
             this.btn_findemployee.UseVisualStyleBackColor = false;
             // 
             // ATTENDANCEdutydurationAddREVISED
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
             this.Controls.Add(this.btn_findemployee);
@@ -408,9 +413,9 @@
             this.Controls.Add(this.LblStatus);
             this.Controls.Add(this.AddTitle);
             this.Controls.Add(this.Addbkgrnd);
-            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ATTENDANCEdutydurationAddREVISED";
-            this.Size = new System.Drawing.Size(1921, 1292);
+            this.Size = new System.Drawing.Size(1537, 1034);
             this.ResumeLayout(false);
             this.PerformLayout();
 

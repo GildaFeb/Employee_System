@@ -35,7 +35,17 @@ namespace EMS
 
         private void UpdTimePickerIn_ValueChanged(object sender, EventArgs e)
         {
-
+            // not finished
+            DateTime inTime = Convert.ToDateTime(time_in.Text);
+            DateTime outTime = Convert.ToDateTime(time_out.Text);
+            if (outTime >= inTime)
+            {
+                duration.Text = outTime.Subtract(inTime).Days.ToString();
+            }
+            else
+            {
+                MessageBox.Show(" Error. Time in must earlier than time out. Try again");
+            }
         }
 
         private void UpdLlblTimeIn_Click(object sender, EventArgs e)
@@ -46,6 +56,52 @@ namespace EMS
         private void UpdLblId_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void time_out_ValueChanged(object sender, EventArgs e)
+        {
+            // not finished
+            DateTime inTime = Convert.ToDateTime(time_in.Text);
+            DateTime outTime = Convert.ToDateTime(time_out.Text);
+            if (outTime > inTime)
+            {
+                duration.Text = outTime.Subtract(inTime).Days.ToString();
+            }
+            else
+            {
+                MessageBox.Show(" Error. Time out (value) must set time after time in. Try again");
+            }
+        }
+
+        private void UpdLblDuration_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_clear_Click(object sender, EventArgs e)
+        {
+            // [!] Alvin = clear all forms
+        }
+
+        private void status_OnSelectedIndexChanged(object sender, EventArgs e)
+        {
+            status.Items.Add("Present");
+            status.Items.Add("Absent");
+            status.Items.Add("Leave");
+
+            if (status.SelectedItem.ToString() == "Present")
+            {
+                //  [!] Alvin = enabled true the status, date, time in, time out
+            }
+            else if (status.SelectedItem.ToString() == "Absent")
+            {
+                // [!] Alvin = enabled false the time in, time out
+
+            }
+            else if (status.SelectedItem.ToString() == "Leave")
+            {
+                // [!] Alvin = enabled false the time in, time out, duration, overtime
+            }
         }
     }
 }
