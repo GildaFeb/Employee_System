@@ -2929,19 +2929,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Asus\\.nuget\\packages\\": {}
+    "C:\\Users\\gilda\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Asus\\source\\repos\\GildaFeb\\Employee_System\\EMS\\EMS.csproj",
+      "projectUniqueName": "C:\\Users\\gilda\\OneDrive\\Desktop\\July 7 8pm\\Employee_System\\EMS\\EMS.csproj",
       "projectName": "EMS",
-      "projectPath": "C:\\Users\\Asus\\source\\repos\\GildaFeb\\Employee_System\\EMS\\EMS.csproj",
-      "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Asus\\source\\repos\\GildaFeb\\Employee_System\\EMS\\obj\\",
+      "projectPath": "C:\\Users\\gilda\\OneDrive\\Desktop\\July 7 8pm\\Employee_System\\EMS\\EMS.csproj",
+      "packagesPath": "C:\\Users\\gilda\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\gilda\\OneDrive\\Desktop\\July 7 8pm\\Employee_System\\EMS\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\gilda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

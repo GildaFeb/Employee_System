@@ -9,7 +9,7 @@ namespace EMS.Employee_Details
 {
     internal class Employee_Database
     {
-      
+        // ======== EMPLOYEE PAGE =======
         public static bool AddEmployee(Employee employee)
         {
             try
@@ -71,6 +71,9 @@ namespace EMS.Employee_Details
             MessageBox.Show("Delete Employee");
             return true;
         }
+
+        // ======== EMPLOYEE PAGE =======
+
     }
-    
+
 }

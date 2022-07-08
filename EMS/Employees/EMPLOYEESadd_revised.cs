@@ -258,8 +258,10 @@ namespace EMS
                 string.IsNullOrWhiteSpace(regular_worktime.Text) ||
                 string.IsNullOrWhiteSpace(sex.Text))
             {
-                MessageBox.Show("You left a field empty"); // or pwede rin pong bagong errorEMPadd pero empty field yung nasa label
-
+                MessageBox.Show("You left a field empty");
+                // or pwede rin pong bagong errorEMPadd pero empty field yung nasa label
+                // pwedeee, after ng error message, magkakaroon ng label somewhere malapit sa field 
+                // .. indicating the error/ ikaw bahala
                 return;
             }
             else
@@ -283,7 +285,7 @@ namespace EMS
                     regular_worktime = regular_worktime.Text.ToString(),
                     total_salary = total_rpay.Text.ToString(),
                 };
-
+                
                 // (Not yet finished) = adding to database
                 bool check = Employee_Details.Employee_Database.AddEmployee(employeeInfo);
                 if (check == true) 

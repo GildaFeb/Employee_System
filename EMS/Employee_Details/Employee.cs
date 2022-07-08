@@ -28,4 +28,14 @@ namespace EMS.Employee_Details
 
     }
 
+    public class Duty
+    {
+        public string dutyID { get; set; }
+        public string timeIn { get; set; }
+        public string timeOut { get; set; }
+        public string overtime { get; set; }
+        public string duration { get; set; }
+        public string date { get; set; }
+    }
+
 }
