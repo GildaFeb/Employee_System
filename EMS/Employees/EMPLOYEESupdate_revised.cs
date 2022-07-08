@@ -15,6 +15,21 @@ namespace EMS
         public EMPLOYEESupdate_revised()
         {
             InitializeComponent();
+
+            last_name.MaxLength = 50;
+            first_name.MaxLength = 50;
+            middle_name.MaxLength = 50;
+            position.MaxLength = 50;
+            email.MaxLength = 50;
+            address.MaxLength = 50;
+            contact_number.MaxLength = 15;
+            cnumber_emergency.MaxLength = 15;
+
+            hired_date.MaxDate = DateTime.Now;
+            birth.MaxDate = DateTime.Now;
+
+            regular_pay.MaxLength = 6;
+            regular_worktime.MaxLength = 4;
         }
 
         private void btn_one3_Click(object sender, EventArgs e)
@@ -44,6 +59,46 @@ namespace EMS
         }
 
         private void address_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_clear_Click(object sender, EventArgs e)
+        {
+            employee_id.Clear();
+            last_name.Clear();
+            first_name.Clear();
+            middle_name.Clear();
+            suffix.Text = string.Empty;
+            position.Text = string.Empty;
+            regular_pay.Text = string.Empty;
+            regular_worktime.Text = string.Empty;
+            total_rpay.Clear();
+            sex.Text = string.Empty;
+            hired_date.Text = string.Empty;
+            address.Clear();
+            contact_number.Clear();
+            email.Clear();
+            cnumber_emergency.Clear();
+            birth.Text = string.Empty;
+        }
+
+        private void label23_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void suffix_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void birth_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void hired_date_ValueChanged(object sender, EventArgs e)
         {
 
         }

@@ -27,11 +27,13 @@ namespace EMS
             contact_number.MaxLength = 15;
             cnumber_emergency.MaxLength = 15;
 
-            hired_date.MaxDate = DateTime.Today;
-            birth.MaxDate = DateTime.Today;
+            hired_date.MaxDate = DateTime.Now;
+            birth.MaxDate = DateTime.Now;
 
             regular_pay.MaxLength = 6;
             regular_worktime.MaxLength = 4;
+
+            //no scroll bars
         }
 
 
@@ -407,8 +409,24 @@ namespace EMS
 
         private void btn_clear_Click(object sender, EventArgs e)
         {
-
+            employee_id.Clear();
+            last_name.Clear();
+            first_name.Clear();
+            middle_name.Clear();
+            suffix.Text = string.Empty;
+            position.Text = string.Empty;
+            regular_pay.Text = string.Empty;
+            regular_worktime.Text = string.Empty;
+            total_rpay.Clear();
+            sex.Text = string.Empty;
+            hired_date.Text = string.Empty;
+            address.Clear();
+            contact_number.Clear();
+            email.Clear();
+            cnumber_emergency.Clear();
+            birth.Text = string.Empty;
         }
+
 
         // =========== [!] REGULAR WORKTIME ===============
         private void regular_worktime_SelectedIndexChanged(object sender, EventArgs e)
