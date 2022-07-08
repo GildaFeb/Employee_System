@@ -386,8 +386,21 @@ namespace EMS
                     
                     total_rpay.Text = (Pay * 128).ToString();
                 }
-                // tuloy mo nalang hanggang 48hrs
+                else if (regular_worktime.SelectedItem == regular_worktime.Items[2])
+                {
 
+                    total_rpay.Text = (Pay * 120).ToString();
+                }
+                else if (regular_worktime.SelectedItem == regular_worktime.Items[3])
+                {
+
+                    total_rpay.Text = (Pay * 96).ToString();
+                }
+                else if (regular_worktime.SelectedItem == regular_worktime.Items[4])
+                {
+
+                    total_rpay.Text = (Pay * 48).ToString();
+                }
             }
             else
             {
@@ -452,11 +465,17 @@ namespace EMS
                 }
                 else if (regular_worktime.SelectedItem == regular_worktime.Items[1])
                 {
-
                     total_rpay.Text = (Pay * 128).ToString();
                 }
-                // tuloy mo nalang hanggang 48hrs
+                else if (regular_worktime.SelectedItem == regular_worktime.Items[3])
+                {
+                    total_rpay.Text = (Pay * 96).ToString();
+                }
+                else if (regular_worktime.SelectedItem == regular_worktime.Items[4])
+                {
 
+                    total_rpay.Text = (Pay * 48).ToString();
+                }
             }
             else
             {
