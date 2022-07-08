@@ -34,33 +34,15 @@ namespace EMS
 
         private void btn_one3_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(last_name.Text) || string.IsNullOrWhiteSpace(first_name.Text))
+            {
+                errorEMPadd errorEMPadd = new errorEMPadd();
+                errorEMPadd.Show();
+                return;
+            }
+            
             verificationEmpUpdate verificationEmpUpdate = new verificationEmpUpdate();
             verificationEmpUpdate.Show();
-        }
-
-        private void birth_date_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cnumber_emergency_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void email_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void contact_number_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void address_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void btn_clear_Click(object sender, EventArgs e)
@@ -83,11 +65,6 @@ namespace EMS
             birth.Value = DateTime.Today;
         }
 
-        private void label23_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void suffix_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -99,6 +76,16 @@ namespace EMS
         }
 
         private void hired_date_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void regular_pay_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void regular_worktime_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

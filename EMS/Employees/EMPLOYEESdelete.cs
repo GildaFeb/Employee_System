@@ -74,5 +74,10 @@ namespace EMS
             verificationEmpDelete verificationEmpDelete = new verificationEmpDelete();
             verificationEmpDelete.Show();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

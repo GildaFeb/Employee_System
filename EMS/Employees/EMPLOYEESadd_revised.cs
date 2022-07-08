@@ -76,11 +76,6 @@ namespace EMS
             */
         }
 
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void last_name_TextChanged(object sender, EventArgs e)
         {
 
@@ -231,19 +226,9 @@ namespace EMS
 
         }
 
-        private void btn_one3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_one8_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void position_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //
+
         }
 
         private void btn_one1_Click(object sender, EventArgs e)
@@ -428,11 +413,7 @@ namespace EMS
 
         private void total_rpay_SelectedIndexChanged(object sender, EventArgs e)
         {
-
-            //string total_pay = regular_pay.SelectedItem.ToString;
-            //int regpay = int.Parse(reg_pay.);
-
-            //total_rpay.Value = regular_pay * regular_worktime;
+            
         }
 
         private void btn_clear_Click(object sender, EventArgs e)
