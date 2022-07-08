@@ -310,7 +310,22 @@ namespace EMS
                     errorEMPadd.Show();
                 }
 
-                // after mo macode yung clear button, copy paste mo dito, para maclear din mga textbox after mag save
+                employee_id.Clear();
+                last_name.Clear();
+                first_name.Clear();
+                middle_name.Clear();
+                suffix.SelectedItem = null;
+                position.SelectedItem = null;
+                regular_pay.SelectedItem = null;
+                regular_worktime.SelectedItem = null;
+                total_rpay.Clear();
+                sex.SelectedItem = null;
+                hired_date.Value = DateTime.Today;
+                address.Clear();
+                contact_number.Clear();
+                email.Clear();
+                cnumber_emergency.Clear();
+                birth.Value = DateTime.Today;
             }
             
         }
@@ -426,18 +441,18 @@ namespace EMS
             last_name.Clear();
             first_name.Clear();
             middle_name.Clear();
-            suffix.Text = string.Empty;
-            position.Text = string.Empty;
-            regular_pay.Text = string.Empty;
-            regular_worktime.Text = string.Empty;
+            suffix.SelectedItem = null;
+            position.SelectedItem = null;
+            regular_pay.SelectedItem = null;
+            regular_worktime.SelectedItem = null;
             total_rpay.Clear();
-            sex.Text = string.Empty;
-            hired_date.Text = string.Empty;
+            sex.SelectedItem = null;
+            hired_date.Value = DateTime.Today;
             address.Clear();
             contact_number.Clear();
             email.Clear();
             cnumber_emergency.Clear();
-            birth.Text = string.Empty;
+            birth.Value = DateTime.Today;
         }
 
 
