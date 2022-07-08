@@ -34,15 +34,47 @@ namespace EMS
 
         private void btn_one3_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(last_name.Text) || string.IsNullOrWhiteSpace(first_name.Text))
+            if (string.IsNullOrWhiteSpace(last_name.Text) ||
+                string.IsNullOrWhiteSpace(first_name.Text) ||
+                string.IsNullOrWhiteSpace(middle_name.Text) ||
+                string.IsNullOrWhiteSpace(address.Text) ||
+                string.IsNullOrWhiteSpace(email.Text) ||
+                string.IsNullOrWhiteSpace(contact_number.Text) ||
+                string.IsNullOrWhiteSpace(cnumber_emergency.Text) ||
+                string.IsNullOrWhiteSpace(suffix.Text) ||
+                string.IsNullOrWhiteSpace(position.Text) ||
+                string.IsNullOrWhiteSpace(regular_pay.Text) ||
+                string.IsNullOrWhiteSpace(regular_worktime.Text) ||
+                string.IsNullOrWhiteSpace(sex.Text))
             {
                 errorEMPadd errorEMPadd = new errorEMPadd();
                 errorEMPadd.Show();
                 return;
             }
-            
-            verificationEmpUpdate verificationEmpUpdate = new verificationEmpUpdate();
-            verificationEmpUpdate.Show();
+            else
+            {
+                verificationEmpUpdate verificationEmpUpdate = new verificationEmpUpdate();
+                verificationEmpUpdate.Show();
+
+                /* clear for save
+                employee_id.Clear();
+                last_name.Clear();
+                first_name.Clear();
+                middle_name.Clear();
+                suffix.SelectedItem = null;
+                position.SelectedItem = null;
+                regular_pay.SelectedItem = null;
+                regular_worktime.SelectedItem = null;
+                total_rpay.Clear();
+                sex.SelectedItem = null;
+                hired_date.Value = DateTime.Today;
+                address.Clear();
+                contact_number.Clear();
+                email.Clear();
+                cnumber_emergency.Clear();
+                birth.Value = DateTime.Today;
+                */
+            }
         }
 
         private void btn_clear_Click(object sender, EventArgs e)
@@ -88,6 +120,26 @@ namespace EMS
         private void regular_worktime_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void contact_number_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+
+            if (!Char.IsDigit(ch) && ch != 8 && ch != 46)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void cnumber_emergency_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+
+            if (!Char.IsDigit(ch) && ch != 8 && ch != 46)
+            {
+                e.Handled = true;
+            }
         }
     }
 }

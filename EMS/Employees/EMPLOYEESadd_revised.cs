@@ -244,19 +244,21 @@ namespace EMS
         // =========== [!] ADD EMPLOYEE: SAVE BUTTON ===============
 
         private void btn_one3_Click_1(object sender, EventArgs e)
-        {
-            const string message = "Are all inputs correct?";
-            const string caption = "Cancel Confirmation";
-            //var result = MessageBox.Show(message, caption,
-             //                           MessageBoxButtons.YesNo,
-             //                           MessageBoxButtons.Question);
-            //e.Cancel = (result == DialogResult.No); 
-            //nilagyan ko lang comments para mag run
-            
-
-            if (string.IsNullOrWhiteSpace(last_name.Text) || string.IsNullOrWhiteSpace(first_name.Text))
+        {            
+            if (string.IsNullOrWhiteSpace(last_name.Text) ||
+                string.IsNullOrWhiteSpace(first_name.Text) ||
+                string.IsNullOrWhiteSpace(middle_name.Text) ||
+                string.IsNullOrWhiteSpace(address.Text) ||
+                string.IsNullOrWhiteSpace(email.Text) ||
+                string.IsNullOrWhiteSpace(contact_number.Text) ||
+                string.IsNullOrWhiteSpace(cnumber_emergency.Text) ||
+                string.IsNullOrWhiteSpace(suffix.Text) ||
+                string.IsNullOrWhiteSpace(position.Text) ||
+                string.IsNullOrWhiteSpace(regular_pay.Text) ||
+                string.IsNullOrWhiteSpace(regular_worktime.Text) ||
+                string.IsNullOrWhiteSpace(sex.Text))
             {
-                MessageBox.Show("Field empty");
+                MessageBox.Show("You left a field empty"); // or pwede rin pong bagong errorEMPadd pero empty field yung nasa label
 
                 return;
             }
@@ -295,6 +297,7 @@ namespace EMS
                     errorEMPadd.Show();
                 }
 
+                /* for clear after save
                 employee_id.Clear();
                 last_name.Clear();
                 first_name.Clear();
@@ -311,6 +314,7 @@ namespace EMS
                 email.Clear();
                 cnumber_emergency.Clear();
                 birth.Value = DateTime.Today;
+                */
             }
             
         }

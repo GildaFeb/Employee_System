@@ -664,6 +664,7 @@
             this.contact_number.Size = new System.Drawing.Size(306, 25);
             this.contact_number.TabIndex = 178;
             this.contact_number.Text = " ";
+            this.contact_number.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.contact_number_KeyPress);
             // 
             // email
             // 
@@ -690,6 +691,7 @@
             this.cnumber_emergency.Size = new System.Drawing.Size(306, 25);
             this.cnumber_emergency.TabIndex = 180;
             this.cnumber_emergency.Text = " ";
+            this.cnumber_emergency.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cnumber_emergency_KeyPress);
             // 
             // EMPLOYEESupdate_revised
             // 

@@ -26,5 +26,10 @@ namespace EMS
         {
             this.Close();
         }
+
+        private void btn_one2_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
