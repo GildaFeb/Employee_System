@@ -34,6 +34,7 @@ namespace EMS
 
         private void btn_one3_Click(object sender, EventArgs e)
         {
+            //subjected for shortening
             if (string.IsNullOrWhiteSpace(last_name.Text) ||
                 string.IsNullOrWhiteSpace(first_name.Text) ||
                 string.IsNullOrWhiteSpace(middle_name.Text) ||
@@ -47,9 +48,103 @@ namespace EMS
                 string.IsNullOrWhiteSpace(regular_worktime.Text) ||
                 string.IsNullOrWhiteSpace(sex.Text))
             {
-                errorEMPadd errorEMPadd = new errorEMPadd();
-                errorEMPadd.Show();
-                return;
+
+                if (string.IsNullOrWhiteSpace(last_name.Text))
+                {
+                    errorlast_name.Visible = true;
+                }
+                else
+                {
+                    errorlast_name.Visible = false;
+                }
+                if (string.IsNullOrWhiteSpace(first_name.Text))
+                {
+                    errorfirst_name.Visible = true;
+                }
+                else
+                {
+                    errorfirst_name.Visible = false;
+                }
+                if (string.IsNullOrWhiteSpace(middle_name.Text))
+                {
+                    errormiddle_name.Visible = true;
+                }
+                else
+                {
+                    errormiddle_name.Visible = false;
+                }
+                if (string.IsNullOrWhiteSpace(suffix.Text))
+                {
+                    errorsuffix.Visible = true;
+                }
+                else
+                {
+                    errorsuffix.Visible = false;
+                }
+                if (string.IsNullOrWhiteSpace(position.Text))
+                {
+                    errorposition.Visible = true;
+                }
+                else
+                {
+                    errorposition.Visible = false;
+                }
+                if (string.IsNullOrWhiteSpace(regular_pay.Text))
+                {
+                    errorregular_pay.Visible = true;
+                }
+                else
+                {
+                    errorregular_pay.Visible = false;
+                }
+                if (string.IsNullOrWhiteSpace(regular_worktime.Text))
+                {
+                    errorregular_worktime.Visible = true;
+                }
+                else
+                {
+                    errorregular_worktime.Visible = false;
+                }
+                if (string.IsNullOrWhiteSpace(sex.Text))
+                {
+                    errorsex.Visible = true;
+                }
+                else
+                {
+                    errorsex.Visible = false;
+                }
+                if (string.IsNullOrWhiteSpace(address.Text))
+                {
+                    erroraddress.Visible = true;
+                }
+                else
+                {
+                    erroraddress.Visible = false;
+                }
+                if (string.IsNullOrWhiteSpace(contact_number.Text))
+                {
+                    errorcontact_number.Visible = true;
+                }
+                else
+                {
+                    errorcontact_number.Visible = false;
+                }
+                if (string.IsNullOrWhiteSpace(email.Text))
+                {
+                    erroremail.Visible = true;
+                }
+                else
+                {
+                    erroremail.Visible = false;
+                }
+                if (string.IsNullOrWhiteSpace(cnumber_emergency.Text))
+                {
+                    errorcnumber_emergency.Visible = true;
+                }
+                else
+                {
+                    errorcnumber_emergency.Visible = false;
+                }
             }
             else
             {
@@ -140,6 +235,21 @@ namespace EMS
             {
                 e.Handled = true;
             }
+        }
+
+        private void btn_one1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sex_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

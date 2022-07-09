@@ -244,7 +244,7 @@ namespace EMS
         // =========== [!] ADD EMPLOYEE: SAVE BUTTON ===============
 
         private void btn_one3_Click_1(object sender, EventArgs e)
-        {            
+        {
             if (string.IsNullOrWhiteSpace(last_name.Text) ||
                 string.IsNullOrWhiteSpace(first_name.Text) ||
                 string.IsNullOrWhiteSpace(middle_name.Text) ||
@@ -258,11 +258,103 @@ namespace EMS
                 string.IsNullOrWhiteSpace(regular_worktime.Text) ||
                 string.IsNullOrWhiteSpace(sex.Text))
             {
-                MessageBox.Show("You left a field empty");
-                // or pwede rin pong bagong errorEMPadd pero empty field yung nasa label
-                // pwedeee, after ng error message, magkakaroon ng label somewhere malapit sa field 
-                // .. indicating the error/ ikaw bahala
-                return;
+
+                if (string.IsNullOrWhiteSpace(last_name.Text))
+                {
+                    errorlast_name.Visible = true;
+                }
+                else
+                {
+                    errorlast_name.Visible = false;
+                }
+                if (string.IsNullOrWhiteSpace(first_name.Text))
+                {
+                    errorfirst_name.Visible = true;
+                }
+                else
+                {
+                    errorfirst_name.Visible = false;
+                }
+                if (string.IsNullOrWhiteSpace(middle_name.Text))
+                {
+                    errormiddle_name.Visible = true;
+                }
+                else
+                {
+                    errormiddle_name.Visible = false;
+                }
+                if (string.IsNullOrWhiteSpace(suffix.Text))
+                {
+                    errorsuffix.Visible = true;
+                }
+                else
+                {
+                    errorsuffix.Visible = false;
+                }
+                if (string.IsNullOrWhiteSpace(position.Text))
+                {
+                    errorposition.Visible = true;
+                }
+                else
+                {
+                    errorposition.Visible = false;
+                }
+                if (string.IsNullOrWhiteSpace(regular_pay.Text))
+                {
+                    errorregular_pay.Visible = true;
+                }
+                else
+                {
+                    errorregular_pay.Visible = false;
+                }
+                if (string.IsNullOrWhiteSpace(regular_worktime.Text))
+                {
+                    errorregular_worktime.Visible = true;
+                }
+                else
+                {
+                    errorregular_worktime.Visible = false;
+                }
+                if (string.IsNullOrWhiteSpace(sex.Text))
+                {
+                    errorsex.Visible = true;
+                }
+                else
+                {
+                    errorsex.Visible = false;
+                }
+                if (string.IsNullOrWhiteSpace(address.Text))
+                {
+                    erroraddress.Visible = true;
+                }
+                else
+                {
+                    erroraddress.Visible = false;
+                }
+                if (string.IsNullOrWhiteSpace(contact_number.Text))
+                {
+                    errorcontact_number.Visible = true;
+                }
+                else
+                {
+                    errorcontact_number.Visible = false;
+                }
+                if (string.IsNullOrWhiteSpace(email.Text))
+                {
+                    erroremail.Visible = true;
+                }
+                else
+                {
+                    erroremail.Visible = false;
+                }
+                if (string.IsNullOrWhiteSpace(cnumber_emergency.Text))
+                {
+                    errorcnumber_emergency.Visible = true;
+                }
+                else
+                {
+                    errorcnumber_emergency.Visible = false;
+                }
             }
             else
             {
@@ -483,6 +575,56 @@ namespace EMS
             {
                 MessageBox.Show(" Select Regular Pay and Worktime to view TOTAL REGULAR PAY");
             }
+
+        }
+
+        private void errorcnumber_emergency_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void errorregular_worktime_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void erroremail_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void errorcontact_number_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void errorregular_pay_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void erroraddress_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void errorposition_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void errorfirst_name_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void errormiddle_name_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void errorsuffix_Click(object sender, EventArgs e)
+        {
 
         }
     }
