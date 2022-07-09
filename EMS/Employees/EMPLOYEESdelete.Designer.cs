@@ -264,6 +264,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 77;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // Search
             // 
@@ -337,6 +338,7 @@
             this.btn_one3.TabIndex = 126;
             this.btn_one3.Text = "Delete";
             this.btn_one3.UseVisualStyleBackColor = false;
+            this.btn_one3.Click += new System.EventHandler(this.btn_one3_Click);
             // 
             // EMPLOYEESdelete
             // 

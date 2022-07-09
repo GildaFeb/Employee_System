@@ -34,6 +34,7 @@ namespace EMS
             regular_worktime.MaxLength = 4;
 
             //no scroll bars
+            //wala pong dropdown para sa civil status at puno na po yung box except kung tatanggalin po yung "others"
         }
 
 

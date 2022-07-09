@@ -79,5 +79,25 @@ namespace EMS
         {
 
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_one3_Click(object sender, EventArgs e)
+        {
+            //untested, no data/info
+            if (MessageBox.Show("Confirm deletion of selected ID Number?", "Remove ID",
+                            MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                tableDelete_DGV.Rows.RemoveAt(tableDelete_DGV.CurrentRow.Index);
+            }
+            else
+            {
+                MessageBox.Show("Remove cancelled.", "Remove ID", MessageBoxButtons.OK,
+                                MessageBoxIcon.Information);
+            }
+        }
     }
 }

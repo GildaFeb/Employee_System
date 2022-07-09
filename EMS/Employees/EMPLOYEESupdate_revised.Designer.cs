@@ -56,7 +56,6 @@
             this.label22 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.hired_date = new System.Windows.Forms.DateTimePicker();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.first_name = new System.Windows.Forms.TextBox();
             this.middle_name = new System.Windows.Forms.TextBox();
@@ -86,6 +85,7 @@
             this.birth = new System.Windows.Forms.DateTimePicker();
             this.btn_one1 = new EMS.btn_one();
             this.errorbirth = new System.Windows.Forms.Label();
+            this.hired_date = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
@@ -442,6 +442,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 162;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // label19
             // 
@@ -455,21 +456,6 @@
             this.label19.Size = new System.Drawing.Size(37, 15);
             this.label19.TabIndex = 166;
             this.label19.Text = "Suffix";
-            // 
-            // hired_date
-            // 
-            this.hired_date.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.hired_date.CustomFormat = "dd-MM-yyyy";
-            this.hired_date.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.hired_date.Location = new System.Drawing.Point(941, 100);
-            this.hired_date.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.hired_date.MaxDate = new System.DateTime(9998, 12, 30, 0, 0, 0, 0);
-            this.hired_date.MinDate = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
-            this.hired_date.Name = "hired_date";
-            this.hired_date.Size = new System.Drawing.Size(306, 26);
-            this.hired_date.TabIndex = 169;
-            this.hired_date.Value = new System.DateTime(2022, 7, 8, 0, 0, 0, 0);
-            this.hired_date.ValueChanged += new System.EventHandler(this.hired_date_ValueChanged);
             // 
             // pictureBox3
             // 
@@ -861,11 +847,26 @@
             this.errorbirth.Text = "Must be 18 years old at minimum.";
             this.errorbirth.Visible = false;
             // 
+            // hired_date
+            // 
+            this.hired_date.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.hired_date.CustomFormat = "dd-MM-yyyy";
+            this.hired_date.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.hired_date.Location = new System.Drawing.Point(941, 99);
+            this.hired_date.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.hired_date.MaxDate = new System.DateTime(9998, 12, 30, 0, 0, 0, 0);
+            this.hired_date.MinDate = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
+            this.hired_date.Name = "hired_date";
+            this.hired_date.Size = new System.Drawing.Size(306, 26);
+            this.hired_date.TabIndex = 208;
+            this.hired_date.Value = new System.DateTime(2022, 7, 9, 17, 59, 52, 886);
+            // 
             // EMPLOYEESupdate_revised
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.Controls.Add(this.hired_date);
             this.Controls.Add(this.errorbirth);
             this.Controls.Add(this.birth);
             this.Controls.Add(this.erroraddress);
@@ -893,7 +894,6 @@
             this.Controls.Add(this.last_name);
             this.Controls.Add(this.middle_name);
             this.Controls.Add(this.first_name);
-            this.Controls.Add(this.hired_date);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label11);
