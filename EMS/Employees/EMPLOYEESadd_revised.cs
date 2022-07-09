@@ -258,7 +258,6 @@ namespace EMS
                 string.IsNullOrWhiteSpace(regular_worktime.Text) ||
                 string.IsNullOrWhiteSpace(sex.Text))
             {
-
                 if (string.IsNullOrWhiteSpace(last_name.Text))
                 {
                     errorlast_name.Visible = true;
@@ -445,13 +444,15 @@ namespace EMS
 
         private void birth_ValueChanged(object sender, EventArgs e)
         {
-            int birthValidation(DateTime birth)
+            int Age = DateTime.Now.Year - birth.Value.Year;
+
+            if (Age < 18)
             {
-                DateTime today = DateTime.Now;
-                DateTime validDate = new DateTime(today.Year - 18, today.Month, today.Day);
-                TimeSpan validAge = today.Subtract(validDate);
-                TimeSpan actualAge = today.Subtract(birth);
-                return TimeSpan.Compare(validAge, actualAge);
+                errorbirth.Visible = true;
+            }
+            else
+            {
+                errorbirth.Visible = false;
             }
         }
 

@@ -219,22 +219,12 @@ namespace EMS
 
         private void contact_number_KeyPress(object sender, KeyPressEventArgs e)
         {
-            char ch = e.KeyChar;
-
-            if (!Char.IsDigit(ch) && ch != 8 && ch != 46)
-            {
-                e.Handled = true;
-            }
+        
         }
 
         private void cnumber_emergency_KeyPress(object sender, KeyPressEventArgs e)
         {
-            char ch = e.KeyChar;
-
-            if (!Char.IsDigit(ch) && ch != 8 && ch != 46)
-            {
-                e.Handled = true;
-            }
+           
         }
 
         private void btn_one1_Click(object sender, EventArgs e)
@@ -250,6 +240,40 @@ namespace EMS
         private void label4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void birth_ValueChanged_1(object sender, EventArgs e)
+        {
+            int Age = DateTime.Now.Year - birth.Value.Year;
+
+            if (Age < 18)
+            {
+                errorbirth.Visible = true;
+            }
+            else
+            {
+                errorbirth.Visible = false;
+            }
+        }
+
+        private void contact_number_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+
+            if (!Char.IsDigit(ch) && ch != 8 && ch != 46)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void cnumber_emergency_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+
+            if (!Char.IsDigit(ch) && ch != 8 && ch != 46)
+            {
+                e.Handled = true;
+            }
         }
     }
 }

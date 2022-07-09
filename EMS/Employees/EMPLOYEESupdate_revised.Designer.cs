@@ -51,7 +51,6 @@
             this.label16 = new System.Windows.Forms.Label();
             this.employee_id = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.btn_one1 = new EMS.btn_one();
             this.btn_one14 = new EMS.btn_one();
             this.label11 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
@@ -85,6 +84,8 @@
             this.errorcontact_number = new System.Windows.Forms.Label();
             this.erroraddress = new System.Windows.Forms.Label();
             this.birth = new System.Windows.Forms.DateTimePicker();
+            this.btn_one1 = new EMS.btn_one();
+            this.errorbirth = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
@@ -387,24 +388,6 @@
             this.label20.TabIndex = 118;
             this.label20.Text = "Date joined";
             // 
-            // btn_one1
-            // 
-            this.btn_one1.BackColor = System.Drawing.Color.White;
-            this.btn_one1.Enabled = false;
-            this.btn_one1.FlatAppearance.BorderSize = 0;
-            this.btn_one1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.btn_one1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.btn_one1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_one1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn_one1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(37)))), ((int)(((byte)(83)))));
-            this.btn_one1.Location = new System.Drawing.Point(67, 146);
-            this.btn_one1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_one1.Name = "btn_one1";
-            this.btn_one1.Size = new System.Drawing.Size(1223, 483);
-            this.btn_one1.TabIndex = 143;
-            this.btn_one1.UseVisualStyleBackColor = false;
-            this.btn_one1.Click += new System.EventHandler(this.btn_one1_Click);
-            // 
             // btn_one14
             // 
             this.btn_one14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(216)))), ((int)(((byte)(0)))));
@@ -647,6 +630,7 @@
             this.cnumber_emergency.Size = new System.Drawing.Size(306, 25);
             this.cnumber_emergency.TabIndex = 190;
             this.cnumber_emergency.Text = " ";
+            this.cnumber_emergency.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cnumber_emergency_KeyPress_1);
             // 
             // email
             // 
@@ -673,6 +657,7 @@
             this.contact_number.Size = new System.Drawing.Size(306, 25);
             this.contact_number.TabIndex = 192;
             this.contact_number.Text = " ";
+            this.contact_number.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.contact_number_KeyPress_1);
             // 
             // address
             // 
@@ -844,12 +829,44 @@
             this.birth.Size = new System.Drawing.Size(306, 26);
             this.birth.TabIndex = 206;
             this.birth.Value = new System.DateTime(2022, 7, 9, 17, 59, 52, 886);
+            this.birth.ValueChanged += new System.EventHandler(this.birth_ValueChanged_1);
+            // 
+            // btn_one1
+            // 
+            this.btn_one1.BackColor = System.Drawing.Color.White;
+            this.btn_one1.Enabled = false;
+            this.btn_one1.FlatAppearance.BorderSize = 0;
+            this.btn_one1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btn_one1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btn_one1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_one1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn_one1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(37)))), ((int)(((byte)(83)))));
+            this.btn_one1.Location = new System.Drawing.Point(67, 146);
+            this.btn_one1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_one1.Name = "btn_one1";
+            this.btn_one1.Size = new System.Drawing.Size(1223, 483);
+            this.btn_one1.TabIndex = 143;
+            this.btn_one1.UseVisualStyleBackColor = false;
+            this.btn_one1.Click += new System.EventHandler(this.btn_one1_Click);
+            // 
+            // errorbirth
+            // 
+            this.errorbirth.AutoSize = true;
+            this.errorbirth.BackColor = System.Drawing.Color.White;
+            this.errorbirth.ForeColor = System.Drawing.Color.Red;
+            this.errorbirth.Location = new System.Drawing.Point(1060, 606);
+            this.errorbirth.Name = "errorbirth";
+            this.errorbirth.Size = new System.Drawing.Size(187, 15);
+            this.errorbirth.TabIndex = 207;
+            this.errorbirth.Text = "Must be 18 years old at minimum.";
+            this.errorbirth.Visible = false;
             // 
             // EMPLOYEESupdate_revised
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.Controls.Add(this.errorbirth);
             this.Controls.Add(this.birth);
             this.Controls.Add(this.erroraddress);
             this.Controls.Add(this.errorcontact_number);
@@ -973,5 +990,6 @@
         private Label errorcontact_number;
         private Label erroraddress;
         private DateTimePicker birth;
+        private Label errorbirth;
     }
 }

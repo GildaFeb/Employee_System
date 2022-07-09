@@ -86,6 +86,7 @@
             this.erroremail = new System.Windows.Forms.Label();
             this.errorcontact_number = new System.Windows.Forms.Label();
             this.erroraddress = new System.Windows.Forms.Label();
+            this.errorbirth = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
@@ -904,11 +905,24 @@
             this.erroraddress.Visible = false;
             this.erroraddress.Click += new System.EventHandler(this.erroraddress_Click);
             // 
+            // errorbirth
+            // 
+            this.errorbirth.AutoSize = true;
+            this.errorbirth.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
+            this.errorbirth.ForeColor = System.Drawing.Color.Red;
+            this.errorbirth.Location = new System.Drawing.Point(1060, 604);
+            this.errorbirth.Name = "errorbirth";
+            this.errorbirth.Size = new System.Drawing.Size(187, 15);
+            this.errorbirth.TabIndex = 208;
+            this.errorbirth.Text = "Must be 18 years old at minimum.";
+            this.errorbirth.Visible = false;
+            // 
             // EMPLOYEESadd_revised
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.Controls.Add(this.errorbirth);
             this.Controls.Add(this.erroraddress);
             this.Controls.Add(this.errorcontact_number);
             this.Controls.Add(this.erroremail);
@@ -1035,5 +1049,6 @@
         private Label erroremail;
         private Label errorcontact_number;
         private Label erroraddress;
+        private Label errorbirth;
     }
 }
