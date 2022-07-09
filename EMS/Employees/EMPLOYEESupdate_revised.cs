@@ -249,10 +249,12 @@ namespace EMS
             if (Age < 18)
             {
                 errorbirth.Visible = true;
+                btn_save.Enabled = false;
             }
             else
             {
                 errorbirth.Visible = false;
+                btn_save.Enabled = true;
             }
         }
 
