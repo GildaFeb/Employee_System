@@ -61,6 +61,14 @@ namespace EMS
             if (CMessageBox.Show("Are you sure to delete the selected data in duty duration?", "Delete Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 //Code to delete
+                //note to sef, recheck next time
+                for (int i = tableDelete_DGV.Rows.Count - 1; i >= 0; i--)
+                {
+                    if ((bool)tableDelete_DGV.Rows[i].Cells[0].FormattedValue)
+                    {
+                        tableDelete_DGV.Rows.RemoveAt(i);
+                    }
+                }
 
                 CMessageBox.Show("Selected Duty duration data deleted.");
             }
@@ -85,6 +93,17 @@ namespace EMS
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             // [!] Alvin = function for search bar pero kung gagamit ng function sa database just let me know
+        }
+        private void btn_one1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btn_one1_Click_1(object sender, EventArgs e)
+        {
+            //to uncheck all checked boxes
+            foreach (DataGridViewRow Row in tableDelete_DGV.Rows)
+                ((DataGridViewCheckBoxCell)Row.Cells["delete_ChckBx"]).Value = null;
         }
     }
 }

@@ -85,23 +85,43 @@ namespace EMS
 
         private void status_OnSelectedIndexChanged(object sender, EventArgs e)
         {
-            status.Items.Add("Present");
+            /*status.Items.Add("Present");
             status.Items.Add("Absent");
-            status.Items.Add("Leave");
+            status.Items.Add("Leave");*/
+
+            //naga multiply if di naka comment - Alvin
 
             if (status.SelectedItem.ToString() == "Present")
             {
                 //  [!] Alvin = enabled true the status, date, time in, time out
+                time_in.Enabled = true;
+                time_out.Enabled = true;
+                duration.Enabled = true;
+                overtime.Enabled = true;
+                date_duty.Enabled = true;
             }
             else if (status.SelectedItem.ToString() == "Absent")
             {
                 // [!] Alvin = enabled false the time in, time out
+                time_in.Enabled = false;
+                time_out.Enabled = false;
+                date_duty.Enabled = true;
 
             }
-            else if (status.SelectedItem.ToString() == "Leave")
+            else if (status.SelectedItem.ToString() == "On Leave")
             {
+                time_in.Enabled = false;
+                time_out.Enabled = false;
+                duration.Enabled = false;
+                overtime.Enabled = false;
+                date_duty.Enabled = true;
                 // [!] Alvin = enabled false the time in, time out, duration, overtime
             }
+        }
+
+        private void ATTENDANCEdutydurationUpdREVISED_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

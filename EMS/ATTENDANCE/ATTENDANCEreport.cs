@@ -30,6 +30,13 @@ namespace EMS
             if (CMessageBox.Show("Are you sure to delete the selected attendance report data?", "Delete Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 //Code to delete
+                for (int i = attndncrprt_DGV.Rows.Count - 1; i >= 0; i--)
+                {
+                    if ((bool)attndncrprt_DGV.Rows[i].Cells[0].FormattedValue)
+                    {
+                        attndncrprt_DGV.Rows.RemoveAt(i);
+                    }
+                }
 
                 CMessageBox.Show("Selected attendance report data deleted.");
             }
@@ -44,6 +51,8 @@ namespace EMS
         private void btn_one2_Click(object sender, EventArgs e)
         {
             // [!] Alvin = function for clear checked
+            foreach (DataGridViewRow Row in attndncrprt_DGV.Rows)
+                ((DataGridViewCheckBoxCell)Row.Cells["delete_ChckBx"]).Value = null;
         }
     }
 }
