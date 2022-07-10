@@ -558,6 +558,7 @@
             this.regular_pay.Name = "regular_pay";
             this.regular_pay.Size = new System.Drawing.Size(306, 28);
             this.regular_pay.TabIndex = 186;
+            this.regular_pay.SelectedIndexChanged += new System.EventHandler(this.regular_pay_SelectedIndexChanged_1);
             // 
             // regular_worktime
             // 
@@ -574,6 +575,7 @@
             this.regular_worktime.Name = "regular_worktime";
             this.regular_worktime.Size = new System.Drawing.Size(308, 23);
             this.regular_worktime.TabIndex = 187;
+            this.regular_worktime.SelectedIndexChanged += new System.EventHandler(this.regular_worktime_SelectedIndexChanged_1);
             // 
             // total_rpay
             // 

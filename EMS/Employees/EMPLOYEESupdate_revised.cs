@@ -284,5 +284,83 @@ namespace EMS
         {
            
         }
+
+        private void regular_pay_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            if (regular_worktime != null && regular_pay != null)
+            {
+
+                double Pay = 0.0;
+                double.TryParse(regular_pay.Text.Trim(), out Pay);
+
+                if (regular_worktime.SelectedItem == regular_worktime.Items[0])
+                {
+                    total_rpay.Text = (Pay * 160).ToString();
+                }
+                else if (regular_worktime.SelectedItem == regular_worktime.Items[1])
+                {
+
+                    total_rpay.Text = (Pay * 128).ToString();
+                }
+                else if (regular_worktime.SelectedItem == regular_worktime.Items[2])
+                {
+
+                    total_rpay.Text = (Pay * 120).ToString();
+                }
+                else if (regular_worktime.SelectedItem == regular_worktime.Items[3])
+                {
+
+                    total_rpay.Text = (Pay * 96).ToString();
+                }
+                else if (regular_worktime.SelectedItem == regular_worktime.Items[4])
+                {
+
+                    total_rpay.Text = (Pay * 48).ToString();
+                }
+            }
+            else
+            {
+                MessageBox.Show(" Select Regular Pay and Worktime to view TOTAL REGULAR PAY");
+            }
+        }
+
+        private void regular_worktime_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            if (regular_worktime != null && regular_pay != null)
+            {
+
+                double Pay = 0.0;
+                double.TryParse(regular_pay.Text.Trim(), out Pay);
+
+                if (regular_worktime.SelectedItem == regular_worktime.Items[0])
+                {
+                    total_rpay.Text = (Pay * 160).ToString();
+                }
+                else if (regular_worktime.SelectedItem == regular_worktime.Items[1])
+                {
+
+                    total_rpay.Text = (Pay * 128).ToString();
+                }
+                else if (regular_worktime.SelectedItem == regular_worktime.Items[2])
+                {
+
+                    total_rpay.Text = (Pay * 120).ToString();
+                }
+                else if (regular_worktime.SelectedItem == regular_worktime.Items[3])
+                {
+
+                    total_rpay.Text = (Pay * 96).ToString();
+                }
+                else if (regular_worktime.SelectedItem == regular_worktime.Items[4])
+                {
+
+                    total_rpay.Text = (Pay * 48).ToString();
+                }
+            }
+            else
+            {
+                MessageBox.Show(" Select Regular Pay and Worktime to view TOTAL REGULAR PAY");
+            }
+        }
     }
 }

@@ -477,10 +477,8 @@ namespace EMS
             if (regular_worktime != null && regular_pay != null)
             {
 
-                //double reg_pay = Convert.ToDouble(regular_worktime.Text);
-
-                
-                double Pay = Convert.ToDouble(regular_pay.Text); // regular_pay convert to double
+                double Pay = 0.0;
+                double.TryParse(regular_pay.Text.Trim(), out Pay);
 
                 if (regular_worktime.SelectedItem == regular_worktime.Items[0])
                 {
@@ -546,19 +544,11 @@ namespace EMS
         private void regular_worktime_SelectedIndexChanged(object sender, EventArgs e)
         {
 
-            // 160hrs(8hrs x 5days) x 4weeks - regular_worktime.Items[0]
-            // 128hrs(8hrs x 4days) x 4weeks - regular_worktime.Items[1]
-            // 120hrs(6hrs x 5days) x 4weeks - regular_worktime.Items[2]
-            // 96hrs(8hrs x 3days) x 4weeks - regular_worktime.Items[3]
-            // 48hrs(4hrs x 5days) x 4weeks - regular_worktime.Items[4]
-            // [!] take note with the item number in every if else, thats the indicator of selected item
-
             if (regular_worktime != null && regular_pay != null)
             {
 
-                //double reg_pay = Convert.ToDouble(regular_worktime.Text);
-
-                double Pay = Convert.ToDouble(regular_pay.Text); // regular_pay convert to double
+                double Pay = 0.0;
+                double.TryParse(regular_pay.Text.Trim(), out Pay);
 
                 if (regular_worktime.SelectedItem == regular_worktime.Items[0])
                 {
