@@ -25,7 +25,9 @@ namespace EMS
             contact_number.MaxLength = 15;
             cnumber_emergency.MaxLength = 15;
 
+            hired_date.Value = DateTime.Now;
             hired_date.MaxDate = DateTime.Now;
+            birth.Value = DateTime.Now;
             birth.MaxDate = DateTime.Now;
 
             regular_pay.MaxLength = 6;

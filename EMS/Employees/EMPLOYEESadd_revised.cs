@@ -27,7 +27,9 @@ namespace EMS
             contact_number.MaxLength = 15;
             cnumber_emergency.MaxLength = 15;
 
+            hired_date.Value = DateTime.Now;
             hired_date.MaxDate = DateTime.Now;
+            birth.Value = DateTime.Now;
             birth.MaxDate = DateTime.Now;
 
             regular_pay.MaxLength = 6;
@@ -477,6 +479,7 @@ namespace EMS
 
                 //double reg_pay = Convert.ToDouble(regular_worktime.Text);
 
+                
                 double Pay = Convert.ToDouble(regular_pay.Text); // regular_pay convert to double
 
                 if (regular_worktime.SelectedItem == regular_worktime.Items[0])
