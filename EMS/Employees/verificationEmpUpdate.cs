@@ -26,5 +26,17 @@ namespace EMS
         {
 
         }
+
+        private void btn_one2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_one2_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+            successEMPupdate successEMPupdate = new successEMPupdate();
+            successEMPupdate.ShowDialog();
+        }
     }
 }

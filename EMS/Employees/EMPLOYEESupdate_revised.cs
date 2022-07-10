@@ -36,7 +36,6 @@ namespace EMS
 
         private void btn_one3_Click(object sender, EventArgs e)
         {
-            //subjected for shortening
             if (string.IsNullOrWhiteSpace(last_name.Text) ||
                 string.IsNullOrWhiteSpace(first_name.Text) ||
                 string.IsNullOrWhiteSpace(middle_name.Text) ||
@@ -147,13 +146,15 @@ namespace EMS
                 {
                     errorcnumber_emergency.Visible = false;
                 }
+
+                errorEmptyFields errorEmptyFields = new errorEmptyFields();
+                errorEmptyFields.ShowDialog();
             }
             else
             {
                 verificationEmpUpdate verificationEmpUpdate = new verificationEmpUpdate();
-                verificationEmpUpdate.Show();
+                verificationEmpUpdate.ShowDialog();
 
-                /* clear for save
                 employee_id.Clear();
                 last_name.Clear();
                 first_name.Clear();
@@ -170,7 +171,19 @@ namespace EMS
                 email.Clear();
                 cnumber_emergency.Clear();
                 birth.Value = DateTime.Today;
-                */
+
+                errorlast_name.Visible = false;
+                errorfirst_name.Visible = false;
+                errormiddle_name.Visible = false;
+                errorsuffix.Visible = false;
+                errorposition.Visible = false;
+                errorregular_pay.Visible = false;
+                errorregular_worktime.Visible = false;
+                errorsex.Visible = false;
+                erroraddress.Visible = false;
+                errorcontact_number.Visible = false;
+                erroremail.Visible = false;
+                errorcnumber_emergency.Visible = false;
             }
         }
 

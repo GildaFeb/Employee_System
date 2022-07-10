@@ -357,6 +357,9 @@ namespace EMS
                 {
                     errorcnumber_emergency.Visible = false;
                 }
+
+                errorEmptyFields errorEmptyFields = new errorEmptyFields();
+                errorEmptyFields.ShowDialog();
             }
             else
             {
@@ -385,15 +388,14 @@ namespace EMS
                 if (check == true) 
                 {
                     successEMPadd successEMPadd = new successEMPadd();
-                    successEMPadd.Show();
+                    successEMPadd.ShowDialog();
                 }
                 else
                 {
                     errorEMPadd errorEMPadd = new errorEMPadd();
-                    errorEMPadd.Show();
+                    errorEMPadd.ShowDialog();
                 }
 
-                /* for clear after save
                 employee_id.Clear();
                 last_name.Clear();
                 first_name.Clear();
@@ -410,7 +412,19 @@ namespace EMS
                 email.Clear();
                 cnumber_emergency.Clear();
                 birth.Value = DateTime.Today;
-                */
+
+                errorlast_name.Visible = false;
+                errorfirst_name.Visible = false;
+                errormiddle_name.Visible = false;
+                errorsuffix.Visible = false;
+                errorposition.Visible = false;
+                errorregular_pay.Visible = false;
+                errorregular_worktime.Visible = false;
+                errorsex.Visible = false;
+                erroraddress.Visible = false;
+                errorcontact_number.Visible = false;
+                erroremail.Visible = false;
+                errorcnumber_emergency.Visible = false;
             }
             
         }

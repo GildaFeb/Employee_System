@@ -310,7 +310,6 @@
             // btn_one1
             // 
             this.btn_one1.BackColor = System.Drawing.Color.DarkGray;
-            this.btn_one1.Enabled = false;
             this.btn_one1.FlatAppearance.BorderSize = 0;
             this.btn_one1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_one1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -322,6 +321,7 @@
             this.btn_one1.TabIndex = 125;
             this.btn_one1.Text = "Clear checked";
             this.btn_one1.UseVisualStyleBackColor = false;
+            this.btn_one1.Click += new System.EventHandler(this.btn_one1_Click);
             // 
             // btn_one3
             // 

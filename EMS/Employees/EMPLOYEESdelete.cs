@@ -87,7 +87,10 @@ namespace EMS
 
         private void btn_one3_Click(object sender, EventArgs e)
         {
-            //untested, no data/info
+            verificationEmpDelete verificationEmpDelete = new verificationEmpDelete();
+            verificationEmpDelete.ShowDialog();
+            
+            /*untested, no data/info
             if (MessageBox.Show("Confirm deletion of selected ID Number?", "Remove ID",
                             MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
@@ -98,6 +101,13 @@ namespace EMS
                 MessageBox.Show("Remove cancelled.", "Remove ID", MessageBoxButtons.OK,
                                 MessageBoxIcon.Information);
             }
+            */
+        }
+
+        private void btn_one1_Click(object sender, EventArgs e)
+        {
+            foreach (DataGridViewRow Row in tableDelete_DGV.Rows)
+                ((DataGridViewCheckBoxCell)Row.Cells["delete_ChckBx"]).Value = null;
         }
     }
 }
