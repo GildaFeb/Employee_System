@@ -54,5 +54,15 @@ namespace EMS
             foreach (DataGridViewRow Row in attndncrprt_DGV.Rows)
                 ((DataGridViewCheckBoxCell)Row.Cells["delete_ChckBx"]).Value = null;
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Search_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

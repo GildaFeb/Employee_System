@@ -82,26 +82,17 @@ namespace EMS
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-
+            /* untested, no data ∴ returns null
+            (tableDelete_DGV.DataSource as DataTable).DefaultView.RowFilter =
+                    string.Format("employee_id" + Search.Text);
+            */
+            
         }
 
         private void btn_one3_Click(object sender, EventArgs e)
         {
             verificationEmpDelete verificationEmpDelete = new verificationEmpDelete();
             verificationEmpDelete.ShowDialog();
-            
-            /*untested, no data/info
-            if (MessageBox.Show("Confirm deletion of selected ID Number?", "Remove ID",
-                            MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-            {
-                tableDelete_DGV.Rows.RemoveAt(tableDelete_DGV.CurrentRow.Index);
-            }
-            else
-            {
-                MessageBox.Show("Remove cancelled.", "Remove ID", MessageBoxButtons.OK,
-                                MessageBoxIcon.Information);
-            }
-            */
         }
 
         private void btn_one1_Click(object sender, EventArgs e)
