@@ -374,6 +374,7 @@
             this.employee_id.Name = "employee_id";
             this.employee_id.Size = new System.Drawing.Size(306, 24);
             this.employee_id.TabIndex = 120;
+            this.employee_id.TextChanged += new System.EventHandler(this.employee_id_TextChanged);
             // 
             // label20
             // 
@@ -472,6 +473,7 @@
             // first_name
             // 
             this.first_name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.first_name.Enabled = false;
             this.first_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.first_name.ForeColor = System.Drawing.Color.Black;
             this.first_name.Location = new System.Drawing.Point(107, 316);
@@ -485,6 +487,7 @@
             // middle_name
             // 
             this.middle_name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.middle_name.Enabled = false;
             this.middle_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.middle_name.ForeColor = System.Drawing.Color.Black;
             this.middle_name.Location = new System.Drawing.Point(107, 385);
@@ -498,6 +501,7 @@
             // last_name
             // 
             this.last_name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.last_name.Enabled = false;
             this.last_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.last_name.ForeColor = System.Drawing.Color.Black;
             this.last_name.Location = new System.Drawing.Point(107, 245);
@@ -511,6 +515,7 @@
             // suffix
             // 
             this.suffix.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.suffix.Enabled = false;
             this.suffix.FormattingEnabled = true;
             this.suffix.Items.AddRange(new object[] {
             "Sr.",
@@ -528,6 +533,7 @@
             // position
             // 
             this.position.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.position.Enabled = false;
             this.position.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.position.ForeColor = System.Drawing.Color.Black;
             this.position.FormattingEnabled = true;
@@ -544,6 +550,7 @@
             // regular_pay
             // 
             this.regular_pay.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.regular_pay.Enabled = false;
             this.regular_pay.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.regular_pay.ForeColor = System.Drawing.Color.Black;
             this.regular_pay.FormattingEnabled = true;
@@ -563,6 +570,7 @@
             // regular_worktime
             // 
             this.regular_worktime.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.regular_worktime.Enabled = false;
             this.regular_worktime.FormattingEnabled = true;
             this.regular_worktime.Items.AddRange(new object[] {
             "160hrs (8hrs x 5days) x 4weeks",
@@ -594,6 +602,7 @@
             // sex
             // 
             this.sex.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.sex.Enabled = false;
             this.sex.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.sex.ForeColor = System.Drawing.Color.Black;
             this.sex.FormattingEnabled = true;
@@ -609,6 +618,7 @@
             // cnumber_emergency
             // 
             this.cnumber_emergency.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.cnumber_emergency.Enabled = false;
             this.cnumber_emergency.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cnumber_emergency.ForeColor = System.Drawing.Color.Black;
             this.cnumber_emergency.Location = new System.Drawing.Point(941, 463);
@@ -623,6 +633,7 @@
             // email
             // 
             this.email.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.email.Enabled = false;
             this.email.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.email.ForeColor = System.Drawing.Color.Black;
             this.email.Location = new System.Drawing.Point(940, 382);
@@ -636,6 +647,7 @@
             // contact_number
             // 
             this.contact_number.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.contact_number.Enabled = false;
             this.contact_number.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.contact_number.ForeColor = System.Drawing.Color.Black;
             this.contact_number.Location = new System.Drawing.Point(941, 316);
@@ -650,6 +662,7 @@
             // address
             // 
             this.address.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.address.Enabled = false;
             this.address.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.address.ForeColor = System.Drawing.Color.Black;
             this.address.Location = new System.Drawing.Point(941, 246);
@@ -808,6 +821,7 @@
             // 
             this.birth.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.birth.CustomFormat = "dd-MM-yyyy";
+            this.birth.Enabled = false;
             this.birth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.birth.Location = new System.Drawing.Point(940, 578);
             this.birth.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -853,6 +867,7 @@
             // 
             this.hired_date.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.hired_date.CustomFormat = "dd-MM-yyyy";
+            this.hired_date.Enabled = false;
             this.hired_date.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.hired_date.Location = new System.Drawing.Point(941, 99);
             this.hired_date.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);

@@ -375,5 +375,43 @@ namespace EMS
                 MessageBox.Show(" Select Regular Pay and Worktime to view TOTAL REGULAR PAY");
             }
         }
+
+        private void employee_id_TextChanged(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(employee_id.Text))
+            {
+                last_name.Enabled = true;
+                first_name.Enabled = true;
+                middle_name.Enabled = true;
+                suffix.Enabled = true;
+                position.Enabled = true;
+                regular_pay.Enabled = true;
+                regular_worktime.Enabled = true;
+                sex.Enabled = true;
+                address.Enabled = true;
+                contact_number.Enabled = true;
+                email.Enabled = true;
+                cnumber_emergency.Enabled = true;
+                hired_date.Enabled = true;
+                birth.Enabled = true;
+            }
+            else if (string.IsNullOrWhiteSpace(employee_id.Text))
+            {
+                last_name.Enabled = false;
+                first_name.Enabled = false;
+                middle_name.Enabled = false;
+                suffix.Enabled = false;
+                position.Enabled = false;
+                regular_pay.Enabled = false;
+                regular_worktime.Enabled = false;
+                sex.Enabled = false;
+                address.Enabled = false;
+                contact_number.Enabled = false;
+                email.Enabled = false;
+                cnumber_emergency.Enabled = false;
+                hired_date.Enabled = false;
+                birth.Enabled = false;
+            }
+            }
     }
 }
