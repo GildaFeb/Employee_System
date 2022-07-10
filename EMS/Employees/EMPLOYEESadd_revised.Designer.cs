@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EMPLOYEESadd_revised));
             this.label16 = new System.Windows.Forms.Label();
-            this.employee_id = new System.Windows.Forms.TextBox();
             this.hired_date = new System.Windows.Forms.DateTimePicker();
             this.label20 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
@@ -87,6 +86,8 @@
             this.errorcontact_number = new System.Windows.Forms.Label();
             this.erroraddress = new System.Windows.Forms.Label();
             this.errorbirth = new System.Windows.Forms.Label();
+            this.employee_id = new System.Windows.Forms.TextBox();
+            this.erroremployee_id = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
@@ -103,20 +104,6 @@
             this.label16.TabIndex = 89;
             this.label16.Text = "ID Number";
             // 
-            // employee_id
-            // 
-            this.employee_id.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.employee_id.Enabled = false;
-            this.employee_id.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.employee_id.ForeColor = System.Drawing.Color.Black;
-            this.employee_id.Location = new System.Drawing.Point(528, 99);
-            this.employee_id.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.employee_id.Multiline = true;
-            this.employee_id.Name = "employee_id";
-            this.employee_id.Size = new System.Drawing.Size(306, 25);
-            this.employee_id.TabIndex = 87;
-            this.employee_id.Text = " ";
-            // 
             // hired_date
             // 
             this.hired_date.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -125,7 +112,7 @@
             this.hired_date.Location = new System.Drawing.Point(944, 101);
             this.hired_date.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.hired_date.MaxDate = new System.DateTime(9998, 12, 30, 0, 0, 0, 0);
-            this.hired_date.MinDate = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
+            this.hired_date.MinDate = new System.DateTime(1950, 1, 1, 0, 0, 0, 0);
             this.hired_date.Name = "hired_date";
             this.hired_date.Size = new System.Drawing.Size(306, 26);
             this.hired_date.TabIndex = 86;
@@ -640,7 +627,7 @@
             this.birth.Location = new System.Drawing.Point(939, 576);
             this.birth.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.birth.MaxDate = new System.DateTime(9998, 12, 30, 0, 0, 0, 0);
-            this.birth.MinDate = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
+            this.birth.MinDate = new System.DateTime(1950, 1, 1, 0, 0, 0, 0);
             this.birth.Name = "birth";
             this.birth.Size = new System.Drawing.Size(306, 26);
             this.birth.TabIndex = 119;
@@ -917,11 +904,39 @@
             this.errorbirth.Text = "Must be 18 years old at minimum.";
             this.errorbirth.Visible = false;
             // 
+            // employee_id
+            // 
+            this.employee_id.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.employee_id.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.employee_id.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.employee_id.ForeColor = System.Drawing.Color.Black;
+            this.employee_id.Location = new System.Drawing.Point(524, 101);
+            this.employee_id.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.employee_id.Multiline = true;
+            this.employee_id.Name = "employee_id";
+            this.employee_id.Size = new System.Drawing.Size(306, 24);
+            this.employee_id.TabIndex = 209;
+            this.employee_id.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
+            // 
+            // erroremployee_id
+            // 
+            this.erroremployee_id.AutoSize = true;
+            this.erroremployee_id.BackColor = System.Drawing.Color.White;
+            this.erroremployee_id.ForeColor = System.Drawing.Color.Red;
+            this.erroremployee_id.Location = new System.Drawing.Point(671, 127);
+            this.erroremployee_id.Name = "erroremployee_id";
+            this.erroremployee_id.Size = new System.Drawing.Size(159, 15);
+            this.erroremployee_id.TabIndex = 210;
+            this.erroremployee_id.Text = "Please enter their ID number.";
+            this.erroremployee_id.Visible = false;
+            // 
             // EMPLOYEESadd_revised
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.Controls.Add(this.erroremployee_id);
+            this.Controls.Add(this.employee_id);
             this.Controls.Add(this.errorbirth);
             this.Controls.Add(this.erroraddress);
             this.Controls.Add(this.errorcontact_number);
@@ -975,7 +990,6 @@
             this.Controls.Add(this.first_name);
             this.Controls.Add(this.last_name);
             this.Controls.Add(this.label16);
-            this.Controls.Add(this.employee_id);
             this.Controls.Add(this.hired_date);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.btn_one1);
@@ -993,7 +1007,6 @@
         #endregion
 
         private Label label16;
-        private TextBox employee_id;
         private DateTimePicker hired_date;
         private Label label20;
         private Label label18;
@@ -1050,5 +1063,7 @@
         private Label errorcontact_number;
         private Label erroraddress;
         private Label errorbirth;
+        private TextBox employee_id;
+        private Label erroremployee_id;
     }
 }

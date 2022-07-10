@@ -812,7 +812,7 @@
             this.birth.Location = new System.Drawing.Point(940, 578);
             this.birth.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.birth.MaxDate = new System.DateTime(9998, 12, 30, 0, 0, 0, 0);
-            this.birth.MinDate = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
+            this.birth.MinDate = new System.DateTime(1950, 1, 1, 0, 0, 0, 0);
             this.birth.Name = "birth";
             this.birth.Size = new System.Drawing.Size(306, 26);
             this.birth.TabIndex = 206;
@@ -857,7 +857,7 @@
             this.hired_date.Location = new System.Drawing.Point(941, 99);
             this.hired_date.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.hired_date.MaxDate = new System.DateTime(9998, 12, 30, 0, 0, 0, 0);
-            this.hired_date.MinDate = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
+            this.hired_date.MinDate = new System.DateTime(1950, 1, 1, 0, 0, 0, 0);
             this.hired_date.Name = "hired_date";
             this.hired_date.Size = new System.Drawing.Size(306, 26);
             this.hired_date.TabIndex = 208;

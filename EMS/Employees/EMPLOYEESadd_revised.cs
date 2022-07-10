@@ -248,7 +248,8 @@ namespace EMS
 
         private void btn_one3_Click_1(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(last_name.Text) ||
+            if (string.IsNullOrWhiteSpace(employee_id.Text) || 
+                string.IsNullOrWhiteSpace(last_name.Text) ||
                 string.IsNullOrWhiteSpace(first_name.Text) ||
                 string.IsNullOrWhiteSpace(middle_name.Text) ||
                 string.IsNullOrWhiteSpace(address.Text) ||
@@ -261,6 +262,14 @@ namespace EMS
                 string.IsNullOrWhiteSpace(regular_worktime.Text) ||
                 string.IsNullOrWhiteSpace(sex.Text))
             {
+                if (string.IsNullOrWhiteSpace(employee_id.Text))
+                {
+                    erroremployee_id.Visible = true;
+                }
+                else
+                {
+                    erroremployee_id.Visible = false;
+                }
                 if (string.IsNullOrWhiteSpace(last_name.Text))
                 {
                     errorlast_name.Visible = true;
@@ -635,6 +644,11 @@ namespace EMS
         }
 
         private void errorsuffix_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
         {
 
         }

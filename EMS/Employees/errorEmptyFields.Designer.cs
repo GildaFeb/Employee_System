@@ -49,15 +49,15 @@
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
-            this.label1.Location = new System.Drawing.Point(104, 216);
+            this.label1.Location = new System.Drawing.Point(82, 220);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(381, 31);
+            this.label1.Size = new System.Drawing.Size(433, 31);
             this.label1.TabIndex = 83;
-            this.label1.Text = "Please fill all required fields.";
+            this.label1.Text = "Please fill in all required fields.";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btn_one1
@@ -72,7 +72,7 @@
             this.btn_one1.Name = "btn_one1";
             this.btn_one1.Size = new System.Drawing.Size(141, 38);
             this.btn_one1.TabIndex = 82;
-            this.btn_one1.Text = "Done";
+            this.btn_one1.Text = "Okay";
             this.btn_one1.UseVisualStyleBackColor = false;
             this.btn_one1.Click += new System.EventHandler(this.btn_one1_Click);
             // 
@@ -86,11 +86,9 @@
             this.Controls.Add(this.btn_one1);
             this.Name = "errorEmptyFields";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "errorEmptyFields";
             this.Load += new System.EventHandler(this.errorEmptyFields_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
