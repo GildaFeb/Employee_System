@@ -103,5 +103,20 @@ namespace LoginForm
                 LogTxtPass.PasswordChar = true;
             }
         }
+
+        private void btn_one1_Click(object sender, EventArgs e)
+        {
+            dashboard = new dashboard();
+            MainForm main = new MainForm((dashboard));     //Try lang if nag oopen once clinick ang login.
+            this.Hide();
+            main.Show();
+        }
+
+        private void btn_one2_Click(object sender, EventArgs e)
+        {
+            LogTxtUser.Texts = "";
+            LogTxtPass.Texts = "";
+            LogTxtUser.Focus();
+        }
     }
 }

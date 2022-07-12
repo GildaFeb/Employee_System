@@ -124,5 +124,8 @@
     <Compile Update="ATTENDANCE\VerificationRepDelete.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

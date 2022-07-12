@@ -178,13 +178,8 @@ C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\De
 C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.EMPLOYEES.resources
 C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.employeeAdd.resources
 C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.EMPLOYEESdelete.resources
-C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.EMPLOYEESupdate.resources
-C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.forms1.resources
 C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.Properties.Resources.resources
-C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.SALARY.resources
 C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.Trash.resources
-C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.UserControl1.resources
-C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.UserControl2.resources
 C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.csproj.GenerateResource.cache
 C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.AssemblyInfoInputs.cache
@@ -198,7 +193,6 @@ C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\De
 C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\ref\EMS.dll
 C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.errorEMPadd.resources
 C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.successEMPadd.resources
-C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.ATTENDANCEdutyduration.resources
 C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.ATTENDANCEreport.resources
 C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.verificationEmpDelete.resources
 C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.verificationEmpUpdate.resources
@@ -252,7 +246,6 @@ C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\re
 C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.Private.FormMessageBox.resources
 C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.CComboBox.resources
 C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.Private.FormMessageBox.resources
-C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.ATTENDANCEdutydurationAdd.resources
 C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.ATTENDANCEdutydurationUpd.resources
 C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.ATTENDANCEdutydurationUpd.resources
 C:\Users\Glynys\Documents\GitHub\Employee_System\EMS\obj\Debug\net6.0-windows\LoginForm.frmRegister.resources
@@ -726,3 +719,44 @@ C:\Users\alvin\Source\Repos\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.gen
 C:\Users\alvin\Source\Repos\Employee_System\EMS\obj\Debug\net6.0-windows\ref\EMS.dll
 C:\Users\Asus\Source\Repos\GildaFeb\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.errorEmptyFields.resources
 C:\Users\alvin\Source\Repos\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.errorEmptyFields.resources
+C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\bin\Debug\net6.0-windows\Azure.Core.dll
+C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\bin\Debug\net6.0-windows\Azure.Identity.dll
+C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\bin\Debug\net6.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\bin\Debug\net6.0-windows\Microsoft.Data.SqlClient.dll
+C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\bin\Debug\net6.0-windows\Microsoft.Identity.Client.dll
+C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\bin\Debug\net6.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\bin\Debug\net6.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\bin\Debug\net6.0-windows\Microsoft.SqlServer.Server.dll
+C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\bin\Debug\net6.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\bin\Debug\net6.0-windows\System.Memory.Data.dll
+C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\bin\Debug\net6.0-windows\System.Runtime.Caching.dll
+C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\bin\Debug\net6.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\bin\Debug\net6.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\bin\Debug\net6.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\bin\Debug\net6.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\bin\Debug\net6.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.ATTENDANCEdutydurationAddREVISED.resources
+C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.ATTENDANCEdutydurationDel.resources
+C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.ATTENDANCEdutydurationUpdREVISED.resources
+C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.SuccessDutyAdd.resources
+C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.successDutydelete.resources
+C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.SuccessDutyUpdate.resources
+C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.SuccessRepDelete.resources
+C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.verificationDutyDelete.resources
+C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.VerificationDutyUpdate.resources
+C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.VerificationRepDelete.resources
+C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.errorEmptyFields.resources
+C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.successEMPdelete.resources
+C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.successEMPupdate.resources
+C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\LoginForm.LogForm.resources
+C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\LoginForm.frmRegister.resources
+C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.MainForm.resources
+C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.TRASH_EMPLOYEESupdate.resources
+C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.TRASH_SALARY.resources
+C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\Employee_System\EMS\obj\Debug\net6.0-windows\UserCtrls.UserControl1.resources

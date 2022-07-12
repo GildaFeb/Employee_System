@@ -82,6 +82,10 @@ namespace EMS
             // EMPLOYEES page
             employees2.BringToFront();
 
+            addEmp_Pnl.Hide();
+            updateEmp_Pnl.Hide();
+            deleteEmp_Pnl.Hide();
+
         }
 
         private void subBtn_AddEmp_Click(object sender, EventArgs e)
@@ -98,12 +102,20 @@ namespace EMS
         {
             // EMPLOYEE UPDATE Page (Revised)
             employeeSupdate_revised2.BringToFront();
+
+            addEmp_Pnl.Hide();
+            updateEmp_Pnl.Show();
+            deleteEmp_Pnl.Hide();
         }
 
         private void subBtn_SearchEmp_Click(object sender, EventArgs e)
         {
             // EMPLOYEE DELETE Page
             employeeSdelete3.BringToFront();
+
+            addEmp_Pnl.Hide();
+            updateEmp_Pnl.Hide();
+            deleteEmp_Pnl.Show();
         }
 
         private void app_bg_load(object sender, EventArgs e)
@@ -132,7 +144,7 @@ namespace EMS
         private void btnAttendance_Click(object sender, EventArgs e)
         {
             showSubMenu(attendancePnl);
-            
+
             pnl_IndicatorAttendance.Show();
             pnl_IndicatorDashboard.Hide();
             pnl_IndicatorEmployeesNew.Hide();
@@ -206,7 +218,7 @@ namespace EMS
         private void button3_Click(object sender, EventArgs e)
         {
             pnl_IndicatorDashboard.Hide();
-            pnl_IndicatorEmployees.Hide();
+            //pnl_IndicatorEmployees.Hide();
 
         }
 
@@ -218,8 +230,13 @@ namespace EMS
             pnl_IndicatorAttendance.Show();
             pnl_IndicatorDashboard.Hide();
 
+
             // ATTENDANCE Page
             attendance2.BringToFront();
+
+            // Sub Panel Ellipse Indicators
+            attendanceReport_Pnl.Hide();
+            dutyDuration_Pnl.Hide();
         }
 
         private void button12_Click_1(object sender, EventArgs e)
@@ -228,11 +245,24 @@ namespace EMS
             showAttendanceRepSubMenu(attendanceReport_SubSubPnl);
             //attendanceReport_SubSubPnl.Visible = true;
 
+            addDutyDuration_Pnl.Hide();
+            updateDutyDuration_Pnl.Hide();
+            deleteDutyDuration_Pnl.Hide();
+
+            attendanceReport_Pnl.Hide();
+            dutyDuration_Pnl.Show();
         }
 
         private void button11_Click(object sender, EventArgs e)
         {
             attendancEdutydurationUpdrevised2.BringToFront();
+
+            addDutyDuration_Pnl.Show();
+            updateDutyDuration_Pnl.Hide();
+            deleteDutyDuration_Pnl.Hide();
+
+            dutyDuration_Pnl.Hide();
+            attendanceReport_Pnl.Hide();
         }
 
         private void button8_Click_1(object sender, EventArgs e)
@@ -244,16 +274,34 @@ namespace EMS
         {
             attendancEreport2.BringToFront();
             attendanceReport_SubSubPnl.Visible = false;
+            /////
+            attendanceReport_Pnl.Show();
+            dutyDuration_Pnl.Hide();
+            
         }
 
         private void button9_Click_1(object sender, EventArgs e)
         {
             attendancEdutydurationDel1.BringToFront();
+
+            addDutyDuration_Pnl.Hide();
+            updateDutyDuration_Pnl.Show();
+            deleteDutyDuration_Pnl.Hide();
+
+            dutyDuration_Pnl.Hide();
+            attendanceReport_Pnl.Hide();
         }
 
         private void button10_Click(object sender, EventArgs e)
         {
             attendancEdutydurationAddrevised2.BringToFront();
+
+            addDutyDuration_Pnl.Hide();
+            updateDutyDuration_Pnl.Hide();
+            deleteDutyDuration_Pnl.Show();
+
+            dutyDuration_Pnl.Hide();
+            attendanceReport_Pnl.Hide();
         }
 
         private void LogoutBtn_Click(object sender, EventArgs e)
@@ -280,6 +328,26 @@ namespace EMS
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             Environment.Exit(Environment.ExitCode); //will delete pag may logout button na 
+        }
+
+        private void addEmp_Pnl_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void updateEmp_Pnl_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void attendanceReport_Pnl_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void attendanceReport_Pnl_Paint_1(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
