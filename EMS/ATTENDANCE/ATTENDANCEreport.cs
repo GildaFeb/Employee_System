@@ -62,6 +62,8 @@ namespace EMS
 
         private void Search_TextChanged(object sender, EventArgs e)
         {
+            //searchbar Attendance Report
+            
 
         }
     }

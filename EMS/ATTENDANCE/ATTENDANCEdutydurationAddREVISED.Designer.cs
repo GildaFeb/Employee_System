@@ -239,6 +239,7 @@
             this.employee_id.Size = new System.Drawing.Size(306, 24);
             this.employee_id.TabIndex = 184;
             this.employee_id.Text = " ";
+            this.employee_id.TextChanged += new System.EventHandler(this.employee_id_TextChanged);
             // 
             // AddLblId
             // 
@@ -336,7 +337,7 @@
             this.Addbkgrnd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Addbkgrnd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Addbkgrnd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(37)))), ((int)(((byte)(83)))));
-            this.Addbkgrnd.Location = new System.Drawing.Point(112, 212);
+            this.Addbkgrnd.Location = new System.Drawing.Point(112, 220);
             this.Addbkgrnd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Addbkgrnd.Name = "Addbkgrnd";
             this.Addbkgrnd.Size = new System.Drawing.Size(770, 116);

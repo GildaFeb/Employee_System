@@ -725,3 +725,4 @@ C:\Users\alvin\Source\Repos\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.pdb
 C:\Users\alvin\Source\Repos\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.genruntimeconfig.cache
 C:\Users\alvin\Source\Repos\Employee_System\EMS\obj\Debug\net6.0-windows\ref\EMS.dll
 C:\Users\Asus\Source\Repos\GildaFeb\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.errorEmptyFields.resources
+C:\Users\alvin\Source\Repos\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.errorEmptyFields.resources

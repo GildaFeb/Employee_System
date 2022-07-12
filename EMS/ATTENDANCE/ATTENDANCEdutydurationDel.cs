@@ -93,6 +93,7 @@ namespace EMS
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             // [!] Alvin = function for search bar pero kung gagamit ng function sa database just let me know
+
         }
         private void btn_one1_Click(object sender, EventArgs e)
         {

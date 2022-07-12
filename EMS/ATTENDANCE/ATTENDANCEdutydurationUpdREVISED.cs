@@ -81,6 +81,9 @@ namespace EMS
         private void btn_clear_Click(object sender, EventArgs e)
         {
             // [!] Alvin = clear all forms
+            employee_name.Text = "";// for some reason employee_name sya(pero eto yung ID)
+
+
         }
 
         private void status_OnSelectedIndexChanged(object sender, EventArgs e)

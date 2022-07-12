@@ -98,12 +98,19 @@ namespace EMS
         private void btn_clear_Click(object sender, EventArgs e)
         {
             // [!] Alvin = clear all forms
-            employee_id.Text = "";
-            employee_name.Text = "";
+            employee_id.Text = ""; //for some reason name sya (this is the ID)
+            //status.SelectedItem = 
+         
+            
 
         }
 
         private void ATTENDANCEdutydurationAddREVISED_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void employee_id_TextChanged(object sender, EventArgs e)
         {
 
         }
