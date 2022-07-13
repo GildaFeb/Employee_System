@@ -20,11 +20,7 @@ namespace EMS
         private void ATTENDANCEdepartment_Load(object sender, EventArgs e)
         {
             visualsDatagridview();
-            
-            for(int i=1995; i<= 2022; i++)
-            {
-                CmbxYear.Items.Add(i);
-            }
+          
         }
         void visualsDatagridview()
         {
@@ -105,6 +101,39 @@ namespace EMS
             //to uncheck all checked boxes
             foreach (DataGridViewRow Row in tableDelete_DGV.Rows)
                 ((DataGridViewCheckBoxCell)Row.Cells["delete_ChckBx"]).Value = null;
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+            if(!(Search.Text == ""))
+            {
+                double outputValue = 0;
+                bool isNumber = false;
+
+                isNumber = double.TryParse(Search.Text, out outputValue);
+                if (!isNumber)
+                {
+                    // search through ID
+                }
+                else if (isNumber)
+                {
+                    // search through lastname
+                }
+                else
+                {
+                    MessageBox.Show("Error. Enter ID or Name.");
+                }
+            }
+            else
+            {
+                MessageBox.Show(" Failed to search. Search field is empty.");
+            }
+        }
+
+        private void searchbyyearmonth_Click(object sender, EventArgs e)
+        {
+         
         }
     }
 }

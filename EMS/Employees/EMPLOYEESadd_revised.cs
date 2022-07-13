@@ -652,5 +652,25 @@ namespace EMS
         {
 
         }
+
+        private void errorlast_name_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void errorsex_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void errorbirth_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void erroremployee_id_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

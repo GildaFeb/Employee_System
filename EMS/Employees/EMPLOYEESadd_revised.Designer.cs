@@ -737,6 +737,7 @@
             this.errorlast_name.TabIndex = 195;
             this.errorlast_name.Text = "Please enter their last name.";
             this.errorlast_name.Visible = false;
+            this.errorlast_name.Click += new System.EventHandler(this.errorlast_name_Click);
             // 
             // errorfirst_name
             // 
@@ -827,6 +828,7 @@
             this.errorsex.TabIndex = 202;
             this.errorsex.Text = "Sex not found.";
             this.errorsex.Visible = false;
+            this.errorsex.Click += new System.EventHandler(this.errorsex_Click);
             // 
             // errorcnumber_emergency
             // 
@@ -891,6 +893,7 @@
             this.errorbirth.TabIndex = 208;
             this.errorbirth.Text = "Must be 18 years old at minimum.";
             this.errorbirth.Visible = false;
+            this.errorbirth.Click += new System.EventHandler(this.errorbirth_Click);
             // 
             // employee_id
             // 
@@ -917,6 +920,7 @@
             this.erroremployee_id.TabIndex = 210;
             this.erroremployee_id.Text = "Please enter their ID number.";
             this.erroremployee_id.Visible = false;
+            this.erroremployee_id.Click += new System.EventHandler(this.erroremployee_id_Click);
             // 
             // EMPLOYEESadd_revised
             // 

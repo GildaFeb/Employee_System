@@ -177,6 +177,14 @@ namespace EMS.Employee_Details
             MessageBox.Show("Delete Employee");
             return true;
         }
+        public static void ShowDuty_ByName()
+        {
+
+        }
+        public static void ShowDuty_ByID()
+        {
+
+        }
 
         // ------- END: DUTY DURATION PAGE  ------
 
