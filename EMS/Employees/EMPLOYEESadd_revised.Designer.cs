@@ -730,7 +730,7 @@
             // 
             this.errorlast_name.AutoSize = true;
             this.errorlast_name.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            this.errorlast_name.ForeColor = System.Drawing.Color.Maroon;
+            this.errorlast_name.ForeColor = System.Drawing.Color.DarkRed;
             this.errorlast_name.Location = new System.Drawing.Point(290, 553);
             this.errorlast_name.Name = "errorlast_name";
             this.errorlast_name.Size = new System.Drawing.Size(194, 20);
@@ -742,7 +742,7 @@
             // 
             this.errorfirst_name.AutoSize = true;
             this.errorfirst_name.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            this.errorfirst_name.ForeColor = System.Drawing.Color.Maroon;
+            this.errorfirst_name.ForeColor = System.Drawing.Color.DarkRed;
             this.errorfirst_name.Location = new System.Drawing.Point(288, 363);
             this.errorfirst_name.Name = "errorfirst_name";
             this.errorfirst_name.Size = new System.Drawing.Size(196, 20);
@@ -755,7 +755,7 @@
             // 
             this.errormiddle_name.AutoSize = true;
             this.errormiddle_name.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            this.errormiddle_name.ForeColor = System.Drawing.Color.Maroon;
+            this.errormiddle_name.ForeColor = System.Drawing.Color.DarkRed;
             this.errormiddle_name.Location = new System.Drawing.Point(269, 456);
             this.errormiddle_name.Name = "errormiddle_name";
             this.errormiddle_name.Size = new System.Drawing.Size(218, 20);
@@ -768,7 +768,7 @@
             // 
             this.errorsuffix.AutoSize = true;
             this.errorsuffix.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            this.errorsuffix.ForeColor = System.Drawing.Color.Maroon;
+            this.errorsuffix.ForeColor = System.Drawing.Color.DarkRed;
             this.errorsuffix.Location = new System.Drawing.Point(315, 649);
             this.errorsuffix.Name = "errorsuffix";
             this.errorsuffix.Size = new System.Drawing.Size(165, 20);
@@ -781,7 +781,7 @@
             // 
             this.errorposition.AutoSize = true;
             this.errorposition.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            this.errorposition.ForeColor = System.Drawing.Color.Maroon;
+            this.errorposition.ForeColor = System.Drawing.Color.DarkRed;
             this.errorposition.Location = new System.Drawing.Point(778, 365);
             this.errorposition.Name = "errorposition";
             this.errorposition.Size = new System.Drawing.Size(188, 20);
@@ -794,7 +794,7 @@
             // 
             this.errorregular_pay.AutoSize = true;
             this.errorregular_pay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            this.errorregular_pay.ForeColor = System.Drawing.Color.Maroon;
+            this.errorregular_pay.ForeColor = System.Drawing.Color.DarkRed;
             this.errorregular_pay.Location = new System.Drawing.Point(826, 459);
             this.errorregular_pay.Name = "errorregular_pay";
             this.errorregular_pay.Size = new System.Drawing.Size(135, 20);
@@ -807,7 +807,7 @@
             // 
             this.errorregular_worktime.AutoSize = true;
             this.errorregular_worktime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            this.errorregular_worktime.ForeColor = System.Drawing.Color.Maroon;
+            this.errorregular_worktime.ForeColor = System.Drawing.Color.DarkRed;
             this.errorregular_worktime.Location = new System.Drawing.Point(837, 553);
             this.errorregular_worktime.Name = "errorregular_worktime";
             this.errorregular_worktime.Size = new System.Drawing.Size(122, 20);
@@ -820,7 +820,7 @@
             // 
             this.errorsex.AutoSize = true;
             this.errorsex.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            this.errorsex.ForeColor = System.Drawing.Color.Maroon;
+            this.errorsex.ForeColor = System.Drawing.Color.DarkRed;
             this.errorsex.Location = new System.Drawing.Point(850, 808);
             this.errorsex.Name = "errorsex";
             this.errorsex.Size = new System.Drawing.Size(104, 20);
@@ -832,7 +832,7 @@
             // 
             this.errorcnumber_emergency.AutoSize = true;
             this.errorcnumber_emergency.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            this.errorcnumber_emergency.ForeColor = System.Drawing.Color.Maroon;
+            this.errorcnumber_emergency.ForeColor = System.Drawing.Color.DarkRed;
             this.errorcnumber_emergency.Location = new System.Drawing.Point(1137, 652);
             this.errorcnumber_emergency.Name = "errorcnumber_emergency";
             this.errorcnumber_emergency.Size = new System.Drawing.Size(311, 20);
@@ -845,7 +845,7 @@
             // 
             this.erroremail.AutoSize = true;
             this.erroremail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            this.erroremail.ForeColor = System.Drawing.Color.Maroon;
+            this.erroremail.ForeColor = System.Drawing.Color.DarkRed;
             this.erroremail.Location = new System.Drawing.Point(1223, 549);
             this.erroremail.Name = "erroremail";
             this.erroremail.Size = new System.Drawing.Size(222, 20);
@@ -858,7 +858,7 @@
             // 
             this.errorcontact_number.AutoSize = true;
             this.errorcontact_number.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            this.errorcontact_number.ForeColor = System.Drawing.Color.Maroon;
+            this.errorcontact_number.ForeColor = System.Drawing.Color.DarkRed;
             this.errorcontact_number.Location = new System.Drawing.Point(1210, 456);
             this.errorcontact_number.Name = "errorcontact_number";
             this.errorcontact_number.Size = new System.Drawing.Size(234, 20);
@@ -871,7 +871,7 @@
             // 
             this.erroraddress.AutoSize = true;
             this.erroraddress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            this.erroraddress.ForeColor = System.Drawing.Color.Maroon;
+            this.erroraddress.ForeColor = System.Drawing.Color.DarkRed;
             this.erroraddress.Location = new System.Drawing.Point(1262, 363);
             this.erroraddress.Name = "erroraddress";
             this.erroraddress.Size = new System.Drawing.Size(181, 20);
@@ -884,7 +884,7 @@
             // 
             this.errorbirth.AutoSize = true;
             this.errorbirth.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            this.errorbirth.ForeColor = System.Drawing.Color.Maroon;
+            this.errorbirth.ForeColor = System.Drawing.Color.DarkRed;
             this.errorbirth.Location = new System.Drawing.Point(1211, 805);
             this.errorbirth.Name = "errorbirth";
             this.errorbirth.Size = new System.Drawing.Size(233, 20);
@@ -910,7 +910,7 @@
             // 
             this.erroremployee_id.AutoSize = true;
             this.erroremployee_id.BackColor = System.Drawing.Color.White;
-            this.erroremployee_id.ForeColor = System.Drawing.Color.Maroon;
+            this.erroremployee_id.ForeColor = System.Drawing.Color.DarkRed;
             this.erroremployee_id.Location = new System.Drawing.Point(767, 169);
             this.erroremployee_id.Name = "erroremployee_id";
             this.erroremployee_id.Size = new System.Drawing.Size(200, 20);
@@ -982,7 +982,7 @@
             this.Controls.Add(this.label20);
             this.Controls.Add(this.btn_one1);
             this.Controls.Add(this.btn_one14);
-            this.ForeColor = System.Drawing.Color.Maroon;
+            this.ForeColor = System.Drawing.Color.DarkRed;
             this.Name = "EMPLOYEESadd_revised";
             this.Size = new System.Drawing.Size(1555, 1033);
             this.Load += new System.EventHandler(this.EMPLOYEESadd_revised_Load);
