@@ -21,7 +21,7 @@ namespace EMS
         {
             for (int i = 1995; i <= 2022; i++)
             {
-                CmbxYear.Items.Add(i);
+                Year.Items.Add(i);
             }
         }
 
@@ -57,14 +57,53 @@ namespace EMS
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
+            if (!(Search.Text == null))
+            {
+                double outputValue = 0;
+                bool isNumber = false;
 
+                isNumber = double.TryParse(Search.Text, out outputValue);
+                if (!isNumber)
+                {
+                    MessageBox.Show("Name");
+                }
+                else if (isNumber)
+                {
+                    MessageBox.Show("ID");
+                }
+                else
+                {
+                    MessageBox.Show("Error. Enter ID or Name.");
+                }
+            }
+            else
+            {
+                MessageBox.Show(" Failed to search. Search field is empty.");
+            }
         }
 
         private void Search_TextChanged(object sender, EventArgs e)
         {
             //searchbar Attendance Report
-            
 
+        }
+
+        private void CmbxMonth_OnSelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            if (!(Month.SelectedIndex == -1 && Year.SelectedIndex == -1))
+            {
+                Employee_Details.Employee_Database.ShowDuty_ByMonthYear();
+                MessageBox.Show(" Valid");
+            }
+            else
+            {
+                MessageBox.Show(" Select Month and Year to view record.");
+            }
         }
     }
 }

@@ -110,11 +110,11 @@
             // Pswrd
             // 
             this.Pswrd.AutoSize = true;
-            this.Pswrd.Font = new System.Drawing.Font("SF Pro Display", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Pswrd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Pswrd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Pswrd.Location = new System.Drawing.Point(104, 278);
             this.Pswrd.Name = "Pswrd";
-            this.Pswrd.Size = new System.Drawing.Size(85, 20);
+            this.Pswrd.Size = new System.Drawing.Size(91, 20);
             this.Pswrd.TabIndex = 13;
             this.Pswrd.Text = "Password";
             // 
@@ -144,33 +144,33 @@
             // Usrnme
             // 
             this.Usrnme.AutoSize = true;
-            this.Usrnme.Font = new System.Drawing.Font("SF Pro Display", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Usrnme.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Usrnme.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Usrnme.Location = new System.Drawing.Point(104, 183);
             this.Usrnme.Name = "Usrnme";
-            this.Usrnme.Size = new System.Drawing.Size(88, 20);
+            this.Usrnme.Size = new System.Drawing.Size(94, 20);
             this.Usrnme.TabIndex = 14;
             this.Usrnme.Text = "Username";
             // 
             // LogLblTitle
             // 
             this.LogLblTitle.AutoSize = true;
-            this.LogLblTitle.Font = new System.Drawing.Font("SF Pro Display", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.LogLblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.LogLblTitle.ForeColor = System.Drawing.Color.White;
             this.LogLblTitle.Location = new System.Drawing.Point(97, 74);
             this.LogLblTitle.Name = "LogLblTitle";
-            this.LogLblTitle.Size = new System.Drawing.Size(238, 56);
+            this.LogLblTitle.Size = new System.Drawing.Size(236, 54);
             this.LogLblTitle.TabIndex = 12;
             this.LogLblTitle.Text = "Let\'s start";
             // 
             // LblShwPass
             // 
             this.LblShwPass.AutoSize = true;
-            this.LblShwPass.Font = new System.Drawing.Font("SF Pro Display", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.LblShwPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.LblShwPass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.LblShwPass.Location = new System.Drawing.Point(256, 368);
             this.LblShwPass.Name = "LblShwPass";
-            this.LblShwPass.Size = new System.Drawing.Size(102, 16);
+            this.LblShwPass.Size = new System.Drawing.Size(116, 16);
             this.LblShwPass.TabIndex = 27;
             this.LblShwPass.Text = "Show Password";
             // 
@@ -188,9 +188,10 @@
             // btn_one1
             // 
             this.btn_one1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
+            this.btn_one1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_one1.FlatAppearance.BorderSize = 0;
             this.btn_one1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_one1.Font = new System.Drawing.Font("SF Pro Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_one1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_one1.ForeColor = System.Drawing.Color.White;
             this.btn_one1.Location = new System.Drawing.Point(97, 448);
             this.btn_one1.Name = "btn_one1";
@@ -203,9 +204,10 @@
             // btn_one2
             // 
             this.btn_one2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(50)))), ((int)(((byte)(99)))));
+            this.btn_one2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_one2.FlatAppearance.BorderSize = 0;
             this.btn_one2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_one2.Font = new System.Drawing.Font("SF Pro Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_one2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_one2.ForeColor = System.Drawing.Color.White;
             this.btn_one2.Location = new System.Drawing.Point(97, 507);
             this.btn_one2.Name = "btn_one2";
