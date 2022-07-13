@@ -33,5 +33,10 @@ namespace EMS
             successEMPdelete successEMPdelete = new successEMPdelete();
             successEMPdelete.ShowDialog();
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

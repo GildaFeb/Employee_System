@@ -41,10 +41,9 @@
             this.btn_one2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_one2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_one2.ForeColor = System.Drawing.Color.White;
-            this.btn_one2.Location = new System.Drawing.Point(316, 215);
-            this.btn_one2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_one2.Location = new System.Drawing.Point(361, 287);
             this.btn_one2.Name = "btn_one2";
-            this.btn_one2.Size = new System.Drawing.Size(118, 38);
+            this.btn_one2.Size = new System.Drawing.Size(135, 51);
             this.btn_one2.TabIndex = 77;
             this.btn_one2.Text = "Confirm";
             this.btn_one2.UseVisualStyleBackColor = false;
@@ -57,10 +56,9 @@
             this.btn_one1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_one1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_one1.ForeColor = System.Drawing.Color.White;
-            this.btn_one1.Location = new System.Drawing.Point(121, 215);
-            this.btn_one1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_one1.Location = new System.Drawing.Point(138, 287);
             this.btn_one1.Name = "btn_one1";
-            this.btn_one1.Size = new System.Drawing.Size(118, 38);
+            this.btn_one1.Size = new System.Drawing.Size(135, 51);
             this.btn_one1.TabIndex = 78;
             this.btn_one1.Text = "Cancel";
             this.btn_one1.UseVisualStyleBackColor = false;
@@ -72,11 +70,12 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
-            this.label3.Location = new System.Drawing.Point(169, 83);
+            this.label3.Location = new System.Drawing.Point(193, 111);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(227, 31);
+            this.label3.Size = new System.Drawing.Size(269, 38);
             this.label3.TabIndex = 79;
             this.label3.Text = "Confirm deletion";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label1
             // 
@@ -84,26 +83,25 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.DimGray;
-            this.label1.Location = new System.Drawing.Point(48, 124);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(55, 165);
+            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(413, 18);
+            this.label1.Size = new System.Drawing.Size(505, 22);
             this.label1.TabIndex = 80;
             this.label1.Text = "Are you sure you want to delete the employee/s you selected?";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // verificationEmpDelete
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(577, 320);
+            this.ClientSize = new System.Drawing.Size(659, 427);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btn_one2);
             this.Controls.Add(this.btn_one1);
             this.Location = new System.Drawing.Point(270, 95);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "verificationEmpDelete";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.ResumeLayout(false);

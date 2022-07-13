@@ -377,6 +377,7 @@
             this.emp_num.Size = new System.Drawing.Size(97, 51);
             this.emp_num.TabIndex = 111;
             this.emp_num.Text = "321";
+            this.emp_num.Click += new System.EventHandler(this.emp_num_Click);
             // 
             // time_in
             // 

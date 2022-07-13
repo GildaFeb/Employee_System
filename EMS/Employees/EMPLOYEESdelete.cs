@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Data.SqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,7 @@ namespace EMS
         public EMPLOYEESdelete()
         {
             InitializeComponent();
+            
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -91,8 +93,58 @@ namespace EMS
 
         private void btn_one3_Click(object sender, EventArgs e)
         {
-            verificationEmpDelete verificationEmpDelete = new verificationEmpDelete();
-            verificationEmpDelete.ShowDialog();
+
+            Int32 selectedRowCount = tableDelete_DGV.Rows.GetRowCount(DataGridViewElementStates.Selected);
+            if (selectedRowCount > 0)
+            {
+                try
+                {
+
+                    String msg = "Are you sure you want to delete the employee/s you selected?";
+                    String caption = "Delete Record";
+                    MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+                    MessageBoxIcon ico = MessageBoxIcon.Question;
+                    DialogResult result;
+                    result = MessageBox.Show(this, msg, caption, buttons, ico);
+                    if (result == DialogResult.Yes)
+                    {
+                        foreach (DataGridViewRow item in this.tableDelete_DGV.SelectedRows)
+                        {
+                            using (SqlConnection con = new SqlConnection(@"Data Source=|DataDiretory|\EmployeeTbl.mdf"))
+                            {
+                                SqlCommand cmd = con.CreateCommand();
+                                int id = Convert.ToInt32(tableDelete_DGV.SelectedRows[0].Cells[0].Value);
+                                cmd.CommandText = "Delete from Lot_Numbers where ID='" + id + "'";
+
+                                tableDelete_DGV.Rows.RemoveAt(this.tableDelete_DGV.SelectedRows[0].Index);
+                                con.Open();
+                                cmd.ExecuteNonQuery();
+
+                            }
+
+                        }
+                        successEMPdelete successEMPdelete = new successEMPdelete();
+                        successEMPdelete.ShowDialog();
+                    }
+                    else
+                    {
+                        return;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Deleting Failed:" + ex.Message.ToString(), "Delete",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+            }
+            else
+            {
+                MessageBox.Show(" Please select record you want to delete.");
+            }
+
+
+            
         }
 
         private void btn_one1_Click(object sender, EventArgs e)

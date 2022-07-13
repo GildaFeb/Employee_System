@@ -15,6 +15,8 @@ namespace EMS
         public dashboard()
         {
             InitializeComponent();
+
+
         }
 
         private void label6_Click(object sender, EventArgs e)
@@ -85,6 +87,11 @@ namespace EMS
         }
 
         private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void emp_num_Click(object sender, EventArgs e)
         {
 
         }
