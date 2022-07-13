@@ -86,9 +86,9 @@
             this.db_ViewSalaryBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.db_ViewSalaryBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.db_ViewSalaryBtn.ForeColor = System.Drawing.Color.White;
-            this.db_ViewSalaryBtn.Location = new System.Drawing.Point(1042, 168);
+            this.db_ViewSalaryBtn.Location = new System.Drawing.Point(1059, 168);
             this.db_ViewSalaryBtn.Name = "db_ViewSalaryBtn";
-            this.db_ViewSalaryBtn.Size = new System.Drawing.Size(424, 326);
+            this.db_ViewSalaryBtn.Size = new System.Drawing.Size(407, 326);
             this.db_ViewSalaryBtn.TabIndex = 13;
             this.db_ViewSalaryBtn.UseVisualStyleBackColor = false;
             this.db_ViewSalaryBtn.Click += new System.EventHandler(this.db_ViewSalaryBtn_Click);
@@ -102,9 +102,9 @@
             this.db_ViewAttendanceBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.db_ViewAttendanceBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.db_ViewAttendanceBtn.ForeColor = System.Drawing.Color.White;
-            this.db_ViewAttendanceBtn.Location = new System.Drawing.Point(566, 167);
+            this.db_ViewAttendanceBtn.Location = new System.Drawing.Point(536, 167);
             this.db_ViewAttendanceBtn.Name = "db_ViewAttendanceBtn";
-            this.db_ViewAttendanceBtn.Size = new System.Drawing.Size(424, 327);
+            this.db_ViewAttendanceBtn.Size = new System.Drawing.Size(501, 327);
             this.db_ViewAttendanceBtn.TabIndex = 12;
             this.db_ViewAttendanceBtn.UseVisualStyleBackColor = false;
             this.db_ViewAttendanceBtn.Click += new System.EventHandler(this.db_ViewAttendanceBtn_Click);
@@ -221,9 +221,9 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(51)))));
             this.label2.Location = new System.Drawing.Point(131, 593);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(349, 69);
+            this.label2.Size = new System.Drawing.Size(188, 69);
             this.label2.TabIndex = 18;
-            this.label2.Text = "Hello, Gilda";
+            this.label2.Text = "Hello!";
             // 
             // label4
             // 
@@ -311,9 +311,9 @@
             this.guard.ForeColor = System.Drawing.Color.White;
             this.guard.Location = new System.Drawing.Point(873, 274);
             this.guard.Name = "guard";
-            this.guard.Size = new System.Drawing.Size(77, 25);
+            this.guard.Size = new System.Drawing.Size(155, 25);
             this.guard.TabIndex = 110;
-            this.guard.Text = "Dept. X";
+            this.guard.Text = "Project Manager";
             // 
             // num_instructor
             // 
@@ -336,9 +336,9 @@
             this.instructor.ForeColor = System.Drawing.Color.White;
             this.instructor.Location = new System.Drawing.Point(874, 323);
             this.instructor.Name = "instructor";
-            this.instructor.Size = new System.Drawing.Size(76, 25);
+            this.instructor.Size = new System.Drawing.Size(134, 25);
             this.instructor.TabIndex = 110;
-            this.instructor.Text = "Dept. Y";
+            this.instructor.Text = "Fullstack Dev.";
             // 
             // num_receptionist
             // 
@@ -361,9 +361,9 @@
             this.receptionist.ForeColor = System.Drawing.Color.White;
             this.receptionist.Location = new System.Drawing.Point(874, 371);
             this.receptionist.Name = "receptionist";
-            this.receptionist.Size = new System.Drawing.Size(75, 25);
+            this.receptionist.Size = new System.Drawing.Size(140, 25);
             this.receptionist.TabIndex = 110;
-            this.receptionist.Text = "Dept. Z";
+            this.receptionist.Text = "Software Engr.";
             this.receptionist.Click += new System.EventHandler(this.label12_Click);
             // 
             // emp_num
@@ -504,9 +504,9 @@
             this.administrator.ForeColor = System.Drawing.Color.White;
             this.administrator.Location = new System.Drawing.Point(874, 419);
             this.administrator.Name = "administrator";
-            this.administrator.Size = new System.Drawing.Size(75, 25);
+            this.administrator.Size = new System.Drawing.Size(126, 25);
             this.administrator.TabIndex = 110;
-            this.administrator.Text = "Dept. Z";
+            this.administrator.Text = "Administrator";
             // 
             // pictureBox8
             // 
