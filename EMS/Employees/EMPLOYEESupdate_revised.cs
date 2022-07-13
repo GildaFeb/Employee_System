@@ -152,38 +152,73 @@ namespace EMS
             }
             else
             {
+                // ----------- Update Employee: Passing data to database -----------
+
+
+                string date_joined = hired_date.CustomFormat = "MM-dd-yyyy";
+                string birthday = birth.CustomFormat = "MM-dd-yyyy";
+                Employee_Details.Employee employeeInfo = new Employee_Details.Employee()
+                {
+
+                    employeeID = employee_id.Text.ToString(),
+                    first_name = first_name.Text.ToString(),
+                    email = email.Text.ToString(),
+                    address = address.Text.ToString(),
+                    last_name = last_name.Text.ToString(),
+                    middle_name = middle_name.Text.ToString(),
+                    suffix = suffix.Text.ToString(),
+                    birth_date = birthday.ToString(),
+                    hired_date = date_joined.ToString(),
+                    position = position.Text.ToString(),
+                    contact_number = contact_number.Text.ToString(),
+                    emergency_contact_number = cnumber_emergency.Text.ToString(),
+                    regular_pay = regular_pay.Text.ToString(),
+                    regular_worktime = regular_worktime.Text.ToString(),
+                    total_salary = total_rpay.Text.ToString(),
+                };
                 verificationEmpUpdate verificationEmpUpdate = new verificationEmpUpdate();
                 verificationEmpUpdate.ShowDialog();
 
-                employee_id.Clear();
-                last_name.Clear();
-                first_name.Clear();
-                middle_name.Clear();
-                suffix.SelectedItem = null;
-                position.SelectedItem = null;
-                regular_pay.SelectedItem = null;
-                regular_worktime.SelectedItem = null;
-                total_rpay.Clear();
-                sex.SelectedItem = null;
-                hired_date.Value = DateTime.Today;
-                address.Clear();
-                contact_number.Clear();
-                email.Clear();
-                cnumber_emergency.Clear();
-                birth.Value = DateTime.Today;
 
-                errorlast_name.Visible = false;
-                errorfirst_name.Visible = false;
-                errormiddle_name.Visible = false;
-                errorsuffix.Visible = false;
-                errorposition.Visible = false;
-                errorregular_pay.Visible = false;
-                errorregular_worktime.Visible = false;
-                errorsex.Visible = false;
-                erroraddress.Visible = false;
-                errorcontact_number.Visible = false;
-                erroremail.Visible = false;
-                errorcnumber_emergency.Visible = false;
+                if (!(verificationEmpUpdate.ShowDialog() == DialogResult.Cancel))
+                {
+                    bool check = Employee_Details.Employee_Database.UpdateEmployee(employeeInfo);
+                    if (check == true)
+                    {
+                        successEMPupdate successEMPupdate = new successEMPupdate();
+                        successEMPupdate.ShowDialog();
+
+                        employee_id.Clear();
+                        last_name.Clear();
+                        first_name.Clear();
+                        middle_name.Clear();
+                        suffix.SelectedItem = null;
+                        position.SelectedItem = null;
+                        regular_pay.SelectedItem = null;
+                        regular_worktime.SelectedItem = null;
+                        total_rpay.Clear();
+                        sex.SelectedItem = null;
+                        hired_date.Value = DateTime.Today;
+                        address.Clear();
+                        contact_number.Clear();
+                        email.Clear();
+                        cnumber_emergency.Clear();
+                        birth.Value = DateTime.Today;
+
+                        errorlast_name.Visible = false;
+                        errorfirst_name.Visible = false;
+                        errormiddle_name.Visible = false;
+                        errorsuffix.Visible = false;
+                        errorposition.Visible = false;
+                        errorregular_pay.Visible = false;
+                        errorregular_worktime.Visible = false;
+                        errorsex.Visible = false;
+                        erroraddress.Visible = false;
+                        errorcontact_number.Visible = false;
+                        erroremail.Visible = false;
+                        errorcnumber_emergency.Visible = false;
+                    }
+                }
             }
         }
 
