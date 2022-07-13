@@ -57,6 +57,7 @@
             this.db_ViewCalendarBtn = new EMS.btn_one();
             this.clear_check = new EMS.btn_one();
             this.delete = new EMS.btn_one();
+            this.btn_one2 = new EMS.btn_one();
             ((System.ComponentModel.ISupportInitialize)(this.tableDelete_DGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -305,15 +306,15 @@
             // 
             // clear_check
             // 
-            this.clear_check.BackColor = System.Drawing.Color.DarkGray;
+            this.clear_check.BackColor = System.Drawing.Color.DimGray;
             this.clear_check.Cursor = System.Windows.Forms.Cursors.Hand;
             this.clear_check.FlatAppearance.BorderSize = 0;
             this.clear_check.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.clear_check.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.clear_check.ForeColor = System.Drawing.Color.Black;
+            this.clear_check.ForeColor = System.Drawing.Color.White;
             this.clear_check.Location = new System.Drawing.Point(125, 873);
             this.clear_check.Name = "clear_check";
-            this.clear_check.Size = new System.Drawing.Size(165, 51);
+            this.clear_check.Size = new System.Drawing.Size(203, 51);
             this.clear_check.TabIndex = 125;
             this.clear_check.Text = "Clear checked";
             this.clear_check.UseVisualStyleBackColor = false;
@@ -335,11 +336,27 @@
             this.delete.UseVisualStyleBackColor = false;
             this.delete.Click += new System.EventHandler(this.btn_one3_Click);
             // 
+            // btn_one2
+            // 
+            this.btn_one2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(37)))), ((int)(((byte)(83)))));
+            this.btn_one2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_one2.FlatAppearance.BorderSize = 0;
+            this.btn_one2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_one2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_one2.ForeColor = System.Drawing.Color.White;
+            this.btn_one2.Location = new System.Drawing.Point(1008, 873);
+            this.btn_one2.Name = "btn_one2";
+            this.btn_one2.Size = new System.Drawing.Size(272, 51);
+            this.btn_one2.TabIndex = 131;
+            this.btn_one2.Text = "Reload Table";
+            this.btn_one2.UseVisualStyleBackColor = false;
+            // 
             // EMPLOYEESdelete
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.Controls.Add(this.btn_one2);
             this.Controls.Add(this.clear_check);
             this.Controls.Add(this.delete);
             this.Controls.Add(this.pictureBox2);
@@ -387,5 +404,6 @@
         private DataGridViewTextBoxColumn contactNoInCaseOfEmergency;
         private btn_one clear_check;
         private btn_one delete;
+        private btn_one btn_one2;
     }
 }

@@ -88,7 +88,30 @@ namespace EMS
             (tableDelete_DGV.DataSource as DataTable).DefaultView.RowFilter =
                     string.Format("employee_id" + Search.Text);
             */
-            
+
+            if (!(Search.Text == ""))
+            {
+                double outputValue = 0;
+                bool isNumber = false;
+
+                isNumber = double.TryParse(Search.Text, out outputValue);
+                if (!isNumber)
+                {
+                    // search through ID
+                }
+                else if (isNumber)
+                {
+                    // search through lastname
+                }
+                else
+                {
+                    MessageBox.Show("Error. Enter ID or Name.");
+                }
+            }
+            else
+            {
+                MessageBox.Show(" Failed to search. Search field is empty.");
+            }
         }
 
         private void btn_one3_Click(object sender, EventArgs e)
