@@ -848,3 +848,4 @@ C:\Users\gilda\OneDrive\Desktop\July 14\Employee_System\EMS\obj\Debug\net6.0-win
 C:\Users\gilda\OneDrive\Desktop\July 14\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.pdb
 C:\Users\gilda\OneDrive\Desktop\July 14\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.genruntimeconfig.cache
 C:\Users\gilda\OneDrive\Desktop\July 14\Employee_System\EMS\obj\Debug\net6.0-windows\ref\EMS.dll
+C:\Users\Asus\Source\Repos\GildaFeb\Employee_System\EMS\obj\Debug\net6.0-windows\UserCtrls.UserControl1.resources

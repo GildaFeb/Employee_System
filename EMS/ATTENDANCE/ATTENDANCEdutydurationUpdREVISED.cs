@@ -35,7 +35,7 @@ namespace EMS
 
         private void UpdTimePickerIn_ValueChanged(object sender, EventArgs e)
         {
-            // not finished
+            /*// not finished
             DateTime inTime = Convert.ToDateTime(time_in.Text);
             DateTime outTime = Convert.ToDateTime(time_out.Text);
             if (outTime >= inTime)
@@ -46,6 +46,7 @@ namespace EMS
             {
                 MessageBox.Show(" Error. Time in must earlier than time out. Try again");
             }
+            */
         }
 
         private void UpdLlblTimeIn_Click(object sender, EventArgs e)
@@ -60,7 +61,7 @@ namespace EMS
 
         private void time_out_ValueChanged(object sender, EventArgs e)
         {
-            // not finished
+            /*// not finished
             DateTime inTime = Convert.ToDateTime(time_in.Text);
             DateTime outTime = Convert.ToDateTime(time_out.Text);
             if (outTime > inTime)
@@ -71,6 +72,7 @@ namespace EMS
             {
                 MessageBox.Show(" Error. Time out (value) must set time after time in. Try again");
             }
+            */
         }
 
         private void UpdLblDuration_Click(object sender, EventArgs e)
@@ -90,7 +92,7 @@ namespace EMS
         {
             /*status.Items.Add("Present");
             status.Items.Add("Absent");
-            status.Items.Add("Leave");*/
+            status.Items.Add("Leave");
 
             //naga multiply if di naka comment - Alvin
 
@@ -120,11 +122,22 @@ namespace EMS
                 date_duty.Enabled = true;
                 // [!] Alvin = enabled false the time in, time out, duration, overtime
             }
+            */
         }
 
         private void ATTENDANCEdutydurationUpdREVISED_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void inPeriod_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void inTime_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+            
         }
     }
 }

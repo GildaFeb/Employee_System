@@ -30,7 +30,7 @@ namespace EMS
 
         private void time_in_ValueChanged(object sender, EventArgs e)
         {
-            // not finished
+            /*// not finished
             TimeSpan inTime = TimeSpan.Parse(time_in.Text);
             TimeSpan outTime = TimeSpan.Parse(time_out.Text);
             if (outTime >= inTime)
@@ -41,11 +41,12 @@ namespace EMS
             {
                 MessageBox.Show(" Error. Time in must earlier than time out. Try again");
             }
+            */
         }
 
         private void time_out_ValueChanged(object sender, EventArgs e)
         {
-            // not finished
+            /*// not finished
             TimeSpan inTime = TimeSpan.Parse(time_in.Text);
             TimeSpan outTime = TimeSpan.Parse(time_out.Text);
             if (outTime >= inTime)
@@ -56,6 +57,7 @@ namespace EMS
             {
                 MessageBox.Show(" Error. Time out (value) must set time after time in. Try again");
             }
+            */
         }
 
         private void status_OnSelectedIndexChanged(object sender, EventArgs e)
@@ -66,6 +68,7 @@ namespace EMS
 
             //naga multiply if di naka comment - Alvin
 
+            /*
             if (status.SelectedItem.ToString() == "Present")
             {
                 //  [!] Alvin = enabled true the status, date, time in, time out
@@ -93,6 +96,7 @@ namespace EMS
                 overtime.Enabled = false;
                 date_duty.Enabled = true;
             }
+            */
         }
 
         private void btn_clear_Click(object sender, EventArgs e)
@@ -113,6 +117,11 @@ namespace EMS
         private void employee_id_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void inTime_ValueChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

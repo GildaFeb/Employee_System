@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.time_out = new System.Windows.Forms.DateTimePicker();
-            this.time_in = new System.Windows.Forms.DateTimePicker();
             this.btn_clear = new EMS.btn_one();
             this.btn_save = new EMS.btn_one();
             this.LblName = new System.Windows.Forms.Label();
@@ -50,41 +48,11 @@
             this.Addbkgrnd = new EMS.btn_one();
             this.status = new EMS.CComboBox();
             this.btn_findemployee = new EMS.btn_one();
+            this.time_inPeriod = new System.Windows.Forms.ComboBox();
+            this.time_in = new System.Windows.Forms.MaskedTextBox();
+            this.time_out = new System.Windows.Forms.MaskedTextBox();
+            this.time_outPeriod = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
-            // 
-            // time_out
-            // 
-            this.time_out.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.time_out.CustomFormat = "";
-            this.time_out.Enabled = false;
-            this.time_out.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.time_out.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.time_out.Location = new System.Drawing.Point(525, 444);
-            this.time_out.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.time_out.MinDate = new System.DateTime(1995, 1, 1, 23, 59, 0, 0);
-            this.time_out.Name = "time_out";
-            this.time_out.ShowUpDown = true;
-            this.time_out.Size = new System.Drawing.Size(306, 24);
-            this.time_out.TabIndex = 199;
-            this.time_out.Value = new System.DateTime(2022, 7, 25, 23, 59, 59, 0);
-            this.time_out.ValueChanged += new System.EventHandler(this.time_out_ValueChanged);
-            // 
-            // time_in
-            // 
-            this.time_in.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.time_in.CustomFormat = "";
-            this.time_in.Enabled = false;
-            this.time_in.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.time_in.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.time_in.Location = new System.Drawing.Point(525, 378);
-            this.time_in.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.time_in.MinDate = new System.DateTime(1995, 1, 1, 23, 59, 0, 0);
-            this.time_in.Name = "time_in";
-            this.time_in.ShowUpDown = true;
-            this.time_in.Size = new System.Drawing.Size(306, 24);
-            this.time_in.TabIndex = 198;
-            this.time_in.Value = new System.DateTime(2022, 7, 25, 23, 59, 59, 0);
-            this.time_in.ValueChanged += new System.EventHandler(this.time_in_ValueChanged);
             // 
             // btn_clear
             // 
@@ -385,15 +353,63 @@
             this.btn_findemployee.Text = "Find Employee";
             this.btn_findemployee.UseVisualStyleBackColor = false;
             // 
+            // time_inPeriod
+            // 
+            this.time_inPeriod.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.time_inPeriod.FormattingEnabled = true;
+            this.time_inPeriod.Items.AddRange(new object[] {
+            "AM",
+            "PM"});
+            this.time_inPeriod.Location = new System.Drawing.Point(731, 367);
+            this.time_inPeriod.Name = "time_inPeriod";
+            this.time_inPeriod.Size = new System.Drawing.Size(100, 29);
+            this.time_inPeriod.TabIndex = 203;
+            // 
+            // time_in
+            // 
+            this.time_in.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.time_in.Location = new System.Drawing.Point(533, 367);
+            this.time_in.Mask = "00:00:00";
+            this.time_in.Name = "time_in";
+            this.time_in.Size = new System.Drawing.Size(192, 29);
+            this.time_in.TabIndex = 204;
+            this.time_in.Text = "115959";
+            this.time_in.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // time_out
+            // 
+            this.time_out.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.time_out.Location = new System.Drawing.Point(533, 441);
+            this.time_out.Mask = "00:00:00";
+            this.time_out.Name = "time_out";
+            this.time_out.Size = new System.Drawing.Size(192, 29);
+            this.time_out.TabIndex = 206;
+            this.time_out.Text = "115959";
+            this.time_out.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // time_outPeriod
+            // 
+            this.time_outPeriod.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.time_outPeriod.FormattingEnabled = true;
+            this.time_outPeriod.Items.AddRange(new object[] {
+            "AM",
+            "PM"});
+            this.time_outPeriod.Location = new System.Drawing.Point(731, 441);
+            this.time_outPeriod.Name = "time_outPeriod";
+            this.time_outPeriod.Size = new System.Drawing.Size(100, 29);
+            this.time_outPeriod.TabIndex = 205;
+            // 
             // ATTENDANCEdutydurationAddREVISED
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.Controls.Add(this.time_out);
+            this.Controls.Add(this.time_outPeriod);
+            this.Controls.Add(this.time_in);
+            this.Controls.Add(this.time_inPeriod);
             this.Controls.Add(this.btn_findemployee);
             this.Controls.Add(this.status);
-            this.Controls.Add(this.time_out);
-            this.Controls.Add(this.time_in);
             this.Controls.Add(this.btn_clear);
             this.Controls.Add(this.btn_save);
             this.Controls.Add(this.LblName);
@@ -422,8 +438,6 @@
         }
 
         #endregion
-        private DateTimePicker time_out;
-        private DateTimePicker time_in;
         private btn_one btn_clear;
         private btn_one btn_save;
         private Label LblName;
@@ -444,5 +458,9 @@
         private btn_one Addbkgrnd;
         private CComboBox status;
         private btn_one btn_findemployee;
+        private ComboBox time_inPeriod;
+        private MaskedTextBox time_in;
+        private MaskedTextBox time_out;
+        private ComboBox time_outPeriod;
     }
 }
