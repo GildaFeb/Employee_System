@@ -148,11 +148,11 @@ namespace EMS
                                         delcmd.Connection = con;
                                         int count = delcmd.ExecuteNonQuery();
                                         tableDelete_DGV.Rows.RemoveAt(this.tableDelete_DGV.SelectedRows[0].Index); //not sure
-                                  }
-                                  catch (Exception ex)
-                                 {
-                                    MessageBox.Show(ex.ToString());
-                                 }
+                                    }
+                                    catch (Exception ex)
+                                    {
+                                        MessageBox.Show(ex.ToString());
+                                    }
 
                             }
                             con.Close();

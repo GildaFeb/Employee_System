@@ -48,8 +48,8 @@
             // 
             // tableDelete_DGV
             // 
-            this.tableDelete_DGV.AllowUserToResizeColumns = false;
             this.tableDelete_DGV.AllowUserToResizeRows = false;
+            this.tableDelete_DGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
             this.tableDelete_DGV.BackgroundColor = System.Drawing.Color.White;
             this.tableDelete_DGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tableDelete_DGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;

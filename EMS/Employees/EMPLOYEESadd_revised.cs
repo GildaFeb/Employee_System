@@ -19,6 +19,7 @@ namespace EMS
         {
             InitializeComponent();
             Generate_EmployeeID();
+            employee_id.Enabled = false;
             last_name.MaxLength = 50;
             first_name.MaxLength = 50;
             middle_name.MaxLength = 50;
@@ -232,7 +233,7 @@ namespace EMS
 
         private void position_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            emp_position.Text = position.Text;
         }
 
         private void btn_one1_Click(object sender, EventArgs e)
@@ -249,150 +250,153 @@ namespace EMS
 
         private void btn_one3_Click_1(object sender, EventArgs e)
         {
-           /* if (string.IsNullOrWhiteSpace(employee_id.Text) || 
-                string.IsNullOrWhiteSpace(last_name.Text) ||
-                string.IsNullOrWhiteSpace(first_name.Text) ||
-                string.IsNullOrWhiteSpace(middle_name.Text) ||
-                string.IsNullOrWhiteSpace(address.Text) ||
-                string.IsNullOrWhiteSpace(email.Text) ||
-                string.IsNullOrWhiteSpace(contact_number.Text) ||
-                string.IsNullOrWhiteSpace(cnumber_emergency.Text) ||
-                string.IsNullOrWhiteSpace(suffix.Text) ||
-                string.IsNullOrWhiteSpace(position.Text) ||
-                string.IsNullOrWhiteSpace(regular_pay.Text) ||
-                string.IsNullOrWhiteSpace(regular_worktime.Text) ||
-                string.IsNullOrWhiteSpace(sex.Text))
-            {
-                if (string.IsNullOrWhiteSpace(employee_id.Text))
-                {
-                    erroremployee_id.Visible = true;
-                }
-                else
-                {
-                    erroremployee_id.Visible = false;
-                }
-                if (string.IsNullOrWhiteSpace(last_name.Text))
-                {
-                    errorlast_name.Visible = true;
-                }
-                else
-                {
-                    errorlast_name.Visible = false;
-                }
-                if (string.IsNullOrWhiteSpace(first_name.Text))
-                {
-                    errorfirst_name.Visible = true;
-                }
-                else
-                {
-                    errorfirst_name.Visible = false;
-                }
-                if (string.IsNullOrWhiteSpace(middle_name.Text))
-                {
-                    errormiddle_name.Visible = true;
-                }
-                else
-                {
-                    errormiddle_name.Visible = false;
-                }
-                if (string.IsNullOrWhiteSpace(suffix.Text))
-                {
-                    errorsuffix.Visible = true;
-                }
-                else
-                {
-                    errorsuffix.Visible = false;
-                }
-                if (string.IsNullOrWhiteSpace(position.Text))
-                {
-                    errorposition.Visible = true;
-                }
-                else
-                {
-                    errorposition.Visible = false;
-                }
-                if (string.IsNullOrWhiteSpace(regular_pay.Text))
-                {
-                    errorregular_pay.Visible = true;
-                }
-                else
-                {
-                    errorregular_pay.Visible = false;
-                }
-                if (string.IsNullOrWhiteSpace(regular_worktime.Text))
-                {
-                    errorregular_worktime.Visible = true;
-                }
-                else
-                {
-                    errorregular_worktime.Visible = false;
-                }
-                if (string.IsNullOrWhiteSpace(sex.Text))
-                {
-                    errorsex.Visible = true;
-                }
-                else
-                {
-                    errorsex.Visible = false;
-                }
-                if (string.IsNullOrWhiteSpace(address.Text))
-                {
-                    erroraddress.Visible = true;
-                }
-                else
-                {
-                    erroraddress.Visible = false;
-                }
-                if (string.IsNullOrWhiteSpace(contact_number.Text))
-                {
-                    errorcontact_number.Visible = true;
-                }
-                else
-                {
-                    errorcontact_number.Visible = false;
-                }
-                if (string.IsNullOrWhiteSpace(email.Text))
-                {
-                    erroremail.Visible = true;
-                }
-                else
-                {
-                    erroremail.Visible = false;
-                }
-                if (string.IsNullOrWhiteSpace(cnumber_emergency.Text))
-                {
-                    errorcnumber_emergency.Visible = true;
-                }
-                else
-                {
-                    errorcnumber_emergency.Visible = false;
-                }
+             if (string.IsNullOrWhiteSpace(employee_id.Text) || 
+                 string.IsNullOrWhiteSpace(last_name.Text) ||
+                 string.IsNullOrWhiteSpace(first_name.Text) ||
+                 string.IsNullOrWhiteSpace(middle_name.Text) ||
+                 string.IsNullOrWhiteSpace(address.Text) ||
+                 string.IsNullOrWhiteSpace(email.Text) ||
+                 string.IsNullOrWhiteSpace(contact_number.Text) ||
+                 string.IsNullOrWhiteSpace(cnumber_emergency.Text) ||
+                 string.IsNullOrWhiteSpace(suffix.Text) ||
+                 string.IsNullOrWhiteSpace(position.Text) ||
+                 string.IsNullOrWhiteSpace(regular_pay.Text) ||
+                 string.IsNullOrWhiteSpace(regular_worktime.Text) ||
+                 string.IsNullOrWhiteSpace(sex.Text))
+             {
+                 if (string.IsNullOrWhiteSpace(employee_id.Text))
+                 {
+                     erroremployee_id.Visible = true;
+                 }
+                 else
+                 {
+                     erroremployee_id.Visible = false;
+                 }
+                 if (string.IsNullOrWhiteSpace(last_name.Text))
+                 {
+                     errorlast_name.Visible = true;
+                 }
+                 else
+                 {
+                     errorlast_name.Visible = false;
+                 }
+                 if (string.IsNullOrWhiteSpace(first_name.Text))
+                 {
+                     errorfirst_name.Visible = true;
+                 }
+                 else
+                 {
+                     errorfirst_name.Visible = false;
+                 }
+                 if (string.IsNullOrWhiteSpace(middle_name.Text))
+                 {
+                     errormiddle_name.Visible = true;
+                 }
+                 else
+                 {
+                     errormiddle_name.Visible = false;
+                 }
+                 if (string.IsNullOrWhiteSpace(suffix.Text))
+                 {
+                     errorsuffix.Visible = true;
+                 }
+                 else
+                 {
+                     errorsuffix.Visible = false;
+                 }
+                 if (string.IsNullOrWhiteSpace(position.Text))
+                 {
+                     errorposition.Visible = true;
+                 }
+                 else
+                 {
+                     errorposition.Visible = false;
+                 }
+                 if (string.IsNullOrWhiteSpace(regular_pay.Text))
+                 {
+                     errorregular_pay.Visible = true;
+                 }
+                 else
+                 {
+                     errorregular_pay.Visible = false;
+                 }
+                 if (string.IsNullOrWhiteSpace(regular_worktime.Text))
+                 {
+                     errorregular_worktime.Visible = true;
+                 }
+                 else
+                 {
+                     errorregular_worktime.Visible = false;
+                 }
+                 if (string.IsNullOrWhiteSpace(sex.Text))
+                 {
+                     errorsex.Visible = true;
+                 }
+                 else
+                 {
+                     errorsex.Visible = false;
+                 }
+                 if (string.IsNullOrWhiteSpace(address.Text))
+                 {
+                     erroraddress.Visible = true;
+                 }
+                 else
+                 {
+                     erroraddress.Visible = false;
+                 }
+                 if (string.IsNullOrWhiteSpace(contact_number.Text))
+                 {
+                     errorcontact_number.Visible = true;
+                 }
+                 else
+                 {
+                     errorcontact_number.Visible = false;
+                 }
+                 if (string.IsNullOrWhiteSpace(email.Text))
+                 {
+                     erroremail.Visible = true;
+                 }
+                 else
+                 {
+                     erroremail.Visible = false;
+                 }
+                 if (string.IsNullOrWhiteSpace(cnumber_emergency.Text))
+                 {
+                     errorcnumber_emergency.Visible = true;
+                 }
+                 else
+                 {
+                     errorcnumber_emergency.Visible = false;
+                 }
 
-                errorEmptyFields errorEmptyFields = new errorEmptyFields();
-                errorEmptyFields.ShowDialog();
-            }
-            else
-            {*/
-                // ----------- Add Employee: Passing data to database -----------
-                //int ID = Convert.ToInt32(this.employee_id.Text);
-                Employee_Details.Employee employeeInfo = new Employee_Details.Employee()
-                {
-                    employeeID = employee_id.Text.ToString(),
-                    first_name = first_name.Text.ToString()
-                   /* email = email.Text.ToString(),
-                    address = address.Text.ToString(),
-                    last_name = last_name.Text.ToString(),
-                    middle_name = middle_name.Text.ToString(),
-                    suffix = suffix.Text.ToString(),
-                    birth_date = birth.Value.ToString(),
-                    hired_date = hired_date.Value.ToString(),
-                    position = position.Text.ToString(),
-                    contact_number = contact_number.Text.ToString(),
-                    emergency_contact_number = cnumber_emergency.Text.ToString(),
-                    regular_pay = regular_pay.Text.ToString(),
-                    regular_worktime = regular_worktime.Text.ToString(),
-                    total_salary = total_rpay.Text.ToString(),*/
-                };
+                 errorEmptyFields errorEmptyFields = new errorEmptyFields();
+                 errorEmptyFields.ShowDialog();
+             }
+             else
+             {
+            // ----------- Add Employee: Passing data to database -----------
+            //int ID = Convert.ToInt32(this.employee_id.Text);
+
+            
+            Employee_Details.Employee employeeInfo = new Employee_Details.Employee()
+            {
+                 employeeID = employee_id.Text,
+                 first_name = first_name.Text,
+                 last_name = last_name.Text,
+                 sex = sex.Text,
+                 email = email.Text,
+                 address = address.Text,
+                 middle_name = middle_name.Text,
+                 suffix = suffix.Text,
+                 birth_date = birth.Text,
+                 hired_date = hired_date.Text,
+                 position = emp_position.Text,
+                 contact_number = contact_number.Text,
+                 emergency_contact_number = cnumber_emergency.Text,
+                 regular_pay = pay.Text,
+                 regular_worktime = worktime.Text,
+                 total_salary = total.Text
+            };
                 
                 // (Not yet finished) = adding to database
                 bool check = Employee_Details.Employee_Database.AddEmployee(employeeInfo);
@@ -429,6 +433,7 @@ namespace EMS
                     errorcontact_number.Visible = false;
                     erroremail.Visible = false;
                     errorcnumber_emergency.Visible = false;
+                    Generate_EmployeeID();
                 }
                 else
                 {
@@ -437,7 +442,7 @@ namespace EMS
                 }
 
                 
-          //  }
+            }
             
         }
 
@@ -530,6 +535,7 @@ namespace EMS
 
                     total_rpay.Text = (Pay * 48).ToString();
                 }
+                pay.Text = regular_pay.Text;
             }
             else
             {
@@ -593,6 +599,7 @@ namespace EMS
 
                     total_rpay.Text = (Pay * 48).ToString();
                 }
+                worktime.Text = regular_worktime.Text;
             }
             else
             {
@@ -672,6 +679,16 @@ namespace EMS
         }
 
         private void erroremployee_id_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void worktime_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void total_rpay_TextChanged(object sender, EventArgs e)
         {
 
         }

@@ -88,6 +88,10 @@
             this.errorbirth = new System.Windows.Forms.Label();
             this.employee_id = new System.Windows.Forms.TextBox();
             this.erroremployee_id = new System.Windows.Forms.Label();
+            this.worktime = new System.Windows.Forms.Label();
+            this.total = new System.Windows.Forms.Label();
+            this.pay = new System.Windows.Forms.Label();
+            this.emp_position = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
@@ -196,9 +200,11 @@
             this.position.ForeColor = System.Drawing.Color.Black;
             this.position.FormattingEnabled = true;
             this.position.Items.AddRange(new object[] {
-            "Position A",
-            "Position B",
-            "Position C"});
+            "Project Manager",
+            "Fullstack Developer",
+            "Software Engineer",
+            "Administrator",
+            "Guard"});
             this.position.Location = new System.Drawing.Point(599, 325);
             this.position.Name = "position";
             this.position.Size = new System.Drawing.Size(349, 33);
@@ -588,7 +594,7 @@
             this.btn_save.Name = "btn_save";
             this.btn_save.Size = new System.Drawing.Size(247, 49);
             this.btn_save.TabIndex = 117;
-            this.btn_save.Text = "Save";
+            this.btn_save.Text = "Register";
             this.btn_save.UseVisualStyleBackColor = false;
             this.btn_save.Click += new System.EventHandler(this.btn_one3_Click_1);
             // 
@@ -725,6 +731,7 @@
             this.total_rpay.Size = new System.Drawing.Size(352, 33);
             this.total_rpay.TabIndex = 120;
             this.total_rpay.Text = " ";
+            this.total_rpay.TextChanged += new System.EventHandler(this.total_rpay_TextChanged);
             // 
             // errorlast_name
             // 
@@ -922,11 +929,60 @@
             this.erroremployee_id.Visible = false;
             this.erroremployee_id.Click += new System.EventHandler(this.erroremployee_id_Click);
             // 
+            // worktime
+            // 
+            this.worktime.AutoSize = true;
+            this.worktime.Enabled = false;
+            this.worktime.Location = new System.Drawing.Point(663, 494);
+            this.worktime.Name = "worktime";
+            this.worktime.Size = new System.Drawing.Size(58, 20);
+            this.worktime.TabIndex = 211;
+            this.worktime.Text = "label25";
+            this.worktime.Visible = false;
+            this.worktime.Click += new System.EventHandler(this.worktime_Click);
+            // 
+            // total
+            // 
+            this.total.AutoSize = true;
+            this.total.Enabled = false;
+            this.total.Location = new System.Drawing.Point(663, 593);
+            this.total.Name = "total";
+            this.total.Size = new System.Drawing.Size(58, 20);
+            this.total.TabIndex = 212;
+            this.total.Text = "label26";
+            this.total.Visible = false;
+            // 
+            // pay
+            // 
+            this.pay.AutoSize = true;
+            this.pay.Enabled = false;
+            this.pay.Location = new System.Drawing.Point(663, 400);
+            this.pay.Name = "pay";
+            this.pay.Size = new System.Drawing.Size(58, 20);
+            this.pay.TabIndex = 213;
+            this.pay.Text = "label27";
+            this.pay.Visible = false;
+            // 
+            // emp_position
+            // 
+            this.emp_position.AutoSize = true;
+            this.emp_position.Enabled = false;
+            this.emp_position.Location = new System.Drawing.Point(663, 302);
+            this.emp_position.Name = "emp_position";
+            this.emp_position.Size = new System.Drawing.Size(58, 20);
+            this.emp_position.TabIndex = 214;
+            this.emp_position.Text = "label25";
+            this.emp_position.Visible = false;
+            // 
             // EMPLOYEESadd_revised
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.Controls.Add(this.emp_position);
+            this.Controls.Add(this.pay);
+            this.Controls.Add(this.total);
+            this.Controls.Add(this.worktime);
             this.Controls.Add(this.erroremployee_id);
             this.Controls.Add(this.employee_id);
             this.Controls.Add(this.errorbirth);
@@ -1057,5 +1113,9 @@
         private Label errorbirth;
         private TextBox employee_id;
         private Label erroremployee_id;
+        private Label worktime;
+        private Label total;
+        private Label pay;
+        private Label emp_position;
     }
 }
