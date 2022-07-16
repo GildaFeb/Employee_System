@@ -1,5 +1,6 @@
 ﻿using Microsoft.Data.SqlClient;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,7 +20,13 @@ namespace EMS
         {
             InitializeComponent();
             tableDelete_DGV.ForeColor = Color.Black;
-            
+            DataGridViewCheckBoxColumn checkBoxColumn = new DataGridViewCheckBoxColumn();
+            checkBoxColumn.HeaderText = " Select ";
+            checkBoxColumn.Width = 100;
+            checkBoxColumn.Name = "checkBoxColumn";
+            tableDelete_DGV.Columns.Insert(0, checkBoxColumn);
+
+
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -94,22 +101,36 @@ namespace EMS
 
             if (!(Search.Text == ""))
             {
-                double outputValue = 0;
-                bool isNumber = false;
+                string alph = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz";
+                if (!(Search.Text.Contains(alph)))
+                {
+                    OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
 
-                isNumber = double.TryParse(Search.Text, out outputValue);
-                if (!isNumber)
-                {
-                    // search through ID
+                    con.Open();
+                    OleDbCommand cmd = new OleDbCommand("Select * from EmployeeTbl Where EmployeeID ='" + Search.Text + "'", con);
+                    OleDbDataReader read = cmd.ExecuteReader();
+                    DataTable dt = new DataTable();
+                    dt.Load(read);
+                    tableDelete_DGV.DataSource = dt;
+                    
                 }
-                else if (isNumber)
+                else if (Search.Text.Contains(alph))
                 {
-                    // search through lastname
+                    OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
+
+                    con.Open();
+                    OleDbCommand cmd = new OleDbCommand("Select * from EmployeeTbl Where Lname ='" + Search.Text + "'", con);
+                    OleDbDataReader read = cmd.ExecuteReader();
+                    DataTable dt = new DataTable();
+                    dt.Load(read);
+                    tableDelete_DGV.DataSource = dt;
+                    
                 }
                 else
                 {
                     MessageBox.Show("Error. Enter ID or Name.");
                 }
+
             }
             else
             {
@@ -119,7 +140,10 @@ namespace EMS
 
         private void btn_one3_Click(object sender, EventArgs e)
         {
-
+            ArrayList selectedRows = new ArrayList();
+            int count = 0;
+           
+            MessageBox.Show(selectedRows.ToString());    
             Int32 selectedRowCount = tableDelete_DGV.Rows.GetRowCount(DataGridViewElementStates.Selected);
             if (selectedRowCount > 0)
             {
@@ -138,16 +162,18 @@ namespace EMS
                         {
                             OleDbCommand delcmd = new OleDbCommand();
                             con.Open();
-                            List<string> SelectedRows = new List<string>();
-                            foreach (DataGridViewRow item in this.tableDelete_DGV.SelectedRows)
+                            
+                            foreach (DataGridViewRow item in this.tableDelete_DGV.Rows)
                             {
                                     
                                     try
                                     {
-                                        delcmd.CommandText = "DELETE FROM EmployeeTbl WHERE EmployeeID= '" + tableDelete_DGV.SelectedRows[0].Cells[0].Value + "'";
-                                        delcmd.Connection = con;
-                                        int count = delcmd.ExecuteNonQuery();
-                                        tableDelete_DGV.Rows.RemoveAt(this.tableDelete_DGV.SelectedRows[0].Index); //not sure
+                                            delcmd.CommandText = "DELETE FROM EmployeeTbl WHERE EmployeeID= '" + tableDelete_DGV.SelectedRows[0].Cells[0].Value + "'";
+                                            delcmd.Connection = con;
+                                            delcmd.ExecuteNonQuery();
+                                            tableDelete_DGV.Rows.RemoveAt(this.tableDelete_DGV.SelectedRows[0].Index); //not sure
+                                        
+                                        
                                     }
                                     catch (Exception ex)
                                     {
@@ -184,7 +210,7 @@ namespace EMS
         private void btn_one1_Click(object sender, EventArgs e)
         {
             foreach (DataGridViewRow Row in tableDelete_DGV.Rows)
-                ((DataGridViewCheckBoxCell)Row.Cells["delete_ChckBx"]).Value = null;
+                ((DataGridViewCheckBoxCell)Row.Cells["checkBoxColumn"]).Value = null;
         }
 
         private void btn_one2_Click_1(object sender, EventArgs e)

@@ -473,12 +473,15 @@ namespace EMS
 
         private void sex_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            if (sex.Text == "Female")
+            {
+                suffix.Text = "none";
+            }
         }
 
         private void birth_ValueChanged(object sender, EventArgs e)
         {
-        /*    int Age = DateTime.Now.Year - birth.Value.Year;
+            int Age = DateTime.Now.Year - birth.Value.Year;
 
             if (Age < 18)
             {
@@ -489,7 +492,7 @@ namespace EMS
             {
                 errorbirth.Visible = false;
                 btn_save.Enabled = true;
-            }*/
+            }
         }
 
         // =========== [!] REGULAR PAY PICKER ===============
