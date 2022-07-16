@@ -29,26 +29,9 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EMPLOYEESdelete));
             this.tableDelete_DGV = new System.Windows.Forms.DataGridView();
-            this.delete_ChckBx = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.idNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dateJoined = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.firstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.middleName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.position = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.salary = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.age = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sex = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dateOfBirth = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.contactAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.contactNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emailAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.contactNoInCaseOfEmergency = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -80,30 +63,14 @@
             this.tableDelete_DGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.tableDelete_DGV.ColumnHeadersHeight = 29;
             this.tableDelete_DGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.tableDelete_DGV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.delete_ChckBx,
-            this.idNumber,
-            this.dateJoined,
-            this.lastName,
-            this.firstName,
-            this.middleName,
-            this.position,
-            this.salary,
-            this.age,
-            this.sex,
-            this.dateOfBirth,
-            this.contactAddress,
-            this.contactNumber,
-            this.emailAddress,
-            this.contactNoInCaseOfEmergency});
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(51)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.tableDelete_DGV.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.tableDelete_DGV.DefaultCellStyle = dataGridViewCellStyle2;
             this.tableDelete_DGV.GridColor = System.Drawing.Color.DarkGray;
             this.tableDelete_DGV.Location = new System.Drawing.Point(125, 256);
             this.tableDelete_DGV.Name = "tableDelete_DGV";
@@ -112,119 +79,6 @@
             this.tableDelete_DGV.Size = new System.Drawing.Size(1305, 557);
             this.tableDelete_DGV.TabIndex = 0;
             this.tableDelete_DGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // delete_ChckBx
-            // 
-            this.delete_ChckBx.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.NullValue = false;
-            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.delete_ChckBx.DefaultCellStyle = dataGridViewCellStyle2;
-            this.delete_ChckBx.HeaderText = "";
-            this.delete_ChckBx.MinimumWidth = 6;
-            this.delete_ChckBx.Name = "delete_ChckBx";
-            this.delete_ChckBx.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.delete_ChckBx.Width = 29;
-            // 
-            // idNumber
-            // 
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.idNumber.DefaultCellStyle = dataGridViewCellStyle3;
-            this.idNumber.HeaderText = "ID Number";
-            this.idNumber.MinimumWidth = 6;
-            this.idNumber.Name = "idNumber";
-            this.idNumber.Width = 125;
-            // 
-            // dateJoined
-            // 
-            this.dateJoined.HeaderText = "Date joined";
-            this.dateJoined.MinimumWidth = 6;
-            this.dateJoined.Name = "dateJoined";
-            this.dateJoined.Width = 125;
-            // 
-            // lastName
-            // 
-            this.lastName.HeaderText = "Last name";
-            this.lastName.MinimumWidth = 6;
-            this.lastName.Name = "lastName";
-            this.lastName.Width = 175;
-            // 
-            // firstName
-            // 
-            this.firstName.HeaderText = "First name";
-            this.firstName.MinimumWidth = 6;
-            this.firstName.Name = "firstName";
-            this.firstName.Width = 175;
-            // 
-            // middleName
-            // 
-            this.middleName.HeaderText = "Middle Name";
-            this.middleName.MinimumWidth = 6;
-            this.middleName.Name = "middleName";
-            this.middleName.Width = 175;
-            // 
-            // position
-            // 
-            this.position.HeaderText = "Position";
-            this.position.MinimumWidth = 6;
-            this.position.Name = "position";
-            this.position.Width = 175;
-            // 
-            // salary
-            // 
-            this.salary.HeaderText = "Salary";
-            this.salary.MinimumWidth = 6;
-            this.salary.Name = "salary";
-            this.salary.Width = 175;
-            // 
-            // age
-            // 
-            this.age.HeaderText = "Age";
-            this.age.MinimumWidth = 6;
-            this.age.Name = "age";
-            this.age.Width = 125;
-            // 
-            // sex
-            // 
-            this.sex.HeaderText = "Sex";
-            this.sex.MinimumWidth = 6;
-            this.sex.Name = "sex";
-            this.sex.Width = 125;
-            // 
-            // dateOfBirth
-            // 
-            this.dateOfBirth.HeaderText = "Date of birth";
-            this.dateOfBirth.MinimumWidth = 6;
-            this.dateOfBirth.Name = "dateOfBirth";
-            this.dateOfBirth.Width = 150;
-            // 
-            // contactAddress
-            // 
-            this.contactAddress.HeaderText = "Contact Address";
-            this.contactAddress.MinimumWidth = 6;
-            this.contactAddress.Name = "contactAddress";
-            this.contactAddress.Width = 300;
-            // 
-            // contactNumber
-            // 
-            this.contactNumber.HeaderText = "Contact Number";
-            this.contactNumber.MinimumWidth = 6;
-            this.contactNumber.Name = "contactNumber";
-            this.contactNumber.Width = 225;
-            // 
-            // emailAddress
-            // 
-            this.emailAddress.HeaderText = "Email Address";
-            this.emailAddress.MinimumWidth = 6;
-            this.emailAddress.Name = "emailAddress";
-            this.emailAddress.Width = 300;
-            // 
-            // contactNoInCaseOfEmergency
-            // 
-            this.contactNoInCaseOfEmergency.HeaderText = "Contact no. in case of emergency";
-            this.contactNoInCaseOfEmergency.MinimumWidth = 6;
-            this.contactNoInCaseOfEmergency.Name = "contactNoInCaseOfEmergency";
-            this.contactNoInCaseOfEmergency.Width = 350;
             // 
             // label6
             // 
@@ -388,21 +242,6 @@
         private TextBox Search;
         private PictureBox pictureBox1;
         private btn_one db_ViewCalendarBtn;
-        private DataGridViewCheckBoxColumn delete_ChckBx;
-        private DataGridViewTextBoxColumn idNumber;
-        private DataGridViewTextBoxColumn dateJoined;
-        private DataGridViewTextBoxColumn lastName;
-        private DataGridViewTextBoxColumn firstName;
-        private DataGridViewTextBoxColumn middleName;
-        private DataGridViewTextBoxColumn position;
-        private DataGridViewTextBoxColumn salary;
-        private DataGridViewTextBoxColumn age;
-        private DataGridViewTextBoxColumn sex;
-        private DataGridViewTextBoxColumn dateOfBirth;
-        private DataGridViewTextBoxColumn contactAddress;
-        private DataGridViewTextBoxColumn contactNumber;
-        private DataGridViewTextBoxColumn emailAddress;
-        private DataGridViewTextBoxColumn contactNoInCaseOfEmergency;
         private btn_one clear_check;
         private btn_one delete;
         private btn_one btn_one2;

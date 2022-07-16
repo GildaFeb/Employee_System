@@ -9,7 +9,7 @@ namespace EMS.Employee_Details
     public class Employee
     {
         // HELLO THEREEEEE!
-        public int employeeID { get; set; }
+        public string employeeID { get; set; }
         public string last_name { get; set; }
         public string first_name { get; set; }
         public string middle_name { get; set; }

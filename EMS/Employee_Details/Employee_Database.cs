@@ -17,15 +17,12 @@ namespace EMS.Employee_Details
                 OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
                 con.Open();
                 OleDbCommand cmd = new OleDbCommand();
-                cmd.CommandText = "INSERT INTO EmployeeTbl(EmployeeID, Fname,Lname,Mname,Suffix,Date_joined," +
-                    " Birth,Sex,Address,Cnumber,Cemergency,Email,Position,Regular_pay,Regular_worktime, " +
-                    "Total_rpay) VALUES(@empID,@fname,@lname,@mname,@suffix,@date_joined," +
-                    "@birth,@sex, @address, @cnumber,@cemergency, @email, @position, @reg_salary, @worktime,@total_salary )";
+                cmd.CommandText = "INSERT INTO EmployeeTbl(EmployeeID, Fname VALUES(@empID,@fname)";
                 cmd.Connection = con;
 
                 cmd.Parameters.AddWithValue("@empID", employee.employeeID);
                 cmd.Parameters.AddWithValue("@fname", employee.first_name);
-                cmd.Parameters.AddWithValue("@lname", employee.last_name);
+                /*cmd.Parameters.AddWithValue("@lname", employee.last_name);
                 cmd.Parameters.AddWithValue("@mname", employee.middle_name);
                 cmd.Parameters.AddWithValue("@suffix", employee.suffix);
                 cmd.Parameters.AddWithValue("@date_joined", employee.hired_date);
@@ -38,7 +35,7 @@ namespace EMS.Employee_Details
                 cmd.Parameters.AddWithValue("@position", employee.position);
                 cmd.Parameters.AddWithValue("@reg_salary", employee.regular_pay);
                 cmd.Parameters.AddWithValue("@worktime", employee.regular_worktime);
-                cmd.Parameters.AddWithValue("@total_salary", employee.total_salary);
+                cmd.Parameters.AddWithValue("@total_salary", employee.total_salary); */
 
 
                 cmd.ExecuteNonQuery();

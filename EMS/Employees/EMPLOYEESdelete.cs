@@ -18,6 +18,7 @@ namespace EMS
         public EMPLOYEESdelete()
         {
             InitializeComponent();
+            tableDelete_DGV.ForeColor = Color.Black;
             
         }
 
@@ -124,7 +125,6 @@ namespace EMS
             {
                 try
                 {
-
                     String msg = "Are you sure you want to delete the employee/s you selected?";
                     String caption = "Delete Record";
                     MessageBoxButtons buttons = MessageBoxButtons.YesNo;
@@ -134,19 +134,28 @@ namespace EMS
                     if (result == DialogResult.Yes)
                     {
 
-                        foreach (DataGridViewRow item in this.tableDelete_DGV.SelectedRows)
+                        using (OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True")) //ADDED
                         {
-                            using (OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True"))
+                            OleDbCommand delcmd = new OleDbCommand();
+                            con.Open();
+                            List<string> SelectedRows = new List<string>();
+                            foreach (DataGridViewRow item in this.tableDelete_DGV.SelectedRows)
                             {
-                                OleDbCommand cmd = new OleDbCommand();
-                                int id = Convert.ToInt32(tableDelete_DGV.SelectedRows[0].Cells[0].Value);
-                                cmd.CommandText = "Delete from EmployeeTbl where ID='" + id + "'";
-                                tableDelete_DGV.Rows.RemoveAt(this.tableDelete_DGV.SelectedRows[0].Index);
-                                con.Open();
-                                cmd.ExecuteNonQuery();
+                                    
+                                    try
+                                    {
+                                        delcmd.CommandText = "DELETE FROM EmployeeTbl WHERE EmployeeID= '" + tableDelete_DGV.SelectedRows[0].Cells[0].Value + "'";
+                                        delcmd.Connection = con;
+                                        int count = delcmd.ExecuteNonQuery();
+                                        tableDelete_DGV.Rows.RemoveAt(this.tableDelete_DGV.SelectedRows[0].Index); //not sure
+                                  }
+                                  catch (Exception ex)
+                                 {
+                                    MessageBox.Show(ex.ToString());
+                                 }
 
                             }
-
+                            con.Close();
                         }
                         successEMPdelete successEMPdelete = new successEMPdelete();
                         successEMPdelete.ShowDialog();
@@ -188,7 +197,7 @@ namespace EMS
             DataTable dt = new DataTable();
             dt.Load(read);
             tableDelete_DGV.DataSource = dt;
-            con.Close();
         }
     }
 }
+// ETOOOO

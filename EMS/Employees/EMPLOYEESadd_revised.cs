@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Data.OleDb;
 
 namespace EMS
 {
@@ -17,7 +18,7 @@ namespace EMS
         public EMPLOYEESadd_revised()
         {
             InitializeComponent();
-            // Generate_EmployeeID();
+            Generate_EmployeeID();
             last_name.MaxLength = 50;
             first_name.MaxLength = 50;
             middle_name.MaxLength = 50;
@@ -45,8 +46,8 @@ namespace EMS
 
         public void Generate_EmployeeID()
         {
-            
-            /* SqlConnection Con = new SqlConnection(@"Data Source=|DataDiretory|\EmployeeTbl.mdf");
+
+            OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
 
             while (true)
             {
@@ -55,10 +56,10 @@ namespace EMS
                 Random rand1 = new Random();
                 int empID = rand1.Next(1111111, 99999999);
 
-                SqlCommand cmd = new SqlCommand("Select * from Employee where EmployeeID = @empID", Con);
+                OleDbCommand cmd = new OleDbCommand("Select * from EmployeeTbl where EmployeeID = @empID", con);
                 cmd.Parameters.AddWithValue("@empID", empID);
-                //Con.Open();
-                SqlDataReader dr = cmd.ExecuteReader();
+                con.Open();
+                OleDbDataReader dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
                     if (dr.HasRows == true)
@@ -67,7 +68,7 @@ namespace EMS
                         break;
                     }
                 }
-                //Con.Close();
+                con.Close();
 
                 if (exist == 0)
                 {
@@ -76,7 +77,7 @@ namespace EMS
                 }
             }
 
-            */
+            
         }
 
         private void last_name_TextChanged(object sender, EventArgs e)
@@ -248,7 +249,7 @@ namespace EMS
 
         private void btn_one3_Click_1(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(employee_id.Text) || 
+           /* if (string.IsNullOrWhiteSpace(employee_id.Text) || 
                 string.IsNullOrWhiteSpace(last_name.Text) ||
                 string.IsNullOrWhiteSpace(first_name.Text) ||
                 string.IsNullOrWhiteSpace(middle_name.Text) ||
@@ -371,14 +372,14 @@ namespace EMS
                 errorEmptyFields.ShowDialog();
             }
             else
-            {
+            {*/
                 // ----------- Add Employee: Passing data to database -----------
-                int ID = Convert.ToInt32(this.employee_id.Text);
+                //int ID = Convert.ToInt32(this.employee_id.Text);
                 Employee_Details.Employee employeeInfo = new Employee_Details.Employee()
                 {
-                    employeeID = ID,
-                    first_name = first_name.Text.ToString(),
-                    email = email.Text.ToString(),
+                    employeeID = employee_id.Text.ToString(),
+                    first_name = first_name.Text.ToString()
+                   /* email = email.Text.ToString(),
                     address = address.Text.ToString(),
                     last_name = last_name.Text.ToString(),
                     middle_name = middle_name.Text.ToString(),
@@ -390,7 +391,7 @@ namespace EMS
                     emergency_contact_number = cnumber_emergency.Text.ToString(),
                     regular_pay = regular_pay.Text.ToString(),
                     regular_worktime = regular_worktime.Text.ToString(),
-                    total_salary = total_rpay.Text.ToString(),
+                    total_salary = total_rpay.Text.ToString(),*/
                 };
                 
                 // (Not yet finished) = adding to database
@@ -436,7 +437,7 @@ namespace EMS
                 }
 
                 
-            }
+          //  }
             
         }
 
@@ -472,7 +473,7 @@ namespace EMS
 
         private void birth_ValueChanged(object sender, EventArgs e)
         {
-            int Age = DateTime.Now.Year - birth.Value.Year;
+        /*    int Age = DateTime.Now.Year - birth.Value.Year;
 
             if (Age < 18)
             {
@@ -483,7 +484,7 @@ namespace EMS
             {
                 errorbirth.Visible = false;
                 btn_save.Enabled = true;
-            }
+            }*/
         }
 
         // =========== [!] REGULAR PAY PICKER ===============

@@ -62,10 +62,10 @@ namespace EMS
         }
         public async void register_employee()
         {
-            int ID = Convert.ToInt32(this.employee_id.Text);
+          //  int ID = Convert.ToInt32(this.employee_id.Text);
             Employee_Details.Employee employee = new Employee_Details.Employee()
             {
-                employeeID = ID,
+                employeeID = employee_id.ToString(),
                 last_name = last_name.Text,
                 first_name = first_name.Text,
                 middle_name = middle_name.Text,
