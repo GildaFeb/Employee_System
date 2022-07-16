@@ -154,13 +154,13 @@ namespace EMS
             {
                 // ----------- Update Employee: Passing data to database -----------
 
-
+                int ID = Int32.Parse(employee_id.Text);
                 string date_joined = hired_date.CustomFormat = "MM-dd-yyyy";
                 string birthday = birth.CustomFormat = "MM-dd-yyyy";
                 Employee_Details.Employee employeeInfo = new Employee_Details.Employee()
                 {
 
-                    employeeID = employee_id.Text.ToString(),
+                    employeeID = ID,
                     first_name = first_name.Text.ToString(),
                     email = email.Text.ToString(),
                     address = address.Text.ToString(),

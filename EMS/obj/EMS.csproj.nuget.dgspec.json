@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Asus\\Source\\Repos\\GildaFeb\\Employee_System\\EMS\\EMS.csproj": {}
+    "C:\\Users\\gilda\\OneDrive\\Desktop\\July 16\\Employee_System\\EMS\\EMS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Asus\\Source\\Repos\\GildaFeb\\Employee_System\\EMS\\EMS.csproj": {
+    "C:\\Users\\gilda\\OneDrive\\Desktop\\July 16\\Employee_System\\EMS\\EMS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Asus\\Source\\Repos\\GildaFeb\\Employee_System\\EMS\\EMS.csproj",
+        "projectUniqueName": "C:\\Users\\gilda\\OneDrive\\Desktop\\July 16\\Employee_System\\EMS\\EMS.csproj",
         "projectName": "EMS",
-        "projectPath": "C:\\Users\\Asus\\Source\\Repos\\GildaFeb\\Employee_System\\EMS\\EMS.csproj",
-        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Asus\\Source\\Repos\\GildaFeb\\Employee_System\\EMS\\obj\\",
+        "projectPath": "C:\\Users\\gilda\\OneDrive\\Desktop\\July 16\\Employee_System\\EMS\\EMS.csproj",
+        "packagesPath": "C:\\Users\\gilda\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gilda\\OneDrive\\Desktop\\July 16\\Employee_System\\EMS\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gilda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -52,6 +56,10 @@
               "target": "Package",
               "version": "[5.0.0-preview3.22168.1, )"
             },
+            "System.Data.OleDb": {
+              "target": "Package",
+              "version": "[7.0.0-preview.6.22324.4, )"
+            },
             "System.Globalization.Calendars": {
               "target": "Package",
               "version": "[4.3.0, )"
@@ -75,7 +83,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

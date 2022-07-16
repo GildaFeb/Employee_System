@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.OleDb;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,7 @@ namespace EMS
 {
     public partial class EMPLOYEESdelete : UserControl
     {
+        
         public EMPLOYEESdelete()
         {
             InitializeComponent();
@@ -131,14 +133,14 @@ namespace EMS
                     result = MessageBox.Show(this, msg, caption, buttons, ico);
                     if (result == DialogResult.Yes)
                     {
+
                         foreach (DataGridViewRow item in this.tableDelete_DGV.SelectedRows)
                         {
-                            using (SqlConnection con = new SqlConnection(@"Data Source=|DataDiretory|\EmployeeTbl.mdf"))
+                            using (OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True"))
                             {
-                                SqlCommand cmd = con.CreateCommand();
+                                OleDbCommand cmd = new OleDbCommand();
                                 int id = Convert.ToInt32(tableDelete_DGV.SelectedRows[0].Cells[0].Value);
-                                cmd.CommandText = "Delete from Lot_Numbers where ID='" + id + "'";
-
+                                cmd.CommandText = "Delete from EmployeeTbl where ID='" + id + "'";
                                 tableDelete_DGV.Rows.RemoveAt(this.tableDelete_DGV.SelectedRows[0].Index);
                                 con.Open();
                                 cmd.ExecuteNonQuery();
@@ -174,6 +176,19 @@ namespace EMS
         {
             foreach (DataGridViewRow Row in tableDelete_DGV.Rows)
                 ((DataGridViewCheckBoxCell)Row.Cells["delete_ChckBx"]).Value = null;
+        }
+
+        private void btn_one2_Click_1(object sender, EventArgs e)
+        {
+            OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
+
+            con.Open();
+            OleDbCommand cmd = new OleDbCommand("Select * from EmployeeTbl", con);
+            OleDbDataReader read = cmd.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Load(read);
+            tableDelete_DGV.DataSource = dt;
+            con.Close();
         }
     }
 }

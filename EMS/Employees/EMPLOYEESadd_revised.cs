@@ -373,9 +373,10 @@ namespace EMS
             else
             {
                 // ----------- Add Employee: Passing data to database -----------
+                int ID = Convert.ToInt32(this.employee_id.Text);
                 Employee_Details.Employee employeeInfo = new Employee_Details.Employee()
                 {
-                    employeeID = employee_id.Text.ToString(),
+                    employeeID = ID,
                     first_name = first_name.Text.ToString(),
                     email = email.Text.ToString(),
                     address = address.Text.ToString(),
@@ -398,6 +399,35 @@ namespace EMS
                 {
                     successEMPadd successEMPadd = new successEMPadd();
                     successEMPadd.ShowDialog();
+                    employee_id.Clear();
+                    last_name.Clear();
+                    first_name.Clear();
+                    middle_name.Clear();
+                    suffix.SelectedItem = null;
+                    position.SelectedItem = null;
+                    regular_pay.SelectedItem = null;
+                    regular_worktime.SelectedItem = null;
+                    total_rpay.Clear();
+                    sex.SelectedItem = null;
+                    hired_date.Value = DateTime.Today;
+                    address.Clear();
+                    contact_number.Clear();
+                    email.Clear();
+                    cnumber_emergency.Clear();
+                    birth.Value = DateTime.Today;
+
+                    errorlast_name.Visible = false;
+                    errorfirst_name.Visible = false;
+                    errormiddle_name.Visible = false;
+                    errorsuffix.Visible = false;
+                    errorposition.Visible = false;
+                    errorregular_pay.Visible = false;
+                    errorregular_worktime.Visible = false;
+                    errorsex.Visible = false;
+                    erroraddress.Visible = false;
+                    errorcontact_number.Visible = false;
+                    erroremail.Visible = false;
+                    errorcnumber_emergency.Visible = false;
                 }
                 else
                 {
@@ -405,35 +435,7 @@ namespace EMS
                     errorEMPadd.ShowDialog();
                 }
 
-                employee_id.Clear();
-                last_name.Clear();
-                first_name.Clear();
-                middle_name.Clear();
-                suffix.SelectedItem = null;
-                position.SelectedItem = null;
-                regular_pay.SelectedItem = null;
-                regular_worktime.SelectedItem = null;
-                total_rpay.Clear();
-                sex.SelectedItem = null;
-                hired_date.Value = DateTime.Today;
-                address.Clear();
-                contact_number.Clear();
-                email.Clear();
-                cnumber_emergency.Clear();
-                birth.Value = DateTime.Today;
-
-                errorlast_name.Visible = false;
-                errorfirst_name.Visible = false;
-                errormiddle_name.Visible = false;
-                errorsuffix.Visible = false;
-                errorposition.Visible = false;
-                errorregular_pay.Visible = false;
-                errorregular_worktime.Visible = false;
-                errorsex.Visible = false;
-                erroraddress.Visible = false;
-                errorcontact_number.Visible = false;
-                erroremail.Visible = false;
-                errorcnumber_emergency.Visible = false;
+                
             }
             
         }

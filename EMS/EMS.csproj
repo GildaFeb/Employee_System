@@ -12,6 +12,7 @@
     <PackageReference Include="FireSharp" Version="2.0.4" />
     <PackageReference Include="Google.Apis.Calendar.v3" Version="1.57.0.2696" />
     <PackageReference Include="Microsoft.Data.SqlClient" Version="5.0.0-preview3.22168.1" />
+    <PackageReference Include="System.Data.OleDb" Version="7.0.0-preview.6.22324.4" />
     <PackageReference Include="System.Globalization.Calendars" Version="4.3.0" />
   </ItemGroup>
 

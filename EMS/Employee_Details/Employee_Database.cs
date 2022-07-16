@@ -1,6 +1,7 @@
 ﻿using Microsoft.Data.SqlClient;
 using System;
 using System.Collections.Generic;
+using System.Data.OleDb;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,17 +13,15 @@ namespace EMS.Employee_Details
         // ======== EMPLOYEE PAGE =======
         public static bool AddEmployee(Employee employee)
         {
-            try
-            {
-                SqlConnection Con = new SqlConnection(@"Data Source=|DataDiretory|\EmployeeTbl.mdf");
-
-
-                SqlCommand cmd = new SqlCommand();
-                cmd.CommandText = "INSERT INTO Employee(EmployeeID, Fname,Lname,Mname, Suffix, Date_joined," +
-                    " Birth, Sex, Address, Cnumber, Cemergency, email, Position, Regular_pay, Regular_worktime, " +
-                    "Total_rpay) VALUES(@empID, @fname,@lname,@mname, @suffix, @date_joined," +
+            
+                OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
+                con.Open();
+                OleDbCommand cmd = new OleDbCommand();
+                cmd.CommandText = "INSERT INTO EmployeeTbl(EmployeeID, Fname,Lname,Mname,Suffix,Date_joined," +
+                    " Birth,Sex,Address,Cnumber,Cemergency,Email,Position,Regular_pay,Regular_worktime, " +
+                    "Total_rpay) VALUES(@empID,@fname,@lname,@mname,@suffix,@date_joined," +
                     "@birth,@sex, @address, @cnumber,@cemergency, @email, @position, @reg_salary, @worktime,@total_salary )";
-                cmd.Connection = Con;
+                cmd.Connection = con;
 
                 cmd.Parameters.AddWithValue("@empID", employee.employeeID);
                 cmd.Parameters.AddWithValue("@fname", employee.first_name);
@@ -43,14 +42,9 @@ namespace EMS.Employee_Details
 
 
                 cmd.ExecuteNonQuery();
-                Con.Close();
+                con.Close();
                 return true;
 
-            }
-            catch
-            {
-                return false;
-            }
 
 
 
