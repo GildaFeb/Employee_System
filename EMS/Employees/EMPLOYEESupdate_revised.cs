@@ -167,11 +167,11 @@ namespace EMS
                 
                 Employee_Details.Employee employeeInfo = new Employee_Details.Employee()
                 {
-
                     employeeID = employee_id.Text,
                     first_name = first_name.Text,
                     email = email.Text,
                     address = address.Text,
+                    sex = sex.Text,
                     last_name = last_name.Text,
                     middle_name = middle_name.Text,
                     suffix = suffix.Text,
@@ -183,6 +183,7 @@ namespace EMS
                     regular_pay = regular_pay.Text,
                     regular_worktime = regular_worktime.Text,
                     total_salary = total_rpay.Text,
+                    
                 };
                 //verificationEmpUpdate verificationEmpUpdate = new verificationEmpUpdate();
                 //verificationEmpUpdate.ShowDialog();

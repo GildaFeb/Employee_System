@@ -51,9 +51,7 @@ namespace EMS.Employee_Details
             OleDbConnection Con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
             Con.Open();
             OleDbCommand cmd = new OleDbCommand();
-            cmd.CommandText = "UPDATE EmployeeTbl SET Fname=@fname ,Lname= @lname,Mname=@mname, Suffix=@suffix, Date_joined=@date_joined," +
-                " Birth=@birth, Sex=@sex, Address=@address, Cnumber=@cnumber, Cemergency=@cemergency, email=@email, Designation=@designation, Regular_pay=@red_salary, Regular_worktime=@worktime, " +
-                "Total_rpay=@total_salary WHERE EmployeeID = @empID";
+            cmd.CommandText = "UPDATE EmployeeTbl SET EmployeeID=@empID,Fname=@fname,Mname=@mname,Lname=@lname,Suffix=@suffix,Date_joined=@date_joined,Birth=@birth,Sex=@sex,Address=@address,Cnumber=@cnumber,Cemergency=@cemergency,Email=@email,Designation=@designation,Regular_pay=@reg_salary,Regular_worktime=@worktime,Total_rpay=@total_salary WHERE EmployeeID=@empID";
             cmd.Connection = Con;
             OleDbDataReader read = cmd.ExecuteReader();
             bool check = false;
