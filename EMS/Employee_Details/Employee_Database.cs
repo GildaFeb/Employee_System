@@ -17,7 +17,7 @@ namespace EMS.Employee_Details
                 OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
                 con.Open();
                 OleDbCommand cmd = new OleDbCommand();
-                cmd.CommandText = "INSERT INTO EmployeeTbl(EmployeeID,Fname,Lname,Mname,Suffix,Date_joined,Birth,Sex,Address,Cnumber,Cemergency,Email,Regular_pay,Regular_worktime,Total_rpay) VALUES(@empID,@fname,@lname,@mname,@suffix,@date_joined,@birth,@sex,@address,@cnumber,@cemergency,@email,@reg_salary,@worktime,@total_salary)";
+                cmd.CommandText = "INSERT INTO EmployeeTbl(EmployeeID,Fname,Lname,Mname,Suffix,Date_joined,Birth,Sex,Address,Cnumber,Cemergency,Email,Designation,Regular_pay,Regular_worktime,Total_rpay) VALUES(@empID,@fname,@lname,@mname,@suffix,@date_joined,@birth,@sex,@address,@cnumber,@cemergency,@email,@position_emp,@reg_salary,@worktime,@total_salary)";
                 cmd.Connection = con;
 
                 cmd.Parameters.AddWithValue("@empID", employee.employeeID);
@@ -32,7 +32,7 @@ namespace EMS.Employee_Details
                 cmd.Parameters.AddWithValue("@cnumber", employee.contact_number);
                 cmd.Parameters.AddWithValue("@cemergency", employee.emergency_contact_number);
                 cmd.Parameters.AddWithValue("@email", employee.email);
-                cmd.Parameters.AddWithValue("@position", employee.position);
+                cmd.Parameters.AddWithValue("@position_emp", employee.designation);
                 cmd.Parameters.AddWithValue("@reg_salary", employee.regular_pay);
                 cmd.Parameters.AddWithValue("@worktime", employee.regular_worktime);
                 cmd.Parameters.AddWithValue("@total_salary", employee.total_salary); 
@@ -51,7 +51,7 @@ namespace EMS.Employee_Details
             SqlConnection Con = new SqlConnection(@"Data Source=|DataDiretory|\EmployeeTbl.mdf");
             SqlCommand cmd = new SqlCommand();
             cmd.CommandText = "UPDATE Employee SET Fname= @fname ,Lname= @lname,Mname=@mname, Suffix=@suffix, Date_joined=@date_joined," +
-                " Birth=@birth, Sex=@sex, Address=@address, Cnumber=@cnumber, Cemergency=@cemergency, email=@email, Position=@position, Regular_pay=@red_salary, Regular_worktime=@worktime, " +
+                " Birth=@birth, Sex=@sex, Address=@address, Cnumber=@cnumber, Cemergency=@cemergency, email=@email, Designation=@designation, Regular_pay=@red_salary, Regular_worktime=@worktime, " +
                 "Total_rpay=@total_salary WHERE EmployeeID = @empID";
             cmd.Connection = Con;
             cmd.Parameters.AddWithValue("@empID", employee.employeeID);
@@ -66,60 +66,112 @@ namespace EMS.Employee_Details
             cmd.Parameters.AddWithValue("@cnumber", employee.contact_number);
             cmd.Parameters.AddWithValue("@cemergency", employee.emergency_contact_number);
             cmd.Parameters.AddWithValue("@email", employee.email);
-            cmd.Parameters.AddWithValue("@position", employee.position);
+            cmd.Parameters.AddWithValue("@designation", employee.designation);
             cmd.Parameters.AddWithValue("@reg_salary", employee.regular_pay);
             cmd.Parameters.AddWithValue("@worktime", employee.regular_worktime);
             cmd.Parameters.AddWithValue("@total_salary", employee.total_salary);
 
             return true;
         }
-        public Employee ShowEmployee(int ID)
+        public static Employee ShowEmployee(string ID)
         {
-            SqlCommand cmd = new SqlCommand();
-            SqlConnection con = new SqlConnection(@"Data Source=|DataDiretory|\EmployeeTbl.mdf");
-            MessageBox.Show("Show Employee");
+            OleDbCommand cmd = new OleDbCommand();
+            OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
             con.Open();
-            cmd = new SqlCommand("SELECT * FROM Employee where EmployeeID=" + ID);
+            cmd = new OleDbCommand("SELECT * FROM EmployeeTbl where EmployeeID='" + ID + "'");
             cmd.Connection = con;
-            SqlDataReader read = cmd.ExecuteReader();
+            OleDbDataReader read = cmd.ExecuteReader();
+            Employee employeeInfo = new Employee();
+            while (read.Read())
+            {
+                employeeInfo.first_name = read.GetString(1);
+                employeeInfo.middle_name = read.GetString(2);
+                employeeInfo.last_name = read.GetString(3);
+                employeeInfo.suffix = read.GetString(4);
+                employeeInfo.hired_date = read.GetString(5);
+                employeeInfo.birth_date = read.GetString(6); ;
+                employeeInfo.sex = read.GetString(7);
+                employeeInfo.address = read.GetString(8);
+                employeeInfo.contact_number = read.GetString(9);
+                employeeInfo.email = read.GetString(10);
+                employeeInfo.emergency_contact_number = read.GetString(11);
+                employeeInfo.designation = read.GetString(12);
+                employeeInfo.regular_pay = read.GetString(13);
+                employeeInfo.regular_worktime = read.GetString(14);
+                employeeInfo.total_salary = read.GetString(15);
+                
+            }
+                
+            con.Close();
+            return employeeInfo;
+        }
+
+        public static bool CheckEmployee(string ID)
+        {
+            OleDbCommand cmd = new OleDbCommand();
+            OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
+            con.Open();
+            cmd = new OleDbCommand("SELECT * FROM EmployeeTbl where EmployeeID='" + ID + "'");
+            cmd.Connection = con;
+            OleDbDataReader read = cmd.ExecuteReader();
             bool temp = false;
             Employee employeeInfo = new Employee();
             while (read.Read())
             {
                 employeeInfo.first_name = read.GetString(1);
-                employeeInfo.last_name = read.GetString(2);
-                employeeInfo.middle_name = read.GetString(3);
-                employeeInfo.hired_date = read.GetString(4);
-                employeeInfo.birth_date = read.GetString(5); ;
-                employeeInfo.sex = read.GetString(6);
-                employeeInfo.address = read.GetString(7);
-                employeeInfo.contact_number = read.GetString(8);
-                employeeInfo.email = read.GetString(9);
-                employeeInfo.emergency_contact_number = read.GetString(10);
-                employeeInfo.position = read.GetString(11);
-                employeeInfo.regular_pay = read.GetString(12);
-                employeeInfo.regular_worktime = read.GetString(13);
-                employeeInfo.total_salary = read.GetString(14);
+                employeeInfo.middle_name = read.GetString(2);
+                employeeInfo.last_name = read.GetString(3);
+                employeeInfo.suffix = read.GetString(4);
+                employeeInfo.hired_date = read.GetString(5);
+                employeeInfo.birth_date = read.GetString(6); ;
+                employeeInfo.sex = read.GetString(7);
+                employeeInfo.address = read.GetString(8);
+                employeeInfo.contact_number = read.GetString(9);
+                employeeInfo.email = read.GetString(10);
+                employeeInfo.emergency_contact_number = read.GetString(11);
+                employeeInfo.designation = read.GetString(12);
+                employeeInfo.regular_pay = read.GetString(13);
+                employeeInfo.regular_worktime = read.GetString(14);
+                employeeInfo.total_salary = read.GetString(15);
                 temp = true;
+                
             }
             if (temp == false)
+            {
                 MessageBox.Show("Data not found.");
-            con.Close();
-            return employeeInfo;
+                con.Close();
+                return false;
+            }
+            else
+            {
+                
+                con.Close();
+                return true;
+            }
         }
-        public static bool DeleteEmployee(int ID)
+
+
+
+
+
+
+
+
+
+
+        public static bool DeleteEmployee(string ID)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=|DataDiretory|\EmployeeTbl.mdf");
+            OleDbConnection con = new OleDbConnection(@"Data Source=|DataDiretory|\EmployeeTbl.mdf");
 
             string query = "Delete from data1 where ID= '" + ID + "'";
-            SqlCommand cmd = new SqlCommand(query, con);
-            SqlDataReader myreader;
+            OleDbCommand cmd = new OleDbCommand(query, con);
+            OleDbDataReader reader;
             try
             {
                 con.Open();
-                myreader = cmd.ExecuteReader();
+                reader = cmd.ExecuteReader();
                 MessageBox.Show("successfully data Deleted", "user information");
-                while (myreader.Read())
+                while (reader.Read())
                 {
                 }
                 con.Close();

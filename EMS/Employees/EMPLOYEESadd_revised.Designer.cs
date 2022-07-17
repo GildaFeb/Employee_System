@@ -36,7 +36,6 @@
             this.last_name = new System.Windows.Forms.TextBox();
             this.btn_one1 = new EMS.btn_one();
             this.label1 = new System.Windows.Forms.Label();
-            this.position = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -52,7 +51,6 @@
             this.label12 = new System.Windows.Forms.Label();
             this.first_name = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.middle_name = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.btn_one14 = new EMS.btn_one();
             this.label14 = new System.Windows.Forms.Label();
@@ -92,6 +90,8 @@
             this.total = new System.Windows.Forms.Label();
             this.pay = new System.Windows.Forms.Label();
             this.emp_position = new System.Windows.Forms.Label();
+            this.emp_designation = new System.Windows.Forms.ComboBox();
+            this.middle_name = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
@@ -193,24 +193,6 @@
             this.label1.Text = "Name";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // position
-            // 
-            this.position.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.position.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.position.ForeColor = System.Drawing.Color.Black;
-            this.position.FormattingEnabled = true;
-            this.position.Items.AddRange(new object[] {
-            "Project Manager",
-            "Fullstack Developer",
-            "Software Engineer",
-            "Administrator",
-            "Guard"});
-            this.position.Location = new System.Drawing.Point(599, 325);
-            this.position.Name = "position";
-            this.position.Size = new System.Drawing.Size(349, 33);
-            this.position.TabIndex = 111;
-            this.position.SelectedIndexChanged += new System.EventHandler(this.position_SelectedIndexChanged);
-            // 
             // label3
             // 
             this.label3.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
@@ -236,9 +218,9 @@
             this.label9.Location = new System.Drawing.Point(593, 288);
             this.label9.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(62, 18);
+            this.label9.Size = new System.Drawing.Size(86, 18);
             this.label9.TabIndex = 105;
-            this.label9.Text = "Position";
+            this.label9.Text = "Designation";
             this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label2
@@ -426,20 +408,6 @@
             this.label4.TabIndex = 95;
             this.label4.Text = "First name";
             this.label4.Click += new System.EventHandler(this.label18_Click);
-            // 
-            // middle_name
-            // 
-            this.middle_name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.middle_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.middle_name.ForeColor = System.Drawing.Color.Black;
-            this.middle_name.Location = new System.Drawing.Point(117, 420);
-            this.middle_name.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.middle_name.Multiline = true;
-            this.middle_name.Name = "middle_name";
-            this.middle_name.Size = new System.Drawing.Size(349, 33);
-            this.middle_name.TabIndex = 93;
-            this.middle_name.Text = " ";
-            this.middle_name.TextChanged += new System.EventHandler(this.last_name_TextChanged);
             // 
             // label13
             // 
@@ -685,7 +653,7 @@
             "III",
             "IV",
             "V",
-            "none"});
+            "None"});
             this.suffix.Location = new System.Drawing.Point(117, 616);
             this.suffix.Name = "suffix";
             this.suffix.Size = new System.Drawing.Size(349, 28);
@@ -790,11 +758,11 @@
             this.errorposition.AutoSize = true;
             this.errorposition.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.errorposition.ForeColor = System.Drawing.Color.DarkRed;
-            this.errorposition.Location = new System.Drawing.Point(778, 365);
+            this.errorposition.Location = new System.Drawing.Point(742, 361);
             this.errorposition.Name = "errorposition";
-            this.errorposition.Size = new System.Drawing.Size(188, 20);
+            this.errorposition.Size = new System.Drawing.Size(212, 20);
             this.errorposition.TabIndex = 199;
-            this.errorposition.Text = "Please select their position.";
+            this.errorposition.Text = "Please select their designation.";
             this.errorposition.Visible = false;
             this.errorposition.Click += new System.EventHandler(this.errorposition_Click);
             // 
@@ -974,11 +942,41 @@
             this.emp_position.Text = "label25";
             this.emp_position.Visible = false;
             // 
+            // emp_designation
+            // 
+            this.emp_designation.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.emp_designation.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.emp_designation.ForeColor = System.Drawing.Color.Black;
+            this.emp_designation.FormattingEnabled = true;
+            this.emp_designation.Items.AddRange(new object[] {
+            "Project Manager",
+            "Fullstack Developer",
+            "Software Engineer",
+            "Administrator",
+            "Guard"});
+            this.emp_designation.Location = new System.Drawing.Point(597, 325);
+            this.emp_designation.Name = "emp_designation";
+            this.emp_designation.Size = new System.Drawing.Size(355, 33);
+            this.emp_designation.TabIndex = 215;
+            this.emp_designation.SelectedIndexChanged += new System.EventHandler(this.position_SelectedIndexChanged_1);
+            // 
+            // middle_name
+            // 
+            this.middle_name.FormattingEnabled = true;
+            this.middle_name.Items.AddRange(new object[] {
+            "None"});
+            this.middle_name.Location = new System.Drawing.Point(117, 419);
+            this.middle_name.Name = "middle_name";
+            this.middle_name.Size = new System.Drawing.Size(349, 28);
+            this.middle_name.TabIndex = 216;
+            // 
             // EMPLOYEESadd_revised
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.Controls.Add(this.middle_name);
+            this.Controls.Add(this.emp_designation);
             this.Controls.Add(this.emp_position);
             this.Controls.Add(this.pay);
             this.Controls.Add(this.total);
@@ -1012,7 +1010,6 @@
             this.Controls.Add(this.label19);
             this.Controls.Add(this.sex);
             this.Controls.Add(this.regular_pay);
-            this.Controls.Add(this.position);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label9);
@@ -1033,7 +1030,6 @@
             this.Controls.Add(this.cnumber_emergency);
             this.Controls.Add(this.email);
             this.Controls.Add(this.contact_number);
-            this.Controls.Add(this.middle_name);
             this.Controls.Add(this.address);
             this.Controls.Add(this.first_name);
             this.Controls.Add(this.last_name);
@@ -1061,7 +1057,6 @@
         private TextBox last_name;
         private btn_one btn_one1;
         private Label label1;
-        private ComboBox position;
         private Label label3;
         private Label label9;
         private Label label2;
@@ -1077,7 +1072,6 @@
         private Label label12;
         private TextBox first_name;
         private Label label4;
-        private TextBox middle_name;
         private Label label13;
         private btn_one btn_one14;
         private Label label14;
@@ -1117,5 +1111,7 @@
         private Label total;
         private Label pay;
         private Label emp_position;
+        private ComboBox emp_designation;
+        private ComboBox middle_name;
     }
 }

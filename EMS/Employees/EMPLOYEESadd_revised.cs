@@ -23,7 +23,7 @@ namespace EMS
             last_name.MaxLength = 50;
             first_name.MaxLength = 50;
             middle_name.MaxLength = 50;
-            position.MaxLength = 50;
+            emp_designation.MaxLength = 50;
             email.MaxLength = 50;
             address.MaxLength = 50;
             contact_number.MaxLength = 15;
@@ -233,7 +233,7 @@ namespace EMS
 
         private void position_SelectedIndexChanged(object sender, EventArgs e)
         {
-            emp_position.Text = position.Text;
+            emp_position.Text = emp_designation.Text;
         }
 
         private void btn_one1_Click(object sender, EventArgs e)
@@ -259,7 +259,7 @@ namespace EMS
                  string.IsNullOrWhiteSpace(contact_number.Text) ||
                  string.IsNullOrWhiteSpace(cnumber_emergency.Text) ||
                  string.IsNullOrWhiteSpace(suffix.Text) ||
-                 string.IsNullOrWhiteSpace(position.Text) ||
+                 string.IsNullOrWhiteSpace(emp_designation.Text) ||
                  string.IsNullOrWhiteSpace(regular_pay.Text) ||
                  string.IsNullOrWhiteSpace(regular_worktime.Text) ||
                  string.IsNullOrWhiteSpace(sex.Text))
@@ -304,7 +304,7 @@ namespace EMS
                  {
                      errorsuffix.Visible = false;
                  }
-                 if (string.IsNullOrWhiteSpace(position.Text))
+                 if (string.IsNullOrWhiteSpace(emp_designation.Text))
                  {
                      errorposition.Visible = true;
                  }
@@ -390,7 +390,7 @@ namespace EMS
                  suffix = suffix.Text,
                  birth_date = birth.Text,
                  hired_date = hired_date.Text,
-                 position = emp_position.Text,
+                 designation = emp_position.Text,
                  contact_number = contact_number.Text,
                  emergency_contact_number = cnumber_emergency.Text,
                  regular_pay = pay.Text,
@@ -407,9 +407,9 @@ namespace EMS
                     employee_id.Clear();
                     last_name.Clear();
                     first_name.Clear();
-                    middle_name.Clear();
+                    middle_name.SelectedItem = null;
                     suffix.SelectedItem = null;
-                    position.SelectedItem = null;
+                    emp_designation.SelectedItem = null;
                     regular_pay.SelectedItem = null;
                     regular_worktime.SelectedItem = null;
                     total_rpay.Clear();
@@ -473,10 +473,6 @@ namespace EMS
 
         private void sex_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (sex.Text == "Female")
-            {
-                suffix.Text = "none";
-            }
         }
 
         private void birth_ValueChanged(object sender, EventArgs e)
@@ -538,6 +534,8 @@ namespace EMS
 
                     total_rpay.Text = (Pay * 48).ToString();
                 }
+                worktime.Text = regular_worktime.Text;
+                total.Text = total_rpay.Text;
                 pay.Text = regular_pay.Text;
             }
             else
@@ -559,9 +557,9 @@ namespace EMS
             employee_id.Clear();
             last_name.Clear();
             first_name.Clear();
-            middle_name.Clear();
+            middle_name.SelectedItem = null;
             suffix.SelectedItem = null;
-            position.SelectedItem = null;
+            emp_designation.SelectedItem = null;
             regular_pay.SelectedItem = null;
             regular_worktime.SelectedItem = null;
             total_rpay.Clear();
@@ -572,6 +570,8 @@ namespace EMS
             email.Clear();
             cnumber_emergency.Clear();
             birth.Value = DateTime.Today;
+            Generate_EmployeeID();
+
         }
 
 
@@ -603,6 +603,8 @@ namespace EMS
                     total_rpay.Text = (Pay * 48).ToString();
                 }
                 worktime.Text = regular_worktime.Text;
+                total.Text = total_rpay.Text;
+                pay.Text = regular_pay.Text;
             }
             else
             {
@@ -694,6 +696,11 @@ namespace EMS
         private void total_rpay_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void position_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            emp_position.Text = emp_designation.Text;
         }
     }
 }

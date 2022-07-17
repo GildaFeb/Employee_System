@@ -75,7 +75,7 @@ namespace EMS
                 contact_number = contact_number.Text,
                 email = email.Text,
                 emergency_contact_number = emergency_contact.Text,
-                position = position.Text,
+                //designation = de.Text,
                 total_salary = salary.Text
 
 

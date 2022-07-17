@@ -119,7 +119,7 @@ namespace EMS
                     OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
 
                     con.Open();
-                    OleDbCommand cmd = new OleDbCommand("Select * from EmployeeTbl Where Lname ='" + Search.Text + "'", con);
+                    OleDbCommand cmd = new OleDbCommand("Select * from EmployeeTbl Where Fname ='" + Search.Text + "'", con);
                     OleDbDataReader read = cmd.ExecuteReader();
                     DataTable dt = new DataTable();
                     dt.Load(read);
@@ -140,12 +140,22 @@ namespace EMS
 
         private void btn_one3_Click(object sender, EventArgs e)
         {
-            ArrayList selectedRows = new ArrayList();
             int count = 0;
-           
-            MessageBox.Show(selectedRows.ToString());    
-            Int32 selectedRowCount = tableDelete_DGV.Rows.GetRowCount(DataGridViewElementStates.Selected);
-            if (selectedRowCount > 0)
+            Int32 selectedCellCount =
+            tableDelete_DGV.GetCellCount(DataGridViewElementStates.Selected);
+            foreach (DataGridViewRow Row in tableDelete_DGV.Rows)
+            {
+                if (!(((DataGridViewCheckBoxCell)Row.Cells["checkBoxColumn"]).Value == null))
+                {
+                    count++;
+                }
+            }
+            int i;
+            i = tableDelete_DGV.SelectedCells[0].RowIndex;
+
+            OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
+            OleDbCommand delcmd = new OleDbCommand();
+            if (count != 0)
             {
                 try
                 {
@@ -157,39 +167,39 @@ namespace EMS
                     result = MessageBox.Show(this, msg, caption, buttons, ico);
                     if (result == DialogResult.Yes)
                     {
-
-                        using (OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True")) //ADDED
+                        using (OleDbConnection Con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True")) //ADDED
                         {
-                            OleDbCommand delcmd = new OleDbCommand();
-                            con.Open();
-                            
-                            foreach (DataGridViewRow item in this.tableDelete_DGV.Rows)
+                            OleDbCommand command = new OleDbCommand();
+                            Con.Open();
+                            //ArrayList id = new ArrayList();
+                            foreach (DataGridViewRow Row in tableDelete_DGV.Rows)
                             {
-                                    
                                     try
                                     {
-                                            delcmd.CommandText = "DELETE FROM EmployeeTbl WHERE EmployeeID= '" + tableDelete_DGV.SelectedRows[0].Cells[0].Value + "'";
-                                            delcmd.Connection = con;
-                                            delcmd.ExecuteNonQuery();
-                                            tableDelete_DGV.Rows.RemoveAt(this.tableDelete_DGV.SelectedRows[0].Index); //not sure
-                                        
-                                        
+                                        if(!(((DataGridViewCheckBoxCell)Row.Cells["checkBoxColumn"]).Value == null))
+                                        {  //id.Add(tableDelete_DGV.Rows[Row.Index].Cells[1].Value);
+                                            command.CommandText = "DELETE FROM EmployeeTbl WHERE EmployeeID= '" + tableDelete_DGV.Rows[Row.Index].Cells[1].Value+ "'";
+                                            command.Connection = con;
+                                            command.ExecuteNonQuery();
+                                            tableDelete_DGV.Rows.RemoveAt(Row.Index); //not sure
+                                        }
                                     }
                                     catch (Exception ex)
                                     {
                                         MessageBox.Show(ex.ToString());
                                     }
-
                             }
-                            con.Close();
+                            Con.Close();
+                            successEMPdelete successEMPdelete = new successEMPdelete();
+                            successEMPdelete.ShowDialog();
                         }
-                        successEMPdelete successEMPdelete = new successEMPdelete();
-                        successEMPdelete.ShowDialog();
+                        
                     }
                     else
                     {
                         return;
                     }
+
                 }
                 catch (Exception ex)
                 {
@@ -198,6 +208,18 @@ namespace EMS
                 }
 
             }
+            else if (tableDelete_DGV.SelectedCells.Count > 0)
+            {
+                delcmd.CommandText = "DELETE FROM EmployeeTbl WHERE EmployeeID=" + tableDelete_DGV.SelectedRows[i].Cells[0].Value.ToString() + "";
+                con.Open();
+                delcmd.Connection = con;
+                delcmd.ExecuteNonQuery();
+                con.Close();
+                tableDelete_DGV.Rows.RemoveAt(tableDelete_DGV.SelectedRows[i].Index);
+                MessageBox.Show("Row Deleted");
+            }
+
+
             else
             {
                 MessageBox.Show(" Please select record you want to delete.");

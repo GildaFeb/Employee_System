@@ -58,10 +58,9 @@
             this.label19 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.first_name = new System.Windows.Forms.TextBox();
-            this.middle_name = new System.Windows.Forms.TextBox();
             this.last_name = new System.Windows.Forms.TextBox();
             this.suffix = new System.Windows.Forms.ComboBox();
-            this.position = new System.Windows.Forms.ComboBox();
+            this.designation = new System.Windows.Forms.ComboBox();
             this.regular_pay = new System.Windows.Forms.ComboBox();
             this.regular_worktime = new System.Windows.Forms.ComboBox();
             this.total_rpay = new System.Windows.Forms.TextBox();
@@ -86,6 +85,7 @@
             this.btn_one1 = new EMS.btn_one();
             this.errorbirth = new System.Windows.Forms.Label();
             this.hired_date = new System.Windows.Forms.DateTimePicker();
+            this.middle_name = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
@@ -160,9 +160,9 @@
             this.label9.Location = new System.Drawing.Point(595, 288);
             this.label9.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(62, 18);
+            this.label9.Size = new System.Drawing.Size(86, 18);
             this.label9.TabIndex = 150;
-            this.label9.Text = "Position";
+            this.label9.Text = "Designation";
             // 
             // label21
             // 
@@ -479,20 +479,6 @@
             this.first_name.TabIndex = 181;
             this.first_name.Text = " ";
             // 
-            // middle_name
-            // 
-            this.middle_name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.middle_name.Enabled = false;
-            this.middle_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.middle_name.ForeColor = System.Drawing.Color.Black;
-            this.middle_name.Location = new System.Drawing.Point(122, 513);
-            this.middle_name.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.middle_name.Multiline = true;
-            this.middle_name.Name = "middle_name";
-            this.middle_name.Size = new System.Drawing.Size(349, 33);
-            this.middle_name.TabIndex = 182;
-            this.middle_name.Text = " ";
-            // 
             // last_name
             // 
             this.last_name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -518,27 +504,30 @@
             "III",
             "IV",
             "V",
-            "none"});
+            "None"});
             this.suffix.Location = new System.Drawing.Point(121, 617);
             this.suffix.Name = "suffix";
             this.suffix.Size = new System.Drawing.Size(350, 28);
             this.suffix.TabIndex = 184;
             // 
-            // position
+            // designation
             // 
-            this.position.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.position.Enabled = false;
-            this.position.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.position.ForeColor = System.Drawing.Color.Black;
-            this.position.FormattingEnabled = true;
-            this.position.Items.AddRange(new object[] {
-            "Position A",
-            "Position B",
-            "Position C"});
-            this.position.Location = new System.Drawing.Point(595, 327);
-            this.position.Name = "position";
-            this.position.Size = new System.Drawing.Size(349, 33);
-            this.position.TabIndex = 185;
+            this.designation.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.designation.Enabled = false;
+            this.designation.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.designation.ForeColor = System.Drawing.Color.Black;
+            this.designation.FormattingEnabled = true;
+            this.designation.Items.AddRange(new object[] {
+            "Project Manager",
+            "Fullstack Developer",
+            "Software Engineer",
+            "Administrator",
+            "Guard"});
+            this.designation.Location = new System.Drawing.Point(595, 327);
+            this.designation.Name = "designation";
+            this.designation.Size = new System.Drawing.Size(349, 33);
+            this.designation.TabIndex = 185;
+            this.designation.SelectedIndexChanged += new System.EventHandler(this.designation_SelectedIndexChanged);
             // 
             // regular_pay
             // 
@@ -865,11 +854,23 @@
             this.hired_date.TabIndex = 208;
             this.hired_date.Value = new System.DateTime(2022, 7, 9, 17, 59, 52, 886);
             // 
+            // middle_name
+            // 
+            this.middle_name.Enabled = false;
+            this.middle_name.FormattingEnabled = true;
+            this.middle_name.Items.AddRange(new object[] {
+            "None"});
+            this.middle_name.Location = new System.Drawing.Point(121, 514);
+            this.middle_name.Name = "middle_name";
+            this.middle_name.Size = new System.Drawing.Size(350, 28);
+            this.middle_name.TabIndex = 209;
+            // 
             // EMPLOYEESupdate_revised
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.Controls.Add(this.middle_name);
             this.Controls.Add(this.hired_date);
             this.Controls.Add(this.errorbirth);
             this.Controls.Add(this.birth);
@@ -893,10 +894,9 @@
             this.Controls.Add(this.total_rpay);
             this.Controls.Add(this.regular_worktime);
             this.Controls.Add(this.regular_pay);
-            this.Controls.Add(this.position);
+            this.Controls.Add(this.designation);
             this.Controls.Add(this.suffix);
             this.Controls.Add(this.last_name);
-            this.Controls.Add(this.middle_name);
             this.Controls.Add(this.first_name);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.pictureBox2);
@@ -968,10 +968,9 @@
         private DateTimePicker hired_date;
         private PictureBox pictureBox3;
         private TextBox first_name;
-        private TextBox middle_name;
         private TextBox last_name;
         private ComboBox suffix;
-        private ComboBox position;
+        private ComboBox designation;
         private ComboBox regular_pay;
         private ComboBox regular_worktime;
         private TextBox total_rpay;
@@ -994,5 +993,6 @@
         private Label erroraddress;
         private DateTimePicker birth;
         private Label errorbirth;
+        private ComboBox middle_name;
     }
 }

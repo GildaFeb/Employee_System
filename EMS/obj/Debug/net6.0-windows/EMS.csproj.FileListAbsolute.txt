@@ -850,6 +850,7 @@ C:\Users\gilda\OneDrive\Desktop\July 14\Employee_System\EMS\obj\Debug\net6.0-win
 C:\Users\gilda\OneDrive\Desktop\July 14\Employee_System\EMS\obj\Debug\net6.0-windows\ref\EMS.dll
 C:\Users\Asus\Source\Repos\GildaFeb\Employee_System\EMS\obj\Debug\net6.0-windows\UserCtrls.UserControl1.resources
 C:\Users\gilda\OneDrive\Desktop\July 16\Employee_System\EMS\bin\Debug\net6.0-windows\EMS.exe
+C:\Users\gilda\OneDrive\Desktop\July 16\Employee_System\EMS\bin\Debug\net6.0-windows\EMS.dll.config
 C:\Users\gilda\OneDrive\Desktop\July 16\Employee_System\EMS\bin\Debug\net6.0-windows\EMS.deps.json
 C:\Users\gilda\OneDrive\Desktop\July 16\Employee_System\EMS\bin\Debug\net6.0-windows\EMS.runtimeconfig.json
 C:\Users\gilda\OneDrive\Desktop\July 16\Employee_System\EMS\bin\Debug\net6.0-windows\EMS.dll
@@ -951,4 +952,3 @@ C:\Users\gilda\OneDrive\Desktop\July 16\Employee_System\EMS\obj\Debug\net6.0-win
 C:\Users\gilda\OneDrive\Desktop\July 16\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.pdb
 C:\Users\gilda\OneDrive\Desktop\July 16\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.genruntimeconfig.cache
 C:\Users\gilda\OneDrive\Desktop\July 16\Employee_System\EMS\obj\Debug\net6.0-windows\ref\EMS.dll
-C:\Users\gilda\OneDrive\Desktop\July 16\Employee_System\EMS\bin\Debug\net6.0-windows\EMS.dll.config

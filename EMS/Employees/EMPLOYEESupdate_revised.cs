@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,7 +20,7 @@ namespace EMS
             last_name.MaxLength = 50;
             first_name.MaxLength = 50;
             middle_name.MaxLength = 50;
-            position.MaxLength = 50;
+            designation.MaxLength = 50;
             email.MaxLength = 50;
             address.MaxLength = 50;
             contact_number.MaxLength = 15;
@@ -44,7 +45,7 @@ namespace EMS
                 string.IsNullOrWhiteSpace(contact_number.Text) ||
                 string.IsNullOrWhiteSpace(cnumber_emergency.Text) ||
                 string.IsNullOrWhiteSpace(suffix.Text) ||
-                string.IsNullOrWhiteSpace(position.Text) ||
+                string.IsNullOrWhiteSpace(designation.Text) ||
                 string.IsNullOrWhiteSpace(regular_pay.Text) ||
                 string.IsNullOrWhiteSpace(regular_worktime.Text) ||
                 string.IsNullOrWhiteSpace(sex.Text))
@@ -82,7 +83,7 @@ namespace EMS
                 {
                     errorsuffix.Visible = false;
                 }
-                if (string.IsNullOrWhiteSpace(position.Text))
+                if (string.IsNullOrWhiteSpace(designation.Text))
                 {
                     errorposition.Visible = true;
                 }
@@ -146,6 +147,14 @@ namespace EMS
                 {
                     errorcnumber_emergency.Visible = false;
                 }
+                if (string.IsNullOrWhiteSpace(hired_date.Text))
+                {
+                    errorcnumber_emergency.Visible = true;
+                }
+                else
+                {
+                    errorcnumber_emergency.Visible = false;
+                }
 
                 errorEmptyFields errorEmptyFields = new errorEmptyFields();
                 errorEmptyFields.ShowDialog();
@@ -169,7 +178,7 @@ namespace EMS
                     suffix = suffix.Text.ToString(),
                     birth_date = birthday.ToString(),
                     hired_date = date_joined.ToString(),
-                    position = position.Text.ToString(),
+                    designation = designation.Text.ToString(),
                     contact_number = contact_number.Text.ToString(),
                     emergency_contact_number = cnumber_emergency.Text.ToString(),
                     regular_pay = regular_pay.Text.ToString(),
@@ -190,10 +199,9 @@ namespace EMS
 
                         employee_id.Clear();
                         last_name.Clear();
-                        first_name.Clear();
-                        middle_name.Clear();
+                        middle_name.SelectedItem = null;
                         suffix.SelectedItem = null;
-                        position.SelectedItem = null;
+                        designation.SelectedItem = null;
                         regular_pay.SelectedItem = null;
                         regular_worktime.SelectedItem = null;
                         total_rpay.Clear();
@@ -227,9 +235,9 @@ namespace EMS
             employee_id.Clear();
             last_name.Clear();
             first_name.Clear();
-            middle_name.Clear();
+            middle_name.SelectedItem = null;
             suffix.SelectedItem = null;
-            position.SelectedItem = null;
+            designation.SelectedItem = null;
             regular_pay.SelectedItem = null;
             regular_worktime.SelectedItem = null;
             total_rpay.Clear();
@@ -330,7 +338,74 @@ namespace EMS
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-           
+            bool check = Employee_Details.Employee_Database.CheckEmployee(employee_id.Text);
+            if (!string.IsNullOrWhiteSpace(employee_id.Text) && check == true)
+            {
+                last_name.Enabled = true;
+                first_name.Enabled = true;
+                middle_name.Enabled = true;
+                suffix.Enabled = true;
+                designation.Enabled = true;
+                regular_pay.Enabled = true;
+                regular_worktime.Enabled = true;
+                sex.Enabled = true;
+                address.Enabled = true;
+                contact_number.Enabled = true;
+                email.Enabled = true;
+                cnumber_emergency.Enabled = true;
+                hired_date.Enabled = true;
+                birth.Enabled = true;
+
+                last_name.Text = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).first_name.ToString();
+                first_name.Text = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).last_name.ToString();
+                middle_name.Text = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).middle_name.ToString();
+                suffix.Text = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).suffix.ToString();
+                hired_date.Value = DateTime.Parse(Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).hired_date.ToString());
+                birth.Value = DateTime.Parse(Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).birth_date.ToString());
+                sex.Text = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).sex.ToString();
+                address.Text = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).address.ToString();
+                contact_number.Text = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).contact_number.ToString();
+                cnumber_emergency.Text = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).emergency_contact_number.ToString();
+                email.Text = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).email.ToString();
+                designation.Text = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).designation.ToString();
+                regular_pay.Text = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).regular_pay.ToString();
+                regular_worktime.Text = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).regular_worktime.ToString();
+                total_rpay.Text = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).total_salary.ToString();
+            }
+            else if (string.IsNullOrWhiteSpace(employee_id.Text) && check == false)
+            {
+                last_name.Enabled = false;
+                first_name.Enabled = false;
+                middle_name.Enabled = false;
+                suffix.Enabled = false;
+                designation.Enabled = false;
+                regular_pay.Enabled = false;
+                regular_worktime.Enabled = false;
+                sex.Enabled = false;
+                address.Enabled = false;
+                contact_number.Enabled = false;
+                email.Enabled = false;
+                cnumber_emergency.Enabled = false;
+                hired_date.Enabled = false;
+                birth.Enabled = false;
+
+
+                last_name.Clear();
+                first_name.Clear();
+                middle_name.SelectedItem = null;
+                suffix.SelectedItem = null;
+                designation.SelectedItem = null;
+                regular_pay.SelectedItem = null;
+                regular_worktime.SelectedItem = null;
+                total_rpay.Clear();
+                sex.SelectedItem = null;
+                hired_date.Value = DateTime.Today;
+                address.Clear();
+                contact_number.Clear();
+                email.Clear();
+                cnumber_emergency.Clear();
+                birth.Value = DateTime.Today;
+            }
         }
 
         private void regular_pay_SelectedIndexChanged_1(object sender, EventArgs e)
@@ -413,13 +488,15 @@ namespace EMS
 
         private void employee_id_TextChanged(object sender, EventArgs e)
         {
-            if (!string.IsNullOrWhiteSpace(employee_id.Text))
+
+            bool check = Employee_Details.Employee_Database.CheckEmployee(employee_id.Text);
+            if (!string.IsNullOrWhiteSpace(employee_id.Text) && check == true)
             {
                 last_name.Enabled = true;
                 first_name.Enabled = true;
                 middle_name.Enabled = true;
                 suffix.Enabled = true;
-                position.Enabled = true;
+                designation.Enabled = true;
                 regular_pay.Enabled = true;
                 regular_worktime.Enabled = true;
                 sex.Enabled = true;
@@ -429,14 +506,30 @@ namespace EMS
                 cnumber_emergency.Enabled = true;
                 hired_date.Enabled = true;
                 birth.Enabled = true;
+
+                last_name.Text = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).first_name.ToString();
+                first_name.Text = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).last_name.ToString();
+                middle_name.Text = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).middle_name.ToString();
+                suffix.Text = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).suffix.ToString();
+                hired_date.Value = DateTime.Parse(Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).hired_date.ToString());
+                birth.Value = DateTime.Parse(Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).birth_date.ToString());
+                sex.Text = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).sex.ToString();
+                address.Text = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).address.ToString();
+                contact_number.Text = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).contact_number.ToString();
+                cnumber_emergency.Text = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).emergency_contact_number.ToString();
+                email.Text = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).email.ToString();
+                designation.Text = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).designation.ToString();
+                regular_pay.Text = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).regular_pay.ToString();
+                regular_worktime.Text = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).regular_worktime.ToString();
+                total_rpay.Text = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).total_salary.ToString();
             }
-            else if (string.IsNullOrWhiteSpace(employee_id.Text))
+            else if (string.IsNullOrWhiteSpace(employee_id.Text) && check == false)
             {
                 last_name.Enabled = false;
                 first_name.Enabled = false;
                 middle_name.Enabled = false;
                 suffix.Enabled = false;
-                position.Enabled = false;
+                designation.Enabled = false;
                 regular_pay.Enabled = false;
                 regular_worktime.Enabled = false;
                 sex.Enabled = false;
@@ -446,7 +539,29 @@ namespace EMS
                 cnumber_emergency.Enabled = false;
                 hired_date.Enabled = false;
                 birth.Enabled = false;
+
+
+                last_name.Clear();
+                first_name.Clear();
+                middle_name.SelectedItem = null;
+                suffix.SelectedItem = null;
+                designation.SelectedItem = null;
+                regular_pay.SelectedItem = null;
+                regular_worktime.SelectedItem = null;
+                total_rpay.Clear();
+                sex.SelectedItem = null;
+                hired_date.Value = DateTime.Today;
+                address.Clear();
+                contact_number.Clear();
+                email.Clear();
+                cnumber_emergency.Clear();
+                birth.Value = DateTime.Today;
             }
-            }
+        }
+
+        private void designation_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

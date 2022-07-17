@@ -19,7 +19,7 @@ namespace EMS.Employee_Details
         public string address { get; set; }
         public string contact_number { get; set; }
         public string emergency_contact_number { get; set; }
-        public string position { get; set; }
+        public string designation { get; set; }
         public string regular_pay { get; set; }
         public string email { get; set; }
         public string hired_date { get; set; }
