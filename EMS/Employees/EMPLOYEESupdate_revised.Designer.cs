@@ -118,7 +118,7 @@
             this.btn_save.Name = "btn_save";
             this.btn_save.Size = new System.Drawing.Size(242, 51);
             this.btn_save.TabIndex = 159;
-            this.btn_save.Text = "Save";
+            this.btn_save.Text = "Update";
             this.btn_save.UseVisualStyleBackColor = false;
             this.btn_save.Click += new System.EventHandler(this.btn_one3_Click);
             // 
