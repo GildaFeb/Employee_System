@@ -164,33 +164,36 @@ namespace EMS
                 // ----------- Update Employee: Passing data to database -----------
 
                 //int ID = Int32.Parse(employee_id.Text);
-                string date_joined = hired_date.CustomFormat = "MM-dd-yyyy";
-                string birthday = birth.CustomFormat = "MM-dd-yyyy";
+                
                 Employee_Details.Employee employeeInfo = new Employee_Details.Employee()
                 {
 
-                    employeeID = employee_id.Text.ToString(),
-                    first_name = first_name.Text.ToString(),
-                    email = email.Text.ToString(),
-                    address = address.Text.ToString(),
-                    last_name = last_name.Text.ToString(),
-                    middle_name = middle_name.Text.ToString(),
-                    suffix = suffix.Text.ToString(),
-                    birth_date = birthday.ToString(),
-                    hired_date = date_joined.ToString(),
-                    designation = designation.Text.ToString(),
-                    contact_number = contact_number.Text.ToString(),
-                    emergency_contact_number = cnumber_emergency.Text.ToString(),
-                    regular_pay = regular_pay.Text.ToString(),
-                    regular_worktime = regular_worktime.Text.ToString(),
-                    total_salary = total_rpay.Text.ToString(),
+                    employeeID = employee_id.Text,
+                    first_name = first_name.Text,
+                    email = email.Text,
+                    address = address.Text,
+                    last_name = last_name.Text,
+                    middle_name = middle_name.Text,
+                    suffix = suffix.Text,
+                    birth_date = birth.Text,
+                    hired_date = hired_date.Text,
+                    designation = designation.Text,
+                    contact_number = contact_number.Text,
+                    emergency_contact_number = cnumber_emergency.Text,
+                    regular_pay = regular_pay.Text,
+                    regular_worktime = regular_worktime.Text,
+                    total_salary = total_rpay.Text,
                 };
-                verificationEmpUpdate verificationEmpUpdate = new verificationEmpUpdate();
-                verificationEmpUpdate.ShowDialog();
-
-
-                if (!(verificationEmpUpdate.ShowDialog() == DialogResult.Cancel))
-                {
+                //verificationEmpUpdate verificationEmpUpdate = new verificationEmpUpdate();
+                //verificationEmpUpdate.ShowDialog();
+                String msg = "Update this employee's details. Do you want to continue?";
+                String caption = "Update Employee";
+                MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+                MessageBoxIcon ico = MessageBoxIcon.Question;
+                DialogResult result;
+                result = MessageBox.Show(this, msg, caption, buttons, ico);
+                if (result == DialogResult.Yes)
+                { 
                     bool check = Employee_Details.Employee_Database.UpdateEmployee(employeeInfo);
                     if (check == true)
                     {
@@ -398,8 +401,8 @@ namespace EMS
                 hired_date.Enabled = true;
                 birth.Enabled = true;
 
-                last_name.Text = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).first_name.ToString();
-                first_name.Text = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).last_name.ToString();
+                last_name.Text = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).last_name.ToString();
+                first_name.Text = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).first_name.ToString();
                 middle_name.Text = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).middle_name.ToString();
                 suffix.Text = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).suffix.ToString();
                 hired_date.Value = DateTime.Parse(Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).hired_date.ToString());

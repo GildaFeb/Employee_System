@@ -114,21 +114,9 @@ namespace EMS
                     tableDelete_DGV.DataSource = dt;
                     
                 }
-                else if (Search.Text.Contains(alph))
-                {
-                    OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
-
-                    con.Open();
-                    OleDbCommand cmd = new OleDbCommand("Select * from EmployeeTbl Where Fname ='" + Search.Text + "'", con);
-                    OleDbDataReader read = cmd.ExecuteReader();
-                    DataTable dt = new DataTable();
-                    dt.Load(read);
-                    tableDelete_DGV.DataSource = dt;
-                    
-                }
                 else
                 {
-                    MessageBox.Show("Error. Enter ID or Name.");
+                    MessageBox.Show("Error. Employee ID not found.");
                 }
 
             }

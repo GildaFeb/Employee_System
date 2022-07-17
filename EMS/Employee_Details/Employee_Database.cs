@@ -10,7 +10,7 @@ namespace EMS.Employee_Details
 {
     internal class Employee_Database
     {
-        // ======== EMPLOYEE PAGE =======
+        // ======== EMPLOYEE PAGE ======= ITO ITO ITO
         public static bool AddEmployee(Employee employee)
         {
             
@@ -48,30 +48,45 @@ namespace EMS.Employee_Details
         }
         public static bool UpdateEmployee(Employee employee)
         {
-            SqlConnection Con = new SqlConnection(@"Data Source=|DataDiretory|\EmployeeTbl.mdf");
-            SqlCommand cmd = new SqlCommand();
-            cmd.CommandText = "UPDATE Employee SET Fname= @fname ,Lname= @lname,Mname=@mname, Suffix=@suffix, Date_joined=@date_joined," +
+            OleDbConnection Con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
+            Con.Open();
+            OleDbCommand cmd = new OleDbCommand();
+            cmd.CommandText = "UPDATE EmployeeTbl SET Fname=@fname ,Lname= @lname,Mname=@mname, Suffix=@suffix, Date_joined=@date_joined," +
                 " Birth=@birth, Sex=@sex, Address=@address, Cnumber=@cnumber, Cemergency=@cemergency, email=@email, Designation=@designation, Regular_pay=@red_salary, Regular_worktime=@worktime, " +
                 "Total_rpay=@total_salary WHERE EmployeeID = @empID";
             cmd.Connection = Con;
-            cmd.Parameters.AddWithValue("@empID", employee.employeeID);
-            cmd.Parameters.AddWithValue("@fname", employee.first_name);
-            cmd.Parameters.AddWithValue("@lname", employee.last_name);
-            cmd.Parameters.AddWithValue("@mname", employee.middle_name);
-            cmd.Parameters.AddWithValue("@suffix", employee.suffix);
-            cmd.Parameters.AddWithValue("@date_joined", employee.hired_date);
-            cmd.Parameters.AddWithValue("@birth", employee.birth_date);
-            cmd.Parameters.AddWithValue("@sex", employee.sex);
-            cmd.Parameters.AddWithValue("@address", employee.address);
-            cmd.Parameters.AddWithValue("@cnumber", employee.contact_number);
-            cmd.Parameters.AddWithValue("@cemergency", employee.emergency_contact_number);
-            cmd.Parameters.AddWithValue("@email", employee.email);
-            cmd.Parameters.AddWithValue("@designation", employee.designation);
-            cmd.Parameters.AddWithValue("@reg_salary", employee.regular_pay);
-            cmd.Parameters.AddWithValue("@worktime", employee.regular_worktime);
-            cmd.Parameters.AddWithValue("@total_salary", employee.total_salary);
-
-            return true;
+            OleDbDataReader read = cmd.ExecuteReader();
+            bool check = false;
+            while (read.Read())
+            {
+                cmd.Parameters.AddWithValue("@empID", employee.employeeID);
+                cmd.Parameters.AddWithValue("@fname", employee.first_name);
+                cmd.Parameters.AddWithValue("@lname", employee.last_name);
+                cmd.Parameters.AddWithValue("@mname", employee.middle_name);
+                cmd.Parameters.AddWithValue("@suffix", employee.suffix);
+                cmd.Parameters.AddWithValue("@date_joined", employee.hired_date);
+                cmd.Parameters.AddWithValue("@birth", employee.birth_date);
+                cmd.Parameters.AddWithValue("@sex", employee.sex);
+                cmd.Parameters.AddWithValue("@address", employee.address);
+                cmd.Parameters.AddWithValue("@cnumber", employee.contact_number);
+                cmd.Parameters.AddWithValue("@cemergency", employee.emergency_contact_number);
+                cmd.Parameters.AddWithValue("@email", employee.email);
+                cmd.Parameters.AddWithValue("@designation", employee.designation);
+                cmd.Parameters.AddWithValue("@reg_salary", employee.regular_pay);
+                cmd.Parameters.AddWithValue("@worktime", employee.regular_worktime);
+                cmd.Parameters.AddWithValue("@total_salary", employee.total_salary);
+                check = true;
+            }
+            if (check == false)
+            {
+                Con.Close();
+                return false;
+            }
+            else
+            {
+                Con.Open();
+                return true;
+            }
         }
         public static Employee ShowEmployee(string ID)
         {
@@ -85,8 +100,8 @@ namespace EMS.Employee_Details
             while (read.Read())
             {
                 employeeInfo.first_name = read.GetString(1);
-                employeeInfo.middle_name = read.GetString(2);
-                employeeInfo.last_name = read.GetString(3);
+                employeeInfo.middle_name = read.GetString(3);
+                employeeInfo.last_name = read.GetString(2);
                 employeeInfo.suffix = read.GetString(4);
                 employeeInfo.hired_date = read.GetString(5);
                 employeeInfo.birth_date = read.GetString(6); ;
@@ -149,15 +164,6 @@ namespace EMS.Employee_Details
                 return true;
             }
         }
-
-
-
-
-
-
-
-
-
 
         public static bool DeleteEmployee(string ID)
         {

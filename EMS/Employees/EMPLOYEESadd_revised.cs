@@ -398,7 +398,6 @@ namespace EMS
                     total_salary = total.Text
                 };
 
-                // (Not yet finished) = adding to database
                 String msg = "Register employee. Do you want to continue?";
                 String caption = "Register Employee";
                 MessageBoxButtons buttons = MessageBoxButtons.YesNo;
