@@ -15,7 +15,8 @@ namespace EMS
         public dashboard()
         {
             InitializeComponent();
-
+            emp_num.Text = Employee_Details.Employee_Database.EmployeeNum().ToString();
+            
 
         }
 

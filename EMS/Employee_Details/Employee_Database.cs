@@ -10,7 +10,35 @@ namespace EMS.Employee_Details
 {
     internal class Employee_Database
     {
+
+        // ======== DASHBOARD =====
+
+        public static int EmployeeNum()
+        {
+            /* OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
+
+             con.Open();
+             OleDbCommand cmd = new OleDbCommand("SELECT COUNT(*) FROM EmployeeTbl", con);
+             cmd.ExecuteReader();
+             int count = cmd.ExecuteScalar().ToString();
+             con.Close();
+             return count;*/
+            int count = 0;
+            OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
+
+            con.Open();
+            OleDbCommand cmd = new OleDbCommand("Select * from EmployeeTbl", con);
+            OleDbDataReader read = cmd.ExecuteReader();
+            while (read.Read())
+            {
+                count++;
+            }
+            return count;
+        }
+
+
         // ======== EMPLOYEE PAGE ======= ITO ITO ITO
+
         public static bool AddEmployee(Employee employee)
         {
             
