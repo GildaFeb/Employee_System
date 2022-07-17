@@ -203,7 +203,7 @@ namespace EMS
 
                         employee_id.Clear();
                         last_name.Clear();
-                        middle_name.SelectedItem = null;
+                        middle_name.Items.Clear();
                         suffix.SelectedItem = null;
                         designation.SelectedItem = null;
                         regular_pay.SelectedItem = null;
@@ -216,6 +216,7 @@ namespace EMS
                         email.Clear();
                         cnumber_emergency.Clear();
                         birth.Value = DateTime.Today;
+                        first_name.Clear();
 
                         errorlast_name.Visible = false;
                         errorfirst_name.Visible = false;

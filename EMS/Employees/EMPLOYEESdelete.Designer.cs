@@ -95,7 +95,7 @@
             this.Search.Name = "Search";
             this.Search.Size = new System.Drawing.Size(341, 23);
             this.Search.TabIndex = 75;
-            this.Search.Text = "Enter ID";
+            this.Search.Text = "Enter ID Number";
             this.Search.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // pictureBox1

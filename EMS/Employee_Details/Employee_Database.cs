@@ -48,16 +48,15 @@ namespace EMS.Employee_Details
         }
         public static bool UpdateEmployee(Employee employee)
         {
-            OleDbConnection Con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
-            Con.Open();
-            OleDbCommand cmd = new OleDbCommand();
-            cmd.CommandText = "UPDATE EmployeeTbl SET EmployeeID=@empID,Fname=@fname,Mname=@mname,Lname=@lname,Suffix=@suffix,Date_joined=@date_joined,Birth=@birth,Sex=@sex,Address=@address,Cnumber=@cnumber,Cemergency=@cemergency,Email=@email,Designation=@designation,Regular_pay=@reg_salary,Regular_worktime=@worktime,Total_rpay=@total_salary WHERE EmployeeID=@empID";
-            cmd.Connection = Con;
-            OleDbDataReader read = cmd.ExecuteReader();
-            bool check = false;
-            while (read.Read())
+           
+               
+            try
             {
-                cmd.Parameters.AddWithValue("@empID", employee.employeeID);
+                OleDbConnection Con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
+                Con.Open();
+                OleDbCommand cmd = new OleDbCommand("UPDATE EmployeeTbl SET Fname='" + employee.first_name + "',Lname='" + employee.last_name + "',Mname='" + employee.middle_name + "',Suffix='" + employee.suffix + "',Date_joined='" + employee.hired_date + "',Birth='" + employee.birth_date + "',Sex='" + employee.sex + "',Address='" + employee.address + "',Cnumber='" + employee.contact_number + "',Cemergency='" + employee.emergency_contact_number+ "',Email='" + employee.email + "',Designation='" + employee.designation + "',Regular_pay='" + employee.regular_pay + "',Regular_worktime='" + employee.regular_worktime + "', Total_rpay='" + employee.total_salary + "'  WHERE EmployeeID='" + employee.employeeID + "'", Con);
+
+                /*cmd.Parameters.AddWithValue("@empID", employee.employeeID);
                 cmd.Parameters.AddWithValue("@fname", employee.first_name);
                 cmd.Parameters.AddWithValue("@lname", employee.last_name);
                 cmd.Parameters.AddWithValue("@mname", employee.middle_name);
@@ -72,18 +71,17 @@ namespace EMS.Employee_Details
                 cmd.Parameters.AddWithValue("@designation", employee.designation);
                 cmd.Parameters.AddWithValue("@reg_salary", employee.regular_pay);
                 cmd.Parameters.AddWithValue("@worktime", employee.regular_worktime);
-                cmd.Parameters.AddWithValue("@total_salary", employee.total_salary);
-                check = true;
-            }
-            if (check == false)
-            {
+                cmd.Parameters.AddWithValue("@total_salary", employee.total_salary);*/
+                
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("sukses");
                 Con.Close();
-                return false;
-            }
-            else
-            {
-                Con.Open();
                 return true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return false;
             }
         }
         public static Employee ShowEmployee(string ID)
