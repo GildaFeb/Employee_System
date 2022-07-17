@@ -374,72 +374,82 @@ namespace EMS
              }
              else
              {
-            // ----------- Add Employee: Passing data to database -----------
-            //int ID = Convert.ToInt32(this.employee_id.Text);
+                // ----------- Add Employee: Passing data to database -----------
+                //int ID = Convert.ToInt32(this.employee_id.Text);
 
-            
-            Employee_Details.Employee employeeInfo = new Employee_Details.Employee()
-            {
-                 employeeID = employee_id.Text,
-                 first_name = first_name.Text,
-                 last_name = last_name.Text,
-                 sex = sex.Text,
-                 email = email.Text,
-                 address = address.Text,
-                 middle_name = middle_name.Text,
-                 suffix = suffix.Text,
-                 birth_date = birth.Text,
-                 hired_date = hired_date.Text,
-                 designation = emp_position.Text,
-                 contact_number = contact_number.Text,
-                 emergency_contact_number = cnumber_emergency.Text,
-                 regular_pay = pay.Text,
-                 regular_worktime = worktime.Text,
-                 total_salary = total.Text
-            };
-                
+
+                Employee_Details.Employee employeeInfo = new Employee_Details.Employee()
+                {
+                    employeeID = employee_id.Text,
+                    first_name = first_name.Text,
+                    last_name = last_name.Text,
+                    sex = sex.Text,
+                    email = email.Text,
+                    address = address.Text,
+                    middle_name = middle_name.Text,
+                    suffix = suffix.Text,
+                    birth_date = birth.Text,
+                    hired_date = hired_date.Text,
+                    designation = emp_position.Text,
+                    contact_number = contact_number.Text,
+                    emergency_contact_number = cnumber_emergency.Text,
+                    regular_pay = pay.Text,
+                    regular_worktime = worktime.Text,
+                    total_salary = total.Text
+                };
+
                 // (Not yet finished) = adding to database
-                bool check = Employee_Details.Employee_Database.AddEmployee(employeeInfo);
-                if (check == true) 
+                String msg = "Register employee. Do you want to continue?";
+                String caption = "Register Employee";
+                MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+                MessageBoxIcon ico = MessageBoxIcon.Question;
+                DialogResult result;
+                result = MessageBox.Show(this, msg, caption, buttons, ico);
+                if (result == DialogResult.Yes)
                 {
-                    successEMPadd successEMPadd = new successEMPadd();
-                    successEMPadd.ShowDialog();
-                    employee_id.Clear();
-                    last_name.Clear();
-                    first_name.Clear();
-                    middle_name.SelectedItem = null;
-                    suffix.SelectedItem = null;
-                    emp_designation.SelectedItem = null;
-                    regular_pay.SelectedItem = null;
-                    regular_worktime.SelectedItem = null;
-                    total_rpay.Clear();
-                    sex.SelectedItem = null;
-                    hired_date.Value = DateTime.Today;
-                    address.Clear();
-                    contact_number.Clear();
-                    email.Clear();
-                    cnumber_emergency.Clear();
-                    birth.Value = DateTime.Today;
+                    bool check = Employee_Details.Employee_Database.AddEmployee(employeeInfo);
+                    if (check == true)
+                    {
+                        successEMPadd successEMPadd = new successEMPadd();
+                        successEMPadd.ShowDialog();
+                        employee_id.Clear();
+                        last_name.Clear();
+                        first_name.Clear();
+                        middle_name.SelectedItem = null;
+                        suffix.SelectedItem = null;
+                        emp_designation.SelectedItem = null;
+                        regular_pay.SelectedItem = null;
+                        regular_worktime.SelectedItem = null;
+                        total_rpay.Clear();
+                        sex.SelectedItem = null;
+                        hired_date.Value = DateTime.Today;
+                        address.Clear();
+                        contact_number.Clear();
+                        email.Clear();
+                        cnumber_emergency.Clear();
+                        birth.Value = DateTime.Today;
 
-                    errorlast_name.Visible = false;
-                    errorfirst_name.Visible = false;
-                    errormiddle_name.Visible = false;
-                    errorsuffix.Visible = false;
-                    errorposition.Visible = false;
-                    errorregular_pay.Visible = false;
-                    errorregular_worktime.Visible = false;
-                    errorsex.Visible = false;
-                    erroraddress.Visible = false;
-                    errorcontact_number.Visible = false;
-                    erroremail.Visible = false;
-                    errorcnumber_emergency.Visible = false;
-                    Generate_EmployeeID();
+                        errorlast_name.Visible = false;
+                        errorfirst_name.Visible = false;
+                        errormiddle_name.Visible = false;
+                        errorsuffix.Visible = false;
+                        errorposition.Visible = false;
+                        errorregular_pay.Visible = false;
+                        errorregular_worktime.Visible = false;
+                        errorsex.Visible = false;
+                        erroraddress.Visible = false;
+                        errorcontact_number.Visible = false;
+                        erroremail.Visible = false;
+                        errorcnumber_emergency.Visible = false;
+                        Generate_EmployeeID();
+                    }
+                    else
+                    {
+                        errorEMPadd errorEMPadd = new errorEMPadd();
+                        errorEMPadd.ShowDialog();
+                    }
                 }
-                else
-                {
-                    errorEMPadd errorEMPadd = new errorEMPadd();
-                    errorEMPadd.ShowDialog();
-                }
+                 
 
                 
             }
@@ -554,23 +564,34 @@ namespace EMS
 
         private void btn_clear_Click(object sender, EventArgs e)
         {
-            employee_id.Clear();
-            last_name.Clear();
-            first_name.Clear();
-            middle_name.SelectedItem = null;
-            suffix.SelectedItem = null;
-            emp_designation.SelectedItem = null;
-            regular_pay.SelectedItem = null;
-            regular_worktime.SelectedItem = null;
-            total_rpay.Clear();
-            sex.SelectedItem = null;
-            hired_date.Value = DateTime.Today;
-            address.Clear();
-            contact_number.Clear();
-            email.Clear();
-            cnumber_emergency.Clear();
-            birth.Value = DateTime.Today;
-            Generate_EmployeeID();
+
+            String msg = "Do you want to clear all fields? ";
+            String caption = "Clear all fields";
+            MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+            MessageBoxIcon ico = MessageBoxIcon.Question;
+            DialogResult result;
+            result = MessageBox.Show(this, msg, caption, buttons, ico);
+            if (result == DialogResult.Yes)
+            {
+                employee_id.Clear();
+                last_name.Clear();
+                first_name.Clear();
+                middle_name.SelectedItem = null;
+                suffix.SelectedItem = null;
+                emp_designation.SelectedItem = null;
+                regular_pay.SelectedItem = null;
+                regular_worktime.SelectedItem = null;
+                total_rpay.Clear();
+                sex.SelectedItem = null;
+                hired_date.Value = DateTime.Today;
+                address.Clear();
+                contact_number.Clear();
+                email.Clear();
+                cnumber_emergency.Clear();
+                birth.Value = DateTime.Today;
+                Generate_EmployeeID();
+            }
+               
 
         }
 
