@@ -36,10 +36,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.db_ViewCalendarBtn = new EMS.btn_one();
             this.db_ViewWelcomeBtn = new EMS.btn_dashboard();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btn_search = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.dayTodayLbl = new System.Windows.Forms.Label();
@@ -47,12 +44,12 @@
             this.timeTmr = new System.Windows.Forms.Timer(this.components);
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.num_guard = new System.Windows.Forms.Label();
+            this.project_num = new System.Windows.Forms.Label();
             this.guard = new System.Windows.Forms.Label();
-            this.num_instructor = new System.Windows.Forms.Label();
+            this.fullstack_dev_num = new System.Windows.Forms.Label();
             this.instructor = new System.Windows.Forms.Label();
-            this.num_receptionist = new System.Windows.Forms.Label();
-            this.receptionist = new System.Windows.Forms.Label();
+            this.software_engineer_num = new System.Windows.Forms.Label();
+            this.software_eng = new System.Windows.Forms.Label();
             this.emp_num = new System.Windows.Forms.Label();
             this.time_in = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
@@ -63,12 +60,11 @@
             this.label14 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.num_administrator = new System.Windows.Forms.Label();
+            this.administrator_num = new System.Windows.Forms.Label();
             this.administrator = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.btn_about = new EMS.btn_one();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.btn_one2 = new EMS.btn_one();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -168,29 +164,6 @@
             this.db_ViewWelcomeBtn.UseVisualStyleBackColor = false;
             this.db_ViewWelcomeBtn.Click += new System.EventHandler(this.db_ViewWelcomeBtn_Click);
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.White;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(1059, 77);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(35, 28);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 21;
-            this.pictureBox2.TabStop = false;
-            // 
-            // btn_search
-            // 
-            this.btn_search.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.btn_search.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn_search.ForeColor = System.Drawing.Color.DarkGray;
-            this.btn_search.Location = new System.Drawing.Point(1100, 79);
-            this.btn_search.Name = "btn_search";
-            this.btn_search.Size = new System.Drawing.Size(340, 23);
-            this.btn_search.TabIndex = 19;
-            this.btn_search.Text = "Search";
-            this.btn_search.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -202,16 +175,6 @@
             this.label1.Size = new System.Drawing.Size(232, 48);
             this.label1.TabIndex = 18;
             this.label1.Text = "Dashboard";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1042, 65);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(422, 52);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 20;
-            this.pictureBox1.TabStop = false;
             // 
             // label2
             // 
@@ -290,18 +253,18 @@
             this.pictureBox4.TabIndex = 112;
             this.pictureBox4.TabStop = false;
             // 
-            // num_guard
+            // project_num
             // 
-            this.num_guard.AutoSize = true;
-            this.num_guard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            this.num_guard.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.num_guard.ForeColor = System.Drawing.Color.White;
-            this.num_guard.Location = new System.Drawing.Point(774, 268);
-            this.num_guard.Name = "num_guard";
-            this.num_guard.Size = new System.Drawing.Size(48, 32);
-            this.num_guard.TabIndex = 111;
-            this.num_guard.Text = "45";
-            this.num_guard.Click += new System.EventHandler(this.label7_Click);
+            this.project_num.AutoSize = true;
+            this.project_num.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
+            this.project_num.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.project_num.ForeColor = System.Drawing.Color.White;
+            this.project_num.Location = new System.Drawing.Point(774, 268);
+            this.project_num.Name = "project_num";
+            this.project_num.Size = new System.Drawing.Size(48, 32);
+            this.project_num.TabIndex = 111;
+            this.project_num.Text = "45";
+            this.project_num.Click += new System.EventHandler(this.label7_Click);
             // 
             // guard
             // 
@@ -309,24 +272,24 @@
             this.guard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.guard.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.guard.ForeColor = System.Drawing.Color.White;
-            this.guard.Location = new System.Drawing.Point(873, 274);
+            this.guard.Location = new System.Drawing.Point(845, 274);
             this.guard.Name = "guard";
             this.guard.Size = new System.Drawing.Size(155, 25);
             this.guard.TabIndex = 110;
             this.guard.Text = "Project Manager";
             // 
-            // num_instructor
+            // fullstack_dev_num
             // 
-            this.num_instructor.AutoSize = true;
-            this.num_instructor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            this.num_instructor.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.num_instructor.ForeColor = System.Drawing.Color.White;
-            this.num_instructor.Location = new System.Drawing.Point(774, 318);
-            this.num_instructor.Name = "num_instructor";
-            this.num_instructor.Size = new System.Drawing.Size(48, 32);
-            this.num_instructor.TabIndex = 111;
-            this.num_instructor.Text = "86";
-            this.num_instructor.Click += new System.EventHandler(this.label9_Click);
+            this.fullstack_dev_num.AutoSize = true;
+            this.fullstack_dev_num.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
+            this.fullstack_dev_num.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.fullstack_dev_num.ForeColor = System.Drawing.Color.White;
+            this.fullstack_dev_num.Location = new System.Drawing.Point(774, 318);
+            this.fullstack_dev_num.Name = "fullstack_dev_num";
+            this.fullstack_dev_num.Size = new System.Drawing.Size(48, 32);
+            this.fullstack_dev_num.TabIndex = 111;
+            this.fullstack_dev_num.Text = "86";
+            this.fullstack_dev_num.Click += new System.EventHandler(this.label9_Click);
             // 
             // instructor
             // 
@@ -334,37 +297,37 @@
             this.instructor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.instructor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.instructor.ForeColor = System.Drawing.Color.White;
-            this.instructor.Location = new System.Drawing.Point(874, 323);
+            this.instructor.Location = new System.Drawing.Point(845, 324);
             this.instructor.Name = "instructor";
             this.instructor.Size = new System.Drawing.Size(134, 25);
             this.instructor.TabIndex = 110;
             this.instructor.Text = "Fullstack Dev.";
             // 
-            // num_receptionist
+            // software_engineer_num
             // 
-            this.num_receptionist.AutoSize = true;
-            this.num_receptionist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            this.num_receptionist.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.num_receptionist.ForeColor = System.Drawing.Color.White;
-            this.num_receptionist.Location = new System.Drawing.Point(774, 362);
-            this.num_receptionist.Name = "num_receptionist";
-            this.num_receptionist.Size = new System.Drawing.Size(48, 32);
-            this.num_receptionist.TabIndex = 111;
-            this.num_receptionist.Text = "16";
-            this.num_receptionist.Click += new System.EventHandler(this.label11_Click);
+            this.software_engineer_num.AutoSize = true;
+            this.software_engineer_num.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
+            this.software_engineer_num.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.software_engineer_num.ForeColor = System.Drawing.Color.White;
+            this.software_engineer_num.Location = new System.Drawing.Point(774, 362);
+            this.software_engineer_num.Name = "software_engineer_num";
+            this.software_engineer_num.Size = new System.Drawing.Size(48, 32);
+            this.software_engineer_num.TabIndex = 111;
+            this.software_engineer_num.Text = "16";
+            this.software_engineer_num.Click += new System.EventHandler(this.label11_Click);
             // 
-            // receptionist
+            // software_eng
             // 
-            this.receptionist.AutoSize = true;
-            this.receptionist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            this.receptionist.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.receptionist.ForeColor = System.Drawing.Color.White;
-            this.receptionist.Location = new System.Drawing.Point(874, 371);
-            this.receptionist.Name = "receptionist";
-            this.receptionist.Size = new System.Drawing.Size(140, 25);
-            this.receptionist.TabIndex = 110;
-            this.receptionist.Text = "Software Engr.";
-            this.receptionist.Click += new System.EventHandler(this.label12_Click);
+            this.software_eng.AutoSize = true;
+            this.software_eng.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
+            this.software_eng.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.software_eng.ForeColor = System.Drawing.Color.White;
+            this.software_eng.Location = new System.Drawing.Point(845, 368);
+            this.software_eng.Name = "software_eng";
+            this.software_eng.Size = new System.Drawing.Size(140, 25);
+            this.software_eng.TabIndex = 110;
+            this.software_eng.Text = "Software Engr.";
+            this.software_eng.Click += new System.EventHandler(this.label12_Click);
             // 
             // emp_num
             // 
@@ -483,18 +446,18 @@
             this.pictureBox9.TabIndex = 113;
             this.pictureBox9.TabStop = false;
             // 
-            // num_administrator
+            // administrator_num
             // 
-            this.num_administrator.AutoSize = true;
-            this.num_administrator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            this.num_administrator.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.num_administrator.ForeColor = System.Drawing.Color.White;
-            this.num_administrator.Location = new System.Drawing.Point(774, 414);
-            this.num_administrator.Name = "num_administrator";
-            this.num_administrator.Size = new System.Drawing.Size(48, 32);
-            this.num_administrator.TabIndex = 111;
-            this.num_administrator.Text = "99";
-            this.num_administrator.Click += new System.EventHandler(this.label11_Click);
+            this.administrator_num.AutoSize = true;
+            this.administrator_num.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
+            this.administrator_num.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.administrator_num.ForeColor = System.Drawing.Color.White;
+            this.administrator_num.Location = new System.Drawing.Point(774, 414);
+            this.administrator_num.Name = "administrator_num";
+            this.administrator_num.Size = new System.Drawing.Size(48, 32);
+            this.administrator_num.TabIndex = 111;
+            this.administrator_num.Text = "99";
+            this.administrator_num.Click += new System.EventHandler(this.label11_Click);
             // 
             // administrator
             // 
@@ -502,7 +465,7 @@
             this.administrator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.administrator.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.administrator.ForeColor = System.Drawing.Color.White;
-            this.administrator.Location = new System.Drawing.Point(874, 419);
+            this.administrator.Location = new System.Drawing.Point(845, 414);
             this.administrator.Name = "administrator";
             this.administrator.Size = new System.Drawing.Size(126, 25);
             this.administrator.TabIndex = 110;
@@ -534,11 +497,28 @@
             this.btn_about.Text = "Log out";
             this.btn_about.UseVisualStyleBackColor = false;
             // 
+            // btn_one2
+            // 
+            this.btn_one2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(37)))), ((int)(((byte)(83)))));
+            this.btn_one2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_one2.FlatAppearance.BorderSize = 0;
+            this.btn_one2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_one2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_one2.ForeColor = System.Drawing.Color.White;
+            this.btn_one2.Location = new System.Drawing.Point(858, 65);
+            this.btn_one2.Name = "btn_one2";
+            this.btn_one2.Size = new System.Drawing.Size(608, 48);
+            this.btn_one2.TabIndex = 132;
+            this.btn_one2.Text = "Reload Data";
+            this.btn_one2.UseVisualStyleBackColor = false;
+            this.btn_one2.Click += new System.EventHandler(this.btn_one2_Click);
+            // 
             // dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.Controls.Add(this.btn_one2);
             this.Controls.Add(this.btn_about);
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.pictureBox6);
@@ -546,29 +526,26 @@
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.administrator);
-            this.Controls.Add(this.receptionist);
+            this.Controls.Add(this.software_eng);
             this.Controls.Add(this.instructor);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.num_administrator);
+            this.Controls.Add(this.administrator_num);
             this.Controls.Add(this.guard);
-            this.Controls.Add(this.num_receptionist);
-            this.Controls.Add(this.num_instructor);
+            this.Controls.Add(this.software_engineer_num);
+            this.Controls.Add(this.fullstack_dev_num);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label24);
             this.Controls.Add(this.label23);
-            this.Controls.Add(this.num_guard);
+            this.Controls.Add(this.project_num);
             this.Controls.Add(this.time_out);
             this.Controls.Add(this.time_in);
             this.Controls.Add(this.emp_num);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.dayTodayLbl);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.btn_search);
             this.Controls.Add(this.clockLbl);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.db_ViewSalaryBtn);
             this.Controls.Add(this.db_ViewAttendanceBtn);
             this.Controls.Add(this.db_ViewEmployeesBtn);
@@ -578,8 +555,6 @@
             this.Name = "dashboard";
             this.Size = new System.Drawing.Size(1555, 1033);
             this.Load += new System.EventHandler(this.dashboard_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
@@ -599,10 +574,7 @@
         private Label label3;
         private btn_one db_ViewCalendarBtn;
         private btn_dashboard db_ViewWelcomeBtn;
-        private PictureBox pictureBox2;
-        private TextBox btn_search;
         private Label label1;
-        private PictureBox pictureBox1;
         private Label label2;
         private Label label4;
         private Label dayTodayLbl;
@@ -610,12 +582,12 @@
         private System.Windows.Forms.Timer timeTmr;
         private PictureBox pictureBox3;
         private PictureBox pictureBox4;
-        private Label num_guard;
+        private Label project_num;
         private Label guard;
-        private Label num_instructor;
+        private Label fullstack_dev_num;
         private Label instructor;
-        private Label num_receptionist;
-        private Label receptionist;
+        private Label software_engineer_num;
+        private Label software_eng;
         private Label emp_num;
         private Label time_in;
         private Label label23;
@@ -626,9 +598,10 @@
         private Label label14;
         private PictureBox pictureBox6;
         private PictureBox pictureBox9;
-        private Label num_administrator;
+        private Label administrator_num;
         private Label administrator;
         private PictureBox pictureBox8;
         private btn_one btn_about;
+        private btn_one btn_one2;
     }
 }

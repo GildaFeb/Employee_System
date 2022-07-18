@@ -27,7 +27,7 @@ namespace EMS.Employee_Details
             OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
 
             con.Open();
-            OleDbCommand cmd = new OleDbCommand("Select * from EmployeeTbl", con);
+            OleDbCommand cmd = new OleDbCommand("SELECT * FROM EmployeeTbl", con);
             OleDbDataReader read = cmd.ExecuteReader();
             while (read.Read())
             {
@@ -35,6 +35,65 @@ namespace EMS.Employee_Details
             }
             return count;
         }
+
+        public static int ProjectNumCount()
+        {
+            int count = 0;
+            OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
+
+            con.Open();
+            OleDbCommand cmd = new OleDbCommand("SELECT * FROM EmployeeTbl WHERE Designation = 'Project Manager'", con);
+            OleDbDataReader read = cmd.ExecuteReader();
+            while (read.Read())
+            {
+                count++;
+            }
+            return count;
+        }
+
+        public static int AdministratorCount()
+        {
+            int count = 0;
+            OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
+
+            con.Open();
+            OleDbCommand cmd = new OleDbCommand("SELECT * FROM EmployeeTbl WHERE Designation = 'Administrator'", con);
+            OleDbDataReader read = cmd.ExecuteReader();
+            while (read.Read())
+            {
+                count++;
+            }
+            return count;
+        }
+        public static int SoftwareEngCount()
+        {
+            int count = 0;
+            OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
+
+            con.Open();
+            OleDbCommand cmd = new OleDbCommand("SELECT * FROM EmployeeTbl WHERE Designation = 'Software Engineer'", con);
+            OleDbDataReader read = cmd.ExecuteReader();
+            while (read.Read())
+            {
+                count++;
+            }
+            return count;
+        }
+        public static int FullStackDevCount()
+        {
+            int count = 0;
+            OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
+
+            con.Open();
+            OleDbCommand cmd = new OleDbCommand("SELECT * FROM EmployeeTbl WHERE Designation = 'Fullstack Developer'", con);
+            OleDbDataReader read = cmd.ExecuteReader();
+            while (read.Read())
+            {
+                count++;
+            }
+            return count;
+        }
+
 
 
         // ======== EMPLOYEE PAGE ======= ITO ITO ITO
