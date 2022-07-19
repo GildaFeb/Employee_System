@@ -15,6 +15,7 @@ namespace EMS
         public ATTENDANCEdutydurationAddREVISED()
         {
             InitializeComponent();
+            date_duty.CustomFormat = "dddd MMMM dd, yyyy";
         }
 
         private void AddSave_Click(object sender, EventArgs e)
@@ -116,12 +117,74 @@ namespace EMS
 
         private void employee_id_TextChanged(object sender, EventArgs e)
         {
-
+            time_in.Text = employee_id.Text;
         }
 
         private void inTime_ValueChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void time_in_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+            
+        }
+
+        private void now_timein_Click(object sender, EventArgs e)
+        {
+            DateTime now = DateTime.Now;
+            //DateTime dateTime = DateTime.ParseExact(now.Date.ToString(), "hh:mm", System.Globalization.CultureInfo.InvariantCulture);
+            time_in.Text = now.ToString("HH:mm");
+        }
+
+        private void now_timeout_Click(object sender, EventArgs e)
+        {
+            DateTime now = DateTime.Now;
+            time_out.Text = now.ToString("HH:mm");
+        }
+
+        private void clear_timein_Click(object sender, EventArgs e)
+        {
+            time_out.Text = null;
+        }
+
+        private void clear_timeout_Click(object sender, EventArgs e)
+        {
+            time_out.Text = null;
+        }
+
+        private void btn_findemployee_Click(object sender, EventArgs e)
+        {
+            if(employee_id.Text== null)
+            {
+                MessageBox.Show(" Please enter ID number (e.g., 90012983)");
+            }
+            else
+            {
+                bool validation = Employee_Details.Employee_Database.ShowDuty_ByIDandDate(employee_id.Text, date_duty.Text);
+
+                if (validation == true)
+                {
+                    status.Enabled = true;
+                    time_in.Enabled = true;
+                    time_out.Enabled = true;
+                    string firstName, middleName, lastName, suffix;
+
+                    firstName = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).first_name.ToString();
+                    middleName = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).first_name.ToString();
+                    lastName = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).first_name.ToString();
+                    suffix = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).first_name.ToString();
+
+                    if(suffix == null)
+                    {
+                        employee_name.Text = firstName + middleName + lastName;
+                    }
+                    else
+                    {
+                        employee_name.Text = firstName + middleName + lastName + suffix;
+                    }
+                }
+            }
         }
     }
 }

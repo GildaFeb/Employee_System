@@ -276,7 +276,7 @@ namespace EMS.Employee_Details
 
         // -------- END: EMPLOYEE PAGE --------
 
-        // ======== DUTY DURATION PAGE / REPORT ATTENDACE =======
+        // ======== REPORT ATTENDACE =======
 
         public static void ShowEmployee_ByMonthYear()
         {
@@ -295,27 +295,37 @@ namespace EMS.Employee_Details
 
         }
 
-        // ---------- END: DUTY DURATION PAGE / REPORT ATTENDACE -----
+        // ---------- END: REPORT ATTENDACE -----
 
         // ======== DUTY DURATION PAGE  =======
 
-        public static bool DeleteDuty()
-        {
-            MessageBox.Show("Show Employee");
-            return true;
-        }
+        
         public static bool UpdateDuty()
         {
             MessageBox.Show("Delete Employee");
             return true;
         }
-        public static void ShowDuty_ByName()
-        {
 
-        }
-        public static void ShowDuty_ByID()
+        public static bool ShowDuty_ByIDandDate(string ID, string date)
         {
+            int count = 0;
+            OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
 
+            con.Open();
+            OleDbCommand cmd = new OleDbCommand("SELECT * FROM DutyTbl WHERE EmployeeID = '"+ID+"' AND DutyDate ='"+date+"'", con);
+            OleDbDataReader read = cmd.ExecuteReader();
+            while (read.Read())
+            {
+                count++;
+            }
+            if(count == 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         // ------- END: DUTY DURATION PAGE  ------
