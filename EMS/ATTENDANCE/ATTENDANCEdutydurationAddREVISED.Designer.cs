@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.btn_clear = new EMS.btn_one();
-            this.btn_save = new EMS.btn_one();
+            this.pending = new EMS.btn_one();
             this.LblName = new System.Windows.Forms.Label();
             this.AddLblOvertime = new System.Windows.Forms.Label();
             this.AddLblTimeOut = new System.Windows.Forms.Label();
@@ -40,7 +40,7 @@
             this.AddLblDate = new System.Windows.Forms.Label();
             this.employee_id = new System.Windows.Forms.TextBox();
             this.AddLblId = new System.Windows.Forms.Label();
-            this.duration = new System.Windows.Forms.TextBox();
+            this.duty_duration = new System.Windows.Forms.TextBox();
             this.overtime = new System.Windows.Forms.TextBox();
             this.employee_name = new System.Windows.Forms.TextBox();
             this.LblStatus = new EMS.btn_one();
@@ -48,17 +48,22 @@
             this.Addbkgrnd = new EMS.btn_one();
             this.status = new EMS.CComboBox();
             this.btn_findemployee = new EMS.btn_one();
-            this.time_in = new System.Windows.Forms.MaskedTextBox();
             this.time_out = new System.Windows.Forms.MaskedTextBox();
             this.clear_timein = new System.Windows.Forms.Label();
             this.now_timein = new System.Windows.Forms.Label();
             this.now_timeout = new System.Windows.Forms.Label();
             this.clear_timeout = new System.Windows.Forms.Label();
+            this.timein = new System.Windows.Forms.DateTimePicker();
+            this.timeout = new System.Windows.Forms.DateTimePicker();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.submit = new EMS.btn_one();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn_clear
             // 
-            this.btn_clear.BackColor = System.Drawing.Color.DarkGray;
+            this.btn_clear.BackColor = System.Drawing.Color.DimGray;
             this.btn_clear.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_clear.FlatAppearance.BorderSize = 0;
             this.btn_clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -72,21 +77,21 @@
             this.btn_clear.UseVisualStyleBackColor = false;
             this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
             // 
-            // btn_save
+            // pending
             // 
-            this.btn_save.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(202)))), ((int)(((byte)(63)))));
-            this.btn_save.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_save.FlatAppearance.BorderSize = 0;
-            this.btn_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_save.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_save.ForeColor = System.Drawing.Color.White;
-            this.btn_save.Location = new System.Drawing.Point(1191, 692);
-            this.btn_save.Name = "btn_save";
-            this.btn_save.Size = new System.Drawing.Size(229, 51);
-            this.btn_save.TabIndex = 196;
-            this.btn_save.Text = "Save";
-            this.btn_save.UseVisualStyleBackColor = false;
-            this.btn_save.Click += new System.EventHandler(this.AddSave_Click);
+            this.pending.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(202)))), ((int)(((byte)(63)))));
+            this.pending.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pending.FlatAppearance.BorderSize = 0;
+            this.pending.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pending.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.pending.ForeColor = System.Drawing.Color.White;
+            this.pending.Location = new System.Drawing.Point(1190, 692);
+            this.pending.Name = "pending";
+            this.pending.Size = new System.Drawing.Size(229, 51);
+            this.pending.TabIndex = 196;
+            this.pending.Text = "Pending";
+            this.pending.UseVisualStyleBackColor = false;
+            this.pending.Click += new System.EventHandler(this.AddSave_Click);
             // 
             // LblName
             // 
@@ -139,6 +144,7 @@
             this.AddLblDuration.Size = new System.Drawing.Size(64, 18);
             this.AddLblDuration.TabIndex = 190;
             this.AddLblDuration.Text = "Duration";
+            this.AddLblDuration.Click += new System.EventHandler(this.AddLblDuration_Click);
             // 
             // AddLlblTimeIn
             // 
@@ -204,7 +210,6 @@
             this.employee_id.Name = "employee_id";
             this.employee_id.Size = new System.Drawing.Size(349, 31);
             this.employee_id.TabIndex = 184;
-            this.employee_id.Text = " ";
             this.employee_id.TextChanged += new System.EventHandler(this.employee_id_TextChanged);
             // 
             // AddLblId
@@ -220,24 +225,26 @@
             this.AddLblId.TabIndex = 185;
             this.AddLblId.Text = "Date";
             // 
-            // duration
+            // duty_duration
             // 
-            this.duration.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.duration.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.duration.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.duration.ForeColor = System.Drawing.Color.Black;
-            this.duration.Location = new System.Drawing.Point(1009, 500);
-            this.duration.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.duration.Multiline = true;
-            this.duration.Name = "duration";
-            this.duration.Size = new System.Drawing.Size(349, 31);
-            this.duration.TabIndex = 183;
-            this.duration.Text = " ";
+            this.duty_duration.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.duty_duration.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.duty_duration.Enabled = false;
+            this.duty_duration.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.duty_duration.ForeColor = System.Drawing.Color.Black;
+            this.duty_duration.Location = new System.Drawing.Point(1009, 500);
+            this.duty_duration.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.duty_duration.Multiline = true;
+            this.duty_duration.Name = "duty_duration";
+            this.duty_duration.Size = new System.Drawing.Size(349, 31);
+            this.duty_duration.TabIndex = 183;
+            this.duty_duration.Text = " ";
             // 
             // overtime
             // 
             this.overtime.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.overtime.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.overtime.Enabled = false;
             this.overtime.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.overtime.ForeColor = System.Drawing.Color.Black;
             this.overtime.Location = new System.Drawing.Point(1009, 592);
@@ -314,6 +321,7 @@
             this.status.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.status.BorderSize = 0;
             this.status.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.status.Enabled = false;
             this.status.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.status.ForeColor = System.Drawing.Color.Black;
             this.status.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
@@ -334,13 +342,13 @@
             // 
             // btn_findemployee
             // 
-            this.btn_findemployee.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(37)))), ((int)(((byte)(83)))));
+            this.btn_findemployee.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.btn_findemployee.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_findemployee.FlatAppearance.BorderSize = 0;
             this.btn_findemployee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_findemployee.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_findemployee.ForeColor = System.Drawing.Color.White;
-            this.btn_findemployee.Location = new System.Drawing.Point(1067, 315);
+            this.btn_findemployee.Location = new System.Drawing.Point(1051, 315);
             this.btn_findemployee.Name = "btn_findemployee";
             this.btn_findemployee.Size = new System.Drawing.Size(225, 51);
             this.btn_findemployee.TabIndex = 201;
@@ -348,29 +356,18 @@
             this.btn_findemployee.UseVisualStyleBackColor = false;
             this.btn_findemployee.Click += new System.EventHandler(this.btn_findemployee_Click);
             // 
-            // time_in
-            // 
-            this.time_in.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.time_in.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.time_in.Location = new System.Drawing.Point(609, 494);
-            this.time_in.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.time_in.Mask = "00:00";
-            this.time_in.Name = "time_in";
-            this.time_in.Size = new System.Drawing.Size(344, 34);
-            this.time_in.TabIndex = 204;
-            this.time_in.ValidatingType = typeof(System.DateTime);
-            this.time_in.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.time_in_MaskInputRejected);
-            // 
             // time_out
             // 
+            this.time_out.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(37)))), ((int)(((byte)(83)))));
+            this.time_out.Enabled = false;
             this.time_out.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.time_out.Location = new System.Drawing.Point(609, 589);
+            this.time_out.Location = new System.Drawing.Point(844, 500);
             this.time_out.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.time_out.Mask = "00:00";
             this.time_out.Name = "time_out";
-            this.time_out.Size = new System.Drawing.Size(344, 34);
+            this.time_out.Size = new System.Drawing.Size(109, 34);
             this.time_out.TabIndex = 206;
             this.time_out.ValidatingType = typeof(System.DateTime);
+            this.time_out.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.time_out_MaskInputRejected);
             // 
             // clear_timein
             // 
@@ -379,7 +376,7 @@
             this.clear_timein.Cursor = System.Windows.Forms.Cursors.Hand;
             this.clear_timein.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
             this.clear_timein.ForeColor = System.Drawing.Color.White;
-            this.clear_timein.Location = new System.Drawing.Point(817, 470);
+            this.clear_timein.Location = new System.Drawing.Point(904, 473);
             this.clear_timein.Name = "clear_timein";
             this.clear_timein.Size = new System.Drawing.Size(49, 23);
             this.clear_timein.TabIndex = 208;
@@ -389,11 +386,12 @@
             // now_timein
             // 
             this.now_timein.AutoSize = true;
-            this.now_timein.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
+            this.now_timein.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(37)))), ((int)(((byte)(83)))));
             this.now_timein.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.now_timein.Enabled = false;
             this.now_timein.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
             this.now_timein.ForeColor = System.Drawing.Color.White;
-            this.now_timein.Location = new System.Drawing.Point(869, 470);
+            this.now_timein.Location = new System.Drawing.Point(856, 505);
             this.now_timein.Name = "now_timein";
             this.now_timein.Size = new System.Drawing.Size(84, 23);
             this.now_timein.TabIndex = 209;
@@ -403,11 +401,12 @@
             // now_timeout
             // 
             this.now_timeout.AutoSize = true;
-            this.now_timeout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
+            this.now_timeout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(37)))), ((int)(((byte)(83)))));
             this.now_timeout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.now_timeout.Enabled = false;
             this.now_timeout.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
             this.now_timeout.ForeColor = System.Drawing.Color.White;
-            this.now_timeout.Location = new System.Drawing.Point(869, 562);
+            this.now_timeout.Location = new System.Drawing.Point(856, 600);
             this.now_timeout.Name = "now_timeout";
             this.now_timeout.Size = new System.Drawing.Size(84, 23);
             this.now_timeout.TabIndex = 211;
@@ -421,28 +420,102 @@
             this.clear_timeout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.clear_timeout.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
             this.clear_timeout.ForeColor = System.Drawing.Color.White;
-            this.clear_timeout.Location = new System.Drawing.Point(817, 562);
+            this.clear_timeout.Location = new System.Drawing.Point(904, 569);
             this.clear_timeout.Name = "clear_timeout";
             this.clear_timeout.Size = new System.Drawing.Size(49, 23);
             this.clear_timeout.TabIndex = 210;
             this.clear_timeout.Text = "Clear";
             this.clear_timeout.Click += new System.EventHandler(this.clear_timeout_Click);
             // 
+            // timein
+            // 
+            this.timein.CustomFormat = "hh:mm:ss tt";
+            this.timein.Enabled = false;
+            this.timein.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.timein.Location = new System.Drawing.Point(604, 504);
+            this.timein.Name = "timein";
+            this.timein.Size = new System.Drawing.Size(349, 27);
+            this.timein.TabIndex = 212;
+            this.timein.ValueChanged += new System.EventHandler(this.timein_ValueChanged);
+            // 
+            // timeout
+            // 
+            this.timeout.CustomFormat = "hh:mm:ss tt";
+            this.timeout.Enabled = false;
+            this.timeout.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.timeout.Location = new System.Drawing.Point(604, 596);
+            this.timeout.Name = "timeout";
+            this.timeout.Size = new System.Drawing.Size(349, 27);
+            this.timeout.TabIndex = 213;
+            this.timeout.ValueChanged += new System.EventHandler(this.timeout_ValueChanged);
+            // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(37)))), ((int)(((byte)(83)))));
+            this.maskedTextBox1.Enabled = false;
+            this.maskedTextBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.maskedTextBox1.Location = new System.Drawing.Point(844, 596);
+            this.maskedTextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(109, 34);
+            this.maskedTextBox1.TabIndex = 214;
+            this.maskedTextBox1.ValidatingType = typeof(System.DateTime);
+            // 
+            // submit
+            // 
+            this.submit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(37)))), ((int)(((byte)(83)))));
+            this.submit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.submit.FlatAppearance.BorderSize = 0;
+            this.submit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.submit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.submit.ForeColor = System.Drawing.Color.White;
+            this.submit.Location = new System.Drawing.Point(955, 692);
+            this.submit.Name = "submit";
+            this.submit.Size = new System.Drawing.Size(229, 51);
+            this.submit.TabIndex = 215;
+            this.submit.Text = "Submit";
+            this.submit.UseVisualStyleBackColor = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(1220, 746);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(178, 20);
+            this.label1.TabIndex = 216;
+            this.label1.Text = "This will see in Duty Table";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(1085, 551);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(183, 20);
+            this.label2.TabIndex = 217;
+            this.label2.Text = "(15% of the regular salary)";
+            // 
             // ATTENDANCEdutydurationAddREVISED
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.submit);
             this.Controls.Add(this.now_timeout);
-            this.Controls.Add(this.clear_timeout);
+            this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.now_timein);
-            this.Controls.Add(this.clear_timein);
             this.Controls.Add(this.time_out);
-            this.Controls.Add(this.time_in);
+            this.Controls.Add(this.timeout);
+            this.Controls.Add(this.timein);
+            this.Controls.Add(this.clear_timeout);
+            this.Controls.Add(this.clear_timein);
             this.Controls.Add(this.btn_findemployee);
             this.Controls.Add(this.status);
             this.Controls.Add(this.btn_clear);
-            this.Controls.Add(this.btn_save);
+            this.Controls.Add(this.pending);
             this.Controls.Add(this.LblName);
             this.Controls.Add(this.AddLblOvertime);
             this.Controls.Add(this.AddLblTimeOut);
@@ -453,7 +526,7 @@
             this.Controls.Add(this.AddLblDate);
             this.Controls.Add(this.employee_id);
             this.Controls.Add(this.AddLblId);
-            this.Controls.Add(this.duration);
+            this.Controls.Add(this.duty_duration);
             this.Controls.Add(this.overtime);
             this.Controls.Add(this.employee_name);
             this.Controls.Add(this.LblStatus);
@@ -469,7 +542,7 @@
 
         #endregion
         private btn_one btn_clear;
-        private btn_one btn_save;
+        private btn_one pending;
         private Label LblName;
         private Label AddLblOvertime;
         private Label AddLblTimeOut;
@@ -480,7 +553,7 @@
         private Label AddLblDate;
         private TextBox employee_id;
         private Label AddLblId;
-        private TextBox duration;
+        private TextBox duty_duration;
         private TextBox overtime;
         private TextBox employee_name;
         private btn_one LblStatus;
@@ -488,11 +561,16 @@
         private btn_one Addbkgrnd;
         private CComboBox status;
         private btn_one btn_findemployee;
-        private MaskedTextBox time_in;
         private MaskedTextBox time_out;
         private Label clear_timein;
         private Label now_timein;
         private Label now_timeout;
         private Label clear_timeout;
+        private DateTimePicker timein;
+        private DateTimePicker timeout;
+        private MaskedTextBox maskedTextBox1;
+        private btn_one submit;
+        private Label label1;
+        private Label label2;
     }
 }

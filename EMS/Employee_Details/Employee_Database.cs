@@ -33,6 +33,7 @@ namespace EMS.Employee_Details
             {
                 count++;
             }
+            con.Close();
             return count;
         }
 
@@ -48,6 +49,7 @@ namespace EMS.Employee_Details
             {
                 count++;
             }
+            con.Close();
             return count;
         }
 
@@ -77,6 +79,7 @@ namespace EMS.Employee_Details
             {
                 count++;
             }
+            con.Close();
             return count;
         }
         public static int FullStackDevCount()
@@ -91,6 +94,7 @@ namespace EMS.Employee_Details
             {
                 count++;
             }
+            con.Close();
             return count;
         }
 
@@ -167,6 +171,7 @@ namespace EMS.Employee_Details
             }
             catch (Exception ex)
             {
+
                 MessageBox.Show(ex.Message);
                 return false;
             }
@@ -179,6 +184,43 @@ namespace EMS.Employee_Details
             cmd = new OleDbCommand("SELECT * FROM EmployeeTbl where EmployeeID='" + ID + "'");
             cmd.Connection = con;
             OleDbDataReader read = cmd.ExecuteReader();
+            Employee employeeInfo = new Employee();
+            int check = 0;
+            while (read.Read())
+            {
+                employeeInfo.first_name = read.GetString(1);
+                employeeInfo.middle_name = read.GetString(3);
+                employeeInfo.last_name = read.GetString(2);
+                employeeInfo.suffix = read.GetString(4);
+                employeeInfo.hired_date = read.GetString(5);
+                employeeInfo.birth_date = read.GetString(6); ;
+                employeeInfo.sex = read.GetString(7);
+                employeeInfo.address = read.GetString(8);
+                employeeInfo.contact_number = read.GetString(9);
+                employeeInfo.email = read.GetString(10);
+                employeeInfo.emergency_contact_number = read.GetString(11);
+                employeeInfo.designation = read.GetString(12);
+                employeeInfo.regular_pay = read.GetString(13);
+                employeeInfo.regular_worktime = read.GetString(14);
+                employeeInfo.total_salary = read.GetString(15);
+
+                check++;
+            }
+            
+            
+            
+            return employeeInfo;
+        }
+
+        public static bool CheckEmployee(string ID)
+        {
+            OleDbCommand cmd = new OleDbCommand();
+            OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
+            con.Open();
+            cmd = new OleDbCommand("SELECT * FROM EmployeeTbl where EmployeeID='" + ID + "'");
+            cmd.Connection = con;
+            OleDbDataReader read = cmd.ExecuteReader();
+            int check = 0;
             Employee employeeInfo = new Employee();
             while (read.Read())
             {
@@ -197,44 +239,10 @@ namespace EMS.Employee_Details
                 employeeInfo.regular_pay = read.GetString(13);
                 employeeInfo.regular_worktime = read.GetString(14);
                 employeeInfo.total_salary = read.GetString(15);
+                check++;
                 
             }
-                
-            con.Close();
-            return employeeInfo;
-        }
-
-        public static bool CheckEmployee(string ID)
-        {
-            OleDbCommand cmd = new OleDbCommand();
-            OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
-            con.Open();
-            cmd = new OleDbCommand("SELECT * FROM EmployeeTbl where EmployeeID='" + ID + "'");
-            cmd.Connection = con;
-            OleDbDataReader read = cmd.ExecuteReader();
-            bool temp = false;
-            Employee employeeInfo = new Employee();
-            while (read.Read())
-            {
-                employeeInfo.first_name = read.GetString(1);
-                employeeInfo.middle_name = read.GetString(2);
-                employeeInfo.last_name = read.GetString(3);
-                employeeInfo.suffix = read.GetString(4);
-                employeeInfo.hired_date = read.GetString(5);
-                employeeInfo.birth_date = read.GetString(6); ;
-                employeeInfo.sex = read.GetString(7);
-                employeeInfo.address = read.GetString(8);
-                employeeInfo.contact_number = read.GetString(9);
-                employeeInfo.email = read.GetString(10);
-                employeeInfo.emergency_contact_number = read.GetString(11);
-                employeeInfo.designation = read.GetString(12);
-                employeeInfo.regular_pay = read.GetString(13);
-                employeeInfo.regular_worktime = read.GetString(14);
-                employeeInfo.total_salary = read.GetString(15);
-                temp = true;
-                
-            }
-            if (temp == false)
+            if (check == 0)
             {
                 MessageBox.Show("Data not found.");
                 con.Close();
@@ -320,12 +328,16 @@ namespace EMS.Employee_Details
             }
             if(count == 0)
             {
+                con.Close();
                 return true;
             }
             else
             {
+                con.Close();
                 return false;
             }
+
+           
         }
 
         // ------- END: DUTY DURATION PAGE  ------
