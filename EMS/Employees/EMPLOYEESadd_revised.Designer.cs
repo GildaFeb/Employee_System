@@ -61,7 +61,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.sex = new System.Windows.Forms.ComboBox();
             this.btn_clear = new EMS.btn_one();
-            this.btn_save = new EMS.btn_one();
+            this.register = new EMS.btn_one();
             this.regular_pay = new System.Windows.Forms.ComboBox();
             this.birth = new System.Windows.Forms.DateTimePicker();
             this.regular_worktime = new System.Windows.Forms.ComboBox();
@@ -550,25 +550,24 @@
             this.btn_clear.UseVisualStyleBackColor = false;
             this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
             // 
-            // btn_save
+            // register
             // 
-            this.btn_save.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(202)))), ((int)(((byte)(63)))));
-            this.btn_save.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_save.FlatAppearance.BorderSize = 0;
-            this.btn_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_save.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_save.ForeColor = System.Drawing.Color.White;
-            this.btn_save.Location = new System.Drawing.Point(1229, 876);
-            this.btn_save.Name = "btn_save";
-            this.btn_save.Size = new System.Drawing.Size(247, 49);
-            this.btn_save.TabIndex = 117;
-            this.btn_save.Text = "Register";
-            this.btn_save.UseVisualStyleBackColor = false;
-            this.btn_save.Click += new System.EventHandler(this.btn_one3_Click_1);
+            this.register.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(202)))), ((int)(((byte)(63)))));
+            this.register.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.register.FlatAppearance.BorderSize = 0;
+            this.register.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.register.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.register.ForeColor = System.Drawing.Color.White;
+            this.register.Location = new System.Drawing.Point(1229, 876);
+            this.register.Name = "register";
+            this.register.Size = new System.Drawing.Size(247, 49);
+            this.register.TabIndex = 117;
+            this.register.Text = "Register";
+            this.register.UseVisualStyleBackColor = false;
+            this.register.Click += new System.EventHandler(this.btn_one3_Click_1);
             // 
             // regular_pay
             // 
-            this.regular_pay.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.regular_pay.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.regular_pay.ForeColor = System.Drawing.Color.Black;
             this.regular_pay.FormattingEnabled = true;
@@ -602,7 +601,6 @@
             // regular_worktime
             // 
             this.regular_worktime.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.regular_worktime.Enabled = false;
             this.regular_worktime.FormattingEnabled = true;
             this.regular_worktime.Items.AddRange(new object[] {
             "8hrs/day (5days/week)(160hrs/month)",
@@ -707,11 +705,11 @@
             this.errorlast_name.AutoSize = true;
             this.errorlast_name.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.errorlast_name.ForeColor = System.Drawing.Color.DarkRed;
-            this.errorlast_name.Location = new System.Drawing.Point(290, 553);
+            this.errorlast_name.Location = new System.Drawing.Point(306, 553);
             this.errorlast_name.Name = "errorlast_name";
-            this.errorlast_name.Size = new System.Drawing.Size(194, 20);
+            this.errorlast_name.Size = new System.Drawing.Size(160, 20);
             this.errorlast_name.TabIndex = 195;
-            this.errorlast_name.Text = "Please enter their last name.";
+            this.errorlast_name.Text = "Please enter last name.";
             this.errorlast_name.Visible = false;
             this.errorlast_name.Click += new System.EventHandler(this.errorlast_name_Click);
             // 
@@ -720,11 +718,11 @@
             this.errorfirst_name.AutoSize = true;
             this.errorfirst_name.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.errorfirst_name.ForeColor = System.Drawing.Color.DarkRed;
-            this.errorfirst_name.Location = new System.Drawing.Point(288, 363);
+            this.errorfirst_name.Location = new System.Drawing.Point(304, 361);
             this.errorfirst_name.Name = "errorfirst_name";
-            this.errorfirst_name.Size = new System.Drawing.Size(196, 20);
+            this.errorfirst_name.Size = new System.Drawing.Size(162, 20);
             this.errorfirst_name.TabIndex = 196;
-            this.errorfirst_name.Text = "Please enter their first name.";
+            this.errorfirst_name.Text = "Please enter first name.";
             this.errorfirst_name.Visible = false;
             this.errorfirst_name.Click += new System.EventHandler(this.errorfirst_name_Click);
             // 
@@ -733,11 +731,11 @@
             this.errormiddle_name.AutoSize = true;
             this.errormiddle_name.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.errormiddle_name.ForeColor = System.Drawing.Color.DarkRed;
-            this.errormiddle_name.Location = new System.Drawing.Point(269, 456);
+            this.errormiddle_name.Location = new System.Drawing.Point(282, 450);
             this.errormiddle_name.Name = "errormiddle_name";
-            this.errormiddle_name.Size = new System.Drawing.Size(218, 20);
+            this.errormiddle_name.Size = new System.Drawing.Size(184, 20);
             this.errormiddle_name.TabIndex = 197;
-            this.errormiddle_name.Text = "Please enter their middle name.";
+            this.errormiddle_name.Text = "Please enter middle name.";
             this.errormiddle_name.Visible = false;
             this.errormiddle_name.Click += new System.EventHandler(this.errormiddle_name_Click);
             // 
@@ -746,11 +744,11 @@
             this.errorsuffix.AutoSize = true;
             this.errorsuffix.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.errorsuffix.ForeColor = System.Drawing.Color.DarkRed;
-            this.errorsuffix.Location = new System.Drawing.Point(315, 649);
+            this.errorsuffix.Location = new System.Drawing.Point(335, 647);
             this.errorsuffix.Name = "errorsuffix";
-            this.errorsuffix.Size = new System.Drawing.Size(165, 20);
+            this.errorsuffix.Size = new System.Drawing.Size(131, 20);
             this.errorsuffix.TabIndex = 198;
-            this.errorsuffix.Text = "Please enter their suffix.";
+            this.errorsuffix.Text = "Please enter suffix.";
             this.errorsuffix.Visible = false;
             this.errorsuffix.Click += new System.EventHandler(this.errorsuffix_Click);
             // 
@@ -772,11 +770,11 @@
             this.errorregular_pay.AutoSize = true;
             this.errorregular_pay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.errorregular_pay.ForeColor = System.Drawing.Color.DarkRed;
-            this.errorregular_pay.Location = new System.Drawing.Point(826, 459);
+            this.errorregular_pay.Location = new System.Drawing.Point(771, 455);
             this.errorregular_pay.Name = "errorregular_pay";
-            this.errorregular_pay.Size = new System.Drawing.Size(135, 20);
+            this.errorregular_pay.Size = new System.Drawing.Size(181, 20);
             this.errorregular_pay.TabIndex = 200;
-            this.errorregular_pay.Text = "Invalid regular pay.";
+            this.errorregular_pay.Text = "Please choose regular pay";
             this.errorregular_pay.Visible = false;
             this.errorregular_pay.Click += new System.EventHandler(this.errorregular_pay_Click);
             // 
@@ -785,11 +783,11 @@
             this.errorregular_worktime.AutoSize = true;
             this.errorregular_worktime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.errorregular_worktime.ForeColor = System.Drawing.Color.DarkRed;
-            this.errorregular_worktime.Location = new System.Drawing.Point(837, 553);
+            this.errorregular_worktime.Location = new System.Drawing.Point(786, 553);
             this.errorregular_worktime.Name = "errorregular_worktime";
-            this.errorregular_worktime.Size = new System.Drawing.Size(122, 20);
+            this.errorregular_worktime.Size = new System.Drawing.Size(168, 20);
             this.errorregular_worktime.TabIndex = 201;
-            this.errorregular_worktime.Text = "Invalid worktime.";
+            this.errorregular_worktime.Text = "Please choose worktime";
             this.errorregular_worktime.Visible = false;
             this.errorregular_worktime.Click += new System.EventHandler(this.errorregular_worktime_Click);
             // 
@@ -798,11 +796,11 @@
             this.errorsex.AutoSize = true;
             this.errorsex.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.errorsex.ForeColor = System.Drawing.Color.DarkRed;
-            this.errorsex.Location = new System.Drawing.Point(850, 808);
+            this.errorsex.Location = new System.Drawing.Point(827, 804);
             this.errorsex.Name = "errorsex";
-            this.errorsex.Size = new System.Drawing.Size(104, 20);
+            this.errorsex.Size = new System.Drawing.Size(127, 20);
             this.errorsex.TabIndex = 202;
-            this.errorsex.Text = "Sex not found.";
+            this.errorsex.Text = "Please choose sex";
             this.errorsex.Visible = false;
             this.errorsex.Click += new System.EventHandler(this.errorsex_Click);
             // 
@@ -811,11 +809,11 @@
             this.errorcnumber_emergency.AutoSize = true;
             this.errorcnumber_emergency.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.errorcnumber_emergency.ForeColor = System.Drawing.Color.DarkRed;
-            this.errorcnumber_emergency.Location = new System.Drawing.Point(1137, 652);
+            this.errorcnumber_emergency.Location = new System.Drawing.Point(1145, 652);
             this.errorcnumber_emergency.Name = "errorcnumber_emergency";
-            this.errorcnumber_emergency.Size = new System.Drawing.Size(311, 20);
+            this.errorcnumber_emergency.Size = new System.Drawing.Size(277, 20);
             this.errorcnumber_emergency.TabIndex = 203;
-            this.errorcnumber_emergency.Text = "Please enter their emergency contact number.";
+            this.errorcnumber_emergency.Text = "Please enter emergency contact number.";
             this.errorcnumber_emergency.Visible = false;
             this.errorcnumber_emergency.Click += new System.EventHandler(this.errorcnumber_emergency_Click);
             // 
@@ -824,11 +822,11 @@
             this.erroremail.AutoSize = true;
             this.erroremail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.erroremail.ForeColor = System.Drawing.Color.DarkRed;
-            this.erroremail.Location = new System.Drawing.Point(1223, 549);
+            this.erroremail.Location = new System.Drawing.Point(1236, 549);
             this.erroremail.Name = "erroremail";
-            this.erroremail.Size = new System.Drawing.Size(222, 20);
+            this.erroremail.Size = new System.Drawing.Size(188, 20);
             this.erroremail.TabIndex = 204;
-            this.erroremail.Text = "Please enter their email address.";
+            this.erroremail.Text = "Please enter email address.";
             this.erroremail.Visible = false;
             this.erroremail.Click += new System.EventHandler(this.erroremail_Click);
             // 
@@ -837,11 +835,11 @@
             this.errorcontact_number.AutoSize = true;
             this.errorcontact_number.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.errorcontact_number.ForeColor = System.Drawing.Color.DarkRed;
-            this.errorcontact_number.Location = new System.Drawing.Point(1210, 456);
+            this.errorcontact_number.Location = new System.Drawing.Point(1224, 456);
             this.errorcontact_number.Name = "errorcontact_number";
-            this.errorcontact_number.Size = new System.Drawing.Size(234, 20);
+            this.errorcontact_number.Size = new System.Drawing.Size(200, 20);
             this.errorcontact_number.TabIndex = 205;
-            this.errorcontact_number.Text = "Please enter their contact number.";
+            this.errorcontact_number.Text = "Please enter contact number.";
             this.errorcontact_number.Visible = false;
             this.errorcontact_number.Click += new System.EventHandler(this.errorcontact_number_Click);
             // 
@@ -850,11 +848,11 @@
             this.erroraddress.AutoSize = true;
             this.erroraddress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.erroraddress.ForeColor = System.Drawing.Color.DarkRed;
-            this.erroraddress.Location = new System.Drawing.Point(1262, 363);
+            this.erroraddress.Location = new System.Drawing.Point(1275, 363);
             this.erroraddress.Name = "erroraddress";
-            this.erroraddress.Size = new System.Drawing.Size(181, 20);
+            this.erroraddress.Size = new System.Drawing.Size(147, 20);
             this.erroraddress.TabIndex = 206;
-            this.erroraddress.Text = "Please enter their address.";
+            this.erroraddress.Text = "Please enter address.";
             this.erroraddress.Visible = false;
             this.erroraddress.Click += new System.EventHandler(this.erroraddress_Click);
             // 
@@ -863,7 +861,7 @@
             this.errorbirth.AutoSize = true;
             this.errorbirth.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.errorbirth.ForeColor = System.Drawing.Color.DarkRed;
-            this.errorbirth.Location = new System.Drawing.Point(1211, 805);
+            this.errorbirth.Location = new System.Drawing.Point(1195, 805);
             this.errorbirth.Name = "errorbirth";
             this.errorbirth.Size = new System.Drawing.Size(233, 20);
             this.errorbirth.TabIndex = 208;
@@ -1006,7 +1004,7 @@
             this.Controls.Add(this.total_rpay);
             this.Controls.Add(this.birth);
             this.Controls.Add(this.btn_clear);
-            this.Controls.Add(this.btn_save);
+            this.Controls.Add(this.register);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.sex);
@@ -1083,7 +1081,7 @@
         private PictureBox pictureBox3;
         private ComboBox sex;
         private btn_one btn_clear;
-        private btn_one btn_save;
+        private btn_one register;
         private ComboBox regular_pay;
         private DateTimePicker birth;
         private ComboBox regular_worktime;

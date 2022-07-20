@@ -34,8 +34,7 @@ namespace EMS
             birth.Value = DateTime.Now;
             birth.MaxDate = DateTime.Now;
 
-            regular_pay.MaxLength = 6;
-            regular_worktime.MaxLength = 4;
+            regular_pay.MaxLength = 20;
 
             //no scroll bars
             //wala pong dropdown para sa civil status at puno na po yung box except kung tatanggalin po yung "others"
@@ -250,7 +249,11 @@ namespace EMS
 
         private void btn_one3_Click_1(object sender, EventArgs e)
         {
-             if (string.IsNullOrWhiteSpace(employee_id.Text) || 
+            int Age = DateTime.Now.Year - birth.Value.Year;
+
+            
+
+            if (string.IsNullOrWhiteSpace(employee_id.Text) || 
                  string.IsNullOrWhiteSpace(last_name.Text) ||
                  string.IsNullOrWhiteSpace(first_name.Text) ||
                  string.IsNullOrWhiteSpace(middle_name.Text) ||
@@ -262,7 +265,7 @@ namespace EMS
                  string.IsNullOrWhiteSpace(emp_designation.Text) ||
                  string.IsNullOrWhiteSpace(regular_pay.Text) ||
                  string.IsNullOrWhiteSpace(regular_worktime.Text) ||
-                 string.IsNullOrWhiteSpace(sex.Text))
+                 string.IsNullOrWhiteSpace(sex.Text) || Age <18)
              {
                  if (string.IsNullOrWhiteSpace(employee_id.Text))
                  {
@@ -368,15 +371,22 @@ namespace EMS
                  {
                      errorcnumber_emergency.Visible = false;
                  }
+                if (Age < 18)
+                {
+                    errorbirth.Visible = true;
+                }
+                else
+                {
+                    errorbirth.Visible = false;
+                }
 
-                 errorEmptyFields errorEmptyFields = new errorEmptyFields();
+                errorEmptyFields errorEmptyFields = new errorEmptyFields();
                  errorEmptyFields.ShowDialog();
              }
              else
              {
                 // ----------- Add Employee: Passing data to database -----------
                 //int ID = Convert.ToInt32(this.employee_id.Text);
-
 
                 Employee_Details.Employee employeeInfo = new Employee_Details.Employee()
                 {
@@ -414,7 +424,7 @@ namespace EMS
                         employee_id.Clear();
                         last_name.Clear();
                         first_name.Clear();
-                        middle_name.SelectedItem = null;
+                        middle_name.Text ="";
                         suffix.SelectedItem = null;
                         emp_designation.SelectedItem = null;
                         regular_pay.SelectedItem = null;
@@ -486,26 +496,14 @@ namespace EMS
 
         private void birth_ValueChanged(object sender, EventArgs e)
         {
-            int Age = DateTime.Now.Year - birth.Value.Year;
-
-            if (Age < 18)
-            {
-                errorbirth.Visible = true;
-                btn_save.Enabled = false;
-            }
-            else
-            {
-                errorbirth.Visible = false;
-                btn_save.Enabled = true;
-            }
+           
         }
 
         // =========== [!] REGULAR PAY PICKER ===============
 
+
         private void regular_pay_SelectedIndexChanged(object sender, EventArgs e)
         {
-
-
             // 160hrs(8hrs x 5days) x 4weeks - regular_worktime.Items[0]
             // 128hrs(8hrs x 4days) x 4weeks - regular_worktime.Items[1]
             // 120hrs(6hrs x 5days) x 4weeks - regular_worktime.Items[2]
@@ -547,10 +545,6 @@ namespace EMS
                 total.Text = total_rpay.Text;
                 pay.Text = regular_pay.Text;
             }
-            else
-            {
-                MessageBox.Show(" Select Regular Pay and Worktime to view TOTAL REGULAR PAY");
-            }
 
 
 
@@ -575,7 +569,7 @@ namespace EMS
                 employee_id.Clear();
                 last_name.Clear();
                 first_name.Clear();
-                middle_name.SelectedItem = null;
+                middle_name.Text = "";
                 suffix.SelectedItem = null;
                 emp_designation.SelectedItem = null;
                 regular_pay.SelectedItem = null;

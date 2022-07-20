@@ -39,6 +39,7 @@
             // btn_one2
             // 
             this.btn_one2.BackColor = System.Drawing.Color.White;
+            this.btn_one2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_one2.FlatAppearance.BorderSize = 0;
             this.btn_one2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_one2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);

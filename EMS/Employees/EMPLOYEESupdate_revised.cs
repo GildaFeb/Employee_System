@@ -203,7 +203,7 @@ namespace EMS
 
                         employee_id.Clear();
                         last_name.Clear();
-                        middle_name.Items.Clear();
+                        middle_name.Text = "";
                         suffix.SelectedItem = null;
                         designation.SelectedItem = null;
                         regular_pay.SelectedItem = null;
@@ -248,7 +248,7 @@ namespace EMS
                 employee_id.Clear();
                 last_name.Clear();
                 first_name.Clear();
-                middle_name.SelectedItem = null;
+                middle_name.Text = "";
                 suffix.SelectedItem = null;
                 designation.SelectedItem = null;
                 regular_pay.SelectedItem = null;

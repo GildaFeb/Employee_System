@@ -15,20 +15,80 @@ namespace EMS
 {
     public partial class EMPLOYEESdelete : UserControl
     {
-        
+        CheckBox headerCheckBox = new CheckBox();
+
         public EMPLOYEESdelete()
         {
             InitializeComponent();
             tableDelete_DGV.ForeColor = Color.Black;
+            /*
+            // add check box column
+            
+
+            //
+            Rectangle rect = tableDelete_DGV.GetCellDisplayRectangle(0, -1, false);
+            rect.X = rect.Location.X + ( rect.Width / 2);
+            rect.Y = rect.Location.Y + (rect.Width / 4);
+            CheckBox checkboxHeader = new CheckBox();
+            */
+
+            //Add a CheckBox Column to the DataGridView Header Cell.
+
+            //Find the Location of Header Cell.
             DataGridViewCheckBoxColumn checkBoxColumn = new DataGridViewCheckBoxColumn();
-            checkBoxColumn.HeaderText = " Select ";
+            checkBoxColumn.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            checkBoxColumn.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             checkBoxColumn.Width = 100;
             checkBoxColumn.Name = "checkBoxColumn";
+            checkBoxColumn.HeaderText = "";
             tableDelete_DGV.Columns.Insert(0, checkBoxColumn);
+            Point headerCellLocation = this.tableDelete_DGV.GetCellDisplayRectangle(0, -1, true).Location;
+
+            //Place the Header CheckBox in the Location of the Header Cell.
+            headerCheckBox.Location = new Point(headerCellLocation.X + 55, headerCellLocation.Y + 2);
+            headerCheckBox.BackColor = Color.White;
+            headerCheckBox.Size = new Size(18, 18);
+
+            //Assign Click event to the Header CheckBox.
+            headerCheckBox.Click += new EventHandler(HeaderCheckBox_Clicked);
+            tableDelete_DGV.Controls.Add(headerCheckBox);
+
+            //Add a CheckBox Column to the DataGridView at the first position.
+            
+            //Assign Click event to the DataGridView Cell.
+            tableDelete_DGV.CellContentClick += new DataGridViewCellEventHandler(TableDB_CellClick);
 
 
+        }
+        private void HeaderCheckBox_Clicked(object sender, EventArgs e)
+        {
+            //Necessary to end the edit mode of the Cell.
+            tableDelete_DGV.EndEdit();
 
-
+            //Loop and check and uncheck all row CheckBoxes based on Header Cell CheckBox.
+            foreach (DataGridViewRow row in tableDelete_DGV.Rows)
+            {
+                DataGridViewCheckBoxCell checkBox = (row.Cells["checkBoxColumn"] as DataGridViewCheckBoxCell);
+                checkBox.Value = headerCheckBox.Checked;
+            }
+        }
+        private void TableDB_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //Check to ensure that the row CheckBox is clicked.
+            if (e.RowIndex >= 0 && e.ColumnIndex == 0)
+            {
+                //Loop to verify whether all row CheckBoxes are checked or not.
+                bool isChecked = true;
+                foreach (DataGridViewRow row in tableDelete_DGV.Rows)
+                {
+                    if (Convert.ToBoolean(row.Cells["checkBoxColumn"].EditedFormattedValue) == false)
+                    {
+                        isChecked = false;
+                        break;
+                    }
+                }
+                headerCheckBox.Checked = isChecked;
+            }
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

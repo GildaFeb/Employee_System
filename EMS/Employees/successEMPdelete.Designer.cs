@@ -96,6 +96,7 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_one2);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Name = "successEMPdelete";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "successEMPdelete";

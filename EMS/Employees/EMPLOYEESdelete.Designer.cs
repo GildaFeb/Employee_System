@@ -96,9 +96,9 @@
             this.Search.ForeColor = System.Drawing.Color.DarkGray;
             this.Search.Location = new System.Drawing.Point(1066, 99);
             this.Search.Name = "Search";
+            this.Search.PlaceholderText = "Enter ID Number";
             this.Search.Size = new System.Drawing.Size(341, 23);
             this.Search.TabIndex = 75;
-            this.Search.Text = "Enter ID Number";
             this.Search.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // pictureBox1
@@ -197,6 +197,8 @@
             // 
             // tableDelete_DGV
             // 
+            this.tableDelete_DGV.AllowUserToAddRows = false;
+            this.tableDelete_DGV.AllowUserToDeleteRows = false;
             this.tableDelete_DGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tableDelete_DGV.Location = new System.Drawing.Point(134, 262);
             this.tableDelete_DGV.Name = "tableDelete_DGV";
