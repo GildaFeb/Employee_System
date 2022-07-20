@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ATTENDANCEreport));
             this.attndncrprt_DGV = new System.Windows.Forms.DataGridView();
             this.delete_ChckBx = new System.Windows.Forms.DataGridViewCheckBoxColumn();
@@ -51,8 +51,8 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.Search = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Month = new EMS.CComboBox();
-            this.Year = new EMS.CComboBox();
+            this.Month_ = new EMS.CComboBox();
+            this.Year_ = new EMS.CComboBox();
             this.btn_one3 = new EMS.btn_one();
             this.btn_one2 = new EMS.btn_one();
             this.btn_one1 = new EMS.btn_one();
@@ -69,20 +69,20 @@
             // 
             this.attndncrprt_DGV.AllowUserToResizeColumns = false;
             this.attndncrprt_DGV.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            this.attndncrprt_DGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
+            this.attndncrprt_DGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.attndncrprt_DGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.attndncrprt_DGV.BackgroundColor = System.Drawing.Color.White;
             this.attndncrprt_DGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.attndncrprt_DGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Violet;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.attndncrprt_DGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Violet;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.attndncrprt_DGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.attndncrprt_DGV.ColumnHeadersHeight = 29;
             this.attndncrprt_DGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.attndncrprt_DGV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -95,28 +95,28 @@
             this.Leavecol,
             this.Ttlbr,
             this.Slry});
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(51)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.attndncrprt_DGV.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.attndncrprt_DGV.DefaultCellStyle = dataGridViewCellStyle10;
             this.attndncrprt_DGV.GridColor = System.Drawing.Color.DarkGray;
             this.attndncrprt_DGV.Location = new System.Drawing.Point(119, 292);
             this.attndncrprt_DGV.Name = "attndncrprt_DGV";
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.attndncrprt_DGV.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.attndncrprt_DGV.RowHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.attndncrprt_DGV.RowHeadersWidth = 51;
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            this.attndncrprt_DGV.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
+            this.attndncrprt_DGV.RowsDefaultCellStyle = dataGridViewCellStyle12;
             this.attndncrprt_DGV.RowTemplate.Height = 29;
             this.attndncrprt_DGV.Size = new System.Drawing.Size(1322, 575);
             this.attndncrprt_DGV.TabIndex = 1;
@@ -124,10 +124,10 @@
             // delete_ChckBx
             // 
             this.delete_ChckBx.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.NullValue = false;
-            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.delete_ChckBx.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.NullValue = false;
+            dataGridViewCellStyle9.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.delete_ChckBx.DefaultCellStyle = dataGridViewCellStyle9;
             this.delete_ChckBx.HeaderText = "";
             this.delete_ChckBx.MinimumWidth = 6;
             this.delete_ChckBx.Name = "delete_ChckBx";
@@ -272,19 +272,19 @@
             this.pictureBox1.TabIndex = 82;
             this.pictureBox1.TabStop = false;
             // 
-            // Month
+            // Month_
             // 
-            this.Month.AccessibleName = "";
-            this.Month.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.Month.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.Month.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(37)))), ((int)(((byte)(83)))));
-            this.Month.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(51)))));
-            this.Month.BorderSize = 0;
-            this.Month.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.Month.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Month.ForeColor = System.Drawing.Color.White;
-            this.Month.IconColor = System.Drawing.Color.White;
-            this.Month.Items.AddRange(new object[] {
+            this.Month_.AccessibleName = "";
+            this.Month_.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.Month_.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.Month_.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(37)))), ((int)(((byte)(83)))));
+            this.Month_.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(51)))));
+            this.Month_.BorderSize = 0;
+            this.Month_.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.Month_.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Month_.ForeColor = System.Drawing.Color.White;
+            this.Month_.IconColor = System.Drawing.Color.White;
+            this.Month_.Items.AddRange(new object[] {
             "January",
             "February",
             "March",
@@ -297,37 +297,37 @@
             "October",
             "November",
             "December"});
-            this.Month.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
-            this.Month.ListTextColor = System.Drawing.Color.Black;
-            this.Month.Location = new System.Drawing.Point(123, 203);
-            this.Month.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Month.MinimumSize = new System.Drawing.Size(229, 40);
-            this.Month.Name = "Month";
-            this.Month.Size = new System.Drawing.Size(229, 40);
-            this.Month.TabIndex = 130;
-            this.Month.Texts = "Show by month of:";
-            this.Month.OnSelectedIndexChanged += new System.EventHandler(this.CmbxMonth_OnSelectedIndexChanged);
+            this.Month_.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
+            this.Month_.ListTextColor = System.Drawing.Color.Black;
+            this.Month_.Location = new System.Drawing.Point(123, 203);
+            this.Month_.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Month_.MinimumSize = new System.Drawing.Size(229, 40);
+            this.Month_.Name = "Month_";
+            this.Month_.Size = new System.Drawing.Size(229, 40);
+            this.Month_.TabIndex = 130;
+            this.Month_.Texts = "Show by month of:";
+            this.Month_.OnSelectedIndexChanged += new System.EventHandler(this.CmbxMonth_OnSelectedIndexChanged);
             // 
-            // Year
+            // Year_
             // 
-            this.Year.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.Year.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.Year.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(37)))), ((int)(((byte)(83)))));
-            this.Year.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(51)))));
-            this.Year.BorderSize = 0;
-            this.Year.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.Year.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Year.ForeColor = System.Drawing.Color.White;
-            this.Year.IconColor = System.Drawing.Color.White;
-            this.Year.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
-            this.Year.ListTextColor = System.Drawing.Color.Black;
-            this.Year.Location = new System.Drawing.Point(377, 203);
-            this.Year.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Year.MinimumSize = new System.Drawing.Size(171, 40);
-            this.Year.Name = "Year";
-            this.Year.Size = new System.Drawing.Size(229, 40);
-            this.Year.TabIndex = 129;
-            this.Year.Texts = "Show by year of:";
+            this.Year_.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.Year_.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.Year_.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(37)))), ((int)(((byte)(83)))));
+            this.Year_.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(51)))));
+            this.Year_.BorderSize = 0;
+            this.Year_.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.Year_.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Year_.ForeColor = System.Drawing.Color.White;
+            this.Year_.IconColor = System.Drawing.Color.White;
+            this.Year_.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
+            this.Year_.ListTextColor = System.Drawing.Color.Black;
+            this.Year_.Location = new System.Drawing.Point(377, 203);
+            this.Year_.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Year_.MinimumSize = new System.Drawing.Size(171, 40);
+            this.Year_.Name = "Year_";
+            this.Year_.Size = new System.Drawing.Size(229, 40);
+            this.Year_.TabIndex = 129;
+            this.Year_.Texts = "Show by year of:";
             // 
             // btn_one3
             // 
@@ -411,8 +411,8 @@
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.btn_one1);
             this.Controls.Add(this.btn_one3);
-            this.Controls.Add(this.Month);
-            this.Controls.Add(this.Year);
+            this.Controls.Add(this.Month_);
+            this.Controls.Add(this.Year_);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label1);
@@ -450,8 +450,8 @@
         private DataGridViewTextBoxColumn Leavecol;
         private DataGridViewTextBoxColumn Ttlbr;
         private DataGridViewTextBoxColumn Slry;
-        private CComboBox Month;
-        private CComboBox Year;
+        private CComboBox Month_;
+        private CComboBox Year_;
         private btn_one btn_one3;
         private btn_one btn_one2;
         private btn_one btn_one1;

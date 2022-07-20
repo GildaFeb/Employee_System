@@ -11,7 +11,7 @@ namespace EMS.Employee_Details
     internal class Employee_Database
     {
 
-        // ======== DASHBOARD =====
+        // ======================== DASHBOARD ========================
 
         public static int EmployeeNum()
         {
@@ -65,6 +65,7 @@ namespace EMS.Employee_Details
             {
                 count++;
             }
+            con.Close();
             return count;
         }
         public static int SoftwareEngCount()
@@ -100,11 +101,16 @@ namespace EMS.Employee_Details
 
 
 
-        // ======== EMPLOYEE PAGE ======= ITO ITO ITO
+
+
+
+        // =================================== EMPLOYEE PAGE ======================= 
 
         public static bool AddEmployee(Employee employee)
         {
-            
+
+            try
+            {
                 OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
                 con.Open();
                 OleDbCommand cmd = new OleDbCommand();
@@ -126,16 +132,21 @@ namespace EMS.Employee_Details
                 cmd.Parameters.AddWithValue("@position_emp", employee.designation);
                 cmd.Parameters.AddWithValue("@reg_salary", employee.regular_pay);
                 cmd.Parameters.AddWithValue("@worktime", employee.regular_worktime);
-                cmd.Parameters.AddWithValue("@total_salary", employee.total_salary); 
+                cmd.Parameters.AddWithValue("@total_salary", employee.total_salary);
 
 
                 cmd.ExecuteNonQuery();
                 con.Close();
                 return true;
-
-
-
-
+            }
+            catch (Exception ex)
+            {
+                errorEMPadd error = new errorEMPadd();
+                error.Show();
+                return false;
+            
+            }
+                
         }
         public static bool UpdateEmployee(Employee employee)
         {
@@ -165,7 +176,6 @@ namespace EMS.Employee_Details
                 cmd.Parameters.AddWithValue("@total_salary", employee.total_salary);*/
                 
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("sukses");
                 Con.Close();
                 return true;
             }
@@ -178,6 +188,8 @@ namespace EMS.Employee_Details
         }
         public static Employee ShowEmployee(string ID)
         {
+
+            
             OleDbCommand cmd = new OleDbCommand();
             OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
             con.Open();
@@ -207,8 +219,11 @@ namespace EMS.Employee_Details
                 check++;
             }
             
-            
-            
+            if(check == 0)
+            {
+                MessageBox.Show("This ID number is not registered."); // no design
+            }
+            con.Close();
             return employeeInfo;
         }
 
@@ -244,7 +259,7 @@ namespace EMS.Employee_Details
             }
             if (check == 0)
             {
-                MessageBox.Show("Data not found.");
+                MessageBox.Show("This ID number is not registered.");
                 con.Close();
                 return false;
             }
@@ -255,6 +270,9 @@ namespace EMS.Employee_Details
                 return true;
             }
         }
+
+
+
 
         public static bool DeleteEmployee(string ID)
         {
@@ -277,6 +295,7 @@ namespace EMS.Employee_Details
             catch (Exception ec)
             {
                 MessageBox.Show(ec.Message);
+                con.Close();
                 return false;
             }
         }
@@ -284,7 +303,7 @@ namespace EMS.Employee_Details
 
         // -------- END: EMPLOYEE PAGE --------
 
-        // ======== REPORT ATTENDACE =======
+        // ========================= REPORT ATTENDACE ========================
 
         public static void ShowEmployee_ByMonthYear()
         {
@@ -301,9 +320,29 @@ namespace EMS.Employee_Details
 
         // ---------- END: REPORT ATTENDACE -----
 
-        // ======== DUTY DURATION PAGE  =======
 
-        
+
+
+
+
+        // ======================== DUTY DURATION PAGE  ==================
+        public static int DutyRecord()
+        {
+            int count = 0;
+            OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
+
+            con.Open();
+            OleDbCommand cmd = new OleDbCommand("SELECT * FROM DutyTbl", con);
+            OleDbDataReader read = cmd.ExecuteReader();
+            while (read.Read())
+            {
+                count++;
+            }
+            con.Close();
+            return count;
+        }
+
+
         public static bool UpdateDuty()
         {
             MessageBox.Show("Delete Employee");
@@ -336,14 +375,190 @@ namespace EMS.Employee_Details
            
         }
 
+
+        public static bool UpdatePendingDuty(Duty_Pending duty_Pending)
+        {
+
+
+            try
+            {
+                OleDbConnection Con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
+                Con.Open();
+                OleDbCommand cmd = new OleDbCommand("UPDATE DutyTable SET Status='" + duty_Pending.status + "',TimeIn='" + duty_Pending.timeIn + "',TimeOut='" + duty_Pending.timeOut + "',Duration='" + duty_Pending.duration + "',Overtime='" + duty_Pending.overtime + "', WHERE EmployeeID='" + duty_Pending.EmployeeID + "', AND DutyDate= '" + duty_Pending.duty_date + "'", Con);
+
+
+                cmd.ExecuteNonQuery();
+                Con.Close();
+                return true;
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+
+                return false;
+            }
+        }
+
+        public static bool AddDuty(Duty_Pending duty_Pending)
+        {
+
+            try
+            {
+                OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
+                con.Open();
+                OleDbCommand cmd = new OleDbCommand();
+                cmd.CommandText = "INSERT INTO DutyTbl (EmployeeID,Fullname,DutyDate,Status,TimeIn,TimeOut,Duration,Overtime) VALUES(@empID,@fullname,@dutydate,@status,@timein,@timeout,@duration,@overtime)";
+                cmd.Connection = con;
+
+                cmd.Parameters.AddWithValue("@empID", duty_Pending.EmployeeID);
+                cmd.Parameters.AddWithValue("@fullname", duty_Pending.Fullname);
+                cmd.Parameters.AddWithValue("@dutydate", duty_Pending.duty_date);
+                cmd.Parameters.AddWithValue("@status", duty_Pending.status);
+                cmd.Parameters.AddWithValue("@timein", duty_Pending.timeIn);
+                cmd.Parameters.AddWithValue("@timeout", duty_Pending.timeOut);
+                cmd.Parameters.AddWithValue("@duration", duty_Pending.duration);
+                cmd.Parameters.AddWithValue("@overtime", duty_Pending.overtime);
+
+
+                cmd.ExecuteNonQuery();
+                con.Close();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                errorEMPadd error = new errorEMPadd();
+                error.Show();
+
+                return false;
+
+            }
+        }
+
         // ------- END: DUTY DURATION PAGE  ------
 
-        public static void ShowDuty_ByMonthYear()
+
+
+
+        // ===================== ATTENDANCE REPORT ===================
+
+
+
+        public static bool SubmitReport(Report report)
         {
+
+            try
+            {
+                OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
+                con.Open();
+                OleDbCommand cmd = new OleDbCommand();
+                cmd.CommandText = "INSERT INTO Report(EmployeeID,Fullname,Designation,Date of Duty,Present,Absent,Leave,Overtime,Overtime Pay,Total Regular Worktime,Total Salary) VALUES(@empID,@emp,@desig,@dduty,@pres,@abs,@leave,@overtime,@o_pay,@worked_hrs,@salary)";
+                cmd.Connection = con;
+
+                cmd.Parameters.AddWithValue("@empID", report.EmployeeID);
+                cmd.Parameters.AddWithValue("@emp", report.Fullname  );
+                cmd.Parameters.AddWithValue("@design", report.Designation);
+                cmd.Parameters.AddWithValue("@dduty", report.DutyDate);
+                cmd.Parameters.AddWithValue("@pres", report.Present);
+                cmd.Parameters.AddWithValue("@abs", report.Abesent);
+                cmd.Parameters.AddWithValue("@leave", report.Leave);
+                cmd.Parameters.AddWithValue("@overtime", report.Overtime);
+                cmd.Parameters.AddWithValue("@o_pay", report.Overtime_Pay);
+                cmd.Parameters.AddWithValue("@worked_hrs", report.worked_hrs);
+                cmd.Parameters.AddWithValue("@salary", report.total_salary);
+
+
+                cmd.ExecuteNonQuery();
+                con.Close();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                errorEMPadd error = new errorEMPadd();
+                error.Show();
+                return false;
+
+            }
 
         }
 
 
+
+
+        public static Report ShowRecordBy_MonthAndYear(string date)
+        {
+
+
+            OleDbCommand cmd = new OleDbCommand();
+            OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
+            con.Open();
+            cmd = new OleDbCommand("SELECT * Report WHERE Date of Duty LIKE='%" + date + "%'");
+            cmd.Connection = con;
+            OleDbDataReader read = cmd.ExecuteReader();
+            Report report = new Report();
+            int check = 0;
+            while (read.Read())
+            {
+                report.EmployeeID = read.GetString(1);
+                report.Fullname = read.GetString(3);
+                report.Designation = read.GetString(2);
+                report.DutyDate = read.GetString(4);
+                report.Present = read.GetString(5);
+                report.Abesent = read.GetString(6); ;
+                report.Leave = read.GetString(7);
+                report.Overtime = read.GetString(8);
+                report.Overtime_Pay = read.GetString(9);
+                report.worked_hrs = read.GetString(10);
+                report.total_salary= read.GetString(11);
+
+                check++;
+            }
+
+            if (check == 0)
+            {
+                MessageBox.Show("Record not found."); // no design
+
+            }
+            con.Close();
+            return report;
+        }
+
+        public static Report ShowReportByID(string id)
+        {
+
+
+            OleDbCommand cmd = new OleDbCommand();
+            OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
+            con.Open();
+            cmd = new OleDbCommand("SELECT * Report WHERE EmployeeID ='" + id + "'");
+            cmd.Connection = con;
+            OleDbDataReader read = cmd.ExecuteReader();
+            Report report = new Report();
+            int check = 0;
+            while (read.Read())
+            {
+                report.EmployeeID = read.GetString(1);
+                report.Fullname = read.GetString(3);
+                report.Designation = read.GetString(2);
+                report.DutyDate = read.GetString(4);
+                report.Present = read.GetString(5);
+                report.Abesent = read.GetString(6); ;
+                report.Leave = read.GetString(7);
+                report.Overtime = read.GetString(8);
+                report.Overtime_Pay = read.GetString(9);
+                report.worked_hrs = read.GetString(10);
+                report.total_salary = read.GetString(11);
+
+                check++;
+            }
+
+            if (check == 0)
+            {
+                MessageBox.Show("Record not found."); // no design
+            }
+            con.Close();
+            return report;
+        }
     }
 
 }

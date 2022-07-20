@@ -64,6 +64,7 @@
             this.submit_btn = new EMS.btn_one();
             this.submit_cover = new System.Windows.Forms.Label();
             this.pending_cover = new System.Windows.Forms.Label();
+            this.invalid_time = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn_clear
@@ -101,7 +102,7 @@
             this.AddLblOvertime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.AddLblOvertime.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.AddLblOvertime.ForeColor = System.Drawing.Color.White;
-            this.AddLblOvertime.Location = new System.Drawing.Point(1009, 552);
+            this.AddLblOvertime.Location = new System.Drawing.Point(1009, 570);
             this.AddLblOvertime.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.AddLblOvertime.Name = "AddLblOvertime";
             this.AddLblOvertime.Size = new System.Drawing.Size(68, 18);
@@ -114,7 +115,7 @@
             this.AddLblTimeOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.AddLblTimeOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.AddLblTimeOut.ForeColor = System.Drawing.Color.White;
-            this.AddLblTimeOut.Location = new System.Drawing.Point(600, 556);
+            this.AddLblTimeOut.Location = new System.Drawing.Point(604, 572);
             this.AddLblTimeOut.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.AddLblTimeOut.Name = "AddLblTimeOut";
             this.AddLblTimeOut.Size = new System.Drawing.Size(66, 18);
@@ -127,7 +128,7 @@
             this.AddLblDuration.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.AddLblDuration.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.AddLblDuration.ForeColor = System.Drawing.Color.White;
-            this.AddLblDuration.Location = new System.Drawing.Point(1009, 460);
+            this.AddLblDuration.Location = new System.Drawing.Point(1005, 476);
             this.AddLblDuration.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.AddLblDuration.Name = "AddLblDuration";
             this.AddLblDuration.Size = new System.Drawing.Size(64, 18);
@@ -141,7 +142,7 @@
             this.AddLlblTimeIn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.AddLlblTimeIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.AddLlblTimeIn.ForeColor = System.Drawing.Color.White;
-            this.AddLlblTimeIn.Location = new System.Drawing.Point(600, 451);
+            this.AddLlblTimeIn.Location = new System.Drawing.Point(604, 483);
             this.AddLlblTimeIn.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.AddLlblTimeIn.Name = "AddLlblTimeIn";
             this.AddLlblTimeIn.Size = new System.Drawing.Size(56, 18);
@@ -167,7 +168,7 @@
             this.AddLblStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.AddLblStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.AddLblStatus.ForeColor = System.Drawing.Color.White;
-            this.AddLblStatus.Location = new System.Drawing.Point(187, 552);
+            this.AddLblStatus.Location = new System.Drawing.Point(187, 561);
             this.AddLblStatus.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.AddLblStatus.Name = "AddLblStatus";
             this.AddLblStatus.Size = new System.Drawing.Size(50, 18);
@@ -180,7 +181,7 @@
             this.AddLblDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.AddLblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.AddLblDate.ForeColor = System.Drawing.Color.White;
-            this.AddLblDate.Location = new System.Drawing.Point(187, 460);
+            this.AddLblDate.Location = new System.Drawing.Point(187, 473);
             this.AddLblDate.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.AddLblDate.Name = "AddLblDate";
             this.AddLblDate.Size = new System.Drawing.Size(115, 18);
@@ -466,7 +467,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(1073, 550);
+            this.label2.Location = new System.Drawing.Point(1076, 571);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(38, 20);
             this.label2.TabIndex = 217;
@@ -488,6 +489,7 @@
             this.blank_timein.Name = "blank_timein";
             this.blank_timein.Size = new System.Drawing.Size(349, 27);
             this.blank_timein.TabIndex = 219;
+            this.blank_timein.TextChanged += new System.EventHandler(this.blank_timein_TextChanged);
             // 
             // blank_timeout
             // 
@@ -525,6 +527,7 @@
             this.pending_btn.TabIndex = 221;
             this.pending_btn.Text = "Pending";
             this.pending_btn.UseVisualStyleBackColor = false;
+            this.pending_btn.Click += new System.EventHandler(this.pending_btn_Click);
             // 
             // submit_btn
             // 
@@ -540,11 +543,12 @@
             this.submit_btn.TabIndex = 222;
             this.submit_btn.Text = "Submit";
             this.submit_btn.UseVisualStyleBackColor = false;
+            this.submit_btn.Click += new System.EventHandler(this.submit_btn_Click_1);
             // 
             // submit_cover
             // 
             this.submit_cover.AutoSize = true;
-            this.submit_cover.Location = new System.Drawing.Point(1169, 692);
+            this.submit_cover.Location = new System.Drawing.Point(1171, 692);
             this.submit_cover.Margin = new System.Windows.Forms.Padding(50, 0, 50, 50);
             this.submit_cover.Name = "submit_cover";
             this.submit_cover.Padding = new System.Windows.Forms.Padding(150, 50, 100, 50);
@@ -562,11 +566,24 @@
             this.pending_cover.Size = new System.Drawing.Size(250, 120);
             this.pending_cover.TabIndex = 227;
             // 
+            // invalid_time
+            // 
+            this.invalid_time.AutoSize = true;
+            this.invalid_time.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
+            this.invalid_time.ForeColor = System.Drawing.Color.DarkRed;
+            this.invalid_time.Location = new System.Drawing.Point(1009, 534);
+            this.invalid_time.Name = "invalid_time";
+            this.invalid_time.Size = new System.Drawing.Size(269, 20);
+            this.invalid_time.TabIndex = 228;
+            this.invalid_time.Text = "Invalid time in and time out. Edit again.";
+            this.invalid_time.Visible = false;
+            // 
             // ATTENDANCEdutydurationAddREVISED
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.Controls.Add(this.invalid_time);
             this.Controls.Add(this.pending_cover);
             this.Controls.Add(this.submit_cover);
             this.Controls.Add(this.submit_btn);
@@ -648,5 +665,6 @@
         private btn_one submit_btn;
         private Label submit_cover;
         private Label pending_cover;
+        private Label invalid_time;
     }
 }

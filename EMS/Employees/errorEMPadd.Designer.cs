@@ -84,7 +84,7 @@
             this.Controls.Add(this.btn_one1);
             this.Name = "errorEMPadd";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "errorEMPadd";
+            this.Text = "Error in database";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

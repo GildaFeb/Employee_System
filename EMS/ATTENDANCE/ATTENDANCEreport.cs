@@ -21,7 +21,7 @@ namespace EMS
         {
             for (int i = 1995; i <= 2022; i++)
             {
-                Year.Items.Add(i);
+                Year_.Items.Add(i);
             }
         }
 
@@ -95,10 +95,10 @@ namespace EMS
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            if (!(Month.SelectedIndex == -1 && Year.SelectedIndex == -1))
+            if (!(Month_.SelectedIndex == -1 && Year_.SelectedIndex == -1))
             {
-                Employee_Details.Employee_Database.ShowDuty_ByMonthYear();
-                MessageBox.Show(" Valid");
+                string date = Month_.SelectedItem.ToString() + " " + Year_.SelectedItem.ToString();
+                Employee_Details.Employee_Database.ShowRecordBy_MonthAndYear(date);
             }
             else
             {

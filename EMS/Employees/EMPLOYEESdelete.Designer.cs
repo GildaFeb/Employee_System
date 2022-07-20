@@ -43,6 +43,7 @@
             this.sqlCommand1 = new Microsoft.Data.SqlClient.SqlCommand();
             this.employeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tableDelete_DGV = new System.Windows.Forms.DataGridView();
+            this.noData = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).BeginInit();
@@ -151,9 +152,9 @@
             this.delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.delete.ForeColor = System.Drawing.Color.White;
-            this.delete.Location = new System.Drawing.Point(1295, 873);
+            this.delete.Location = new System.Drawing.Point(1162, 873);
             this.delete.Name = "delete";
-            this.delete.Size = new System.Drawing.Size(135, 51);
+            this.delete.Size = new System.Drawing.Size(277, 51);
             this.delete.TabIndex = 126;
             this.delete.Text = "Delete";
             this.delete.UseVisualStyleBackColor = false;
@@ -167,7 +168,7 @@
             this.btn_one2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_one2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_one2.ForeColor = System.Drawing.Color.White;
-            this.btn_one2.Location = new System.Drawing.Point(1008, 873);
+            this.btn_one2.Location = new System.Drawing.Point(884, 873);
             this.btn_one2.Name = "btn_one2";
             this.btn_one2.Size = new System.Drawing.Size(272, 51);
             this.btn_one2.TabIndex = 131;
@@ -208,11 +209,24 @@
             this.tableDelete_DGV.TabIndex = 133;
             this.tableDelete_DGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tableDelete_DGV_CellContentClick_1);
             // 
+            // noData
+            // 
+            this.noData.AutoSize = true;
+            this.noData.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.noData.ForeColor = System.Drawing.Color.Black;
+            this.noData.Location = new System.Drawing.Point(702, 535);
+            this.noData.Name = "noData";
+            this.noData.Size = new System.Drawing.Size(171, 28);
+            this.noData.TabIndex = 205;
+            this.noData.Text = "No data recorded.";
+            this.noData.Visible = false;
+            // 
             // EMPLOYEESdelete
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.Controls.Add(this.noData);
             this.Controls.Add(this.tableDelete_DGV);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btn_one2);
@@ -251,5 +265,6 @@
         private Microsoft.Data.SqlClient.SqlCommand sqlCommand1;
         private BindingSource employeeBindingSource;
         private DataGridView tableDelete_DGV;
+        private Label noData;
     }
 }

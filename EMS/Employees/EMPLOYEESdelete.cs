@@ -107,7 +107,14 @@ namespace EMS
             OleDbDataReader read = cmd.ExecuteReader();
             DataTable dt = new DataTable();
             dt.Load(read);
+            string emp = Employee_Details.Employee_Database.EmployeeNum().ToString();
+            if (emp == "0")
+            {
+                noData.Visible = true;
+
+            }
             tableDelete_DGV.DataSource = dt;
+            con.Close();
         }
 
         //
@@ -182,7 +189,7 @@ namespace EMS
                     DataTable dt = new DataTable();
                     dt.Load(read);
                     tableDelete_DGV.DataSource = dt;
-                    
+                    con.Close();
                 }
                 else
                 {
@@ -193,6 +200,8 @@ namespace EMS
             else
             {
                 MessageBox.Show(" Failed to search. Search field is empty.");
+
+                
             }
         }
 
@@ -295,6 +304,7 @@ namespace EMS
                                 command.Connection = con;
                                 command.ExecuteNonQuery();
                                 tableDelete_DGV.Rows.RemoveAt(row.Index);
+
                             }
 
 
@@ -334,6 +344,7 @@ namespace EMS
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
+                con.Close();
             }
            /* else if (tableDelete_DGV.SelectedCells.Count != 0)
             {
@@ -376,13 +387,21 @@ namespace EMS
         private void btn_one2_Click_1(object sender, EventArgs e)
         {
             OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
-
             con.Open();
             OleDbCommand cmd = new OleDbCommand("Select * from EmployeeTbl", con);
             OleDbDataReader read = cmd.ExecuteReader();
             DataTable dt = new DataTable();
             dt.Load(read);
+            string emp = Employee_Details.Employee_Database.EmployeeNum().ToString();
+            if (emp == "0")
+            {
+                noData.Visible = true;
+
+            }
+            
             tableDelete_DGV.DataSource = dt;
+            con.Close();
+
         }
 
         private void tableDelete_DGV_CellContentClick(object sender, DataGridViewCellEventArgs e)

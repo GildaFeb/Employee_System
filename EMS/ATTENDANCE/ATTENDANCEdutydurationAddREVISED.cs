@@ -158,7 +158,7 @@ namespace EMS
 
         private void now_timein_Click(object sender, EventArgs e)
         {
-            
+            /*
             //DateTime dateTime = DateTime.ParseExact(now.Date.ToString(), "hh:mm", System.Globalization.CultureInfo.InvariantCulture);
             blank_timein.Visible = false;
             timein.Visible = true;
@@ -190,18 +190,14 @@ namespace EMS
             else
             {
                 overtime.Text = overtime_hrs.ToString();
-            }
-        }
-
-        private void now_timeout_Click(object sender, EventArgs e)
-        {
-
+            }*/
+            //int pay = int.Parse(regular_pay);
+            /*double rate = pay * (1.5);
+            double overtime_pay = rate * overtime_hrs;*/
             //DateTime dateTime = DateTime.ParseExact(now.Date.ToString(), "hh:mm", System.Globalization.CultureInfo.InvariantCulture);
-            blank_timeout.Visible = false;
+            blank_timein.Visible = false;
             timein.Visible = true;
-
             TimeSpan duration = timeout.Value - timein.Value;
-            duty_duration.Text = duration.ToString();
 
             //string regular_pay = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).regular_pay.ToString();
             string worktime = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).regular_worktime.ToString();
@@ -221,24 +217,97 @@ namespace EMS
 
             int durationsConvertToTime = int.Parse(duration.Hours.ToString());
             int overtime_hrs = durationsConvertToTime - work_time;
-            if (durationsConvertToTime > work_time)
+
+            if (durationsConvertToTime < 0 && blank_timeout.Visible == false)
             {
-                overtime.Text = "0";
+                duty_duration.Text = "";
+            }
+            else if (durationsConvertToTime < 0 && blank_timeout.Visible == true)
+            {
+                invalid_time.Visible = true;
+
             }
             else
             {
-                overtime.Text = overtime_hrs.ToString();
+                duty_duration.Text = duration.ToString();
+                if ((durationsConvertToTime > work_time))
+                {
+                    overtime.Text = overtime_hrs.ToString();
+                }
+                else
+                {
+
+                    overtime.Text = "0";
+                }
+            }
+        }
+
+        private void now_timeout_Click(object sender, EventArgs e)
+        {
+
+            //int pay = int.Parse(regular_pay);
+            /*double rate = pay * (1.5);
+            double overtime_pay = rate * overtime_hrs;*/
+            //DateTime dateTime = DateTime.ParseExact(now.Date.ToString(), "hh:mm", System.Globalization.CultureInfo.InvariantCulture);
+            blank_timeout.Visible = false;
+            timeout.Visible = true;
+            TimeSpan duration = timeout.Value - timein.Value;
+           
+
+            //string regular_pay = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).regular_pay.ToString();
+            string worktime = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).regular_worktime.ToString();
+
+
+            char[] work = worktime.ToCharArray();
+            char[] emp_worktime = new char[30];
+            int i = 0;
+
+            while (!(work[i] == 'h'))
+            {
+                emp_worktime[i] = work[i];
+                i++;
+            }
+            string ConvertedWorktime = new string(emp_worktime);
+            int work_time = Convert.ToInt32(ConvertedWorktime.ToLower());
+
+            int durationsConvertToTime = int.Parse(duration.Hours.ToString());
+            int overtime_hrs = durationsConvertToTime - work_time;
+
+            if (durationsConvertToTime < 0 && blank_timein.Visible == false)
+            {
+                duty_duration.Text = "";
+            }
+            else if (durationsConvertToTime < 0 && blank_timein.Visible == true)
+            {
+                invalid_time.Visible = true;
+
+            }
+            else
+            {
+                duty_duration.Text = duration.ToString();
+                if ((durationsConvertToTime > work_time))
+                {
+                    overtime.Text = overtime_hrs.ToString();
+                }
+                else
+                {
+
+                    overtime.Text = "0";
+                }
             }
         }
 
         private void clear_timein_Click(object sender, EventArgs e)
         {
             blank_timein.Visible = true;
+            duty_duration.Text = "";
+
         }
 
         private void clear_timeout_Click(object sender, EventArgs e)
         {
             blank_timeout.Visible = true;
+            duty_duration.Text = "";
         }
 
         private void btn_findemployee_Click(object sender, EventArgs e)
@@ -335,7 +404,6 @@ namespace EMS
             blank_timein.Visible = false;
             timein.Visible = true;
             TimeSpan duration = timeout.Value - timein.Value;
-            duty_duration.Text = duration.ToString();
 
             //string regular_pay = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).regular_pay.ToString();
             string worktime = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).regular_worktime.ToString();
@@ -356,14 +424,26 @@ namespace EMS
             int durationsConvertToTime = int.Parse(duration.Hours.ToString());
             int overtime_hrs = durationsConvertToTime - work_time;
 
-            if (durationsConvertToTime > work_time)
+            if (durationsConvertToTime < 0 &&  blank_timeout.Visible == false)
             {
-                overtime.Text = overtime_hrs.ToString();
+                duty_duration.Text = "";
+            }else if (durationsConvertToTime < 0 && blank_timeout.Visible == true)
+            {
+                invalid_time.Visible = true;
+
             }
             else
             {
+                duty_duration.Text = duration.ToString();
+                if ((durationsConvertToTime > work_time))
+                {
+                    overtime.Text = overtime_hrs.ToString();
+                }
+                else
+                {
 
-                overtime.Text = "0";
+                    overtime.Text = "0";
+                }
             }
 
         }
@@ -375,10 +455,9 @@ namespace EMS
             /*double rate = pay * (1.5);
             double overtime_pay = rate * overtime_hrs;*/
             //DateTime dateTime = DateTime.ParseExact(now.Date.ToString(), "hh:mm", System.Globalization.CultureInfo.InvariantCulture);
-            blank_timein.Visible = false;
-            timein.Visible = true;
+            blank_timeout.Visible = false;
+            timeout.Visible = true;
             TimeSpan duration = timeout.Value - timein.Value;
-            duty_duration.Text = duration.ToString();
 
             //string regular_pay = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).regular_pay.ToString();
             string worktime = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).regular_worktime.ToString();
@@ -399,14 +478,27 @@ namespace EMS
             int durationsConvertToTime = int.Parse(duration.Hours.ToString());
             int overtime_hrs = durationsConvertToTime - work_time;
 
-            if (durationsConvertToTime > work_time)
+            if (durationsConvertToTime < 0 && blank_timein.Visible == false)
             {
-                overtime.Text = overtime_hrs.ToString();
+                duty_duration.Text = "";
+            }
+            else if (durationsConvertToTime < 0 && blank_timein.Visible == true)
+            {
+                invalid_time.Visible = true;
+
             }
             else
             {
-                
-                overtime.Text = "0";
+                duty_duration.Text = duration.ToString();
+                if ((durationsConvertToTime > work_time))
+                {
+                    overtime.Text = overtime_hrs.ToString();
+                }
+                else
+                {
+
+                    overtime.Text = "0";
+                }
             }
 
 
@@ -433,6 +525,68 @@ namespace EMS
         }
 
         private void submit_cover_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void submit_btn_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pending_btn_Click(object sender, EventArgs e)
+        {
+            if(status.Texts != null && invalid_time.Visible == false)
+            {
+                String msg = " You are about to save this as Pending. Do you want to continue? ";
+                String caption = "Will be added to Table Duty.";
+                MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+                MessageBoxIcon ico = MessageBoxIcon.Question;
+                DialogResult result;
+                result = MessageBox.Show(this, msg, caption, buttons, ico);
+                if (result == DialogResult.Yes)
+                {
+
+                    char[] work = duty_duration.Text.ToCharArray();
+                    char[] emp_worktime = new char[30];
+                    int i = 0;
+
+                    while (!(work[i] == ':'))
+                    {
+                        emp_worktime[i] = work[i];
+                        i++;
+                    }
+                    string ConvertedWorktime = new string(emp_worktime);
+                    int work_time = Convert.ToInt32(ConvertedWorktime.ToLower());
+                    int time = int.Parse(overtime.Text);
+                    double worked_hrs = work_time - time;
+                    Employee_Details.Duty_Pending _Pending = new Employee_Details.Duty_Pending()
+                    {
+                        EmployeeID = employee_id.Text,
+                        Fullname = employee_name.Text,
+                        duty_date = date_duty.Text,
+                        status = status.Texts,
+                        timeIn = timein.Text,
+                        timeOut = timeout.Text,
+                        duration = duty_duration.Text,
+                        overtime = overtime.Text,
+
+                    };
+                    if(Employee_Details.Employee_Database.AddDuty(_Pending) == true)
+                    {
+                        SuccessDutyAdd successDutyAdd = new SuccessDutyAdd();
+                        successDutyAdd.Show();
+
+                    }
+                }
+            }
+            else
+            {
+
+            }
+        }
+
+        private void blank_timein_TextChanged(object sender, EventArgs e)
         {
 
         }

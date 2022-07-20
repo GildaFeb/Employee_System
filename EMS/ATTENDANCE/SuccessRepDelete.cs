@@ -16,7 +16,6 @@ namespace EMS
         private Label label3;
         private Label label1;
         private btn_one btn_one2;
-        private btn_one btn_one1;
 
         public SuccessRepDelete()
         {
@@ -30,7 +29,6 @@ namespace EMS
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_one2 = new EMS.btn_one();
-            this.btn_one1 = new EMS.btn_one();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,12 +47,12 @@ namespace EMS
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("SF Pro Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.DimGray;
-            this.label3.Location = new System.Drawing.Point(122, 233);
+            this.label3.Location = new System.Drawing.Point(101, 231);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(348, 18);
+            this.label3.Size = new System.Drawing.Size(392, 22);
             this.label3.TabIndex = 95;
             this.label3.Text = "Duty duration of an employee has been deleted.";
             // 
@@ -64,9 +62,9 @@ namespace EMS
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(37)))), ((int)(((byte)(83)))));
-            this.label1.Location = new System.Drawing.Point(175, 186);
+            this.label1.Location = new System.Drawing.Point(133, 183);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(269, 31);
+            this.label1.Size = new System.Drawing.Size(319, 38);
             this.label1.TabIndex = 94;
             this.label1.Text = "Deleted succesfully";
             // 
@@ -76,9 +74,9 @@ namespace EMS
             this.btn_one2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_one2.FlatAppearance.BorderSize = 0;
             this.btn_one2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_one2.Font = new System.Drawing.Font("SF Pro Text", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_one2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_one2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            this.btn_one2.Location = new System.Drawing.Point(333, 324);
+            this.btn_one2.Location = new System.Drawing.Point(221, 319);
             this.btn_one2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_one2.Name = "btn_one2";
             this.btn_one2.Size = new System.Drawing.Size(141, 38);
@@ -86,22 +84,6 @@ namespace EMS
             this.btn_one2.Text = "Done";
             this.btn_one2.UseVisualStyleBackColor = false;
             this.btn_one2.Click += new System.EventHandler(this.btn_one2_Click);
-            // 
-            // btn_one1
-            // 
-            this.btn_one1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(202)))), ((int)(((byte)(63)))));
-            this.btn_one1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_one1.FlatAppearance.BorderSize = 0;
-            this.btn_one1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_one1.Font = new System.Drawing.Font("SF Pro Text", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_one1.ForeColor = System.Drawing.Color.White;
-            this.btn_one1.Location = new System.Drawing.Point(133, 324);
-            this.btn_one1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_one1.Name = "btn_one1";
-            this.btn_one1.Size = new System.Drawing.Size(141, 38);
-            this.btn_one1.TabIndex = 93;
-            this.btn_one1.Text = "View table";
-            this.btn_one1.UseVisualStyleBackColor = false;
             // 
             // SuccessRepDelete
             // 
@@ -111,7 +93,6 @@ namespace EMS
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_one2);
-            this.Controls.Add(this.btn_one1);
             this.Name = "SuccessRepDelete";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

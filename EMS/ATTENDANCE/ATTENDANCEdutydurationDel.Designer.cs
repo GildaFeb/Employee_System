@@ -28,29 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ATTENDANCEdutydurationDel));
             this.label1 = new System.Windows.Forms.Label();
             this.DDsubheading = new System.Windows.Forms.Label();
             this.db_ViewCalendarBtn = new EMS.btn_one();
             this.tableDelete_DGV = new System.Windows.Forms.DataGridView();
-            this.delete_ChckBx = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.DDdate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.EmpId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DDtime_in = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DDtimeout = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DDstatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DDovertime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DDduration = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_one1 = new EMS.btn_one();
             this.btn_one3 = new EMS.btn_one();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.Search = new System.Windows.Forms.TextBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.btn_one2 = new EMS.btn_one();
+            this.reload_table = new EMS.btn_one();
+            this.noData = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tableDelete_DGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -98,39 +89,32 @@
             // 
             // tableDelete_DGV
             // 
+            this.tableDelete_DGV.AllowUserToAddRows = false;
+            this.tableDelete_DGV.AllowUserToDeleteRows = false;
             this.tableDelete_DGV.AllowUserToResizeColumns = false;
             this.tableDelete_DGV.AllowUserToResizeRows = false;
             this.tableDelete_DGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.tableDelete_DGV.BackgroundColor = System.Drawing.Color.White;
             this.tableDelete_DGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tableDelete_DGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Violet;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tableDelete_DGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Violet;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tableDelete_DGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.tableDelete_DGV.ColumnHeadersHeight = 29;
             this.tableDelete_DGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.tableDelete_DGV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.delete_ChckBx,
-            this.DDdate,
-            this.EmpId,
-            this.DDtime_in,
-            this.DDtimeout,
-            this.DDstatus,
-            this.DDovertime,
-            this.DDduration});
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(51)))));
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.tableDelete_DGV.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.tableDelete_DGV.DefaultCellStyle = dataGridViewCellStyle2;
             this.tableDelete_DGV.GridColor = System.Drawing.Color.DarkGray;
             this.tableDelete_DGV.Location = new System.Drawing.Point(124, 196);
             this.tableDelete_DGV.Name = "tableDelete_DGV";
@@ -139,65 +123,6 @@
             this.tableDelete_DGV.Size = new System.Drawing.Size(1306, 662);
             this.tableDelete_DGV.TabIndex = 82;
             this.tableDelete_DGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tableDelete_DGV_CellContentClick);
-            // 
-            // delete_ChckBx
-            // 
-            this.delete_ChckBx.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.NullValue = false;
-            dataGridViewCellStyle6.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.delete_ChckBx.DefaultCellStyle = dataGridViewCellStyle6;
-            this.delete_ChckBx.HeaderText = "";
-            this.delete_ChckBx.MinimumWidth = 6;
-            this.delete_ChckBx.Name = "delete_ChckBx";
-            this.delete_ChckBx.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.delete_ChckBx.Width = 29;
-            // 
-            // DDdate
-            // 
-            this.DDdate.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.DDdate.DefaultCellStyle = dataGridViewCellStyle7;
-            this.DDdate.HeaderText = "Date";
-            this.DDdate.MinimumWidth = 6;
-            this.DDdate.Name = "DDdate";
-            this.DDdate.Width = 125;
-            // 
-            // EmpId
-            // 
-            this.EmpId.HeaderText = "Employee ID";
-            this.EmpId.MinimumWidth = 6;
-            this.EmpId.Name = "EmpId";
-            // 
-            // DDtime_in
-            // 
-            this.DDtime_in.HeaderText = "Time in";
-            this.DDtime_in.MinimumWidth = 6;
-            this.DDtime_in.Name = "DDtime_in";
-            // 
-            // DDtimeout
-            // 
-            this.DDtimeout.HeaderText = "Time out";
-            this.DDtimeout.MinimumWidth = 6;
-            this.DDtimeout.Name = "DDtimeout";
-            // 
-            // DDstatus
-            // 
-            this.DDstatus.HeaderText = "Status";
-            this.DDstatus.MinimumWidth = 6;
-            this.DDstatus.Name = "DDstatus";
-            // 
-            // DDovertime
-            // 
-            this.DDovertime.HeaderText = "Overtime";
-            this.DDovertime.MinimumWidth = 6;
-            this.DDovertime.Name = "DDovertime";
-            // 
-            // DDduration
-            // 
-            this.DDduration.HeaderText = "Duration";
-            this.DDduration.MinimumWidth = 6;
-            this.DDduration.Name = "DDduration";
             // 
             // btn_one1
             // 
@@ -223,9 +148,9 @@
             this.btn_one3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_one3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_one3.ForeColor = System.Drawing.Color.White;
-            this.btn_one3.Location = new System.Drawing.Point(1158, 904);
+            this.btn_one3.Location = new System.Drawing.Point(1121, 904);
             this.btn_one3.Name = "btn_one3";
-            this.btn_one3.Size = new System.Drawing.Size(272, 51);
+            this.btn_one3.Size = new System.Drawing.Size(309, 51);
             this.btn_one3.TabIndex = 130;
             this.btn_one3.Text = "Delete";
             this.btn_one3.UseVisualStyleBackColor = false;
@@ -267,21 +192,33 @@
             this.pictureBox4.TabStop = false;
             this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
-            // btn_one2
+            // reload_table
             // 
-            this.btn_one2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(37)))), ((int)(((byte)(83)))));
-            this.btn_one2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_one2.FlatAppearance.BorderSize = 0;
-            this.btn_one2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_one2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_one2.ForeColor = System.Drawing.Color.White;
-            this.btn_one2.Location = new System.Drawing.Point(879, 904);
-            this.btn_one2.Name = "btn_one2";
-            this.btn_one2.Size = new System.Drawing.Size(272, 51);
-            this.btn_one2.TabIndex = 130;
-            this.btn_one2.Text = "Reload Table";
-            this.btn_one2.UseVisualStyleBackColor = false;
-            this.btn_one2.Click += new System.EventHandler(this.btn_one3_Click_1);
+            this.reload_table.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(37)))), ((int)(((byte)(83)))));
+            this.reload_table.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.reload_table.FlatAppearance.BorderSize = 0;
+            this.reload_table.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.reload_table.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.reload_table.ForeColor = System.Drawing.Color.White;
+            this.reload_table.Location = new System.Drawing.Point(834, 904);
+            this.reload_table.Name = "reload_table";
+            this.reload_table.Size = new System.Drawing.Size(281, 51);
+            this.reload_table.TabIndex = 203;
+            this.reload_table.Text = "Reload Table";
+            this.reload_table.UseVisualStyleBackColor = false;
+            this.reload_table.Click += new System.EventHandler(this.reload_table_Click);
+            // 
+            // noData
+            // 
+            this.noData.AutoSize = true;
+            this.noData.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.noData.ForeColor = System.Drawing.Color.Black;
+            this.noData.Location = new System.Drawing.Point(643, 512);
+            this.noData.Name = "noData";
+            this.noData.Size = new System.Drawing.Size(171, 28);
+            this.noData.TabIndex = 206;
+            this.noData.Text = "No data recorded.";
+            this.noData.Visible = false;
             // 
             // ATTENDANCEdutydurationDel
             // 
@@ -289,11 +226,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.Controls.Add(this.noData);
+            this.Controls.Add(this.reload_table);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.Search);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.btn_one1);
-            this.Controls.Add(this.btn_one2);
             this.Controls.Add(this.btn_one3);
             this.Controls.Add(this.tableDelete_DGV);
             this.Controls.Add(this.db_ViewCalendarBtn);
@@ -318,19 +256,12 @@
         private Label DDsubheading;
         private btn_one db_ViewCalendarBtn;
         private DataGridView tableDelete_DGV;
-        private DataGridViewCheckBoxColumn delete_ChckBx;
-        private DataGridViewTextBoxColumn DDdate;
-        private DataGridViewTextBoxColumn EmpId;
-        private DataGridViewTextBoxColumn DDtime_in;
-        private DataGridViewTextBoxColumn DDtimeout;
-        private DataGridViewTextBoxColumn DDstatus;
-        private DataGridViewTextBoxColumn DDovertime;
-        private DataGridViewTextBoxColumn DDduration;
         private btn_one btn_one1;
         private btn_one btn_one3;
         private PictureBox pictureBox3;
         private TextBox Search;
         private PictureBox pictureBox4;
-        private btn_one btn_one2;
+        private btn_one reload_table;
+        private Label noData;
     }
 }

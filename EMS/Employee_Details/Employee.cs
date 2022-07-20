@@ -28,23 +28,32 @@ namespace EMS.Employee_Details
 
     }
 
-    public class Duty_Temporaru
+    public class Duty_Pending
     {
         public string dutyID { get; set; }
+        public string EmployeeID { get; set; }
+        public string Fullname { get; set; }
+        public string status { get; set; }
         public string timeIn { get; set; }
         public string timeOut { get; set; }
-        public string overtime { get; set; }
         public string duration { get; set; }
-        public string date { get; set; }
+        public string duty_date { get; set; }
+        public string overtime { get; set; }
     }
 
-    public class Submitted_Duty
+    public class Report
     {
-        public string dutyID { get; set; }
-        public string timeIn { get; set; }
-        public string timeOut { get; set; }
-        public string overtime { get; set; }
-        public string duration { get; set; }
-        public string date { get; set; }
+        public string ReportID { get; set; }
+        public string EmployeeID { get; set; }
+        public string Fullname { get; set; }
+        public string Designation { get; set; }
+        public string DutyDate { get; set; }
+        public string Present { get; set; }
+        public string Abesent { get; set; }
+        public string Leave { get; set; }
+        public string Overtime { get; set; }
+        public string Overtime_Pay { get; set; }
+        public string worked_hrs { get; set; }
+        public string total_salary { get; set; }
     }
 }
