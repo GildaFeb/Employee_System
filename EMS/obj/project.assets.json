@@ -3036,11 +3036,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gilda\\OneDrive\\Desktop\\July 16\\Employee_System\\EMS\\EMS.csproj",
+      "projectUniqueName": "C:\\Users\\gilda\\OneDrive\\Desktop\\EMS JULY 20\\Employee_System\\EMS\\EMS.csproj",
       "projectName": "EMS",
-      "projectPath": "C:\\Users\\gilda\\OneDrive\\Desktop\\July 16\\Employee_System\\EMS\\EMS.csproj",
+      "projectPath": "C:\\Users\\gilda\\OneDrive\\Desktop\\EMS JULY 20\\Employee_System\\EMS\\EMS.csproj",
       "packagesPath": "C:\\Users\\gilda\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gilda\\OneDrive\\Desktop\\July 16\\Employee_System\\EMS\\obj\\",
+      "outputPath": "C:\\Users\\gilda\\OneDrive\\Desktop\\EMS JULY 20\\Employee_System\\EMS\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

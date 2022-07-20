@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EMPLOYEESdelete));
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -40,9 +41,11 @@
             this.btn_one2 = new EMS.btn_one();
             this.label2 = new System.Windows.Forms.Label();
             this.sqlCommand1 = new Microsoft.Data.SqlClient.SqlCommand();
+            this.employeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tableDelete_DGV = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableDelete_DGV)).BeginInit();
             this.SuspendLayout();
             // 
@@ -188,18 +191,20 @@
             this.sqlCommand1.CommandTimeout = 30;
             this.sqlCommand1.EnableOptimizedParameterBinding = false;
             // 
+            // employeeBindingSource
+            // 
+            this.employeeBindingSource.DataSource = typeof(EMS.Employee_Details.Employee);
+            // 
             // tableDelete_DGV
             // 
-            this.tableDelete_DGV.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.tableDelete_DGV.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.tableDelete_DGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tableDelete_DGV.GridColor = System.Drawing.Color.Beige;
-            this.tableDelete_DGV.Location = new System.Drawing.Point(134, 271);
+            this.tableDelete_DGV.Location = new System.Drawing.Point(134, 262);
             this.tableDelete_DGV.Name = "tableDelete_DGV";
             this.tableDelete_DGV.RowHeadersWidth = 51;
             this.tableDelete_DGV.RowTemplate.Height = 29;
-            this.tableDelete_DGV.Size = new System.Drawing.Size(1305, 537);
+            this.tableDelete_DGV.Size = new System.Drawing.Size(1305, 549);
             this.tableDelete_DGV.TabIndex = 133;
+            this.tableDelete_DGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tableDelete_DGV_CellContentClick_1);
             // 
             // EMPLOYEESdelete
             // 
@@ -223,6 +228,7 @@
             this.Load += new System.EventHandler(this.EMPLOYEESdelete_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableDelete_DGV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -241,6 +247,7 @@
         private btn_one btn_one2;
         private Label label2;
         private Microsoft.Data.SqlClient.SqlCommand sqlCommand1;
+        private BindingSource employeeBindingSource;
         private DataGridView tableDelete_DGV;
     }
 }

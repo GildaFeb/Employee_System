@@ -513,8 +513,9 @@ namespace EMS
             // 48hrs(4hrs x 5days) x 4weeks - regular_worktime.Items[4]
             // [!] take note with the item number in every if else, thats the indicator of selected item
 
-            if (regular_worktime != null && regular_pay != null)
+            if (string.IsNullOrWhiteSpace(emp_designation.Text))
             {
+                regular_worktime.Enabled = true;
 
                 double Pay = 0.0;
                 double.TryParse(regular_pay.Text.Trim(), out Pay);
@@ -523,25 +524,24 @@ namespace EMS
                 {
                     total_rpay.Text = (Pay * 160).ToString();
                 }
-                else if (regular_worktime.SelectedItem == regular_worktime.Items[1]) 
+                else if (regular_worktime.SelectedItem == regular_worktime.Items[1])
                 {
-                    
                     total_rpay.Text = (Pay * 128).ToString();
                 }
                 else if (regular_worktime.SelectedItem == regular_worktime.Items[2])
                 {
 
-                    total_rpay.Text = (Pay * 120).ToString();
+                    total_rpay.Text = (Pay * 140).ToString();
                 }
                 else if (regular_worktime.SelectedItem == regular_worktime.Items[3])
                 {
 
-                    total_rpay.Text = (Pay * 96).ToString();
+                    total_rpay.Text = (Pay * 112).ToString();
                 }
                 else if (regular_worktime.SelectedItem == regular_worktime.Items[4])
                 {
 
-                    total_rpay.Text = (Pay * 48).ToString();
+                    total_rpay.Text = (Pay * 96).ToString();
                 }
                 worktime.Text = regular_worktime.Text;
                 total.Text = total_rpay.Text;
@@ -599,37 +599,35 @@ namespace EMS
         private void regular_worktime_SelectedIndexChanged(object sender, EventArgs e)
         {
 
-            if (regular_worktime != null && regular_pay != null)
+            double Pay = 0.0;
+            double.TryParse(regular_pay.Text.Trim(), out Pay);
+
+            if (regular_worktime.SelectedItem == regular_worktime.Items[0])
+            {
+                total_rpay.Text = (Pay * 160).ToString();
+            }
+            else if (regular_worktime.SelectedItem == regular_worktime.Items[1])
+            {
+                total_rpay.Text = (Pay * 128).ToString();
+            }
+            else if (regular_worktime.SelectedItem == regular_worktime.Items[2])
             {
 
-                double Pay = 0.0;
-                double.TryParse(regular_pay.Text.Trim(), out Pay);
-
-                if (regular_worktime.SelectedItem == regular_worktime.Items[0])
-                {
-                    total_rpay.Text = (Pay * 160).ToString();
-                }
-                else if (regular_worktime.SelectedItem == regular_worktime.Items[1])
-                {
-                    total_rpay.Text = (Pay * 128).ToString();
-                }
-                else if (regular_worktime.SelectedItem == regular_worktime.Items[3])
-                {
-                    total_rpay.Text = (Pay * 96).ToString();
-                }
-                else if (regular_worktime.SelectedItem == regular_worktime.Items[4])
-                {
-
-                    total_rpay.Text = (Pay * 48).ToString();
-                }
-                worktime.Text = regular_worktime.Text;
-                total.Text = total_rpay.Text;
-                pay.Text = regular_pay.Text;
+                total_rpay.Text = (Pay * 140).ToString();
             }
-            else
+            else if (regular_worktime.SelectedItem == regular_worktime.Items[3])
             {
-                MessageBox.Show(" Select Regular Pay and Worktime to view TOTAL REGULAR PAY");
+
+                total_rpay.Text = (Pay * 112).ToString();
             }
+            else if (regular_worktime.SelectedItem == regular_worktime.Items[4])
+            {
+
+                total_rpay.Text = (Pay * 96).ToString();
+            }
+            worktime.Text = regular_worktime.Text;
+            total.Text = total_rpay.Text;
+            pay.Text = regular_pay.Text;
 
         }
 

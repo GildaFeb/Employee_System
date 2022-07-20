@@ -27,17 +27,27 @@ namespace EMS
             tableDelete_DGV.Columns.Insert(0, checkBoxColumn);
 
 
+
+
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             
         }
-
+        
         private void EMPLOYEESdelete_Load(object sender, EventArgs e)
         {
             deleteDataGridView();
             visualsDatagridview();
+            OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
+
+            con.Open();
+            OleDbCommand cmd = new OleDbCommand("Select * from EmployeeTbl", con);
+            OleDbDataReader read = cmd.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Load(read);
+            tableDelete_DGV.DataSource = dt;
         }
 
         //
@@ -139,14 +149,48 @@ namespace EMS
                 }
             }
             int i;
-            i = tableDelete_DGV.SelectedCells[0].RowIndex;
 
+            //int total = tableDelete_DGV.Rows.Cast<DataGridViewRow>().Where(p => Convert.ToBoolean(p.Cells["Selected"].Value) == true).Count();
             OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
-            OleDbCommand delcmd = new OleDbCommand();
+            OleDbCommand command = new OleDbCommand();
+
+            con.Open();
+
+            /*
+            if(total > 0)
+            {
+                string message = $"Are you sure you want to delete {total} rows?";
+                if (total > 1)
+                {
+                    message = $"Are you sure you want to delete {total} rows?";
+                    if(MessageBox.Show(message, "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    {
+                        for(int i = tableDelete_DGV.RowCount - 1; i >= 0; i--)
+                        {
+                            DataGridViewRow row = tableDelete_DGV.Rows[i];
+                            if (Convert.ToBoolean(row.Cells["Selected"].Value)== true)
+                            {
+                                command.CommandText = "DELETE FROM EmployeeTbl WHERE EmployeeID= '" + row.Cells[1].Value.ToString() + "'";
+                                command.Connection = con;
+
+                                command.ExecuteNonQuery();
+                            }
+
+                        
+                            
+
+                        }
+                    }
+
+                }
+
+            } */
             if (count != 0)
             {
                 try
                 {
+                    
+                    string[] IDS = new string[100];
                     String msg = "Are you sure you want to delete the employee/s you selected?";
                     String caption = "Delete Record";
                     MessageBoxButtons buttons = MessageBoxButtons.YesNo;
@@ -155,32 +199,67 @@ namespace EMS
                     result = MessageBox.Show(this, msg, caption, buttons, ico);
                     if (result == DialogResult.Yes)
                     {
-                        using (OleDbConnection Con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True")) //ADDED
+                        int val = 0;
+                        bool check = true;
+                            
+
+                        /*foreach (DataGridViewRow Row in tableDelete_DGV.Rows)
                         {
-                            OleDbCommand command = new OleDbCommand();
-                            Con.Open();
-                            //ArrayList id = new ArrayList();
-                            foreach (DataGridViewRow Row in tableDelete_DGV.Rows)
-                            {
-                                    try
-                                    {
-                                        if(!(((DataGridViewCheckBoxCell)Row.Cells["checkBoxColumn"]).Value == null))
-                                        {  //id.Add(tableDelete_DGV.Rows[Row.Index].Cells[1].Value);
-                                            command.CommandText = "DELETE FROM EmployeeTbl WHERE EmployeeID= '" + tableDelete_DGV.Rows[Row.Index].Cells[1].Value+ "'";
-                                            command.Connection = con;
-                                            command.ExecuteNonQuery();
-                                            tableDelete_DGV.Rows.RemoveAt(Row.Index); //not sure
-                                        }
-                                    }
-                                    catch (Exception ex)
-                                    {
-                                        MessageBox.Show(ex.ToString());
-                                    }
+
+                                try
+                                {
+                                    val++;
+                                    if(!(((DataGridViewCheckBoxCell)Row.Cells["checkBoxColumn"]).Value == null))
+                                    {  //id.Add(tableDelete_DGV.Rows[Row.Index].Cells[1].Value);
+                                        IDS[val] = CheckBox.Item
+                                        tableDelete_DGV.Rows.RemoveAt(Row.Index); //not sure
+                                        MessageBox.Show(IDS[val].ToString());
                             }
-                            Con.Close();
+                                }
+                                catch (Exception ex)
+                                {
+                                    check = false;
+                                    MessageBox.Show(ex.ToString());
+                                }
+
+                        }*/
+
+                        for (int u = tableDelete_DGV.RowCount - 1; u >= 0; u--)
+                        {
+                            DataGridViewRow row = tableDelete_DGV.Rows[u];
+
+                            if (Convert.ToBoolean(row.Cells["checkBoxColumn"].Value) == true)
+                            {
+
+                                command.CommandText = "DELETE FROM EmployeeTbl WHERE EmployeeID= '" + row.Cells[1].Value.ToString() + "'";
+                                command.Connection = con;
+                                command.ExecuteNonQuery();
+                                tableDelete_DGV.Rows.RemoveAt(row.Index);
+                            }
+
+
+
+
+                        }
+                        /*
+
+                        for (int x = 1; x < IDS.Length; x++)
+                        {
+                            
+                            command.CommandText = "DELETE FROM EmployeeTbl WHERE EmployeeID= '" + IDS[x].ToString() + "'";
+                            command.Connection = con;
+
+                            command.ExecuteNonQuery();
+
+                            MessageBox.Show(IDS[x].ToString());
+                        }*/
+                        
+                        if (check == true)
+                            {
+                            
                             successEMPdelete successEMPdelete = new successEMPdelete();
                             successEMPdelete.ShowDialog();
-                        }
+                            }
                         
                     }
                     else
@@ -196,16 +275,24 @@ namespace EMS
                 }
 
             }
-            else if (tableDelete_DGV.SelectedCells.Count > 0)
+           /* else if (tableDelete_DGV.SelectedCells.Count != 0)
             {
-                delcmd.CommandText = "DELETE FROM EmployeeTbl WHERE EmployeeID=" + tableDelete_DGV.SelectedRows[i].Cells[0].Value.ToString() + "";
-                con.Open();
-                delcmd.Connection = con;
-                delcmd.ExecuteNonQuery();
-                con.Close();
-                tableDelete_DGV.Rows.RemoveAt(tableDelete_DGV.SelectedRows[i].Index);
-                MessageBox.Show("Row Deleted");
-            }
+                foreach (DataGridViewRow Row in tableDelete_DGV.Rows)
+                {
+                    if (!(((DataGridViewCheckBoxCell)Row.Cells["checkBoxColumn"]).Value == null))
+                    {
+                        delcmd.CommandText = "DELETE FROM EmployeeTbl WHERE EmployeeID='" + tableDelete_DGV.SelectedRows[Row.Index].Cells[0].Value.ToString() + "'";
+                     
+                        delcmd.Connection = con;
+                        delcmd.ExecuteNonQuery();
+                        
+                        tableDelete_DGV.Rows.RemoveAt(tableDelete_DGV.SelectedRows[Row.Index].Index);
+                        
+                    }
+                    
+                }
+                
+            } */
 
 
             else
@@ -214,7 +301,10 @@ namespace EMS
             }
 
 
+            con.Close();
+
             
+
         }
 
         private void btn_one1_Click(object sender, EventArgs e)
@@ -233,6 +323,16 @@ namespace EMS
             DataTable dt = new DataTable();
             dt.Load(read);
             tableDelete_DGV.DataSource = dt;
+        }
+
+        private void tableDelete_DGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void tableDelete_DGV_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

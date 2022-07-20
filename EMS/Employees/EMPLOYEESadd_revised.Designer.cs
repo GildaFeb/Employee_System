@@ -575,7 +575,7 @@
             this.regular_pay.Items.AddRange(new object[] {
             "70 ",
             "80 ",
-            "90 ",
+            "90",
             "100 ",
             "200"});
             this.regular_pay.Location = new System.Drawing.Point(599, 419);
@@ -602,13 +602,14 @@
             // regular_worktime
             // 
             this.regular_worktime.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.regular_worktime.Enabled = false;
             this.regular_worktime.FormattingEnabled = true;
             this.regular_worktime.Items.AddRange(new object[] {
-            "160hrs (8hrs x 5days) x 4weeks",
-            "128hrs (8hrs x 4days) x 4weeks",
-            "120hrs (6hrs x 5days) x 4weeks",
-            "96hrs (8hrs x 3days) x 4weeks",
-            "48hrs (4hrs x 5days) x 4weeks"});
+            "8hrs/day (5days/week)(160hrs/month)",
+            "8hrs/day (4days/week)(128hrs/month)",
+            "7hrs/day (5days/week)(140hrs/month)",
+            "7hrs/day (4days/week)(112hrs/month)",
+            "6hrs/day (4days/week)(96hrs/month)"});
             this.regular_worktime.Location = new System.Drawing.Point(597, 517);
             this.regular_worktime.Name = "regular_worktime";
             this.regular_worktime.Size = new System.Drawing.Size(351, 28);
