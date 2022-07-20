@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.btn_clear = new EMS.btn_one();
-            this.pending = new EMS.btn_one();
             this.LblName = new System.Windows.Forms.Label();
             this.AddLblOvertime = new System.Windows.Forms.Label();
             this.AddLblTimeOut = new System.Windows.Forms.Label();
@@ -56,9 +55,15 @@
             this.timein = new System.Windows.Forms.DateTimePicker();
             this.timeout = new System.Windows.Forms.DateTimePicker();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.submit = new EMS.btn_one();
-            this.label1 = new System.Windows.Forms.Label();
+            this.pending_txt = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.report_txt = new System.Windows.Forms.Label();
+            this.blank_timein = new System.Windows.Forms.TextBox();
+            this.blank_timeout = new LoginForm.TextBox();
+            this.pending_btn = new EMS.btn_one();
+            this.submit_btn = new EMS.btn_one();
+            this.submit_cover = new System.Windows.Forms.Label();
+            this.pending_cover = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn_clear
@@ -76,22 +81,6 @@
             this.btn_clear.Text = "Clear";
             this.btn_clear.UseVisualStyleBackColor = false;
             this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
-            // 
-            // pending
-            // 
-            this.pending.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(202)))), ((int)(((byte)(63)))));
-            this.pending.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pending.FlatAppearance.BorderSize = 0;
-            this.pending.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pending.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.pending.ForeColor = System.Drawing.Color.White;
-            this.pending.Location = new System.Drawing.Point(1190, 692);
-            this.pending.Name = "pending";
-            this.pending.Size = new System.Drawing.Size(229, 51);
-            this.pending.TabIndex = 196;
-            this.pending.Text = "Pending";
-            this.pending.UseVisualStyleBackColor = false;
-            this.pending.Click += new System.EventHandler(this.AddSave_Click);
             // 
             // LblName
             // 
@@ -284,6 +273,7 @@
             this.LblStatus.Size = new System.Drawing.Size(1291, 276);
             this.LblStatus.TabIndex = 179;
             this.LblStatus.UseVisualStyleBackColor = false;
+            this.LblStatus.Click += new System.EventHandler(this.LblStatus_Click);
             // 
             // AddTitle
             // 
@@ -391,7 +381,7 @@
             this.now_timein.Enabled = false;
             this.now_timein.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
             this.now_timein.ForeColor = System.Drawing.Color.White;
-            this.now_timein.Location = new System.Drawing.Point(856, 505);
+            this.now_timein.Location = new System.Drawing.Point(857, 506);
             this.now_timein.Name = "now_timein";
             this.now_timein.Size = new System.Drawing.Size(84, 23);
             this.now_timein.TabIndex = 209;
@@ -406,7 +396,7 @@
             this.now_timeout.Enabled = false;
             this.now_timeout.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
             this.now_timeout.ForeColor = System.Drawing.Color.White;
-            this.now_timeout.Location = new System.Drawing.Point(856, 600);
+            this.now_timeout.Location = new System.Drawing.Point(857, 597);
             this.now_timeout.Name = "now_timeout";
             this.now_timeout.Size = new System.Drawing.Size(84, 23);
             this.now_timeout.TabIndex = 211;
@@ -420,7 +410,7 @@
             this.clear_timeout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.clear_timeout.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
             this.clear_timeout.ForeColor = System.Drawing.Color.White;
-            this.clear_timeout.Location = new System.Drawing.Point(904, 569);
+            this.clear_timeout.Location = new System.Drawing.Point(904, 567);
             this.clear_timeout.Name = "clear_timeout";
             this.clear_timeout.Size = new System.Drawing.Size(49, 23);
             this.clear_timeout.TabIndex = 210;
@@ -454,60 +444,142 @@
             this.maskedTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(37)))), ((int)(((byte)(83)))));
             this.maskedTextBox1.Enabled = false;
             this.maskedTextBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.maskedTextBox1.Location = new System.Drawing.Point(844, 596);
+            this.maskedTextBox1.Location = new System.Drawing.Point(844, 592);
             this.maskedTextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(109, 34);
             this.maskedTextBox1.TabIndex = 214;
             this.maskedTextBox1.ValidatingType = typeof(System.DateTime);
             // 
-            // submit
+            // pending_txt
             // 
-            this.submit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(37)))), ((int)(((byte)(83)))));
-            this.submit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.submit.FlatAppearance.BorderSize = 0;
-            this.submit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.submit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.submit.ForeColor = System.Drawing.Color.White;
-            this.submit.Location = new System.Drawing.Point(955, 692);
-            this.submit.Name = "submit";
-            this.submit.Size = new System.Drawing.Size(229, 51);
-            this.submit.TabIndex = 215;
-            this.submit.Text = "Submit";
-            this.submit.UseVisualStyleBackColor = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(1220, 746);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(178, 20);
-            this.label1.TabIndex = 216;
-            this.label1.Text = "This will see in Duty Table";
+            this.pending_txt.AutoSize = true;
+            this.pending_txt.ForeColor = System.Drawing.Color.Black;
+            this.pending_txt.Location = new System.Drawing.Point(969, 746);
+            this.pending_txt.Name = "pending_txt";
+            this.pending_txt.Size = new System.Drawing.Size(178, 20);
+            this.pending_txt.TabIndex = 216;
+            this.pending_txt.Text = "This will see in Duty Table";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(1085, 551);
+            this.label2.Location = new System.Drawing.Point(1073, 550);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(183, 20);
+            this.label2.Size = new System.Drawing.Size(38, 20);
             this.label2.TabIndex = 217;
-            this.label2.Text = "(15% of the regular salary)";
+            this.label2.Text = "(hrs)";
+            // 
+            // report_txt
+            // 
+            this.report_txt.AutoSize = true;
+            this.report_txt.ForeColor = System.Drawing.Color.Black;
+            this.report_txt.Location = new System.Drawing.Point(1171, 746);
+            this.report_txt.Name = "report_txt";
+            this.report_txt.Size = new System.Drawing.Size(233, 20);
+            this.report_txt.TabIndex = 218;
+            this.report_txt.Text = "This will see in Attendance Report";
+            // 
+            // blank_timein
+            // 
+            this.blank_timein.Location = new System.Drawing.Point(604, 504);
+            this.blank_timein.Name = "blank_timein";
+            this.blank_timein.Size = new System.Drawing.Size(349, 27);
+            this.blank_timein.TabIndex = 219;
+            // 
+            // blank_timeout
+            // 
+            this.blank_timeout.BackColor = System.Drawing.SystemColors.Window;
+            this.blank_timeout.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.blank_timeout.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.blank_timeout.BorderRadius = 0;
+            this.blank_timeout.BorderSize = 2;
+            this.blank_timeout.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.blank_timeout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.blank_timeout.Location = new System.Drawing.Point(604, 593);
+            this.blank_timeout.Margin = new System.Windows.Forms.Padding(4);
+            this.blank_timeout.Multiline = false;
+            this.blank_timeout.Name = "blank_timeout";
+            this.blank_timeout.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.blank_timeout.PasswordChar = false;
+            this.blank_timeout.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.blank_timeout.PlaceholderText = "";
+            this.blank_timeout.Size = new System.Drawing.Size(349, 35);
+            this.blank_timeout.TabIndex = 220;
+            this.blank_timeout.Texts = "";
+            this.blank_timeout.UnderlinedStyle = false;
+            // 
+            // pending_btn
+            // 
+            this.pending_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(202)))), ((int)(((byte)(63)))));
+            this.pending_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pending_btn.FlatAppearance.BorderSize = 0;
+            this.pending_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pending_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.pending_btn.ForeColor = System.Drawing.Color.White;
+            this.pending_btn.Location = new System.Drawing.Point(944, 692);
+            this.pending_btn.Name = "pending_btn";
+            this.pending_btn.Size = new System.Drawing.Size(221, 51);
+            this.pending_btn.TabIndex = 221;
+            this.pending_btn.Text = "Pending";
+            this.pending_btn.UseVisualStyleBackColor = false;
+            // 
+            // submit_btn
+            // 
+            this.submit_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(37)))), ((int)(((byte)(83)))));
+            this.submit_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.submit_btn.FlatAppearance.BorderSize = 0;
+            this.submit_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.submit_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.submit_btn.ForeColor = System.Drawing.Color.White;
+            this.submit_btn.Location = new System.Drawing.Point(1171, 692);
+            this.submit_btn.Name = "submit_btn";
+            this.submit_btn.Size = new System.Drawing.Size(248, 51);
+            this.submit_btn.TabIndex = 222;
+            this.submit_btn.Text = "Submit";
+            this.submit_btn.UseVisualStyleBackColor = false;
+            // 
+            // submit_cover
+            // 
+            this.submit_cover.AutoSize = true;
+            this.submit_cover.Location = new System.Drawing.Point(1169, 692);
+            this.submit_cover.Margin = new System.Windows.Forms.Padding(50, 0, 50, 50);
+            this.submit_cover.Name = "submit_cover";
+            this.submit_cover.Padding = new System.Windows.Forms.Padding(150, 50, 100, 50);
+            this.submit_cover.Size = new System.Drawing.Size(250, 120);
+            this.submit_cover.TabIndex = 226;
+            this.submit_cover.Click += new System.EventHandler(this.submit_cover_Click_1);
+            // 
+            // pending_cover
+            // 
+            this.pending_cover.AutoSize = true;
+            this.pending_cover.Location = new System.Drawing.Point(915, 692);
+            this.pending_cover.Margin = new System.Windows.Forms.Padding(50, 0, 50, 50);
+            this.pending_cover.Name = "pending_cover";
+            this.pending_cover.Padding = new System.Windows.Forms.Padding(150, 50, 100, 50);
+            this.pending_cover.Size = new System.Drawing.Size(250, 120);
+            this.pending_cover.TabIndex = 227;
             // 
             // ATTENDANCEdutydurationAddREVISED
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.submit);
+            this.Controls.Add(this.pending_cover);
+            this.Controls.Add(this.submit_cover);
+            this.Controls.Add(this.submit_btn);
+            this.Controls.Add(this.pending_btn);
             this.Controls.Add(this.now_timeout);
             this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.blank_timeout);
             this.Controls.Add(this.now_timein);
             this.Controls.Add(this.time_out);
+            this.Controls.Add(this.blank_timein);
+            this.Controls.Add(this.report_txt);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.pending_txt);
             this.Controls.Add(this.timeout);
             this.Controls.Add(this.timein);
             this.Controls.Add(this.clear_timeout);
@@ -515,7 +587,6 @@
             this.Controls.Add(this.btn_findemployee);
             this.Controls.Add(this.status);
             this.Controls.Add(this.btn_clear);
-            this.Controls.Add(this.pending);
             this.Controls.Add(this.LblName);
             this.Controls.Add(this.AddLblOvertime);
             this.Controls.Add(this.AddLblTimeOut);
@@ -542,7 +613,6 @@
 
         #endregion
         private btn_one btn_clear;
-        private btn_one pending;
         private Label LblName;
         private Label AddLblOvertime;
         private Label AddLblTimeOut;
@@ -569,8 +639,14 @@
         private DateTimePicker timein;
         private DateTimePicker timeout;
         private MaskedTextBox maskedTextBox1;
-        private btn_one submit;
-        private Label label1;
+        private Label pending_txt;
         private Label label2;
+        private Label report_txt;
+        private TextBox blank_timein;
+        private LoginForm.TextBox blank_timeout;
+        private btn_one pending_btn;
+        private btn_one submit_btn;
+        private Label submit_cover;
+        private Label pending_cover;
     }
 }

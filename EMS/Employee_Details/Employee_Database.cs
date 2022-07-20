@@ -290,10 +290,6 @@ namespace EMS.Employee_Details
         {
 
         }
-        public static void ShowEmployee_ByName()
-        {
-
-        }
         public static void ShowEmployee_ByID()
         {
 

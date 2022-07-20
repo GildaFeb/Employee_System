@@ -16,8 +16,8 @@ namespace EMS
         {
             InitializeComponent();
             date_duty.CustomFormat = "dddd MMMM dd, yyyy";
-
-            
+            blank_timein.Enabled = false;
+            blank_timeout.Enabled = false;
         }
 
         private void AddSave_Click(object sender, EventArgs e)
@@ -75,6 +75,9 @@ namespace EMS
                 timeout.Enabled = true;
                 now_timein.Enabled = true;
                 now_timeout.Enabled = true;
+
+                submit_cover.Visible = false;
+                pending_cover.Visible = false;
             }
             else if (status.SelectedItem.ToString() == "Absent")
             {
@@ -84,8 +87,11 @@ namespace EMS
                 now_timein.Enabled = false;
                 now_timeout.Enabled = false;
                 date_duty.Enabled = true;
-                pending.Enabled = false;
-                
+                overtime.Text = "";
+                duty_duration.Text = "";
+
+                submit_cover.Visible = false;
+                pending_cover.Visible = true;
 
             }
             else if (status.SelectedItem.ToString() == "On Leave")
@@ -96,7 +102,11 @@ namespace EMS
                 timein.Enabled = false;
                 timeout.Enabled = false;
                 date_duty.Enabled = true;
-                pending.Enabled = false;
+                overtime.Text = "";
+                duty_duration.Text = "";
+
+                submit_cover.Visible = false;
+                pending_cover.Visible = true;
             }
             
         }
@@ -104,14 +114,21 @@ namespace EMS
         private void btn_clear_Click(object sender, EventArgs e)
         {
             // [!] Alvin = clear all forms
-            employee_id.Text = null;
-            status.SelectedItem = "The Employee is:";
-            duty_duration.Text = null;
-            overtime.Text = null;
-            timein.Value = DateTime.Today;
-            timeout.Value = DateTime.Today;
+            employee_id.Text = "";
+            status.Text = " ";
+            duty_duration.Text = "";
+            overtime.Text = "";
+            blank_timeout.Visible = true;
+            blank_timein.Visible = true;
+            employee_name.Text = "";
 
+            pending_cover.Visible = true;
+            submit_cover.Visible = true;
+            status.Enabled = false;
+            now_timein.Enabled = false;
+            now_timeout.Enabled = false;
 
+            
 
         }
 
@@ -141,25 +158,87 @@ namespace EMS
 
         private void now_timein_Click(object sender, EventArgs e)
         {
-            DateTime now = DateTime.Now;
+            
             //DateTime dateTime = DateTime.ParseExact(now.Date.ToString(), "hh:mm", System.Globalization.CultureInfo.InvariantCulture);
-            timein.Text = now.ToString("HH:mm");
+            blank_timein.Visible = false;
+            timein.Visible = true;
+            TimeSpan duration = timeout.Value - timein.Value;
+            duty_duration.Text = duration.ToString();
+
+            //string regular_pay = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).regular_pay.ToString();
+            string worktime = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).regular_worktime.ToString();
+
+
+            char[] work = worktime.ToCharArray();
+            char[] emp_worktime = new char[30];
+            int i = 0;
+
+            while (!(work[i] == 'h'))
+            {
+                emp_worktime[i] = work[i];
+                i++;
+            }
+            string ConvertedWorktime = new string(emp_worktime);
+            int work_time = Convert.ToInt32(ConvertedWorktime.ToLower());
+
+            int durationsConvertToTime = int.Parse(duration.Hours.ToString());
+            int overtime_hrs = durationsConvertToTime - work_time;
+            if(durationsConvertToTime > work_time)
+            {
+                overtime.Text = "0";
+            }
+            else
+            {
+                overtime.Text = overtime_hrs.ToString();
+            }
         }
 
         private void now_timeout_Click(object sender, EventArgs e)
         {
-            DateTime now = DateTime.Now;
-            timeout.Text = now.ToString("HH:mm");
+
+            //DateTime dateTime = DateTime.ParseExact(now.Date.ToString(), "hh:mm", System.Globalization.CultureInfo.InvariantCulture);
+            blank_timeout.Visible = false;
+            timein.Visible = true;
+
+            TimeSpan duration = timeout.Value - timein.Value;
+            duty_duration.Text = duration.ToString();
+
+            //string regular_pay = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).regular_pay.ToString();
+            string worktime = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).regular_worktime.ToString();
+
+
+            char[] work = worktime.ToCharArray();
+            char[] emp_worktime = new char[30];
+            int i = 0;
+
+            while (!(work[i] == 'h'))
+            {
+                emp_worktime[i] = work[i];
+                i++;
+            }
+            string ConvertedWorktime = new string(emp_worktime);
+            int work_time = Convert.ToInt32(ConvertedWorktime.ToLower());
+
+            int durationsConvertToTime = int.Parse(duration.Hours.ToString());
+            int overtime_hrs = durationsConvertToTime - work_time;
+            if (durationsConvertToTime > work_time)
+            {
+                overtime.Text = "0";
+            }
+            else
+            {
+                overtime.Text = overtime_hrs.ToString();
+            }
         }
 
         private void clear_timein_Click(object sender, EventArgs e)
         {
-            timein.Text = null;
+            blank_timein.Visible = true;
         }
 
         private void clear_timeout_Click(object sender, EventArgs e)
         {
-            time_out.Text = null;
+            blank_timeout.Visible = true;
         }
 
         private void btn_findemployee_Click(object sender, EventArgs e)
@@ -235,6 +314,8 @@ namespace EMS
             duty_duration.Text = duration.ToString();
 
 
+
+
         }
 
         private void AddLblDuration_Click(object sender, EventArgs e)
@@ -244,10 +325,19 @@ namespace EMS
 
         private void timein_ValueChanged(object sender, EventArgs e)
         {
+
+
+
+            //int pay = int.Parse(regular_pay);
+            /*double rate = pay * (1.5);
+            double overtime_pay = rate * overtime_hrs;*/
+            //DateTime dateTime = DateTime.ParseExact(now.Date.ToString(), "hh:mm", System.Globalization.CultureInfo.InvariantCulture);
+            blank_timein.Visible = false;
+            timein.Visible = true;
             TimeSpan duration = timeout.Value - timein.Value;
             duty_duration.Text = duration.ToString();
 
-            string regular_pay = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).regular_pay.ToString();
+            //string regular_pay = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).regular_pay.ToString();
             string worktime = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).regular_worktime.ToString();
 
 
@@ -264,21 +354,33 @@ namespace EMS
             int work_time = Convert.ToInt32(ConvertedWorktime.ToLower());
 
             int durationsConvertToTime = int.Parse(duration.Hours.ToString());
-            int overtime_hrs = work_time - durationsConvertToTime;
+            int overtime_hrs = durationsConvertToTime - work_time;
 
-            int pay = int.Parse(regular_pay);
-            double rate = pay * (1.5);
-            double overtime_pay = rate * overtime_hrs;
+            if (durationsConvertToTime > work_time)
+            {
+                overtime.Text = overtime_hrs.ToString();
+            }
+            else
+            {
 
-            overtime.Text = overtime_pay.ToString();
+                overtime.Text = "0";
+            }
+
         }
 
         private void timeout_ValueChanged(object sender, EventArgs e)
         {
+
+            //int pay = int.Parse(regular_pay);
+            /*double rate = pay * (1.5);
+            double overtime_pay = rate * overtime_hrs;*/
+            //DateTime dateTime = DateTime.ParseExact(now.Date.ToString(), "hh:mm", System.Globalization.CultureInfo.InvariantCulture);
+            blank_timein.Visible = false;
+            timein.Visible = true;
             TimeSpan duration = timeout.Value - timein.Value;
             duty_duration.Text = duration.ToString();
 
-            string regular_pay = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).regular_pay.ToString();
+            //string regular_pay = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).regular_pay.ToString();
             string worktime = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).regular_worktime.ToString();
 
 
@@ -295,13 +397,44 @@ namespace EMS
             int work_time = Convert.ToInt32(ConvertedWorktime.ToLower());
 
             int durationsConvertToTime = int.Parse(duration.Hours.ToString());
-            int overtime_hrs = work_time - durationsConvertToTime;
+            int overtime_hrs = durationsConvertToTime - work_time;
 
-            int pay = int.Parse(regular_pay);
-            double rate = pay * (1.5);
-            double overtime_pay = rate * overtime_hrs;
+            if (durationsConvertToTime > work_time)
+            {
+                overtime.Text = overtime_hrs.ToString();
+            }
+            else
+            {
+                
+                overtime.Text = "0";
+            }
 
-            overtime.Text = overtime_pay.ToString();
+
+        }
+
+        private void LblStatus_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void submit_btn_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void pending_cover_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void submit_cover_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void submit_cover_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
