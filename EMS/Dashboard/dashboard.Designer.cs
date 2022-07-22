@@ -261,9 +261,9 @@
             this.project_num.ForeColor = System.Drawing.Color.White;
             this.project_num.Location = new System.Drawing.Point(774, 268);
             this.project_num.Name = "project_num";
-            this.project_num.Size = new System.Drawing.Size(48, 32);
+            this.project_num.Size = new System.Drawing.Size(31, 32);
             this.project_num.TabIndex = 111;
-            this.project_num.Text = "45";
+            this.project_num.Text = "0";
             this.project_num.Click += new System.EventHandler(this.label7_Click);
             // 
             // guard
@@ -286,9 +286,9 @@
             this.fullstack_dev_num.ForeColor = System.Drawing.Color.White;
             this.fullstack_dev_num.Location = new System.Drawing.Point(774, 318);
             this.fullstack_dev_num.Name = "fullstack_dev_num";
-            this.fullstack_dev_num.Size = new System.Drawing.Size(48, 32);
+            this.fullstack_dev_num.Size = new System.Drawing.Size(31, 32);
             this.fullstack_dev_num.TabIndex = 111;
-            this.fullstack_dev_num.Text = "86";
+            this.fullstack_dev_num.Text = "0";
             this.fullstack_dev_num.Click += new System.EventHandler(this.label9_Click);
             // 
             // instructor
@@ -311,9 +311,9 @@
             this.software_engineer_num.ForeColor = System.Drawing.Color.White;
             this.software_engineer_num.Location = new System.Drawing.Point(774, 362);
             this.software_engineer_num.Name = "software_engineer_num";
-            this.software_engineer_num.Size = new System.Drawing.Size(48, 32);
+            this.software_engineer_num.Size = new System.Drawing.Size(31, 32);
             this.software_engineer_num.TabIndex = 111;
-            this.software_engineer_num.Text = "16";
+            this.software_engineer_num.Text = "0";
             this.software_engineer_num.Click += new System.EventHandler(this.label11_Click);
             // 
             // software_eng
@@ -337,9 +337,9 @@
             this.emp_num.ForeColor = System.Drawing.Color.White;
             this.emp_num.Location = new System.Drawing.Point(393, 223);
             this.emp_num.Name = "emp_num";
-            this.emp_num.Size = new System.Drawing.Size(97, 51);
+            this.emp_num.Size = new System.Drawing.Size(47, 51);
             this.emp_num.TabIndex = 111;
-            this.emp_num.Text = "321";
+            this.emp_num.Text = "0";
             this.emp_num.Click += new System.EventHandler(this.emp_num_Click);
             // 
             // time_in
@@ -350,9 +350,10 @@
             this.time_in.ForeColor = System.Drawing.Color.White;
             this.time_in.Location = new System.Drawing.Point(393, 350);
             this.time_in.Name = "time_in";
-            this.time_in.Size = new System.Drawing.Size(97, 51);
+            this.time_in.Size = new System.Drawing.Size(47, 51);
             this.time_in.TabIndex = 111;
-            this.time_in.Text = "321";
+            this.time_in.Text = "0";
+            this.time_in.Click += new System.EventHandler(this.time_in_Click);
             // 
             // label23
             // 
@@ -408,9 +409,9 @@
             this.time_out.ForeColor = System.Drawing.Color.White;
             this.time_out.Location = new System.Drawing.Point(1360, 274);
             this.time_out.Name = "time_out";
-            this.time_out.Size = new System.Drawing.Size(72, 51);
+            this.time_out.Size = new System.Drawing.Size(47, 51);
             this.time_out.TabIndex = 111;
-            this.time_out.Text = "45";
+            this.time_out.Text = "0";
             // 
             // label14
             // 
@@ -454,9 +455,9 @@
             this.administrator_num.ForeColor = System.Drawing.Color.White;
             this.administrator_num.Location = new System.Drawing.Point(774, 414);
             this.administrator_num.Name = "administrator_num";
-            this.administrator_num.Size = new System.Drawing.Size(48, 32);
+            this.administrator_num.Size = new System.Drawing.Size(31, 32);
             this.administrator_num.TabIndex = 111;
-            this.administrator_num.Text = "99";
+            this.administrator_num.Text = "0";
             this.administrator_num.Click += new System.EventHandler(this.label11_Click);
             // 
             // administrator

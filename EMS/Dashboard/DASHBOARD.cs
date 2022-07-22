@@ -16,7 +16,7 @@ namespace EMS
         {
             InitializeComponent();
             emp_num.Text = Employee_Details.Employee_Database.EmployeeNum().ToString();
-            project_num.Text = Employee_Details.Employee_Database.AdministratorCount().ToString();
+            project_num.Text = Employee_Details.Employee_Database.ProjectNumCount().ToString();
             fullstack_dev_num.Text = Employee_Details.Employee_Database.FullStackDevCount().ToString();
             software_engineer_num.Text = Employee_Details.Employee_Database.SoftwareEngCount().ToString();
             administrator_num.Text = Employee_Details.Employee_Database.AdministratorCount().ToString();
@@ -109,6 +109,11 @@ namespace EMS
             fullstack_dev_num.Text = Employee_Details.Employee_Database.FullStackDevCount().ToString();
             software_engineer_num.Text = Employee_Details.Employee_Database.SoftwareEngCount().ToString();
             administrator_num.Text = Employee_Details.Employee_Database.AdministratorCount().ToString();
+
+        }
+
+        private void time_in_Click(object sender, EventArgs e)
+        {
 
         }
     }

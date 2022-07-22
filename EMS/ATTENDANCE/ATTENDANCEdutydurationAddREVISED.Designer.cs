@@ -65,6 +65,8 @@
             this.pending_cover = new System.Windows.Forms.Label();
             this.invalid_time = new System.Windows.Forms.Label();
             this.status_ = new System.Windows.Forms.ComboBox();
+            this.dur = new System.Windows.Forms.Label();
+            this.dat = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn_clear
@@ -134,7 +136,6 @@
             this.AddLblDuration.Size = new System.Drawing.Size(64, 18);
             this.AddLblDuration.TabIndex = 190;
             this.AddLblDuration.Text = "Duration";
-            this.AddLblDuration.Click += new System.EventHandler(this.AddLblDuration_Click);
             // 
             // AddLlblTimeIn
             // 
@@ -148,7 +149,6 @@
             this.AddLlblTimeIn.Size = new System.Drawing.Size(56, 18);
             this.AddLlblTimeIn.TabIndex = 189;
             this.AddLlblTimeIn.Text = "Time in";
-            this.AddLlblTimeIn.Click += new System.EventHandler(this.AddLlblTimeIn_Click);
             // 
             // date_duty
             // 
@@ -161,7 +161,6 @@
             this.date_duty.Size = new System.Drawing.Size(349, 28);
             this.date_duty.TabIndex = 188;
             this.date_duty.Value = new System.DateTime(2022, 7, 25, 23, 59, 59, 0);
-            this.date_duty.ValueChanged += new System.EventHandler(this.date_duty_ValueChanged);
             // 
             // AddLblStatus
             // 
@@ -201,7 +200,6 @@
             this.employee_id.Name = "employee_id";
             this.employee_id.Size = new System.Drawing.Size(349, 31);
             this.employee_id.TabIndex = 184;
-            this.employee_id.TextChanged += new System.EventHandler(this.employee_id_TextChanged);
             // 
             // AddLblId
             // 
@@ -275,7 +273,6 @@
             this.LblStatus.Size = new System.Drawing.Size(1291, 276);
             this.LblStatus.TabIndex = 179;
             this.LblStatus.UseVisualStyleBackColor = false;
-            this.LblStatus.Click += new System.EventHandler(this.LblStatus_Click);
             // 
             // AddTitle
             // 
@@ -463,7 +460,6 @@
             this.blank_timein.Name = "blank_timein";
             this.blank_timein.Size = new System.Drawing.Size(349, 27);
             this.blank_timein.TabIndex = 219;
-            this.blank_timein.TextChanged += new System.EventHandler(this.blank_timein_TextChanged);
             // 
             // blank_timeout
             // 
@@ -517,18 +513,17 @@
             this.submit_btn.TabIndex = 222;
             this.submit_btn.Text = "Submit";
             this.submit_btn.UseVisualStyleBackColor = false;
-            this.submit_btn.Click += new System.EventHandler(this.submit_btn_Click_1);
+            this.submit_btn.Click += new System.EventHandler(this.submit_btn_Click);
             // 
             // submit_cover
             // 
             this.submit_cover.AutoSize = true;
-            this.submit_cover.Location = new System.Drawing.Point(1171, 692);
+            this.submit_cover.Location = new System.Drawing.Point(1184, 720);
             this.submit_cover.Margin = new System.Windows.Forms.Padding(50, 0, 50, 50);
             this.submit_cover.Name = "submit_cover";
             this.submit_cover.Padding = new System.Windows.Forms.Padding(150, 50, 100, 50);
             this.submit_cover.Size = new System.Drawing.Size(250, 120);
             this.submit_cover.TabIndex = 226;
-            this.submit_cover.Click += new System.EventHandler(this.submit_cover_Click_1);
             // 
             // pending_cover
             // 
@@ -559,18 +554,38 @@
             this.status_.Items.AddRange(new object[] {
             "Present",
             "Absent",
-            "Leave"});
+            "Leave",
+            "--Select--"});
             this.status_.Location = new System.Drawing.Point(187, 600);
             this.status_.Name = "status_";
             this.status_.Size = new System.Drawing.Size(349, 28);
             this.status_.TabIndex = 229;
             this.status_.SelectedIndexChanged += new System.EventHandler(this.status__SelectedIndexChanged);
             // 
+            // dur
+            // 
+            this.dur.AutoSize = true;
+            this.dur.Location = new System.Drawing.Point(24, 787);
+            this.dur.Name = "dur";
+            this.dur.Size = new System.Drawing.Size(0, 20);
+            this.dur.TabIndex = 230;
+            this.dur.Visible = false;
+            // 
+            // dat
+            // 
+            this.dat.AutoSize = true;
+            this.dat.Location = new System.Drawing.Point(74, 793);
+            this.dat.Name = "dat";
+            this.dat.Size = new System.Drawing.Size(0, 20);
+            this.dat.TabIndex = 231;
+            // 
             // ATTENDANCEdutydurationAddREVISED
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.Controls.Add(this.dat);
+            this.Controls.Add(this.dur);
             this.Controls.Add(this.status_);
             this.Controls.Add(this.invalid_time);
             this.Controls.Add(this.pending_cover);
@@ -654,5 +669,7 @@
         private Label pending_cover;
         private Label invalid_time;
         private ComboBox status_;
+        private Label dur;
+        private Label dat;
     }
 }

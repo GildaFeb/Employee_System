@@ -48,12 +48,13 @@ namespace EMS.Employee_Details
         public string Fullname { get; set; }
         public string Designation { get; set; }
         public string DutyDate { get; set; }
-        public string Present { get; set; }
-        public string Abesent { get; set; }
-        public string Leave { get; set; }
+        public string Status { get; set; }
         public string Overtime { get; set; }
         public string Overtime_Pay { get; set; }
         public string worked_hrs { get; set; }
         public string total_salary { get; set; }
+        public string Absent { get; set; }
+        public string Present { get; set; }
+        public string Leave { get; set; }
     }
 }
