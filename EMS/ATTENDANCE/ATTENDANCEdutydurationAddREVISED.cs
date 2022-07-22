@@ -323,6 +323,7 @@ namespace EMS
             else if (!(duration.ToString().Contains("-")) && (blank_timeout.Visible == false && blank_timein.Visible == false))
             {
                 duty_duration.Text = duration.ToString();
+                dur.Text = duration.Hours.ToString();
                 if ((durationsConvertToTime > work_time))
                 {
                     invalid_time.Visible = false;
@@ -378,6 +379,7 @@ namespace EMS
             else if (!(duration.ToString().Contains("-")) && (blank_timeout.Visible == false && blank_timein.Visible == false))
             {
                 duty_duration.Text = duration.ToString();
+                dur.Text = duration.Hours.ToString();
                 if ((durationsConvertToTime > work_time))
                 {
                     invalid_time.Visible = false;
@@ -529,6 +531,7 @@ namespace EMS
             else if (!(duration.ToString().Contains("-")) && (blank_timeout.Visible == false && blank_timein.Visible == false))
             {
                 duty_duration.Text = duration.ToString();
+                dur.Text = duration.Hours.ToString();
                 if ((durationsConvertToTime > work_time))
                 {
                     invalid_time.Visible = false;
@@ -581,6 +584,7 @@ namespace EMS
             else if (!(duration.ToString().Contains("-")) && (blank_timeout.Visible == false && blank_timein.Visible == false))
             {
                 duty_duration.Text = duration.ToString();
+                dur.Text = duration.Hours.ToString();
                 if ((durationsConvertToTime > work_time))
                 {
                     invalid_time.Visible = false;
@@ -721,10 +725,8 @@ namespace EMS
                     int work_time = Convert.ToInt32(ConvertedWorktime.ToLower());
                     int time = int.Parse(overtime.Text);
                     double worked_hrs = work_time - time;*/
-                    TimeSpan duration = timeout.Value - timein.Value;
-                    string _duration = duration.Hours.ToString();
-                    dur.Text = _duration;
-                    dat.Text = date_duty.Value.Month.ToString() + " " + date_duty.Value.Year.ToString();
+                   
+                    dat.Text = date_duty.Value.Month.ToString() + "/" + date_duty.Value.Year.ToString();
                     Employee_Details.Report _record = new Employee_Details.Report()
                     {
                         EmployeeID = employee_id.Text,
@@ -737,6 +739,7 @@ namespace EMS
                         Status = status_.Text,
 
                     };
+                    MessageBox.Show(dur.ToString());
                     if (Employee_Details.Employee_Database.SubmitReport(_record) == true)
                     {
                         SuccessDutyAdd successDutyAdd = new SuccessDutyAdd();

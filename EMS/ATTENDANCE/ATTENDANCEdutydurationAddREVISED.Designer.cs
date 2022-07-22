@@ -160,7 +160,7 @@
             this.date_duty.Name = "date_duty";
             this.date_duty.Size = new System.Drawing.Size(349, 28);
             this.date_duty.TabIndex = 188;
-            this.date_duty.Value = new System.DateTime(2022, 7, 25, 23, 59, 59, 0);
+            this.date_duty.Value = new System.DateTime(2022, 7, 25, 0, 0, 0, 0);
             // 
             // AddLblStatus
             // 
