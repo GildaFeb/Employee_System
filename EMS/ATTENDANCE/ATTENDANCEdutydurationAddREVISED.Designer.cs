@@ -45,7 +45,6 @@
             this.LblStatus = new EMS.btn_one();
             this.AddTitle = new System.Windows.Forms.Label();
             this.Addbkgrnd = new EMS.btn_one();
-            this.status = new EMS.CComboBox();
             this.btn_findemployee = new EMS.btn_one();
             this.time_out = new System.Windows.Forms.MaskedTextBox();
             this.clear_timein = new System.Windows.Forms.Label();
@@ -65,6 +64,7 @@
             this.submit_cover = new System.Windows.Forms.Label();
             this.pending_cover = new System.Windows.Forms.Label();
             this.invalid_time = new System.Windows.Forms.Label();
+            this.status_ = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // btn_clear
@@ -79,7 +79,7 @@
             this.btn_clear.Name = "btn_clear";
             this.btn_clear.Size = new System.Drawing.Size(273, 51);
             this.btn_clear.TabIndex = 197;
-            this.btn_clear.Text = "Clear";
+            this.btn_clear.Text = "Reset";
             this.btn_clear.UseVisualStyleBackColor = false;
             this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
             // 
@@ -304,33 +304,6 @@
             this.Addbkgrnd.Size = new System.Drawing.Size(880, 155);
             this.Addbkgrnd.TabIndex = 193;
             this.Addbkgrnd.UseVisualStyleBackColor = false;
-            // 
-            // status
-            // 
-            this.status.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.status.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.status.BackColor = System.Drawing.Color.White;
-            this.status.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            this.status.BorderSize = 0;
-            this.status.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.status.Enabled = false;
-            this.status.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.status.ForeColor = System.Drawing.Color.Black;
-            this.status.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            this.status.Items.AddRange(new object[] {
-            "On Leave",
-            "Absent",
-            "Present"});
-            this.status.ListBackColor = System.Drawing.Color.Silver;
-            this.status.ListTextColor = System.Drawing.Color.Black;
-            this.status.Location = new System.Drawing.Point(187, 583);
-            this.status.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.status.MinimumSize = new System.Drawing.Size(229, 40);
-            this.status.Name = "status";
-            this.status.Size = new System.Drawing.Size(349, 40);
-            this.status.TabIndex = 200;
-            this.status.Texts = "The Employee is:";
-            this.status.OnSelectedIndexChanged += new System.EventHandler(this.status_OnSelectedIndexChanged);
             // 
             // btn_findemployee
             // 
@@ -579,11 +552,26 @@
             this.invalid_time.Text = "Invalid time in and time out. Edit again.";
             this.invalid_time.Visible = false;
             // 
+            // status_
+            // 
+            this.status_.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.status_.FormattingEnabled = true;
+            this.status_.Items.AddRange(new object[] {
+            "Present",
+            "Absent",
+            "Leave"});
+            this.status_.Location = new System.Drawing.Point(187, 600);
+            this.status_.Name = "status_";
+            this.status_.Size = new System.Drawing.Size(349, 28);
+            this.status_.TabIndex = 229;
+            this.status_.SelectedIndexChanged += new System.EventHandler(this.status__SelectedIndexChanged);
+            // 
             // ATTENDANCEdutydurationAddREVISED
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.Controls.Add(this.status_);
             this.Controls.Add(this.invalid_time);
             this.Controls.Add(this.pending_cover);
             this.Controls.Add(this.submit_cover);
@@ -603,7 +591,6 @@
             this.Controls.Add(this.clear_timeout);
             this.Controls.Add(this.clear_timein);
             this.Controls.Add(this.btn_findemployee);
-            this.Controls.Add(this.status);
             this.Controls.Add(this.btn_clear);
             this.Controls.Add(this.LblName);
             this.Controls.Add(this.AddLblOvertime);
@@ -647,7 +634,6 @@
         private btn_one LblStatus;
         private Label AddTitle;
         private btn_one Addbkgrnd;
-        private CComboBox status;
         private btn_one btn_findemployee;
         private MaskedTextBox time_out;
         private Label clear_timein;
@@ -667,5 +653,6 @@
         private Label submit_cover;
         private Label pending_cover;
         private Label invalid_time;
+        private ComboBox status_;
     }
 }

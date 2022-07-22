@@ -445,27 +445,130 @@ namespace EMS.Employee_Details
                 OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
                 con.Open();
                 OleDbCommand cmd = new OleDbCommand();
-                cmd.CommandText = "INSERT INTO Report(EmployeeID,Fullname,Designation,Date of Duty,Present,Absent,Leave,Overtime,Overtime Pay,Total Regular Worktime,Total Salary) VALUES(@empID,@emp,@desig,@dduty,@pres,@abs,@leave,@overtime,@o_pay,@worked_hrs,@salary)";
-                cmd.Connection = con;
 
-                cmd.Parameters.AddWithValue("@empID", report.EmployeeID);
-                cmd.Parameters.AddWithValue("@emp", report.Fullname  );
-                cmd.Parameters.AddWithValue("@design", report.Designation);
-                cmd.Parameters.AddWithValue("@dduty", report.DutyDate);
-                cmd.Parameters.AddWithValue("@pres", report.Present);
-                cmd.Parameters.AddWithValue("@abs", report.Abesent);
-                cmd.Parameters.AddWithValue("@leave", report.Leave);
-                cmd.Parameters.AddWithValue("@overtime", report.Overtime);
-                cmd.Parameters.AddWithValue("@o_pay", report.Overtime_Pay);
-                cmd.Parameters.AddWithValue("@worked_hrs", report.worked_hrs);
-                cmd.Parameters.AddWithValue("@salary", report.total_salary);
+                // designation
+                string _desig = ShowEmployee(report.EmployeeID).designation;
 
+                // worktime
+                string worktime = ShowEmployee(report.EmployeeID).regular_worktime;
+
+                // regular pay
+                int reg_pay = int.Parse(ShowEmployee(report.EmployeeID).regular_pay); // regular pay
+
+                // getting total duration
+                int new_duration = int.Parse(report.worked_hrs);
+                int total_duration = getOvertime(report.EmployeeID, report.DutyDate, new_duration); 
+
+                // getting total overtime
+                int new_ot = int.Parse(report.Overtime);
+                int OT = getOvertime(report.EmployeeID, report.DutyDate, new_ot); 
+                
+                // getting total overtime pay
+                double _ot_multiplier = 1.5;
+                double overtime_pay = OT * _ot_multiplier; 
+                int OT_pay = int.Parse(overtime_pay.ToString());
+
+                // regular worktime * reg pay
+                int regular_worktime = total_duration - OT;
+                int regular_salary = regular_worktime * reg_pay;
+
+                // add only
+                int worked_hrs = int.Parse(report.worked_hrs.ToString());
+
+
+                // getting total salary
+                int total_salary = OT_pay + regular_salary;
+
+
+
+                if (getReport(report.EmployeeID, report.DutyDate) == 0)
+                {
+                    if (report.Present == "Present")
+                    {
+                        int present = int.Parse(report.Present);
+
+                        cmd.CommandText = "INSERT INTO Report(EmployeeID,Fullname,Designation,Date of Duty,Present, Overtime,Overtime Pay, Worked Hours,Total Salary) VALUES(@empID,@emp,@desig,@dduty,@pres,@overtime,@o_pay,@worked_hrs,@salary)";
+                        cmd.Connection = con;
+
+                        cmd.Parameters.AddWithValue("@empID", report.EmployeeID);
+                        cmd.Parameters.AddWithValue("@emp", report.Fullname);
+                        cmd.Parameters.AddWithValue("@design", report.Designation);
+                        cmd.Parameters.AddWithValue("@dduty", report.DutyDate);
+                        cmd.Parameters.AddWithValue("@pres", present);
+                        cmd.Parameters.AddWithValue("@overtime", OT);
+                        cmd.Parameters.AddWithValue("@o_pay", OT_pay);
+                        cmd.Parameters.AddWithValue("@worked_hrs", worked_hrs);
+                        cmd.Parameters.AddWithValue("@salary", total_salary);
+
+                    }
+                    else if (report.Present == "Absent")
+                    {
+                        int absent = int.Parse(report.Abesent);
+                        cmd.CommandText = "INSERT INTO Report(EmployeeID,Fullname,Designation,Date of Duty,Absent) VALUES(@empID,@emp,@desig,@dduty,@abs)";
+                        cmd.Connection = con;
+
+                        cmd.Parameters.AddWithValue("@empID", report.EmployeeID);
+                        cmd.Parameters.AddWithValue("@emp", report.Fullname);
+                        cmd.Parameters.AddWithValue("@design", report.Designation);
+                        cmd.Parameters.AddWithValue("@dduty", report.DutyDate);
+                        cmd.Parameters.AddWithValue("@abs", absent);
+
+                    }
+                    else if (report.Present == "Leave")
+                    {
+                        cmd.CommandText = "INSERT INTO Report(EmployeeID,Fullname,Designation,Date of Duty,Present,Absent,Leave,Overtime,Overtime Pay,Total Regular Worktime,Total Salary) VALUES(@empID,@emp,@desig,@dduty,@pres,@abs,@leave,@overtime,@o_pay,@worked_hrs,@salary)";
+                        cmd.Connection = con;
+
+                        int leave = int.Parse(report.Leave);
+                        cmd.CommandText = "INSERT INTO Report(EmployeeID,Fullname,Designation,Date of Duty,Leave) VALUES(@empID,@emp,@desig,@dduty,@leave)";
+                        cmd.Connection = con;
+
+                        cmd.Parameters.AddWithValue("@empID", report.EmployeeID);
+                        cmd.Parameters.AddWithValue("@emp", report.Fullname);
+                        cmd.Parameters.AddWithValue("@design", report.Designation);
+                        cmd.Parameters.AddWithValue("@dduty", report.DutyDate);
+                        cmd.Parameters.AddWithValue("@abs", leave);
+                    }
+                }
+                else
+                {
+                    if (report.Present == "Present")
+                    {
+                        int present = int.Parse(report.Present);
+                        int submittedRecord = getPresent(report.DutyDate);
+                        int totalPresent = present + submittedRecord;
+                        //WHERE EmployeeID='" + employee.employeeID + "'"
+                        cmd.CommandText = "UPDATE Report SET Present = '" + totalPresent + "', Overtime = '"+OT+"', Overtime Pay = '"+OT_pay+"', Worked Hours = '"+total_duration+"', Total Salary = '"+total_salary+"' WHERE EmployeeID = "+report.EmployeeID+ " AND Date of Duty= "+report.DutyDate+"";
+                        cmd.Connection = con;
+
+                    }
+                    else if (report.Present == "Absent")
+                    {
+                        int absent = int.Parse(report.Abesent);
+                        int submittedRecord = getAbsent(report.DutyDate);
+                        int totalAbsent = absent + submittedRecord;
+                        //WHERE EmployeeID='" + employee.employeeID + "'"
+                        cmd.CommandText = "UPDATE Report SET Absent = '" + totalAbsent + "' WHERE EmployeeID = " + report.EmployeeID + " AND Date of Duty= " + report.DutyDate + "";
+                        cmd.Connection = con;
+
+                    }
+                    else if (report.Present == "Leave")
+                    {
+                        int leave = int.Parse(report.Abesent);
+                        int submittedRecord = getLeave(report.DutyDate);
+                        int totalLeave = leave + submittedRecord;
+                        //WHERE EmployeeID='" + employee.employeeID + "'"
+                        cmd.CommandText = "UPDATE Report SET Absent = '" + totalLeave + "' WHERE EmployeeID = " + report.EmployeeID + " AND Date of Duty= " + report.DutyDate + "";
+                        cmd.Connection = con;
+
+                    }
+                }
 
                 cmd.ExecuteNonQuery();
                 con.Close();
                 return true;
             }
-            catch (Exception ex)
+            catch 
             {
                 errorEMPadd error = new errorEMPadd();
                 error.Show();
@@ -591,6 +694,143 @@ namespace EMS.Employee_Details
             con.Close();
             return report;
         }
+
+
+
+
+        // GET PRESENT, ABSENT AND LEAVE 
+
+
+        public static int getPresent(string MonthYear)
+        {
+            int count = 0;
+            OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
+
+            con.Open();
+            OleDbCommand cmd = new OleDbCommand("SELECT * FROM Report WHERE Status = 'Present' AND Date of Duty = '"+ MonthYear + "'", con);
+            OleDbDataReader read = cmd.ExecuteReader();
+            while (read.Read())
+            {
+                count++;
+            }
+            con.Close();
+            return count;
+        }
+
+        public static int getAbsent(string MonthYear)
+        {
+            int count = 0;
+            OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
+
+            con.Open();
+            OleDbCommand cmd = new OleDbCommand("SELECT * FROM Report WHERE Status = 'Absent' AND Date of Duty = '" + MonthYear + "'", con);
+            OleDbDataReader read = cmd.ExecuteReader();
+            while (read.Read())
+            {
+                count++;
+            }
+            con.Close();
+            return count;
+        }
+
+        public static int getLeave(string MonthYear)
+        {
+            int count = 0;
+            OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
+
+            con.Open();
+            OleDbCommand cmd = new OleDbCommand("SELECT * FROM Report WHERE Status = 'Leave' AND Date of Duty = '" + MonthYear + "'", con);
+            OleDbDataReader read = cmd.ExecuteReader();
+            while (read.Read())
+            {
+                count++;
+            }
+            con.Close();
+            return count;
+        }
+
+        public static int getOvertime(string ID, string date, int OT)
+        {
+            int count = 0;
+            int _overtime = 0;
+            string recordedOvertime;
+            OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
+
+            con.Open();
+            OleDbCommand cmd = new OleDbCommand("SELECT Overtime FROM Report WHERE EmployeeID = '"+ID+ "' AND Date of Duty = '"+date+"'", con);
+            OleDbDataReader read = cmd.ExecuteReader();
+            while (read.Read())
+            {
+                recordedOvertime = read.GetString(8);
+                _overtime = int.Parse(recordedOvertime);
+                count++;
+            }
+            _overtime = _overtime + OT;
+            con.Close();
+
+            if (count == 0)
+            {
+                return 0;
+            }else
+            return _overtime;
+        }
+
+        // get duration
+
+        public static int getDuration(string ID, string date, int worked_hrs)
+        {
+            int count = 0;
+            int duration = 0;
+            string recordedWorkedHours;
+            OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
+
+            con.Open();
+            OleDbCommand cmd = new OleDbCommand("SELECT Worked Hours FROM Report WHERE EmployeeID = '" + ID + "' AND Date of Duty = '" + date + "'", con);
+            OleDbDataReader read = cmd.ExecuteReader();
+            while (read.Read())
+            {
+                recordedWorkedHours = read.GetString(10);
+                duration = int.Parse(recordedWorkedHours);
+                count++;
+            }
+            duration = duration + worked_hrs;
+            con.Close();
+
+            if (count == 0)
+            {
+                return 0;
+            }
+            else
+                return duration;
+        }
+
+
+
+        // check report
+
+
+        public static int getReport(string ID, string date)
+        {
+            int count = 0;
+            OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
+
+            con.Open();
+            OleDbCommand cmd = new OleDbCommand("SELECT * FROM Report WHERE Report  = '" + ID + "' AND Date of Duty = '" + date + "'", con);
+            OleDbDataReader read = cmd.ExecuteReader();
+            while (read.Read())
+            {
+                count++;
+            }
+            con.Close();
+
+            if (count == 0)
+            {
+                return 0;
+            }
+            else
+                return count; ;
+        }
+
     }
 
 }

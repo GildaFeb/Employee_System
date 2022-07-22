@@ -18,6 +18,51 @@ namespace EMS
             date_duty.CustomFormat = "dddd MMMM dd, yyyy";
             blank_timein.Enabled = false;
             blank_timeout.Enabled = false;
+
+            if (status_.SelectedItem == status_.Items[0])
+            {
+                //  [!] Alvin = enabled true the status, date, time in, time out
+                timein.Enabled = true;
+                timeout.Enabled = true;
+                now_timein.Enabled = true;
+                now_timeout.Enabled = true;
+
+                submit_cover.Visible = false;
+                pending_cover.Visible = false;
+            }
+            else if (status_.SelectedItem == status_.Items[1])
+            {
+                // [!] Alvin = enabled false the time in, time out
+                timeout.Enabled = false;
+                timein.Enabled = false;
+                now_timein.Enabled = false;
+                now_timeout.Enabled = false;
+                date_duty.Enabled = true;
+                overtime.Text = "";
+                duty_duration.Text = "";
+
+                blank_timein.Visible = true;
+                blank_timeout.Visible = true;
+                submit_cover.Visible = false;
+                pending_cover.Visible = true;
+
+            }
+            else if (status_.SelectedItem == status_.Items[2])
+            {
+                // [!] Alvin = enabled false the time in, time out, duration, overtime
+                now_timein.Enabled = false;
+                now_timeout.Enabled = false;
+                timein.Enabled = false;
+                timeout.Enabled = false;
+                date_duty.Enabled = true;
+                overtime.Text = "";
+                duty_duration.Text = "";
+
+                blank_timein.Visible = true;
+                blank_timeout.Visible = true;
+                submit_cover.Visible = false;
+                pending_cover.Visible = true;
+            }
         }
 
         private void AddSave_Click(object sender, EventArgs e)
@@ -68,7 +113,7 @@ namespace EMS
             
 
             
-            if (status.SelectedItem.ToString() == "Present")
+            if (status_.SelectedItem == status_.Items[0])
             {
                 //  [!] Alvin = enabled true the status, date, time in, time out
                 timein.Enabled = true;
@@ -79,7 +124,7 @@ namespace EMS
                 submit_cover.Visible = false;
                 pending_cover.Visible = false;
             }
-            else if (status.SelectedItem.ToString() == "Absent")
+            else if (status_.SelectedItem == status_.Items[1])
             {
                 // [!] Alvin = enabled false the time in, time out
                 timeout.Enabled = false;
@@ -90,11 +135,13 @@ namespace EMS
                 overtime.Text = "";
                 duty_duration.Text = "";
 
+                blank_timein.Visible = true;
+                blank_timeout.Visible = true;
                 submit_cover.Visible = false;
                 pending_cover.Visible = true;
 
             }
-            else if (status.SelectedItem.ToString() == "On Leave")
+            else if (status_.SelectedItem == status_.Items[2])
             {
                 // [!] Alvin = enabled false the time in, time out, duration, overtime
                 now_timein.Enabled = false;
@@ -105,6 +152,8 @@ namespace EMS
                 overtime.Text = "";
                 duty_duration.Text = "";
 
+                blank_timein.Visible = true;
+                blank_timeout.Visible = true;
                 submit_cover.Visible = false;
                 pending_cover.Visible = true;
             }
@@ -115,20 +164,22 @@ namespace EMS
         {
             // [!] Alvin = clear all forms
             employee_id.Text = "";
-            status.Text = " ";
             duty_duration.Text = "";
             overtime.Text = "";
             blank_timeout.Visible = true;
             blank_timein.Visible = true;
             employee_name.Text = "";
 
+           
+
             pending_cover.Visible = true;
             submit_cover.Visible = true;
-            status.Enabled = false;
+            status_.Enabled = false;
             now_timein.Enabled = false;
             now_timeout.Enabled = false;
+            employee_id.Enabled = true;
+            date_duty.Enabled = true;
 
-            
 
         }
 
@@ -340,15 +391,16 @@ namespace EMS
 
                 }else if (checkDuty == false)
                 {
-                    MessageBox.Show("This employee with ID number '" + employee_id.Text + "' has already been added to attendance for this date" + date_duty.Text +
+                    MessageBox.Show("This employee with ID number '" + employee_id.Text + "' has already been added to attendance for this date: " + date_duty.Text +
                        ". Please check Duty Table or Attendance Report."); // no design
-                    status.Enabled = true;
+                    status_.Enabled = true;
                 }
                 else
                 {
-                   
-                    
-                    status.Enabled = true;
+
+                    employee_id.Enabled = false;
+                    date_duty.Enabled = false;
+                    status_.Enabled = true;
                     string firstName, middleName, lastName, suffix;
 
 
@@ -553,12 +605,12 @@ namespace EMS
 
         private void submit_btn_Click_1(object sender, EventArgs e)
         {
-            //submit
+            
         }
 
         private void pending_btn_Click(object sender, EventArgs e)
         {
-            if(status.Texts != null && invalid_time.Visible == false)
+            if(status_.Text != "The Employee is:" && invalid_time.Visible == false)
             {
                 String msg = " You are about to save this as Pending. Do you want to continue? ";
                 String caption = "Will be added to Table Duty.";
@@ -587,7 +639,7 @@ namespace EMS
                         EmployeeID = employee_id.Text,
                         Fullname = employee_name.Text,
                         duty_date = date_duty.Text,
-                        status = status.Texts,
+                        status = status_.Text,
                         timeIn = timein.Text,
                         timeOut = timeout.Text,
                         duration =duty_duration.Text,
@@ -616,6 +668,50 @@ namespace EMS
         private void date_duty_ValueChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void status__SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (status_.SelectedItem == status_.Items[0])
+            {
+                //  [!] Alvin = enabled true the status, date, time in, time out
+                timein.Enabled = true;
+                timeout.Enabled = true;
+                now_timein.Enabled = true;
+                now_timeout.Enabled = true;
+
+                submit_cover.Visible = false;
+                pending_cover.Visible = false;
+            }
+            else if (status_.SelectedItem == status_.Items[1])
+            {
+                // [!] Alvin = enabled false the time in, time out
+                timeout.Enabled = false;
+                timein.Enabled = false;
+                now_timein.Enabled = false;
+                now_timeout.Enabled = false;
+                date_duty.Enabled = true;
+                overtime.Text = "";
+                duty_duration.Text = "";
+
+                submit_cover.Visible = false;
+                pending_cover.Visible = true;
+
+            }
+            else if (status_.SelectedItem == status_.Items[2])
+            {
+                // [!] Alvin = enabled false the time in, time out, duration, overtime
+                now_timein.Enabled = false;
+                now_timeout.Enabled = false;
+                timein.Enabled = false;
+                timeout.Enabled = false;
+                date_duty.Enabled = true;
+                overtime.Text = "";
+                duty_duration.Text = "";
+
+                submit_cover.Visible = false;
+                pending_cover.Visible = true;
+            }
         }
     }
 }
