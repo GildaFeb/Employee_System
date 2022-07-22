@@ -342,13 +342,6 @@ namespace EMS.Employee_Details
             return count;
         }
 
-
-        public static bool UpdateDuty()
-        {
-            MessageBox.Show("Delete Employee");
-            return true;
-        }
-
         public static bool ShowDuty_ByIDandDate(string ID, string date)
         {
             int count = 0;
@@ -555,6 +548,45 @@ namespace EMS.Employee_Details
             if (check == 0)
             {
                 MessageBox.Show("Record not found."); // no design
+            }
+            con.Close();
+            return report;
+        }
+
+
+        public static Report ShowReportDefault()
+        {
+
+
+            OleDbCommand cmd = new OleDbCommand();
+            OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
+            con.Open();
+            cmd = new OleDbCommand("SELECT * FROM Report");
+            cmd.Connection = con;
+            OleDbDataReader read = cmd.ExecuteReader();
+            Report report = new Report();
+            int check = 0;
+            while (read.Read())
+            {
+                report.EmployeeID = read.GetString(1);
+                report.Fullname = read.GetString(3);
+                report.Designation = read.GetString(2);
+                report.DutyDate = read.GetString(4);
+                report.Present = read.GetString(5);
+                report.Abesent = read.GetString(6); ;
+                report.Leave = read.GetString(7);
+                report.Overtime = read.GetString(8);
+                report.Overtime_Pay = read.GetString(9);
+                report.worked_hrs = read.GetString(10);
+                report.total_salary = read.GetString(11);
+
+                check++;
+            }
+
+            if (check == 0)
+            {
+                MessageBox.Show("Record not found."); // no design
+
             }
             con.Close();
             return report;

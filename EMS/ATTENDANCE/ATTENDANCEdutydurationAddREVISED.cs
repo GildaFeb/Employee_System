@@ -195,6 +195,8 @@ namespace EMS
             /*double rate = pay * (1.5);
             double overtime_pay = rate * overtime_hrs;*/
             //DateTime dateTime = DateTime.ParseExact(now.Date.ToString(), "hh:mm", System.Globalization.CultureInfo.InvariantCulture);
+            DateTime dateTime = DateTime.Now;
+            timein.Text = dateTime.ToString();
             blank_timein.Visible = false;
             timein.Visible = true;
             TimeSpan duration = timeout.Value - timein.Value;
@@ -218,25 +220,28 @@ namespace EMS
             int durationsConvertToTime = int.Parse(duration.Hours.ToString());
             int overtime_hrs = durationsConvertToTime - work_time;
 
-            if (durationsConvertToTime < 0 && blank_timeout.Visible == false)
+            if (durationsConvertToTime < 0 && blank_timeout.Visible == true)
             {
+                invalid_time.Visible = false;
                 duty_duration.Text = "";
             }
-            else if (durationsConvertToTime < 0 && blank_timeout.Visible == true)
+            else if (durationsConvertToTime < 0 && blank_timeout.Visible == false)
             {
                 invalid_time.Visible = true;
-
+                duty_duration.Text = null;
+                overtime.Text = null;
             }
-            else
+            else if (durationsConvertToTime >= 0 && blank_timeout.Visible == false)
             {
                 duty_duration.Text = duration.ToString();
                 if ((durationsConvertToTime > work_time))
                 {
+                    invalid_time.Visible = false;
                     overtime.Text = overtime_hrs.ToString();
                 }
                 else
                 {
-
+                    invalid_time.Visible = false;
                     overtime.Text = "0";
                 }
             }
@@ -250,6 +255,8 @@ namespace EMS
             double overtime_pay = rate * overtime_hrs;*/
             //DateTime dateTime = DateTime.ParseExact(now.Date.ToString(), "hh:mm", System.Globalization.CultureInfo.InvariantCulture);
             blank_timeout.Visible = false;
+            DateTime dateTime = DateTime.Now;
+            timeout.Text = dateTime.ToString();
             timeout.Visible = true;
             TimeSpan duration = timeout.Value - timein.Value;
            
@@ -275,23 +282,27 @@ namespace EMS
 
             if (durationsConvertToTime < 0 && blank_timein.Visible == false)
             {
+                invalid_time.Visible = false;
                 duty_duration.Text = "";
             }
             else if (durationsConvertToTime < 0 && blank_timein.Visible == true)
             {
                 invalid_time.Visible = true;
+                duty_duration.Text = null;
+                overtime.Text = null;
 
             }
-            else
+            else if (durationsConvertToTime >= 0 && blank_timein.Visible == true)
             {
                 duty_duration.Text = duration.ToString();
                 if ((durationsConvertToTime > work_time))
                 {
+                    invalid_time.Visible = false;
                     overtime.Text = overtime_hrs.ToString();
                 }
                 else
                 {
-
+                    invalid_time.Visible = false;
                     overtime.Text = "0";
                 }
             }
@@ -401,6 +412,7 @@ namespace EMS
             /*double rate = pay * (1.5);
             double overtime_pay = rate * overtime_hrs;*/
             //DateTime dateTime = DateTime.ParseExact(now.Date.ToString(), "hh:mm", System.Globalization.CultureInfo.InvariantCulture);
+            
             blank_timein.Visible = false;
             timein.Visible = true;
             TimeSpan duration = timeout.Value - timein.Value;
@@ -424,24 +436,29 @@ namespace EMS
             int durationsConvertToTime = int.Parse(duration.Hours.ToString());
             int overtime_hrs = durationsConvertToTime - work_time;
 
-            if (durationsConvertToTime < 0 &&  blank_timeout.Visible == false)
+            if (durationsConvertToTime < 0 && blank_timeout.Visible == true)
             {
                 duty_duration.Text = "";
-            }else if (durationsConvertToTime < 0 && blank_timeout.Visible == true)
+                invalid_time.Visible = false;
+            }
+            else if (durationsConvertToTime < 0 && blank_timeout.Visible == false)
             {
                 invalid_time.Visible = true;
+                duty_duration.Text = null;
+                overtime.Text = null;
 
             }
-            else
+            else if (durationsConvertToTime >= 0 && blank_timeout.Visible == false)
             {
                 duty_duration.Text = duration.ToString();
                 if ((durationsConvertToTime > work_time))
                 {
                     overtime.Text = overtime_hrs.ToString();
+                    invalid_time.Visible = false;
                 }
                 else
                 {
-
+                    invalid_time.Visible = false;
                     overtime.Text = "0";
                 }
             }
@@ -478,28 +495,33 @@ namespace EMS
             int durationsConvertToTime = int.Parse(duration.Hours.ToString());
             int overtime_hrs = durationsConvertToTime - work_time;
 
-            if (durationsConvertToTime < 0 && blank_timein.Visible == false)
+            if (durationsConvertToTime < 0 && blank_timein.Visible == true)
             {
                 duty_duration.Text = "";
+                invalid_time.Visible = false;
             }
-            else if (durationsConvertToTime < 0 && blank_timein.Visible == true)
+            else if (durationsConvertToTime < 0 && blank_timein.Visible == false)
             {
                 invalid_time.Visible = true;
+                duty_duration.Text = null;
+                overtime.Text = null;
 
             }
-            else
+            else if (durationsConvertToTime >= 0 && blank_timein.Visible == false)
             {
                 duty_duration.Text = duration.ToString();
                 if ((durationsConvertToTime > work_time))
                 {
                     overtime.Text = overtime_hrs.ToString();
+                    invalid_time.Visible = false;
                 }
                 else
                 {
-
+                    invalid_time.Visible = false;
                     overtime.Text = "0";
                 }
             }
+
 
 
         }
@@ -531,7 +553,7 @@ namespace EMS
 
         private void submit_btn_Click_1(object sender, EventArgs e)
         {
-
+            //submit
         }
 
         private void pending_btn_Click(object sender, EventArgs e)
@@ -547,7 +569,7 @@ namespace EMS
                 if (result == DialogResult.Yes)
                 {
 
-                    char[] work = duty_duration.Text.ToCharArray();
+                    /*char[] work = duty_duration.Text.ToCharArray();
                     char[] emp_worktime = new char[30];
                     int i = 0;
 
@@ -559,7 +581,7 @@ namespace EMS
                     string ConvertedWorktime = new string(emp_worktime);
                     int work_time = Convert.ToInt32(ConvertedWorktime.ToLower());
                     int time = int.Parse(overtime.Text);
-                    double worked_hrs = work_time - time;
+                    double worked_hrs = work_time - time;*/
                     Employee_Details.Duty_Pending _Pending = new Employee_Details.Duty_Pending()
                     {
                         EmployeeID = employee_id.Text,
@@ -568,7 +590,7 @@ namespace EMS
                         status = status.Texts,
                         timeIn = timein.Text,
                         timeOut = timeout.Text,
-                        duration = duty_duration.Text,
+                        duration =duty_duration.Text,
                         overtime = overtime.Text,
 
                     };
@@ -587,6 +609,11 @@ namespace EMS
         }
 
         private void blank_timein_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void date_duty_ValueChanged(object sender, EventArgs e)
         {
 
         }

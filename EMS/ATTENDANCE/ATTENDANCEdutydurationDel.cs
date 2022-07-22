@@ -30,7 +30,7 @@ namespace EMS
             Point headerCellLocation = this.tableDelete_DGV.GetCellDisplayRectangle(0, -1, true).Location;
 
             //Place the Header CheckBox in the Location of the Header Cell.
-            headerCheckBox.Location = new Point(headerCellLocation.X + 55, headerCellLocation.Y + 2);
+            headerCheckBox.Location = new Point(headerCellLocation.X + 55, headerCellLocation.Y + 5);
             headerCheckBox.BackColor = Color.White;
             headerCheckBox.Size = new Size(18, 18);
 

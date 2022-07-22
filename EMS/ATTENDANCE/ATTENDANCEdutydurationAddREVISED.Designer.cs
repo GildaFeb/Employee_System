@@ -161,6 +161,7 @@
             this.date_duty.Size = new System.Drawing.Size(349, 28);
             this.date_duty.TabIndex = 188;
             this.date_duty.Value = new System.DateTime(2022, 7, 25, 23, 59, 59, 0);
+            this.date_duty.ValueChanged += new System.EventHandler(this.date_duty_ValueChanged);
             // 
             // AddLblStatus
             // 
@@ -467,7 +468,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(1076, 571);
+            this.label2.Location = new System.Drawing.Point(1071, 569);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(38, 20);
             this.label2.TabIndex = 217;
