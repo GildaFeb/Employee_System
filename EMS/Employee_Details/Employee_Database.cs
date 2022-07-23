@@ -56,11 +56,57 @@ namespace EMS.Employee_Details
 
         public static int AdministratorCount()
         {
+            
             int count = 0;
             OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
 
             con.Open();
             OleDbCommand cmd = new OleDbCommand("SELECT * FROM EmployeeTbl WHERE Designation = 'Administrator'", con);
+            OleDbDataReader read = cmd.ExecuteReader();
+            while (read.Read())
+            {
+                count++;
+            }
+            con.Close();
+            return count;
+        }
+        public static int onLeaveReportCount(string date)
+        {
+            int count = 0;
+            OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
+
+            con.Open();
+            OleDbCommand cmd = new OleDbCommand("SELECT * FROM HistoryTbl WHERE Status = 'Leave' AND DutyDate = '"+date+"'", con);
+            OleDbDataReader read = cmd.ExecuteReader();
+            while (read.Read())
+            {
+                count++;
+            }
+            con.Close();
+            return count;
+        }
+        public static int onLeavePendingCount(string date)
+        {
+            int count = 0;
+            OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
+
+            con.Open();
+            OleDbCommand cmd = new OleDbCommand("SELECT * FROM DutyTbl WHERE Status = 'Leave' AND DutyDate = '" + date + "'", con);
+            OleDbDataReader read = cmd.ExecuteReader();
+            while (read.Read())
+            {
+                count++;
+            }
+            con.Close();
+            return count;
+        }
+        public static int totalRecordsCount()
+        {
+            int count = 0;
+            OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
+
+            con.Open();
+            OleDbCommand cmd = new OleDbCommand("SELECT * FROM HistoryTbl", con);
             OleDbDataReader read = cmd.ExecuteReader();
             while (read.Read())
             {

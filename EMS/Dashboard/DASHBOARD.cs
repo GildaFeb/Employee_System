@@ -20,8 +20,11 @@ namespace EMS
             fullstack_dev_num.Text = Employee_Details.Employee_Database.FullStackDevCount().ToString();
             software_engineer_num.Text = Employee_Details.Employee_Database.SoftwareEngCount().ToString();
             administrator_num.Text = Employee_Details.Employee_Database.AdministratorCount().ToString();
+            string _date = DateTime.Now.ToString("dddd, MMMM dd, yyyy");
+            onLeave.Text = (Employee_Details.Employee_Database.onLeavePendingCount(_date) + Employee_Details.Employee_Database.onLeaveReportCount(_date)).ToString();
+            total_records.Text = Employee_Details.Employee_Database.totalRecordsCount().ToString();
 
-
+            MessageBox.Show(_date);
         }
 
         private void label6_Click(object sender, EventArgs e)
@@ -105,10 +108,13 @@ namespace EMS
         private void btn_one2_Click(object sender, EventArgs e)
         {
             emp_num.Text = Employee_Details.Employee_Database.EmployeeNum().ToString();
-            project_num.Text = Employee_Details.Employee_Database.AdministratorCount().ToString();
+            project_num.Text = Employee_Details.Employee_Database.ProjectNumCount().ToString();
             fullstack_dev_num.Text = Employee_Details.Employee_Database.FullStackDevCount().ToString();
             software_engineer_num.Text = Employee_Details.Employee_Database.SoftwareEngCount().ToString();
             administrator_num.Text = Employee_Details.Employee_Database.AdministratorCount().ToString();
+            string _date = DateTime.Now.ToString("dddd, MMMM dd, yyyy");
+            onLeave.Text = (Employee_Details.Employee_Database.onLeavePendingCount(_date) + Employee_Details.Employee_Database.onLeaveReportCount(_date)).ToString();
+            total_records.Text = Employee_Details.Employee_Database.totalRecordsCount().ToString();
 
         }
 

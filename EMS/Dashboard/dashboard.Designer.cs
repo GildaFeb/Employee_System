@@ -51,13 +51,13 @@
             this.software_engineer_num = new System.Windows.Forms.Label();
             this.software_eng = new System.Windows.Forms.Label();
             this.emp_num = new System.Windows.Forms.Label();
-            this.time_in = new System.Windows.Forms.Label();
+            this.total_records = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.label24 = new System.Windows.Forms.Label();
+            this.kk = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.time_out = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
+            this.onLeave = new System.Windows.Forms.Label();
+            this.lbel99 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.administrator_num = new System.Windows.Forms.Label();
@@ -98,9 +98,9 @@
             this.db_ViewAttendanceBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.db_ViewAttendanceBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.db_ViewAttendanceBtn.ForeColor = System.Drawing.Color.White;
-            this.db_ViewAttendanceBtn.Location = new System.Drawing.Point(536, 167);
+            this.db_ViewAttendanceBtn.Location = new System.Drawing.Point(547, 167);
             this.db_ViewAttendanceBtn.Name = "db_ViewAttendanceBtn";
-            this.db_ViewAttendanceBtn.Size = new System.Drawing.Size(501, 327);
+            this.db_ViewAttendanceBtn.Size = new System.Drawing.Size(490, 327);
             this.db_ViewAttendanceBtn.TabIndex = 12;
             this.db_ViewAttendanceBtn.UseVisualStyleBackColor = false;
             this.db_ViewAttendanceBtn.Click += new System.EventHandler(this.db_ViewAttendanceBtn_Click);
@@ -116,7 +116,7 @@
             this.db_ViewEmployeesBtn.ForeColor = System.Drawing.Color.White;
             this.db_ViewEmployeesBtn.Location = new System.Drawing.Point(88, 168);
             this.db_ViewEmployeesBtn.Name = "db_ViewEmployeesBtn";
-            this.db_ViewEmployeesBtn.Size = new System.Drawing.Size(424, 327);
+            this.db_ViewEmployeesBtn.Size = new System.Drawing.Size(438, 327);
             this.db_ViewEmployeesBtn.TabIndex = 11;
             this.db_ViewEmployeesBtn.UseVisualStyleBackColor = false;
             this.db_ViewEmployeesBtn.Click += new System.EventHandler(this.db_ViewEmployeesBtn_Click);
@@ -335,25 +335,25 @@
             this.emp_num.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.emp_num.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.emp_num.ForeColor = System.Drawing.Color.White;
-            this.emp_num.Location = new System.Drawing.Point(393, 223);
+            this.emp_num.Location = new System.Drawing.Point(435, 228);
             this.emp_num.Name = "emp_num";
             this.emp_num.Size = new System.Drawing.Size(47, 51);
             this.emp_num.TabIndex = 111;
             this.emp_num.Text = "0";
             this.emp_num.Click += new System.EventHandler(this.emp_num_Click);
             // 
-            // time_in
+            // total_records
             // 
-            this.time_in.AutoSize = true;
-            this.time_in.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            this.time_in.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.time_in.ForeColor = System.Drawing.Color.White;
-            this.time_in.Location = new System.Drawing.Point(393, 350);
-            this.time_in.Name = "time_in";
-            this.time_in.Size = new System.Drawing.Size(47, 51);
-            this.time_in.TabIndex = 111;
-            this.time_in.Text = "0";
-            this.time_in.Click += new System.EventHandler(this.time_in_Click);
+            this.total_records.AutoSize = true;
+            this.total_records.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
+            this.total_records.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.total_records.ForeColor = System.Drawing.Color.White;
+            this.total_records.Location = new System.Drawing.Point(435, 351);
+            this.total_records.Name = "total_records";
+            this.total_records.Size = new System.Drawing.Size(47, 51);
+            this.total_records.TabIndex = 111;
+            this.total_records.Text = "0";
+            this.total_records.Click += new System.EventHandler(this.time_in_Click);
             // 
             // label23
             // 
@@ -361,7 +361,7 @@
             this.label23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label23.ForeColor = System.Drawing.Color.White;
-            this.label23.Location = new System.Drawing.Point(326, 274);
+            this.label23.Location = new System.Drawing.Point(337, 279);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(155, 32);
             this.label23.TabIndex = 110;
@@ -373,21 +373,21 @@
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
             this.pictureBox7.Location = new System.Drawing.Point(303, 314);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(180, 33);
+            this.pictureBox7.Size = new System.Drawing.Size(189, 33);
             this.pictureBox7.TabIndex = 112;
             this.pictureBox7.TabStop = false;
             // 
-            // label24
+            // kk
             // 
-            this.label24.AutoSize = true;
-            this.label24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label24.ForeColor = System.Drawing.Color.White;
-            this.label24.Location = new System.Drawing.Point(353, 408);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(123, 32);
-            this.label24.TabIndex = 110;
-            this.label24.Text = "Timed In";
+            this.kk.AutoSize = true;
+            this.kk.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
+            this.kk.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.kk.ForeColor = System.Drawing.Color.White;
+            this.kk.Location = new System.Drawing.Point(302, 407);
+            this.kk.Name = "kk";
+            this.kk.Size = new System.Drawing.Size(190, 32);
+            this.kk.TabIndex = 110;
+            this.kk.Text = "Total Records";
             // 
             // label13
             // 
@@ -401,35 +401,35 @@
             this.label13.TabIndex = 110;
             this.label13.Text = "Positions";
             // 
-            // time_out
+            // onLeave
             // 
-            this.time_out.AutoSize = true;
-            this.time_out.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            this.time_out.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.time_out.ForeColor = System.Drawing.Color.White;
-            this.time_out.Location = new System.Drawing.Point(1360, 274);
-            this.time_out.Name = "time_out";
-            this.time_out.Size = new System.Drawing.Size(47, 51);
-            this.time_out.TabIndex = 111;
-            this.time_out.Text = "0";
+            this.onLeave.AutoSize = true;
+            this.onLeave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
+            this.onLeave.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.onLeave.ForeColor = System.Drawing.Color.White;
+            this.onLeave.Location = new System.Drawing.Point(1360, 274);
+            this.onLeave.Name = "onLeave";
+            this.onLeave.Size = new System.Drawing.Size(47, 51);
+            this.onLeave.TabIndex = 111;
+            this.onLeave.Text = "0";
             // 
-            // label14
+            // lbel99
             // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(1279, 339);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(146, 32);
-            this.label14.TabIndex = 110;
-            this.label14.Text = "Timed Out";
+            this.lbel99.AutoSize = true;
+            this.lbel99.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
+            this.lbel99.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbel99.ForeColor = System.Drawing.Color.White;
+            this.lbel99.Location = new System.Drawing.Point(1279, 339);
+            this.lbel99.Name = "lbel99";
+            this.lbel99.Size = new System.Drawing.Size(137, 32);
+            this.lbel99.TabIndex = 110;
+            this.lbel99.Text = "On Leave";
             // 
             // pictureBox6
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(1080, 250);
+            this.pictureBox6.Location = new System.Drawing.Point(1099, 253);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(148, 160);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -534,12 +534,12 @@
             this.Controls.Add(this.guard);
             this.Controls.Add(this.software_engineer_num);
             this.Controls.Add(this.fullstack_dev_num);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.label24);
+            this.Controls.Add(this.lbel99);
+            this.Controls.Add(this.kk);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.project_num);
-            this.Controls.Add(this.time_out);
-            this.Controls.Add(this.time_in);
+            this.Controls.Add(this.onLeave);
+            this.Controls.Add(this.total_records);
             this.Controls.Add(this.emp_num);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.dayTodayLbl);
@@ -590,13 +590,13 @@
         private Label software_engineer_num;
         private Label software_eng;
         private Label emp_num;
-        private Label time_in;
+        private Label total_records;
         private Label label23;
         private PictureBox pictureBox7;
-        private Label label24;
+        private Label kk;
         private Label label13;
-        private Label time_out;
-        private Label label14;
+        private Label onLeave;
+        private Label lbel99;
         private PictureBox pictureBox6;
         private PictureBox pictureBox9;
         private Label administrator_num;

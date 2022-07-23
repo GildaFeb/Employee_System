@@ -52,11 +52,11 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(37)))), ((int)(((byte)(83)))));
-            this.label1.Location = new System.Drawing.Point(197, 245);
+            this.label1.Location = new System.Drawing.Point(161, 241);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(298, 38);
+            this.label1.Size = new System.Drawing.Size(373, 38);
             this.label1.TabIndex = 84;
-            this.label1.Text = "Saved as Pending";
+            this.label1.Text = "Recorded Successfully";
             // 
             // btn_one2
             // 
@@ -80,12 +80,12 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.DimGray;
-            this.label2.Location = new System.Drawing.Point(82, 300);
+            this.label2.Location = new System.Drawing.Point(122, 295);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(540, 44);
+            this.label2.Size = new System.Drawing.Size(443, 44);
             this.label2.TabIndex = 85;
-            this.label2.Text = "Attendance of an employee has been added to duty duration table.\r\n\r\n";
+            this.label2.Text = "Attendance of an employee has been added to record.\r\n\r\n";
             // 
             // SuccessDutyAdd
             // 
