@@ -1,4 +1,5 @@
-﻿using Microsoft.Data.SqlClient;
+﻿using EMS.ATTENDANCE;
+using Microsoft.Data.SqlClient;
 using System;
 using System.Collections.Generic;
 using System.Data.OleDb;
@@ -221,7 +222,8 @@ namespace EMS.Employee_Details
             
             if(check == 0)
             {
-                MessageBox.Show("This ID number is not registered."); // no design
+                DataNotFound notFound = new DataNotFound();
+                notFound.Show();
             }
             con.Close();
             return employeeInfo;
@@ -259,7 +261,8 @@ namespace EMS.Employee_Details
             }
             if (check == 0)
             {
-                MessageBox.Show("This ID number is not registered.");
+                DataNotFound notFound = new DataNotFound();
+                notFound.Show();
                 con.Close();
                 return false;
             }
@@ -565,7 +568,6 @@ namespace EMS.Employee_Details
                         cmd.ExecuteNonQuery();
                     }
                 }
-                MessageBox.Show("yawa"+check.ToString());
 
                 con.Close();
                 return true;
@@ -582,7 +584,7 @@ namespace EMS.Employee_Details
 
 
 
-
+        // [!] not used
         public static Report ShowRecordBy_MonthAndYear(string date)
         {
 
@@ -614,13 +616,15 @@ namespace EMS.Employee_Details
 
             if (check == 0)
             {
-                MessageBox.Show("Record not found."); // no design
+                DataNotFound notFound = new DataNotFound();
+                notFound.Show();
 
             }
             con.Close();
             return report;
         }
 
+        // [!] not used
         public static Report ShowReportByID(string id)
         {
 
@@ -652,14 +656,15 @@ namespace EMS.Employee_Details
 
             if (check == 0)
             {
-                MessageBox.Show("Record not found."); // no design
+                DataNotFound notFound = new DataNotFound();
+                notFound.Show();
             }
             con.Close();
             return report;
         }
 
 
-        public static Report ShowReportDefault()
+        public static int CountRecords()
         {
 
 
@@ -690,11 +695,13 @@ namespace EMS.Employee_Details
 
             if (check == 0)
             {
-                MessageBox.Show("Record not found."); // no design
-
+                DataNotFound notFound = new DataNotFound();
+                notFound.Show();
+                con.Close();
+                return check;
             }
             con.Close();
-            return report;
+            return check;
         }
 
 
@@ -776,18 +783,15 @@ namespace EMS.Employee_Details
                 overtime = read.GetInt32(8);
                 OT += overtime;
                 check++;
-                MessageBox.Show("OT ulol" + OT.ToString());
                
             }
             
             if (check == 0)
             {
-                MessageBox.Show("OT pakyu" + OT.ToString());
                 return OT;
             }
             else
             {
-                MessageBox.Show("OT  oten" + OT.ToString());
                 return OT;
             }
                
@@ -811,18 +815,15 @@ namespace EMS.Employee_Details
                 duration = read.GetInt32(10);
                 worked_hrs += duration;
                 count++;
-                MessageBox.Show("dura ulol" + worked_hrs.ToString());
 
             }
 
             if (count == 0)
             {
-                MessageBox.Show( "dura pakyu" + worked_hrs.ToString());
                 return worked_hrs;
             }
             else
             {
-                MessageBox.Show("dura oten" + worked_hrs.ToString());
                 return worked_hrs;
             }
         }

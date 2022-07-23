@@ -1,7 +1,9 @@
-﻿using System;
+﻿using EMS.ATTENDANCE;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.OleDb;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,15 +17,41 @@ namespace EMS
         public ATTENDANCEreport()
         {
             InitializeComponent();
+
+
+            DateTime getYear = DateTime.Now;
+            int year = int.Parse(getYear.Year.ToString());
+
+            for(int i = 2010; i <= year; i++)
+            {
+                Year_.Items.Add(i.ToString());
+            }
+            Year_.Items.Add("--Select Year--");
+            Month_.Items.Add("--Select Month--");
+            DateTime currentM = DateTime.Now;
+            int month = int.Parse(currentM.Month.ToString());
+            Month_.SelectedIndex = month-1;
+
+
+            DateTime currentY = DateTime.Now;
+            Year_.Texts = currentY.Year.ToString();
+
+           
         }
 
         private void ATTENDANCEreport_Load(object sender, EventArgs e)
         {
+            int count = 0;
+            OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
 
-            for (int i = 1995; i <= 2022; i++)
-            {
-                Year_.Items.Add(i);
-            }
+            con.Open();
+            string MonthYear = Month_.SelectedIndex + 1 + "/" + Year_.Texts;
+            OleDbCommand cmd = new OleDbCommand("SELECT * FROM ReportTbl WHERE DutyDate= '" + MonthYear.ToString() + "'", con);
+            OleDbDataReader read = cmd.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Load(read);
+
+            attndncrprt_DGV.DataSource = dt;
         }
 
         private void DelReport_Click(object sender, EventArgs e)
@@ -58,28 +86,34 @@ namespace EMS
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            if (!(Search.Text == null))
+            if (!(Search.Text == ""))
             {
-                double outputValue = 0;
-                bool isNumber = false;
+                string alph = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz";
+                if (!(Search.Text.Contains(alph)))
+                {
+                    OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
 
-                isNumber = double.TryParse(Search.Text, out outputValue);
-                if (!isNumber)
-                {
-                    MessageBox.Show("Name");
-                }
-                else if (isNumber)
-                {
-                    MessageBox.Show("ID");
+                    con.Open();
+                    OleDbCommand cmd = new OleDbCommand("Select * from ReportTbl Where EmployeeID ='" + Search.Text + "'", con);
+                    OleDbDataReader read = cmd.ExecuteReader();
+                    DataTable dt = new DataTable();
+                    dt.Load(read);
+                    attndncrprt_DGV.DataSource = dt;
+                    Year_.Texts = "--Select Year--";
+                    Month_.Texts = "--Select Month--";
+
                 }
                 else
                 {
-                    MessageBox.Show("Error. Enter ID or Name.");
+                    
                 }
+
             }
             else
             {
                 MessageBox.Show(" Failed to search. Search field is empty.");
+
+
             }
         }
 
@@ -91,20 +125,58 @@ namespace EMS
 
         private void CmbxMonth_OnSelectedIndexChanged(object sender, EventArgs e)
         {
+            if(Month_.Texts != null && Year_.Texts != null)
+            {
+                int count = 0;
+                OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
 
+                con.Open();
+                string MonthYear = Month_.SelectedIndex + 1 + "/" + Year_.Texts;
+                OleDbCommand cmd = new OleDbCommand("SELECT * FROM ReportTbl WHERE DutyDate= '" + MonthYear.ToString() + "'", con);
+                OleDbDataReader read = cmd.ExecuteReader();
+                DataTable dt = new DataTable();
+                dt.Load(read);
+
+                attndncrprt_DGV.DataSource = dt;
+            }
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            if (!(Month_.SelectedIndex == -1 && Year_.SelectedIndex == -1))
+        }
+
+        private void Year__OnSelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (Month_.Texts != null && Year_.Texts != null)
             {
-                string date = Month_.SelectedItem.ToString() + " " + Year_.SelectedItem.ToString();
-                Employee_Details.Employee_Database.ShowRecordBy_MonthAndYear(date);
+                int count = 0;
+                OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
+
+                con.Open();
+                string MonthYear = Month_.SelectedIndex + 1 + "/" + Year_.Texts;
+                OleDbCommand cmd = new OleDbCommand("SELECT * FROM ReportTbl WHERE DutyDate= '" + MonthYear.ToString() + "'", con);
+                OleDbDataReader read = cmd.ExecuteReader();
+                DataTable dt = new DataTable();
+                dt.Load(read);
+
+                attndncrprt_DGV.DataSource = dt;
             }
-            else
-            {
-                MessageBox.Show(" Select Month and Year to view record.");
-            }
+        }
+
+        private void btn_one1_Click(object sender, EventArgs e)
+        {
+            OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
+
+            con.Open();
+            OleDbCommand cmd = new OleDbCommand("SELECT * FROM ReportTbl", con);
+            OleDbDataReader read = cmd.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Load(read);
+
+            attndncrprt_DGV.DataSource = dt;
+
+            Year_.Texts = "--Select Year--";
+            Month_.Texts = "--Select Month--";
         }
     }
 }

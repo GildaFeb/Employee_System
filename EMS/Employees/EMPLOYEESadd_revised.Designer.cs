@@ -392,7 +392,6 @@
             this.first_name.Name = "first_name";
             this.first_name.Size = new System.Drawing.Size(349, 33);
             this.first_name.TabIndex = 93;
-            this.first_name.Text = " ";
             this.first_name.TextChanged += new System.EventHandler(this.last_name_TextChanged);
             // 
             // label4

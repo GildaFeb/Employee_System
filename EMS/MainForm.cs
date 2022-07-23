@@ -255,8 +255,8 @@ namespace EMS
 
         private void button11_Click(object sender, EventArgs e)
         {
-            attendancEdutydurationUpdrevised2.BringToFront();
-            
+
+            attendancEdutydurationAddrevised2.BringToFront();
             addDutyDuration_Pnl.Show();
             updateDutyDuration_Pnl.Hide();
             deleteDutyDuration_Pnl.Hide();
@@ -282,8 +282,8 @@ namespace EMS
 
         private void button9_Click_1(object sender, EventArgs e)
         {
-            attendancEdutydurationAddrevised2.BringToFront();
-
+            
+            attendancEdutydurationUpdrevised2.BringToFront();
             addDutyDuration_Pnl.Hide();
             updateDutyDuration_Pnl.Show();
             deleteDutyDuration_Pnl.Hide();

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EMS.ATTENDANCE;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -424,9 +425,11 @@ namespace EMS
 
                  if (checkEmployee == false)
                 {
-                    MessageBox.Show(" This ID number is not resgistered. '"); // no design
+                    DataNotFound notFound = new DataNotFound();
+                    notFound.Show();
 
-                }else if (checkDuty == false)
+                }
+                else if (checkDuty == false)
                 {
                     MessageBox.Show("This employee with ID number '" + employee_id.Text + "' has already been added to attendance for this date: " + date_duty.Text +
                        ". Please check Duty Table or Attendance Report."); // no design
@@ -445,6 +448,22 @@ namespace EMS
 
 
                     if (Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).suffix.ToString() == "None" || Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).suffix.ToString() == null)
+                    {
+                        firstName = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).first_name.ToString();
+                        middleName = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).middle_name.ToString();
+                        lastName = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).last_name.ToString();
+
+                        employee_name.Text = firstName + " " + middleName + " " + lastName;
+                    }
+                    else if (Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).middle_name.ToString() == "None" || Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).middle_name.ToString() == null)
+                    {
+                        firstName = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).first_name.ToString();
+                        suffix = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).suffix.ToString();
+                        lastName = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).last_name.ToString();
+
+                        employee_name.Text = firstName + " " + lastName + " " + suffix;
+                    }
+                    else if (Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).middle_name.ToString() == "None" && Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).suffix.ToString() == "None")
                     {
                         firstName = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).first_name.ToString();
                         middleName = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).middle_name.ToString();

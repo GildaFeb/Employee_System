@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EMS.ATTENDANCE;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -291,7 +292,7 @@ namespace EMS
                     OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
 
                     con.Open();
-                    OleDbCommand cmd = new OleDbCommand("Select * from DutyTable Where EmployeeID ='" + Search.Text + "'", con);
+                    OleDbCommand cmd = new OleDbCommand("Select * from DutyTbl Where EmployeeID ='" + Search.Text + "'", con);
                     OleDbDataReader read = cmd.ExecuteReader();
                     DataTable dt = new DataTable();
                     dt.Load(read);
@@ -300,7 +301,6 @@ namespace EMS
                 }
                 else
                 {
-                    MessageBox.Show("Error. Employee ID not found.");
                 }
 
             }

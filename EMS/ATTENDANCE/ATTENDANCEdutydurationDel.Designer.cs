@@ -44,6 +44,7 @@
             this.noData = new System.Windows.Forms.Label();
             this.tableDelete = new System.Windows.Forms.DataGridView();
             this.label = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableDelete)).BeginInit();
@@ -124,6 +125,7 @@
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.White;
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(1025, 96);
             this.pictureBox3.Name = "pictureBox3";
@@ -232,12 +234,24 @@
             this.label.TabIndex = 208;
             this.label.Visible = false;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(1335, 53);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(72, 28);
+            this.label2.TabIndex = 209;
+            this.label2.Text = "Search";
+            // 
             // ATTENDANCEdutydurationDel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label);
             this.Controls.Add(this.noData);
             this.Controls.Add(this.tableDelete);
@@ -277,5 +291,6 @@
         private Label noData;
         private DataGridView tableDelete;
         private Label label;
+        private Label label2;
     }
 }

@@ -1,4 +1,5 @@
-﻿using Microsoft.Data.SqlClient;
+﻿using EMS.ATTENDANCE;
+using Microsoft.Data.SqlClient;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -193,7 +194,6 @@ namespace EMS
                 }
                 else
                 {
-                    MessageBox.Show("Error. Employee ID not found.");
                 }
 
             }

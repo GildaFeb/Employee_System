@@ -28,23 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ATTENDANCEreport));
             this.attndncrprt_DGV = new System.Windows.Forms.DataGridView();
-            this.delete_ChckBx = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.EmpId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.EmpName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dsgntn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Absnt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Prsnt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Leavecol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Ttlbr = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Slry = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.db_ViewCalendarBtn = new EMS.btn_one();
@@ -53,149 +43,62 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Month_ = new EMS.CComboBox();
             this.Year_ = new EMS.CComboBox();
-            this.btn_one3 = new EMS.btn_one();
-            this.btn_one2 = new EMS.btn_one();
             this.btn_one1 = new EMS.btn_one();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.noData = new System.Windows.Forms.Label();
+            this.Month_Year = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.attndncrprt_DGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // attndncrprt_DGV
             // 
             this.attndncrprt_DGV.AllowUserToResizeColumns = false;
             this.attndncrprt_DGV.AllowUserToResizeRows = false;
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
-            this.attndncrprt_DGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            this.attndncrprt_DGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
             this.attndncrprt_DGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.attndncrprt_DGV.BackgroundColor = System.Drawing.Color.White;
             this.attndncrprt_DGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.attndncrprt_DGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Violet;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.attndncrprt_DGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Violet;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.attndncrprt_DGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.attndncrprt_DGV.ColumnHeadersHeight = 29;
             this.attndncrprt_DGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.attndncrprt_DGV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.delete_ChckBx,
-            this.EmpId,
-            this.EmpName,
-            this.dsgntn,
-            this.Absnt,
-            this.Prsnt,
-            this.Leavecol,
-            this.Ttlbr,
-            this.Slry});
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(51)))));
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.attndncrprt_DGV.DefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.attndncrprt_DGV.DefaultCellStyle = dataGridViewCellStyle8;
             this.attndncrprt_DGV.GridColor = System.Drawing.Color.DarkGray;
             this.attndncrprt_DGV.Location = new System.Drawing.Point(119, 292);
             this.attndncrprt_DGV.Name = "attndncrprt_DGV";
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.attndncrprt_DGV.RowHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.attndncrprt_DGV.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.attndncrprt_DGV.RowHeadersWidth = 51;
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
-            this.attndncrprt_DGV.RowsDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
+            this.attndncrprt_DGV.RowsDefaultCellStyle = dataGridViewCellStyle10;
             this.attndncrprt_DGV.RowTemplate.Height = 29;
             this.attndncrprt_DGV.Size = new System.Drawing.Size(1322, 575);
             this.attndncrprt_DGV.TabIndex = 1;
-            // 
-            // delete_ChckBx
-            // 
-            this.delete_ChckBx.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.NullValue = false;
-            dataGridViewCellStyle9.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.delete_ChckBx.DefaultCellStyle = dataGridViewCellStyle9;
-            this.delete_ChckBx.HeaderText = "";
-            this.delete_ChckBx.MinimumWidth = 6;
-            this.delete_ChckBx.Name = "delete_ChckBx";
-            this.delete_ChckBx.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.delete_ChckBx.Width = 29;
-            // 
-            // EmpId
-            // 
-            this.EmpId.FillWeight = 23.39183F;
-            this.EmpId.HeaderText = "Employee ID";
-            this.EmpId.MinimumWidth = 6;
-            this.EmpId.Name = "EmpId";
-            this.EmpId.Width = 163;
-            // 
-            // EmpName
-            // 
-            this.EmpName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.EmpName.HeaderText = "Employee  Name";
-            this.EmpName.MinimumWidth = 6;
-            this.EmpName.Name = "EmpName";
-            this.EmpName.Width = 200;
-            // 
-            // dsgntn
-            // 
-            this.dsgntn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dsgntn.HeaderText = "Designation/Position";
-            this.dsgntn.MinimumWidth = 6;
-            this.dsgntn.Name = "dsgntn";
-            this.dsgntn.Width = 239;
-            // 
-            // Absnt
-            // 
-            this.Absnt.FillWeight = 23.39183F;
-            this.Absnt.HeaderText = "Absents";
-            this.Absnt.MinimumWidth = 6;
-            this.Absnt.Name = "Absnt";
-            this.Absnt.Width = 120;
-            // 
-            // Prsnt
-            // 
-            this.Prsnt.FillWeight = 23.39183F;
-            this.Prsnt.HeaderText = "Present";
-            this.Prsnt.MinimumWidth = 6;
-            this.Prsnt.Name = "Prsnt";
-            this.Prsnt.Width = 115;
-            // 
-            // Leavecol
-            // 
-            this.Leavecol.FillWeight = 23.39183F;
-            this.Leavecol.HeaderText = "Leave";
-            this.Leavecol.MinimumWidth = 6;
-            this.Leavecol.Name = "Leavecol";
-            // 
-            // Ttlbr
-            // 
-            this.Ttlbr.FillWeight = 23.39183F;
-            this.Ttlbr.HeaderText = "Duration/Total Labor";
-            this.Ttlbr.MinimumWidth = 6;
-            this.Ttlbr.Name = "Ttlbr";
-            this.Ttlbr.Width = 239;
-            // 
-            // Slry
-            // 
-            this.Slry.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Slry.HeaderText = "Salary";
-            this.Slry.MinimumWidth = 6;
-            this.Slry.Name = "Slry";
-            this.Slry.Width = 130;
             // 
             // label1
             // 
@@ -257,9 +160,9 @@
             this.Search.ForeColor = System.Drawing.Color.DarkGray;
             this.Search.Location = new System.Drawing.Point(1066, 99);
             this.Search.Name = "Search";
+            this.Search.PlaceholderText = "Enter ID number";
             this.Search.Size = new System.Drawing.Size(341, 23);
             this.Search.TabIndex = 81;
-            this.Search.Text = "Search";
             this.Search.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.Search.TextChanged += new System.EventHandler(this.Search_TextChanged);
             // 
@@ -305,7 +208,7 @@
             this.Month_.Name = "Month_";
             this.Month_.Size = new System.Drawing.Size(229, 40);
             this.Month_.TabIndex = 130;
-            this.Month_.Texts = "Show by month of:";
+            this.Month_.Texts = "";
             this.Month_.OnSelectedIndexChanged += new System.EventHandler(this.CmbxMonth_OnSelectedIndexChanged);
             // 
             // Year_
@@ -315,7 +218,7 @@
             this.Year_.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(37)))), ((int)(((byte)(83)))));
             this.Year_.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(51)))));
             this.Year_.BorderSize = 0;
-            this.Year_.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.Year_.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Year_.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Year_.ForeColor = System.Drawing.Color.White;
             this.Year_.IconColor = System.Drawing.Color.White;
@@ -327,39 +230,8 @@
             this.Year_.Name = "Year_";
             this.Year_.Size = new System.Drawing.Size(229, 40);
             this.Year_.TabIndex = 129;
-            this.Year_.Texts = "Show by year of:";
-            // 
-            // btn_one3
-            // 
-            this.btn_one3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
-            this.btn_one3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_one3.FlatAppearance.BorderSize = 0;
-            this.btn_one3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_one3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_one3.ForeColor = System.Drawing.Color.White;
-            this.btn_one3.Location = new System.Drawing.Point(1205, 904);
-            this.btn_one3.Name = "btn_one3";
-            this.btn_one3.Size = new System.Drawing.Size(235, 51);
-            this.btn_one3.TabIndex = 132;
-            this.btn_one3.Text = "Delete";
-            this.btn_one3.UseVisualStyleBackColor = false;
-            this.btn_one3.Click += new System.EventHandler(this.btn_one3_Click);
-            // 
-            // btn_one2
-            // 
-            this.btn_one2.BackColor = System.Drawing.Color.Gray;
-            this.btn_one2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_one2.FlatAppearance.BorderSize = 0;
-            this.btn_one2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_one2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_one2.ForeColor = System.Drawing.Color.White;
-            this.btn_one2.Location = new System.Drawing.Point(119, 904);
-            this.btn_one2.Name = "btn_one2";
-            this.btn_one2.Size = new System.Drawing.Size(282, 51);
-            this.btn_one2.TabIndex = 131;
-            this.btn_one2.Text = "Clear checked";
-            this.btn_one2.UseVisualStyleBackColor = false;
-            this.btn_one2.Click += new System.EventHandler(this.btn_one2_Click);
+            this.Year_.Texts = "";
+            this.Year_.OnSelectedIndexChanged += new System.EventHandler(this.Year__OnSelectedIndexChanged);
             // 
             // btn_one1
             // 
@@ -369,12 +241,13 @@
             this.btn_one1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_one1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_one1.ForeColor = System.Drawing.Color.White;
-            this.btn_one1.Location = new System.Drawing.Point(914, 904);
+            this.btn_one1.Location = new System.Drawing.Point(1066, 889);
             this.btn_one1.Name = "btn_one1";
-            this.btn_one1.Size = new System.Drawing.Size(272, 51);
+            this.btn_one1.Size = new System.Drawing.Size(375, 51);
             this.btn_one1.TabIndex = 133;
-            this.btn_one1.Text = "Reload Table";
+            this.btn_one1.Text = "Refresh";
             this.btn_one1.UseVisualStyleBackColor = false;
+            this.btn_one1.Click += new System.EventHandler(this.btn_one1_Click);
             // 
             // pictureBox4
             // 
@@ -387,30 +260,49 @@
             this.pictureBox4.TabIndex = 134;
             this.pictureBox4.TabStop = false;
             // 
-            // pictureBox3
+            // noData
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.White;
-            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(632, 203);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(44, 40);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 135;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.noData.AutoSize = true;
+            this.noData.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.noData.ForeColor = System.Drawing.Color.Black;
+            this.noData.Location = new System.Drawing.Point(692, 502);
+            this.noData.Name = "noData";
+            this.noData.Size = new System.Drawing.Size(171, 28);
+            this.noData.TabIndex = 207;
+            this.noData.Text = "No data recorded.";
+            this.noData.Visible = false;
+            // 
+            // Month_Year
+            // 
+            this.Month_Year.AutoSize = true;
+            this.Month_Year.Location = new System.Drawing.Point(3, 0);
+            this.Month_Year.Name = "Month_Year";
+            this.Month_Year.Size = new System.Drawing.Size(0, 20);
+            this.Month_Year.TabIndex = 208;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(1335, 53);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(72, 28);
+            this.label2.TabIndex = 209;
+            this.label2.Text = "Search";
             // 
             // ATTENDANCEreport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.Month_Year);
+            this.Controls.Add(this.noData);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.Search);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.btn_one1);
-            this.Controls.Add(this.btn_one3);
             this.Controls.Add(this.Month_);
             this.Controls.Add(this.Year_);
             this.Controls.Add(this.pictureBox1);
@@ -418,7 +310,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.attndncrprt_DGV);
             this.Controls.Add(this.db_ViewCalendarBtn);
-            this.Controls.Add(this.btn_one2);
             this.Name = "ATTENDANCEreport";
             this.Size = new System.Drawing.Size(1555, 1033);
             this.Load += new System.EventHandler(this.ATTENDANCEreport_Load);
@@ -426,7 +317,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -441,21 +331,12 @@
         private PictureBox pictureBox2;
         private TextBox Search;
         private PictureBox pictureBox1;
-        private DataGridViewCheckBoxColumn delete_ChckBx;
-        private DataGridViewTextBoxColumn EmpId;
-        private DataGridViewTextBoxColumn EmpName;
-        private DataGridViewTextBoxColumn dsgntn;
-        private DataGridViewTextBoxColumn Absnt;
-        private DataGridViewTextBoxColumn Prsnt;
-        private DataGridViewTextBoxColumn Leavecol;
-        private DataGridViewTextBoxColumn Ttlbr;
-        private DataGridViewTextBoxColumn Slry;
         private CComboBox Month_;
         private CComboBox Year_;
-        private btn_one btn_one3;
-        private btn_one btn_one2;
         private btn_one btn_one1;
         private PictureBox pictureBox4;
-        private PictureBox pictureBox3;
+        private Label noData;
+        private Label Month_Year;
+        private Label label2;
     }
 }
