@@ -79,7 +79,7 @@
             this.employeeSadd_revised2 = new EMS.EMPLOYEESadd_revised();
             this.employeeSupdate_revised2 = new EMS.EMPLOYEESupdate_revised();
             this.employeeSdelete3 = new EMS.EMPLOYEESdelete();
-            this.attendance2 = new EMS.ATTENDANCE();
+            this.attendance2 = new EMS._ATTENDANCE();
             this.attendancEreport2 = new EMS.ATTENDANCEreport();
             this.attendancEdutydurationDel1 = new EMS.ATTENDANCEdutydurationDel();
             this.attendancEdutydurationUpdrevised2 = new EMS.ATTENDANCEdutydurationUpdREVISED();
@@ -867,7 +867,7 @@
         private btn_one btn_one4;
         private employeeAdd employeeAdd1;
         private TRASH_EMPLOYEESupdate employeeSupdate1;
-        private ATTENDANCE attendance1;
+        private _ATTENDANCE attendance1;
         private TRASH_SALARY salary1;
         private EMPLOYEESdelete employeeSdelete1;
         private ATTENDANCEdutydurationDel Attendancedprtmnt1;
@@ -911,7 +911,7 @@
         private EMPLOYEESadd_revised employeeSadd_revised2;
         private EMPLOYEESupdate_revised employeeSupdate_revised2;
         private EMPLOYEESdelete employeeSdelete3;
-        private ATTENDANCE attendance2;
+        private _ATTENDANCE attendance2;
         private ATTENDANCEreport attendancEreport2;
         private ATTENDANCEdutydurationDel attendancEdutydurationDel1;
         private ATTENDANCEdutydurationUpdREVISED attendancEdutydurationUpdrevised2;

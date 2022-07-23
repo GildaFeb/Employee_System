@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ATTENDANCEdutydurationDel));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ATTENDANCEdutydurationDel));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.DDsubheading = new System.Windows.Forms.Label();
             this.db_ViewCalendarBtn = new EMS.btn_one();
-            this.tableDelete_DGV = new System.Windows.Forms.DataGridView();
             this.btn_one1 = new EMS.btn_one();
             this.btn_one3 = new EMS.btn_one();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -42,9 +42,11 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.reload_table = new EMS.btn_one();
             this.noData = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.tableDelete_DGV)).BeginInit();
+            this.tableDelete = new System.Windows.Forms.DataGridView();
+            this.label = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableDelete)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -87,44 +89,9 @@
             this.db_ViewCalendarBtn.TabIndex = 81;
             this.db_ViewCalendarBtn.UseVisualStyleBackColor = false;
             // 
-            // tableDelete_DGV
-            // 
-            this.tableDelete_DGV.AllowUserToAddRows = false;
-            this.tableDelete_DGV.AllowUserToDeleteRows = false;
-            this.tableDelete_DGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.tableDelete_DGV.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
-            this.tableDelete_DGV.BackgroundColor = System.Drawing.Color.White;
-            this.tableDelete_DGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tableDelete_DGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Violet;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tableDelete_DGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.tableDelete_DGV.ColumnHeadersHeight = 29;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(51)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.tableDelete_DGV.DefaultCellStyle = dataGridViewCellStyle2;
-            this.tableDelete_DGV.GridColor = System.Drawing.Color.DarkGray;
-            this.tableDelete_DGV.Location = new System.Drawing.Point(124, 196);
-            this.tableDelete_DGV.Name = "tableDelete_DGV";
-            this.tableDelete_DGV.RowHeadersWidth = 51;
-            this.tableDelete_DGV.RowTemplate.Height = 29;
-            this.tableDelete_DGV.Size = new System.Drawing.Size(1306, 662);
-            this.tableDelete_DGV.TabIndex = 82;
-            this.tableDelete_DGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tableDelete_DGV_CellContentClick);
-            // 
             // btn_one1
             // 
-            this.btn_one1.BackColor = System.Drawing.Color.Gray;
+            this.btn_one1.BackColor = System.Drawing.Color.DimGray;
             this.btn_one1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_one1.FlatAppearance.BorderSize = 0;
             this.btn_one1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -173,9 +140,9 @@
             this.Search.ForeColor = System.Drawing.Color.DarkGray;
             this.Search.Location = new System.Drawing.Point(1066, 99);
             this.Search.Name = "Search";
+            this.Search.PlaceholderText = "Enter ID Number";
             this.Search.Size = new System.Drawing.Size(341, 23);
             this.Search.TabIndex = 131;
-            this.Search.Text = "Search";
             this.Search.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // pictureBox4
@@ -211,12 +178,59 @@
             this.noData.AutoSize = true;
             this.noData.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.noData.ForeColor = System.Drawing.Color.Black;
-            this.noData.Location = new System.Drawing.Point(643, 512);
+            this.noData.Location = new System.Drawing.Point(681, 522);
             this.noData.Name = "noData";
             this.noData.Size = new System.Drawing.Size(171, 28);
             this.noData.TabIndex = 206;
             this.noData.Text = "No data recorded.";
             this.noData.Visible = false;
+            // 
+            // tableDelete
+            // 
+            this.tableDelete.AllowUserToAddRows = false;
+            this.tableDelete.AllowUserToDeleteRows = false;
+            this.tableDelete.AllowUserToOrderColumns = true;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(63)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            this.tableDelete.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.tableDelete.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.tableDelete.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.tableDelete.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tableDelete.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
+            this.tableDelete.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Violet;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tableDelete.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.tableDelete.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.tableDelete.DefaultCellStyle = dataGridViewCellStyle3;
+            this.tableDelete.Location = new System.Drawing.Point(123, 215);
+            this.tableDelete.Name = "tableDelete";
+            this.tableDelete.RowHeadersWidth = 51;
+            this.tableDelete.RowTemplate.Height = 29;
+            this.tableDelete.Size = new System.Drawing.Size(1307, 621);
+            this.tableDelete.TabIndex = 207;
+            // 
+            // label
+            // 
+            this.label.AutoSize = true;
+            this.label.Location = new System.Drawing.Point(430, 36);
+            this.label.Name = "label";
+            this.label.Size = new System.Drawing.Size(0, 20);
+            this.label.TabIndex = 208;
+            this.label.Visible = false;
             // 
             // ATTENDANCEdutydurationDel
             // 
@@ -224,14 +238,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.Controls.Add(this.label);
             this.Controls.Add(this.noData);
+            this.Controls.Add(this.tableDelete);
             this.Controls.Add(this.reload_table);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.Search);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.btn_one1);
             this.Controls.Add(this.btn_one3);
-            this.Controls.Add(this.tableDelete_DGV);
             this.Controls.Add(this.db_ViewCalendarBtn);
             this.Controls.Add(this.DDsubheading);
             this.Controls.Add(this.label1);
@@ -240,9 +255,9 @@
             this.Size = new System.Drawing.Size(1555, 1033);
             this.Load += new System.EventHandler(this.ATTENDANCEdepartment_Load);
             this.Enter += new System.EventHandler(this.ATTENDANCEdutyduration_Enter);
-            ((System.ComponentModel.ISupportInitialize)(this.tableDelete_DGV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableDelete)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -253,7 +268,6 @@
         private Label label1;
         private Label DDsubheading;
         private btn_one db_ViewCalendarBtn;
-        private DataGridView tableDelete_DGV;
         private btn_one btn_one1;
         private btn_one btn_one3;
         private PictureBox pictureBox3;
@@ -261,5 +275,7 @@
         private PictureBox pictureBox4;
         private btn_one reload_table;
         private Label noData;
+        private DataGridView tableDelete;
+        private Label label;
     }
 }

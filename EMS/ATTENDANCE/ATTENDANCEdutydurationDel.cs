@@ -18,16 +18,17 @@ namespace EMS
         {
             InitializeComponent();
 
-            tableDelete_DGV.ForeColor = Color.Black;
+            tableDelete.ForeColor = Color.Black;
 
+            //Find the Location of Header Cell.
             DataGridViewCheckBoxColumn checkBoxColumn = new DataGridViewCheckBoxColumn();
             checkBoxColumn.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
             checkBoxColumn.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             checkBoxColumn.Width = 100;
             checkBoxColumn.Name = "checkBoxColumn";
             checkBoxColumn.HeaderText = "";
-            tableDelete_DGV.Columns.Insert(0, checkBoxColumn);
-            Point headerCellLocation = this.tableDelete_DGV.GetCellDisplayRectangle(0, -1, true).Location;
+            tableDelete.Columns.Insert(0, checkBoxColumn);
+            Point headerCellLocation = this.tableDelete.GetCellDisplayRectangle(0, -1, true).Location;
 
             //Place the Header CheckBox in the Location of the Header Cell.
             headerCheckBox.Location = new Point(headerCellLocation.X + 55, headerCellLocation.Y + 5);
@@ -36,23 +37,24 @@ namespace EMS
 
             //Assign Click event to the Header CheckBox.
             headerCheckBox.Click += new EventHandler(HeaderCheckBox_Clicked);
-            tableDelete_DGV.Controls.Add(headerCheckBox);
+            tableDelete.Controls.Add(headerCheckBox);
 
             //Add a CheckBox Column to the DataGridView at the first position.
 
             //Assign Click event to the DataGridView Cell.
-            tableDelete_DGV.CellContentClick += new DataGridViewCellEventHandler(TableDB_CellClick);
+            tableDelete.CellContentClick += new DataGridViewCellEventHandler(TableDB_CellClick);
+
         }
 
         private void HeaderCheckBox_Clicked(object sender, EventArgs e)
         {
             //Necessary to end the edit mode of the Cell.
-            tableDelete_DGV.EndEdit();
+            tableDelete.EndEdit();
 
             //Loop and check and uncheck all row CheckBoxes based on Header Cell CheckBox.
-            foreach (DataGridViewRow row in tableDelete_DGV.Rows)
+            foreach (DataGridViewRow row in tableDelete.Rows)
             {
-                DataGridViewCheckBoxCell checkBox = (row.Cells["checkBoxColumn"] as DataGridViewCheckBoxCell);
+                DataGridViewCheckBoxCell checkBox = ((DataGridViewCheckBoxCell)row.Cells["checkBoxColumn"]);
                 checkBox.Value = headerCheckBox.Checked;
             }
         }
@@ -63,7 +65,7 @@ namespace EMS
             {
                 //Loop to verify whether all row CheckBoxes are checked or not.
                 bool isChecked = true;
-                foreach (DataGridViewRow row in tableDelete_DGV.Rows)
+                foreach (DataGridViewRow row in tableDelete.Rows)
                 {
                     if (Convert.ToBoolean(row.Cells["checkBoxColumn"].EditedFormattedValue) == false)
                     {
@@ -74,7 +76,6 @@ namespace EMS
                 headerCheckBox.Checked = isChecked;
             }
         }
-
 
 
         private void ATTENDANCEdepartment_Load(object sender, EventArgs e)
@@ -91,7 +92,7 @@ namespace EMS
             {
                 noData.Visible = true;
             }
-            tableDelete_DGV.DataSource = dt;
+            tableDelete.DataSource = dt;
             
 
         }
@@ -101,18 +102,18 @@ namespace EMS
 
             //tableDelete_DGV.AlternatingRowsDefaultCellStyle.BackColor = Color.Blue; //Color.FromArgb(238, 239, 249);
             //tableDelete_DGV.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
-            tableDelete_DGV.DefaultCellStyle.SelectionBackColor = Color.FromArgb(202, 63, 63);
+            tableDelete.DefaultCellStyle.SelectionBackColor = Color.FromArgb(202, 63, 63);
             //tableDelete_DGV.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
-            tableDelete_DGV.BackgroundColor = Color.White;
+            tableDelete.BackgroundColor = Color.White;
             //tableDelete_DGV.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.DisableResizing;//optional
-            tableDelete_DGV.RowHeadersDefaultCellStyle.SelectionBackColor = Color.FromArgb(62, 113, 201);
-            tableDelete_DGV.RowHeadersDefaultCellStyle.SelectionForeColor = Color.White;
+            tableDelete.RowHeadersDefaultCellStyle.SelectionBackColor = Color.FromArgb(62, 113, 201);
+            tableDelete.RowHeadersDefaultCellStyle.SelectionForeColor = Color.White;
 
-            tableDelete_DGV.EnableHeadersVisualStyles = false;
-            tableDelete_DGV.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            tableDelete.EnableHeadersVisualStyles = false;
+            tableDelete.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
             //tableDelete_DGV.ColumnHeadersDefaultCellStyle.Font = new Font("MS Reference Sans Serif", 10);      
-            tableDelete_DGV.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(63, 113, 202);
-            tableDelete_DGV.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            tableDelete.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(63, 113, 202);
+            tableDelete.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
         }
 
         private void ATTENDANCEdutyduration_Enter(object sender, EventArgs e)
@@ -131,11 +132,11 @@ namespace EMS
             {
                 //Code to delete
                 //note to sef, recheck next time
-                for (int i = tableDelete_DGV.Rows.Count - 1; i >= 0; i--)
+                for (int i = tableDelete.Rows.Count - 1; i >= 0; i--)
                 {
-                    if ((bool)tableDelete_DGV.Rows[i].Cells[0].FormattedValue)
+                    if ((bool)tableDelete.Rows[i].Cells[0].FormattedValue)
                     {
-                        tableDelete_DGV.Rows.RemoveAt(i);
+                        tableDelete.Rows.RemoveAt(i);
                     }
                 }
 
@@ -152,7 +153,7 @@ namespace EMS
             OleDbDataReader read = cmd.ExecuteReader();
             DataTable dt = new DataTable();
             dt.Load(read);
-            tableDelete_DGV.DataSource = dt;
+            tableDelete.DataSource = dt;
         }
 
         private void CmbxMonth_OnSelectedIndexChanged(object sender, EventArgs e)
@@ -164,8 +165,8 @@ namespace EMS
         {
             int count = 0;
             Int32 selectedCellCount =
-            tableDelete_DGV.GetCellCount(DataGridViewElementStates.Selected);
-            foreach (DataGridViewRow Row in tableDelete_DGV.Rows)
+            tableDelete.GetCellCount(DataGridViewElementStates.Selected);
+            foreach (DataGridViewRow Row in tableDelete.Rows)
             {
                 if (!(((DataGridViewCheckBoxCell)Row.Cells["checkBoxColumn"]).Value == null))
                 {
@@ -179,14 +180,13 @@ namespace EMS
             OleDbCommand command = new OleDbCommand();
 
             con.Open();
-
             if (count != 0)
             {
-                try
-                {
+              //  try
+              //  {
 
                     string[] IDS = new string[100];
-                    String msg = "Are you sure want to delete this record?";
+                    String msg = "Are you sure you want to delete this record?";
                     String caption = "Delete Record";
                     MessageBoxButtons buttons = MessageBoxButtons.YesNo;
                     MessageBoxIcon ico = MessageBoxIcon.Question;
@@ -194,28 +194,50 @@ namespace EMS
                     result = MessageBox.Show(this, msg, caption, buttons, ico);
                     if (result == DialogResult.Yes)
                     {
+                        int val = 0;
                         bool check = true;
 
-                        for (int u = tableDelete_DGV.RowCount - 1; u >= 0; u--)
+
+                        /*foreach (DataGridViewRow Row in tableDelete_DGV.Rows)
                         {
-                            DataGridViewRow row = tableDelete_DGV.Rows[u];
+
+                                try
+                                {
+                                    val++;
+                                    if(!(((DataGridViewCheckBoxCell)Row.Cells["checkBoxColumn"]).Value == null))
+                                    {  //id.Add(tableDelete_DGV.Rows[Row.Index].Cells[1].Value);
+                                        IDS[val] = CheckBox.Item
+                                        tableDelete_DGV.Rows.RemoveAt(Row.Index); //not sure
+                                        MessageBox.Show(IDS[val].ToString());
+                            }
+                                }
+                                catch (Exception ex)
+                                {
+                                    check = false;
+                                    MessageBox.Show(ex.ToString());
+                                }
+
+                        }*/
+
+                        for (int u = tableDelete.RowCount - 1; u >= 0; u--)
+                        {
+                            DataGridViewRow row = tableDelete.Rows[u];
 
                             if (Convert.ToBoolean(row.Cells["checkBoxColumn"].Value) == true)
                             {
-
-                                command.CommandText = "DELETE FROM DutyTbl WHERE EmployeeID= '" + row.Cells[1].Value.ToString() + "' AND DutyDate='" + row.Cells[5].Value.ToString() + "'";
+                                
+                                command.CommandText = "DELETE FROM DutyTbl WHERE EmployeeID = '" + row.Cells[2].Value.ToString() + "' AND DutyDate = '"+ row.Cells[4].Value.ToString() + "'";
                                 command.Connection = con;
                                 command.ExecuteNonQuery();
-                                tableDelete_DGV.Rows.RemoveAt(row.Index);
-                            }
+                                tableDelete.Rows.RemoveAt(row.Index);
 
                         }
-                        
+                            
+                        }
                         if (check == true)
                         {
-
-                            successEMPdelete successEMPdelete = new successEMPdelete();
-                            successEMPdelete.ShowDialog();
+                            successDutydelete dutydelete = new successDutydelete();
+                            dutydelete.Show();
                         }
 
                     }
@@ -224,13 +246,23 @@ namespace EMS
                         return;
                     }
 
-                }
-                catch (Exception ex)
+               // }
+               /* catch (Exception ex)
                 {
-                    MessageBox.Show("Deleting Failed:" + ex.Message.ToString(), "Delete",
-                        MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                    //MessageBox.Show("Deleting Failed:" + ex.Message.ToString(), "Delete",
+                     //   MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }*/
+
+                con.Close();
             }
+            else
+            {
+                MessageBox.Show(" Please select record you want to delete.");
+            }
+
+
+            con.Close();
+
         }
         private void pictureBox4_Click(object sender, EventArgs e)
         {
@@ -245,7 +277,7 @@ namespace EMS
         private void btn_one1_Click_1(object sender, EventArgs e)
         {
             //to uncheck all checked boxes
-            foreach (DataGridViewRow Row in tableDelete_DGV.Rows)
+            foreach (DataGridViewRow Row in tableDelete.Rows)
                 ((DataGridViewCheckBoxCell)Row.Cells["checkBoxColumn"]).Value = null;
         }
 
@@ -263,7 +295,7 @@ namespace EMS
                     OleDbDataReader read = cmd.ExecuteReader();
                     DataTable dt = new DataTable();
                     dt.Load(read);
-                    tableDelete_DGV.DataSource = dt;
+                    tableDelete.DataSource = dt;
 
                 }
                 else
@@ -299,7 +331,7 @@ namespace EMS
                 noData.Visible = true;
             }
 
-            tableDelete_DGV.DataSource = dt;
+            tableDelete.DataSource = dt;
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace EMS
 {
-    partial class ATTENDANCE
+    partial class _ATTENDANCE
     {
         /// <summary> 
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ATTENDANCE));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(_ATTENDANCE));
             this.employeesTitlePage = new System.Windows.Forms.Label();
             this.timeTmr_Attendance = new System.Windows.Forms.Timer(this.components);
             this.clockLbl_Attendance = new System.Windows.Forms.Label();

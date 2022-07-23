@@ -10,6 +10,12 @@
     <Compile Update="ATTENDANCE\ATTENDANCE.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="ATTENDANCE\DataNotFound.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ATTENDANCE\SuccessSubmit.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Employees\errorEmptyFields.cs">
       <SubType>Form</SubType>
     </Compile>
