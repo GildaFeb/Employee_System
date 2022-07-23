@@ -672,7 +672,7 @@ namespace EMS
                 blank_timeout.Enabled = false;
                 now_timein.Enabled = false;
                 now_timeout.Enabled = false;
-                date_duty.Enabled = true;
+                date_duty.Enabled = false;
                 overtime.Text = "";
                 duty_duration.Text = "";
 
@@ -689,7 +689,7 @@ namespace EMS
                 blank_timeout.Enabled = false;
                 timein.Enabled = false;
                 timeout.Enabled = false;
-                date_duty.Enabled = true;
+                date_duty.Enabled = false;
                 overtime.Text = "";
                 duty_duration.Text = "";
 
@@ -732,25 +732,86 @@ namespace EMS
                         EmployeeID = employee_id.Text,
                         Fullname = employee_name.Text,
                         DutyDate = dat.Text,
-                        Designation = status_.Text,
                         Present = status_.Text,
                         worked_hrs = dur.Text,
                         Overtime = overtime.Text,
                         Status = status_.Text,
 
                     };
-                    MessageBox.Show(dur.ToString());
                     if (Employee_Details.Employee_Database.SubmitReport(_record) == true)
                     {
                         SuccessDutyAdd successDutyAdd = new SuccessDutyAdd();
-                        successDutyAdd.Show();
-                        // will change
+                        successDutyAdd.Show(); // will change
+
+                        // Reset fields
+                        employee_id.Text = "";
+                        duty_duration.Text = "";
+                        overtime.Text = "";
+                        blank_timeout.Visible = true;
+                        blank_timein.Visible = true;
+                        employee_name.Text = "";
+                        status_.SelectedItem = null;
+                        status_.Text = "--Select--";
+
+
+                        pending_cover.Visible = true;
+                        submit_cover.Visible = true;
+                        status_.Enabled = false;
+                        now_timein.Enabled = false;
+                        now_timeout.Enabled = false;
+                        employee_id.Enabled = true;
+                        date_duty.Enabled = true;
                     }
                 }
             }
             else if (( status_.Text == "Absent" || status_.Text == "Leave"))
             {
+                String msg = " You are about to submit this report and will no longer change. Do you want to continue? ";
+                String caption = "Submit Report";
+                MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+                MessageBoxIcon ico = MessageBoxIcon.Question;
+                DialogResult result;
+                result = MessageBox.Show(this, msg, caption, buttons, ico);
+                if (result == DialogResult.Yes)
+                {
 
+                    dat.Text = date_duty.Value.Month.ToString() + "/" + date_duty.Value.Year.ToString();
+                    Employee_Details.Report _record = new Employee_Details.Report()
+                    {
+                        EmployeeID = employee_id.Text,
+                        Fullname = employee_name.Text,
+                        DutyDate = dat.Text,
+                        Status = status_.Text,
+                        worked_hrs = "0",
+                        Overtime = "0",
+
+
+                    };
+                    if (Employee_Details.Employee_Database.SubmitReport(_record) == true)
+                    {
+                        SuccessDutyAdd successDutyAdd = new SuccessDutyAdd();
+                        successDutyAdd.Show(); // will change
+
+                        // Reset fields
+                        employee_id.Text = "";
+                        duty_duration.Text = "";
+                        overtime.Text = "";
+                        blank_timeout.Visible = true;
+                        blank_timein.Visible = true;
+                        employee_name.Text = "";
+                        status_.SelectedItem = null;
+                        status_.Text = "--Select--";
+
+
+                        pending_cover.Visible = true;
+                        submit_cover.Visible = true;
+                        status_.Enabled = false;
+                        now_timein.Enabled = false;
+                        now_timeout.Enabled = false;
+                        employee_id.Enabled = true;
+                        date_duty.Enabled = true;
+                    }
+                }
             }
         }
 
