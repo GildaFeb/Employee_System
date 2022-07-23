@@ -24,7 +24,6 @@ namespace EMS
             onLeave.Text = (Employee_Details.Employee_Database.onLeavePendingCount(_date) + Employee_Details.Employee_Database.onLeaveReportCount(_date)).ToString();
             total_records.Text = Employee_Details.Employee_Database.totalRecordsCount().ToString();
 
-            MessageBox.Show(_date);
         }
 
         private void label6_Click(object sender, EventArgs e)

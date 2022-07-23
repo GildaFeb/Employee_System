@@ -473,10 +473,10 @@ namespace EMS
                     else if (Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).middle_name.ToString() == "None" && Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).suffix.ToString() == "None")
                     {
                         firstName = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).first_name.ToString();
-                        middleName = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).middle_name.ToString();
+                        suffix = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).suffix.ToString();
                         lastName = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).last_name.ToString();
 
-                        employee_name.Text = firstName + " " + middleName + " " + lastName;
+                        employee_name.Text = firstName + " " + suffix;
                     }
                     else
                     {
@@ -727,7 +727,7 @@ namespace EMS
         private void submit_btn_Click(object sender, EventArgs e)
         {
 
-            if (invalid_time.Visible == false && status_.Text == "Present" && blank_timein.Enabled == false && blank_timeout.Enabled == false)
+            if (invalid_time.Visible == false && status_.Text == "Present" && (blank_timein.Enabled == false || blank_timeout.Enabled == false))
             {
                 String msg = " You are about to submit this as Attendance Report. Do you want to continue? ";
                 String caption = "Attendance Report.";
