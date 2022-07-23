@@ -333,5 +333,22 @@ namespace EMS
 
             tableDelete.DataSource = dt;
         }
+
+        private void btn_one2_Click(object sender, EventArgs e)
+        {
+            OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
+
+            con.Open();
+            OleDbCommand cmd = new OleDbCommand("Select * from HistoryTbl", con);
+            OleDbDataReader read = cmd.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Load(read);
+            if (Employee_Details.Employee_Database.DutyRecord() == 0)
+            {
+                noData.Visible = true;
+            }
+
+            tableDelete.DataSource = dt;
+        }
     }
 }

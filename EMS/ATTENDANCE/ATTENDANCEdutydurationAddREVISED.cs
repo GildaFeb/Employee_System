@@ -431,9 +431,16 @@ namespace EMS
                 }
                 else if (checkDuty == false)
                 {
-                    MessageBox.Show("This employee with ID number '" + employee_id.Text + "' has already been added to attendance for this date: " + date_duty.Text +
-                       ". Please check Duty Table or Attendance Report."); // no design
-                    status_.Enabled = true;
+                    MessageBox.Show("This employee with ID number '" + employee_id.Text + "' has been already added as 'Pending' for this date: " + date_duty.Text +
+                       ". Please check Duty Table."); // no design
+                    status_.Enabled = false;
+                    date_duty.Enabled = true;
+                }else if(Employee_Details.Employee_Database.checkHistory(employee_id.Text, date_duty.Text) == 1)
+                {
+                    MessageBox.Show("This employee with ID number '" + employee_id.Text + "' has been has been submitted to the report for this date: " + date_duty.Text +
+                       ". Please check Attendance Report."); // no design
+                    status_.Enabled = false;
+                    date_duty.Enabled = true;
                 }
                 else
                 {
@@ -720,10 +727,10 @@ namespace EMS
         private void submit_btn_Click(object sender, EventArgs e)
         {
 
-            if (invalid_time.Visible == false && status_.Text == "Present" && timein.Text != null && timeout != null)
+            if (invalid_time.Visible == false && status_.Text == "Present" && blank_timein.Enabled == false && blank_timeout.Enabled == false)
             {
-                String msg = " You are about to save this as Pending. Do you want to continue? ";
-                String caption = "Will be added to Table Duty.";
+                String msg = " You are about to submit this as Attendance Report. Do you want to continue? ";
+                String caption = "Attendance Report.";
                 MessageBoxButtons buttons = MessageBoxButtons.YesNo;
                 MessageBoxIcon ico = MessageBoxIcon.Question;
                 DialogResult result;
@@ -756,8 +763,19 @@ namespace EMS
                         Overtime = overtime.Text,
                         Status = status_.Text,
 
+                    }; Employee_Details.Duty_Pending _Pending = new Employee_Details.Duty_Pending()
+                    {
+                        EmployeeID = employee_id.Text,
+                        Fullname = employee_name.Text,
+                        duty_date = date_duty.Text,
+                        status = status_.Text,
+                        timeIn = timein.Text,
+                        timeOut = timeout.Text,
+                        duration = duty_duration.Text,
+                        overtime = overtime.Text,
+
                     };
-                    if (Employee_Details.Employee_Database.SubmitReport(_record) == true)
+                    if (Employee_Details.Employee_Database.SubmitReport(_record) == true && Employee_Details.Employee_Database.AddHistory(_Pending) == true)
                     {
                         SuccessDutyAdd successDutyAdd = new SuccessDutyAdd();
                         successDutyAdd.Show(); // will change
@@ -783,7 +801,7 @@ namespace EMS
                     }
                 }
             }
-            else if (( status_.Text == "Absent" || status_.Text == "Leave"))
+            else if ((status_.Text == "Absent" || status_.Text == "Leave"))
             {
                 String msg = " You are about to submit this report and will no longer change. Do you want to continue? ";
                 String caption = "Submit Report";
@@ -803,10 +821,20 @@ namespace EMS
                         Status = status_.Text,
                         worked_hrs = "0",
                         Overtime = "0",
-
+                    };
+                    Employee_Details.Duty_Pending _Pending = new Employee_Details.Duty_Pending()
+                    {
+                        EmployeeID = employee_id.Text,
+                        Fullname = employee_name.Text,
+                        duty_date = date_duty.Text,
+                        status = status_.Text,
+                        timeIn = timein.Text,
+                        timeOut = timeout.Text,
+                        duration = duty_duration.Text,
+                        overtime = overtime.Text,
 
                     };
-                    if (Employee_Details.Employee_Database.SubmitReport(_record) == true)
+                    if (Employee_Details.Employee_Database.SubmitReport(_record) == true && Employee_Details.Employee_Database.AddHistory(_Pending) == true)
                     {
                         SuccessDutyAdd successDutyAdd = new SuccessDutyAdd();
                         successDutyAdd.Show(); // will change
@@ -832,11 +860,20 @@ namespace EMS
                     }
                 }
             }
+            else
+            {
+                MessageBox.Show(" You selected present. You need to fill the 'time in' and 'time out.'");
+            }
         }
 
         private void ATTENDANCEdutydurationAddREVISED_Load(object sender, EventArgs e)
         {
             
+        }
+
+        private void submit_cover_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

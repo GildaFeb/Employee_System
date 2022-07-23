@@ -431,6 +431,40 @@ namespace EMS.Employee_Details
             }
         }
 
+        public static bool AddHistory(Duty_Pending duty_Pending)
+        {
+
+            try
+            {
+                OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
+                con.Open();
+                OleDbCommand cmd = new OleDbCommand();
+                cmd.CommandText = "INSERT INTO HistoryTbl (EmployeeID,Fullname,DutyDate,Status,TimeIn,TimeOut,Duration,Overtime) VALUES(@empID,@fullname,@dutydate,@status,@timein,@timeout,@duration,@overtime)";
+                cmd.Connection = con;
+
+                cmd.Parameters.AddWithValue("@empID", duty_Pending.EmployeeID);
+                cmd.Parameters.AddWithValue("@fullname", duty_Pending.Fullname);
+                cmd.Parameters.AddWithValue("@dutydate", duty_Pending.duty_date);
+                cmd.Parameters.AddWithValue("@status", duty_Pending.status);
+                cmd.Parameters.AddWithValue("@timein", duty_Pending.timeIn);
+                cmd.Parameters.AddWithValue("@timeout", duty_Pending.timeOut);
+                cmd.Parameters.AddWithValue("@duration", duty_Pending.duration);
+                cmd.Parameters.AddWithValue("@overtime", duty_Pending.overtime);
+
+
+                cmd.ExecuteNonQuery();
+                con.Close();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                errorEMPadd error = new errorEMPadd();
+                error.Show();
+
+                return false;
+
+            }
+        }
         // ------- END: DUTY DURATION PAGE  ------
 
 
@@ -849,6 +883,22 @@ namespace EMS.Employee_Details
         }
 
 
+        // check history
+
+        public static int checkHistory(string ID, string date)
+        {
+            OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
+
+            con.Open();
+            OleDbCommand cmd = new OleDbCommand("SELECT * FROM HistoryTbl WHERE EmployeeID  = '" + ID + "' AND DutyDate = '" + date + "'", con);
+            OleDbDataReader read = cmd.ExecuteReader();
+            if (read.HasRows)
+            {
+                return 1;
+            }
+            else
+                return 0;
+        }
 
 
 

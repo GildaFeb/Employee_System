@@ -67,6 +67,7 @@
             this.status_ = new System.Windows.Forms.ComboBox();
             this.dur = new System.Windows.Forms.Label();
             this.dat = new System.Windows.Forms.Label();
+            this.DDsubheading = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn_clear
@@ -518,17 +519,18 @@
             // submit_cover
             // 
             this.submit_cover.AutoSize = true;
-            this.submit_cover.Location = new System.Drawing.Point(1171, 687);
+            this.submit_cover.Location = new System.Drawing.Point(1171, 692);
             this.submit_cover.Margin = new System.Windows.Forms.Padding(50, 0, 50, 50);
             this.submit_cover.Name = "submit_cover";
             this.submit_cover.Padding = new System.Windows.Forms.Padding(150, 50, 100, 50);
             this.submit_cover.Size = new System.Drawing.Size(250, 120);
             this.submit_cover.TabIndex = 226;
+            this.submit_cover.Click += new System.EventHandler(this.submit_cover_Click);
             // 
             // pending_cover
             // 
             this.pending_cover.AutoSize = true;
-            this.pending_cover.Location = new System.Drawing.Point(915, 692);
+            this.pending_cover.Location = new System.Drawing.Point(915, 676);
             this.pending_cover.Margin = new System.Windows.Forms.Padding(50, 0, 50, 50);
             this.pending_cover.Name = "pending_cover";
             this.pending_cover.Padding = new System.Windows.Forms.Padding(150, 50, 100, 50);
@@ -550,6 +552,7 @@
             // status_
             // 
             this.status_.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.status_.Enabled = false;
             this.status_.FormattingEnabled = true;
             this.status_.Items.AddRange(new object[] {
             "Present",
@@ -579,11 +582,25 @@
             this.dat.Size = new System.Drawing.Size(0, 20);
             this.dat.TabIndex = 231;
             // 
+            // DDsubheading
+            // 
+            this.DDsubheading.AutoSize = true;
+            this.DDsubheading.BackColor = System.Drawing.Color.Transparent;
+            this.DDsubheading.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.DDsubheading.ForeColor = System.Drawing.Color.Gray;
+            this.DDsubheading.Location = new System.Drawing.Point(95, 153);
+            this.DDsubheading.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.DDsubheading.Name = "DDsubheading";
+            this.DDsubheading.Size = new System.Drawing.Size(492, 22);
+            this.DDsubheading.TabIndex = 232;
+            this.DDsubheading.Text = "Enter EMPLOYEE ID and DATE first to find employee.";
+            // 
             // ATTENDANCEdutydurationAddREVISED
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.Controls.Add(this.DDsubheading);
             this.Controls.Add(this.dat);
             this.Controls.Add(this.dur);
             this.Controls.Add(this.status_);
@@ -671,5 +688,6 @@
         private ComboBox status_;
         private Label dur;
         private Label dat;
+        private Label DDsubheading;
     }
 }
