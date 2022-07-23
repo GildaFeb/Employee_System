@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnl_IndicatorAttendance = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.btn_one1 = new EMS.btn_one();
             this.pnl_IndicatorEmployeesNew = new System.Windows.Forms.Panel();
             this.btn_one5 = new EMS.btn_one();
             this.pnl_IndicatorDashboard = new System.Windows.Forms.Panel();
@@ -56,8 +58,6 @@
             this.employeesPnl = new System.Windows.Forms.Panel();
             this.updateEmp_Pnl = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.btn_one1 = new EMS.btn_one();
             this.deleteEmp_Pnl = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.addEmp_Pnl = new System.Windows.Forms.Panel();
@@ -74,15 +74,19 @@
             this.systemTitle = new System.Windows.Forms.Label();
             this.workflow_panel = new System.Windows.Forms.Panel();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.dashboard2 = new EMS.dashboard();
             this.employees2 = new EMS.EMPLOYEES();
+            this.employeeSadd_revised2 = new EMS.EMPLOYEESadd_revised();
             this.employeeSupdate_revised2 = new EMS.EMPLOYEESupdate_revised();
             this.employeeSdelete3 = new EMS.EMPLOYEESdelete();
             this.attendance2 = new EMS._ATTENDANCE();
+            this.attendancEreport2 = new EMS.ATTENDANCEreport();
             this.attendancEdutydurationDel1 = new EMS.ATTENDANCEdutydurationDel();
             this.attendancEdutydurationUpdrevised2 = new EMS.ATTENDANCEdutydurationUpdREVISED();
             this.attendancEdutydurationAddrevised2 = new EMS.ATTENDANCEdutydurationAddREVISED();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.pnl_IndicatorEmployeesNew.SuspendLayout();
             this.pnl_IndicatorDashboard.SuspendLayout();
             this.attendancePnl.SuspendLayout();
@@ -100,7 +104,6 @@
             this.employeesPnl.SuspendLayout();
             this.updateEmp_Pnl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel4.SuspendLayout();
             this.deleteEmp_Pnl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.addEmp_Pnl.SuspendLayout();
@@ -138,6 +141,26 @@
             this.pnl_IndicatorAttendance.Name = "pnl_IndicatorAttendance";
             this.pnl_IndicatorAttendance.Size = new System.Drawing.Size(18, 75);
             this.pnl_IndicatorAttendance.TabIndex = 162;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.btn_one1);
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(18, 75);
+            this.panel4.TabIndex = 1;
+            // 
+            // btn_one1
+            // 
+            this.btn_one1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(208)))), ((int)(((byte)(43)))));
+            this.btn_one1.FlatAppearance.BorderSize = 0;
+            this.btn_one1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_one1.ForeColor = System.Drawing.Color.White;
+            this.btn_one1.Location = new System.Drawing.Point(-22, 13);
+            this.btn_one1.Name = "btn_one1";
+            this.btn_one1.Size = new System.Drawing.Size(27, 50);
+            this.btn_one1.TabIndex = 0;
+            this.btn_one1.UseVisualStyleBackColor = false;
             // 
             // pnl_IndicatorEmployeesNew
             // 
@@ -311,7 +334,6 @@
             // deleteDutyDuration
             // 
             this.deleteDutyDuration.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(50)))), ((int)(((byte)(99)))));
-            this.deleteDutyDuration.Cursor = System.Windows.Forms.Cursors.Hand;
             this.deleteDutyDuration.Dock = System.Windows.Forms.DockStyle.Top;
             this.deleteDutyDuration.FlatAppearance.BorderSize = 0;
             this.deleteDutyDuration.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -330,7 +352,6 @@
             // update_DutyDuration
             // 
             this.update_DutyDuration.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(50)))), ((int)(((byte)(99)))));
-            this.update_DutyDuration.Cursor = System.Windows.Forms.Cursors.Hand;
             this.update_DutyDuration.Dock = System.Windows.Forms.DockStyle.Top;
             this.update_DutyDuration.FlatAppearance.BorderSize = 0;
             this.update_DutyDuration.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -349,7 +370,6 @@
             // addDutyDuration
             // 
             this.addDutyDuration.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(50)))), ((int)(((byte)(99)))));
-            this.addDutyDuration.Cursor = System.Windows.Forms.Cursors.Hand;
             this.addDutyDuration.Dock = System.Windows.Forms.DockStyle.Top;
             this.addDutyDuration.FlatAppearance.BorderSize = 0;
             this.addDutyDuration.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -368,7 +388,6 @@
             // button12
             // 
             this.button12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(50)))), ((int)(((byte)(99)))));
-            this.button12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button12.Dock = System.Windows.Forms.DockStyle.Top;
             this.button12.FlatAppearance.BorderSize = 0;
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -387,7 +406,6 @@
             // button7
             // 
             this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(50)))), ((int)(((byte)(99)))));
-            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button7.Dock = System.Windows.Forms.DockStyle.Top;
             this.button7.FlatAppearance.BorderSize = 0;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -406,7 +424,6 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(37)))), ((int)(((byte)(83)))));
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.Dock = System.Windows.Forms.DockStyle.Top;
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -462,26 +479,6 @@
             this.pictureBox2.TabIndex = 15;
             this.pictureBox2.TabStop = false;
             // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.btn_one1);
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(18, 75);
-            this.panel4.TabIndex = 1;
-            // 
-            // btn_one1
-            // 
-            this.btn_one1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(208)))), ((int)(((byte)(43)))));
-            this.btn_one1.FlatAppearance.BorderSize = 0;
-            this.btn_one1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_one1.ForeColor = System.Drawing.Color.White;
-            this.btn_one1.Location = new System.Drawing.Point(-22, 13);
-            this.btn_one1.Name = "btn_one1";
-            this.btn_one1.Size = new System.Drawing.Size(27, 50);
-            this.btn_one1.TabIndex = 0;
-            this.btn_one1.UseVisualStyleBackColor = false;
-            // 
             // deleteEmp_Pnl
             // 
             this.deleteEmp_Pnl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(50)))), ((int)(((byte)(99)))));
@@ -524,7 +521,6 @@
             // subBtn_SearchEmp
             // 
             this.subBtn_SearchEmp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(50)))), ((int)(((byte)(99)))));
-            this.subBtn_SearchEmp.Cursor = System.Windows.Forms.Cursors.Hand;
             this.subBtn_SearchEmp.Dock = System.Windows.Forms.DockStyle.Top;
             this.subBtn_SearchEmp.FlatAppearance.BorderSize = 0;
             this.subBtn_SearchEmp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -543,7 +539,6 @@
             // subBtn_UpdateEmp
             // 
             this.subBtn_UpdateEmp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(50)))), ((int)(((byte)(99)))));
-            this.subBtn_UpdateEmp.Cursor = System.Windows.Forms.Cursors.Hand;
             this.subBtn_UpdateEmp.Dock = System.Windows.Forms.DockStyle.Top;
             this.subBtn_UpdateEmp.FlatAppearance.BorderSize = 0;
             this.subBtn_UpdateEmp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -562,7 +557,6 @@
             // subBtn_AddEmp
             // 
             this.subBtn_AddEmp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(50)))), ((int)(((byte)(99)))));
-            this.subBtn_AddEmp.Cursor = System.Windows.Forms.Cursors.Hand;
             this.subBtn_AddEmp.Dock = System.Windows.Forms.DockStyle.Top;
             this.subBtn_AddEmp.FlatAppearance.BorderSize = 0;
             this.subBtn_AddEmp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -583,7 +577,6 @@
             // btnEmployees
             // 
             this.btnEmployees.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(37)))), ((int)(((byte)(83)))));
-            this.btnEmployees.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEmployees.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnEmployees.FlatAppearance.BorderSize = 0;
             this.btnEmployees.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -605,7 +598,6 @@
             // btnDashboard
             // 
             this.btnDashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(37)))), ((int)(((byte)(83)))));
-            this.btnDashboard.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDashboard.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnDashboard.FlatAppearance.BorderSize = 0;
             this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -669,10 +661,10 @@
             // systemTitle
             // 
             this.systemTitle.AutoSize = true;
-            this.systemTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.systemTitle.Font = new System.Drawing.Font("SF Pro Display", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.systemTitle.Location = new System.Drawing.Point(125, 0);
             this.systemTitle.Name = "systemTitle";
-            this.systemTitle.Size = new System.Drawing.Size(160, 38);
+            this.systemTitle.Size = new System.Drawing.Size(161, 39);
             this.systemTitle.TabIndex = 0;
             this.systemTitle.Text = "Workflow";
             // 
@@ -688,6 +680,16 @@
             // 
             this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
             // 
+            // dashboard2
+            // 
+            this.dashboard2.AutoScroll = true;
+            this.dashboard2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.dashboard2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dashboard2.Location = new System.Drawing.Point(417, 0);
+            this.dashboard2.Name = "dashboard2";
+            this.dashboard2.Size = new System.Drawing.Size(1485, 1033);
+            this.dashboard2.TabIndex = 15;
+            // 
             // employees2
             // 
             this.employees2.AutoScroll = true;
@@ -697,6 +699,15 @@
             this.employees2.Name = "employees2";
             this.employees2.Size = new System.Drawing.Size(1902, 1033);
             this.employees2.TabIndex = 16;
+            // 
+            // employeeSadd_revised2
+            // 
+            this.employeeSadd_revised2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.employeeSadd_revised2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.employeeSadd_revised2.Location = new System.Drawing.Point(417, 0);
+            this.employeeSadd_revised2.Name = "employeeSadd_revised2";
+            this.employeeSadd_revised2.Size = new System.Drawing.Size(1485, 1033);
+            this.employeeSadd_revised2.TabIndex = 17;
             // 
             // employeeSupdate_revised2
             // 
@@ -727,6 +738,16 @@
             this.attendance2.Name = "attendance2";
             this.attendance2.Size = new System.Drawing.Size(1485, 1033);
             this.attendance2.TabIndex = 20;
+            // 
+            // attendancEreport2
+            // 
+            this.attendancEreport2.AutoScroll = true;
+            this.attendancEreport2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.attendancEreport2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.attendancEreport2.Location = new System.Drawing.Point(417, 0);
+            this.attendancEreport2.Name = "attendancEreport2";
+            this.attendancEreport2.Size = new System.Drawing.Size(1485, 1033);
+            this.attendancEreport2.TabIndex = 21;
             // 
             // attendancEdutydurationDel1
             // 
@@ -783,9 +804,12 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.attendancEdutydurationUpdrevised2);
             this.Controls.Add(this.attendancEdutydurationDel1);
+            this.Controls.Add(this.attendancEreport2);
             this.Controls.Add(this.attendance2);
             this.Controls.Add(this.employeeSdelete3);
             this.Controls.Add(this.employeeSupdate_revised2);
+            this.Controls.Add(this.employeeSadd_revised2);
+            this.Controls.Add(this.dashboard2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.employees2);
             this.ForeColor = System.Drawing.Color.White;
@@ -797,6 +821,7 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.app_bg_Load_1);
             this.panel1.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
             this.pnl_IndicatorEmployeesNew.ResumeLayout(false);
             this.pnl_IndicatorDashboard.ResumeLayout(false);
             this.attendancePnl.ResumeLayout(false);
@@ -814,7 +839,6 @@
             this.employeesPnl.ResumeLayout(false);
             this.updateEmp_Pnl.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel4.ResumeLayout(false);
             this.deleteEmp_Pnl.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.addEmp_Pnl.ResumeLayout(false);
