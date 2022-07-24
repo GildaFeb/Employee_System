@@ -510,7 +510,7 @@
             this.btn_one2.Name = "btn_one2";
             this.btn_one2.Size = new System.Drawing.Size(608, 48);
             this.btn_one2.TabIndex = 132;
-            this.btn_one2.Text = "Reload Data";
+            this.btn_one2.Text = "Refresh Data";
             this.btn_one2.UseVisualStyleBackColor = false;
             this.btn_one2.Click += new System.EventHandler(this.btn_one2_Click);
             // 

@@ -277,6 +277,7 @@ namespace EMS
 
         private void btn_one1_Click_1(object sender, EventArgs e)
         {
+            headerCheckBox.Checked = false;
             //to uncheck all checked boxes
             foreach (DataGridViewRow Row in tableDelete.Rows)
                 ((DataGridViewCheckBoxCell)Row.Cells["checkBoxColumn"]).Value = null;

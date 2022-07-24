@@ -127,7 +127,6 @@ namespace EMS
         {
             if(Month_.Texts != null && Year_.Texts != null)
             {
-                int count = 0;
                 OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
 
                 con.Open();
@@ -149,7 +148,6 @@ namespace EMS
         {
             if (Month_.Texts != null && Year_.Texts != null)
             {
-                int count = 0;
                 OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
 
                 con.Open();

@@ -217,7 +217,6 @@ namespace EMS
                     count++;
                 }
             }
-            int i;
 
             //int total = tableDelete_DGV.Rows.Cast<DataGridViewRow>().Where(p => Convert.ToBoolean(p.Cells["Selected"].Value) == true).Count();
             OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
@@ -268,7 +267,6 @@ namespace EMS
                     result = MessageBox.Show(this, msg, caption, buttons, ico);
                     if (result == DialogResult.Yes)
                     {
-                        int val = 0;
                         bool check = true;
                             
 
@@ -380,6 +378,7 @@ namespace EMS
 
         private void btn_one1_Click(object sender, EventArgs e)
         {
+            headerCheckBox.Checked = false;
             foreach (DataGridViewRow Row in tableDelete_DGV.Rows)
                 ((DataGridViewCheckBoxCell)Row.Cells["checkBoxColumn"]).Value = null;
         }

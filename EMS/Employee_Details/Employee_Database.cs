@@ -186,7 +186,7 @@ namespace EMS.Employee_Details
                 con.Close();
                 return true;
             }
-            catch (Exception ex)
+            catch
             {
                 errorEMPadd error = new errorEMPadd();
                 error.Show();
@@ -420,14 +420,11 @@ namespace EMS.Employee_Details
 
         public static bool UpdatePendingDuty(Duty_Pending duty_Pending)
         {
-
-
             try
             {
                 OleDbConnection Con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
                 Con.Open();
                 OleDbCommand cmd = new OleDbCommand("UPDATE DutyTable SET Status='" + duty_Pending.status + "',TimeIn='" + duty_Pending.timeIn + "',TimeOut='" + duty_Pending.timeOut + "',Duration='" + duty_Pending.duration + "',Overtime='" + duty_Pending.overtime + "', WHERE EmployeeID='" + duty_Pending.EmployeeID + "', AND DutyDate= '" + duty_Pending.duty_date + "'", Con);
-
 
                 cmd.ExecuteNonQuery();
                 Con.Close();
@@ -435,9 +432,7 @@ namespace EMS.Employee_Details
             }
             catch (Exception ex)
             {
-
                 MessageBox.Show(ex.Message);
-
                 return false;
             }
         }
@@ -467,7 +462,7 @@ namespace EMS.Employee_Details
                 con.Close();
                 return true;
             }
-            catch (Exception ex)
+            catch
             {
                 errorEMPadd error = new errorEMPadd();
                 error.Show();
@@ -502,7 +497,7 @@ namespace EMS.Employee_Details
                 con.Close();
                 return true;
             }
-            catch (Exception ex)
+            catch
             {
                 errorEMPadd error = new errorEMPadd();
                 error.Show();
@@ -511,16 +506,54 @@ namespace EMS.Employee_Details
 
             }
         }
-        // ------- END: DUTY DURATION PAGE  ------
+
+
+        public static Duty_Pending ShowAttendance(string ID, string date)
+        {
+
+
+            OleDbCommand cmd = new OleDbCommand();
+            OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
+            con.Open();
+            cmd = new OleDbCommand("SELECT * FROM DutyTbl where EmployeeID='" + ID + "' AND DutyDate = '" + date + "'");
+            cmd.Connection = con;
+            OleDbDataReader read = cmd.ExecuteReader();
+            Duty_Pending pending = new Duty_Pending();
+            int check = 0;
+            while (read.Read())
+            {
+                pending.Fullname = read.GetString(2);
+
+                pending.status = read.GetString(4);
+                pending.timeIn = read.GetString(5);
+                pending.timeOut = read.GetString(6);
+                pending.duration = read.GetString(7);
+                pending.overtime = read.GetString(8);
+                check++;
+            }
+
+            con.Close();
+            return pending;
+
+        }
 
 
 
 
-        // ===================== ATTENDANCE REPORT ===================
 
 
 
-        public static bool SubmitReport(Report report)
+
+            // ------- END: DUTY DURATION PAGE  ------
+
+
+
+
+            // ===================== ATTENDANCE REPORT ===================
+
+
+
+            public static bool SubmitReport(Report report)
         {
             int check = 0;
            // try

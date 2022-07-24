@@ -653,24 +653,72 @@ namespace EMS
                     int work_time = Convert.ToInt32(ConvertedWorktime.ToLower());
                     int time = int.Parse(overtime.Text);
                     double worked_hrs = work_time - time;*/
-                    Employee_Details.Duty_Pending _Pending = new Employee_Details.Duty_Pending()
+                    if(blank_timein.Visible == true && blank_timeout.Visible == true)
                     {
-                        EmployeeID = employee_id.Text,
-                        Fullname = employee_name.Text,
-                        duty_date = date_duty.Text,
-                        status = status_.Text,
-                        timeIn = timein.Text,
-                        timeOut = timeout.Text,
-                        duration =duty_duration.Text,
-                        overtime = overtime.Text,
+                        Employee_Details.Duty_Pending _Pending = new Employee_Details.Duty_Pending()
+                        {
+                            EmployeeID = employee_id.Text,
+                            Fullname = employee_name.Text,
+                            duty_date = date_duty.Text,
+                            status = status_.Text,
 
-                    };
-                    if(Employee_Details.Employee_Database.AddDuty(_Pending) == true)
-                    {
-                        SuccessDutyAdd successDutyAdd = new SuccessDutyAdd();
-                        successDutyAdd.Show();
+                            timeIn = " ",
+                            timeOut = " ",
+                            duration = " ",
+                            overtime = " ",
+                        };
+                        if (Employee_Details.Employee_Database.AddDuty(_Pending) == true)
+                        {
+                            SuccessDutyAdd successDutyAdd = new SuccessDutyAdd();
+                            successDutyAdd.Show();
 
+                        }
                     }
+                    else if (blank_timein.Visible == false && blank_timeout.Visible == true)
+                    {
+                        Employee_Details.Duty_Pending _Pending = new Employee_Details.Duty_Pending()
+                        {
+                            EmployeeID = employee_id.Text,
+                            Fullname = employee_name.Text,
+                            duty_date = date_duty.Text,
+                            status = status_.Text,
+                            timeIn = timein.Text,
+
+
+                            timeOut = " ",
+                            duration = " ",
+                            overtime = " ",
+
+                        };
+                        if (Employee_Details.Employee_Database.AddDuty(_Pending) == true)
+                        {
+                            SuccessDutyAdd successDutyAdd = new SuccessDutyAdd();
+                            successDutyAdd.Show();
+
+                        }
+                    }
+                    else if (blank_timein.Visible == false && blank_timeout.Visible == false)
+                    {
+                        Employee_Details.Duty_Pending _Pending = new Employee_Details.Duty_Pending()
+                        {
+                            EmployeeID = employee_id.Text,
+                            Fullname = employee_name.Text,
+                            duty_date = date_duty.Text,
+                            status = status_.Text,
+                            timeIn = timein.Text,
+                            timeOut = timeout.Text,
+                            duration = duty_duration.Text,
+                            overtime = overtime.Text,
+
+                        };
+                        if (Employee_Details.Employee_Database.AddDuty(_Pending) == true)
+                        {
+                            SuccessDutyAdd successDutyAdd = new SuccessDutyAdd();
+                            successDutyAdd.Show();
+
+                        }
+                    }
+                    
                 }
             }
             else
@@ -885,6 +933,11 @@ namespace EMS
             {
                 id_message.Visible = false;
             }
+        }
+
+        private void pending_cover_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

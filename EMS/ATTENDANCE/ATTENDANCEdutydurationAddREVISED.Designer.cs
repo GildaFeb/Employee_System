@@ -170,7 +170,7 @@
             this.AddLblStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.AddLblStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.AddLblStatus.ForeColor = System.Drawing.Color.White;
-            this.AddLblStatus.Location = new System.Drawing.Point(187, 561);
+            this.AddLblStatus.Location = new System.Drawing.Point(187, 572);
             this.AddLblStatus.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.AddLblStatus.Name = "AddLblStatus";
             this.AddLblStatus.Size = new System.Drawing.Size(50, 18);
@@ -183,7 +183,7 @@
             this.AddLblDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.AddLblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.AddLblDate.ForeColor = System.Drawing.Color.White;
-            this.AddLblDate.Location = new System.Drawing.Point(187, 473);
+            this.AddLblDate.Location = new System.Drawing.Point(187, 483);
             this.AddLblDate.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.AddLblDate.Name = "AddLblDate";
             this.AddLblDate.Size = new System.Drawing.Size(115, 18);
@@ -404,7 +404,7 @@
             this.maskedTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(37)))), ((int)(((byte)(83)))));
             this.maskedTextBox1.Enabled = false;
             this.maskedTextBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.maskedTextBox1.Location = new System.Drawing.Point(844, 592);
+            this.maskedTextBox1.Location = new System.Drawing.Point(844, 594);
             this.maskedTextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(109, 34);
@@ -452,13 +452,13 @@
             // blank_timeout
             // 
             this.blank_timeout.BackColor = System.Drawing.SystemColors.Window;
-            this.blank_timeout.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.blank_timeout.BorderColor = System.Drawing.Color.Transparent;
             this.blank_timeout.BorderFocusColor = System.Drawing.Color.HotPink;
             this.blank_timeout.BorderRadius = 0;
             this.blank_timeout.BorderSize = 2;
             this.blank_timeout.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.blank_timeout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.blank_timeout.Location = new System.Drawing.Point(604, 593);
+            this.blank_timeout.Location = new System.Drawing.Point(604, 594);
             this.blank_timeout.Margin = new System.Windows.Forms.Padding(4);
             this.blank_timeout.Multiline = false;
             this.blank_timeout.Name = "blank_timeout";
@@ -506,7 +506,7 @@
             // submit_cover
             // 
             this.submit_cover.AutoSize = true;
-            this.submit_cover.Location = new System.Drawing.Point(1171, 692);
+            this.submit_cover.Location = new System.Drawing.Point(1171, 693);
             this.submit_cover.Margin = new System.Windows.Forms.Padding(50, 0, 50, 50);
             this.submit_cover.Name = "submit_cover";
             this.submit_cover.Padding = new System.Windows.Forms.Padding(150, 50, 100, 50);
@@ -517,12 +517,13 @@
             // pending_cover
             // 
             this.pending_cover.AutoSize = true;
-            this.pending_cover.Location = new System.Drawing.Point(915, 676);
+            this.pending_cover.Location = new System.Drawing.Point(915, 687);
             this.pending_cover.Margin = new System.Windows.Forms.Padding(50, 0, 50, 50);
             this.pending_cover.Name = "pending_cover";
             this.pending_cover.Padding = new System.Windows.Forms.Padding(150, 50, 100, 50);
             this.pending_cover.Size = new System.Drawing.Size(250, 120);
             this.pending_cover.TabIndex = 227;
+            this.pending_cover.Click += new System.EventHandler(this.pending_cover_Click);
             // 
             // invalid_time
             // 
@@ -596,6 +597,7 @@
             // id_message
             // 
             this.id_message.AutoSize = true;
+            this.id_message.ForeColor = System.Drawing.Color.Black;
             this.id_message.Location = new System.Drawing.Point(287, 315);
             this.id_message.Name = "id_message";
             this.id_message.Size = new System.Drawing.Size(126, 20);
