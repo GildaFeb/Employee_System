@@ -101,7 +101,7 @@
             this.btn_one1.ForeColor = System.Drawing.Color.White;
             this.btn_one1.Location = new System.Drawing.Point(123, 904);
             this.btn_one1.Name = "btn_one1";
-            this.btn_one1.Size = new System.Drawing.Size(248, 51);
+            this.btn_one1.Size = new System.Drawing.Size(234, 51);
             this.btn_one1.TabIndex = 129;
             this.btn_one1.Text = "Clear checked";
             this.btn_one1.UseVisualStyleBackColor = false;
@@ -115,9 +115,9 @@
             this.delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.delete.ForeColor = System.Drawing.Color.White;
-            this.delete.Location = new System.Drawing.Point(659, 904);
+            this.delete.Location = new System.Drawing.Point(1196, 904);
             this.delete.Name = "delete";
-            this.delete.Size = new System.Drawing.Size(268, 51);
+            this.delete.Size = new System.Drawing.Size(234, 51);
             this.delete.TabIndex = 130;
             this.delete.Text = "Delete";
             this.delete.UseVisualStyleBackColor = false;
@@ -168,9 +168,9 @@
             this.reload_table.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.reload_table.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.reload_table.ForeColor = System.Drawing.Color.White;
-            this.reload_table.Location = new System.Drawing.Point(933, 904);
+            this.reload_table.Location = new System.Drawing.Point(618, 904);
             this.reload_table.Name = "reload_table";
-            this.reload_table.Size = new System.Drawing.Size(257, 51);
+            this.reload_table.Size = new System.Drawing.Size(234, 51);
             this.reload_table.TabIndex = 203;
             this.reload_table.Text = "Show Pendings";
             this.reload_table.UseVisualStyleBackColor = false;
@@ -254,7 +254,7 @@
             this.btn_one2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_one2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_one2.ForeColor = System.Drawing.Color.White;
-            this.btn_one2.Location = new System.Drawing.Point(1196, 904);
+            this.btn_one2.Location = new System.Drawing.Point(907, 904);
             this.btn_one2.Name = "btn_one2";
             this.btn_one2.Size = new System.Drawing.Size(234, 51);
             this.btn_one2.TabIndex = 210;

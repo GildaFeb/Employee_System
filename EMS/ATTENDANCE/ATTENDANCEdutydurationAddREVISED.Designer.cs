@@ -79,9 +79,9 @@
             this.btn_clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_clear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_clear.ForeColor = System.Drawing.Color.White;
-            this.btn_clear.Location = new System.Drawing.Point(128, 692);
+            this.btn_clear.Location = new System.Drawing.Point(128, 777);
             this.btn_clear.Name = "btn_clear";
-            this.btn_clear.Size = new System.Drawing.Size(273, 51);
+            this.btn_clear.Size = new System.Drawing.Size(225, 51);
             this.btn_clear.TabIndex = 197;
             this.btn_clear.Text = "Reset";
             this.btn_clear.UseVisualStyleBackColor = false;
@@ -93,7 +93,7 @@
             this.LblName.BackColor = System.Drawing.Color.White;
             this.LblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.LblName.ForeColor = System.Drawing.Color.Gray;
-            this.LblName.Location = new System.Drawing.Point(187, 315);
+            this.LblName.Location = new System.Drawing.Point(191, 303);
             this.LblName.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.LblName.Name = "LblName";
             this.LblName.Size = new System.Drawing.Size(92, 18);
@@ -106,7 +106,7 @@
             this.AddLblOvertime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.AddLblOvertime.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.AddLblOvertime.ForeColor = System.Drawing.Color.White;
-            this.AddLblOvertime.Location = new System.Drawing.Point(1009, 570);
+            this.AddLblOvertime.Location = new System.Drawing.Point(1009, 588);
             this.AddLblOvertime.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.AddLblOvertime.Name = "AddLblOvertime";
             this.AddLblOvertime.Size = new System.Drawing.Size(68, 18);
@@ -119,7 +119,7 @@
             this.AddLblTimeOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.AddLblTimeOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.AddLblTimeOut.ForeColor = System.Drawing.Color.White;
-            this.AddLblTimeOut.Location = new System.Drawing.Point(604, 572);
+            this.AddLblTimeOut.Location = new System.Drawing.Point(604, 590);
             this.AddLblTimeOut.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.AddLblTimeOut.Name = "AddLblTimeOut";
             this.AddLblTimeOut.Size = new System.Drawing.Size(66, 18);
@@ -157,7 +157,7 @@
             this.date_duty.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.date_duty.CustomFormat = "";
             this.date_duty.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.date_duty.Location = new System.Drawing.Point(600, 350);
+            this.date_duty.Location = new System.Drawing.Point(604, 338);
             this.date_duty.MinDate = new System.DateTime(1995, 1, 1, 23, 59, 0, 0);
             this.date_duty.Name = "date_duty";
             this.date_duty.Size = new System.Drawing.Size(349, 28);
@@ -170,7 +170,7 @@
             this.AddLblStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.AddLblStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.AddLblStatus.ForeColor = System.Drawing.Color.White;
-            this.AddLblStatus.Location = new System.Drawing.Point(187, 572);
+            this.AddLblStatus.Location = new System.Drawing.Point(187, 590);
             this.AddLblStatus.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.AddLblStatus.Name = "AddLblStatus";
             this.AddLblStatus.Size = new System.Drawing.Size(50, 18);
@@ -196,7 +196,7 @@
             this.employee_id.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.employee_id.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.employee_id.ForeColor = System.Drawing.Color.Black;
-            this.employee_id.Location = new System.Drawing.Point(187, 347);
+            this.employee_id.Location = new System.Drawing.Point(191, 335);
             this.employee_id.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.employee_id.Multiline = true;
             this.employee_id.Name = "employee_id";
@@ -210,7 +210,7 @@
             this.AddLblId.BackColor = System.Drawing.Color.White;
             this.AddLblId.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.AddLblId.ForeColor = System.Drawing.Color.Gray;
-            this.AddLblId.Location = new System.Drawing.Point(600, 317);
+            this.AddLblId.Location = new System.Drawing.Point(604, 305);
             this.AddLblId.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.AddLblId.Name = "AddLblId";
             this.AddLblId.Size = new System.Drawing.Size(124, 18);
@@ -239,7 +239,7 @@
             this.overtime.Enabled = false;
             this.overtime.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.overtime.ForeColor = System.Drawing.Color.Black;
-            this.overtime.Location = new System.Drawing.Point(1009, 592);
+            this.overtime.Location = new System.Drawing.Point(1009, 610);
             this.overtime.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.overtime.Multiline = true;
             this.overtime.Name = "overtime";
@@ -258,7 +258,7 @@
             this.LblStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(37)))), ((int)(((byte)(83)))));
             this.LblStatus.Location = new System.Drawing.Point(128, 397);
             this.LblStatus.Name = "LblStatus";
-            this.LblStatus.Size = new System.Drawing.Size(1291, 276);
+            this.LblStatus.Size = new System.Drawing.Size(1291, 327);
             this.LblStatus.TabIndex = 179;
             this.LblStatus.UseVisualStyleBackColor = false;
             // 
@@ -284,9 +284,9 @@
             this.Addbkgrnd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Addbkgrnd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Addbkgrnd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(37)))), ((int)(((byte)(83)))));
-            this.Addbkgrnd.Location = new System.Drawing.Point(128, 293);
+            this.Addbkgrnd.Location = new System.Drawing.Point(128, 263);
             this.Addbkgrnd.Name = "Addbkgrnd";
-            this.Addbkgrnd.Size = new System.Drawing.Size(880, 155);
+            this.Addbkgrnd.Size = new System.Drawing.Size(880, 185);
             this.Addbkgrnd.TabIndex = 193;
             this.Addbkgrnd.UseVisualStyleBackColor = false;
             // 
@@ -298,7 +298,7 @@
             this.btn_findemployee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_findemployee.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_findemployee.ForeColor = System.Drawing.Color.White;
-            this.btn_findemployee.Location = new System.Drawing.Point(1051, 315);
+            this.btn_findemployee.Location = new System.Drawing.Point(1194, 777);
             this.btn_findemployee.Name = "btn_findemployee";
             this.btn_findemployee.Size = new System.Drawing.Size(225, 51);
             this.btn_findemployee.TabIndex = 201;
@@ -356,7 +356,7 @@
             this.now_timeout.Enabled = false;
             this.now_timeout.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
             this.now_timeout.ForeColor = System.Drawing.Color.White;
-            this.now_timeout.Location = new System.Drawing.Point(857, 597);
+            this.now_timeout.Location = new System.Drawing.Point(857, 615);
             this.now_timeout.Name = "now_timeout";
             this.now_timeout.Size = new System.Drawing.Size(84, 23);
             this.now_timeout.TabIndex = 211;
@@ -370,7 +370,7 @@
             this.clear_timeout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.clear_timeout.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
             this.clear_timeout.ForeColor = System.Drawing.Color.White;
-            this.clear_timeout.Location = new System.Drawing.Point(904, 567);
+            this.clear_timeout.Location = new System.Drawing.Point(904, 585);
             this.clear_timeout.Name = "clear_timeout";
             this.clear_timeout.Size = new System.Drawing.Size(49, 23);
             this.clear_timeout.TabIndex = 210;
@@ -393,7 +393,7 @@
             this.timeout.CustomFormat = "hh:mm:ss tt";
             this.timeout.Enabled = false;
             this.timeout.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.timeout.Location = new System.Drawing.Point(604, 596);
+            this.timeout.Location = new System.Drawing.Point(604, 614);
             this.timeout.Name = "timeout";
             this.timeout.Size = new System.Drawing.Size(349, 27);
             this.timeout.TabIndex = 213;
@@ -404,7 +404,7 @@
             this.maskedTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(37)))), ((int)(((byte)(83)))));
             this.maskedTextBox1.Enabled = false;
             this.maskedTextBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.maskedTextBox1.Location = new System.Drawing.Point(844, 594);
+            this.maskedTextBox1.Location = new System.Drawing.Point(844, 612);
             this.maskedTextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(109, 34);
@@ -426,7 +426,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(1071, 569);
+            this.label2.Location = new System.Drawing.Point(1071, 587);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(38, 20);
             this.label2.TabIndex = 217;
@@ -458,7 +458,7 @@
             this.blank_timeout.BorderSize = 2;
             this.blank_timeout.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.blank_timeout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.blank_timeout.Location = new System.Drawing.Point(604, 594);
+            this.blank_timeout.Location = new System.Drawing.Point(604, 612);
             this.blank_timeout.Margin = new System.Windows.Forms.Padding(4);
             this.blank_timeout.Multiline = false;
             this.blank_timeout.Name = "blank_timeout";
@@ -517,7 +517,7 @@
             // pending_cover
             // 
             this.pending_cover.AutoSize = true;
-            this.pending_cover.Location = new System.Drawing.Point(915, 687);
+            this.pending_cover.Location = new System.Drawing.Point(927, 687);
             this.pending_cover.Margin = new System.Windows.Forms.Padding(50, 0, 50, 50);
             this.pending_cover.Name = "pending_cover";
             this.pending_cover.Padding = new System.Windows.Forms.Padding(150, 50, 100, 50);
@@ -547,7 +547,7 @@
             "Absent",
             "Leave",
             "--Select--"});
-            this.status_.Location = new System.Drawing.Point(187, 600);
+            this.status_.Location = new System.Drawing.Point(187, 618);
             this.status_.Name = "status_";
             this.status_.Size = new System.Drawing.Size(349, 28);
             this.status_.TabIndex = 229;
@@ -598,7 +598,7 @@
             // 
             this.id_message.AutoSize = true;
             this.id_message.ForeColor = System.Drawing.Color.Black;
-            this.id_message.Location = new System.Drawing.Point(287, 315);
+            this.id_message.Location = new System.Drawing.Point(291, 303);
             this.id_message.Name = "id_message";
             this.id_message.Size = new System.Drawing.Size(126, 20);
             this.id_message.TabIndex = 234;
@@ -610,6 +610,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.Controls.Add(this.btn_findemployee);
             this.Controls.Add(this.id_message);
             this.Controls.Add(this.employee_name);
             this.Controls.Add(this.DDsubheading);
@@ -617,24 +618,17 @@
             this.Controls.Add(this.dur);
             this.Controls.Add(this.status_);
             this.Controls.Add(this.invalid_time);
-            this.Controls.Add(this.pending_cover);
-            this.Controls.Add(this.submit_cover);
-            this.Controls.Add(this.submit_btn);
-            this.Controls.Add(this.pending_btn);
             this.Controls.Add(this.now_timeout);
             this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.blank_timeout);
             this.Controls.Add(this.now_timein);
             this.Controls.Add(this.time_out);
             this.Controls.Add(this.blank_timein);
-            this.Controls.Add(this.report_txt);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.pending_txt);
             this.Controls.Add(this.timeout);
             this.Controls.Add(this.timein);
             this.Controls.Add(this.clear_timeout);
             this.Controls.Add(this.clear_timein);
-            this.Controls.Add(this.btn_findemployee);
             this.Controls.Add(this.btn_clear);
             this.Controls.Add(this.LblName);
             this.Controls.Add(this.AddLblOvertime);
@@ -651,6 +645,12 @@
             this.Controls.Add(this.LblStatus);
             this.Controls.Add(this.AddTitle);
             this.Controls.Add(this.Addbkgrnd);
+            this.Controls.Add(this.pending_cover);
+            this.Controls.Add(this.submit_cover);
+            this.Controls.Add(this.submit_btn);
+            this.Controls.Add(this.pending_btn);
+            this.Controls.Add(this.report_txt);
+            this.Controls.Add(this.pending_txt);
             this.Name = "ATTENDANCEdutydurationAddREVISED";
             this.Size = new System.Drawing.Size(1537, 1035);
             this.Load += new System.EventHandler(this.ATTENDANCEdutydurationAddREVISED_Load);

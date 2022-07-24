@@ -543,7 +543,7 @@
             this.btn_clear.ForeColor = System.Drawing.Color.White;
             this.btn_clear.Location = new System.Drawing.Point(976, 876);
             this.btn_clear.Name = "btn_clear";
-            this.btn_clear.Size = new System.Drawing.Size(247, 49);
+            this.btn_clear.Size = new System.Drawing.Size(209, 49);
             this.btn_clear.TabIndex = 116;
             this.btn_clear.Text = "Clear";
             this.btn_clear.UseVisualStyleBackColor = false;
@@ -557,9 +557,9 @@
             this.register.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.register.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.register.ForeColor = System.Drawing.Color.White;
-            this.register.Location = new System.Drawing.Point(1229, 876);
+            this.register.Location = new System.Drawing.Point(1267, 876);
             this.register.Name = "register";
-            this.register.Size = new System.Drawing.Size(247, 49);
+            this.register.Size = new System.Drawing.Size(209, 49);
             this.register.TabIndex = 117;
             this.register.Text = "Register";
             this.register.UseVisualStyleBackColor = false;
