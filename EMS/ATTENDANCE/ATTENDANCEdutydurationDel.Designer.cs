@@ -168,7 +168,7 @@
             this.reload_table.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.reload_table.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.reload_table.ForeColor = System.Drawing.Color.White;
-            this.reload_table.Location = new System.Drawing.Point(618, 904);
+            this.reload_table.Location = new System.Drawing.Point(664, 904);
             this.reload_table.Name = "reload_table";
             this.reload_table.Size = new System.Drawing.Size(234, 51);
             this.reload_table.TabIndex = 203;
@@ -254,7 +254,7 @@
             this.btn_one2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_one2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_one2.ForeColor = System.Drawing.Color.White;
-            this.btn_one2.Location = new System.Drawing.Point(907, 904);
+            this.btn_one2.Location = new System.Drawing.Point(930, 904);
             this.btn_one2.Name = "btn_one2";
             this.btn_one2.Size = new System.Drawing.Size(234, 51);
             this.btn_one2.TabIndex = 210;

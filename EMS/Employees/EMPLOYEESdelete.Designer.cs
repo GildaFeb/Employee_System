@@ -136,9 +136,9 @@
             this.clear_check.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.clear_check.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.clear_check.ForeColor = System.Drawing.Color.White;
-            this.clear_check.Location = new System.Drawing.Point(125, 873);
+            this.clear_check.Location = new System.Drawing.Point(134, 873);
             this.clear_check.Name = "clear_check";
-            this.clear_check.Size = new System.Drawing.Size(283, 51);
+            this.clear_check.Size = new System.Drawing.Size(219, 51);
             this.clear_check.TabIndex = 125;
             this.clear_check.Text = "Clear checked";
             this.clear_check.UseVisualStyleBackColor = false;
@@ -152,9 +152,9 @@
             this.delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.delete.ForeColor = System.Drawing.Color.White;
-            this.delete.Location = new System.Drawing.Point(1162, 873);
+            this.delete.Location = new System.Drawing.Point(1215, 873);
             this.delete.Name = "delete";
-            this.delete.Size = new System.Drawing.Size(277, 51);
+            this.delete.Size = new System.Drawing.Size(224, 51);
             this.delete.TabIndex = 126;
             this.delete.Text = "Delete";
             this.delete.UseVisualStyleBackColor = false;
@@ -168,9 +168,9 @@
             this.btn_one2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_one2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_one2.ForeColor = System.Drawing.Color.White;
-            this.btn_one2.Location = new System.Drawing.Point(884, 873);
+            this.btn_one2.Location = new System.Drawing.Point(931, 873);
             this.btn_one2.Name = "btn_one2";
-            this.btn_one2.Size = new System.Drawing.Size(272, 51);
+            this.btn_one2.Size = new System.Drawing.Size(219, 51);
             this.btn_one2.TabIndex = 131;
             this.btn_one2.Text = "Refresh";
             this.btn_one2.UseVisualStyleBackColor = false;

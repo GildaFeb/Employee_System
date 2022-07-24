@@ -927,5 +927,110 @@ namespace EMS
             duty_duration.Text = "";
             overtime.Text = null;
         }
+
+        private void LblStatus_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void name_emp_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        private void blank_timeout_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void employee_name_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void invalid_time_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void time_out_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        private void blank_timein_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AddLblOvertime_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AddLblTimeOut_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AddLblDuration_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AddLlblTimeIn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AddLblStatus_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AddLblDate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void duty_duration_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void overtime_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void id_message_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void date_duty_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AddLblId_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_one14_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

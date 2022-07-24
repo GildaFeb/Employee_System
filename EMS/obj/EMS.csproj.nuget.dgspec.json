@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\WELCOME\\Desktop\\[SUB] Computer Programming 2\\EMS - FINALS\\EMS\\EMS.csproj": {}
+    "C:\\Users\\WELCOME\\Desktop\\[SUB] Computer Programming 2\\EMS - FINAL FINAL FINAL\\EMS\\EMS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\WELCOME\\Desktop\\[SUB] Computer Programming 2\\EMS - FINALS\\EMS\\EMS.csproj": {
+    "C:\\Users\\WELCOME\\Desktop\\[SUB] Computer Programming 2\\EMS - FINAL FINAL FINAL\\EMS\\EMS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\WELCOME\\Desktop\\[SUB] Computer Programming 2\\EMS - FINALS\\EMS\\EMS.csproj",
+        "projectUniqueName": "C:\\Users\\WELCOME\\Desktop\\[SUB] Computer Programming 2\\EMS - FINAL FINAL FINAL\\EMS\\EMS.csproj",
         "projectName": "EMS",
-        "projectPath": "C:\\Users\\WELCOME\\Desktop\\[SUB] Computer Programming 2\\EMS - FINALS\\EMS\\EMS.csproj",
+        "projectPath": "C:\\Users\\WELCOME\\Desktop\\[SUB] Computer Programming 2\\EMS - FINAL FINAL FINAL\\EMS\\EMS.csproj",
         "packagesPath": "C:\\Users\\WELCOME\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\WELCOME\\Desktop\\[SUB] Computer Programming 2\\EMS - FINALS\\EMS\\obj\\",
+        "outputPath": "C:\\Users\\WELCOME\\Desktop\\[SUB] Computer Programming 2\\EMS - FINAL FINAL FINAL\\EMS\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\WELCOME\\AppData\\Roaming\\NuGet\\NuGet.Config",
