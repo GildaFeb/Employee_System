@@ -67,6 +67,9 @@ namespace EMS
                 pending_cover.Visible = true;
             }
 
+            
+
+
             /*
           
             TimeSpan duration = timeout.Value - timein.Value;
@@ -237,7 +240,7 @@ namespace EMS
             now_timeout.Enabled = false;
             employee_id.Enabled = true;
             date_duty.Enabled = true;
-
+            id_message.Visible = true;
 
         }
 
@@ -454,7 +457,7 @@ namespace EMS
 
 
 
-                    if (Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).suffix.ToString() == "None" || Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).suffix.ToString() == null)
+                    if (Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).suffix.ToString() == "None" && Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).middle_name.ToString() != "None")
                     {
                         firstName = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).first_name.ToString();
                         middleName = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).middle_name.ToString();
@@ -462,7 +465,7 @@ namespace EMS
 
                         employee_name.Text = firstName + " " + middleName + " " + lastName;
                     }
-                    else if (Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).middle_name.ToString() == "None" || Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).middle_name.ToString() == null)
+                    else if (Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).middle_name.ToString() == "None" && Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).suffix.ToString() != "None")
                     {
                         firstName = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).first_name.ToString();
                         suffix = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).suffix.ToString();
@@ -727,7 +730,7 @@ namespace EMS
         private void submit_btn_Click(object sender, EventArgs e)
         {
 
-            if (invalid_time.Visible == false && status_.Text == "Present" && (blank_timein.Enabled == false || blank_timeout.Enabled == false))
+            if (invalid_time.Visible == false && status_.Text == "Present" && blank_timein.Visible == false && blank_timeout.Visible == false)
             {
                 String msg = " You are about to submit this as Attendance Report. Do you want to continue? ";
                 String caption = "Attendance Report.";
@@ -862,7 +865,7 @@ namespace EMS
             }
             else
             {
-                MessageBox.Show(" You selected present. You need to fill the 'time in' and 'time out.'");
+                MessageBox.Show("You selected present. You need to fill the 'time in' and 'time out' to submit Report.");
             }
         }
 
@@ -874,6 +877,14 @@ namespace EMS
         private void submit_cover_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void employee_id_TextChanged(object sender, EventArgs e)
+        {
+            if (!(string.IsNullOrWhiteSpace(employee_id.Text)))
+            {
+                id_message.Visible = false;
+            }
         }
     }
 }

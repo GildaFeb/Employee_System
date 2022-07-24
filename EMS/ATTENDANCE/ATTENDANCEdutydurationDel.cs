@@ -284,7 +284,7 @@ namespace EMS
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            if (!(Search.Text == ""))
+            if (!(Search.Text == "") && table_label.Text == "History")
             {
                 string alph = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz";
                 if (!(Search.Text.Contains(alph)))
@@ -304,11 +304,29 @@ namespace EMS
                 }
 
             }
+            else if (!(Search.Text == "") && table_label.Text == "Pendings")
+            {
+                string alph = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz";
+                if (!(Search.Text.Contains(alph)))
+                {
+                    OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
+
+                    con.Open();
+                    OleDbCommand cmd = new OleDbCommand("Select * from HistoryTbl Where EmployeeID ='" + Search.Text + "'", con);
+                    OleDbDataReader read = cmd.ExecuteReader();
+                    DataTable dt = new DataTable();
+                    dt.Load(read);
+                    tableDelete.DataSource = dt;
+
+                }
+                else
+                {
+                }
+
+            }
             else
             {
                 MessageBox.Show(" Failed to search. Search field is empty.");
-
-
             }
         }
 
@@ -332,6 +350,9 @@ namespace EMS
             }
 
             tableDelete.DataSource = dt;
+            delete.Show();
+            table_label.Text = "Pendings";
+            description.Text = "Kindly see below the hours worked of the employee and their status.";
         }
 
         private void btn_one2_Click(object sender, EventArgs e)
@@ -349,6 +370,9 @@ namespace EMS
             }
 
             tableDelete.DataSource = dt;
+            delete.Hide();
+            table_label.Text = "History";
+            description.Text = "Below are the list of attendance submitted to attendance report";
         }
     }
 }

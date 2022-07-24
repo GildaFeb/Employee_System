@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ATTENDANCEdutydurationDel));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.label1 = new System.Windows.Forms.Label();
-            this.DDsubheading = new System.Windows.Forms.Label();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.table_label = new System.Windows.Forms.Label();
+            this.description = new System.Windows.Forms.Label();
             this.db_ViewCalendarBtn = new EMS.btn_one();
             this.btn_one1 = new EMS.btn_one();
-            this.btn_one3 = new EMS.btn_one();
+            this.delete = new EMS.btn_one();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.Search = new System.Windows.Forms.TextBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -51,31 +51,31 @@
             ((System.ComponentModel.ISupportInitialize)(this.tableDelete)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // table_label
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(51)))));
-            this.label1.Location = new System.Drawing.Point(114, 68);
-            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(288, 48);
-            this.label1.TabIndex = 74;
-            this.label1.Text = "Duty Duration";
+            this.table_label.AutoSize = true;
+            this.table_label.BackColor = System.Drawing.Color.Transparent;
+            this.table_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.table_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(51)))));
+            this.table_label.Location = new System.Drawing.Point(114, 68);
+            this.table_label.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.table_label.Name = "table_label";
+            this.table_label.Size = new System.Drawing.Size(202, 48);
+            this.table_label.TabIndex = 74;
+            this.table_label.Text = "Pendings";
             // 
-            // DDsubheading
+            // description
             // 
-            this.DDsubheading.AutoSize = true;
-            this.DDsubheading.BackColor = System.Drawing.Color.Transparent;
-            this.DDsubheading.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.DDsubheading.ForeColor = System.Drawing.Color.Gray;
-            this.DDsubheading.Location = new System.Drawing.Point(119, 125);
-            this.DDsubheading.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.DDsubheading.Name = "DDsubheading";
-            this.DDsubheading.Size = new System.Drawing.Size(626, 22);
-            this.DDsubheading.TabIndex = 75;
-            this.DDsubheading.Text = "Kindly see below the  hours worked of the employee and their status.";
+            this.description.AutoSize = true;
+            this.description.BackColor = System.Drawing.Color.Transparent;
+            this.description.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.description.ForeColor = System.Drawing.Color.Gray;
+            this.description.Location = new System.Drawing.Point(119, 125);
+            this.description.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.description.Name = "description";
+            this.description.Size = new System.Drawing.Size(620, 22);
+            this.description.TabIndex = 75;
+            this.description.Text = "Kindly see below the hours worked of the employee and their status.";
             // 
             // db_ViewCalendarBtn
             // 
@@ -107,21 +107,21 @@
             this.btn_one1.UseVisualStyleBackColor = false;
             this.btn_one1.Click += new System.EventHandler(this.btn_one1_Click_1);
             // 
-            // btn_one3
+            // delete
             // 
-            this.btn_one3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
-            this.btn_one3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_one3.FlatAppearance.BorderSize = 0;
-            this.btn_one3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_one3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_one3.ForeColor = System.Drawing.Color.White;
-            this.btn_one3.Location = new System.Drawing.Point(1121, 904);
-            this.btn_one3.Name = "btn_one3";
-            this.btn_one3.Size = new System.Drawing.Size(309, 51);
-            this.btn_one3.TabIndex = 130;
-            this.btn_one3.Text = "Delete";
-            this.btn_one3.UseVisualStyleBackColor = false;
-            this.btn_one3.Click += new System.EventHandler(this.btn_one3_Click_1);
+            this.delete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
+            this.delete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.delete.FlatAppearance.BorderSize = 0;
+            this.delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.delete.ForeColor = System.Drawing.Color.White;
+            this.delete.Location = new System.Drawing.Point(659, 904);
+            this.delete.Name = "delete";
+            this.delete.Size = new System.Drawing.Size(268, 51);
+            this.delete.TabIndex = 130;
+            this.delete.Text = "Delete";
+            this.delete.UseVisualStyleBackColor = false;
+            this.delete.Click += new System.EventHandler(this.btn_one3_Click_1);
             // 
             // pictureBox3
             // 
@@ -168,7 +168,7 @@
             this.reload_table.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.reload_table.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.reload_table.ForeColor = System.Drawing.Color.White;
-            this.reload_table.Location = new System.Drawing.Point(858, 904);
+            this.reload_table.Location = new System.Drawing.Point(933, 904);
             this.reload_table.Name = "reload_table";
             this.reload_table.Size = new System.Drawing.Size(257, 51);
             this.reload_table.TabIndex = 203;
@@ -193,32 +193,32 @@
             this.tableDelete.AllowUserToAddRows = false;
             this.tableDelete.AllowUserToDeleteRows = false;
             this.tableDelete.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(63)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Black;
-            this.tableDelete.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(63)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            this.tableDelete.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.tableDelete.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.tableDelete.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.tableDelete.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.tableDelete.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             this.tableDelete.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Violet;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tableDelete.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Violet;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tableDelete.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.tableDelete.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.tableDelete.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.tableDelete.DefaultCellStyle = dataGridViewCellStyle3;
             this.tableDelete.Location = new System.Drawing.Point(123, 215);
             this.tableDelete.Name = "tableDelete";
             this.tableDelete.RowHeadersWidth = 51;
@@ -254,11 +254,11 @@
             this.btn_one2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_one2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_one2.ForeColor = System.Drawing.Color.White;
-            this.btn_one2.Location = new System.Drawing.Point(618, 904);
+            this.btn_one2.Location = new System.Drawing.Point(1196, 904);
             this.btn_one2.Name = "btn_one2";
             this.btn_one2.Size = new System.Drawing.Size(234, 51);
             this.btn_one2.TabIndex = 210;
-            this.btn_one2.Text = "Show All";
+            this.btn_one2.Text = "Show History";
             this.btn_one2.UseVisualStyleBackColor = false;
             this.btn_one2.Click += new System.EventHandler(this.btn_one2_Click);
             // 
@@ -278,10 +278,10 @@
             this.Controls.Add(this.Search);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.btn_one1);
-            this.Controls.Add(this.btn_one3);
+            this.Controls.Add(this.delete);
             this.Controls.Add(this.db_ViewCalendarBtn);
-            this.Controls.Add(this.DDsubheading);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.description);
+            this.Controls.Add(this.table_label);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "ATTENDANCEdutydurationDel";
             this.Size = new System.Drawing.Size(1555, 1033);
@@ -297,11 +297,11 @@
 
         #endregion
 
-        private Label label1;
-        private Label DDsubheading;
+        private Label table_label;
+        private Label description;
         private btn_one db_ViewCalendarBtn;
         private btn_one btn_one1;
-        private btn_one btn_one3;
+        private btn_one delete;
         private PictureBox pictureBox3;
         private TextBox Search;
         private PictureBox pictureBox4;

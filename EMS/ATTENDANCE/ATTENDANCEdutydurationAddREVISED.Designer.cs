@@ -41,7 +41,6 @@
             this.AddLblId = new System.Windows.Forms.Label();
             this.duty_duration = new System.Windows.Forms.TextBox();
             this.overtime = new System.Windows.Forms.TextBox();
-            this.employee_name = new System.Windows.Forms.TextBox();
             this.LblStatus = new EMS.btn_one();
             this.AddTitle = new System.Windows.Forms.Label();
             this.Addbkgrnd = new EMS.btn_one();
@@ -68,6 +67,8 @@
             this.dur = new System.Windows.Forms.Label();
             this.dat = new System.Windows.Forms.Label();
             this.DDsubheading = new System.Windows.Forms.Label();
+            this.employee_name = new System.Windows.Forms.Label();
+            this.id_message = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn_clear
@@ -201,6 +202,7 @@
             this.employee_id.Name = "employee_id";
             this.employee_id.Size = new System.Drawing.Size(349, 31);
             this.employee_id.TabIndex = 184;
+            this.employee_id.TextChanged += new System.EventHandler(this.employee_id_TextChanged);
             // 
             // AddLblId
             // 
@@ -208,12 +210,12 @@
             this.AddLblId.BackColor = System.Drawing.Color.White;
             this.AddLblId.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.AddLblId.ForeColor = System.Drawing.Color.Gray;
-            this.AddLblId.Location = new System.Drawing.Point(600, 315);
+            this.AddLblId.Location = new System.Drawing.Point(600, 317);
             this.AddLblId.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.AddLblId.Name = "AddLblId";
-            this.AddLblId.Size = new System.Drawing.Size(39, 18);
+            this.AddLblId.Size = new System.Drawing.Size(124, 18);
             this.AddLblId.TabIndex = 185;
-            this.AddLblId.Text = "Date";
+            this.AddLblId.Text = "Choose duty date";
             // 
             // duty_duration
             // 
@@ -244,21 +246,6 @@
             this.overtime.Size = new System.Drawing.Size(349, 31);
             this.overtime.TabIndex = 182;
             this.overtime.Text = " ";
-            // 
-            // employee_name
-            // 
-            this.employee_name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.employee_name.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.employee_name.Enabled = false;
-            this.employee_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.employee_name.ForeColor = System.Drawing.Color.Black;
-            this.employee_name.Location = new System.Drawing.Point(187, 494);
-            this.employee_name.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.employee_name.Multiline = true;
-            this.employee_name.Name = "employee_name";
-            this.employee_name.Size = new System.Drawing.Size(349, 37);
-            this.employee_name.TabIndex = 181;
-            this.employee_name.Text = " ";
             // 
             // LblStatus
             // 
@@ -588,18 +575,41 @@
             this.DDsubheading.BackColor = System.Drawing.Color.Transparent;
             this.DDsubheading.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.DDsubheading.ForeColor = System.Drawing.Color.Gray;
-            this.DDsubheading.Location = new System.Drawing.Point(95, 153);
+            this.DDsubheading.Location = new System.Drawing.Point(95, 152);
             this.DDsubheading.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.DDsubheading.Name = "DDsubheading";
-            this.DDsubheading.Size = new System.Drawing.Size(492, 22);
+            this.DDsubheading.Size = new System.Drawing.Size(455, 22);
             this.DDsubheading.TabIndex = 232;
-            this.DDsubheading.Text = "Enter EMPLOYEE ID and DATE first to find employee.";
+            this.DDsubheading.Text = "Enter ID Number and DATE first to find employee.";
+            // 
+            // employee_name
+            // 
+            this.employee_name.AutoSize = true;
+            this.employee_name.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
+            this.employee_name.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.employee_name.ForeColor = System.Drawing.Color.White;
+            this.employee_name.Location = new System.Drawing.Point(187, 506);
+            this.employee_name.Name = "employee_name";
+            this.employee_name.Size = new System.Drawing.Size(0, 24);
+            this.employee_name.TabIndex = 233;
+            // 
+            // id_message
+            // 
+            this.id_message.AutoSize = true;
+            this.id_message.Location = new System.Drawing.Point(287, 315);
+            this.id_message.Name = "id_message";
+            this.id_message.Size = new System.Drawing.Size(126, 20);
+            this.id_message.TabIndex = 234;
+            this.id_message.Text = "*Enter ID Number";
+            this.id_message.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // ATTENDANCEdutydurationAddREVISED
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.Controls.Add(this.id_message);
+            this.Controls.Add(this.employee_name);
             this.Controls.Add(this.DDsubheading);
             this.Controls.Add(this.dat);
             this.Controls.Add(this.dur);
@@ -636,7 +646,6 @@
             this.Controls.Add(this.AddLblId);
             this.Controls.Add(this.duty_duration);
             this.Controls.Add(this.overtime);
-            this.Controls.Add(this.employee_name);
             this.Controls.Add(this.LblStatus);
             this.Controls.Add(this.AddTitle);
             this.Controls.Add(this.Addbkgrnd);
@@ -662,7 +671,6 @@
         private Label AddLblId;
         private TextBox duty_duration;
         private TextBox overtime;
-        private TextBox employee_name;
         private btn_one LblStatus;
         private Label AddTitle;
         private btn_one Addbkgrnd;
@@ -689,5 +697,7 @@
         private Label dur;
         private Label dat;
         private Label DDsubheading;
+        private Label employee_name;
+        private Label id_message;
     }
 }
