@@ -420,21 +420,21 @@ namespace EMS.Employee_Details
 
         public static bool UpdatePendingDuty(Duty_Pending duty_Pending)
         {
-            try
-            {
+            //try
+            //{
                 OleDbConnection Con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\EMSDb.accdb;Persist Security Info=True");
                 Con.Open();
-                OleDbCommand cmd = new OleDbCommand("UPDATE DutyTable SET Status='" + duty_Pending.status + "',TimeIn='" + duty_Pending.timeIn + "',TimeOut='" + duty_Pending.timeOut + "',Duration='" + duty_Pending.duration + "',Overtime='" + duty_Pending.overtime + "', WHERE EmployeeID='" + duty_Pending.EmployeeID + "', AND DutyDate= '" + duty_Pending.duty_date + "'", Con);
+                OleDbCommand cmd = new OleDbCommand("UPDATE DutyTbl SET Status='" + duty_Pending.status + "',TimeIn='" + duty_Pending.timeIn + "',TimeOut='" + duty_Pending.timeOut + "',Duration='" + duty_Pending.duration + "',Overtime='" + duty_Pending.overtime + "' WHERE EmployeeID='" + duty_Pending.EmployeeID + "' AND DutyDate= '" + duty_Pending.duty_date + "'", Con);
 
                 cmd.ExecuteNonQuery();
                 Con.Close();
                 return true;
-            }
+            /*}
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
                 return false;
-            }
+            }*/
         }
 
         public static bool AddDuty(Duty_Pending duty_Pending)

@@ -567,15 +567,25 @@
             // 
             // regular_pay
             // 
+            this.regular_pay.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.regular_pay.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.regular_pay.ForeColor = System.Drawing.Color.Black;
             this.regular_pay.FormattingEnabled = true;
             this.regular_pay.Items.AddRange(new object[] {
-            "70 ",
-            "80 ",
+            "60",
+            "70",
+            "80",
             "90",
-            "100 ",
-            "200"});
+            "100",
+            "150",
+            "200",
+            "250",
+            "300",
+            "350",
+            "400",
+            "500",
+            "750",
+            "1000"});
             this.regular_pay.Location = new System.Drawing.Point(599, 419);
             this.regular_pay.Name = "regular_pay";
             this.regular_pay.Size = new System.Drawing.Size(349, 33);

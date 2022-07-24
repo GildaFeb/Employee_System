@@ -537,11 +537,20 @@
             this.regular_pay.ForeColor = System.Drawing.Color.Black;
             this.regular_pay.FormattingEnabled = true;
             this.regular_pay.Items.AddRange(new object[] {
-            "70 ",
-            "80 ",
-            "90 ",
-            "100 ",
-            "200"});
+            "60",
+            "70",
+            "80",
+            "90",
+            "100",
+            "150",
+            "200",
+            "250",
+            "300",
+            "350",
+            "400",
+            "500",
+            "750",
+            "1000"});
             this.regular_pay.Location = new System.Drawing.Point(595, 421);
             this.regular_pay.Name = "regular_pay";
             this.regular_pay.Size = new System.Drawing.Size(349, 33);

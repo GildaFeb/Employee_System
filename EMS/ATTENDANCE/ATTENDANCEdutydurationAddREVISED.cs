@@ -231,7 +231,7 @@ namespace EMS
             employee_name.Text = "";
             status_.SelectedItem = null;
             status_.Text = "--Select--";
-           
+            id_message.Visible = true;
 
             pending_cover.Visible = true;
             submit_cover.Visible = true;
@@ -671,6 +671,24 @@ namespace EMS
                         {
                             SuccessDutyAdd successDutyAdd = new SuccessDutyAdd();
                             successDutyAdd.Show();
+                            employee_id.Text = "";
+                            duty_duration.Text = "";
+                            overtime.Text = "";
+                            blank_timeout.Visible = true;
+                            blank_timein.Visible = true;
+                            employee_name.Text = "";
+                            status_.SelectedItem = null;
+                            status_.Text = "--Select--";
+                            id_message.Visible = true;
+
+                            pending_cover.Visible = true;
+                            submit_cover.Visible = true;
+                            status_.Enabled = false;
+                            now_timein.Enabled = false;
+                            now_timeout.Enabled = false;
+                            employee_id.Enabled = true;
+                            date_duty.Enabled = true;
+                            id_message.Visible = true;
 
                         }
                     }
@@ -694,6 +712,24 @@ namespace EMS
                         {
                             SuccessDutyAdd successDutyAdd = new SuccessDutyAdd();
                             successDutyAdd.Show();
+                            employee_id.Text = "";
+                            duty_duration.Text = "";
+                            overtime.Text = "";
+                            blank_timeout.Visible = true;
+                            blank_timein.Visible = true;
+                            employee_name.Text = "";
+                            status_.SelectedItem = null;
+                            status_.Text = "--Select--";
+                            id_message.Visible = true;
+
+                            pending_cover.Visible = true;
+                            submit_cover.Visible = true;
+                            status_.Enabled = false;
+                            now_timein.Enabled = false;
+                            now_timeout.Enabled = false;
+                            employee_id.Enabled = true;
+                            date_duty.Enabled = true;
+                            id_message.Visible = true;
 
                         }
                     }
@@ -715,10 +751,31 @@ namespace EMS
                         {
                             SuccessDutyAdd successDutyAdd = new SuccessDutyAdd();
                             successDutyAdd.Show();
+                            employee_id.Text = "";
+                            duty_duration.Text = "";
+                            overtime.Text = "";
+                            blank_timeout.Visible = true;
+                            blank_timein.Visible = true;
+                            employee_name.Text = "";
+                            status_.SelectedItem = null;
+                            status_.Text = "--Select--";
+                            id_message.Visible = true;
+
+                            pending_cover.Visible = true;
+                            submit_cover.Visible = true;
+                            status_.Enabled = false;
+                            now_timein.Enabled = false;
+                            now_timeout.Enabled = false;
+                            employee_id.Enabled = true;
+                            date_duty.Enabled = true;
+                            id_message.Visible = true;
 
                         }
                     }
-                    
+                    else if (blank_timein.Visible == true && blank_timeout.Visible == false)
+                    {
+                        MessageBox.Show("You have value for 'Time out but not in 'Time in'. Please double check.");
+                    }
                 }
             }
             else
@@ -769,6 +826,7 @@ namespace EMS
                 date_duty.Enabled = false;
                 overtime.Text = "";
                 duty_duration.Text = "";
+
 
                 submit_cover.Visible = false;
                 pending_cover.Visible = true;
@@ -840,7 +898,7 @@ namespace EMS
                         employee_name.Text = "";
                         status_.SelectedItem = null;
                         status_.Text = "--Select--";
-
+                        id_message.Visible = true;
 
                         pending_cover.Visible = true;
                         submit_cover.Visible = true;
@@ -899,7 +957,7 @@ namespace EMS
                         employee_name.Text = "";
                         status_.SelectedItem = null;
                         status_.Text = "--Select--";
-
+                        id_message.Visible = true;
 
                         pending_cover.Visible = true;
                         submit_cover.Visible = true;

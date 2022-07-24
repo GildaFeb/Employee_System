@@ -411,6 +411,7 @@
             this.clear_timeout.Size = new System.Drawing.Size(49, 23);
             this.clear_timeout.TabIndex = 276;
             this.clear_timeout.Text = "Clear";
+            this.clear_timeout.Click += new System.EventHandler(this.clear_timeout_Click);
             // 
             // clear_timein
             // 
@@ -424,6 +425,7 @@
             this.clear_timein.Size = new System.Drawing.Size(49, 23);
             this.clear_timein.TabIndex = 274;
             this.clear_timein.Text = "Clear";
+            this.clear_timein.Click += new System.EventHandler(this.clear_timein_Click);
             // 
             // btn_findemployee
             // 
@@ -604,7 +606,7 @@
             this.name_emp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.name_emp.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.name_emp.ForeColor = System.Drawing.Color.White;
-            this.name_emp.Location = new System.Drawing.Point(192, 486);
+            this.name_emp.Location = new System.Drawing.Point(192, 492);
             this.name_emp.Name = "name_emp";
             this.name_emp.Size = new System.Drawing.Size(82, 25);
             this.name_emp.TabIndex = 296;

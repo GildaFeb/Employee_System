@@ -305,20 +305,35 @@ namespace EMS
                     status_.Enabled = true;
 
                     status_.Text = Employee_Details.Employee_Database.ShowAttendance(employee_id.Text, date_duty.Text).status;
-                    timein.Text = Employee_Details.Employee_Database.ShowAttendance(employee_id.Text, date_duty.Text).timeIn;
-                    timeout.Text = Employee_Details.Employee_Database.ShowAttendance(employee_id.Text, date_duty.Text).timeOut;
+                    
+                    
                     duty_duration.Text = Employee_Details.Employee_Database.ShowAttendance(employee_id.Text, date_duty.Text).duration;
-                    employee_name.Text = Employee_Details.Employee_Database.ShowAttendance(employee_id.Text, date_duty.Text).Fullname;
+                    name_emp.Text = Employee_Details.Employee_Database.ShowAttendance(employee_id.Text, date_duty.Text).Fullname;
                     overtime.Text = Employee_Details.Employee_Database.ShowAttendance(employee_id.Text, date_duty.Text).overtime;
 
                     if(Employee_Details.Employee_Database.ShowAttendance(employee_id.Text, date_duty.Text).timeIn == " ")
                     {
                         blank_timein.Visible = true;
                     }
+                    else
+                    {
+                        blank_timein.Visible = false;
+                        timein.Text = Employee_Details.Employee_Database.ShowAttendance(employee_id.Text, date_duty.Text).timeIn;
+                    }
                     if (Employee_Details.Employee_Database.ShowAttendance(employee_id.Text, date_duty.Text).timeOut == " ")
                     {
                         blank_timeout.Visible = true;
                     }
+                    else
+                    {
+                        timeout.Text = Employee_Details.Employee_Database.ShowAttendance(employee_id.Text, date_duty.Text).timeOut;
+                        blank_timein.Visible = false;
+                    }
+
+
+
+
+
                 }
             }
         }
@@ -357,31 +372,137 @@ namespace EMS
         {
             if (invalid_time.Visible == false && (status_.Text == "Present" || status_.Text == "Absent" || status_.Text == "Leave"))
             {
-                String msg = " You are about to save this as Pending. Do you want to continue? ";
-                String caption = "Will be added to Table Duty.";
+                String msg = " You are about to update this record. Do you want to continue? ";
+                String caption = "Update Record";
                 MessageBoxButtons buttons = MessageBoxButtons.YesNo;
                 MessageBoxIcon ico = MessageBoxIcon.Question;
                 DialogResult result;
                 result = MessageBox.Show(this, msg, caption, buttons, ico);
                 if (result == DialogResult.Yes)
                 {
-                    Employee_Details.Duty_Pending _Pending = new Employee_Details.Duty_Pending()
+                    if (blank_timein.Visible == true && blank_timeout.Visible == true)
                     {
-                        EmployeeID = employee_id.Text,
-                        Fullname = employee_name.Text,
-                        duty_date = date_duty.Text,
-                        status = status_.Text,
-                        timeIn = timein.Text,
-                        timeOut = timeout.Text,
-                        duration = duty_duration.Text,
-                        overtime = overtime.Text,
+                        Employee_Details.Duty_Pending _Pending = new Employee_Details.Duty_Pending()
+                        {
+                            EmployeeID = employee_id.Text,
+                            Fullname = employee_name.Text,
+                            duty_date = date_duty.Text,
+                            status = status_.Text,
 
-                    };
-                    if (Employee_Details.Employee_Database.UpdatePendingDuty(_Pending) == true)
+                            timeIn = " ",
+                            timeOut = " ",
+                            duration = " ",
+                            overtime = " ",
+                        };
+                        if (Employee_Details.Employee_Database.UpdatePendingDuty(_Pending) == true)
+                        {
+                            SuccessDutyUpdate successDutyUpdate = new SuccessDutyUpdate();
+                            successDutyUpdate.Show();
+                            employee_id.Text = "";
+                            duty_duration.Text = "";
+                            overtime.Text = "";
+                            blank_timeout.Visible = true;
+                            blank_timein.Visible = true;
+                            employee_name.Text = "";
+                            status_.SelectedItem = null;
+                            status_.Text = "--Select--";
+                            id_message.Visible = true;
+
+                            pending_cover.Visible = true;
+                            submit_cover.Visible = true;
+                            status_.Enabled = false;
+                            now_timein.Enabled = false;
+                            now_timeout.Enabled = false;
+                            employee_id.Enabled = true;
+                            date_duty.Enabled = true;
+                        }
+
+                    }
+                    else if (blank_timein.Visible == false && blank_timeout.Visible == true)
                     {
-                        SuccessDutyUpdate dutyUpdate = new SuccessDutyUpdate();
-                        dutyUpdate.Show();
+                        Employee_Details.Duty_Pending _Pending = new Employee_Details.Duty_Pending()
+                        {
+                            EmployeeID = employee_id.Text,
+                            Fullname = employee_name.Text,
+                            duty_date = date_duty.Text,
+                            status = status_.Text,
+                            timeIn = timein.Text,
 
+
+                            timeOut = " ",
+                            duration = " ",
+                            overtime = " ",
+
+                        };
+                        if (Employee_Details.Employee_Database.UpdatePendingDuty(_Pending) == true)
+                        {
+                            SuccessDutyUpdate successDutyUpdate = new SuccessDutyUpdate();
+                            successDutyUpdate.Show();
+                            employee_id.Text = "";
+                            duty_duration.Text = "";
+                            overtime.Text = "";
+                            blank_timeout.Visible = true;
+                            blank_timein.Visible = true;
+                            employee_name.Text = "";
+                            status_.SelectedItem = null;
+                            status_.Text = "--Select--";
+                            id_message.Visible = true;
+
+                            pending_cover.Visible = true;
+                            submit_cover.Visible = true;
+                            status_.Enabled = false;
+                            now_timein.Enabled = false;
+                            now_timeout.Enabled = false;
+                            employee_id.Enabled = true;
+                            date_duty.Enabled = true;
+
+                        }
+                    }
+                    else if (blank_timein.Visible == false && blank_timeout.Visible == false)
+                    {
+                        Employee_Details.Duty_Pending _Pending = new Employee_Details.Duty_Pending()
+                        {
+                            EmployeeID = employee_id.Text,
+                            Fullname = employee_name.Text,
+                            duty_date = date_duty.Text,
+                            status = status_.Text,
+                            timeIn = timein.Text,
+                            timeOut = timeout.Text,
+                            duration = duty_duration.Text,
+                            overtime = overtime.Text,
+
+                        };
+                        if (Employee_Details.Employee_Database.UpdatePendingDuty(_Pending) == true)
+                        {
+                            SuccessDutyUpdate successDutyUpdate = new SuccessDutyUpdate();
+                            successDutyUpdate.Show();
+                            employee_id.Text = "";
+                            duty_duration.Text = "";
+                            overtime.Text = "";
+                            blank_timeout.Visible = true;
+                            blank_timein.Visible = true;
+                            employee_name.Text = "";
+                            status_.SelectedItem = null;
+                            status_.Text = "--Select--";
+                            id_message.Visible = true;
+
+
+                            pending_cover.Visible = true;
+                            submit_cover.Visible = true;
+                            status_.Enabled = false;
+                            now_timein.Enabled = false;
+                            now_timeout.Enabled = false;
+                            employee_id.Enabled = true;
+                            date_duty.Enabled = true;
+
+                        }
+                        else
+                        {
+                            MessageBox.Show(" [There's an error in updating.");
+                        }
+                    }else if (blank_timein.Visible == true && blank_timeout.Visible == false)
+                    {
+                        MessageBox.Show("You have value for 'Time out but not in 'Time in'. Please double check.");
                     }
                 }
             }
@@ -451,7 +572,7 @@ namespace EMS
                         employee_name.Text = "";
                         status_.SelectedItem = null;
                         status_.Text = "--Select--";
-
+                        id_message.Visible = true;
 
                         pending_cover.Visible = true;
                         submit_cover.Visible = true;
@@ -495,7 +616,7 @@ namespace EMS
                         duration = duty_duration.Text,
                         overtime = overtime.Text,
 
-                    };
+                };
                     if (Employee_Details.Employee_Database.SubmitReport(_record) == true && Employee_Details.Employee_Database.AddHistory(_Pending) == true)
                     {
                         SuccessDutyAdd successDutyAdd = new SuccessDutyAdd();
@@ -510,7 +631,7 @@ namespace EMS
                         employee_name.Text = "";
                         status_.SelectedItem = null;
                         status_.Text = "--Select--";
-
+                        id_message.Visible = true;
 
                         pending_cover.Visible = true;
                         submit_cover.Visible = true;
@@ -790,6 +911,21 @@ namespace EMS
         private void submit_cover_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void clear_timein_Click(object sender, EventArgs e)
+        {
+            blank_timein.Visible = true;
+            duty_duration.Text = "";
+            overtime.Text = null;
+            blank_timeout.Visible = true;
+        }
+
+        private void clear_timeout_Click(object sender, EventArgs e)
+        {
+            blank_timeout.Visible = true;
+            duty_duration.Text = "";
+            overtime.Text = null;
         }
     }
 }
