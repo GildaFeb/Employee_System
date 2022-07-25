@@ -1032,5 +1032,15 @@ namespace EMS
         {
 
         }
+
+        private void LblTitle_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DDsubheading_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
