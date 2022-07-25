@@ -17,16 +17,6 @@ namespace EMS
             InitializeComponent();
         }
 
-        private void btn_one5_Click(object sender, EventArgs e)
-        {
-            EMPLOYEESadd_revised eMPLOYEESadd_Revised = new EMPLOYEESadd_revised();
-            eMPLOYEESadd_Revised.Show();
-        }
- 
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void EMPLOYEES_Load(object sender, EventArgs e)
         {
@@ -47,14 +37,23 @@ namespace EMS
 
         }
 
-        private void EMPLOYEESadd_revised_Load(object sender, EventArgs e)
+        private void emp_Addbtn_Click(object sender, EventArgs e)
         {
-
+            this.Hide(); //unfinished
+            EMPLOYEESadd_revised employeesAdd_revised = new EMPLOYEESadd_revised();
+            employeesAdd_revised.Show();
         }
 
-        private void EMPLOYEESadd_revised_Load(object sender, MouseEventArgs e)
+        private void emp_Updatebtn_Click(object sender, EventArgs e)
         {
+            EMPLOYEESupdate_revised employeesUpdate_revised = new EMPLOYEESupdate_revised();
+            employeesUpdate_revised.Show();
+        }
 
+        private void emp_Deletebtn_Click(object sender, EventArgs e)
+        {
+            EMPLOYEESdelete employeesDelete = new EMPLOYEESdelete();
+            employeesDelete.Show();
         }
     }
 }

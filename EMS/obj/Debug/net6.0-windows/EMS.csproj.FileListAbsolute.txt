@@ -477,7 +477,6 @@ C:\Users\Asus\Source\Repos\GildaFeb\Employee_System\EMS\bin\Debug\net6.0-windows
 C:\Users\Asus\Source\Repos\GildaFeb\Employee_System\EMS\bin\Debug\net6.0-windows\System.Net.Http.Primitives.dll
 C:\Users\Asus\Source\Repos\GildaFeb\Employee_System\EMS\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
 C:\Users\Asus\Source\Repos\GildaFeb\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.csproj.AssemblyReference.cache
-C:\Users\Asus\Source\Repos\GildaFeb\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.ATTENDANCE.resources
 C:\Users\Asus\Source\Repos\GildaFeb\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.ATTENDANCEdutydurationAddREVISED.resources
 C:\Users\Asus\Source\Repos\GildaFeb\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.ATTENDANCEdutydurationDel.resources
 C:\Users\Asus\Source\Repos\GildaFeb\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.ATTENDANCEdutydurationUpd.resources
@@ -1483,3 +1482,24 @@ C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\EMS - JULY 25\Employee_Sys
 C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\EMS - JULY 25\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.csproj.CopyComplete
 C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\EMS - JULY 25\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.genruntimeconfig.cache
 C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\EMS - JULY 25\Employee_System\EMS\obj\Debug\net6.0-windows\ref\EMS.dll
+C:\Users\Asus\Source\Repos\GildaFeb\Employee_System\EMS\bin\Debug\net6.0-windows\EMS.dll.config
+C:\Users\Asus\Source\Repos\GildaFeb\Employee_System\EMS\bin\Debug\net6.0-windows\Microsoft.Win32.SystemEvents.dll
+C:\Users\Asus\Source\Repos\GildaFeb\Employee_System\EMS\bin\Debug\net6.0-windows\System.Configuration.ConfigurationManager.dll
+C:\Users\Asus\Source\Repos\GildaFeb\Employee_System\EMS\bin\Debug\net6.0-windows\System.Data.OleDb.dll
+C:\Users\Asus\Source\Repos\GildaFeb\Employee_System\EMS\bin\Debug\net6.0-windows\System.Diagnostics.PerformanceCounter.dll
+C:\Users\Asus\Source\Repos\GildaFeb\Employee_System\EMS\bin\Debug\net6.0-windows\System.Drawing.Common.dll
+C:\Users\Asus\Source\Repos\GildaFeb\Employee_System\EMS\bin\Debug\net6.0-windows\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Asus\Source\Repos\GildaFeb\Employee_System\EMS\bin\Debug\net6.0-windows\System.Security.Permissions.dll
+C:\Users\Asus\Source\Repos\GildaFeb\Employee_System\EMS\bin\Debug\net6.0-windows\System.Windows.Extensions.dll
+C:\Users\Asus\Source\Repos\GildaFeb\Employee_System\EMS\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Asus\Source\Repos\GildaFeb\Employee_System\EMS\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Data.OleDb.dll
+C:\Users\Asus\Source\Repos\GildaFeb\Employee_System\EMS\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\Asus\Source\Repos\GildaFeb\Employee_System\EMS\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Asus\Source\Repos\GildaFeb\Employee_System\EMS\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Asus\Source\Repos\GildaFeb\Employee_System\EMS\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\Asus\Source\Repos\GildaFeb\Employee_System\EMS\obj\Debug\net6.0-windows\EMS._ATTENDANCE.resources
+C:\Users\Asus\Source\Repos\GildaFeb\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.ATTENDANCE.DataNotFound.resources
+C:\Users\Asus\Source\Repos\GildaFeb\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.ATTENDANCE.SuccessSubmit.resources
+C:\Users\Asus\Source\Repos\GildaFeb\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.emailIncorrect.resources
+C:\Users\Asus\Source\Repos\GildaFeb\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.emailPassIncorrect.resources
+C:\Users\Asus\Source\Repos\GildaFeb\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.passwordIncorrect.resources
