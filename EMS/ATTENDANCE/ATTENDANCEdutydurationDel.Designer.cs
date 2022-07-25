@@ -93,12 +93,12 @@
             // 
             // btn_one1
             // 
-            this.btn_one1.BackColor = System.Drawing.Color.DimGray;
+            this.btn_one1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(165)))), ((int)(((byte)(174)))));
             this.btn_one1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_one1.FlatAppearance.BorderSize = 0;
             this.btn_one1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_one1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_one1.ForeColor = System.Drawing.Color.White;
+            this.btn_one1.ForeColor = System.Drawing.Color.Black;
             this.btn_one1.Location = new System.Drawing.Point(97, 904);
             this.btn_one1.Name = "btn_one1";
             this.btn_one1.Size = new System.Drawing.Size(234, 51);

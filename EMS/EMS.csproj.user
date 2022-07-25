@@ -16,6 +16,12 @@
     <Compile Update="ATTENDANCE\SuccessSubmit.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="emailIncorrect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="emailPassIncorrect.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Employees\errorEmptyFields.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -53,6 +59,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="passwordIncorrect.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="TRASH_EMPLOYEESadd.cs">

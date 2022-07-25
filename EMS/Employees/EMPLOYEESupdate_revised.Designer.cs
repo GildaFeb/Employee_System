@@ -92,15 +92,15 @@
             // 
             // btn_clear
             // 
-            this.btn_clear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
+            this.btn_clear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(165)))), ((int)(((byte)(174)))));
             this.btn_clear.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_clear.FlatAppearance.BorderSize = 0;
             this.btn_clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_clear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_clear.ForeColor = System.Drawing.Color.White;
-            this.btn_clear.Location = new System.Drawing.Point(941, 876);
+            this.btn_clear.ForeColor = System.Drawing.Color.Black;
+            this.btn_clear.Location = new System.Drawing.Point(49, 876);
             this.btn_clear.Name = "btn_clear";
-            this.btn_clear.Size = new System.Drawing.Size(258, 51);
+            this.btn_clear.Size = new System.Drawing.Size(216, 51);
             this.btn_clear.TabIndex = 158;
             this.btn_clear.Text = "Clear";
             this.btn_clear.UseVisualStyleBackColor = false;
@@ -113,10 +113,10 @@
             this.btn_save.FlatAppearance.BorderSize = 0;
             this.btn_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_save.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_save.ForeColor = System.Drawing.Color.White;
-            this.btn_save.Location = new System.Drawing.Point(1205, 876);
+            this.btn_save.ForeColor = System.Drawing.Color.Transparent;
+            this.btn_save.Location = new System.Drawing.Point(1248, 876);
             this.btn_save.Name = "btn_save";
-            this.btn_save.Size = new System.Drawing.Size(242, 51);
+            this.btn_save.Size = new System.Drawing.Size(200, 51);
             this.btn_save.TabIndex = 159;
             this.btn_save.Text = "Update";
             this.btn_save.UseVisualStyleBackColor = false;

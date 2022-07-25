@@ -1372,3 +1372,6 @@ C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\EMS - FINAL FINAL FINAL\EM
 C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\EMS - FINAL FINAL FINAL\EMS\obj\Debug\net6.0-windows\EMS.pdb
 C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\EMS - FINAL FINAL FINAL\EMS\obj\Debug\net6.0-windows\EMS.genruntimeconfig.cache
 C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\EMS - FINAL FINAL FINAL\EMS\obj\Debug\net6.0-windows\ref\EMS.dll
+C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\EMS - FINAL FINAL FINAL\EMS\obj\Debug\net6.0-windows\EMS.passwordIncorrect.resources
+C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\EMS - FINAL FINAL FINAL\EMS\obj\Debug\net6.0-windows\EMS.emailIncorrect.resources
+C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\EMS - FINAL FINAL FINAL\EMS\obj\Debug\net6.0-windows\EMS.emailPassIncorrect.resources

@@ -106,16 +106,35 @@ namespace LoginForm
 
         private void btn_one1_Click(object sender, EventArgs e)
         {
-            dashboard = new dashboard();
-            MainForm main = new MainForm((dashboard));     //Try lang if nag oopen once clinick ang login.
-            this.Hide();
-            main.Show();
+            if(LogTxtUser.Texts == "compProg2@gmail.com" && LogTxtPass.Texts == "BSIT12")
+            {
+                dashboard = new dashboard();
+                MainForm main = new MainForm((dashboard));     //Try lang if nag oopen once clinick ang login.
+                this.Hide();
+                main.Show();
+            }
+            else if (LogTxtUser.Texts != "compProg2@gmail.com" && LogTxtPass.Texts != "BSIT12")
+            {
+                emailPassIncorrect emailPassIncorrect = new emailPassIncorrect();
+                emailPassIncorrect.Show();
+            }
+            else if(LogTxtUser.Texts != "compProg2@gmail.com")
+            {
+                emailIncorrect emailIncorrect = new emailIncorrect();
+                emailIncorrect.Show();
+            }
+            else if(LogTxtPass.Texts != "BSIT12")
+            {
+                passwordIncorrect passwordIncorrect = new passwordIncorrect();
+                passwordIncorrect.Show();
+            }
+            
         }
 
         private void btn_one2_Click(object sender, EventArgs e)
         {
-            LogTxtUser.Texts = "";
-            LogTxtPass.Texts = "";
+            LogTxtUser.Texts = "compProg2@gmail.com";
+            LogTxtPass.Texts = "BSIT12";
             LogTxtUser.Focus();
         }
     }

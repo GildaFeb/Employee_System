@@ -148,9 +148,9 @@
             this.Usrnme.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Usrnme.Location = new System.Drawing.Point(104, 183);
             this.Usrnme.Name = "Usrnme";
-            this.Usrnme.Size = new System.Drawing.Size(94, 20);
+            this.Usrnme.Size = new System.Drawing.Size(56, 20);
             this.Usrnme.TabIndex = 14;
-            this.Usrnme.Text = "Username";
+            this.Usrnme.Text = "Email";
             // 
             // LogLblTitle
             // 
