@@ -56,7 +56,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.Color.Gray;
-            this.label6.Location = new System.Drawing.Point(119, 161);
+            this.label6.Location = new System.Drawing.Point(89, 161);
             this.label6.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(764, 22);
@@ -70,7 +70,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(51)))));
-            this.label1.Location = new System.Drawing.Point(114, 104);
+            this.label1.Location = new System.Drawing.Point(84, 104);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(334, 46);
@@ -82,7 +82,7 @@
             this.pictureBox2.BackColor = System.Drawing.Color.White;
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(1025, 96);
+            this.pictureBox2.Location = new System.Drawing.Point(995, 96);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(35, 28);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -95,7 +95,7 @@
             this.Search.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Search.ForeColor = System.Drawing.Color.DarkGray;
-            this.Search.Location = new System.Drawing.Point(1066, 99);
+            this.Search.Location = new System.Drawing.Point(1036, 99);
             this.Search.Name = "Search";
             this.Search.PlaceholderText = "Enter ID Number";
             this.Search.Size = new System.Drawing.Size(341, 23);
@@ -105,7 +105,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1008, 84);
+            this.pictureBox1.Location = new System.Drawing.Point(978, 84);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(422, 52);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -121,7 +121,7 @@
             this.db_ViewCalendarBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.db_ViewCalendarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.db_ViewCalendarBtn.ForeColor = System.Drawing.Color.White;
-            this.db_ViewCalendarBtn.Location = new System.Drawing.Point(134, 231);
+            this.db_ViewCalendarBtn.Location = new System.Drawing.Point(104, 231);
             this.db_ViewCalendarBtn.Name = "db_ViewCalendarBtn";
             this.db_ViewCalendarBtn.Size = new System.Drawing.Size(1305, 605);
             this.db_ViewCalendarBtn.TabIndex = 79;
@@ -136,7 +136,7 @@
             this.clear_check.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.clear_check.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.clear_check.ForeColor = System.Drawing.Color.White;
-            this.clear_check.Location = new System.Drawing.Point(134, 873);
+            this.clear_check.Location = new System.Drawing.Point(104, 873);
             this.clear_check.Name = "clear_check";
             this.clear_check.Size = new System.Drawing.Size(219, 51);
             this.clear_check.TabIndex = 125;
@@ -152,7 +152,7 @@
             this.delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.delete.ForeColor = System.Drawing.Color.White;
-            this.delete.Location = new System.Drawing.Point(1215, 873);
+            this.delete.Location = new System.Drawing.Point(1185, 873);
             this.delete.Name = "delete";
             this.delete.Size = new System.Drawing.Size(224, 51);
             this.delete.TabIndex = 126;
@@ -168,7 +168,7 @@
             this.btn_one2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_one2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_one2.ForeColor = System.Drawing.Color.White;
-            this.btn_one2.Location = new System.Drawing.Point(931, 873);
+            this.btn_one2.Location = new System.Drawing.Point(901, 873);
             this.btn_one2.Name = "btn_one2";
             this.btn_one2.Size = new System.Drawing.Size(219, 51);
             this.btn_one2.TabIndex = 131;
@@ -181,7 +181,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(1335, 53);
+            this.label2.Location = new System.Drawing.Point(1305, 53);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(72, 28);
             this.label2.TabIndex = 132;
@@ -201,7 +201,7 @@
             this.tableDelete_DGV.AllowUserToAddRows = false;
             this.tableDelete_DGV.AllowUserToDeleteRows = false;
             this.tableDelete_DGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tableDelete_DGV.Location = new System.Drawing.Point(134, 262);
+            this.tableDelete_DGV.Location = new System.Drawing.Point(104, 262);
             this.tableDelete_DGV.Name = "tableDelete_DGV";
             this.tableDelete_DGV.RowHeadersWidth = 51;
             this.tableDelete_DGV.RowTemplate.Height = 29;
@@ -214,7 +214,7 @@
             this.noData.AutoSize = true;
             this.noData.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.noData.ForeColor = System.Drawing.Color.Black;
-            this.noData.Location = new System.Drawing.Point(702, 535);
+            this.noData.Location = new System.Drawing.Point(672, 535);
             this.noData.Name = "noData";
             this.noData.Size = new System.Drawing.Size(171, 28);
             this.noData.TabIndex = 205;

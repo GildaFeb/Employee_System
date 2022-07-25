@@ -82,7 +82,7 @@
             this.db_ViewSalaryBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.db_ViewSalaryBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.db_ViewSalaryBtn.ForeColor = System.Drawing.Color.White;
-            this.db_ViewSalaryBtn.Location = new System.Drawing.Point(1059, 168);
+            this.db_ViewSalaryBtn.Location = new System.Drawing.Point(1033, 168);
             this.db_ViewSalaryBtn.Name = "db_ViewSalaryBtn";
             this.db_ViewSalaryBtn.Size = new System.Drawing.Size(407, 326);
             this.db_ViewSalaryBtn.TabIndex = 13;
@@ -98,7 +98,7 @@
             this.db_ViewAttendanceBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.db_ViewAttendanceBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.db_ViewAttendanceBtn.ForeColor = System.Drawing.Color.White;
-            this.db_ViewAttendanceBtn.Location = new System.Drawing.Point(566, 167);
+            this.db_ViewAttendanceBtn.Location = new System.Drawing.Point(540, 167);
             this.db_ViewAttendanceBtn.Name = "db_ViewAttendanceBtn";
             this.db_ViewAttendanceBtn.Size = new System.Drawing.Size(451, 327);
             this.db_ViewAttendanceBtn.TabIndex = 12;
@@ -114,7 +114,7 @@
             this.db_ViewEmployeesBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.db_ViewEmployeesBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.db_ViewEmployeesBtn.ForeColor = System.Drawing.Color.White;
-            this.db_ViewEmployeesBtn.Location = new System.Drawing.Point(88, 168);
+            this.db_ViewEmployeesBtn.Location = new System.Drawing.Point(62, 168);
             this.db_ViewEmployeesBtn.Name = "db_ViewEmployeesBtn";
             this.db_ViewEmployeesBtn.Size = new System.Drawing.Size(438, 327);
             this.db_ViewEmployeesBtn.TabIndex = 11;
@@ -127,7 +127,7 @@
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(1345, 372);
+            this.label3.Location = new System.Drawing.Point(1319, 372);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(92, 25);
             this.label3.TabIndex = 17;
@@ -141,7 +141,7 @@
             this.db_ViewCalendarBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.db_ViewCalendarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.db_ViewCalendarBtn.ForeColor = System.Drawing.Color.White;
-            this.db_ViewCalendarBtn.Location = new System.Drawing.Point(566, 545);
+            this.db_ViewCalendarBtn.Location = new System.Drawing.Point(540, 545);
             this.db_ViewCalendarBtn.Name = "db_ViewCalendarBtn";
             this.db_ViewCalendarBtn.Size = new System.Drawing.Size(900, 364);
             this.db_ViewCalendarBtn.TabIndex = 15;
@@ -157,7 +157,7 @@
             this.db_ViewWelcomeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.db_ViewWelcomeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.db_ViewWelcomeBtn.ForeColor = System.Drawing.Color.Transparent;
-            this.db_ViewWelcomeBtn.Location = new System.Drawing.Point(88, 545);
+            this.db_ViewWelcomeBtn.Location = new System.Drawing.Point(62, 545);
             this.db_ViewWelcomeBtn.Name = "db_ViewWelcomeBtn";
             this.db_ViewWelcomeBtn.Size = new System.Drawing.Size(438, 364);
             this.db_ViewWelcomeBtn.TabIndex = 14;
@@ -170,7 +170,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(51)))));
-            this.label1.Location = new System.Drawing.Point(91, 65);
+            this.label1.Location = new System.Drawing.Point(65, 65);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(232, 48);
             this.label1.TabIndex = 18;
@@ -182,7 +182,7 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(216)))), ((int)(((byte)(0)))));
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(51)))));
-            this.label2.Location = new System.Drawing.Point(131, 593);
+            this.label2.Location = new System.Drawing.Point(105, 593);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(188, 69);
             this.label2.TabIndex = 18;
@@ -194,7 +194,7 @@
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(216)))), ((int)(((byte)(0)))));
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(51)))));
-            this.label4.Location = new System.Drawing.Point(141, 683);
+            this.label4.Location = new System.Drawing.Point(115, 683);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(287, 50);
@@ -207,7 +207,7 @@
             this.dayTodayLbl.BackColor = System.Drawing.Color.White;
             this.dayTodayLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dayTodayLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(51)))));
-            this.dayTodayLbl.Location = new System.Drawing.Point(620, 661);
+            this.dayTodayLbl.Location = new System.Drawing.Point(594, 661);
             this.dayTodayLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.dayTodayLbl.Name = "dayTodayLbl";
             this.dayTodayLbl.Size = new System.Drawing.Size(206, 25);
@@ -221,7 +221,7 @@
             this.clockLbl.BackColor = System.Drawing.Color.White;
             this.clockLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.clockLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(51)))));
-            this.clockLbl.Location = new System.Drawing.Point(613, 593);
+            this.clockLbl.Location = new System.Drawing.Point(587, 593);
             this.clockLbl.Name = "clockLbl";
             this.clockLbl.Size = new System.Drawing.Size(145, 54);
             this.clockLbl.TabIndex = 18;
@@ -237,7 +237,7 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.White;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(897, 593);
+            this.pictureBox3.Location = new System.Drawing.Point(871, 593);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(44, 258);
             this.pictureBox3.TabIndex = 109;
@@ -247,7 +247,7 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(765, 236);
+            this.pictureBox4.Location = new System.Drawing.Point(739, 236);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(221, 33);
             this.pictureBox4.TabIndex = 112;
@@ -259,7 +259,7 @@
             this.project_num.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.project_num.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.project_num.ForeColor = System.Drawing.Color.White;
-            this.project_num.Location = new System.Drawing.Point(774, 268);
+            this.project_num.Location = new System.Drawing.Point(748, 268);
             this.project_num.Name = "project_num";
             this.project_num.Size = new System.Drawing.Size(31, 32);
             this.project_num.TabIndex = 111;
@@ -272,7 +272,7 @@
             this.guard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.guard.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.guard.ForeColor = System.Drawing.Color.White;
-            this.guard.Location = new System.Drawing.Point(845, 274);
+            this.guard.Location = new System.Drawing.Point(819, 274);
             this.guard.Name = "guard";
             this.guard.Size = new System.Drawing.Size(141, 22);
             this.guard.TabIndex = 110;
@@ -284,7 +284,7 @@
             this.fullstack_dev_num.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.fullstack_dev_num.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.fullstack_dev_num.ForeColor = System.Drawing.Color.White;
-            this.fullstack_dev_num.Location = new System.Drawing.Point(774, 318);
+            this.fullstack_dev_num.Location = new System.Drawing.Point(748, 318);
             this.fullstack_dev_num.Name = "fullstack_dev_num";
             this.fullstack_dev_num.Size = new System.Drawing.Size(31, 32);
             this.fullstack_dev_num.TabIndex = 111;
@@ -297,7 +297,7 @@
             this.instructor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.instructor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.instructor.ForeColor = System.Drawing.Color.White;
-            this.instructor.Location = new System.Drawing.Point(845, 324);
+            this.instructor.Location = new System.Drawing.Point(819, 324);
             this.instructor.Name = "instructor";
             this.instructor.Size = new System.Drawing.Size(123, 22);
             this.instructor.TabIndex = 110;
@@ -309,7 +309,7 @@
             this.software_engineer_num.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.software_engineer_num.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.software_engineer_num.ForeColor = System.Drawing.Color.White;
-            this.software_engineer_num.Location = new System.Drawing.Point(774, 366);
+            this.software_engineer_num.Location = new System.Drawing.Point(748, 366);
             this.software_engineer_num.Name = "software_engineer_num";
             this.software_engineer_num.Size = new System.Drawing.Size(31, 32);
             this.software_engineer_num.TabIndex = 111;
@@ -322,7 +322,7 @@
             this.software_eng.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.software_eng.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.software_eng.ForeColor = System.Drawing.Color.White;
-            this.software_eng.Location = new System.Drawing.Point(845, 372);
+            this.software_eng.Location = new System.Drawing.Point(819, 372);
             this.software_eng.Name = "software_eng";
             this.software_eng.Size = new System.Drawing.Size(129, 22);
             this.software_eng.TabIndex = 110;
@@ -335,7 +335,7 @@
             this.emp_num.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.emp_num.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.emp_num.ForeColor = System.Drawing.Color.White;
-            this.emp_num.Location = new System.Drawing.Point(435, 228);
+            this.emp_num.Location = new System.Drawing.Point(409, 228);
             this.emp_num.Name = "emp_num";
             this.emp_num.Size = new System.Drawing.Size(47, 51);
             this.emp_num.TabIndex = 111;
@@ -348,7 +348,7 @@
             this.total_records.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.total_records.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.total_records.ForeColor = System.Drawing.Color.White;
-            this.total_records.Location = new System.Drawing.Point(435, 351);
+            this.total_records.Location = new System.Drawing.Point(409, 351);
             this.total_records.Name = "total_records";
             this.total_records.Size = new System.Drawing.Size(47, 51);
             this.total_records.TabIndex = 111;
@@ -361,7 +361,7 @@
             this.label23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label23.ForeColor = System.Drawing.Color.White;
-            this.label23.Location = new System.Drawing.Point(337, 279);
+            this.label23.Location = new System.Drawing.Point(311, 279);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(155, 32);
             this.label23.TabIndex = 110;
@@ -371,7 +371,7 @@
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(303, 314);
+            this.pictureBox7.Location = new System.Drawing.Point(277, 314);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(189, 33);
             this.pictureBox7.TabIndex = 112;
@@ -383,7 +383,7 @@
             this.kk.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.kk.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.kk.ForeColor = System.Drawing.Color.White;
-            this.kk.Location = new System.Drawing.Point(302, 407);
+            this.kk.Location = new System.Drawing.Point(276, 407);
             this.kk.Name = "kk";
             this.kk.Size = new System.Drawing.Size(190, 32);
             this.kk.TabIndex = 110;
@@ -395,7 +395,7 @@
             this.label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(895, 208);
+            this.label13.Location = new System.Drawing.Point(869, 208);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(91, 25);
             this.label13.TabIndex = 110;
@@ -407,7 +407,7 @@
             this.onLeave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.onLeave.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.onLeave.ForeColor = System.Drawing.Color.White;
-            this.onLeave.Location = new System.Drawing.Point(1360, 274);
+            this.onLeave.Location = new System.Drawing.Point(1334, 274);
             this.onLeave.Name = "onLeave";
             this.onLeave.Size = new System.Drawing.Size(47, 51);
             this.onLeave.TabIndex = 111;
@@ -419,7 +419,7 @@
             this.lbel99.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.lbel99.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbel99.ForeColor = System.Drawing.Color.White;
-            this.lbel99.Location = new System.Drawing.Point(1279, 339);
+            this.lbel99.Location = new System.Drawing.Point(1253, 339);
             this.lbel99.Name = "lbel99";
             this.lbel99.Size = new System.Drawing.Size(137, 32);
             this.lbel99.TabIndex = 110;
@@ -429,7 +429,7 @@
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(1099, 253);
+            this.pictureBox6.Location = new System.Drawing.Point(1073, 253);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(148, 160);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -440,7 +440,7 @@
             // 
             this.pictureBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(601, 253);
+            this.pictureBox9.Location = new System.Drawing.Point(575, 253);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(148, 160);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -453,7 +453,7 @@
             this.administrator_num.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.administrator_num.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.administrator_num.ForeColor = System.Drawing.Color.White;
-            this.administrator_num.Location = new System.Drawing.Point(774, 414);
+            this.administrator_num.Location = new System.Drawing.Point(748, 414);
             this.administrator_num.Name = "administrator_num";
             this.administrator_num.Size = new System.Drawing.Size(31, 32);
             this.administrator_num.TabIndex = 111;
@@ -466,7 +466,7 @@
             this.administrator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.administrator.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.administrator.ForeColor = System.Drawing.Color.White;
-            this.administrator.Location = new System.Drawing.Point(845, 420);
+            this.administrator.Location = new System.Drawing.Point(819, 420);
             this.administrator.Name = "administrator";
             this.administrator.Size = new System.Drawing.Size(115, 22);
             this.administrator.TabIndex = 110;
@@ -476,7 +476,7 @@
             // 
             this.pictureBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(132, 250);
+            this.pictureBox8.Location = new System.Drawing.Point(106, 250);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(148, 160);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -491,7 +491,7 @@
             this.btn_about.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_about.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_about.ForeColor = System.Drawing.Color.Gray;
-            this.btn_about.Location = new System.Drawing.Point(141, 801);
+            this.btn_about.Location = new System.Drawing.Point(115, 801);
             this.btn_about.Name = "btn_about";
             this.btn_about.Size = new System.Drawing.Size(135, 50);
             this.btn_about.TabIndex = 127;
@@ -508,12 +508,12 @@
             this.btn_one2.ForeColor = System.Drawing.Color.White;
             this.btn_one2.Image = ((System.Drawing.Image)(resources.GetObject("btn_one2.Image")));
             this.btn_one2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_one2.Location = new System.Drawing.Point(1208, 65);
+            this.btn_one2.Location = new System.Drawing.Point(1232, 65);
             this.btn_one2.Name = "btn_one2";
             this.btn_one2.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_one2.Size = new System.Drawing.Size(258, 48);
+            this.btn_one2.Size = new System.Drawing.Size(208, 48);
             this.btn_one2.TabIndex = 132;
-            this.btn_one2.Text = "Refresh Data";
+            this.btn_one2.Text = "     Refresh Data";
             this.btn_one2.UseVisualStyleBackColor = false;
             this.btn_one2.Click += new System.EventHandler(this.btn_one2_Click);
             // 

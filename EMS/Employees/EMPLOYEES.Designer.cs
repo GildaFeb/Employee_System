@@ -111,7 +111,7 @@
             this.dayTodayLbl_Employees.BackColor = System.Drawing.Color.Transparent;
             this.dayTodayLbl_Employees.Font = new System.Drawing.Font("SF Pro Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dayTodayLbl_Employees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(51)))));
-            this.dayTodayLbl_Employees.Location = new System.Drawing.Point(1232, 161);
+            this.dayTodayLbl_Employees.Location = new System.Drawing.Point(1222, 161);
             this.dayTodayLbl_Employees.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.dayTodayLbl_Employees.Name = "dayTodayLbl_Employees";
             this.dayTodayLbl_Employees.Size = new System.Drawing.Size(199, 20);
@@ -124,7 +124,7 @@
             this.clockLbl_Employees.BackColor = System.Drawing.Color.Transparent;
             this.clockLbl_Employees.Font = new System.Drawing.Font("SF Pro Display", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.clockLbl_Employees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(51)))));
-            this.clockLbl_Employees.Location = new System.Drawing.Point(1192, 93);
+            this.clockLbl_Employees.Location = new System.Drawing.Point(1182, 93);
             this.clockLbl_Employees.Name = "clockLbl_Employees";
             this.clockLbl_Employees.Size = new System.Drawing.Size(244, 51);
             this.clockLbl_Employees.TabIndex = 73;
