@@ -23,7 +23,7 @@ namespace EMS
             last_name.MaxLength = 50;
             first_name.MaxLength = 50;
             middle_name.MaxLength = 50;
-            emp_designation.MaxLength = 50;
+            designation.MaxLength = 50;
             email.MaxLength = 50;
             address.MaxLength = 50;
             contact_number.MaxLength = 15;
@@ -35,9 +35,6 @@ namespace EMS
             birth.MaxDate = DateTime.Now;
 
             regular_pay.MaxLength = 20;
-
-            //no scroll bars
-            //wala pong dropdown para sa civil status at puno na po yung box except kung tatanggalin po yung "others"
         }
 
 
@@ -88,7 +85,7 @@ namespace EMS
             // 48hrs(4hrs x 5days) x 4weeks - regular_worktime.Items[4]
             // [!] take note with the item number in every if else, thats the indicator of selected item
 
-            if (string.IsNullOrWhiteSpace(emp_designation.Text))
+            if (string.IsNullOrWhiteSpace(designation.Text))
             {
                 regular_worktime.Enabled = true;
 
@@ -161,34 +158,39 @@ namespace EMS
             pay.Text = regular_pay.Text;
         }
 
-        // =========== [!] ADD EMPLOYEE: SAVE BUTTON ===============
-
-        private void btn_one3_Click_1(object sender, EventArgs e)
+        private void birth_ValueChanged(object sender, EventArgs e)
         {
             int Age = DateTime.Now.Year - birth.Value.Year;
 
-            if (string.IsNullOrWhiteSpace(employee_id.Text) ||
-                 string.IsNullOrWhiteSpace(last_name.Text) ||
-                 string.IsNullOrWhiteSpace(first_name.Text) ||
-                 string.IsNullOrWhiteSpace(middle_name.Text) ||
-                 string.IsNullOrWhiteSpace(address.Text) ||
-                 string.IsNullOrWhiteSpace(email.Text) ||
-                 string.IsNullOrWhiteSpace(contact_number.Text) ||
-                 string.IsNullOrWhiteSpace(cnumber_emergency.Text) ||
-                 string.IsNullOrWhiteSpace(suffix.Text) ||
-                 string.IsNullOrWhiteSpace(emp_designation.Text) ||
-                 string.IsNullOrWhiteSpace(regular_pay.Text) ||
-                 string.IsNullOrWhiteSpace(regular_worktime.Text) ||
-                 string.IsNullOrWhiteSpace(sex.Text) || Age < 18)
+            if (Age < 18)
             {
-                if (string.IsNullOrWhiteSpace(employee_id.Text))
-                {
-                    erroremployee_id.Visible = true;
-                }
-                else
-                {
-                    erroremployee_id.Visible = false;
-                }
+                errorbirth.Visible = true;
+                registerBtn.Enabled = false;
+            }
+            else
+            {
+                errorbirth.Visible = false;
+                registerBtn.Enabled = true;
+            }
+        }
+
+        // =========== [!] ADD EMPLOYEE: SAVE BUTTON ===============
+
+        private void registerBtn_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(last_name.Text) ||
+                string.IsNullOrWhiteSpace(first_name.Text) ||
+                string.IsNullOrWhiteSpace(middle_name.Text) ||
+                string.IsNullOrWhiteSpace(address.Text) ||
+                string.IsNullOrWhiteSpace(email.Text) ||
+                string.IsNullOrWhiteSpace(contact_number.Text) ||
+                string.IsNullOrWhiteSpace(cnumber_emergency.Text) ||
+                string.IsNullOrWhiteSpace(suffix.Text) ||
+                string.IsNullOrWhiteSpace(designation.Text) ||
+                string.IsNullOrWhiteSpace(regular_pay.Text) ||
+                string.IsNullOrWhiteSpace(regular_worktime.Text) ||
+                string.IsNullOrWhiteSpace(sex.Text))
+            {
                 if (string.IsNullOrWhiteSpace(last_name.Text))
                 {
                     errorlast_name.Visible = true;
@@ -221,7 +223,7 @@ namespace EMS
                 {
                     errorsuffix.Visible = false;
                 }
-                if (string.IsNullOrWhiteSpace(emp_designation.Text))
+                if (string.IsNullOrWhiteSpace(designation.Text))
                 {
                     errorposition.Visible = true;
                 }
@@ -285,13 +287,13 @@ namespace EMS
                 {
                     errorcnumber_emergency.Visible = false;
                 }
-                if (Age < 18)
+                if (string.IsNullOrWhiteSpace(hired_date.Text))
                 {
-                    errorbirth.Visible = true;
+                    errorcnumber_emergency.Visible = true;
                 }
                 else
                 {
-                    errorbirth.Visible = false;
+                    errorcnumber_emergency.Visible = false;
                 }
 
                 errorEmptyFields errorEmptyFields = new errorEmptyFields();
@@ -341,7 +343,7 @@ namespace EMS
                         first_name.Clear();
                         middle_name.Text = "";
                         suffix.SelectedItem = null;
-                        emp_designation.SelectedItem = null;
+                        designation.SelectedItem = null;
                         regular_pay.SelectedItem = null;
                         regular_worktime.SelectedItem = null;
                         total_rpay.Clear();
@@ -392,7 +394,7 @@ namespace EMS
                 first_name.Clear();
                 middle_name.Text = "";
                 suffix.SelectedItem = null;
-                emp_designation.SelectedItem = null;
+                designation.SelectedItem = null;
                 regular_pay.SelectedItem = null;
                 regular_worktime.SelectedItem = null;
                 total_rpay.Clear();
@@ -429,7 +431,7 @@ namespace EMS
 
         private void position_SelectedIndexChanged(object sender, EventArgs e)
         {
-            emp_position.Text = emp_designation.Text;
+            emp_position.Text = designation.Text;
         }
 
         private void last_name_TextChanged(object sender, EventArgs e)
@@ -529,11 +531,7 @@ namespace EMS
 
         private void sex_SelectedIndexChanged(object sender, EventArgs e)
         {
-        }
 
-        private void birth_ValueChanged(object sender, EventArgs e)
-        {
-           
         }
 
         private void errorcnumber_emergency_Click(object sender, EventArgs e)

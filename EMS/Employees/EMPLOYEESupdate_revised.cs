@@ -52,7 +52,6 @@ namespace EMS
             hired_date.Enabled = false;
             birth.Enabled = false;
 
-
             last_name.Clear();
             first_name.Clear();
             middle_name.SelectedItem = null;
@@ -105,22 +104,6 @@ namespace EMS
             }
             else if (string.IsNullOrWhiteSpace(employee_id.Text) && check == false)
             {
-                last_name.Enabled = false;
-                first_name.Enabled = false;
-                middle_name.Enabled = false;
-                suffix.Enabled = false;
-                designation.Enabled = false;
-                regular_pay.Enabled = false;
-                regular_worktime.Enabled = false;
-                sex.Enabled = false;
-                address.Enabled = false;
-                contact_number.Enabled = false;
-                email.Enabled = false;
-                cnumber_emergency.Enabled = false;
-                hired_date.Enabled = false;
-                birth.Enabled = false;
-
-
                 last_name.Clear();
                 first_name.Clear();
                 middle_name.SelectedItem = null;
@@ -136,6 +119,21 @@ namespace EMS
                 email.Clear();
                 cnumber_emergency.Clear();
                 birth.Value = DateTime.Today;
+
+                last_name.Enabled = false;
+                first_name.Enabled = false;
+                middle_name.Enabled = false;
+                suffix.Enabled = false;
+                designation.Enabled = false;
+                regular_pay.Enabled = false;
+                regular_worktime.Enabled = false;
+                sex.Enabled = false;
+                address.Enabled = false;
+                contact_number.Enabled = false;
+                email.Enabled = false;
+                cnumber_emergency.Enabled = false;
+                hired_date.Enabled = false;
+                birth.Enabled = false;
             }
         }
 
@@ -411,6 +409,21 @@ namespace EMS
                         errorcontact_number.Visible = false;
                         erroremail.Visible = false;
                         errorcnumber_emergency.Visible = false;
+
+                        last_name.Enabled = false;
+                        first_name.Enabled = false;
+                        middle_name.Enabled = false;
+                        suffix.Enabled = false;
+                        designation.Enabled = false;
+                        regular_pay.Enabled = false;
+                        regular_worktime.Enabled = false;
+                        sex.Enabled = false;
+                        address.Enabled = false;
+                        contact_number.Enabled = false;
+                        email.Enabled = false;
+                        cnumber_emergency.Enabled = false;
+                        hired_date.Enabled = false;
+                        birth.Enabled = false;
                     }
                 }
             }

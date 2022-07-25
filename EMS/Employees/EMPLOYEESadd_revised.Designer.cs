@@ -61,7 +61,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.sex = new System.Windows.Forms.ComboBox();
             this.btn_clear = new EMS.btn_one();
-            this.register = new EMS.btn_one();
+            this.registerBtn = new EMS.btn_one();
             this.regular_pay = new System.Windows.Forms.ComboBox();
             this.birth = new System.Windows.Forms.DateTimePicker();
             this.regular_worktime = new System.Windows.Forms.ComboBox();
@@ -90,7 +90,7 @@
             this.total = new System.Windows.Forms.Label();
             this.pay = new System.Windows.Forms.Label();
             this.emp_position = new System.Windows.Forms.Label();
-            this.emp_designation = new System.Windows.Forms.ComboBox();
+            this.designation = new System.Windows.Forms.ComboBox();
             this.middle_name = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
@@ -555,22 +555,22 @@
             this.btn_clear.UseVisualStyleBackColor = false;
             this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
             // 
-            // register
+            // registerBtn
             // 
-            this.register.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(202)))), ((int)(((byte)(63)))));
-            this.register.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.register.FlatAppearance.BorderSize = 0;
-            this.register.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.register.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.register.ForeColor = System.Drawing.Color.White;
-            this.register.Location = new System.Drawing.Point(1086, 657);
-            this.register.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.register.Name = "register";
-            this.register.Size = new System.Drawing.Size(183, 37);
-            this.register.TabIndex = 117;
-            this.register.Text = "Register";
-            this.register.UseVisualStyleBackColor = false;
-            this.register.Click += new System.EventHandler(this.btn_one3_Click_1);
+            this.registerBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(202)))), ((int)(((byte)(63)))));
+            this.registerBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.registerBtn.FlatAppearance.BorderSize = 0;
+            this.registerBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.registerBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.registerBtn.ForeColor = System.Drawing.Color.White;
+            this.registerBtn.Location = new System.Drawing.Point(1086, 657);
+            this.registerBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.registerBtn.Name = "registerBtn";
+            this.registerBtn.Size = new System.Drawing.Size(183, 37);
+            this.registerBtn.TabIndex = 117;
+            this.registerBtn.Text = "Register";
+            this.registerBtn.UseVisualStyleBackColor = false;
+            this.registerBtn.Click += new System.EventHandler(this.registerBtn_Click);
             // 
             // regular_pay
             // 
@@ -981,24 +981,24 @@
             this.emp_position.Text = "label25";
             this.emp_position.Visible = false;
             // 
-            // emp_designation
+            // designation
             // 
-            this.emp_designation.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.emp_designation.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.emp_designation.ForeColor = System.Drawing.Color.Black;
-            this.emp_designation.FormattingEnabled = true;
-            this.emp_designation.Items.AddRange(new object[] {
+            this.designation.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.designation.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.designation.ForeColor = System.Drawing.Color.Black;
+            this.designation.FormattingEnabled = true;
+            this.designation.Items.AddRange(new object[] {
             "Project Manager",
             "Fullstack Developer",
             "Software Engineer",
             "Administrator",
             "Guard"});
-            this.emp_designation.Location = new System.Drawing.Point(500, 244);
-            this.emp_designation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.emp_designation.Name = "emp_designation";
-            this.emp_designation.Size = new System.Drawing.Size(311, 28);
-            this.emp_designation.TabIndex = 215;
-            this.emp_designation.SelectedIndexChanged += new System.EventHandler(this.position_SelectedIndexChanged);
+            this.designation.Location = new System.Drawing.Point(500, 244);
+            this.designation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.designation.Name = "designation";
+            this.designation.Size = new System.Drawing.Size(311, 28);
+            this.designation.TabIndex = 215;
+            this.designation.SelectedIndexChanged += new System.EventHandler(this.position_SelectedIndexChanged);
             // 
             // middle_name
             // 
@@ -1016,9 +1016,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
             this.Controls.Add(this.middle_name);
-            this.Controls.Add(this.emp_designation);
+            this.Controls.Add(this.designation);
             this.Controls.Add(this.emp_position);
             this.Controls.Add(this.pay);
             this.Controls.Add(this.total);
@@ -1047,7 +1048,7 @@
             this.Controls.Add(this.total_rpay);
             this.Controls.Add(this.birth);
             this.Controls.Add(this.btn_clear);
-            this.Controls.Add(this.register);
+            this.Controls.Add(this.registerBtn);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.sex);
@@ -1125,7 +1126,7 @@
         public PictureBox pictureBox3;
         public ComboBox sex;
         public btn_one btn_clear;
-        public btn_one register;
+        public btn_one registerBtn;
         public ComboBox regular_pay;
         public DateTimePicker birth;
         public ComboBox regular_worktime;
@@ -1154,7 +1155,7 @@
         public Label total;
         public Label pay;
         public Label emp_position;
-        public ComboBox emp_designation;
+        public ComboBox designation;
         public ComboBox middle_name;
     }
 }
