@@ -16,5 +16,10 @@ namespace EMS
         {
             InitializeComponent();
         }
+
+        private void okayBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

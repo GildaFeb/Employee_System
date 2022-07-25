@@ -68,6 +68,7 @@
             this.emp_Addbtn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.emp_Addbtn.UseVisualStyleBackColor = false;
             this.emp_Addbtn.Click += new System.EventHandler(this.btn_one5_Click);
+            this.emp_Addbtn.MouseClick += new System.Windows.Forms.MouseEventHandler(this.EMPLOYEESadd_revised_Load);
             // 
             // emp_Updatebtn
             // 

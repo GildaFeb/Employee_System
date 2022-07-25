@@ -240,7 +240,7 @@ namespace EMS
 
         }
 
-        private void EMPLOYEESadd_revised_Load(object sender, EventArgs e)
+        public void EMPLOYEESadd_revised_Load(object sender, EventArgs e)
         {
 
         }

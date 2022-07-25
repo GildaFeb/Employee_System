@@ -19,11 +19,10 @@ namespace EMS
 
         private void btn_one5_Click(object sender, EventArgs e)
         {
-
+            EMPLOYEESadd_revised eMPLOYEESadd_Revised = new EMPLOYEESadd_revised();
+            eMPLOYEESadd_Revised.Show();
         }
-    
-
-
+ 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
 
@@ -44,6 +43,16 @@ namespace EMS
         }
 
         private void clockLbl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void EMPLOYEESadd_revised_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void EMPLOYEESadd_revised_Load(object sender, MouseEventArgs e)
         {
 
         }

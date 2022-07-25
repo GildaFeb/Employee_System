@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4FLvAGkwg1CAltIzfGT7PSYn2v8/+y8TEV/JYsb5KDpoGvJyMj3gT0xP799KWEHJ+iG61rLnncnCB9+EUlJVTg==",
+  "dgSpecHash": "oPQx7/sTmSmBbzJ6xqgFM66juCKzcK2hQ0H2ynTypdOVIzbdY6E3TphYLLqa8KtnzntOtkyUUY6GrwiwX6tQUg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\WELCOME\\Desktop\\[SUB] Computer Programming 2\\EMS - FINAL FINAL FINAL\\EMS\\EMS.csproj",
+  "projectFilePath": "C:\\Users\\WELCOME\\Desktop\\[SUB] Computer Programming 2\\EMS - JULY 25\\Employee_System\\EMS\\EMS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\WELCOME\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\WELCOME\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

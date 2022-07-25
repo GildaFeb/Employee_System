@@ -51,6 +51,7 @@
             this.okayBtn.TabIndex = 100;
             this.okayBtn.Text = "Okay";
             this.okayBtn.UseVisualStyleBackColor = false;
+            this.okayBtn.Click += new System.EventHandler(this.okayBtn_Click);
             // 
             // textBox4
             // 
