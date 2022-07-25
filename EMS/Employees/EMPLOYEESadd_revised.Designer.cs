@@ -511,7 +511,7 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(567, 672);
+            this.pictureBox3.Location = new System.Drawing.Point(567, 681);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(827, 37);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -772,7 +772,7 @@
             this.errorposition.AutoSize = true;
             this.errorposition.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.errorposition.Font = new System.Drawing.Font("SF Pro Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.errorposition.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
+            this.errorposition.ForeColor = System.Drawing.Color.Maroon;
             this.errorposition.Location = new System.Drawing.Point(699, 361);
             this.errorposition.Name = "errorposition";
             this.errorposition.Size = new System.Drawing.Size(231, 18);
@@ -786,7 +786,7 @@
             this.errorregular_pay.AutoSize = true;
             this.errorregular_pay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.errorregular_pay.Font = new System.Drawing.Font("SF Pro Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.errorregular_pay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
+            this.errorregular_pay.ForeColor = System.Drawing.Color.Maroon;
             this.errorregular_pay.Location = new System.Drawing.Point(730, 455);
             this.errorregular_pay.Name = "errorregular_pay";
             this.errorregular_pay.Size = new System.Drawing.Size(196, 18);
@@ -800,7 +800,7 @@
             this.errorregular_worktime.AutoSize = true;
             this.errorregular_worktime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.errorregular_worktime.Font = new System.Drawing.Font("SF Pro Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.errorregular_worktime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
+            this.errorregular_worktime.ForeColor = System.Drawing.Color.Maroon;
             this.errorregular_worktime.Location = new System.Drawing.Point(744, 553);
             this.errorregular_worktime.Name = "errorregular_worktime";
             this.errorregular_worktime.Size = new System.Drawing.Size(182, 18);
@@ -814,7 +814,7 @@
             this.errorsex.AutoSize = true;
             this.errorsex.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.errorsex.Font = new System.Drawing.Font("SF Pro Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.errorsex.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
+            this.errorsex.ForeColor = System.Drawing.Color.Maroon;
             this.errorsex.Location = new System.Drawing.Point(789, 804);
             this.errorsex.Name = "errorsex";
             this.errorsex.Size = new System.Drawing.Size(141, 18);
@@ -828,7 +828,7 @@
             this.errorcnumber_emergency.AutoSize = true;
             this.errorcnumber_emergency.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.errorcnumber_emergency.Font = new System.Drawing.Font("SF Pro Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.errorcnumber_emergency.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
+            this.errorcnumber_emergency.ForeColor = System.Drawing.Color.Maroon;
             this.errorcnumber_emergency.Location = new System.Drawing.Point(1098, 652);
             this.errorcnumber_emergency.Name = "errorcnumber_emergency";
             this.errorcnumber_emergency.Size = new System.Drawing.Size(300, 18);
@@ -842,7 +842,7 @@
             this.erroremail.AutoSize = true;
             this.erroremail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.erroremail.Font = new System.Drawing.Font("SF Pro Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.erroremail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
+            this.erroremail.ForeColor = System.Drawing.Color.Maroon;
             this.erroremail.Location = new System.Drawing.Point(1193, 549);
             this.erroremail.Name = "erroremail";
             this.erroremail.Size = new System.Drawing.Size(205, 18);
@@ -856,7 +856,7 @@
             this.errorcontact_number.AutoSize = true;
             this.errorcontact_number.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.errorcontact_number.Font = new System.Drawing.Font("SF Pro Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.errorcontact_number.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
+            this.errorcontact_number.ForeColor = System.Drawing.Color.Maroon;
             this.errorcontact_number.Location = new System.Drawing.Point(1181, 456);
             this.errorcontact_number.Name = "errorcontact_number";
             this.errorcontact_number.Size = new System.Drawing.Size(216, 18);
@@ -870,7 +870,7 @@
             this.erroraddress.AutoSize = true;
             this.erroraddress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.erroraddress.Font = new System.Drawing.Font("SF Pro Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.erroraddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
+            this.erroraddress.ForeColor = System.Drawing.Color.Maroon;
             this.erroraddress.Location = new System.Drawing.Point(1236, 363);
             this.erroraddress.Name = "erroraddress";
             this.erroraddress.Size = new System.Drawing.Size(163, 18);
@@ -884,7 +884,7 @@
             this.errorbirth.AutoSize = true;
             this.errorbirth.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.errorbirth.Font = new System.Drawing.Font("SF Pro Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.errorbirth.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
+            this.errorbirth.ForeColor = System.Drawing.Color.Maroon;
             this.errorbirth.Location = new System.Drawing.Point(1154, 805);
             this.errorbirth.Name = "errorbirth";
             this.errorbirth.Size = new System.Drawing.Size(245, 18);

@@ -534,7 +534,7 @@
             this.invalid_time.AutoSize = true;
             this.invalid_time.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.invalid_time.Font = new System.Drawing.Font("SF Pro Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.invalid_time.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
+            this.invalid_time.ForeColor = System.Drawing.Color.Maroon;
             this.invalid_time.Location = new System.Drawing.Point(979, 534);
             this.invalid_time.Name = "invalid_time";
             this.invalid_time.Size = new System.Drawing.Size(279, 18);

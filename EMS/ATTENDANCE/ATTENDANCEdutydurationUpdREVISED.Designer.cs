@@ -93,12 +93,12 @@
             // 
             this.LblTitle.AutoSize = true;
             this.LblTitle.BackColor = System.Drawing.Color.Transparent;
-            this.LblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.LblTitle.Font = new System.Drawing.Font("SF Pro Display", 25.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.LblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(37)))), ((int)(((byte)(83)))));
             this.LblTitle.Location = new System.Drawing.Point(102, 101);
             this.LblTitle.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.LblTitle.Name = "LblTitle";
-            this.LblTitle.Size = new System.Drawing.Size(736, 48);
+            this.LblTitle.Size = new System.Drawing.Size(720, 50);
             this.LblTitle.TabIndex = 179;
             this.LblTitle.Text = "Update duty duration of an employee";
             this.LblTitle.Click += new System.EventHandler(this.LblTitle_Click);
@@ -107,8 +107,8 @@
             // 
             this.btn_one14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(216)))), ((int)(((byte)(0)))));
             this.btn_one14.FlatAppearance.BorderSize = 0;
-            this.btn_one14.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.btn_one14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btn_one14.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(216)))), ((int)(((byte)(0)))));
+            this.btn_one14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(216)))), ((int)(((byte)(0)))));
             this.btn_one14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_one14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_one14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(37)))), ((int)(((byte)(83)))));
@@ -123,26 +123,26 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(216)))), ((int)(((byte)(0)))));
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("SF Pro Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(170, 344);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(92, 18);
+            this.label1.Size = new System.Drawing.Size(228, 18);
             this.label1.TabIndex = 244;
-            this.label1.Text = "Employee ID";
+            this.label1.Text = "Employee ID | Enter ID Number";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // DDsubheading
             // 
             this.DDsubheading.AutoSize = true;
             this.DDsubheading.BackColor = System.Drawing.Color.Transparent;
-            this.DDsubheading.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.DDsubheading.ForeColor = System.Drawing.Color.Gray;
+            this.DDsubheading.Font = new System.Drawing.Font("SF Pro Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DDsubheading.ForeColor = System.Drawing.Color.DimGray;
             this.DDsubheading.Location = new System.Drawing.Point(110, 162);
             this.DDsubheading.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.DDsubheading.Name = "DDsubheading";
-            this.DDsubheading.Size = new System.Drawing.Size(895, 22);
+            this.DDsubheading.Size = new System.Drawing.Size(853, 21);
             this.DDsubheading.TabIndex = 256;
             this.DDsubheading.Text = "You can update employee attendance if it is added to \"Pending\" Table when the Sta" +
     "tus is \"Present\"";
@@ -170,12 +170,12 @@
             // 
             this.AddLblId.AutoSize = true;
             this.AddLblId.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(216)))), ((int)(((byte)(0)))));
-            this.AddLblId.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AddLblId.Font = new System.Drawing.Font("SF Pro Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.AddLblId.ForeColor = System.Drawing.Color.Black;
             this.AddLblId.Location = new System.Drawing.Point(583, 344);
             this.AddLblId.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.AddLblId.Name = "AddLblId";
-            this.AddLblId.Size = new System.Drawing.Size(124, 18);
+            this.AddLblId.Size = new System.Drawing.Size(133, 18);
             this.AddLblId.TabIndex = 238;
             this.AddLblId.Text = "Choose duty date";
             this.AddLblId.Click += new System.EventHandler(this.AddLblId_Click);
@@ -183,12 +183,13 @@
             // id_message
             // 
             this.id_message.AutoSize = true;
+            this.id_message.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(216)))), ((int)(((byte)(0)))));
+            this.id_message.Font = new System.Drawing.Font("SF Pro Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.id_message.ForeColor = System.Drawing.Color.Black;
-            this.id_message.Location = new System.Drawing.Point(270, 345);
+            this.id_message.Location = new System.Drawing.Point(386, 344);
             this.id_message.Name = "id_message";
-            this.id_message.Size = new System.Drawing.Size(126, 20);
+            this.id_message.Size = new System.Drawing.Size(0, 18);
             this.id_message.TabIndex = 294;
-            this.id_message.Text = "*Enter ID Number";
             this.id_message.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.id_message.Click += new System.EventHandler(this.id_message_Click);
             // 
@@ -216,15 +217,16 @@
             // 
             this.status_.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.status_.Enabled = false;
+            this.status_.Font = new System.Drawing.Font("SF Pro Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.status_.FormattingEnabled = true;
             this.status_.Items.AddRange(new object[] {
             "Present",
             "Absent",
             "Leave",
             "--Select--"});
-            this.status_.Location = new System.Drawing.Point(166, 663);
+            this.status_.Location = new System.Drawing.Point(166, 659);
             this.status_.Name = "status_";
-            this.status_.Size = new System.Drawing.Size(349, 28);
+            this.status_.Size = new System.Drawing.Size(349, 32);
             this.status_.TabIndex = 291;
             this.status_.SelectedIndexChanged += new System.EventHandler(this.status__SelectedIndexChanged_1);
             // 
@@ -244,7 +246,7 @@
             // pending_cover
             // 
             this.pending_cover.AutoSize = true;
-            this.pending_cover.Location = new System.Drawing.Point(871, 794);
+            this.pending_cover.Location = new System.Drawing.Point(866, 812);
             this.pending_cover.Margin = new System.Windows.Forms.Padding(50, 0, 50, 50);
             this.pending_cover.Name = "pending_cover";
             this.pending_cover.Padding = new System.Windows.Forms.Padding(150, 50, 100, 50);
@@ -254,7 +256,7 @@
             // submit_cover
             // 
             this.submit_cover.AutoSize = true;
-            this.submit_cover.Location = new System.Drawing.Point(1157, 794);
+            this.submit_cover.Location = new System.Drawing.Point(1152, 812);
             this.submit_cover.Margin = new System.Windows.Forms.Padding(50, 0, 50, 50);
             this.submit_cover.Name = "submit_cover";
             this.submit_cover.Padding = new System.Windows.Forms.Padding(150, 50, 100, 50);
@@ -268,7 +270,7 @@
             this.submit_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.submit_btn.FlatAppearance.BorderSize = 0;
             this.submit_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.submit_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.submit_btn.Font = new System.Drawing.Font("SF Pro Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.submit_btn.ForeColor = System.Drawing.Color.White;
             this.submit_btn.Location = new System.Drawing.Point(1160, 812);
             this.submit_btn.Name = "submit_btn";
@@ -284,7 +286,7 @@
             this.pending_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pending_btn.FlatAppearance.BorderSize = 0;
             this.pending_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pending_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.pending_btn.Font = new System.Drawing.Font("SF Pro Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.pending_btn.ForeColor = System.Drawing.Color.White;
             this.pending_btn.Location = new System.Drawing.Point(883, 812);
             this.pending_btn.Name = "pending_btn";
@@ -302,7 +304,7 @@
             this.now_timeout.Enabled = false;
             this.now_timeout.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
             this.now_timeout.ForeColor = System.Drawing.Color.White;
-            this.now_timeout.Location = new System.Drawing.Point(836, 660);
+            this.now_timeout.Location = new System.Drawing.Point(836, 656);
             this.now_timeout.Name = "now_timeout";
             this.now_timeout.Size = new System.Drawing.Size(84, 23);
             this.now_timeout.TabIndex = 277;
@@ -314,7 +316,7 @@
             this.maskedTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(37)))), ((int)(((byte)(83)))));
             this.maskedTextBox1.Enabled = false;
             this.maskedTextBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.maskedTextBox1.Location = new System.Drawing.Point(823, 657);
+            this.maskedTextBox1.Location = new System.Drawing.Point(823, 652);
             this.maskedTextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(109, 34);
@@ -352,19 +354,21 @@
             // 
             // blank_timein
             // 
+            this.blank_timein.Font = new System.Drawing.Font("SF Pro Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.blank_timein.Location = new System.Drawing.Point(583, 537);
             this.blank_timein.Name = "blank_timein";
-            this.blank_timein.Size = new System.Drawing.Size(349, 27);
+            this.blank_timein.Size = new System.Drawing.Size(349, 31);
             this.blank_timein.TabIndex = 284;
             this.blank_timein.TextChanged += new System.EventHandler(this.blank_timein_TextChanged);
             // 
             // report_txt
             // 
             this.report_txt.AutoSize = true;
+            this.report_txt.Font = new System.Drawing.Font("SF Pro Text", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.report_txt.ForeColor = System.Drawing.Color.Black;
-            this.report_txt.Location = new System.Drawing.Point(1160, 866);
+            this.report_txt.Location = new System.Drawing.Point(1169, 866);
             this.report_txt.Name = "report_txt";
-            this.report_txt.Size = new System.Drawing.Size(233, 20);
+            this.report_txt.Size = new System.Drawing.Size(216, 16);
             this.report_txt.TabIndex = 283;
             this.report_txt.Text = "This will see in Attendance Report";
             // 
@@ -382,10 +386,11 @@
             // pending_txt
             // 
             this.pending_txt.AutoSize = true;
+            this.pending_txt.Font = new System.Drawing.Font("SF Pro Text", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.pending_txt.ForeColor = System.Drawing.Color.Black;
-            this.pending_txt.Location = new System.Drawing.Point(908, 866);
+            this.pending_txt.Location = new System.Drawing.Point(918, 866);
             this.pending_txt.Name = "pending_txt";
-            this.pending_txt.Size = new System.Drawing.Size(178, 20);
+            this.pending_txt.Size = new System.Drawing.Size(165, 16);
             this.pending_txt.TabIndex = 281;
             this.pending_txt.Text = "This will see in Duty Table";
             // 
@@ -418,7 +423,7 @@
             this.clear_timeout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.clear_timeout.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
             this.clear_timeout.ForeColor = System.Drawing.Color.White;
-            this.clear_timeout.Location = new System.Drawing.Point(883, 630);
+            this.clear_timeout.Location = new System.Drawing.Point(883, 620);
             this.clear_timeout.Name = "clear_timeout";
             this.clear_timeout.Size = new System.Drawing.Size(49, 23);
             this.clear_timeout.TabIndex = 276;
@@ -432,7 +437,7 @@
             this.clear_timein.Cursor = System.Windows.Forms.Cursors.Hand;
             this.clear_timein.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
             this.clear_timein.ForeColor = System.Drawing.Color.White;
-            this.clear_timein.Location = new System.Drawing.Point(871, 507);
+            this.clear_timein.Location = new System.Drawing.Point(883, 503);
             this.clear_timein.Name = "clear_timein";
             this.clear_timein.Size = new System.Drawing.Size(49, 23);
             this.clear_timein.TabIndex = 274;
@@ -445,7 +450,7 @@
             this.btn_findemployee.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_findemployee.FlatAppearance.BorderSize = 0;
             this.btn_findemployee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_findemployee.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_findemployee.Font = new System.Drawing.Font("SF Pro Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_findemployee.ForeColor = System.Drawing.Color.White;
             this.btn_findemployee.Location = new System.Drawing.Point(102, 812);
             this.btn_findemployee.Name = "btn_findemployee";
@@ -475,12 +480,12 @@
             // 
             this.AddLblOvertime.AutoSize = true;
             this.AddLblOvertime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            this.AddLblOvertime.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AddLblOvertime.Font = new System.Drawing.Font("SF Pro Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.AddLblOvertime.ForeColor = System.Drawing.Color.White;
-            this.AddLblOvertime.Location = new System.Drawing.Point(988, 633);
+            this.AddLblOvertime.Location = new System.Drawing.Point(988, 625);
             this.AddLblOvertime.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.AddLblOvertime.Name = "AddLblOvertime";
-            this.AddLblOvertime.Size = new System.Drawing.Size(68, 18);
+            this.AddLblOvertime.Size = new System.Drawing.Size(74, 18);
             this.AddLblOvertime.TabIndex = 269;
             this.AddLblOvertime.Text = "Overtime";
             this.AddLblOvertime.Click += new System.EventHandler(this.AddLblOvertime_Click);
@@ -489,12 +494,12 @@
             // 
             this.AddLblTimeOut.AutoSize = true;
             this.AddLblTimeOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            this.AddLblTimeOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AddLblTimeOut.Font = new System.Drawing.Font("SF Pro Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.AddLblTimeOut.ForeColor = System.Drawing.Color.White;
-            this.AddLblTimeOut.Location = new System.Drawing.Point(583, 635);
+            this.AddLblTimeOut.Location = new System.Drawing.Point(583, 625);
             this.AddLblTimeOut.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.AddLblTimeOut.Name = "AddLblTimeOut";
-            this.AddLblTimeOut.Size = new System.Drawing.Size(66, 18);
+            this.AddLblTimeOut.Size = new System.Drawing.Size(71, 18);
             this.AddLblTimeOut.TabIndex = 268;
             this.AddLblTimeOut.Text = "Time out";
             this.AddLblTimeOut.Click += new System.EventHandler(this.AddLblTimeOut_Click);
@@ -503,12 +508,12 @@
             // 
             this.AddLblDuration.AutoSize = true;
             this.AddLblDuration.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            this.AddLblDuration.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AddLblDuration.Font = new System.Drawing.Font("SF Pro Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.AddLblDuration.ForeColor = System.Drawing.Color.White;
-            this.AddLblDuration.Location = new System.Drawing.Point(988, 512);
+            this.AddLblDuration.Location = new System.Drawing.Point(988, 508);
             this.AddLblDuration.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.AddLblDuration.Name = "AddLblDuration";
-            this.AddLblDuration.Size = new System.Drawing.Size(64, 18);
+            this.AddLblDuration.Size = new System.Drawing.Size(69, 18);
             this.AddLblDuration.TabIndex = 267;
             this.AddLblDuration.Text = "Duration";
             this.AddLblDuration.Click += new System.EventHandler(this.AddLblDuration_Click);
@@ -517,12 +522,12 @@
             // 
             this.AddLlblTimeIn.AutoSize = true;
             this.AddLlblTimeIn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            this.AddLlblTimeIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AddLlblTimeIn.Font = new System.Drawing.Font("SF Pro Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.AddLlblTimeIn.ForeColor = System.Drawing.Color.White;
-            this.AddLlblTimeIn.Location = new System.Drawing.Point(583, 512);
+            this.AddLlblTimeIn.Location = new System.Drawing.Point(583, 508);
             this.AddLlblTimeIn.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.AddLlblTimeIn.Name = "AddLlblTimeIn";
-            this.AddLlblTimeIn.Size = new System.Drawing.Size(56, 18);
+            this.AddLlblTimeIn.Size = new System.Drawing.Size(61, 18);
             this.AddLlblTimeIn.TabIndex = 266;
             this.AddLlblTimeIn.Text = "Time in";
             this.AddLlblTimeIn.Click += new System.EventHandler(this.AddLlblTimeIn_Click);
@@ -531,11 +536,11 @@
             // 
             this.date_duty.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.date_duty.CustomFormat = "";
-            this.date_duty.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.date_duty.Location = new System.Drawing.Point(583, 380);
+            this.date_duty.Font = new System.Drawing.Font("SF Pro Display", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.date_duty.Location = new System.Drawing.Point(583, 379);
             this.date_duty.MinDate = new System.DateTime(1995, 1, 1, 23, 59, 0, 0);
             this.date_duty.Name = "date_duty";
-            this.date_duty.Size = new System.Drawing.Size(349, 28);
+            this.date_duty.Size = new System.Drawing.Size(349, 29);
             this.date_duty.TabIndex = 265;
             this.date_duty.Value = new System.DateTime(2022, 7, 25, 0, 0, 0, 0);
             this.date_duty.ValueChanged += new System.EventHandler(this.date_duty_ValueChanged);
@@ -544,12 +549,12 @@
             // 
             this.AddLblStatus.AutoSize = true;
             this.AddLblStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            this.AddLblStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AddLblStatus.Font = new System.Drawing.Font("SF Pro Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.AddLblStatus.ForeColor = System.Drawing.Color.White;
-            this.AddLblStatus.Location = new System.Drawing.Point(166, 635);
+            this.AddLblStatus.Location = new System.Drawing.Point(166, 625);
             this.AddLblStatus.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.AddLblStatus.Name = "AddLblStatus";
-            this.AddLblStatus.Size = new System.Drawing.Size(50, 18);
+            this.AddLblStatus.Size = new System.Drawing.Size(53, 18);
             this.AddLblStatus.TabIndex = 264;
             this.AddLblStatus.Text = "Status";
             this.AddLblStatus.Click += new System.EventHandler(this.AddLblStatus_Click);
@@ -558,12 +563,12 @@
             // 
             this.AddLblDate.AutoSize = true;
             this.AddLblDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            this.AddLblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AddLblDate.Font = new System.Drawing.Font("SF Pro Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.AddLblDate.ForeColor = System.Drawing.Color.White;
-            this.AddLblDate.Location = new System.Drawing.Point(166, 512);
+            this.AddLblDate.Location = new System.Drawing.Point(166, 508);
             this.AddLblDate.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.AddLblDate.Name = "AddLblDate";
-            this.AddLblDate.Size = new System.Drawing.Size(115, 18);
+            this.AddLblDate.Size = new System.Drawing.Size(121, 18);
             this.AddLblDate.TabIndex = 263;
             this.AddLblDate.Text = "Employee name";
             this.AddLblDate.Click += new System.EventHandler(this.AddLblDate_Click);
@@ -587,7 +592,7 @@
             this.duty_duration.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.duty_duration.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.duty_duration.Enabled = false;
-            this.duty_duration.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.duty_duration.Font = new System.Drawing.Font("SF Pro Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.duty_duration.ForeColor = System.Drawing.Color.Black;
             this.duty_duration.Location = new System.Drawing.Point(988, 533);
             this.duty_duration.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
@@ -603,7 +608,7 @@
             this.overtime.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.overtime.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.overtime.Enabled = false;
-            this.overtime.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.overtime.Font = new System.Drawing.Font("SF Pro Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.overtime.ForeColor = System.Drawing.Color.Black;
             this.overtime.Location = new System.Drawing.Point(988, 655);
             this.overtime.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
@@ -616,9 +621,10 @@
             // 
             // blank_timeout
             // 
-            this.blank_timeout.Location = new System.Drawing.Point(583, 660);
+            this.blank_timeout.Font = new System.Drawing.Font("SF Pro Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.blank_timeout.Location = new System.Drawing.Point(583, 654);
             this.blank_timeout.Name = "blank_timeout";
-            this.blank_timeout.Size = new System.Drawing.Size(349, 27);
+            this.blank_timeout.Size = new System.Drawing.Size(349, 31);
             this.blank_timeout.TabIndex = 295;
             this.blank_timeout.TextChanged += new System.EventHandler(this.blank_timeout_TextChanged);
             // 
@@ -626,11 +632,11 @@
             // 
             this.name_emp.AutoSize = true;
             this.name_emp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            this.name_emp.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.name_emp.Font = new System.Drawing.Font("SF Pro Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.name_emp.ForeColor = System.Drawing.Color.White;
-            this.name_emp.Location = new System.Drawing.Point(166, 543);
+            this.name_emp.Location = new System.Drawing.Point(166, 540);
             this.name_emp.Name = "name_emp";
-            this.name_emp.Size = new System.Drawing.Size(82, 25);
+            this.name_emp.Size = new System.Drawing.Size(100, 24);
             this.name_emp.TabIndex = 296;
             this.name_emp.Text = "----------";
             this.name_emp.Click += new System.EventHandler(this.name_emp_Click);
