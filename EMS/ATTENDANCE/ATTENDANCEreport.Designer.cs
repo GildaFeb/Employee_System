@@ -47,7 +47,6 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.noData = new System.Windows.Forms.Label();
             this.Month_Year = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.attndncrprt_DGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -104,12 +103,12 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("SF Pro Display", 25.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(51)))));
             this.label1.Location = new System.Drawing.Point(84, 68);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(384, 48);
+            this.label1.Size = new System.Drawing.Size(382, 50);
             this.label1.TabIndex = 74;
             this.label1.Text = "Attendance Report";
             // 
@@ -117,12 +116,12 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.ForeColor = System.Drawing.Color.Gray;
+            this.label6.Font = new System.Drawing.Font("SF Pro Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.ForeColor = System.Drawing.Color.DimGray;
             this.label6.Location = new System.Drawing.Point(89, 125);
             this.label6.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(735, 22);
+            this.label6.Size = new System.Drawing.Size(706, 21);
             this.label6.TabIndex = 75;
             this.label6.Text = "Kindly see below the attendance of the employee with their corresponding salary.";
             // 
@@ -145,7 +144,7 @@
             this.pictureBox2.BackColor = System.Drawing.Color.White;
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(995, 96);
+            this.pictureBox2.Location = new System.Drawing.Point(1004, 80);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(35, 28);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -158,7 +157,7 @@
             this.Search.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Search.ForeColor = System.Drawing.Color.DarkGray;
-            this.Search.Location = new System.Drawing.Point(1036, 99);
+            this.Search.Location = new System.Drawing.Point(1045, 83);
             this.Search.Name = "Search";
             this.Search.PlaceholderText = "Enter ID number";
             this.Search.Size = new System.Drawing.Size(341, 23);
@@ -168,7 +167,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(978, 84);
+            this.pictureBox1.Location = new System.Drawing.Point(987, 68);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(422, 52);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -184,7 +183,7 @@
             this.Month_.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(51)))));
             this.Month_.BorderSize = 0;
             this.Month_.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.Month_.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Month_.Font = new System.Drawing.Font("SF Pro Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Month_.ForeColor = System.Drawing.Color.White;
             this.Month_.IconColor = System.Drawing.Color.White;
             this.Month_.Items.AddRange(new object[] {
@@ -219,7 +218,7 @@
             this.Year_.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(51)))));
             this.Year_.BorderSize = 0;
             this.Year_.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Year_.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Year_.Font = new System.Drawing.Font("SF Pro Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Year_.ForeColor = System.Drawing.Color.White;
             this.Year_.IconColor = System.Drawing.Color.White;
             this.Year_.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
@@ -239,7 +238,7 @@
             this.btn_one1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_one1.FlatAppearance.BorderSize = 0;
             this.btn_one1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_one1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_one1.Font = new System.Drawing.Font("SF Pro Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_one1.ForeColor = System.Drawing.Color.White;
             this.btn_one1.Location = new System.Drawing.Point(1160, 889);
             this.btn_one1.Name = "btn_one1";
@@ -253,7 +252,7 @@
             // 
             this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(978, 84);
+            this.pictureBox4.Location = new System.Drawing.Point(987, 68);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(422, 52);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -280,23 +279,11 @@
             this.Month_Year.Size = new System.Drawing.Size(0, 20);
             this.Month_Year.TabIndex = 208;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(1305, 53);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 28);
-            this.label2.TabIndex = 209;
-            this.label2.Text = "Search";
-            // 
             // ATTENDANCEreport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.Month_Year);
             this.Controls.Add(this.noData);
             this.Controls.Add(this.pictureBox2);
@@ -337,6 +324,5 @@
         private PictureBox pictureBox4;
         private Label noData;
         private Label Month_Year;
-        private Label label2;
     }
 }

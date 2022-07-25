@@ -44,7 +44,6 @@
             this.noData = new System.Windows.Forms.Label();
             this.tableDelete = new System.Windows.Forms.DataGridView();
             this.label = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.btn_one2 = new EMS.btn_one();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -55,12 +54,12 @@
             // 
             this.table_label.AutoSize = true;
             this.table_label.BackColor = System.Drawing.Color.Transparent;
-            this.table_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.table_label.Font = new System.Drawing.Font("SF Pro Display", 25.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.table_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(51)))));
             this.table_label.Location = new System.Drawing.Point(88, 68);
             this.table_label.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.table_label.Name = "table_label";
-            this.table_label.Size = new System.Drawing.Size(202, 48);
+            this.table_label.Size = new System.Drawing.Size(200, 50);
             this.table_label.TabIndex = 74;
             this.table_label.Text = "Pendings";
             // 
@@ -68,12 +67,12 @@
             // 
             this.description.AutoSize = true;
             this.description.BackColor = System.Drawing.Color.Transparent;
-            this.description.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.description.ForeColor = System.Drawing.Color.Gray;
+            this.description.Font = new System.Drawing.Font("SF Pro Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.description.ForeColor = System.Drawing.Color.DimGray;
             this.description.Location = new System.Drawing.Point(93, 125);
             this.description.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.description.Name = "description";
-            this.description.Size = new System.Drawing.Size(620, 22);
+            this.description.Size = new System.Drawing.Size(596, 21);
             this.description.TabIndex = 75;
             this.description.Text = "Kindly see below the hours worked of the employee and their status.";
             // 
@@ -97,7 +96,7 @@
             this.btn_one1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_one1.FlatAppearance.BorderSize = 0;
             this.btn_one1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_one1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_one1.Font = new System.Drawing.Font("SF Pro Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_one1.ForeColor = System.Drawing.Color.Black;
             this.btn_one1.Location = new System.Drawing.Point(97, 904);
             this.btn_one1.Name = "btn_one1";
@@ -113,7 +112,7 @@
             this.delete.Cursor = System.Windows.Forms.Cursors.Hand;
             this.delete.FlatAppearance.BorderSize = 0;
             this.delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.delete.Font = new System.Drawing.Font("SF Pro Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.delete.ForeColor = System.Drawing.Color.White;
             this.delete.Location = new System.Drawing.Point(1170, 904);
             this.delete.Name = "delete";
@@ -139,12 +138,12 @@
             // Search
             // 
             this.Search.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Search.Font = new System.Drawing.Font("SF Pro Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Search.ForeColor = System.Drawing.Color.DarkGray;
             this.Search.Location = new System.Drawing.Point(1040, 99);
             this.Search.Name = "Search";
             this.Search.PlaceholderText = "Enter ID Number";
-            this.Search.Size = new System.Drawing.Size(341, 23);
+            this.Search.Size = new System.Drawing.Size(341, 24);
             this.Search.TabIndex = 131;
             this.Search.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -166,7 +165,7 @@
             this.reload_table.Cursor = System.Windows.Forms.Cursors.Hand;
             this.reload_table.FlatAppearance.BorderSize = 0;
             this.reload_table.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.reload_table.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.reload_table.Font = new System.Drawing.Font("SF Pro Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.reload_table.ForeColor = System.Drawing.Color.White;
             this.reload_table.Location = new System.Drawing.Point(638, 904);
             this.reload_table.Name = "reload_table";
@@ -235,24 +234,13 @@
             this.label.TabIndex = 208;
             this.label.Visible = false;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(1309, 53);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 28);
-            this.label2.TabIndex = 209;
-            this.label2.Text = "Search";
-            // 
             // btn_one2
             // 
             this.btn_one2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.btn_one2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_one2.FlatAppearance.BorderSize = 0;
             this.btn_one2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_one2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_one2.Font = new System.Drawing.Font("SF Pro Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_one2.ForeColor = System.Drawing.Color.White;
             this.btn_one2.Location = new System.Drawing.Point(904, 904);
             this.btn_one2.Name = "btn_one2";
@@ -269,7 +257,6 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
             this.Controls.Add(this.btn_one2);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label);
             this.Controls.Add(this.noData);
             this.Controls.Add(this.tableDelete);
@@ -309,7 +296,6 @@
         private Label noData;
         private DataGridView tableDelete;
         private Label label;
-        private Label label2;
         private btn_one btn_one2;
     }
 }

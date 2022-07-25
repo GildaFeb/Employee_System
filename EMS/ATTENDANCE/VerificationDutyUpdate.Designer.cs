@@ -42,10 +42,9 @@
             this.btn_one2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_one2.Font = new System.Drawing.Font("SF Pro Text", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_one2.ForeColor = System.Drawing.Color.White;
-            this.btn_one2.Location = new System.Drawing.Point(316, 215);
-            this.btn_one2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_one2.Location = new System.Drawing.Point(361, 287);
             this.btn_one2.Name = "btn_one2";
-            this.btn_one2.Size = new System.Drawing.Size(118, 38);
+            this.btn_one2.Size = new System.Drawing.Size(135, 51);
             this.btn_one2.TabIndex = 86;
             this.btn_one2.Text = "Confirm";
             this.btn_one2.UseVisualStyleBackColor = false;
@@ -59,10 +58,9 @@
             this.btn_one1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_one1.Font = new System.Drawing.Font("SF Pro Text", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_one1.ForeColor = System.Drawing.Color.White;
-            this.btn_one1.Location = new System.Drawing.Point(121, 215);
-            this.btn_one1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_one1.Location = new System.Drawing.Point(138, 287);
             this.btn_one1.Name = "btn_one1";
-            this.btn_one1.Size = new System.Drawing.Size(118, 38);
+            this.btn_one1.Size = new System.Drawing.Size(135, 51);
             this.btn_one1.TabIndex = 87;
             this.btn_one1.Text = "Cancel";
             this.btn_one1.UseVisualStyleBackColor = false;
@@ -72,11 +70,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(216)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(169, 83);
+            this.label1.Font = new System.Drawing.Font("SF Pro Display", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(207)))), ((int)(((byte)(13)))));
+            this.label1.Location = new System.Drawing.Point(193, 91);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(213, 31);
+            this.label1.Size = new System.Drawing.Size(259, 41);
             this.label1.TabIndex = 88;
             this.label1.Text = "Confirm update";
             // 
@@ -86,27 +84,26 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("SF Pro Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.DimGray;
-            this.label3.Location = new System.Drawing.Point(150, 124);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(171, 153);
+            this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(264, 36);
+            this.label3.Size = new System.Drawing.Size(322, 42);
             this.label3.TabIndex = 89;
             this.label3.Text = "Are you sure you want to modify the\r\nemployee\'s duty duration?";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // verificationAttenUpdate
+            // VerificationDutyUpdate
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(577, 320);
+            this.ClientSize = new System.Drawing.Size(659, 427);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btn_one2);
             this.Controls.Add(this.btn_one1);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
-            this.Name = "verificationAttenUpdate";
+            this.Name = "VerificationDutyUpdate";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.ResumeLayout(false);

@@ -205,25 +205,26 @@
             // 
             this.dayTodayLbl.AutoSize = true;
             this.dayTodayLbl.BackColor = System.Drawing.Color.White;
-            this.dayTodayLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dayTodayLbl.Font = new System.Drawing.Font("SF Pro Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dayTodayLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(51)))));
             this.dayTodayLbl.Location = new System.Drawing.Point(594, 661);
             this.dayTodayLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.dayTodayLbl.Name = "dayTodayLbl";
-            this.dayTodayLbl.Size = new System.Drawing.Size(206, 25);
+            this.dayTodayLbl.Size = new System.Drawing.Size(202, 24);
             this.dayTodayLbl.TabIndex = 72;
             this.dayTodayLbl.Text = "Today is SATURDAY.";
+            this.dayTodayLbl.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.dayTodayLbl.Click += new System.EventHandler(this.dayTodayLbl_Click);
             // 
             // clockLbl
             // 
             this.clockLbl.AutoSize = true;
             this.clockLbl.BackColor = System.Drawing.Color.White;
-            this.clockLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.clockLbl.Font = new System.Drawing.Font("SF Pro Display", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.clockLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(51)))));
             this.clockLbl.Location = new System.Drawing.Point(587, 593);
             this.clockLbl.Name = "clockLbl";
-            this.clockLbl.Size = new System.Drawing.Size(145, 54);
+            this.clockLbl.Size = new System.Drawing.Size(129, 56);
             this.clockLbl.TabIndex = 18;
             this.clockLbl.Text = "11:11";
             this.clockLbl.Click += new System.EventHandler(this.label6_Click);
@@ -257,11 +258,11 @@
             // 
             this.project_num.AutoSize = true;
             this.project_num.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            this.project_num.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.project_num.Font = new System.Drawing.Font("SF Pro Display", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.project_num.ForeColor = System.Drawing.Color.White;
             this.project_num.Location = new System.Drawing.Point(748, 268);
             this.project_num.Name = "project_num";
-            this.project_num.Size = new System.Drawing.Size(31, 32);
+            this.project_num.Size = new System.Drawing.Size(33, 33);
             this.project_num.TabIndex = 111;
             this.project_num.Text = "0";
             this.project_num.Click += new System.EventHandler(this.label7_Click);
@@ -270,11 +271,11 @@
             // 
             this.guard.AutoSize = true;
             this.guard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            this.guard.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.guard.Font = new System.Drawing.Font("SF Pro Display", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.guard.ForeColor = System.Drawing.Color.White;
-            this.guard.Location = new System.Drawing.Point(819, 274);
+            this.guard.Location = new System.Drawing.Point(816, 274);
             this.guard.Name = "guard";
-            this.guard.Size = new System.Drawing.Size(141, 22);
+            this.guard.Size = new System.Drawing.Size(146, 21);
             this.guard.TabIndex = 110;
             this.guard.Text = "Project Manager";
             // 
@@ -282,11 +283,11 @@
             // 
             this.fullstack_dev_num.AutoSize = true;
             this.fullstack_dev_num.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            this.fullstack_dev_num.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.fullstack_dev_num.Font = new System.Drawing.Font("SF Pro Display", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.fullstack_dev_num.ForeColor = System.Drawing.Color.White;
             this.fullstack_dev_num.Location = new System.Drawing.Point(748, 318);
             this.fullstack_dev_num.Name = "fullstack_dev_num";
-            this.fullstack_dev_num.Size = new System.Drawing.Size(31, 32);
+            this.fullstack_dev_num.Size = new System.Drawing.Size(33, 33);
             this.fullstack_dev_num.TabIndex = 111;
             this.fullstack_dev_num.Text = "0";
             this.fullstack_dev_num.Click += new System.EventHandler(this.label9_Click);
@@ -295,11 +296,11 @@
             // 
             this.instructor.AutoSize = true;
             this.instructor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            this.instructor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.instructor.Font = new System.Drawing.Font("SF Pro Display", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.instructor.ForeColor = System.Drawing.Color.White;
-            this.instructor.Location = new System.Drawing.Point(819, 324);
+            this.instructor.Location = new System.Drawing.Point(838, 324);
             this.instructor.Name = "instructor";
-            this.instructor.Size = new System.Drawing.Size(123, 22);
+            this.instructor.Size = new System.Drawing.Size(124, 21);
             this.instructor.TabIndex = 110;
             this.instructor.Text = "Fullstack Dev.";
             // 
@@ -307,11 +308,11 @@
             // 
             this.software_engineer_num.AutoSize = true;
             this.software_engineer_num.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            this.software_engineer_num.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.software_engineer_num.Font = new System.Drawing.Font("SF Pro Display", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.software_engineer_num.ForeColor = System.Drawing.Color.White;
             this.software_engineer_num.Location = new System.Drawing.Point(748, 366);
             this.software_engineer_num.Name = "software_engineer_num";
-            this.software_engineer_num.Size = new System.Drawing.Size(31, 32);
+            this.software_engineer_num.Size = new System.Drawing.Size(33, 33);
             this.software_engineer_num.TabIndex = 111;
             this.software_engineer_num.Text = "0";
             this.software_engineer_num.Click += new System.EventHandler(this.label11_Click);
@@ -320,11 +321,11 @@
             // 
             this.software_eng.AutoSize = true;
             this.software_eng.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            this.software_eng.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.software_eng.Font = new System.Drawing.Font("SF Pro Display", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.software_eng.ForeColor = System.Drawing.Color.White;
-            this.software_eng.Location = new System.Drawing.Point(819, 372);
+            this.software_eng.Location = new System.Drawing.Point(832, 372);
             this.software_eng.Name = "software_eng";
-            this.software_eng.Size = new System.Drawing.Size(129, 22);
+            this.software_eng.Size = new System.Drawing.Size(130, 21);
             this.software_eng.TabIndex = 110;
             this.software_eng.Text = "Software Engr.";
             this.software_eng.Click += new System.EventHandler(this.label12_Click);
@@ -333,11 +334,11 @@
             // 
             this.emp_num.AutoSize = true;
             this.emp_num.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            this.emp_num.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.emp_num.Font = new System.Drawing.Font("SF Pro Display", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.emp_num.ForeColor = System.Drawing.Color.White;
             this.emp_num.Location = new System.Drawing.Point(409, 228);
             this.emp_num.Name = "emp_num";
-            this.emp_num.Size = new System.Drawing.Size(47, 51);
+            this.emp_num.Size = new System.Drawing.Size(52, 53);
             this.emp_num.TabIndex = 111;
             this.emp_num.Text = "0";
             this.emp_num.Click += new System.EventHandler(this.emp_num_Click);
@@ -346,11 +347,11 @@
             // 
             this.total_records.AutoSize = true;
             this.total_records.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            this.total_records.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.total_records.Font = new System.Drawing.Font("SF Pro Display", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.total_records.ForeColor = System.Drawing.Color.White;
             this.total_records.Location = new System.Drawing.Point(409, 351);
             this.total_records.Name = "total_records";
-            this.total_records.Size = new System.Drawing.Size(47, 51);
+            this.total_records.Size = new System.Drawing.Size(52, 53);
             this.total_records.TabIndex = 111;
             this.total_records.Text = "0";
             this.total_records.Click += new System.EventHandler(this.time_in_Click);
@@ -359,11 +360,11 @@
             // 
             this.label23.AutoSize = true;
             this.label23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label23.Font = new System.Drawing.Font("SF Pro Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label23.ForeColor = System.Drawing.Color.White;
             this.label23.Location = new System.Drawing.Point(311, 279);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(155, 32);
+            this.label23.Size = new System.Drawing.Size(157, 33);
             this.label23.TabIndex = 110;
             this.label23.Text = "Employees";
             // 
@@ -381,11 +382,11 @@
             // 
             this.kk.AutoSize = true;
             this.kk.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            this.kk.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.kk.Font = new System.Drawing.Font("SF Pro Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.kk.ForeColor = System.Drawing.Color.White;
             this.kk.Location = new System.Drawing.Point(276, 407);
             this.kk.Name = "kk";
-            this.kk.Size = new System.Drawing.Size(190, 32);
+            this.kk.Size = new System.Drawing.Size(197, 33);
             this.kk.TabIndex = 110;
             this.kk.Text = "Total Records";
             // 
@@ -393,11 +394,11 @@
             // 
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label13.Font = new System.Drawing.Font("SF Pro Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label13.ForeColor = System.Drawing.Color.White;
             this.label13.Location = new System.Drawing.Point(869, 208);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(91, 25);
+            this.label13.Size = new System.Drawing.Size(96, 24);
             this.label13.TabIndex = 110;
             this.label13.Text = "Positions";
             // 
@@ -405,11 +406,11 @@
             // 
             this.onLeave.AutoSize = true;
             this.onLeave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            this.onLeave.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.onLeave.Font = new System.Drawing.Font("SF Pro Display", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.onLeave.ForeColor = System.Drawing.Color.White;
             this.onLeave.Location = new System.Drawing.Point(1334, 274);
             this.onLeave.Name = "onLeave";
-            this.onLeave.Size = new System.Drawing.Size(47, 51);
+            this.onLeave.Size = new System.Drawing.Size(52, 53);
             this.onLeave.TabIndex = 111;
             this.onLeave.Text = "0";
             // 
@@ -417,11 +418,11 @@
             // 
             this.lbel99.AutoSize = true;
             this.lbel99.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            this.lbel99.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbel99.Font = new System.Drawing.Font("SF Pro Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbel99.ForeColor = System.Drawing.Color.White;
             this.lbel99.Location = new System.Drawing.Point(1253, 339);
             this.lbel99.Name = "lbel99";
-            this.lbel99.Size = new System.Drawing.Size(137, 32);
+            this.lbel99.Size = new System.Drawing.Size(136, 33);
             this.lbel99.TabIndex = 110;
             this.lbel99.Text = "On Leave";
             // 
@@ -451,11 +452,11 @@
             // 
             this.administrator_num.AutoSize = true;
             this.administrator_num.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            this.administrator_num.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.administrator_num.Font = new System.Drawing.Font("SF Pro Display", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.administrator_num.ForeColor = System.Drawing.Color.White;
             this.administrator_num.Location = new System.Drawing.Point(748, 414);
             this.administrator_num.Name = "administrator_num";
-            this.administrator_num.Size = new System.Drawing.Size(31, 32);
+            this.administrator_num.Size = new System.Drawing.Size(33, 33);
             this.administrator_num.TabIndex = 111;
             this.administrator_num.Text = "0";
             this.administrator_num.Click += new System.EventHandler(this.label11_Click);
@@ -464,11 +465,11 @@
             // 
             this.administrator.AutoSize = true;
             this.administrator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
-            this.administrator.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.administrator.Font = new System.Drawing.Font("SF Pro Display", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.administrator.ForeColor = System.Drawing.Color.White;
-            this.administrator.Location = new System.Drawing.Point(819, 420);
+            this.administrator.Location = new System.Drawing.Point(839, 420);
             this.administrator.Name = "administrator";
-            this.administrator.Size = new System.Drawing.Size(115, 22);
+            this.administrator.Size = new System.Drawing.Size(122, 21);
             this.administrator.TabIndex = 110;
             this.administrator.Text = "Administrator";
             // 
@@ -490,7 +491,7 @@
             this.btn_about.FlatAppearance.BorderSize = 0;
             this.btn_about.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_about.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_about.ForeColor = System.Drawing.Color.Gray;
+            this.btn_about.ForeColor = System.Drawing.Color.DimGray;
             this.btn_about.Location = new System.Drawing.Point(115, 801);
             this.btn_about.Name = "btn_about";
             this.btn_about.Size = new System.Drawing.Size(135, 50);
