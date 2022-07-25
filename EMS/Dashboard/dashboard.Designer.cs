@@ -240,7 +240,7 @@
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(871, 593);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(44, 258);
+            this.pictureBox3.Size = new System.Drawing.Size(44, 269);
             this.pictureBox3.TabIndex = 109;
             this.pictureBox3.TabStop = false;
             // 
@@ -338,7 +338,7 @@
             this.emp_num.ForeColor = System.Drawing.Color.White;
             this.emp_num.Location = new System.Drawing.Point(409, 228);
             this.emp_num.Name = "emp_num";
-            this.emp_num.Size = new System.Drawing.Size(52, 53);
+            this.emp_num.Size = new System.Drawing.Size(50, 51);
             this.emp_num.TabIndex = 111;
             this.emp_num.Text = "0";
             this.emp_num.Click += new System.EventHandler(this.emp_num_Click);
@@ -351,7 +351,7 @@
             this.total_records.ForeColor = System.Drawing.Color.White;
             this.total_records.Location = new System.Drawing.Point(409, 351);
             this.total_records.Name = "total_records";
-            this.total_records.Size = new System.Drawing.Size(52, 53);
+            this.total_records.Size = new System.Drawing.Size(50, 51);
             this.total_records.TabIndex = 111;
             this.total_records.Text = "0";
             this.total_records.Click += new System.EventHandler(this.time_in_Click);
@@ -410,7 +410,7 @@
             this.onLeave.ForeColor = System.Drawing.Color.White;
             this.onLeave.Location = new System.Drawing.Point(1334, 274);
             this.onLeave.Name = "onLeave";
-            this.onLeave.Size = new System.Drawing.Size(52, 53);
+            this.onLeave.Size = new System.Drawing.Size(50, 51);
             this.onLeave.TabIndex = 111;
             this.onLeave.Text = "0";
             // 
