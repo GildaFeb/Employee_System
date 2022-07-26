@@ -65,12 +65,14 @@
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.btn_about = new EMS.btn_one();
             this.btn_one2 = new EMS.btn_one();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // db_ViewSalaryBtn
@@ -179,10 +181,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(216)))), ((int)(((byte)(0)))));
+            this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("SF Pro Display", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(51)))));
-            this.label2.Location = new System.Drawing.Point(105, 593);
+            this.label2.Location = new System.Drawing.Point(575, 575);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(190, 72);
             this.label2.TabIndex = 18;
@@ -191,26 +193,26 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(216)))), ((int)(((byte)(0)))));
+            this.label4.BackColor = System.Drawing.Color.White;
             this.label4.Font = new System.Drawing.Font("SF Pro Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(51)))));
-            this.label4.Location = new System.Drawing.Point(115, 683);
+            this.label4.Location = new System.Drawing.Point(585, 665);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(311, 48);
+            this.label4.Size = new System.Drawing.Size(264, 72);
             this.label4.TabIndex = 72;
-            this.label4.Text = "Welcome back,\r\nmake this day a productive one!";
+            this.label4.Text = "Welcome back,\r\nmake this day a productive\r\none!";
             // 
             // dayTodayLbl
             // 
             this.dayTodayLbl.AutoSize = true;
-            this.dayTodayLbl.BackColor = System.Drawing.Color.White;
-            this.dayTodayLbl.Font = new System.Drawing.Font("SF Pro Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dayTodayLbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(216)))), ((int)(((byte)(0)))));
+            this.dayTodayLbl.Font = new System.Drawing.Font("SF Pro Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dayTodayLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(51)))));
-            this.dayTodayLbl.Location = new System.Drawing.Point(594, 661);
+            this.dayTodayLbl.Location = new System.Drawing.Point(107, 685);
             this.dayTodayLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.dayTodayLbl.Name = "dayTodayLbl";
-            this.dayTodayLbl.Size = new System.Drawing.Size(202, 24);
+            this.dayTodayLbl.Size = new System.Drawing.Size(282, 33);
             this.dayTodayLbl.TabIndex = 72;
             this.dayTodayLbl.Text = "Today is SATURDAY.";
             this.dayTodayLbl.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -219,12 +221,12 @@
             // clockLbl
             // 
             this.clockLbl.AutoSize = true;
-            this.clockLbl.BackColor = System.Drawing.Color.White;
-            this.clockLbl.Font = new System.Drawing.Font("SF Pro Display", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.clockLbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(216)))), ((int)(((byte)(0)))));
+            this.clockLbl.Font = new System.Drawing.Font("SF Pro Display", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.clockLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(51)))));
-            this.clockLbl.Location = new System.Drawing.Point(587, 593);
+            this.clockLbl.Location = new System.Drawing.Point(100, 593);
             this.clockLbl.Name = "clockLbl";
-            this.clockLbl.Size = new System.Drawing.Size(129, 56);
+            this.clockLbl.Size = new System.Drawing.Size(163, 72);
             this.clockLbl.TabIndex = 18;
             this.clockLbl.Text = "11:11";
             this.clockLbl.Click += new System.EventHandler(this.label6_Click);
@@ -238,7 +240,7 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.White;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(871, 593);
+            this.pictureBox3.Location = new System.Drawing.Point(846, 593);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(44, 269);
             this.pictureBox3.TabIndex = 109;
@@ -518,6 +520,16 @@
             this.btn_one2.UseVisualStyleBackColor = false;
             this.btn_one2.Click += new System.EventHandler(this.btn_one2_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(893, 575);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(529, 306);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 133;
+            this.pictureBox1.TabStop = false;
+            // 
             // dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -556,6 +568,7 @@
             this.Controls.Add(this.db_ViewEmployeesBtn);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.db_ViewWelcomeBtn);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.db_ViewCalendarBtn);
             this.Name = "dashboard";
             this.Size = new System.Drawing.Size(1555, 1033);
@@ -566,6 +579,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -608,5 +622,6 @@
         private PictureBox pictureBox8;
         private btn_one btn_about;
         private btn_one btn_one2;
+        private PictureBox pictureBox1;
     }
 }
