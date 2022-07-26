@@ -39,21 +39,23 @@ namespace EMS
 
         private void emp_Addbtn_Click(object sender, EventArgs e)
         {
-            this.Hide(); //unfinished
+            this.SendToBack();
             EMPLOYEESadd_revised employeesAdd_revised = new EMPLOYEESadd_revised();
-            employeesAdd_revised.Show();
+            employeesAdd_revised.BringToFront();
         }
 
         private void emp_Updatebtn_Click(object sender, EventArgs e)
         {
+            this.SendToBack(); 
             EMPLOYEESupdate_revised employeesUpdate_revised = new EMPLOYEESupdate_revised();
-            employeesUpdate_revised.Show();
+            employeesUpdate_revised.BringToFront();
         }
 
         private void emp_Deletebtn_Click(object sender, EventArgs e)
         {
+            this.SendToBack(); 
             EMPLOYEESdelete employeesDelete = new EMPLOYEESdelete();
-            employeesDelete.Show();
+            employeesDelete.BringToFront();
         }
     }
 }

@@ -61,7 +61,7 @@
     <value>-8, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="emp_Addbtn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="attendanceReport.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIwAAACMCAYAAACuwEE+AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAABM
         4QAATOEBijN3hwAAD85JREFUeF7tnQlwVdUdxk+1alXUura2M1JrZ1QQtS214j5WR1ttqUIZN0RUZJFN
@@ -134,7 +134,7 @@
         n712np62BrCDlg047GbnVwgcfKZ8tnzG/wNMgc/ahDtXAxwpWaP+D1l8W7iprRs8AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="btn_one3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="duty_addBtn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGkAAABpCAYAAAA5gg06AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAABM
         4QAATOEBijN3hwAAC6hJREFUeF7tnQWsLEkVhhd3J7i7BxLcg8uiiywuiwZn8QDBCQR3Ce7ubou7O8Fh
@@ -190,7 +190,7 @@
         p2pTto8hAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="btn_one4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="duty_updateBtn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGkAAABpCAYAAAA5gg06AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAABM
         4QAATOEBijN3hwAABbJJREFUeF7t3VmodWMcBvDPPE8XCFeUiGTIjeSCpFwYUzLPM5lFMnwuuFMos8xK
@@ -353,10 +353,10 @@
         5/IVr+ouWgebHhndYzzjiy7zIXrP1tqSjOOjAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="btn_one1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="duty_deleteBtn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGkAAABpCAYAAAA5gg06AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAABM
-        4wAATOMB9c20DgAADbBJREFUeF7tnXWwPTcVx4tDcStO8VJcirtbByhQKM5Q3J3BvcjgboO2tHhpGdyd
+        4QAATOEBijN3hwAADbBJREFUeF7tnXWwPTcVx4tDcStO8VJcirtbByhQKM5Q3J3BvcjgboO2tHhpGdyd
         Ii0Ud4q7u/z4fi53d3L3npNkd7Py3n3fmc8fL3OT9+7LbnJyzkmy265du3aYOWbhDDmTuJq4o3iWeJv4
         iDhW/FL8S1j6j/it+Jr4qHiHeLG4q7i2OJewft+sMAtnwGnFNcXjxcfED8Q/RUnRgT8RnxV0/L7izML6
         eybFLJyIM4obixeJHwn+iWOLt/JgcYA4p7D+ztExC0fmMuKp4htiTvqpeJm4nrD+7tEwC0eCL/928Scx
@@ -418,6 +418,6 @@
 </value>
   </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>36</value>
+    <value>25</value>
   </metadata>
 </root>

@@ -85,7 +85,6 @@ namespace EMS
             addEmp_Pnl.Hide();
             updateEmp_Pnl.Hide();
             deleteEmp_Pnl.Hide();
-
         }
 
         private void subBtn_AddEmp_Click(object sender, EventArgs e)

@@ -34,5 +34,33 @@ namespace EMS
         {
             clockLbl_Attendance.Text = DateTime.Now.ToLongTimeString();
         }
+
+        private void duty_addBtn_Click(object sender, EventArgs e)
+        {
+            this.SendToBack();
+            ATTENDANCEdutydurationAddREVISED dutydurationAdd = new ATTENDANCEdutydurationAddREVISED();
+            dutydurationAdd.Show();
+        }
+
+        private void duty_updateBtn_Click(object sender, EventArgs e)
+        {
+            this.SendToBack();
+            ATTENDANCEdutydurationUpdREVISED dutydurationUpdate = new ATTENDANCEdutydurationUpdREVISED();
+            dutydurationUpdate.BringToFront();
+        }
+
+        private void duty_deleteBtn_Click(object sender, EventArgs e)
+        {
+            this.SendToBack();
+            ATTENDANCEdutydurationDel dutydurationDelete = new ATTENDANCEdutydurationDel();
+            dutydurationDelete.BringToFront();
+        }
+
+        private void attendanceReport_Click(object sender, EventArgs e)
+        {
+            this.SendToBack();
+            ATTENDANCEreport attendanceReport = new ATTENDANCEreport();
+            attendanceReport.BringToFront();
+        }
     }
 }
