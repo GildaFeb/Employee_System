@@ -133,8 +133,8 @@ namespace LoginForm
 
         private void btn_one2_Click(object sender, EventArgs e)
         {
-            LogTxtUser.Texts = "compProg2@gmail.com";
-            LogTxtPass.Texts = "BSIT12";
+            LogTxtUser.Texts = "";
+            LogTxtPass.Texts = "";
             LogTxtUser.Focus();
         }
     }

@@ -240,7 +240,7 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.White;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(846, 593);
+            this.pictureBox3.Location = new System.Drawing.Point(840, 593);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(44, 269);
             this.pictureBox3.TabIndex = 109;
@@ -535,6 +535,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.btn_one2);
             this.Controls.Add(this.btn_about);
             this.Controls.Add(this.pictureBox9);
@@ -559,7 +560,6 @@
             this.Controls.Add(this.emp_num);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.dayTodayLbl);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.clockLbl);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);

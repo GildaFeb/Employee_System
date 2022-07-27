@@ -77,7 +77,7 @@
             this.LogTogglePass.Name = "LogTogglePass";
             this.LogTogglePass.OffBackColor = System.Drawing.Color.Gray;
             this.LogTogglePass.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.LogTogglePass.OnBackColor = System.Drawing.Color.MediumSlateBlue;
+            this.LogTogglePass.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(202)))), ((int)(((byte)(63)))));
             this.LogTogglePass.OnToggleColor = System.Drawing.Color.WhiteSmoke;
             this.LogTogglePass.Size = new System.Drawing.Size(45, 22);
             this.LogTogglePass.TabIndex = 22;
@@ -159,7 +159,7 @@
             this.LogLblTitle.ForeColor = System.Drawing.Color.White;
             this.LogLblTitle.Location = new System.Drawing.Point(88, 80);
             this.LogLblTitle.Name = "LogLblTitle";
-            this.LogLblTitle.Size = new System.Drawing.Size(247, 53);
+            this.LogLblTitle.Size = new System.Drawing.Size(243, 51);
             this.LogLblTitle.TabIndex = 12;
             this.LogLblTitle.Text = "Let\'s start";
             // 
@@ -238,6 +238,7 @@
             this.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(165)))), ((int)(((byte)(169)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.MaximizeBox = false;
             this.Name = "LogForm";
