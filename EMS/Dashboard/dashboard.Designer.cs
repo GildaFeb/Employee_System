@@ -500,6 +500,7 @@
             this.btn_about.TabIndex = 127;
             this.btn_about.Text = "Log out";
             this.btn_about.UseVisualStyleBackColor = false;
+            this.btn_about.Click += new System.EventHandler(this.btn_about_Click);
             // 
             // btn_one2
             // 

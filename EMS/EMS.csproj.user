@@ -25,7 +25,7 @@
     <Compile Update="Employees\errorEmptyFields.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="LoginForm\LogForm.cs">
+    <Compile Update="LoginForm\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="LoginForm\FormMessageBox.cs">
@@ -56,6 +56,9 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="ATTENDANCE\SuccessRepDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LogOut.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="MainForm.cs">

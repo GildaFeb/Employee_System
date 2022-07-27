@@ -1719,3 +1719,4 @@ C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\EMS - WORKFLOW - JUL 27\Em
 C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\EMS - WORKFLOW - JUL 27\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.pdb
 C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\EMS - WORKFLOW - JUL 27\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.genruntimeconfig.cache
 C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\EMS - WORKFLOW - JUL 27\Employee_System\EMS\obj\Debug\net6.0-windows\ref\EMS.dll
+C:\Users\WELCOME\Desktop\[SUB] Computer Programming 2\EMS - WORKFLOW - JUL 27\Employee_System\EMS\obj\Debug\net6.0-windows\EMS.LogOut.resources

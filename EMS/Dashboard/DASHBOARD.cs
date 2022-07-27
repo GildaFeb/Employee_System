@@ -121,5 +121,11 @@ namespace EMS
         {
 
         }
+
+        private void btn_about_Click(object sender, EventArgs e)
+        {
+            LogOut logOut = new LogOut();
+            logOut.Show();
+        }
     }
 }

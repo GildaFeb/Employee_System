@@ -103,7 +103,7 @@ namespace LoginForm
                 LogTxtPass.PasswordChar = true;
             }
         }
-
+        
         private void btn_one1_Click(object sender, EventArgs e)
         {
             if(LogTxtUser.Texts == "compProg2@gmail.com" && LogTxtPass.Texts == "BSIT12")
@@ -136,6 +136,11 @@ namespace LoginForm
             LogTxtUser.Texts = "";
             LogTxtPass.Texts = "";
             LogTxtUser.Focus();
+        }
+
+        private void LogForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
