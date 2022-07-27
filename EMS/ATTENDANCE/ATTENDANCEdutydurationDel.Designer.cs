@@ -67,12 +67,12 @@
             // 
             this.description.AutoSize = true;
             this.description.BackColor = System.Drawing.Color.Transparent;
-            this.description.Font = new System.Drawing.Font("SF Pro Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.description.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.description.ForeColor = System.Drawing.Color.DimGray;
             this.description.Location = new System.Drawing.Point(93, 125);
             this.description.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.description.Name = "description";
-            this.description.Size = new System.Drawing.Size(596, 21);
+            this.description.Size = new System.Drawing.Size(553, 22);
             this.description.TabIndex = 75;
             this.description.Text = "Kindly see below the hours worked of the employee and their status.";
             // 
@@ -92,12 +92,12 @@
             // 
             // btn_one1
             // 
-            this.btn_one1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(165)))), ((int)(((byte)(174)))));
+            this.btn_one1.BackColor = System.Drawing.Color.DimGray;
             this.btn_one1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_one1.FlatAppearance.BorderSize = 0;
             this.btn_one1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_one1.Font = new System.Drawing.Font("SF Pro Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_one1.ForeColor = System.Drawing.Color.Black;
+            this.btn_one1.ForeColor = System.Drawing.Color.White;
             this.btn_one1.Location = new System.Drawing.Point(97, 904);
             this.btn_one1.Name = "btn_one1";
             this.btn_one1.Size = new System.Drawing.Size(234, 51);
@@ -138,12 +138,12 @@
             // Search
             // 
             this.Search.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Search.Font = new System.Drawing.Font("SF Pro Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Search.ForeColor = System.Drawing.Color.DarkGray;
             this.Search.Location = new System.Drawing.Point(1040, 99);
             this.Search.Name = "Search";
             this.Search.PlaceholderText = "Enter ID Number";
-            this.Search.Size = new System.Drawing.Size(341, 24);
+            this.Search.Size = new System.Drawing.Size(341, 23);
             this.Search.TabIndex = 131;
             this.Search.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 

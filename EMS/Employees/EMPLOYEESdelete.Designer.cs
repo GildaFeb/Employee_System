@@ -53,12 +53,12 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("SF Pro Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.Color.DimGray;
             this.label6.Location = new System.Drawing.Point(109, 141);
             this.label6.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(739, 21);
+            this.label6.Size = new System.Drawing.Size(682, 22);
             this.label6.TabIndex = 74;
             this.label6.Text = "Search for the ID number or check the check box of the employee you want to delet" +
     "e\r\n";
@@ -92,12 +92,12 @@
             // Search
             // 
             this.Search.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Search.Font = new System.Drawing.Font("SF Pro Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Search.ForeColor = System.Drawing.Color.DarkGray;
             this.Search.Location = new System.Drawing.Point(1045, 99);
             this.Search.Name = "Search";
             this.Search.PlaceholderText = "Enter ID Number";
-            this.Search.Size = new System.Drawing.Size(341, 24);
+            this.Search.Size = new System.Drawing.Size(341, 23);
             this.Search.TabIndex = 75;
             this.Search.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -129,12 +129,12 @@
             // 
             // clear_check
             // 
-            this.clear_check.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(165)))), ((int)(((byte)(174)))));
+            this.clear_check.BackColor = System.Drawing.Color.DimGray;
             this.clear_check.Cursor = System.Windows.Forms.Cursors.Hand;
             this.clear_check.FlatAppearance.BorderSize = 0;
             this.clear_check.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.clear_check.Font = new System.Drawing.Font("SF Pro Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.clear_check.ForeColor = System.Drawing.Color.Black;
+            this.clear_check.ForeColor = System.Drawing.Color.White;
             this.clear_check.Location = new System.Drawing.Point(104, 873);
             this.clear_check.Name = "clear_check";
             this.clear_check.Size = new System.Drawing.Size(219, 51);

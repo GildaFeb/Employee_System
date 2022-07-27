@@ -29,7 +29,8 @@ namespace EMS
                 timeout.Enabled = true;
                 now_timein.Enabled = true;
                 now_timeout.Enabled = true;
-
+                blank_timeout.Visible = true;
+                blank_timein.Visible = true;
                 submit_cover.Visible = false;
                 pending_cover.Visible = false;
             }
@@ -180,7 +181,8 @@ namespace EMS
                 timeout.Enabled = true;
                 now_timein.Enabled = true;
                 now_timeout.Enabled = true;
-
+                blank_timeout.Visible = true;
+                blank_timein.Visible = true;
                 submit_cover.Visible = false;
                 pending_cover.Visible = false;
             }
@@ -479,7 +481,7 @@ namespace EMS
                         suffix = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).suffix.ToString();
                         lastName = Employee_Details.Employee_Database.ShowEmployee(employee_id.Text).last_name.ToString();
 
-                        employee_name.Text = firstName + " " + suffix;
+                        employee_name.Text = firstName + " " + lastName;
                     }
                     else
                     {
@@ -937,10 +939,10 @@ namespace EMS
                         Fullname = employee_name.Text,
                         duty_date = date_duty.Text,
                         status = status_.Text,
-                        timeIn = timein.Text,
-                        timeOut = timeout.Text,
-                        duration = duty_duration.Text,
-                        overtime = overtime.Text,
+                        timeIn = "0",
+                        timeOut = "0",
+                        duration = "0",
+                        overtime = "0",
 
                     };
                     if (Employee_Details.Employee_Database.SubmitReport(_record) == true && Employee_Details.Employee_Database.AddHistory(_Pending) == true)
@@ -994,6 +996,11 @@ namespace EMS
         }
 
         private void pending_cover_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void maskedTextBox2_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
 
         }

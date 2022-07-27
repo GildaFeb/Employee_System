@@ -510,5 +510,15 @@ namespace EMS
         {
 
         }
+
+        private void last_name_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
+
+
+
+
+

@@ -116,12 +116,12 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("SF Pro Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.Color.DimGray;
             this.label6.Location = new System.Drawing.Point(89, 125);
             this.label6.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(706, 21);
+            this.label6.Size = new System.Drawing.Size(655, 22);
             this.label6.TabIndex = 75;
             this.label6.Text = "Kindly see below the attendance of the employee with their corresponding salary.";
             // 
@@ -183,7 +183,7 @@
             this.Month_.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(51)))));
             this.Month_.BorderSize = 0;
             this.Month_.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.Month_.Font = new System.Drawing.Font("SF Pro Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Month_.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Month_.ForeColor = System.Drawing.Color.White;
             this.Month_.IconColor = System.Drawing.Color.White;
             this.Month_.Items.AddRange(new object[] {
@@ -201,7 +201,7 @@
             "December"});
             this.Month_.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
             this.Month_.ListTextColor = System.Drawing.Color.Black;
-            this.Month_.Location = new System.Drawing.Point(93, 203);
+            this.Month_.Location = new System.Drawing.Point(352, 203);
             this.Month_.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Month_.MinimumSize = new System.Drawing.Size(229, 40);
             this.Month_.Name = "Month_";
@@ -218,12 +218,12 @@
             this.Year_.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(51)))));
             this.Year_.BorderSize = 0;
             this.Year_.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Year_.Font = new System.Drawing.Font("SF Pro Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Year_.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Year_.ForeColor = System.Drawing.Color.White;
             this.Year_.IconColor = System.Drawing.Color.White;
             this.Year_.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
             this.Year_.ListTextColor = System.Drawing.Color.Black;
-            this.Year_.Location = new System.Drawing.Point(347, 203);
+            this.Year_.Location = new System.Drawing.Point(89, 203);
             this.Year_.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Year_.MinimumSize = new System.Drawing.Size(171, 40);
             this.Year_.Name = "Year_";
