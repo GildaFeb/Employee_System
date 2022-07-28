@@ -61,7 +61,7 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(339, 47);
             this.textBox4.TabIndex = 99;
-            this.textBox4.Text = "The password you entered is incorrect,\r\nplease try again.\r\n";
+            this.textBox4.Text = "The email you entered is incorrect,\r\nplease try again.\r\n";
             this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox2
