@@ -494,11 +494,14 @@
             this.btn_about.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_about.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_about.ForeColor = System.Drawing.Color.DimGray;
+            this.btn_about.Image = ((System.Drawing.Image)(resources.GetObject("btn_about.Image")));
+            this.btn_about.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_about.Location = new System.Drawing.Point(115, 801);
             this.btn_about.Name = "btn_about";
-            this.btn_about.Size = new System.Drawing.Size(135, 50);
+            this.btn_about.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btn_about.Size = new System.Drawing.Size(148, 50);
             this.btn_about.TabIndex = 127;
-            this.btn_about.Text = "Log out";
+            this.btn_about.Text = "      Log out";
             this.btn_about.UseVisualStyleBackColor = false;
             this.btn_about.Click += new System.EventHandler(this.btn_about_Click);
             // 
