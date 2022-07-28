@@ -154,8 +154,8 @@
             // 
             this.db_ViewWelcomeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(216)))), ((int)(((byte)(0)))));
             this.db_ViewWelcomeBtn.FlatAppearance.BorderSize = 0;
-            this.db_ViewWelcomeBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(233)))), ((int)(((byte)(32)))));
-            this.db_ViewWelcomeBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(233)))), ((int)(((byte)(32)))));
+            this.db_ViewWelcomeBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(216)))), ((int)(((byte)(0)))));
+            this.db_ViewWelcomeBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(216)))), ((int)(((byte)(0)))));
             this.db_ViewWelcomeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.db_ViewWelcomeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.db_ViewWelcomeBtn.ForeColor = System.Drawing.Color.Transparent;
