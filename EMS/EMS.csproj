@@ -6,7 +6,20 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>icon_for_workflow.ico</ApplicationIcon>
+    <PackageIcon>[ICO] EMS_LOGO-4TH (2).jpg</PackageIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="icon_for_workflow.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\..\Downloads\[ICO] EMS_LOGO-4TH (2).jpg">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="FireSharp" Version="2.0.4" />

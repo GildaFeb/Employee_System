@@ -69,26 +69,9 @@ namespace EMS
                 pending_cover.Visible = true;
             }
         }
-
-        private void UpdLblOvertime_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void UpdEmpOvertime_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void UpdSave_Click(object sender, EventArgs e)
-        {
-            
-            
-        }
-
         private void UpdTimePickerIn_ValueChanged(object sender, EventArgs e)
         {
-            /*// not finished
+            /*
             DateTime inTime = Convert.ToDateTime(time_in.Text);
             DateTime outTime = Convert.ToDateTime(time_out.Text);
             if (outTime >= inTime)
@@ -102,19 +85,9 @@ namespace EMS
             */
         }
 
-        private void UpdLlblTimeIn_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void UpdLblId_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void time_out_ValueChanged(object sender, EventArgs e)
         {
-            /*// not finished
+            /*
             DateTime inTime = Convert.ToDateTime(time_in.Text);
             DateTime outTime = Convert.ToDateTime(time_out.Text);
             if (outTime > inTime)
@@ -126,17 +99,6 @@ namespace EMS
                 MessageBox.Show(" Error. Time out (value) must set time after time in. Try again");
             }
             */
-        }
-
-        private void UpdLblDuration_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_clear_Click(object sender, EventArgs e)
-        {
-           
-
         }
 
         private void status_OnSelectedIndexChanged(object sender, EventArgs e)
@@ -174,51 +136,6 @@ namespace EMS
                 // [!] Alvin = enabled false the time in, time out, duration, overtime
             }
             */
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void btn_findemployee_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void status__SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void now_timein_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void now_timeout_Click(object sender, EventArgs e)
-        {
-
-            
-        }
-
-        private void timein_ValueChanged(object sender, EventArgs e)
-        {
-
-
-            
-        }
-
-        private void timeout_ValueChanged(object sender, EventArgs e)
-        {
-
-            
-        }
-
-        private void btn_one1_Click(object sender, EventArgs e)
-        {
-
-            
         }
 
         private void ATTENDANCEdutydurationUpdREVISED_Load(object sender, EventArgs e)
@@ -274,11 +191,6 @@ namespace EMS
                 submit_cover.Visible = false;
                 pending_cover.Visible = true;
             }
-        }
-
-        private void btn_clear_Click_1(object sender, EventArgs e)
-        {
-
         }
 
         private void btn_findemployee_Click_1(object sender, EventArgs e)
@@ -914,11 +826,6 @@ namespace EMS
             }
         }
 
-        private void submit_cover_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void clear_timein_Click(object sender, EventArgs e)
         {
             blank_timein.Visible = true;
@@ -932,121 +839,6 @@ namespace EMS
             blank_timeout.Visible = true;
             duty_duration.Text = "";
             overtime.Text = null;
-        }
-
-        private void LblStatus_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void name_emp_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
-
-        }
-
-        private void blank_timeout_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void employee_name_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void invalid_time_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void time_out_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
-
-        }
-
-        private void blank_timein_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void AddLblOvertime_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void AddLblTimeOut_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void AddLblDuration_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void AddLlblTimeIn_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void AddLblStatus_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void AddLblDate_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void duty_duration_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void overtime_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void id_message_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void date_duty_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void AddLblId_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_one14_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LblTitle_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void DDsubheading_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

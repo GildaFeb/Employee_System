@@ -550,9 +550,10 @@
             this.DDsubheading.Location = new System.Drawing.Point(100, 152);
             this.DDsubheading.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.DDsubheading.Name = "DDsubheading";
-            this.DDsubheading.Size = new System.Drawing.Size(407, 22);
+            this.DDsubheading.Size = new System.Drawing.Size(761, 44);
             this.DDsubheading.TabIndex = 232;
-            this.DDsubheading.Text = "Enter ID Number and DATE first to find employee.";
+            this.DDsubheading.Text = "Enter ID Number and DATE first to find employee. Make sure that the \'ID Number\' i" +
+    "s registered\r\nto add attendance.";
             // 
             // employee_name
             // 

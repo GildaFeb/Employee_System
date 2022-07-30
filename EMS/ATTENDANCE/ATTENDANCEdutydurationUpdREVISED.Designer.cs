@@ -87,7 +87,6 @@
             this.LblStatus.Size = new System.Drawing.Size(1291, 329);
             this.LblStatus.TabIndex = 180;
             this.LblStatus.UseVisualStyleBackColor = false;
-            this.LblStatus.Click += new System.EventHandler(this.LblStatus_Click);
             // 
             // LblTitle
             // 
@@ -101,7 +100,6 @@
             this.LblTitle.Size = new System.Drawing.Size(720, 50);
             this.LblTitle.TabIndex = 179;
             this.LblTitle.Text = "Update duty duration of an employee";
-            this.LblTitle.Click += new System.EventHandler(this.LblTitle_Click);
             // 
             // btn_one14
             // 
@@ -117,7 +115,6 @@
             this.btn_one14.Size = new System.Drawing.Size(880, 174);
             this.btn_one14.TabIndex = 194;
             this.btn_one14.UseVisualStyleBackColor = false;
-            this.btn_one14.Click += new System.EventHandler(this.btn_one14_Click);
             // 
             // label1
             // 
@@ -131,7 +128,6 @@
             this.label1.Size = new System.Drawing.Size(215, 18);
             this.label1.TabIndex = 244;
             this.label1.Text = "Employee ID | Enter ID Number";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // DDsubheading
             // 
@@ -142,11 +138,11 @@
             this.DDsubheading.Location = new System.Drawing.Point(110, 162);
             this.DDsubheading.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.DDsubheading.Name = "DDsubheading";
-            this.DDsubheading.Size = new System.Drawing.Size(798, 22);
+            this.DDsubheading.Size = new System.Drawing.Size(869, 66);
             this.DDsubheading.TabIndex = 256;
-            this.DDsubheading.Text = "You can update employee attendance if it is added to \"Pending\" Table when the Sta" +
-    "tus is \"Present\"";
-            this.DDsubheading.Click += new System.EventHandler(this.DDsubheading_Click);
+            this.DDsubheading.Text = "You can update employee attendance if it is added to \"Pending\" Table. Please ente" +
+    "r \'ID Number\' and \'date\'  \r\nof the record and click \'find employee\' to see recor" +
+    "d and update.\r\n\r\n";
             // 
             // dur
             // 
@@ -178,7 +174,6 @@
             this.AddLblId.Size = new System.Drawing.Size(124, 18);
             this.AddLblId.TabIndex = 238;
             this.AddLblId.Text = "Choose duty date";
-            this.AddLblId.Click += new System.EventHandler(this.AddLblId_Click);
             // 
             // id_message
             // 
@@ -191,7 +186,6 @@
             this.id_message.Size = new System.Drawing.Size(0, 18);
             this.id_message.TabIndex = 294;
             this.id_message.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.id_message.Click += new System.EventHandler(this.id_message_Click);
             // 
             // employee_name
             // 
@@ -203,7 +197,6 @@
             this.employee_name.Name = "employee_name";
             this.employee_name.Size = new System.Drawing.Size(0, 24);
             this.employee_name.TabIndex = 293;
-            this.employee_name.Click += new System.EventHandler(this.employee_name_Click);
             // 
             // label2
             // 
@@ -241,7 +234,6 @@
             this.invalid_time.TabIndex = 290;
             this.invalid_time.Text = "Invalid time in and time out. Edit again.";
             this.invalid_time.Visible = false;
-            this.invalid_time.Click += new System.EventHandler(this.invalid_time_Click);
             // 
             // pending_cover
             // 
@@ -262,7 +254,6 @@
             this.submit_cover.Padding = new System.Windows.Forms.Padding(150, 50, 100, 50);
             this.submit_cover.Size = new System.Drawing.Size(250, 120);
             this.submit_cover.TabIndex = 288;
-            this.submit_cover.Click += new System.EventHandler(this.submit_cover_Click);
             // 
             // submit_btn
             // 
@@ -322,7 +313,6 @@
             this.maskedTextBox1.Size = new System.Drawing.Size(109, 34);
             this.maskedTextBox1.TabIndex = 280;
             this.maskedTextBox1.ValidatingType = typeof(System.DateTime);
-            this.maskedTextBox1.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
             // 
             // now_timein
             // 
@@ -350,7 +340,6 @@
             this.time_out.Size = new System.Drawing.Size(109, 34);
             this.time_out.TabIndex = 273;
             this.time_out.ValidatingType = typeof(System.DateTime);
-            this.time_out.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.time_out_MaskInputRejected);
             // 
             // blank_timein
             // 
@@ -359,7 +348,6 @@
             this.blank_timein.Name = "blank_timein";
             this.blank_timein.Size = new System.Drawing.Size(349, 31);
             this.blank_timein.TabIndex = 284;
-            this.blank_timein.TextChanged += new System.EventHandler(this.blank_timein_TextChanged);
             // 
             // report_txt
             // 
@@ -377,7 +365,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(113)))), ((int)(((byte)(202)))));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(1064, 625);
+            this.label3.Location = new System.Drawing.Point(1064, 624);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(38, 20);
             this.label3.TabIndex = 282;
@@ -488,7 +476,6 @@
             this.AddLblOvertime.Size = new System.Drawing.Size(68, 18);
             this.AddLblOvertime.TabIndex = 269;
             this.AddLblOvertime.Text = "Overtime";
-            this.AddLblOvertime.Click += new System.EventHandler(this.AddLblOvertime_Click);
             // 
             // AddLblTimeOut
             // 
@@ -502,7 +489,6 @@
             this.AddLblTimeOut.Size = new System.Drawing.Size(66, 18);
             this.AddLblTimeOut.TabIndex = 268;
             this.AddLblTimeOut.Text = "Time out";
-            this.AddLblTimeOut.Click += new System.EventHandler(this.AddLblTimeOut_Click);
             // 
             // AddLblDuration
             // 
@@ -516,7 +502,6 @@
             this.AddLblDuration.Size = new System.Drawing.Size(64, 18);
             this.AddLblDuration.TabIndex = 267;
             this.AddLblDuration.Text = "Duration";
-            this.AddLblDuration.Click += new System.EventHandler(this.AddLblDuration_Click);
             // 
             // AddLlblTimeIn
             // 
@@ -530,7 +515,6 @@
             this.AddLlblTimeIn.Size = new System.Drawing.Size(56, 18);
             this.AddLlblTimeIn.TabIndex = 266;
             this.AddLlblTimeIn.Text = "Time in";
-            this.AddLlblTimeIn.Click += new System.EventHandler(this.AddLlblTimeIn_Click);
             // 
             // date_duty
             // 
@@ -543,7 +527,6 @@
             this.date_duty.Size = new System.Drawing.Size(349, 29);
             this.date_duty.TabIndex = 265;
             this.date_duty.Value = new System.DateTime(2022, 7, 25, 0, 0, 0, 0);
-            this.date_duty.ValueChanged += new System.EventHandler(this.date_duty_ValueChanged);
             // 
             // AddLblStatus
             // 
@@ -557,7 +540,6 @@
             this.AddLblStatus.Size = new System.Drawing.Size(50, 18);
             this.AddLblStatus.TabIndex = 264;
             this.AddLblStatus.Text = "Status";
-            this.AddLblStatus.Click += new System.EventHandler(this.AddLblStatus_Click);
             // 
             // AddLblDate
             // 
@@ -571,7 +553,6 @@
             this.AddLblDate.Size = new System.Drawing.Size(115, 18);
             this.AddLblDate.TabIndex = 263;
             this.AddLblDate.Text = "Employee name";
-            this.AddLblDate.Click += new System.EventHandler(this.AddLblDate_Click);
             // 
             // employee_id
             // 
@@ -601,7 +582,6 @@
             this.duty_duration.Size = new System.Drawing.Size(349, 31);
             this.duty_duration.TabIndex = 260;
             this.duty_duration.Text = " ";
-            this.duty_duration.TextChanged += new System.EventHandler(this.duty_duration_TextChanged);
             // 
             // overtime
             // 
@@ -617,7 +597,6 @@
             this.overtime.Size = new System.Drawing.Size(349, 31);
             this.overtime.TabIndex = 259;
             this.overtime.Text = " ";
-            this.overtime.TextChanged += new System.EventHandler(this.overtime_TextChanged);
             // 
             // blank_timeout
             // 
@@ -626,7 +605,6 @@
             this.blank_timeout.Name = "blank_timeout";
             this.blank_timeout.Size = new System.Drawing.Size(349, 31);
             this.blank_timeout.TabIndex = 295;
-            this.blank_timeout.TextChanged += new System.EventHandler(this.blank_timeout_TextChanged);
             // 
             // name_emp
             // 
@@ -639,7 +617,6 @@
             this.name_emp.Size = new System.Drawing.Size(100, 24);
             this.name_emp.TabIndex = 296;
             this.name_emp.Text = "----------";
-            this.name_emp.Click += new System.EventHandler(this.name_emp_Click);
             // 
             // ATTENDANCEdutydurationUpdREVISED
             // 

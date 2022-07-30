@@ -665,7 +665,6 @@ namespace EMS.Employee_Details
                     {
                         int submittedRecord = getAbsent(report.DutyDate, report.EmployeeID);
                         int totalAbsent = 1 + submittedRecord;
-                        //WHERE EmployeeID='" + employee.employeeID + "'"
                         cmd.CommandText = "UPDATE ReportTbl SET Absent = '" + totalAbsent + "' WHERE EmployeeID = '" + report.EmployeeID + "' AND DutyDate= '" + report.DutyDate + "'";
                         cmd.Connection = con;
                         cmd.ExecuteNonQuery();
@@ -675,7 +674,6 @@ namespace EMS.Employee_Details
                     {
                         int submittedRecord = getLeave(report.DutyDate, report.EmployeeID);
                         int totalLeave = 1 + submittedRecord;
-                        //WHERE EmployeeID='" + employee.employeeID + "'"
                         cmd.CommandText = "UPDATE ReportTbl SET Absent = '" + totalLeave + "' WHERE EmployeeID = '" + report.EmployeeID + "' AND DutyDate= '" + report.DutyDate + "'";
                         cmd.Connection = con;
                         cmd.ExecuteNonQuery();
